@@ -1,0 +1,175 @@
+{
+  "audience_profiles": {
+    "specialist": {
+      "label": "专科医生",
+      "recommended_register": [
+        "R1",
+        "R2"
+      ],
+      "recommended_m3_plays": [
+        "Decision Play"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_SPECIALIST_01",
+          "template": "失眠是一个严重影响患者生活质量的常见疾病，传统治疗方法存在诸多局限性。本文将介绍一种全新机制的睡眠药物，为临床治疗提供新的选择。",
+          "example": "失眠是一个严重影响患者生活质量的常见疾病，传统治疗方法存在诸多局限性。本文将介绍一种全新机制的睡眠药物，为临床治疗提供新的选择。"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_SPECIALIST_01",
+          "template": "临床研究显示，该药物在缩短入睡时间和延长总睡眠时间方面表现显著，与传统药物相比具有明显优势。",
+          "example": "临床研究显示，该药物在缩短入睡时间和延长总睡眠时间方面表现显著，与传统药物相比具有明显优势。"
+        }
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_SPECIALIST_01",
+          "template": "该药物的安全性良好，长期使用未观察到明显的生理依赖和戒断反应，为患者提供了更安全的治疗选择。",
+          "example": "该药物的安全性良好，长期使用未观察到明显的生理依赖和戒断反应，为患者提供了更安全的治疗选择。"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_SPECIALIST_01",
+          "template": "对于长期失眠患者，建议在医生指导下考虑使用这种全新机制的睡眠药物，以获得更好的治疗效果。",
+          "example": "对于长期失眠患者，建议在医生指导下考虑使用这种全新机制的睡眠药物，以获得更好的治疗效果。"
+        }
+      ],
+      "transition_phrases": [
+        "综上所述",
+        "此外",
+        "值得注意的是"
+      ],
+      "forbidden_expressions": [
+        "绝对有效",
+        "无副作用",
+        "包治百病"
+      ]
+    },
+    "primary_care": {
+      "label": "基层医生",
+      "recommended_register": [
+        "R2",
+        "R3"
+      ],
+      "recommended_m3_plays": [
+        "Clinical Education",
+        "Decision Play"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_PRIMARY_01",
+          "template": "失眠在社区中非常常见，传统治疗方法存在诸多局限性。今天我们来了解一种全新机制的睡眠药物，为患者提供更好的治疗选择。",
+          "example": "失眠在社区中非常常见，传统治疗方法存在诸多局限性。今天我们来了解一种全新机制的睡眠药物，为患者提供更好的治疗选择。"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_PRIMARY_01",
+          "template": "临床研究表明，这种药物能够有效缩短入睡时间，延长总睡眠时间，改善睡眠质量。",
+          "example": "临床研究表明，这种药物能够有效缩短入睡时间，延长总睡眠时间，改善睡眠质量。"
+        }
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_PRIMARY_01",
+          "template": "这种药物的安全性良好，长期使用未观察到明显的依赖和戒断反应，适合长期治疗。",
+          "example": "这种药物的安全性良好，长期使用未观察到明显的依赖和戒断反应，适合长期治疗。"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_PRIMARY_01",
+          "template": "对于长期失眠患者，建议转诊至睡眠专科医生，在专业指导下考虑使用这种全新机制的睡眠药物。",
+          "example": "对于长期失眠患者，建议转诊至睡眠专科医生，在专业指导下考虑使用这种全新机制的睡眠药物。"
+        }
+      ],
+      "transition_phrases": [
+        "简单来说",
+        "值得一提的是",
+        "需要注意的是"
+      ],
+      "forbidden_expressions": [
+        "绝对安全",
+        "快速治愈",
+        "无需医生指导"
+      ]
+    },
+    "patient_education": {
+      "label": "患者教育",
+      "recommended_register": [
+        "R3",
+        "R4"
+      ],
+      "recommended_m3_plays": [
+        "Education Play"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_PATIENT_01",
+          "template": "长期失眠不仅影响睡眠质量，还会对身体健康造成严重危害。今天我们来了解一种全新机制的睡眠药物，帮助您获得更好的睡眠。",
+          "example": "长期失眠不仅影响睡眠质量，还会对身体健康造成严重危害。今天我们来了解一种全新机制的睡眠药物，帮助您获得更好的睡眠。"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_PATIENT_01",
+          "template": "这种药物能够帮助您更快入睡，获得更长时间的睡眠，并且第二天不会感到昏昏沉沉。",
+          "example": "这种药物能够帮助您更快入睡，获得更长时间的睡眠，并且第二天不会感到昏昏沉沉。"
+        }
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_PATIENT_01",
+          "template": "这种药物的安全性良好，长期使用不会产生依赖，停药后也不会出现反弹失眠。",
+          "example": "这种药物的安全性良好，长期使用不会产生依赖，停药后也不会出现反弹失眠。"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_PATIENT_01",
+          "template": "如果您长期受到失眠困扰，请咨询您的医生，了解这种全新机制的睡眠药物是否适合您。",
+          "example": "如果您长期受到失眠困扰，请咨询您的医生，了解这种全新机制的睡眠药物是否适合您。"
+        }
+      ],
+      "transition_phrases": [
+        "也就是说",
+        "另外",
+        "需要记住的是"
+      ],
+      "forbidden_expressions": [
+        "特效药物",
+        "无任何副作用",
+        "自行购买"
+      ]
+    }
+  },
+  "audience_mapping_rules": {
+    "rules": [
+      {
+        "rule_id": "AMR_001",
+        "condition": "当读者为睡眠专科医生或神经科医生时",
+        "audience_profile": "specialist"
+      },
+      {
+        "rule_id": "AMR_002",
+        "condition": "当读者为基层医生、全科医生或社区医生时",
+        "audience_profile": "primary_care"
+      },
+      {
+        "rule_id": "AMR_003",
+        "condition": "当读者为失眠患者或患者家属时",
+        "audience_profile": "patient_education"
+      }
+    ]
+  },
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L4 — Lemborexant Product Knowledge"
+}

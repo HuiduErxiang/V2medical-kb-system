@@ -1,0 +1,51 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q1] 《仑卡奈单抗的疗效如何》.docx",
+    "source_key": "SRC-HIST-2025-Q1_《仑卡奈单抗的疗效如何》",
+    "asset_key": "AST-DOCX-2025-Q1_《仑卡奈单抗的疗效如何》",
+    "content_hash": "7d775f1a5ddf50cc",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.741472",
+    "source_size_bytes": 16761
+  },
+  "metadata": {
+    "title": "《仑卡奈单抗的疗效如何》",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q1",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 问题背景引入",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [
+      "opening: 问题导向",
+      "opening: 直接陈述"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险"
+    ],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [],
+    "writing_style_notes": [
+      "vocabulary: 中等技术化",
+      "technical_depth: 临床应用导向"
+    ]
+  },
+  "key_messages": []
+}

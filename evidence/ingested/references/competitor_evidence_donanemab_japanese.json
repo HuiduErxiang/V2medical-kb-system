@@ -1,0 +1,197 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-TRAILBLAZER-ALZ-2-JAPAN",
+    "asset_key": "AST-H003-TRAILBLAZER-ALZ-2-JAPAN",
+    "content_hash": "7c3f9f0f6a7d8e9b0c1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e",
+    "source_type": "journal_article"
+  },
+  "metadata": {
+    "title": "Donanemab in Japanese Patients with Early Alzheimer’s Disease: Subpopulation Analysis of the TRAILBLAZER-ALZ 2 Randomized Trial",
+    "authors": [
+      "Shoichiro Sato",
+      "Naohisa Hatakeyama",
+      "Shinji Fujikoshi",
+      "Sadao Katayama",
+      "Hideaki Katagiri",
+      "John R. Sims"
+    ],
+    "year": 2024,
+    "study": "TRAILBLAZER-ALZ 2",
+    "source_file": "[2025-Q2] Donanemab in Japanese Patients with Early Alzheimer’s Disease Subpopulation Analysis of the TRAILBLAZER-ALZ 2 Randomized Trial.md",
+    "source_size_bytes": 131085
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "phase 3 randomized controlled trial",
+      "trial_identifier": "NCT04437511",
+      "location": "Japan (part of global trial)",
+      "randomization_ratio": "1:1",
+      "treatment_duration": "72 weeks",
+      "final_assessment": "week 76"
+    },
+    "population": {
+      "sample_size": {
+        "total": 88,
+        "donanemab": 45,
+        "placebo": 43
+      },
+      "inclusion_criteria": [
+        "Age 60-85 years",
+        "Early symptomatic AD (mild cognitive impairment/mild dementia)",
+        "MMSE score 20-28",
+        "Confirmed amyloid and tau pathology via PET"
+      ],
+      "baseline_characteristics": {
+        "mean_age": 73.5,
+        "female_percentage": 63.6,
+        "apoe_e4_carriers": 61.4,
+        "mean_iadrs": 102.0,
+        "mean_cdr_sb": 3.68
+      },
+      "subgroup_analysis": "Japanese patients"
+    },
+    "endpoints": {
+      "primary": "Change from baseline to week 76 in iADRS score",
+      "secondary": [
+        "Change from baseline to week 76 in CDR-SB score",
+        "Change from baseline to week 76 in ADAS-Cog13 score",
+        "Change from baseline to week 76 in ADCS-iADL score",
+        "Amyloid plaque clearance (\u003c24.1 Centiloids)",
+        "Change from baseline to week 76 in plasma P-tau217"
+      ],
+      "exploratory": [
+        "Progression to next stage of disease based on CDR-GS",
+        "No progression by CDR-SB at week 52"
+      ]
+    },
+    "key_results": {
+      "primary_outcome": {
+        "description": "iADRS change from baseline to week 76",
+        "donanemab": {
+          "lsm_change": -10.19,
+          "ci": null
+        },
+        "placebo": {
+          "lsm_change": -13.11,
+          "ci": null
+        },
+        "difference": 2.92,
+        "ci": "1.51-4.33",
+        "p_value": "\u003c0.001",
+        "slowing_percentage": 38.8
+      },
+      "secondary_outcomes": {
+        "cdr_sb": {
+          "difference": 0.92,
+          "ci": null,
+          "p_value": null
+        },
+        "adas_cog13": {
+          "difference": 2.34,
+          "ci": null,
+          "p_value": null
+        },
+        "adcs_iadl": {
+          "difference": -1.38,
+          "ci": null,
+          "p_value": null
+        },
+        "amyloid_clearance": {
+          "donanemab_percentage": 83.3,
+          "placebo_percentage": 0
+        },
+        "plasma_ptau217": {
+          "reduction_percentage": 59.1
+        }
+      },
+      "subgroup_analysis": {
+        "low_medium_tau": {
+          "sample_size": 76,
+          "donanemab": 40,
+          "placebo": 36,
+          "iadrs_difference": 3.99,
+          "slowing_percentage": 40.2
+        },
+        "combined_population": {
+          "sample_size": 88,
+          "donanemab": 45,
+          "placebo": 43,
+          "iadrs_difference": 4.43,
+          "slowing_percentage": 38.8
+        }
+      }
+    },
+    "safety_data": {
+      "serious_ae": {
+        "donanemab": 15.6,
+        "placebo": 6.98
+      },
+      "aria": {
+        "aria_e": {
+          "donanemab": 22.2,
+          "placebo": 2.3
+        },
+        "aria_h": {
+          "donanemab": null,
+          "placebo": null
+        },
+        "symptomatic_aria": {
+          "donanemab": 2.2,
+          "placebo": 0
+        }
+      },
+      "discontinuation_rate": {
+        "donanemab": 15.6,
+        "placebo": 16.3
+      },
+      "completion_rate": {
+        "total": 84.1,
+        "donanemab": 84.4,
+        "placebo": 83.7
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "global TRAILBLAZER-ALZ 2 population",
+        "similar_efficacy": true,
+        "similar_safety": true,
+        "key_findings": "Japanese subpopulation results consistent with global trial"
+      },
+      {
+        "comparator": "lecanemab (indirect comparison)",
+        "efficacy_comparison": "Similar magnitude of iADRS difference",
+        "safety_comparison": "ARIA-E rates slightly higher in donanemab",
+        "key_metrics": "Donanemab ARIA-E: 22.2%; Lecanemab (Clarity AD): ~12%"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Amyloid plaque",
+      "Amyloid-related imaging abnormalities",
+      "Clinical Dementia Rating Scale",
+      "Donanemab",
+      "Integrated Alzheimer’s Disease Rating Scale",
+      "Japan",
+      "Mild cognitive impairment/mild dementia",
+      "Positron-emission tomography",
+      "Tau proteins"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Amyloid beta-Peptides",
+      "Antibodies, Monoclonal",
+      "Biomarkers",
+      "Cognition Disorders",
+      "Dementia",
+      "Japanese",
+      "Neuroimaging",
+      "Positron-Emission Tomography",
+      "Tau Proteins"
+    ]
+  }
+}

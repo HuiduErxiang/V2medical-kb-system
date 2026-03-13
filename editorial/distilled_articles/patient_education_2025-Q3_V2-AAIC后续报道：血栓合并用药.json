@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q3] V2-AAIC后续报道：血栓合并用药.docx",
+    "content_hash": "a0f01f1f8adc1d9f",
+    "distilled_at": "2026-03-10T03:56:06.445115",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2-AAIC后续报道：血栓合并用药",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "word_count": 1895,
+    "source_file": "[2025-Q3] V2-AAIC后续报道：血栓合并用药.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "重磅研究数据披露！抗血栓药物与仑卡奈单抗合并使用，未发现增加抗Aβ治疗不可控ARIA发生的风险！\n使...。",
+    "重磅研究数据披露！抗血栓药物与仑卡奈单抗合并使用，未发现增加抗Aβ治疗不可控ARIA发生的风险！\n使...。",
+    "重磅研究数据披露！抗血栓药物与仑卡奈单抗合并使用，未发现增加抗Aβ治疗不可控ARIA发生的风险！\n使...。",
+    "重磅研究数据披露！抗血栓药物与仑卡奈单抗合并使用，未发现增加抗Aβ治疗不可控ARIA发生的风险！\n使...。",
+    "但毕竟这只是理论层面的顾虑\n仑卡奈单抗作为全球首款靶向可溶性Aβ淀粉样蛋白的疾病修饰疗法药物，不但能...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "重磅研究数据披露！抗血栓药物与仑卡奈单抗合并使用，未发现增加抗Aβ治疗不可控ARIA发生的风险！\n使用抗血栓药物未发现增加ARIA不可控风险，仑卡奈单抗真实世界研究再证安全可靠！\n\n阿尔茨海默病（AD）作为一种神经退行性疾病，多发病于老年人群。因此，许多AD患者往往也伴有高血压、冠心病等慢性病，需要长期服用抗血栓药物（包括抗凝药和抗血小板药）。\n来预防心梗、脑卒中等等严重心脑血管疾病的发生。\n淀粉..."
+}

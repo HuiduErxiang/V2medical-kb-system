@@ -1,0 +1,55 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] 多中心真实世界研究填补国内空白：仑卡奈单抗为阿尔茨海默病患者带来认知改善新曙光.docx",
+    "source_key": "SRC-HIST-2025-Q4_多中心真实世界研究填补国内空白：仑卡奈单抗为",
+    "asset_key": "AST-DOCX-2025-Q4_多中心真实世界研究填补国内空白：仑卡奈单抗为",
+    "content_hash": "e94ef92aa47565c4",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.497742",
+    "source_size_bytes": 180500
+  },
+  "metadata": {
+    "title": "多中心真实世界研究填补国内空白：仑卡奈单抗为阿尔茨海默病患者带来认知改善新曙光",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "阿尔茨海默病（AD）是一种进行性神经退行性疾病，严重影响患者认知功能和生活质量。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": [
+    "研究结果显示，在接受仑卡奈单抗治疗7个月后，患者在多个认知评估指标上均有改善。其中，ADAS-cog14评分（用于评估认知功能的核心量表）平均下降4.62分，改善幅度具有临床意义。其他量表如MoCA（蒙特利尔认知评估）和CDR-SB（临床痴呆评分）也显示出积极变化，提示患者在注意力、执行功能和日常生活能力方面均有提升，存在症状扭转的情况。"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q1] V3 ARIA发生率越高，清除Aβ的效率越高？.docx",
+    "source_key": "SRC-HIST-2025-Q1_V3_ARIA发生率越高，清除Aβ的效率越高",
+    "asset_key": "AST-DOCX-2025-Q1_V3_ARIA发生率越高，清除Aβ的效率越高",
+    "content_hash": "112e768162e6836a",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.105579",
+    "source_size_bytes": 393175
+  },
+  "metadata": {
+    "title": "V3 ARIA发生率越高，清除Aβ的效率越高？",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q1",
+    "version": "V3",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [
+      "opening: 直接陈述"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "近日，多奈单抗正式在国内获批用于治疗早期阿尔茨海默病（AD）治疗。此前，仑卡奈单抗已在国内获批，如今多奈单抗的加入，使得临床医生和患者在AD治疗方案上多了一种选择。",
+      "这一过程也被称作“扬尘效应”[10]，而“扬尘效应”也是导致ARIA发生的重要原因之一。",
+      "这也是二者ARIA发生率差异的重要原因之一。",
+      "当单抗类药物进入人体后，人体的免疫系统可能会将其识别为外来异物，进而触发免疫原性反应，导致抗药抗体（ADA）的产生[6]。",
+      "参考文献：",
+      "王莉，王荣福。单克隆抗体药物的免疫原性研究进展 [J]. 中国新药杂志，2016, 25 (15): 1745 - 1750.",
+      "赵荣生，杨丽，王兴河。单克隆抗体类药物的药代动力学及临床应用 [J]. 临床药物治疗杂志，2012, 10 (6): 48 - 54."
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "体外实验[5]的结果表明，不同抗Aβ抗体对Aβ40的结合率存在差异，与 Aducanumab、Gantenerumab、多奈单抗 和 Bapineuzumab 的相比，仑卡奈单抗与 Aβ40（即 CAA Aβ 原纤维的主要成分）的结合显著更低，而多奈单抗对Aβ40的结合率则表现出一定的变异性。这可能导致其ARIA发生率的增加。"
+  ]
+}

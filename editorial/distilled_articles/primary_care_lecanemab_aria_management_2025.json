@@ -1,0 +1,68 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2025-Q4] 高效且安全！仑卡奈单抗的ARIA管理临床策略.docx",
+    "source_key": "SRC-H006-PRIMARY-002",
+    "asset_key": "AST-H006-PRIMARY-002",
+    "content_hash": "lecanemab_aria_management_2025",
+    "source_type": "clinical_education",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "高效且安全！仑卡奈单抗的ARIA管理临床策略",
+    "title_en": "Efficient and Safe! Clinical Management Strategies for ARIA with Lecanemab",
+    "authors": [],
+    "journal": "临床教育资料",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "clinical_education",
+    "audience": "基层医护",
+    "register_level": "R3",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗"],
+    "content_focus": "practical guidance, safety management, clinical protocols",
+    "narrative_patterns": ["case scenarios", "practical tips", "decision trees"],
+    "sections": [
+      {
+        "title": "ARIA的本质与特征",
+        "content": "ARIA是抗Aβ药物特有的影像学表现，分为ARIA-E和ARIA-H两类，具有时间规律性（70%发生在前7次输注）和自限性（52%ARIA-E在12周内缓解）。"
+      },
+      {
+        "title": "规范的影像学监测体系",
+        "content": "治疗前必须完成基线MRI，治疗中第5、7、14次输注前进行MRI检查，前14周加强临床警戒。"
+      },
+      {
+        "title": "高风险患者识别",
+        "content": "ApoE ε4纯合子患者ARIA发生率45%，杂合子19%，非携带者13%；合并抗凝药物使用或脑血管病史需谨慎评估。"
+      },
+      {
+        "title": "ARIA分级管理策略",
+        "content": "根据ARIA类型和严重程度分级处理，无症状轻度ARIA-E可继续治疗，重度或症状性ARIA需暂停治疗。"
+      },
+      {
+        "title": "多学科协作",
+        "content": "神经科、放射科和护理团队紧密配合，患者教育和质量控制体系确保管理策略准确执行。"
+      }
+    ]
+  },
+  "key_messages": [
+    "ARIA是可管理的安全性事件，具有明确的时间规律和自限性",
+    "规范的MRI监测体系是ARIA管理的核心，关键时间点不能遗漏",
+    "基因检测有助于风险分层，ApoE ε4基因型是重要预测因素",
+    "分级管理策略平衡治疗获益与安全性",
+    "多学科协作和患者教育是成功管理的关键"
+  ],
+  "accessibility_notes": [
+    "ARIA管理策略详细，但需要临床医生具备影像学解读能力",
+    "基层医护应重点关注治疗前基线检查和关键监测时间点",
+    "患者教育需强调及时报告症状的重要性，同时避免不必要的恐慌"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2024-Q4] V2 大反转！EMA建议批准仑卡奈单抗，背后的逻辑是什么？.docx",
+    "source_key": "SRC-HIST-2024-Q4_V2_大反转！EMA建议批准仑卡奈单抗，背后",
+    "asset_key": "AST-DOCX-2024-Q4_V2_大反转！EMA建议批准仑卡奈单抗，背后",
+    "content_hash": "dc765642cf05d99f",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.981288",
+    "source_size_bytes": 18647
+  },
+  "metadata": {
+    "title": "V2 大反转！EMA建议批准仑卡奈单抗，背后的逻辑是什么？",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2024-Q4",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "大反转！EMA建议批准仑卡奈单抗，背后的逻辑是什么？",
+      "经过长达4个月的思考之后，EMA还是对仑卡奈单抗“回心转意”了。",
+      "虽然4个月前我们已经对这个结果有所预料，但可以想象中间是经过了非常多的讨论的，外媒对此发表评价称“EMA对仑卡奈单抗的态度发生了180°扭转”。",
+      "那么，这种看似巨大的变化，背后的逻辑是什么呢？从这次的审批决定中，我们至少可以读出两个信号：",
+      "在4个月前EAM拒绝批准仑卡奈单抗时，我们曾经做过回溯，发现在EMA的审批历史上，拒批药物重新提交数据后，在第二次获得批准的概率是很高的，这说明EMA的拒批其实更像是一种谈判策略或者避险措施。",
+      "EMA相当于把这个操作提前到了审核环节，所以我们看到EMA对已上市产品的适应症修改是比FDA的少很多的。",
+      "除了疗效外，另一个被广泛讨论的问题是仑卡奈单抗可能引发致命性淀粉样蛋白相关成像异常 (ARIA)，包括ARIA-E（脑水肿）和ARIA-H（脑出血）。",
+      "CHMP拒绝批准仑卡奈单抗的原因是：仑卡奈单抗在CDR-SB评分上表现不能抵消其导致严重不良事件发生的风险。综合获益/风险比，决定不予批准。",
+      "对于国内患者，只要严格按照规范检查MRI，就不太会出现严重不良事件。而且换个角度看，如果仑卡奈单抗已经在英、欧获批，那就意味着在最不利的诊疗条件下，仑卡奈单抗的安全性也得到了认可。",
+      "AD历来被称为“新药研发黑洞”，所以一旦有新药成功上市，必然受到全世界的关注，其中有质疑的声音再正常不过。但对于患者和家属来说，AD新药带来的真正获益究竟是什么？"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 中等技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "虽然4个月前我们已经对这个结果有所预料，但可以想象中间是经过了非常多的讨论的，外媒对此发表评价称“EMA对仑卡奈单抗的态度发生了180°扭转”。"
+  ]
+}

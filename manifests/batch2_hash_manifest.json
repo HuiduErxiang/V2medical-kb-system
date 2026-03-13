@@ -1,0 +1,258 @@
+{
+  "L2_core_rules": [
+    {
+      "filename": "m0_persona_templates.json",
+      "hash": "4a4dc042acbe6c7d",
+      "size": 8504
+    },
+    {
+      "filename": "m3_strategic_plays.json",
+      "hash": "edc937bccd2e48c6",
+      "size": 6047
+    },
+    {
+      "filename": "m4_medical_blocks.json",
+      "hash": "5f1c415a0254517f",
+      "size": 11067
+    },
+    {
+      "filename": "m5_compliance_schema.json",
+      "hash": "9cb52d3e55205da5",
+      "size": 8439
+    },
+    {
+      "filename": "medical_expression_profiles.json",
+      "hash": "4164fb3b67f0b775",
+      "size": 30518
+    },
+    {
+      "filename": "medical_syntax_rules.json",
+      "hash": "3619c0fc5a76c145",
+      "size": 4268
+    },
+    {
+      "filename": "narrative_arcs.json",
+      "hash": "4c6dfac72c979b4a",
+      "size": 6205
+    },
+    {
+      "filename": "persona_medical_overlay.json",
+      "hash": "32abec9ec3e2f596",
+      "size": 2667
+    },
+    {
+      "filename": "rhetoric_blocks.json",
+      "hash": "853746eef6c245de",
+      "size": 8401
+    },
+    {
+      "filename": "sentence_patterns.json",
+      "hash": "842bac66fa75be62",
+      "size": 7673
+    }
+  ],
+  "L3_disease_strategy": [
+    {
+      "filename": "neurology\\alzheimers_disease\\disease_knowledge.json",
+      "hash": "1243948993311ce5",
+      "size": 29551
+    },
+    {
+      "filename": "neurology\\alzheimers_disease\\m1_thesis_derivation_rules.json",
+      "hash": "2a4567836bd5f193",
+      "size": 45623
+    },
+    {
+      "filename": "neurology\\alzheimers_disease\\source_registry.json",
+      "hash": "769a8a3290536b51",
+      "size": 1057
+    },
+    {
+      "filename": "neurology\\insomnia\\disease_knowledge.json",
+      "hash": "826d7df0c2402883",
+      "size": 777
+    },
+    {
+      "filename": "neurology\\insomnia\\m1_thesis_derivation_rules.json",
+      "hash": "c6864b95ac9cf2c1",
+      "size": 2088
+    },
+    {
+      "filename": "oncology\\disease_knowledge_shared.json",
+      "hash": "5e25a8c1b77616a3",
+      "size": 104874
+    },
+    {
+      "filename": "oncology\\m1_thesis_derivation_rules_shared.json",
+      "hash": "d7dccc78de44287e",
+      "size": 1412
+    },
+    {
+      "filename": "oncology\\source_registry.json",
+      "hash": "c6faaacd60df4a66",
+      "size": 17990
+    },
+    {
+      "filename": "oncology\\gastric_cancer\\disease_knowledge.json",
+      "hash": "b677d59a9abb3b63",
+      "size": 74623
+    },
+    {
+      "filename": "oncology\\gastric_cancer\\m1_thesis_derivation_rules.json",
+      "hash": "d6766692a58d655a",
+      "size": 1554
+    },
+    {
+      "filename": "oncology\\lung_cancer\\disease_knowledge.json",
+      "hash": "341a8797c35cee78",
+      "size": 78101
+    },
+    {
+      "filename": "oncology\\lung_cancer\\m1_thesis_derivation_rules.json",
+      "hash": "a7be96fb9d57a35b",
+      "size": 1520
+    },
+    {
+      "filename": "oncology\\prostate\\disease_knowledge.json",
+      "hash": "6ae42f92e9cead51",
+      "size": 13933
+    }
+  ],
+  "L4_product_metadata": [
+    {
+      "filename": "donanemab\\expression_library.json",
+      "hash": "ecc7d4165171c7ee",
+      "size": 331
+    },
+    {
+      "filename": "donanemab\\m5_compliance_rules.json",
+      "hash": "0b5d67dd94095eb4",
+      "size": 205
+    },
+    {
+      "filename": "donanemab\\product_manifest.json",
+      "hash": "8ce8fc816c286788",
+      "size": 613
+    },
+    {
+      "filename": "donanemab\\product_taxonomy.json",
+      "hash": "301db4e96bc33c7b",
+      "size": 315
+    },
+    {
+      "filename": "donanemab\\client_style_instances\\client_default.json",
+      "hash": "d24b5db5bc1693d4",
+      "size": 451
+    },
+    {
+      "filename": "furmonertinib\\expression_library.json",
+      "hash": "670857500ba570e4",
+      "size": 335
+    },
+    {
+      "filename": "furmonertinib\\m5_compliance_rules.json",
+      "hash": "cee2b488c8c89378",
+      "size": 2150
+    },
+    {
+      "filename": "furmonertinib\\product_manifest.json",
+      "hash": "6dab0cd7ad547957",
+      "size": 628
+    },
+    {
+      "filename": "furmonertinib\\product_taxonomy.json",
+      "hash": "a60c2a59dbb92980",
+      "size": 725
+    },
+    {
+      "filename": "lecanemab\\expression_library.json",
+      "hash": "4a52bc5fa6f02266",
+      "size": 23817
+    },
+    {
+      "filename": "lecanemab\\m5_compliance_rules.json",
+      "hash": "b1fa8dc42c249d08",
+      "size": 2077
+    },
+    {
+      "filename": "lecanemab\\product_taxonomy.json",
+      "hash": "de938ab7ea2f0f9b",
+      "size": 2355
+    },
+    {
+      "filename": "lecanemab\\client_style_instances\\client_patient_empathetic.json",
+      "hash": "3077d78287a9e15d",
+      "size": 978
+    },
+    {
+      "filename": "lecanemab\\client_style_instances\\client_pfizer_corporate.json",
+      "hash": "bbda43fba3f1a31c",
+      "size": 952
+    },
+    {
+      "filename": "lecanemab\\client_style_instances\\client_startup_aggressive.json",
+      "hash": "224129557407c0d6",
+      "size": 955
+    },
+    {
+      "filename": "lemborexant\\expression_library.json",
+      "hash": "c1c2d35580345c50",
+      "size": 7394
+    },
+    {
+      "filename": "lemborexant\\m5_compliance_rules.json",
+      "hash": "d049f7a343f51695",
+      "size": 4541
+    },
+    {
+      "filename": "lemborexant\\product_taxonomy.json",
+      "hash": "5a5a1107481b4bdf",
+      "size": 1803
+    },
+    {
+      "filename": "pluvicto\\expression_library.json",
+      "hash": "46b09d37bdf19250",
+      "size": 330
+    },
+    {
+      "filename": "pluvicto\\m5_compliance_rules.json",
+      "hash": "c0c8b718d29ce987",
+      "size": 204
+    },
+    {
+      "filename": "pluvicto\\product_manifest.json",
+      "hash": "f68b7f78e7d79a7b",
+      "size": 612
+    },
+    {
+      "filename": "pluvicto\\product_taxonomy.json",
+      "hash": "26f0cd3175dc780f",
+      "size": 314
+    },
+    {
+      "filename": "pluvicto\\client_style_instances\\client_default.json",
+      "hash": "b722b79848ce7463",
+      "size": 450
+    },
+    {
+      "filename": "trastuzumab_deruxtecan_gastric\\expression_library.json",
+      "hash": "32cbd269a173f12a",
+      "size": 344
+    },
+    {
+      "filename": "trastuzumab_deruxtecan_gastric\\m5_compliance_rules.json",
+      "hash": "174a3484b7dfada5",
+      "size": 2076
+    },
+    {
+      "filename": "trastuzumab_deruxtecan_gastric\\product_manifest.json",
+      "hash": "ffda4a5ca3ae1097",
+      "size": 666
+    },
+    {
+      "filename": "trastuzumab_deruxtecan_gastric\\product_taxonomy.json",
+      "hash": "b50faed30609d868",
+      "size": 1266
+    }
+  ]
+}

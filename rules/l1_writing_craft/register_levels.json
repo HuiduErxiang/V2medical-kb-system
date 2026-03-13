@@ -1,0 +1,43 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L1",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L1 — 境界 (Register Levels)",
+  "version": "1.0",
+  "description": "语域分级系统。R1最正式（学术期刊），R5最口语化。引擎根据用户选择的Register等级，调整用词、句式和语法戒律的执行力度。",
+  "registers": {
+    "R1": {
+      "name": "Journal / 学术期刊社论",
+      "description": "高正式、克制、严谨",
+      "syntax_rules_enforcement": "全部13条强制执行",
+      "tone_guidance": "第三人称为主，避免任何口语化表达，术语密度高"
+    },
+    "R2": {
+      "name": "Professional Brief / 专业内部参考",
+      "description": "正式、直接",
+      "syntax_rules_enforcement": "全部13条强制执行",
+      "tone_guidance": "可用第一人称复数（我们），行文简洁直接"
+    },
+    "R3": {
+      "name": "Professional Education / 专业教育稿",
+      "description": "专业但可读",
+      "syntax_rules_enforcement": "全部13条强制执行",
+      "tone_guidance": "兼顾专业性与可读性，可适度使用类比"
+    },
+    "R4": {
+      "name": "Public Science / 大众科普",
+      "description": "清晰、少术语",
+      "syntax_rules_enforcement": "第1-6条强制，第7条放宽（允许适度口语化），第8-13条强制",
+      "tone_guidance": "以读者理解为优先，术语需充分解释，可用生活化类比"
+    },
+    "R5": {
+      "name": "Conversational / 口语化传播",
+      "description": "仅在明确要求时使用",
+      "syntax_rules_enforcement": "第1-6条强制，第7条放宽（允许适度口语化），第8-13条强制",
+      "tone_guidance": "允许口语信号词，短句为主，可用问答式结构"
+    }
+  }
+}

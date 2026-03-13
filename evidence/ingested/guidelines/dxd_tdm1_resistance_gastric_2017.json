@@ -1,0 +1,100 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H001",
+    "source_file": "sources/guidelines/gastric_2017.md",
+    "source_key": "SRC-GUIDELINE-GASTRIC-DXD-2017",
+    "asset_key": "AST-GUIDELINE-DXD-TDM1-RESISTANCE-2017",
+    "content_hash": "c3d4e5f6g7h8i9j0",
+    "source_type": "journal_article",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "DS-8201a, a new HER2-targeting antibody-drug conjugate incorporating a novel DNA topoisomerase I inhibitor, overcomes HER2-positive gastric cancer T-DM1 resistance",
+    "authors": ["Naoki Takegawa", "Yoshikane Nonagase", "Kimio Yonesaka", "Kazuko Sakai", "Osamu Maenishi", "Yusuke Ogitani", "Takao Tamura", "Kazuto Nishio", "Kazuhiko Nakagawa", "Junji Tsurutani"],
+    "journal": "International Journal of Cancer",
+    "year": 2017,
+    "doi": "10.1002/ijc.30870",
+    "institution": ["Kindai University Faculty of Medicine", "Daiichi Sankyo Co., Ltd."]
+  },
+  "distilled_content": {
+    "article_type": "original_research",
+    "disease_area": ["gastric_cancer"],
+    "product_related": ["T-DXd", "DS-8201a", "T-DM1", "trastuzumab_deruxtecan"],
+    "key_findings": [
+      {
+        "finding_id": "FIND-GASTRIC-001",
+        "domain": "resistance_mechanism",
+        "statement": "T-DM1 resistance in HER2-positive gastric cancer is mediated by upregulation of ABC transporters ABCC2 and ABCG2, causing efflux of DM1 payload",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "high"
+      },
+      {
+        "finding_id": "FIND-GASTRIC-002",
+        "domain": "efficacy",
+        "statement": "DS-8201a (T-DXd) effectively inhibits growth of T-DM1-resistant N87-TDMR gastric cancer cells both in vitro and in vivo",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "high"
+      },
+      {
+        "finding_id": "FIND-GASTRIC-003",
+        "domain": "mechanism",
+        "statement": "DXd payload of DS-8201a is a poor substrate for ABCC2 and ABCG2 transporters, unlike DM1",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "medium"
+      },
+      {
+        "finding_id": "FIND-GASTRIC-004",
+        "domain": "mechanism",
+        "statement": "High DAR (drug-to-antibody ratio) of DS-8201a (DAR=8) compared to T-DM1 (DAR=3.5) may compensate for increased efflux",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "medium"
+      }
+    ],
+    "experimental_evidence": {
+      "cell_models": {
+        "parent_line": "NCI-N87 (HER2-positive gastric cancer)",
+        "resistant_line": "N87-TDMR (T-DM1 resistant, 6-month exposure)"
+      },
+      "key_results": [
+        {"metric": "T-DM1 IC50 (N87-parent)", "value": "0.55 μg/mL"},
+        {"metric": "T-DM1 IC50 (N87-TDMR)", "value": ">10 μg/mL"},
+        {"metric": "HER2 expression (N87-TDMR)", "value": "Retained, similar to parent"},
+        {"metric": "ABCC2 expression (N87-TDMR)", "value": "59.2x higher than parent"},
+        {"metric": "ABCG2 expression (N87-TDMR)", "value": "22.4x higher than parent"}
+      ],
+      "in_vivo_results": {
+        "model": "N87-TDMR xenograft in mice",
+        "treatment": "Single dose 10 mg/kg",
+        "result": "DS-8201a prevented tumor growth; T-DM1 ineffective"
+      }
+    },
+    "clinical_implications": [
+      {
+        "implication_id": "IMP-GASTRIC-001",
+        "statement": "DS-8201a may be effective in T-DM1-resistant HER2-positive gastric cancer",
+        "evidence_grade": "preclinical",
+        "recommendation": "Clinical investigation warranted"
+      }
+    ],
+    "comparative_signals": [
+      {
+        "comparison_id": "COMP-GASTRIC-001",
+        "comparison_type": "resistance_profile",
+        "agents": ["DS-8201a", "T-DM1"],
+        "finding": "DS-8201a overcomes T-DM1 resistance mediated by ABC transporters",
+        "implication": "Potential utility after T-DM1 failure"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": ["DS-8201a", "T-DXd", "T-DM1 resistance", "HER2", "gastric cancer", "ABC transporter", "ABCC2", "ABCG2"],
+    "mesh_terms": ["Stomach Neoplasms", "Antibody-Drug Conjugates", "Receptor, ErbB-2", "Drug Resistance", "ATP-Binding Cassette Transporters"]
+  },
+  "lineage": {
+    "source_path": "sources/guidelines/gastric_2017.md",
+    "original_size_bytes": 60093,
+    "distilled_at": "2026-03-10T03:48:00Z"
+  }
+}

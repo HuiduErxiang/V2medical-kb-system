@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\新闻_评论\\[2024-Q3] （邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路.docx",
+    "content_hash": "604b83b2ff2cc83e",
+    "distilled_at": "2026-03-10T03:56:06.872271",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "（邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2024-Q3",
+    "word_count": 1370,
+    "source_file": "[2024-Q3] （邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "而在今年1月，新药仑卡奈单抗在中国获批，并预计将在2024年7月中旬在国内上市。",
+    "仑卡奈单抗作为一种新型治疗药物的出现，无疑给患家庭带来了一线曙光。",
+    "安全顾虑释疑\n随着新药的出现，对仑卡奈单抗的质疑声音也接踵而至。",
+    "仑卡奈单抗可以有效地将AD控制在早期阶段，避免疾病进入中重度后的种种症状，如语言能力丧失、无法生活自...。",
+    "阿尔兹海默症新药获批上市，照亮患者记忆之路\n阿尔兹海默症(AD)是一种常见的中枢神经系统退行性病变，...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔兹海默症新药获批上市，照亮患者记忆之路\n阿尔兹海默症(AD)是一种常见的中枢神经系统退行性病变，也被我们常称为“老年痴呆”，就像脑海中悄悄出现了一块无形的橡皮擦，慢慢而又不留情地擦去了我们珍贵的记忆和生活的色彩。 \nAD的发病进程缓慢，并随时间不断恶化且不可逆转。在早期，AD的症状主要是短期记忆丧失。而到了中重度阶段，患者的症状会进一步加剧，不仅记忆几乎完全丧失，连语言能力也会变得极其困难，从..."
+}

@@ -1,0 +1,61 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q3] V2AAIC后续报道第四篇：华西经验.docx",
+    "content_hash": "713fb0d53c6a2d9b",
+    "distilled_at": "2026-03-10T03:56:06.773361",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2AAIC后续报道第四篇：华西经验",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q3",
+    "word_count": 1915,
+    "source_file": "[2025-Q3] V2AAIC后续报道第四篇：华西经验.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "早诊早治获益！华西医院披露仑卡奈单抗最新临床疗效\n2025 年 7 月，全球顶尖的阿尔茨海默病（AD...。",
+    "早诊早治获益！华西医院披露仑卡奈单抗最新临床疗效\n2025 年 7 月，全球顶尖的阿尔茨海默病（AD...。",
+    "会议上，来自四川大学华西医院的陈芹教授团队公布了一项振奋人心的研究成果：中国早期AD患者使用仑卡奈单...。",
+    "早用仑卡奈单抗治疗，效果好，风险低\n研究还发现，越早用药，效果越好，安全性也更高。",
+    "仑卡奈单抗有效维持或改善患者症状\n陈芹教授团队对 68 位阿尔茨海默病患者进行了前瞻性队列研究，分别...。"
+  ],
+  "accessibility_notes": [
+    "包含术语解释",
+    "句子长度适中"
+  ],
+  "raw_text_preview": "早诊早治获益！华西医院披露仑卡奈单抗最新临床疗效\n2025 年 7 月，全球顶尖的阿尔茨海默病（AD）研究大会——美国阿尔茨海默病协会国际会议（AAIC）召开。会议上，来自四川大学华西医院的陈芹教授团队公布了一项振奋人心的研究成果：中国早期AD患者使用仑卡奈单抗治疗后，认知功能评分保持稳定或存在改善！越早使用仑卡奈单抗，延缓AD患者认知衰退的效果就越好。这项真实世界研究的结果，再一次论证了仑卡奈单..."
+}

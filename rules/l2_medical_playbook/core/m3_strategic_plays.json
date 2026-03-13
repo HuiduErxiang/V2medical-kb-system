@@ -1,0 +1,175 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L2",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L2 — M3 Strategic Plays & Play-specific M2 Sequences (战略剧本与叙事序列)",
+  "m3_plays": [
+    {
+      "name": "重建监管结论的地域语境",
+      "description": "当同一证据在不同药监机构出现相反结论时，先把结论放回各自医疗体系与风险承受能力中解释，再引导读者回到本土监管与本土指南判断，避免把跨国审评结果绝对化。",
+      "id": "M3_PLAY_重建监管",
+      "origin_layer": "L2"
+    },
+    {
+      "name": "终点失利后的机制与序贯价值转译",
+      "description": "面对终点未达预期或量表绝对值差异有限等不利结果时，通过异质性、耐药机制、生物标志物变化与序贯治疗获益等证据重排，说明治疗策略仍具临床位置与后续价值。",
+      "id": "M3_PLAY_终点失利",
+      "origin_layer": "L2"
+    },
+    {
+      "name": "机制中枢前置推理",
+      "description": "先重建疾病机制或分型中枢（如{特定病理蛋白}级联中的中间枢纽、{特定基因}结构分型、{特定靶点}与分层标志物），再据此定义治疗优先级；论证重点从终末表型转向可持续影响病程的关键环节。",
+      "id": "M3_PLAY_机制中枢",
+      "origin_layer": "L2"
+    },
+    {
+      "name": "强化收益-代价审计",
+      "description": "不止比较统计学终点，还并行核算强化方案的毒性、治疗负担、后线透支与长期维持获益；当额外获益与代价不匹配时，给出效率更高的替代路径。",
+      "id": "M3_PLAY_强化收益",
+      "origin_layer": "L2"
+    },
+    {
+      "name": "证据缺口定位与方案时机重构",
+      "description": "先界定指南与实践中的循证空白（如{特定疾病分期}系统治疗时机不清、{特定治疗线序}后证据脱节），再用新研究的入组人群、分层模型与给药顺序重构决策路径，把\"可做\"转化为\"何时做、给谁做\"。",
+      "id": "M3_PLAY_证据缺口",
+      "origin_layer": "L2"
+    },
+    {
+      "name": "跨试验参照与反事实推演",
+      "description": "在缺少直接头对头或长期数据尚未成熟时，调用历史关键试验作参照系（过往经典研究），并结合基线差异、安全性与后线治疗影响进行反事实估算，放大新方案的相对临床意义。",
+      "id": "M3_PLAY_跨试验参",
+      "origin_layer": "L2"
+    }
+  ],
+  "m3_play_m2_sequences": {
+    "_default": {
+      "sequence": [
+        "M2_HOOK",
+        "M2_SETUP",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_DEFENSE",
+        "M2_CTA"
+      ],
+      "rationale": "经典六步叙事弧：引子→背景→方案→证据→防守→行动号召"
+    },
+    "M3_PLAY_重建监管": {
+      "sequence": [
+        "M2_HOOK",
+        "M2_SETUP",
+        "M2_TEARDOWN",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_DEFENSE",
+        "M2_GUIDANCE",
+        "M2_CTA"
+      ],
+      "rationale": "监管分歧话题需要TEARDOWN深度拆解各机构立场，GUIDANCE提供本土化实操建议",
+      "m4_overrides": {
+        "M2_TEARDOWN": [
+          "M4_B_跨机构分",
+          "M4_B_STATS_TEARDOWN"
+        ]
+      }
+    },
+    "M3_PLAY_终点失利": {
+      "sequence": [
+        "M2_HOOK",
+        "M2_SETUP",
+        "M2_TEARDOWN",
+        "M2_DEFENSE",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_CTA"
+      ],
+      "rationale": "终点失利需先TEARDOWN拆解数据，再DEFENSE正面回应质疑，最后SOLUTION重建治疗价值",
+      "m4_overrides": {
+        "M2_DEFENSE": [
+          "M4_B_SAFETY",
+          "M4_B_负面终点"
+        ],
+        "M2_TEARDOWN": [
+          "M4_B_STATS_TEARDOWN",
+          "M4_B_EFFICACY_DATA"
+        ]
+      }
+    },
+    "M3_PLAY_机制中枢": {
+      "sequence": [
+        "M2_HOOK",
+        "M2_SETUP",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_GUIDANCE",
+        "M2_CTA"
+      ],
+      "rationale": "机制前置推理以SETUP→SOLUTION为主轴，GUIDANCE提供临床分型与用药指导",
+      "m4_overrides": {
+        "M2_SETUP": [
+          "M4_B_MECHANISM",
+          "M4_B_机制创新"
+        ]
+      }
+    },
+    "M3_PLAY_强化收益": {
+      "sequence": [
+        "M2_HOOK",
+        "M2_SETUP",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_DEFENSE",
+        "M2_GUIDANCE",
+        "M2_CTA"
+      ],
+      "rationale": "收益-代价审计需完整PROOF→DEFENSE链条，GUIDANCE给出效率更高的替代路径",
+      "m4_overrides": {
+        "M2_PROOF": [
+          "M4_B_EFFICACY_DATA",
+          "M4_B_BIOMARKER",
+          "M4_B_多维获益"
+        ]
+      }
+    },
+    "M3_PLAY_证据缺口": {
+      "sequence": [
+        "M2_EMOTIVE_INTRO",
+        "M2_SETUP",
+        "M2_TEARDOWN",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_GUIDANCE",
+        "M2_CTA"
+      ],
+      "rationale": "用EMOTIVE_INTRO引出临床困境与未满足需求，TEARDOWN拆解现有证据空白，GUIDANCE重构决策路径",
+      "m4_overrides": {
+        "M2_SOLUTION": [
+          "M4_B_INDICATION",
+          "M4_B_无人区突"
+        ]
+      }
+    },
+    "M3_PLAY_跨试验参": {
+      "sequence": [
+        "M2_EMOTIVE_INTRO",
+        "M2_SETUP",
+        "M2_SOLUTION",
+        "M2_PROOF",
+        "M2_TEARDOWN",
+        "M2_DEFENSE",
+        "M2_CTA"
+      ],
+      "rationale": "用EMOTIVE_INTRO交代跨试验比较动机，TEARDOWN深度拆解历史试验数据差异与基线偏倚",
+      "m4_overrides": {
+        "M2_PROOF": [
+          "M4_B_EFFICACY_DATA",
+          "M4_B_BIOMARKER",
+          "M4_B_TRIAL_HISTORY",
+          "M4_B_COMPETITIVE"
+        ]
+      }
+    }
+  }
+}

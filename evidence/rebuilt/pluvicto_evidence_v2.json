@@ -1,0 +1,88 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/pluvicto/m6_evidence_database.json",
+    "product_id": "pluvicto",
+    "product_name_zh": "派威妥",
+    "generic_name": "lutetium (177Lu) vipivotide tetraxetan",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + 关键 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-PLUVICTO-VISION-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-PLUVICTO-VISION-2021-NEJM",
+      "title": "VISION Study",
+      "citation": "Sartor O, et al. 177Lu-PSMA-617 for Metastatic Castration-Resistant Prostate Cancer. N Engl J Med. 2021;385(12):1091-1103.",
+      "v1_source_id": "PLU_SRC_VISION_NEJM_2021",
+      "metadata": {
+        "study_type": "phase_3_rct",
+        "indication": "psma_positive_mcrpc"
+      }
+    },
+    {
+      "source_id": "V2-SRC-PLUVICTO-PSMAFORE-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-PLUVICTO-PSMAFORE-2024-LANCET",
+      "title": "PSMAfore Study",
+      "citation": "Morris MJ, et al. Phase 3 trial of 177Lu-PSMA-617 in taxane-naive mCRPC after ARPI. Lancet. 2024;404(10459):1227-1239.",
+      "v1_source_id": "PLU_SRC_PSMAFORE_LANCET_2024",
+      "metadata": {
+        "study_type": "phase_3_rct"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-PLUVICTO-EFFICACY-001",
+      "fact_key": "FACT-PLUVICTO-OS-VISION",
+      "domain": "efficacy",
+      "definition": "Overall survival in VISION study",
+      "definition_zh": "VISION研究总生存期",
+      "value": "to_be_extracted",
+      "unit": "months",
+      "fragment_ids": ["V2-FRAG-PLUVICTO-VISION-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-PLUVICTO-VISION-2021-NEJM",
+        "asset_key": "AST-PLUVICTO-VISION-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_source_id": "PLU_SRC_VISION_NEJM_2021",
+        "rebuild_notes": "从V1 sources 和 facts 结构映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-PLUVICTO-SAFETY-001",
+      "fact_key": "FACT-PLUVICTO-SAFETY-PROFILE",
+      "domain": "safety",
+      "definition": "Safety profile summary",
+      "definition_zh": "安全性概况",
+      "value": "to_be_extracted",
+      "unit": "",
+      "fragment_ids": ["V2-FRAG-PLUVICTO-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-PLUVICTO-VISION-2021-NEJM",
+        "asset_key": "AST-PLUVICTO-VISION-SAFETY",
+        "extraction_date": "2026-03-10"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "meta": "product metadata",
+      "sources": "VISION and PSMAfore trial sources",
+      "facts": "efficacy and safety evidence"
+    },
+    "v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (V2- prefix)",
+      "V1 sources[].citation -> V2 citation",
+      "V1 facts[] -> V2 FactRecord with lineage"
+    ]
+  }
+}

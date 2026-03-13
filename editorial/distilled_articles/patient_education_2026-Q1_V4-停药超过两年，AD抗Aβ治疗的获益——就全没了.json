@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2026-Q1] V4-停药超过两年，AD抗Aβ治疗的获益——就全没了？！.docx",
+    "content_hash": "c3d89842c89fdae4",
+    "distilled_at": "2026-03-10T03:56:06.824979",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V4-停药超过两年，AD抗Aβ治疗的获益——就全没了？！",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2026-Q1",
+    "word_count": 1425,
+    "source_file": "[2026-Q1] V4-停药超过两年，AD抗Aβ治疗的获益——就全没了？！.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "从下图也可以看到，黑色曲线代表的是未治疗的AD患者的自然病程，CDR-SB评分在一路飙升，说明病情在...。",
+    "停药超过两年，AD抗Aβ治疗的获益——就全没了？！\n\n阿尔茨海默病（AD）的进展不可逆且病程漫长，往...。",
+    "停药超过两年，AD抗Aβ治疗的获益——就全没了？！\n\n阿尔茨海默病（AD）的进展不可逆且病程漫长，往...。",
+    "但大家肯定还会问：4年有效，那用10年呢？中途停药会不会没用了？越早用药是不是效果越好？\n这些问题的...。",
+    "在患者对药物耐受、无严重不良反应的情况下，建议坚持长期治疗，主动抗争，从而有效延缓病情进展，让患者多...。"
+  ],
+  "accessibility_notes": [
+    "存在较多长句"
+  ],
+  "raw_text_preview": "停药超过两年，AD抗Aβ治疗的获益——就全没了？！\n\n阿尔茨海默病（AD）的进展不可逆且病程漫长，往往长达十余年。\n随着抗Aβ疗法的问世，AD治疗格局有了明显变化，抗Aβ药物能够精准靶向大脑中导致AD的β淀粉样蛋白（Aβ），实现对AD病理进程的干预，目前的研究最长已经随访至48个月，证实在4年时间里，抗Aβ治疗可以带来持续获益。\n但大家肯定还会问：4年有效，那用10年呢？中途停药会不会没用了？越早..."
+}

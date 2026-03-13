@@ -1,0 +1,182 @@
+{
+  "rules": [
+    {
+      "rule_id": "CR_001",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "required_any_patterns": [
+        "临床研究",
+        "研究表明",
+        "临床试验"
+      ],
+      "required_any_refs": [
+        "数据",
+        "疗效",
+        "安全性"
+      ],
+      "logic": "all_groups_required",
+      "message": "临床试验数据必须包含具体的疗效或安全性信息"
+    },
+    {
+      "rule_id": "CR_002",
+      "m4_block_ids": [
+        "M4_B_SAFETY"
+      ],
+      "required_any_patterns": [
+        "安全性",
+        "副作用",
+        "不良反应"
+      ],
+      "required_any_refs": [
+        "依赖",
+        "戒断",
+        "残留"
+      ],
+      "logic": "all_groups_required",
+      "message": "安全性描述必须包含依赖、戒断或残留效应的信息"
+    },
+    {
+      "rule_id": "CR_003",
+      "m4_block_ids": [
+        "M4_B_MECHANISM"
+      ],
+      "required_any_patterns": [
+        "作用机制",
+        "信号通路",
+        "睡眠调节"
+      ],
+      "required_any_refs": [
+        "精准作用",
+        "自然睡眠"
+      ],
+      "logic": "all_groups_required",
+      "message": "作用机制描述必须强调精准作用和自然睡眠的特点"
+    },
+    {
+      "rule_id": "CR_004",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "required_any_patterns": [
+        "剂量",
+        "用法",
+        "用药"
+      ],
+      "required_any_refs": [
+        "医生指导",
+        "个体化治疗"
+      ],
+      "logic": "all_groups_required",
+      "message": "用药信息必须包含医生指导和个体化治疗的内容"
+    },
+    {
+      "rule_id": "CR_005",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "required_any_patterns": [
+        "长期使用",
+        "短期治疗"
+      ],
+      "required_any_refs": [
+        "耐受性",
+        "有效性"
+      ],
+      "logic": "all_groups_required",
+      "message": "长期使用信息必须包含耐受性和有效性的内容"
+    },
+    {
+      "rule_id": "CR_006",
+      "m4_block_ids": [
+        "M4_B_SAFETY"
+      ],
+      "required_any_patterns": [
+        "老年人",
+        "中老年人"
+      ],
+      "required_any_refs": [
+        "跌倒风险",
+        "认知功能"
+      ],
+      "logic": "all_groups_required",
+      "message": "老年患者的安全性描述必须包含跌倒风险和认知功能的信息"
+    },
+    {
+      "rule_id": "CR_007",
+      "m4_block_ids": [
+        "M4_B_MECHANISM"
+      ],
+      "required_any_patterns": [
+        "传统药物",
+        "传统治疗"
+      ],
+      "required_any_refs": [
+        "局限性",
+        "副作用"
+      ],
+      "logic": "all_groups_required",
+      "message": "传统药物的描述必须包含局限性和副作用的信息"
+    },
+    {
+      "rule_id": "CR_008",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "required_any_patterns": [
+        "新型药物",
+        "新机制"
+      ],
+      "required_any_refs": [
+        "优势",
+        "创新"
+      ],
+      "logic": "all_groups_required",
+      "message": "新型药物的描述必须包含优势和创新的内容"
+    },
+    {
+      "rule_id": "CR_009",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "required_any_patterns": [
+        "疗效",
+        "效果"
+      ],
+      "required_any_refs": [
+        "入睡时间",
+        "睡眠时间",
+        "睡眠质量"
+      ],
+      "logic": "all_groups_required",
+      "message": "疗效描述必须包含入睡时间、睡眠时间或睡眠质量的信息"
+    },
+    {
+      "rule_id": "CR_010",
+      "m4_block_ids": [
+        "M4_B_SAFETY"
+      ],
+      "required_any_patterns": [
+        "停药",
+        "戒断"
+      ],
+      "required_any_refs": [
+        "医生指导",
+        "逐渐减量"
+      ],
+      "logic": "all_groups_required",
+      "message": "停药信息必须包含医生指导和逐渐减量的内容"
+    }
+  ],
+  "policy": {
+    "log_prefix": "Block Gate Validation Failed",
+    "action_on_failure": "drop_block"
+  },
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L4 — Lemborexant Product Knowledge"
+}

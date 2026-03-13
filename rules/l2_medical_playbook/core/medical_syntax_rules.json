@@ -1,0 +1,89 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L2",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L2 — 医学语法戒律 (Medical Syntax Rules)",
+  "version": "1.0",
+  "description": "医学写作领域增量戒律。在L1通用戒律基础上叠加。引擎根据Register选择tier_high（严谨医学R1-R3）或tier_low（医学科普R4-R5）。",
+  "applies_when": "active domain is medical writing",
+  "tier_high": {
+    "description": "严谨医学写作（R1-R3）：期刊社论、专业Brief、临床教育。在L1全部13条基础上，叠加以下3条医学强化规则。",
+    "register_scope": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "rules": [
+      {
+        "id": "MED_01",
+        "name": "术语双轨（强制）",
+        "overrides_L1": "SYN_06",
+        "rule": "医学术语首次出现时必须采用「术语（中文解释）」格式，后文保持术语一致，不做同义词替换。通用名与商品名首次同时出现。",
+        "bad_example": "主要不良反应……不良反应事件……相关不良反应改变",
+        "good_example": "主要不良反应（{AE名称}）……{AE名称}……{AE名称}",
+        "enforcement": "强制",
+        "origin_layer": "L2"
+      },
+      {
+        "id": "MED_02",
+        "name": "归因必须具名（学术级）",
+        "overrides_L1": "AI_10",
+        "rule": "所有引用必须注明具体来源：研究名称、第一作者、发表年份或指南名称+版本。禁止模糊归因。",
+        "forbidden_patterns": [
+          "专家认为",
+          "研究表明",
+          "行业报告显示",
+          "观察者指出",
+          "一些批评者认为",
+          "越来越多的证据"
+        ],
+        "bad_example": "研究表明该药物疗效显著。",
+        "good_example": "根据[研究名称]（[第一作者] et al., [年份]），[目标药物]在早期{疾病}中达到主要终点。",
+        "enforcement": "强制",
+        "origin_layer": "L2"
+      },
+      {
+        "id": "MED_03",
+        "name": "结尾临床落地",
+        "overrides_L1": "AI_13",
+        "rule": "文章结尾必须给出具体的临床行动建议：监测方案、用药调整决策树、转诊标准或患者管理checklist。禁止空泛展望。",
+        "bad_example": "[目标药物]的未来看起来光明。激动人心的时代即将到来。",
+        "good_example": "建议在启动治疗前完成{基因分型}和基线{影像检查}，治疗后按{监测方案}复查{影像检查}监测{不良反应}。",
+        "enforcement": "强制",
+        "origin_layer": "L2"
+      }
+    ]
+  },
+  "tier_low": {
+    "description": "医学科普写作（R4-R5）：大众科普、口语化传播。在L1全部13条基础上，叠加以下弱化版医学规则。",
+    "register_scope": [
+      "R4",
+      "R5"
+    ],
+    "rules": [
+      {
+        "id": "MED_01_LITE",
+        "name": "术语双轨（放宽）",
+        "overrides_L1": "SYN_06",
+        "rule": "医学术语首次出现时可直接用中文解释替代英文术语。如使用英文缩写，必须在首次出现时给出完整中文解释。后文保持一致。",
+        "bad_example": "主要不良反应是一种副作用……影像学异常反应也需要注意……这种不良反应要监测",
+        "good_example": "用药后可能出现短暂的{不良反应描述}（医学上称为{不良反应名称}）。多数{不良反应名称}没有症状，通过定期{检查方式}就能发现。",
+        "enforcement": "建议",
+        "origin_layer": "L2"
+      },
+      {
+        "id": "MED_02_LITE",
+        "name": "归因需有出处",
+        "overrides_L1": "AI_10",
+        "rule": "引用数据时注明来源研究或机构名称即可，不要求精确到作者+年份。但禁止完全无出处的断言。",
+        "bad_example": "研究表明这种药有效。",
+        "good_example": "一项大型国际临床试验（[研究名称]）显示，该药物能延缓早期认知衰退。",
+        "enforcement": "建议",
+        "origin_layer": "L2"
+      }
+    ]
+  }
+}

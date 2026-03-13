@@ -1,0 +1,65 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L1",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "_meta": {
+    "version": "1.0",
+    "layer": "L1",
+    "description": "Universal expression base — cross-industry transition phrases and forbidden expressions. Merged into every L2 audience profile at runtime via merge_expression_layers().",
+    "distilled_from": "L4_product_knowledge/lecanemab/m6_expression_library.json",
+    "distillation_date": "2026-03-01",
+    "distillation_rule": "Iron Law: 'Switch from medicine to beauty/auto/finance — does it still work? YES → L1'",
+    "merge_behavior": "universal_additions.transition_phrases are PREPENDED to each L2 profile's transition_phrases. universal_additions.forbidden_expressions are PREPENDED to each L2 profile's forbidden_expressions."
+  },
+  "universal_additions": {
+    "transition_phrases": [
+      "特别值得注意的是",
+      "这就出现了一个让人纠结的问题",
+      "一方面……另一方面……",
+      "但其实未必",
+      "更为致命的是",
+      "有趣的是",
+      "殊不知",
+      "实际上",
+      "诚然……但若……",
+      "因此，{争议}的本质，在于{根因}",
+      "通过与{参照物}对比可见，争议的本质是'{本质}'，而非'{否定}'",
+      "那么经过严密的推理，我们有充分的理由判断",
+      "这也与此前证据契合",
+      "落在每个家庭上，{宏观描述}就变成了{微观感受}",
+      "变化发生于{时间}前",
+      "如今，与{挑战}的抗争历程正在变得逐渐明朗",
+      "这种缓慢而不可逆的失去，不仅仅是{A}，也是{B}",
+      "虽然{限制}，但现有的{手段}依然对{目标}有巨大帮助",
+      "面对这些情形，人们常常一笑置之，认为不过是{常见误解}",
+      "现在回过头来复盘，",
+      "但命运也给{X}开了个玩笑：",
+      "这表面上是一种{A}，本质上却是一种{B}",
+      "最朴素的逻辑告诉我们",
+      "然而，{主体}开始出现审美疲劳",
+      "尘归尘，这次也不例外",
+      "经过前面烘托，请出今天的主角"
+    ],
+    "forbidden_expressions": [
+      "重磅",
+      "激动人心",
+      "颠覆性",
+      "划时代",
+      "终于",
+      "逆袭",
+      "完胜",
+      "碾压",
+      "吊打",
+      "王者",
+      "大家心里有数",
+      "聊聊",
+      "咱们",
+      "可能吧",
+      "据报道",
+      "有研究表明"
+    ]
+  }
+}

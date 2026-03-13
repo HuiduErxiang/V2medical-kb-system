@@ -1,0 +1,101 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/lemborexant/m6_evidence_database.json",
+    "product_id": "lemborexant",
+    "product_name_zh": "莱博雷生",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + 关键 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-LEMBorexant-SUNRISE1-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-LEMBorexant-NCT02783729-2019-JAMA",
+      "title": "SUNRISE 1 (NCT02783729)",
+      "citation": "Rosenberg R, Murphy P, Zammit G, et al. Comparison of lemborexant with placebo and zolpidem tartrate extended release for the treatment of older adults with insomnia disorder: a phase 3 randomized clinical trial. JAMA Netw Open. 2019;2:e1918254.",
+      "v1_source_id": "NCT02783729",
+      "metadata": {
+        "study_type": "Phase 3 RCT",
+        "indication": "insomnia"
+      }
+    },
+    {
+      "source_id": "V2-SRC-LEMBorexant-SUNRISE2-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-LEMBorexant-NCT02952820-2020-SLEEP",
+      "title": "SUNRISE 2 (NCT02952820)",
+      "citation": "Karppa M, Yardley J, Pinner K, et al. Long-term efficacy and tolerability of lemborexant compared with placebo in adults with insomnia disorder: results from the phase 3 randomized clinical trial SUNRISE 2. Sleep. 2020;43:zsaa123.",
+      "v1_source_id": "NCT02952820",
+      "metadata": {
+        "study_type": "Phase 3 RCT (long-term)"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-LEMBorexant-EFFICACY-001",
+      "fact_key": "FACT-LEMBorexant-SLEEP-ONSET",
+      "domain": "efficacy",
+      "definition": "Time to sleep onset",
+      "definition_zh": "缩短入睡时间",
+      "value": "to_be_extracted",
+      "unit": "minutes",
+      "fragment_ids": ["V2-FRAG-LEMBorexant-SUNRISE1-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-LEMBorexant-NCT02783729-2019-JAMA",
+        "asset_key": "AST-LEMBorexant-SUNRISE1-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_source_id": "NCT02783729",
+        "rebuild_notes": "从V1 facts.efficacy.time_to_sleep_onset 映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-LEMBorexant-EFFICACY-002",
+      "fact_key": "FACT-LEMBorexant-TOTAL-SLEEP-TIME",
+      "domain": "efficacy",
+      "definition": "Total sleep time improvement",
+      "definition_zh": "延长总睡眠时间",
+      "value": "to_be_extracted",
+      "unit": "minutes",
+      "fragment_ids": ["V2-FRAG-LEMBorexant-SUNRISE2-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-LEMBorexant-NCT02952820-2020-SLEEP",
+        "asset_key": "AST-LEMBorexant-SUNRISE2-PRIMARY",
+        "extraction_date": "2026-03-10"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-LEMBorexant-SAFETY-001",
+      "fact_key": "FACT-LEMBorexant-DAYTIME-SOMNOLENCE",
+      "domain": "safety",
+      "definition": "Daytime somnolence rate",
+      "definition_zh": "日间嗜睡发生率",
+      "value": "to_be_extracted",
+      "unit": "%",
+      "fragment_ids": ["V2-FRAG-LEMBorexant-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-LEMBorexant-NCT02783729-2019-JAMA",
+        "asset_key": "AST-LEMBorexant-SAFETY",
+        "extraction_date": "2026-03-10"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "facts": "efficacy and safety evidence with source_ids"
+    },
+    "v2_mapping": [
+      "V1 facts.efficacy -> V2 FactRecord (domain: efficacy)",
+      "V1 facts.safety -> V2 FactRecord (domain: safety)",
+      "source_ids mapped to V2 source_key"
+    ]
+  }
+}

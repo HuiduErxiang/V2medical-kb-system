@@ -1,0 +1,30 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "label": "disruptive_contrasting",
+  "style_positioning": "High-contrast challenger narrative emphasizing unmet need and strategic differentiation.",
+  "vocabulary_biases": [
+    "代际差",
+    "旧路径失效",
+    "破局点",
+    "速度优势",
+    "重构范式",
+    "临床拐点",
+    "差异化壁垒"
+  ],
+  "sentence_patterns": [
+    "真正的问题不是...，而是...。",
+    "如果继续沿用...，代价将是...。",
+    "当...被重构，...就不再是选择题。",
+    "这不是小修小补，而是路径级切换。"
+  ],
+  "rhetorical_devices": [
+    "Use sharp contrast pairs to create urgency",
+    "Highlight cost of inaction before proposing solution",
+    "Close sections with directional, competitive implications"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q4] 为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象…….docx",
+    "content_hash": "36e851004bf51d72",
+    "distilled_at": "2026-03-10T03:56:06.562270",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "word_count": 2472,
+    "source_file": "[2025-Q4] 为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "然而，在仑卡奈单抗（主要靶向Aβ小聚合物，间接清除斑块）的CLARITY AD试验中，患者并未在斑块...。",
+    "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……\n\n抗淀粉样蛋白抗体的临床应用为...。",
+    "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……\n\n抗淀粉样蛋白抗体的临床应用为...。",
+    "一个关键问题随之浮现：此时是否应该停止治疗？\n近期在阿尔茨海默病临床试验（CTAD）会议上披露的数据...。",
+    "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……\n\n抗淀粉样蛋白抗体的临床应用为...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……\n\n抗淀粉样蛋白抗体的临床应用为阿尔茨海默病（AD）治疗带来了前所未有的希望，作为疾病修饰疗法，抗Aβ治疗能够延缓AD疾病进程。然而随着治疗推进，部分患者脑内Aβ斑块达到影像学检测的阴性标准，即实现了“斑块清除”。一个关键问题随之浮现：此时是否应该停止治疗？\n近期在阿尔茨海默病临床试验（CTAD）会议上披露的数据与分析，给出了一个..."
+}

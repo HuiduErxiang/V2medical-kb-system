@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\场景_指导\\[2025-Q1] 当家中老人记性变差，我们做子女的该干些什么？V2.1 20250103.docx",
+    "content_hash": "2ad4e92f18d19d2a",
+    "distilled_at": "2026-03-10T03:56:06.846934",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "当家中老人记性变差，我们做子女的该干些什么？V2.1 20250103",
+    "content_type": "场景_指导",
+    "publication_quarter": "2025-Q1",
+    "word_count": 1414,
+    "source_file": "[2025-Q1] 当家中老人记性变差，我们做子女的该干些什么？V2.1 20250103.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "抗Aβ药物——仑卡奈单抗的临床试验证明，对于超过一半的症状尚不明显的极早期患者，仑卡奈单抗能够在至少...。",
+    "这时你在心里琢磨：父亲到底只是老了？还是患了阿尔茨海默病？\n要是真得病了，后面该咋整……\n1.\n怀疑...。",
+    "、\n\n2.\n确诊阿尔茨海默病会如何治疗\n对于已确诊阿尔茨海默病的患者，应当根据疾病症状，选用合适的阿...。",
+    "公益广告里患有阿尔茨海默病的老父亲，为记忆中的儿子带饺子的温馨场景实际上极少出现，照护者不得不忍受患...。",
+    "、\n\n2.\n确诊阿尔茨海默病会如何治疗\n对于已确诊阿尔茨海默病的患者，应当根据疾病症状，选用合适的阿...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "当家中老人记性变差，我们做子女的该干些什么？\n\n当一家子围坐桌边吃饭时，老爸又重复了一遍：“我早上看报戴的老花镜，这会儿怎就找不着啦？”就会让你心里再次“咯噔” 一下：这已经是他这周第三次丢眼镜了，这句话也在吃饭的这一会儿功夫重复了两遍。\n这时你在心里琢磨：父亲到底只是老了？还是患了阿尔茨海默病？\n要是真得病了，后面该咋整……\n1.\n怀疑阿尔茨海默病，应当及时就医\n当家中老人出现记性变差、说话前言..."
+}

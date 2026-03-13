@@ -1,0 +1,70 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product": "lecanemab",
+  "rules": [
+    {
+      "rule_id": "M4_R1_EFFICACY_BLOCK_NEEDS_EFFECT_AND_STATS",
+      "required_any_patterns": [
+        "VAR_EFFICACY_*"
+      ],
+      "required_any_refs": [
+        "P-value",
+        "HR"
+      ],
+      "logic": "all_groups_required",
+      "message": "Efficacy block requires at least one VAR_EFFICACY_* and one statistical anchor (P-value or HR).",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [
+        "M4_B_EFFICACY_DATA"
+      ],
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "M4_R2_SAFETY_BLOCK_NEEDS_INCIDENCE",
+      "required_any_refs": [
+        "incidence rate",
+        "发生率",
+        "AE incidence",
+        "VAR_SAFETY_*"
+      ],
+      "logic": "any_of",
+      "message": "Safety block requires incidence-rate style evidence anchor.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [
+        "M4_B_SAFETY"
+      ],
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "M4_R3_NEG_ENDPOINT_BLOCK_NEEDS_SAFETY_PROOF",
+      "required_any_patterns": [
+        "VAR_SAFETY_*"
+      ],
+      "logic": "all_groups_required",
+      "message": "Negative-endpoint-preservation block must include VAR_SAFETY_* evidence to keep clinical safety defensible.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [
+        "M4_B_负面终点"
+      ],
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "M4_R4_BIOMARKER_BLOCK_NEEDS_BIOMARKER_VAR",
+      "required_any_patterns": [
+        "VAR_BIOMARKER_*"
+      ],
+      "logic": "all_groups_required",
+      "message": "Biomarker block requires at least one VAR_BIOMARKER_* anchor.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [
+        "M4_B_BIOMARKER"
+      ],
+      "origin_layer": "L4"
+    }
+  ]
+}

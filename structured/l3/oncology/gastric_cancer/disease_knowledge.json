@@ -1,0 +1,852 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "gastric_cancer",
+    "version": "2.2.0",
+    "last_updated": "2026-03-02",
+    "description": "胃癌疾病特异性知识库，涵盖 HER2、Claudin18.2 通路及围手术期治疗策略"
+  },
+  "categories": {
+    "her2_pathway": {
+      "description": "HER2 overexpression and amplification in gastric cancer, testing methodologies, and clinical implications",
+      "entries": [
+        {
+          "id": "GASTRIC_HER2_001",
+          "title": "HER2 Prevalence in Gastric Cancer",
+          "title_zh": "胃癌中 HER2 表达 患病率",
+          "content": "HER2 overexpression or amplification occurs in approximately 15-20% of gastric and gastroesophageal junction adenocarcinomas. The prevalence varies by anatomical location, with higher rates observed in gastroesophageal junction tumors compared to distal gastric tumors. HER2 positivity is more common in intestinal-type tumors according to Lauren classification. This biomarker defines a distinct molecular subset of gastric cancer with therapeutic implications for anti-HER2 targeted therapies.",
+          "content_zh": "HER2 过表达或扩增发生在约 15-20% 的胃和胃食管交界处腺癌中。患病率 因解剖位置而异，胃食管交界处肿瘤的阳性率高于远端胃肿瘤。根据 Lauren 分型，HER2 阳性在肠型肿瘤中更常见。该生物标志物定义了胃癌的一个独特分子亚群，对 抗HER2 靶向治疗具有治疗意义。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "HER2_HETEROGENEITY_GC"
+          ]
+        },
+        {
+          "id": "GASTRIC_HER2_002",
+          "title": "HER2 Testing Criteria in Gastric Cancer",
+          "title_zh": "胃癌 HER2 检测标准",
+          "content": "HER2 testing in gastric cancer follows specific IHC scoring criteria distinct from breast cancer. IHC 3+ is defined as strong complete or basolateral membranous staining in ≥10% of tumor cells. IHC 2+ (equivocal) requires reflex FISH testing for amplification confirmation. IHC 0/1+ are considered HER2-negative. The scoring system accounts for the characteristic basolateral staining pattern observed in gastric adenocarcinoma.",
+          "content_zh": "胃癌 HER2 检测遵循区别于乳腺癌的特定 IHC 评分标准。IHC 3+ 定义为≥10% 肿瘤细胞强完全或基底侧膜染色。IHC 2+（不确定）需要反射性 FISH 检测确认扩增。IHC 0/1+ 被视为 HER2 阴性。评分系统考虑了胃腺癌中观察到的特征性基底侧染色模式。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "HER2_HETEROGENEITY_GC"
+          ]
+        },
+        {
+          "id": "GASTRIC_HER2_003",
+          "title": "HER2 Testing Concordance Challenges",
+          "title_zh": "HER2 检测一致性问题",
+          "content": "Concordance between biopsy and resection specimens for HER2 status in gastric cancer shows variability, with agreement rates ranging from 70-85%. Discrepancies may arise from tumor heterogeneity, sampling differences, or technical factors. Testing multiple biopsy samples from different tumor regions improves detection accuracy. Central pathology review is recommended in clinical trials to ensure standardized assessment.",
+          "content_zh": "胃癌 HER2 状态在活检和切除标本之间的一致性显示变异性，一致率范围为 70-85%。差异可能源于肿瘤异质性、取样差异或技术因素。从不同肿瘤区域检测多个活检样本可提高检测准确性。建议在临床试验中进行中心病理审查以确保标准化评估。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_MARRELLI_HER2_2011",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_HER2_004",
+          "title": "Intratumoral Heterogeneity of HER2 Expression",
+          "title_zh": "HER2 表达的瘤内异质性",
+          "content": "Gastric cancer demonstrates significant intratumoral heterogeneity in HER2 expression patterns. Different regions within the same tumor may show variable HER2 staining intensity and distribution. This heterogeneity poses challenges for accurate biomarker assessment and may contribute to treatment resistance. Multiple sampling strategies and careful pathological evaluation are essential for reliable HER2 status determination.",
+          "content_zh": "胃癌在 HER2 表达模式中表现出显著的瘤内异质性。同一肿瘤内的不同区域可能显示可变的 HER2 染色强度和分布。这种异质性对准确的生物标志物评估构成挑战，并可能导致治疗耐药。多种取样策略和仔细的病理评估对于可靠的 HER2 状态测定至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "HER2_HETEROGENEITY_GC",
+            "OGITANI_2016_BYSTANDER"
+          ]
+        },
+        {
+          "id": "GASTRIC_HER2_005",
+          "title": "HER2 Retesting After Disease Progression",
+          "title_zh": "疾病进展后 HER2 重新检测",
+          "content": "HER2 status may change between primary tumor and metastatic sites or after prior anti-HER2 therapy. Loss of HER2 expression occurs in approximately 20-30% of cases following progression on anti-HER2 treatment. Retesting at disease progression is recommended to guide subsequent therapy selection. Liquid biopsy approaches for HER2 assessment are under investigation but not yet standard practice.",
+          "content_zh": "HER2 状态可能在原发肿瘤和转移灶之间或在 既往 抗HER2 治疗后发生变化。约 20-30% 的病例在 抗HER2 治疗进展后出现 HER2 表达丢失。建议在疾病进展时重新检测以指导后续治疗选择。用于 HER2 评估的液体活检方法正在研究中，但尚未成为标准实践。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "GASTHER3_HER2_LOSS"
+          ]
+        },
+        {
+          "id": "GASTRIC_HER2_006",
+          "title": "HER2-Low Concept in Gastric Cancer",
+          "title_zh": "胃癌中的 HER2-low 概念",
+          "content": "The HER2-low phenotype, defined as IHC 1+ or IHC 2+/FISH-negative, represents a substantial proportion of gastric cancers. Emerging ADC therapies with bystander killing effects may benefit patients with HER2-low expression. This expands the potential treatment population beyond traditional HER2-positive definitions. Ongoing clinical trials are evaluating the efficacy of novel ADCs in HER2-low gastric cancer populations.",
+          "content_zh": "HER2-low 表型定义为 IHC 1+ 或 IHC 2+/FISH 阴性，代表胃癌的相当大比例。具有旁观者杀伤效应的新兴 ADC 疗法可能使 HER2-low 表达患者受益。这将潜在治疗人群扩大到传统 HER2 阳性定义之外。正在进行的临床试验正在评估新型 ADC 在 HER2-low 胃癌人群中的疗效。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "OGITANI_2016_BYSTANDER"
+          ]
+        }
+      ]
+    },
+    "claudin18_2_pathway": {
+      "description": "Claudin 18.2 expression, detection methods, and therapeutic targeting in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_CLDN182_001",
+          "title": "Claudin 18.2 Prevalence in Gastric Cancer",
+          "title_zh": "胃癌中 Claudin 18.2 表达 患病率",
+          "content": "Claudin 18.2 is expressed in approximately 30-40% of gastric and gastroesophageal junction adenocarcinomas. Expression is defined as moderate to strong complete membranous staining in ≥75% of tumor cells using validated assays. Claudin 18.2 positivity shows variable geographic distribution with higher rates in Asian populations. This biomarker represents an important therapeutic target independent of HER2 status.",
+          "content_zh": "Claudin 18.2 在约 30-40% 的胃和胃食管交界处腺癌中表达。使用验证的检测方法，表达定义为≥75% 肿瘤细胞中度至强完全膜染色。Claudin 18.2 阳性显示可变的地理分布，在亚洲人群中阳性率更高。该生物标志物代表独立于 HER2 状态的重要治疗靶点。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_CLDN182_002",
+          "title": "Claudin 18.2 Detection Methodology",
+          "title_zh": "Claudin 18.2 检测方法学",
+          "content": "The VENTANA CLDN18 (43-14A) RxDx assay is a validated IHC test for Claudin 18.2 detection in gastric cancer. The assay uses standardized scoring criteria based on staining intensity and percentage of positive tumor cells. Quality control measures include appropriate tissue fixation and processing protocols. Central laboratory testing ensures consistency across clinical trial sites and commercial settings.",
+          "content_zh": "VENTANA CLDN18 (43-14A) RxDx assay 是用于胃癌 Claudin 18.2 检测的验证 IHC 检测。该检测使用基于染色强度和阳性肿瘤细胞百分比的标准化评分标准。质量控制措施包括适当的组织固定和处理方案。中心实验室检测确保临床试验站点和商业环境的一致性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_CLDN182_003",
+          "title": "Claudin 18.2 Threshold Definitions",
+          "title_zh": "Claudin 18.2 阈值定义",
+          "content": "Multiple threshold definitions exist for Claudin 18.2 positivity in clinical trials. The most common definition requires ≥75% of tumor cells with moderate to strong membranous staining. Alternative thresholds of ≥40% or ≥50% have been explored in different studies. Threshold selection impacts patient population size and treatment effect magnitude. Harmonization of testing criteria remains an area of active investigation.",
+          "content_zh": "临床试验中存在多种 Claudin 18.2 阳性阈值定义。最常见的定义要求≥75% 的肿瘤细胞具有中度至强膜染色。不同研究中已探索≥40% 或≥50% 的替代阈值。阈值选择影响患者人群规模和治疗效果幅度。检测标准的协调仍然是积极研究的领域。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_CLDN182_004",
+          "title": "Claudin 18.2 and HER2 Co-expression Patterns",
+          "title_zh": "Claudin 18.2 与 HER2 共表达模式",
+          "content": "Claudin 18.2 and HER2 can be co-expressed in a subset of gastric cancers, occurring in approximately 10-15% of cases. Co-expression patterns may influence treatment sequencing strategies. Some tumors show discordant expression between primary and metastatic sites. Understanding co-expression profiles helps optimize biomarker-driven treatment approaches in advanced gastric cancer.",
+          "content_zh": "Claudin 18.2 和 HER2 可在胃癌亚群中共表达，发生在约 10-15% 的病例中。共表达模式可能影响治疗顺序策略。一些肿瘤在原发灶和转移灶之间显示不一致的表达。了解共表达谱有助于优化晚期胃癌的生物标志物驱动治疗方法。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_CLDN182_005",
+          "title": "Claudin 18.2 and PD-L1 Co-expression",
+          "title_zh": "Claudin 18.2 与 PD-L1 共表达",
+          "content": "Claudin 18.2 expression shows variable correlation with PD-L1 status in gastric cancer. Studies report both overlapping and mutually exclusive expression patterns. Co-expression may identify patients who could benefit from combination therapeutic approaches. Biomarker profiling for both targets enables personalized treatment selection in first-line and later-line settings.",
+          "content_zh": "Claudin 18.2 表达与胃癌中 PD-L1 状态显示可变的相关性。研究报告重叠和相互排斥的表达模式。共表达可识别可能从联合治疗方法中受益的患者。对两个靶点的生物标志物分析可在一线和后续线治疗中实现个体化治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        }
+      ]
+    },
+    "msi_mmr_pathway": {
+      "description": "Microsatellite instability and mismatch repair deficiency in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_MSI_001",
+          "title": "MSI-H/dMMR Prevalence in Gastric Cancer",
+          "title_zh": "胃癌中 MSI-H/dMMR 患病率",
+          "content": "Microsatellite instability-high (MSI-H) or mismatch repair deficiency (dMMR) occurs in approximately 5-7% of unselected gastric cancers. The prevalence is higher in proximal gastric tumors and intestinal-type histology. MSI-H status shows geographic variation with higher rates in Asian and South American populations. This biomarker has both prognostic and predictive implications for treatment selection.",
+          "content_zh": "微卫星不稳定高（MSI-H）或错配修复缺陷（dMMR）发生在约 5-7% 的未选择胃癌中。患病率 在近端胃肿瘤和肠型组织学中更高。MSI-H 状态显示地理变异，在亚洲和南美人群中阳性率更高。该生物标志物对治疗选择具有预后和预测意义。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BARTLETT_MSI_2017",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_MSI_002",
+          "title": "Prognostic Value of MSI-H in Gastric Cancer",
+          "title_zh": "MSI-H 在胃癌中的预后价值",
+          "content": "MSI-H gastric cancers demonstrate improved overall survival compared to microsatellite stable tumors in early-stage disease. This favorable prognosis is observed across multiple patient cohorts and geographic regions. The prognostic benefit may relate to enhanced immune surveillance and distinct tumor biology. MSI-H status provides important risk stratification information for clinical management.",
+          "content_zh": "与微卫星稳定肿瘤相比，MSI-H 胃癌在早期疾病中显示改善的总生存期。在多个患者队列和地理区域中观察到这种有利的预后。预后获益可能与增强的免疫监视和独特的肿瘤生物学有关。MSI-H 状态为临床管理提供重要的风险分层信息。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BARTLETT_MSI_2017",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_MSI_003",
+          "title": "Predictive Value of MSI-H for Immunotherapy",
+          "title_zh": "MSI-H 对免疫治疗的预测价值",
+          "content": "MSI-H status is a strong predictive biomarker for response to immune checkpoint inhibitors in gastric cancer. High tumor mutational burden and neoantigen load contribute to enhanced immunotherapy sensitivity. PD-1 inhibitors show durable responses in MSI-H gastric cancer populations across multiple clinical trials. Regulatory approvals support immunotherapy use in MSI-H/dMMR solid tumors including gastric cancer.",
+          "content_zh": "MSI-H 状态是胃癌中对免疫检查点抑制剂反应的强预测生物标志物。高肿瘤突变负荷和新抗原负荷有助于增强免疫治疗敏感性。在多项临床试验中，PD-1 抑制剂在 MSI-H 胃癌人群中显示持久反应。监管批准支持免疫治疗在包括胃癌在内的 MSI-H/dMMR 实体瘤中使用。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BARTLETT_MSI_2017",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_MSI_004",
+          "title": "MSI Testing Methodologies in Gastric Cancer",
+          "title_zh": "胃癌 MSI 检测方法学",
+          "content": "MSI testing can be performed using PCR-based methods or immunohistochemistry for mismatch repair proteins. PCR assays evaluate instability at standardized microsatellite markers including BAT-25 and BAT-26. IHC assesses expression of MLH1, MSH2, MSH6, and PMS2 proteins. Both methods show high concordance when properly validated and quality controlled.",
+          "content_zh": "MSI 检测可使用基于 PCR 的方法或错配修复蛋白的免疫组化进行。PCR 检测评估标准化微卫星标志物（包括 BAT-25 和 BAT-26）的不稳定性。IHC 评估 MLH1、MSH2、MSH6 和 PMS2 蛋白的表达。当正确验证和质量控制时，两种方法显示高一致性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BARTLETT_MSI_2017",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        }
+      ]
+    },
+    "pd_l1_in_gastric": {
+      "description": "PD-L1 expression patterns, scoring systems, and clinical utility in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_PDL1_001",
+          "title": "PD-L1 Expression Patterns in Gastric Cancer",
+          "title_zh": "胃癌中 PD-L1 表达模式",
+          "content": "PD-L1 expression in gastric cancer shows heterogeneous distribution across tumor cells and immune cells. Expression levels vary by anatomical location, histological subtype, and geographic region. Tumor proportion score (TPS) and combined positive score (CPS) are both used for assessment. Understanding expression patterns helps inform immunotherapy treatment decisions.",
+          "content_zh": "胃癌中 PD-L1 表达在肿瘤细胞和免疫细胞中显示异质性分布。表达水平因解剖位置、组织学亚型和地理区域而异。肿瘤比例评分（TPS）和联合阳性评分（CPS）均用于评估。了解表达模式有助于为免疫治疗决策提供信息。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_GASTRIC_2025",
+            "ONCO_SRC_CSCO_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PDL1_002",
+          "title": "CPS vs TPS Scoring in Gastric Cancer",
+          "title_zh": "胃癌中 CPS 与 TPS 评分",
+          "content": "Combined positive score (CPS) is the preferred PD-L1 scoring system for gastric cancer immunotherapy selection. CPS includes staining of tumor cells, lymphocytes, and macrophages divided by total viable tumor cells. TPS evaluates only tumor cell membrane staining and is less commonly used in gastric cancer. CPS has demonstrated superior predictive value for immunotherapy benefit in clinical trials.",
+          "content_zh": "联合阳性评分（CPS）是胃癌免疫治疗选择的首选 PD-L1 评分系统。CPS 包括肿瘤细胞、淋巴细胞和巨噬细胞的染色除以总活肿瘤细胞。TPS 仅评估肿瘤细胞膜染色，在胃癌中较少使用。CPS 在临床试验中已证明对免疫治疗获益具有更优的预测价值。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_GASTRIC_2025",
+            "ONCO_SRC_CSCO_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PDL1_003",
+          "title": "PD-L1 CPS Thresholds in Gastric Cancer",
+          "title_zh": "胃癌中 PD-L1 CPS 阈值",
+          "content": "Multiple CPS thresholds have been evaluated for predicting immunotherapy response in gastric cancer. CPS ≥5 and CPS ≥10 are commonly used cutoffs in clinical practice and trials. Higher CPS thresholds generally correlate with greater treatment benefit magnitude. Threshold selection depends on specific therapeutic agent and regulatory approval criteria.",
+          "content_zh": "已评估多种 CPS 阈值用于预测胃癌中的免疫治疗反应。CPS ≥5 和 CPS ≥10 是临床实践和试验中常用的截断值。较高的 CPS 阈值通常与更大的治疗获益幅度相关。阈值选择取决于特定治疗药物和监管批准标准。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_GASTRIC_2025",
+            "ONCO_SRC_CSCO_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PDL1_004",
+          "title": "Predictive Value of PD-L1 for Immunotherapy",
+          "title_zh": "PD-L1 对免疫治疗的预测价值",
+          "content": "PD-L1 expression by CPS is a validated predictive biomarker for PD-1 inhibitor benefit in gastric cancer. Patients with CPS ≥5 show improved overall survival with immunotherapy combinations. The predictive value is strongest in first-line treatment settings. PD-L1 testing is recommended for all patients with advanced gastric cancer to guide treatment selection.",
+          "content_zh": "通过 CPS 的 PD-L1 表达是胃癌中 PD-1 抑制剂获益的验证预测生物标志物。CPS ≥5 的患者在免疫治疗联合治疗中显示改善的总生存期。预测价值在一线治疗环境中最强。建议对所有晚期胃癌患者进行 PD-L1 检测以指导治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_GASTRIC_2025",
+            "ONCO_SRC_CSCO_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PDL1_005",
+          "title": "PD-L1 Testing Assays in Gastric Cancer",
+          "title_zh": "胃癌中 PD-L1 检测检测法",
+          "content": "Multiple validated PD-L1 IHC assays are available for gastric cancer testing including 22C3, 28-8, and SP263 clones. Assay selection depends on the specific therapeutic agent and regulatory requirements. Cross-assay concordance is generally high but not perfect. Standardized testing protocols and quality control measures ensure reliable results across laboratories.",
+          "content_zh": "多种验证的 PD-L1 IHC 检测法可用于胃癌检测，包括 22C3、28-8 和 SP263 克隆。检测法选择取决于特定治疗药物和监管要求。检测法间一致性通常较高但不完美。标准化检测方案和质量控制措施确保实验室间结果可靠。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_GASTRIC_2025",
+            "ONCO_SRC_CSCO_GASTRIC_2025"
+          ]
+        }
+      ]
+    },
+    "gastric_classification": {
+      "description": "Histological and molecular classification systems for gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_CLASS_001",
+          "title": "Lauren Classification System",
+          "title_zh": "Lauren 分型系统",
+          "content": "The Lauren classification divides gastric adenocarcinoma into intestinal, diffuse, and mixed types based on histological patterns. Intestinal type shows glandular formation and is associated with environmental risk factors including H. pylori infection. Diffuse type demonstrates discohesive cells with signet ring morphology and tends to occur in younger patients. This classification has prognostic implications and correlates with molecular subtypes.",
+          "content_zh": "Lauren 分型根据组织学模式将胃腺癌分为肠型、弥漫型和混合型。肠型显示腺体形成，与环境风险因素（包括幽门螺杆菌感染）相关。弥漫型显示具有印戒形态的解离细胞，倾向于发生在较年轻患者中。该分型具有预后意义并与分子亚型相关。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_CLASS_002",
+          "title": "WHO Histological Classification",
+          "title_zh": "WHO 组织学分型",
+          "content": "The WHO classification system categorizes gastric cancer into multiple histological subtypes including tubular, papillary, mucinous, and poorly cohesive carcinomas. Each subtype has distinct morphological features and clinical behavior. The classification provides standardized terminology for pathological reporting. Histological subtype influences treatment response and prognosis.",
+          "content_zh": "WHO 分型系统将胃癌分为多种组织学亚型，包括管状癌、乳头状癌、黏液癌和低分化癌。每个亚型具有独特的形态学特征和临床行为。该分型为病理报告提供标准化术语。组织学亚型影响治疗反应和预后。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_CLASS_003",
+          "title": "TCGA Molecular Subtypes",
+          "title_zh": "TCGA 分子亚型",
+          "content": "The Cancer Genome Atlas identified four molecular subtypes of gastric cancer: EBV-positive, MSI, genomically stable, and chromosomal instability. EBV-positive tumors show PIK3CA mutations and PD-L1/PD-L2 amplification. MSI tumors demonstrate hypermutation and improved prognosis. Genomically stable tumors are enriched for diffuse histology and CDH1 mutations. CIN tumors show aneuploidy and HER2 amplification.",
+          "content_zh": "癌症基因组图谱确定了四种胃癌分子亚型：EBV 阳性、MSI、基因组稳定和染色体不稳定。EBV 阳性肿瘤显示 PIK3CA 突变和 PD-L1/PD-L2 扩增。MSI 肿瘤显示高突变和改善的预后。基因组稳定肿瘤富集弥漫型组织学和 CDH1 突变。CIN 肿瘤显示异倍体和 HER2 扩增。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_CLASS_004",
+          "title": "EBV-Positive Gastric Cancer Subtype",
+          "title_zh": "EBV 阳性胃癌亚型",
+          "content": "EBV-positive gastric cancer represents approximately 8-10% of all gastric adenocarcinomas. These tumors show distinct molecular features including PIK3CA mutations and extreme PD-L1 expression. EBV-positive status is associated with male predominance and proximal tumor location. This subtype demonstrates enhanced sensitivity to immunotherapy approaches.",
+          "content_zh": "EBV 阳性胃癌代表所有胃腺癌的约 8-10%。这些肿瘤显示独特的分子特征，包括 PIK3CA 突变和极端 PD-L1 表达。EBV 阳性状态与男性优势和近端肿瘤位置相关。该亚型显示对免疫治疗方法的增强敏感性。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_CLASS_005",
+          "title": "Genomically Stable Gastric Cancer",
+          "title_zh": "基因组稳定型胃癌",
+          "content": "Genomically stable gastric cancers demonstrate low somatic copy number alterations and mutation rates. This subtype is strongly associated with diffuse histology and younger age at diagnosis. CDH1 mutations and RHOA pathway alterations are characteristic molecular features. These tumors tend to have poorer prognosis and limited response to conventional chemotherapy.",
+          "content_zh": "基因组稳定型胃癌显示低体细胞拷贝数改变和突变率。该亚型与弥漫型组织学和诊断时较年轻年龄强烈相关。CDH1 突变和 RHOA 通路改变是特征性分子特征。这些肿瘤倾向于具有较差的预后和对传统化疗的有限反应。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "gastric_staging": {
+      "description": "Staging systems and classification for gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_STAGING_001",
+          "title": "AJCC 8th Edition Gastric Cancer Staging",
+          "title_zh": "AJCC 第 8 版胃癌分期",
+          "content": "The AJCC 8th edition staging system for gastric cancer uses TNM classification based on tumor depth, nodal involvement, and metastasis. T stage ranges from T1 (mucosa/submucosa) to T4 (adjacent structure invasion). N stage is determined by number of positive lymph nodes (N1: 1-2, N2: 3-6, N3: ≥7). M stage distinguishes localized from metastatic disease with important treatment implications.",
+          "content_zh": "AJCC 第 8 版胃癌分期系统使用基于肿瘤深度、淋巴结受累和转移的 TNM 分型。T 分期范围从 T1（黏膜/黏膜下层）到 T4（邻近结构侵犯）。N 分期由阳性淋巴结数量决定（N1:1-2，N2:3-6，N3:≥7）。M 分期区分局限性和转移性疾病，具有重要的治疗意义。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_STAGING_002",
+          "title": "Siewert Classification for GEJ Tumors",
+          "title_zh": "GEJ 肿瘤的 Siewert 分型",
+          "content": "The Siewert classification categorizes gastroesophageal junction adenocarcinomas into three types based on tumor center location. Type I tumors are centered 1-5 cm above the anatomical cardia and treated as esophageal cancer. Type II tumors are centered within 1 cm above to 2 cm below the cardia (true cardia cancer). Type III tumors are centered 2-5 cm below the cardia and managed as gastric cancer.",
+          "content_zh": "Siewert 分型根据肿瘤中心位置将胃食管交界处腺癌分为三型。I 型肿瘤中心位于解剖贲门上 1-5 cm，按食管癌治疗。II 型肿瘤中心位于贲门上 1 cm 至下 2 cm 内（真正贲门癌）。III 型肿瘤中心位于贲门下 2-5 cm，按胃癌管理。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_STAGING_003",
+          "title": "Surgical Implications of Siewert Classification",
+          "title_zh": "Siewert 分型的手术意义",
+          "content": "Siewert classification guides surgical approach and extent of resection for GEJ tumors. Type I tumors typically require esophagectomy with mediastinal lymphadenectomy. Type II tumors may be approached via extended gastrectomy or esophagectomy depending on institutional preference. Type III tumors undergo gastrectomy with D2 lymph node dissection. Classification impacts prognosis and adjuvant treatment decisions.",
+          "content_zh": "Siewert 分型指导 GEJ 肿瘤的手术方法和切除范围。I 型肿瘤通常需要食管切除术加纵隔淋巴结清扫。II 型肿瘤可根据机构偏好通过扩大胃切除术或食管切除术处理。III 型肿瘤进行胃切除术加 D2 淋巴结清扫。分型影响预后和辅助治疗决策。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_STAGING_004",
+          "title": "Nodal Staging in Gastric Cancer",
+          "title_zh": "胃癌淋巴结分期",
+          "content": "Nodal staging in gastric cancer requires examination of at least 16 lymph nodes for accurate classification. D2 lymphadenectomy is the standard surgical approach in specialized centers. The number of positive nodes strongly correlates with survival outcomes. N3 disease (≥7 positive nodes) indicates high-risk features requiring comprehensive multimodal therapy.",
+          "content_zh": "胃癌淋巴结分期需要检查至少 16 个淋巴结以进行准确分型。D2 淋巴结清扫是专业中心的标准手术方法。阳性淋巴结数量与生存结果强烈相关。N3 疾病（≥7 个阳性淋巴结）表明需要全面多模式治疗的高危特征。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_STAGING_005",
+          "title": "Metastatic Patterns in Gastric Cancer",
+          "title_zh": "胃癌转移模式",
+          "content": "Gastric cancer commonly metastasizes to liver, peritoneum, distant lymph nodes, and lungs. Peritoneal carcinomatosis is a distinctive pattern associated with diffuse histology and poor prognosis. Oligometastatic disease may be considered for aggressive local therapy in selected patients. Understanding metastatic patterns guides surveillance strategies and treatment selection.",
+          "content_zh": "胃癌常转移至肝脏、腹膜、远处淋巴结和肺部。腹膜癌病是与弥漫型组织学和较差预后相关的独特模式。寡转移疾病在选定患者中可考虑积极局部治疗。了解转移模式指导监测策略和治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "treatment_landscape_1l": {
+      "description": "First-line treatment options and strategies for advanced gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_1L_001",
+          "title": "First-Line HER2-Positive Treatment",
+          "title_zh": "一线 HER2 阳性治疗",
+          "content": "First-line treatment for HER2-positive gastric cancer combines anti-HER2 monoclonal antibody with fluoropyrimidine and platinum chemotherapy. This approach demonstrated significant overall survival benefit compared to chemotherapy alone. Treatment continues until disease progression or unacceptable toxicity. The regimen represents the standard of care for HER2-positive advanced gastric cancer.",
+          "content_zh": "HER2 阳性胃癌的一线治疗将 抗HER2 单克隆抗体与氟尿嘧啶和铂类化疗联合。与单纯化疗相比，该方法显示显著的总生存获益。治疗持续至疾病进展或不可接受的毒性。该方案代表 HER2 阳性晚期胃癌的标准治疗。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_1L_002",
+          "title": "First-Line HER2-Negative Treatment",
+          "title_zh": "一线 HER2 阴性治疗",
+          "content": "First-line treatment for HER2-negative gastric cancer consists of fluoropyrimidine and platinum doublet chemotherapy. Common regimens include FOLFOX, CAPOX, or SOX depending on geographic preferences. Immunotherapy combinations are added for patients with PD-L1 positive tumors. Treatment selection considers patient performance status, comorbidities, and biomarker profile.",
+          "content_zh": "HER2 阴性胃癌的一线治疗包括氟尿嘧啶和铂类双药化疗。常见方案包括 FOLFOX、CAPOX 或 SOX，具体取决于地理偏好。对于 PD-L1 阳性肿瘤患者加用免疫治疗联合治疗。治疗选择考虑患者体能状态、合并症和生物标志物谱。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_1L_003",
+          "title": "Immunotherapy in First-Line Gastric Cancer",
+          "title_zh": "免疫治疗在一线胃癌中的应用",
+          "content": "PD-1 inhibitor combinations with chemotherapy are approved for first-line treatment of PD-L1 positive gastric cancer. Benefit is greatest in patients with CPS ≥5 or higher thresholds. Immunotherapy is combined with fluoropyrimidine-platinum backbone regimens. Treatment continues with immunotherapy maintenance after chemotherapy completion in some protocols.",
+          "content_zh": "PD-1 抑制剂与化疗的联合治疗获批用于 PD-L1 阳性胃癌的一线治疗。在 CPS ≥5 或更高阈值的患者中获益最大。免疫治疗与氟尿嘧啶 - 铂类骨干方案联合。在某些方案中，化疗完成后继续免疫治疗维持。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_1L_004",
+          "title": "CLDN18.2-Targeted First-Line Therapy",
+          "title_zh": "CLDN18.2 靶向一线治疗",
+          "content": "Anti-CLDN18.2 antibodies combined with chemotherapy represent an emerging first-line option for CLDN18.2-positive gastric cancer. Clinical trials demonstrated improved progression-free and overall survival in biomarker-selected populations. This approach targets a distinct patient population from HER2-directed therapy. Regulatory approvals support this treatment in CLDN18.2-positive advanced gastric cancer.",
+          "content_zh": "抗CLDN18.2 抗体与化疗联合代表 CLDN18.2 阳性胃癌的新兴一线选择。临床试验在生物标志物选择人群中显示改善的无进展生存期和总生存期。该方法靶向与 HER2 导向治疗不同的人群。监管批准支持该治疗在 CLDN18.2 阳性晚期胃癌中的应用。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_1L_005",
+          "title": "Chemotherapy Backbone Selection",
+          "title_zh": "化疗骨干方案选择",
+          "content": "Fluoropyrimidine-platinum doublets form the chemotherapy backbone for first-line gastric cancer treatment. Capecitabine or 5-FU are preferred fluoropyrimidines with oxaliplatin or cisplatin as platinum partners. Regional preferences influence regimen selection with SOX favored in Asia. Triple regimens adding taxanes or anthracyclines are reserved for fit patients in specialized centers.",
+          "content_zh": "氟尿嘧啶 - 铂类双药形成胃癌一线治疗的化疗骨干。卡培他滨或 5-FU 是优选的氟尿嘧啶类，奥沙利铂或顺铂作为铂类搭档。区域偏好影响方案选择，SOX 在亚洲更受青睐。在专业中心，加用紫杉类或蒽环类的三药方案保留用于适合的患者。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "treatment_landscape_2l": {
+      "description": "Second-line treatment options for advanced gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_2L_001",
+          "title": "Ramucirumab-Based Second-Line Therapy",
+          "title_zh": "基于 Ramucirumab 的二线治疗",
+          "content": "Anti-VEGFR2 antibody combined with paclitaxel is a standard second-line option for advanced gastric cancer. This combination demonstrated overall survival benefit compared to paclitaxel monotherapy. The regimen is well-tolerated with manageable toxicity profile. This represents a biomarker-independent treatment option for second-line setting.",
+          "content_zh": "抗VEGFR2 抗体与紫杉醇联合是晚期胃癌的标准二线选择。与紫杉醇单药治疗相比，该联合治疗显示总生存获益。该方案耐受性良好，毒性特征可控。这代表二线环境中不依赖生物标志物的治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_2L_002",
+          "title": "Second-Line Options for HER2-Positive Disease",
+          "title_zh": "HER2 阳性疾病的二线选择",
+          "content": "HER2-positive gastric cancer progressing on first-line anti-HER2 therapy has multiple second-line options. Anti-HER2 ADC agents show promising activity in this setting. Continuation of HER2 blockade with different mechanisms is a key treatment principle. Treatment selection considers prior therapy exposure and patient performance status.",
+          "content_zh": "在一线 抗HER2 治疗进展的 HER2 阳性胃癌有多种二线选择。抗HER2 ADC 药物在该环境中显示有前景的活性。用不同机制继续 HER2 阻断是关键治疗原则。治疗选择考虑既往治疗暴露和患者体能状态。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_2L_003",
+          "title": "Immunotherapy in Second-Line Gastric Cancer",
+          "title_zh": "免疫治疗在二线胃癌中的应用",
+          "content": "PD-1 inhibitor monotherapy is approved for second-line treatment of gastric cancer in biomarker-selected populations. Patients with MSI-H or high PD-L1 expression derive greatest benefit. Immunotherapy offers favorable toxicity profile compared to cytotoxic chemotherapy. Biomarker testing at progression helps identify candidates for immunotherapy.",
+          "content_zh": "PD-1 抑制剂单药治疗获批用于生物标志物选择人群的胃癌二线治疗。MSI-H 或高 PD-L1 表达患者获益最大。与细胞毒性化疗相比，免疫治疗提供有利的毒性特征。进展时的生物标志物检测有助于识别免疫治疗候选患者。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_2L_004",
+          "title": "Chemotherapy Options in Second-Line Setting",
+          "title_zh": "二线环境中的化疗选择",
+          "content": "Single-agent chemotherapy options for second-line gastric cancer include taxanes, irinotecan, or fluoropyrimidines. Paclitaxel and docetaxel are commonly used taxane agents. Irinotecan-based regimens show comparable efficacy to taxane approaches. Choice depends on prior chemotherapy exposure, toxicity profile, and patient preferences.",
+          "content_zh": "二线胃癌的单药化疗选择包括紫杉类、伊立替康或氟尿嘧啶类。紫杉醇和多西他赛是常用的紫杉类药物。基于伊立替康的方案显示与紫杉类方法相当的疗效。选择取决于既往化疗暴露、毒性特征和患者偏好。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_2L_005",
+          "title": "Treatment Selection by Biomarker in Second-Line",
+          "title_zh": "二线中按生物标志物的治疗选择",
+          "content": "Biomarker status guides second-line treatment selection in gastric cancer. HER2-positive patients receive anti-HER2 directed therapies including ADC agents. MSI-H patients are candidates for immunotherapy regardless of line of therapy. CLDN18.2 status may inform emerging treatment options in clinical trials. Comprehensive biomarker profiling optimizes treatment sequencing.",
+          "content_zh": "生物标志物状态指导胃癌二线治疗选择。HER2 阳性患者接受 抗HER2 导向治疗，包括 ADC 药物。MSI-H 患者无论治疗线数如何都是免疫治疗的候选者。CLDN18.2 状态可能在临床试验中告知新兴治疗选择。全面的生物标志物分析优化治疗顺序。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "treatment_landscape_3l_plus": {
+      "description": "Third-line and later treatment options for advanced gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_3L_001",
+          "title": "Third-Line Treatment Principles",
+          "title_zh": "三线治疗原则",
+          "content": "Third-line treatment selection in gastric cancer depends on prior therapy exposure and biomarker status. Performance status becomes increasingly important for treatment tolerance. Single-agent approaches are preferred over combination regimens. Goals of care discussions help align treatment choices with patient preferences and expectations.",
+          "content_zh": "胃癌三线治疗选择取决于既往治疗暴露和生物标志物状态。体能状态对治疗耐受性变得越来越重要。单药方法优于联合方案。治疗目标讨论有助于使治疗选择与患者偏好和期望保持一致。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_3L_002",
+          "title": "Immunotherapy in Later-Line Gastric Cancer",
+          "title_zh": "免疫治疗在后续线胃癌中的应用",
+          "content": "PD-1 inhibitor monotherapy is an option for later-line gastric cancer treatment in selected populations. Patients with MSI-H status show durable responses regardless of treatment line. PD-L1 expression may predict benefit in later-line settings though evidence is less robust. Immunotherapy offers favorable quality of life compared to cytotoxic options.",
+          "content_zh": "PD-1 抑制剂单药治疗是选定人群后续线胃癌治疗的选择。MSI-H 状态患者无论治疗线数如何均显示持久反应。PD-L1 表达可能预测后续线环境中的获益，尽管证据不太有力。与细胞毒性选择相比，免疫治疗提供更有利的生活质量。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_3L_003",
+          "title": "ADC Therapy for HER2-Positive Later-Line",
+          "title_zh": "HER2 阳性后续线的 ADC 治疗",
+          "content": "Anti-HER2 ADC agents demonstrate significant activity in later-line HER2-positive gastric cancer. These drugs combine targeted delivery with cytotoxic payload for enhanced efficacy. Response rates exceed those of conventional chemotherapy in this setting. ADC therapy represents an important option after progression on earlier anti-HER2 treatments.",
+          "content_zh": "抗HER2 ADC 药物在后续线 HER2 阳性胃癌中显示显著活性。这些药物将靶向递送与细胞毒性载荷结合以增强疗效。在该环境中，缓解率超过传统化疗。ADC 治疗代表早期 抗HER2 治疗进展后的重要选择。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_3L_004",
+          "title": "Emerging Targets in Later-Line Therapy",
+          "title_zh": "后续线治疗中的新兴靶点",
+          "content": "Novel therapeutic targets are under investigation for later-line gastric cancer treatment. FGFR2, MET, and TROP2 represent promising targets for antibody-drug conjugates. Clinical trials evaluate these approaches in biomarker-selected populations. Access to clinical trials should be considered for eligible patients in later-line settings.",
+          "content_zh": "新型治疗靶点正在研究中用于后续线胃癌治疗。FGFR2、MET 和 TROP2 代表抗体 - 药物结合物的有前景靶点。临床试验在生物标志物选择人群中评估这些方法。入组 临床试验应考虑让符合条件的患者参加临床试验。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "GASTRIC_3L_005",
+          "title": "Supportive Care in Later-Line Gastric Cancer",
+          "title_zh": "后续线胃癌的支持治疗",
+          "content": "Supportive care becomes increasingly important as patients progress through multiple treatment lines. Nutritional support, pain management, and symptom control optimize quality of life. Early palliative care integration improves outcomes and patient satisfaction. Treatment decisions should balance potential benefit against toxicity burden in later-line settings.",
+          "content_zh": "随着患者经历多线治疗进展，支持治疗变得越来越重要。营养支持、疼痛管理和症状控制优化生活质量。早期姑息治疗整合改善结果和患者满意度。治疗决策应在后续线环境中平衡潜在获益与毒性负担。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "perioperative_gastric": {
+      "description": "Perioperative and adjuvant treatment strategies for resectable gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_PERI_001",
+          "title": "FLOT Regimen in Perioperative Setting",
+          "title_zh": "围手术期环境中的 FLOT 方案",
+          "content": "The FLOT regimen (5-FU, leucovorin, oxaliplatin, docetaxel) is a standard perioperative chemotherapy approach for resectable gastric cancer. Four cycles are administered before surgery followed by four cycles postoperatively. This approach demonstrated superior survival compared to older ECF/ECX regimens. FLOT is preferred for fit patients with locally advanced disease.",
+          "content_zh": "FLOT 方案（5-FU、亚叶酸、奥沙利铂、多西他赛）是可切除胃癌的标准围手术期化疗方法。术前给予 4 个周期，术后给予 4 个周期。与较老的 ECF/ECX 方案相比，该方法显示更优的生存期。FLOT 是适合局部晚期疾病患者的优选方案。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PERI_002",
+          "title": "SOX Regimen in Asian Perioperative Practice",
+          "title_zh": "亚洲围手术期实践中的 SOX 方案",
+          "content": "The SOX regimen (S-1 and oxaliplatin) is widely used in Asian countries for perioperative gastric cancer treatment. This approach is based on regional preferences and S-1 availability. Clinical trials in Asian populations support SOX efficacy in perioperative settings. Treatment duration and cycle number may vary by institutional protocols.",
+          "content_zh": "SOX 方案（S-1 和奥沙利铂）在亚洲国家广泛用于围手术期胃癌治疗。该方法基于区域偏好和 S-1 可用性。亚洲人群的临床试验支持 SOX 在围手术期环境中的疗效。治疗持续时间和周期数可能因机构方案而异。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PERI_003",
+          "title": "Adjuvant S-1 in Asian Gastric Cancer",
+          "title_zh": "亚洲胃癌中的辅助 S-1",
+          "content": "Adjuvant S-1 monotherapy is standard care following D2 gastrectomy in Asian gastric cancer patients. The ACTS-GC trial established S-1 benefit in stage II-III disease after curative resection. One year of S-1 treatment significantly improves overall survival. This approach is specific to Asian populations and not adopted in Western practice.",
+          "content_zh": "辅助 S-1 单药治疗是亚洲胃癌患者 D2 胃切除术后的标准治疗。ACTS-GC 试验确定了 S-1 在根治性切除后 II-III 期疾病中的获益。一年的 S-1 治疗显著改善总生存期。该方法特定于亚洲人群，未在西方实践中采用。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PERI_004",
+          "title": "Perioperative Immunotherapy Exploration",
+          "title_zh": "围手术期免疫治疗探索",
+          "content": "Perioperative immunotherapy combinations are under investigation in resectable gastric cancer. Early-phase trials evaluate PD-1 inhibitors added to chemotherapy backbones. Pathological complete response rates show promising improvements with immunotherapy addition. Ongoing phase III trials will define the role of perioperative immunotherapy.",
+          "content_zh": "围手术期免疫治疗联合治疗正在可切除胃癌中进行研究。早期试验评估添加到化疗骨干中的 PD-1 抑制剂。病理完全缓解率显示随着免疫治疗添加有前景的改善。正在进行的 III 期试验将确定围手术期免疫治疗的作用。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_PERI_005",
+          "title": "Patient Selection for Perioperative Therapy",
+          "title_zh": "围手术期治疗的患者选择",
+          "content": "Patient selection for perioperative therapy considers tumor stage, performance status, and comorbidities. Locally advanced tumors (T2 or higher, node-positive) benefit most from perioperative approaches. Frail patients may receive adjuvant-only strategies. Multidisciplinary team discussion optimizes treatment planning for individual patients.",
+          "content_zh": "围手术期治疗的患者选择考虑肿瘤分期、体能状态和合并症。局部晚期肿瘤（T2 或更高，淋巴结阳性）从围手术期方法中获益最大。虚弱患者可能接受仅辅助策略。多学科团队讨论优化个体患者的治疗计划。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        }
+      ]
+    },
+    "china_epidemiology_gastric": {
+      "description": "Epidemiology and disease burden of gastric cancer in China",
+      "entries": [
+        {
+          "id": "GASTRIC_CHINA_001",
+          "title": "Gastric Cancer Incidence in China",
+          "title_zh": "中国胃癌发病率",
+          "content": "Gastric cancer ranks as the third most common malignancy in China with substantial disease burden. Approximately 400,000 new cases are diagnosed annually representing a significant proportion of global gastric cancer cases. Incidence rates show geographic variation with higher burden in rural and northwestern regions. Despite declining trends, gastric cancer remains a major public health challenge in China.",
+          "content_zh": "胃癌是中国第三大常见恶性肿瘤，疾病负担重大。每年诊断约 40 万新病例，占全球胃癌病例的相当大比例。发病率显示地理变异，农村和西北地区负担更高。尽管呈下降趋势，胃癌仍是中国的主要公共卫生挑战。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "GASTRIC_CHINA_002",
+          "title": "Geographic Variation in Chinese Gastric Cancer",
+          "title_zh": "中国胃癌的地理变异",
+          "content": "Gastric cancer incidence shows marked geographic variation across Chinese provinces. Higher rates are observed in northwestern China including Gansu, Qinghai, and Ningxia provinces. Coastal and southern regions demonstrate lower incidence rates. This variation reflects differences in dietary patterns, H. pylori prevalence, and environmental exposures.",
+          "content_zh": "胃癌发病率在中国各省显示显著的地理变异。在中国西北省份包括甘肃、青海和宁夏观察到较高的发病率。沿海和南方地区显示较低的发病率。这种变异反映了饮食模式、幽门螺杆菌患病率和环境暴露的差异。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "GASTRIC_CHINA_003",
+          "title": "H. pylori Prevalence and Gastric Cancer Risk",
+          "title_zh": "幽门螺杆菌患病率与胃癌风险",
+          "content": "Helicobacter pylori infection is highly prevalent in China with infection rates exceeding 50% in many regions. H. pylori is classified as a class I carcinogen for gastric cancer. Eradication programs have been implemented to reduce gastric cancer risk. Population-level H. pylori screening and treatment may impact future gastric cancer incidence.",
+          "content_zh": "幽门螺杆菌感染在中国高度普遍，许多地区的感染率超过 50%。幽门螺杆菌被归类为胃癌的 I 类致癌物。已实施根除计划以降低胃癌风险。人群水平的幽门螺杆菌筛查和治疗可能影响未来胃癌发病率。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "GASTRIC_CHINA_004",
+          "title": "Late-Stage Diagnosis Challenge in China",
+          "title_zh": "中国晚期诊断挑战",
+          "content": "A substantial proportion of gastric cancer patients in China present with advanced-stage disease at diagnosis. Limited screening infrastructure and low awareness contribute to late presentation. Late-stage diagnosis significantly impacts treatment options and survival outcomes. Efforts to improve early detection through screening programs are underway in high-risk regions.",
+          "content_zh": "中国相当大比例的胃癌患者在诊断时呈现晚期疾病。有限的筛查基础设施和低意识导致晚期就诊。晚期诊断显著影响治疗选择和生存结果。正在高危地区努力通过筛查计划改善早期检测。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "GASTRIC_CHINA_005",
+          "title": "Declining but Persistent Burden",
+          "title_zh": "下降但仍持续的负担",
+          "content": "Gastric cancer incidence and mortality rates in China have declined over recent decades due to improved living conditions and dietary changes. However, the absolute burden remains high due to population size and aging demographics. Gastric cancer continues to be a leading cause of cancer-related death in China. Prevention and early detection strategies remain public health priorities.",
+          "content_zh": "由于生活条件改善和饮食变化，中国胃癌发病率和死亡率在近几十年有所下降。然而，由于人口规模和人口老龄化，绝对负担仍然很高。胃癌继续是中国癌症相关死亡的主要原因。预防和早期检测策略仍是公共卫生优先事项。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        }
+      ]
+    },
+    "molecular_targets": {
+      "description": "Emerging and established molecular targets in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_TARGET_001",
+          "title": "FGFR2 as Therapeutic Target",
+          "title_zh": "FGFR2 作为治疗靶点",
+          "content": "FGFR2 amplification occurs in approximately 5-10% of gastric cancers and represents a promising therapeutic target. FGFR inhibitors are under investigation in biomarker-selected gastric cancer populations. Early clinical trials show modest activity as monotherapy. Combination strategies with chemotherapy or other targeted agents are being explored.",
+          "content_zh": "FGFR2 扩增发生在约 5-10% 的胃癌中，代表有前景的治疗靶点。FGFR 抑制剂正在生物标志物选择的胃癌人群中进行研究。早期临床试验显示单药治疗活性适中。正在探索与化疗或其他靶向药物的联合策略。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SHITARA_FUTURE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_TARGET_002",
+          "title": "MET Amplification in Gastric Cancer",
+          "title_zh": "胃癌中的 MET 扩增",
+          "content": "MET amplification is observed in 2-5% of gastric cancers and may drive resistance to other targeted therapies. MET inhibitors are being evaluated in clinical trials for MET-amplified gastric cancer. Co-occurrence with HER2 amplification has been reported in some cases. Biomarker testing for MET status may guide treatment selection in refractory disease.",
+          "content_zh": "MET 扩增在 2-5% 的胃癌中观察到，可能驱动对其他靶向治疗的耐药。MET 抑制剂正在 MET 扩增胃癌的临床试验中进行评估。在某些病例中已报告与 HER2 扩增共存。MET 状态的生物标志物检测可指导难治性疾病的治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SHITARA_FUTURE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_TARGET_003",
+          "title": "HER2-Low Concept Applicability",
+          "title_zh": "HER2-low 概念适用性",
+          "content": "The HER2-low phenotype expands the potential treatment population beyond traditional HER2-positive definitions. HER2-low gastric cancers (IHC 1+ or 2+/FISH-negative) may benefit from novel ADC therapies with bystander effects. This concept is transforming treatment paradigms in gastric cancer. Ongoing trials are defining the optimal patient selection criteria for HER2-low targeted therapy.",
+          "content_zh": "HER2-low 表型将潜在治疗人群扩大到传统 HER2 阳性定义之外。HER2-low 胃癌（IHC 1+ 或 2+/FISH 阴性）可能从具有旁观者效应的新型 ADC 疗法中获益。该概念正在改变胃癌的治疗范式。正在进行的试验正在定义 HER2-low 靶向治疗的最佳患者选择标准。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SHITARA_FUTURE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        },
+        {
+          "id": "GASTRIC_TARGET_004",
+          "title": "TROP2 as Emerging Target",
+          "title_zh": "TROP2 作为新兴靶点",
+          "content": "TROP2 is overexpressed in a substantial proportion of gastric cancers and represents a target for antibody-drug conjugates. Anti-TROP2 ADCs are under investigation in later-line gastric cancer treatment. Expression levels vary by histological subtype and disease stage. Clinical trial results will define the role of TROP2-targeted therapy in gastric cancer.",
+          "content_zh": "TROP2 在相当大比例的胃癌中过表达，代表抗体 - 药物结合物的靶点。抗TROP2 ADC 正在后续线胃癌治疗中进行研究。表达水平因组织学亚型和疾病分期而异。临床试验结果将确定 TROP2 靶向治疗在胃癌中的作用。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "GASTRIC_TARGET_005",
+          "title": "Nectin-4 Targeting Strategy",
+          "title_zh": "Nectin-4 靶向策略",
+          "content": "Nectin-4 expression is observed in gastric cancer and represents a potential target for ADC therapy. Preclinical data support the development of anti-Nectin-4 conjugates for gastric cancer treatment. Clinical trials are evaluating safety and efficacy in solid tumors including gastric cancer. This target may provide additional options for heavily pretreated patients.",
+          "content_zh": "在胃癌中观察到 Nectin-4 表达，代表 ADC 治疗的潜在靶点。临床前数据支持开发用于胃癌治疗的 抗Nectin-4 结合物。临床试验正在评估包括胃癌在内的实体瘤的安全性和疗效。该靶点可能为重度预处理患者提供额外选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021",
+            "NAKADA_2019_CPB"
+          ]
+        },
+        {
+          "id": "GASTRIC_TARGET_006",
+          "title": "Actionable Target Landscape",
+          "title_zh": "可操作靶点格局",
+          "content": "The landscape of actionable molecular targets in gastric cancer continues to expand with ongoing research. Comprehensive molecular profiling identifies potential targets in individual patients. Clinical trial access enables treatment with investigational agents targeting novel pathways. Biomarker-driven treatment selection optimizes outcomes in precision oncology approaches.",
+          "content_zh": "随着持续研究，胃癌中可操作分子靶点的格局不断扩大。全面的分子分析识别个体患者的潜在靶点。临床试验 入组 使患者能够接受针对新通路的研究药物治疗。生物标志物驱动的治疗选择在精准肿瘤学方法中优化结果。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SHITARA_FUTURE_2021",
+            "ONCO_SRC_NCCN_GASTRIC_2025"
+          ]
+        }
+      ]
+    },
+    "treatment_resistance": {
+      "description": "Mechanisms and management of treatment resistance in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_RESIST_001",
+          "title": "HER2 Resistance Mechanisms",
+          "title_zh": "HER2 耐药机制",
+          "content": "Multiple mechanisms contribute to acquired resistance to anti-HER2 therapy in gastric cancer. These include HER2 extracellular domain truncation, PI3K pathway activation, and MET amplification. Understanding resistance mechanisms informs subsequent treatment selection. Liquid biopsy approaches may help characterize resistance profiles non-invasively.",
+          "content_zh": "多种机制导致胃癌中对 抗HER2 治疗的获得性耐药。这些包括 HER2 胞外域截断、PI3K 通路激活和 MET 扩增。了解耐药机制为后续治疗选择提供信息。液体活检方法可能有助于无创地表征耐药谱。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "RESISTANCE_GEA_REVIEW",
+            "GEA_HER2_RESISTANCE_SYSTEMATIC_2022"
+          ]
+        },
+        {
+          "id": "GASTRIC_RESIST_002",
+          "title": "HER2 Expression Loss After Anti-HER2 Therapy",
+          "title_zh": "抗HER2 治疗后 HER2 表达丢失",
+          "content": "Loss of HER2 expression occurs in approximately 20-30% of gastric cancers following progression on anti-HER2 therapy. This phenomenon may result from selective pressure eliminating HER2-positive clones. Retesting at progression is essential to guide subsequent treatment decisions. Alternative biomarker-driven approaches may be needed when HER2 expression is lost.",
+          "content_zh": "约 20-30% 的胃癌在 抗HER2 治疗进展后发生 HER2 表达丢失。这种现象可能是由于选择性压力消除 HER2 阳性克隆所致。进展时重新检测对于指导后续治疗决策至关重要。当 HER2 表达丢失时，可能需要替代的生物标志物驱动方法。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ANTI_HER2_RESISTANCE_GC_2020"
+          ]
+        },
+        {
+          "id": "GASTRIC_RESIST_003",
+          "title": "Heterogeneity-Driven Resistance",
+          "title_zh": "异质性驱动的耐药",
+          "content": "Intratumoral heterogeneity contributes to treatment resistance in gastric cancer through multiple mechanisms. Different tumor subclones may harbor distinct resistance mechanisms requiring tailored approaches. Spatial and temporal heterogeneity complicates biomarker assessment and treatment selection. Multi-region sampling and longitudinal monitoring help characterize heterogeneity patterns.",
+          "content_zh": "瘤内异质性通过多种机制导致胃癌治疗耐药。不同肿瘤亚克隆可能具有需要定制方法的独特耐药机制。空间和时间异质性使生物标志物评估和治疗选择复杂化。多区域取样和纵向监测有助于表征异质性模式。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "RESISTANCE_ADC_MECHANISMS",
+            "ADC_RESISTANCE_REVIEW_2023"
+          ]
+        },
+        {
+          "id": "GASTRIC_RESIST_004",
+          "title": "Chemotherapy Resistance Patterns",
+          "title_zh": "化疗耐药模式",
+          "content": "Gastric cancer develops resistance to chemotherapy through drug efflux pumps, DNA repair enhancement, and apoptosis evasion. Platinum resistance is particularly challenging in later-line settings. Cross-resistance between chemotherapy agents limits treatment options. Novel agents with different mechanisms of action are needed to overcome chemotherapy resistance.",
+          "content_zh": "胃癌通过药物外排泵、DNA 修复增强和凋亡逃避发展对化疗的耐药。铂类耐药在后续线环境中尤其具有挑战性。化疗药物之间的交叉耐药限制了治疗选择。需要具有不同作用机制的新药来克服化疗耐药。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "GASTRIC_CHEMORESISTANCE_2016"
+          ]
+        },
+        {
+          "id": "GASTRIC_RESIST_005",
+          "title": "Immunotherapy Resistance Mechanisms",
+          "title_zh": "免疫治疗耐药机制",
+          "content": "Primary and acquired resistance to immunotherapy in gastric cancer involves multiple immune evasion mechanisms. These include defective antigen presentation, immunosuppressive microenvironment, and T-cell exhaustion. Combination strategies targeting multiple pathways may overcome resistance. Biomarkers predicting immunotherapy resistance are under active investigation.",
+          "content_zh": "胃癌中对免疫治疗的原发性和获得性耐药涉及多种免疫逃避机制。这些包括缺陷的抗原呈递、免疫抑制微环境和 T 细胞耗竭。针对多通路的联合策略可能克服耐药。预测免疫治疗耐药的生物标志物正在积极研究中。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "TAKEGAWA_2017_GASTRIC"
+          ]
+        }
+      ]
+    },
+    "adc_in_gastric": {
+      "description": "Antibody-drug conjugate principles and applications in gastric cancer",
+      "entries": [
+        {
+          "id": "GASTRIC_ADC_001",
+          "title": "ADC Drug Class Principles in Gastric Cancer",
+          "title_zh": "胃癌中 ADC 药物类别原则",
+          "content": "Antibody-drug conjugates combine targeted antibody delivery with cytotoxic payloads for enhanced tumor cell killing. The linker chemistry determines drug release kinetics and stability in circulation. Payload selection influences the spectrum of activity and toxicity profile. ADC design principles are optimized for gastric cancer biology and target expression patterns.",
+          "content_zh": "抗体 - 药物结合物将靶向抗体递送与细胞毒性载荷结合以增强肿瘤细胞杀伤。连接子化学决定药物释放动力学和循环中的稳定性。载荷选择影响活性谱和毒性特征。ADC 设计原则针对胃癌生物学和靶点表达模式进行优化。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "NAKADA_2019_CPB",
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "GASTRIC_ADC_002",
+          "title": "Bystander Killing in Heterogeneous Tumors",
+          "title_zh": "异质性肿瘤中的旁观者杀伤",
+          "content": "Bystander killing effect is particularly relevant in gastric cancer due to tumor heterogeneity. ADC payloads can diffuse to neighboring cells regardless of target expression. This mechanism enhances efficacy in tumors with heterogeneous target expression. Bystander effects may enable treatment of HER2-low populations with anti-HER2 ADCs.",
+          "content_zh": "由于肿瘤异质性，旁观者杀伤效应在胃癌中尤其相关。ADC 载荷可扩散到邻近细胞，无论靶点表达如何。该机制增强在具有异质性靶点表达的肿瘤中的疗效。旁观者效应可能使 抗HER2 ADC 治疗 HER2-low 人群成为可能。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "GASTRIC_ADC_003",
+          "title": "HER2-Low Concept and ADC Therapy",
+          "title_zh": "HER2-low 概念与 ADC 治疗",
+          "content": "The HER2-low concept has transformed ADC therapy applicability in gastric cancer. Patients with IHC 1+ or 2+/FISH-negative status may benefit from anti-HER2 ADCs. Bystander killing enables activity in low-expression populations. This expands the treatable population beyond traditional HER2-positive definitions.",
+          "content_zh": "HER2-low 概念改变了 ADC 治疗在胃癌中的适用性。IHC 1+ 或 2+/FISH 阴性状态的患者可能从抗HER2 ADC 中获益。旁观者杀伤使在低表达人群中的活性成为可能。这将可治疗人群扩大到传统 HER2 阳性定义之外。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021",
+            "OGITANI_2016_CCR"
+          ]
+        },
+        {
+          "id": "GASTRIC_ADC_004",
+          "title": "ADC Safety and Toxicity Management",
+          "title_zh": "ADC 安全性和毒性管理",
+          "content": "ADC therapies have distinct toxicity profiles requiring specific monitoring and management strategies. Interstitial lung disease is a notable concern with certain anti-HER2 ADCs. Hematological toxicities vary by payload type and require dose adjustments. Early recognition and intervention optimize treatment continuity and patient safety.",
+          "content_zh": "ADC 治疗具有独特的毒性特征，需要特定的监测和管理策略。间质性肺病是某些抗HER2 ADC 的显著关注点。血液学毒性因载荷类型而异，需要剂量调整。早期识别和干预优化治疗连续性和患者安全性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "OGITANI_2016_BYSTANDER"
+          ]
+        },
+        {
+          "id": "GASTRIC_ADC_005",
+          "title": "ADC Sequencing in Gastric Cancer",
+          "title_zh": "胃癌中 ADC 顺序",
+          "content": "Optimal sequencing of ADC therapies in gastric cancer is an area of active investigation. Prior exposure to anti-HER2 monoclonal antibodies may influence ADC efficacy. Treatment selection considers mechanism of action, toxicity profile, and prior therapy. Clinical trials are defining the optimal position of ADC agents in treatment algorithms.",
+          "content_zh": "胃癌中 ADC 治疗的最佳顺序是积极研究的领域。既往暴露于抗HER2 单克隆抗体可能影响 ADC 疗效。治疗选择考虑作用机制、毒性特征和既往治疗。临床试验正在定义 ADC 药物在治疗算法中的最佳位置。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        }
+      ]
+    }
+  }
+}

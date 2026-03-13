@@ -1,0 +1,72 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2026-Q1] 【V1-浙二报道】AD发病年龄越早，认知下降越快！浙二团队仑卡奈单抗真实世界研究发表.docx",
+    "source_key": "SRC-HIST-2026-Q1_【V1-浙二报道】AD发病年龄越早，认知下降",
+    "asset_key": "AST-DOCX-2026-Q1_【V1-浙二报道】AD发病年龄越早，认知下降",
+    "content_hash": "e1f3768d28abaced",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.649629",
+    "source_size_bytes": 394927
+  },
+  "metadata": {
+    "title": "【V1-浙二报道】AD发病年龄越早，认知下降越快！浙二团队仑卡奈单抗真实世界研究发表",
+    "content_type": "主张_证据",
+    "publication_quarter": "2026-Q1",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 问题背景引入",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [
+      "opening: 直接陈述"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "AD发病年龄越早，认知下降越快！浙二团队仑卡奈单抗真实世界研究发表",
+      "仑卡奈单抗已于2024年1月在国内获批上市。对于中国AD患者而言，鉴于遗传背景、临床特征与西方人群的差异，以及本土诊疗实践的特殊性，亟需基于中国临床场景的系统数据，以便更好地适配本土患者需求。",
+      "针对中国人群教育水平差异较大的特点，研究还特别分析了基线MMSE评分对治疗效果的影响。",
+      "早发性AD需强化监测",
+      "此外，研究针对早发性阿尔茨海默病（EOAD，发病年龄<65岁）患者进行了专项分析。",
+      "作为早期AD中的重要细分人群，早发性AD患者常因病程进展更快、对生活质量影响更显著，成为临床重点关注对象。",
+      "值得注意的是，尽管早发性AD患者认知下降更快，但研究未发现其输注相关副作用（IRSE）或ARIA的发生率高于晚发性人群，表明仑卡奈单抗在这一亚组中的安全性同样可控，无需因担忧安全性而延迟干预。",
+      "作为评估仑卡奈单抗疾病修饰作用的核心终点，研究通过淀粉样蛋白PET影像学动态监测，明确证实其对中国早期AD患者的核心病理标志物具有持续清除效果。",
+      "图4、12名早期AD患者随访前后的大脑皮层淀粉样蛋白负荷变化情况",
+      "这一安全性特征与中国人群脑血管病理特点相契合，提示在严格遵循用药规范与监测流程的前提下，仑卡奈单抗的ARIA风险可控，为临床安全用药提供了有力保障。",
+      "发现ARIA风险的影像标志物"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "结果显示，在早期AD患者中，轻度认知障碍阶段（CDR-GS=0.5）患者的简易精神状态检查（MMSE）评分下降速度显著慢于轻度痴呆阶段（CDR-GS=1）患者（p=0.019），表明应在神经元尚未发生大规模的不可逆损伤前，启动抗Aβ治疗可获得更大获益，凸显了早期干预的重要临床价值。",
+    "研究结果显示，中国患者对仑卡奈单抗的耐受性良好。",
+    "针对仑卡奈单抗临床应用中最受关注的淀粉样蛋白相关影像异常（ARIA），研究显示，58例完成3个月以上治疗的患者中共有11例出现ARIA（6.9%为ARIA-E，10.3%为孤立ARIA-H），所有病例均为无症状表现，且经规范监测与干预后未出现认知恶化。"
+  ]
+}

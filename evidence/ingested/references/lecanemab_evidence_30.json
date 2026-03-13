@@ -1,0 +1,44 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.070463",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_【仑卡奈单抗真实世界数据】Lecanemab",
+    "asset_key": "AST-PDF-2025-Q3_【仑卡奈单抗真实世界数据】Lecanemab",
+    "content_hash": "327ba297f41f8097"
+  },
+  "metadata": {
+    "title": "【仑卡奈单抗真实世界数据】Lecanemab in clinical practice real-world outcomes inearly Alzheimer's disease",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": "real_world"
+  },
+  "distilled_content": {
+    "study_setting": "Real-world clinical practice",
+    "patient_count": "Not specified",
+    "outcomes": "Effectiveness and safety of Lecanemab in real-world settings",
+    "limitations": "Potential selection bias and limited follow-up duration"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] 【仑卡奈单抗真实世界数据】Lecanemab in clinical practice real-world outcomes inearly Alzheimer's disease.pdf",
+    "original_size_bytes": 1532271,
+    "distilled_at": "2026-03-10T03:54:51.070496"
+  }
+}

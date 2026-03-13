@@ -1,0 +1,63 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2025-Q2] V3 抗Aβ治疗终局之战，在欧洲已经分出胜负！.docx",
+    "source_key": "SRC-H006-PRIMARY-004",
+    "asset_key": "AST-H006-PRIMARY-004",
+    "content_hash": "anti_ab_treatment_landscape_2025",
+    "source_type": "clinical_education",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "抗Aβ治疗在欧洲的竞争格局分析",
+    "title_en": "Analysis of Anti-Aβ Treatment Competitive Landscape in Europe",
+    "authors": [],
+    "journal": "医学新闻评论",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "clinical_education",
+    "audience": "基层医护",
+    "register_level": "R3",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗", "多奈单抗"],
+    "content_focus": "practical guidance, competitive landscape, treatment selection",
+    "narrative_patterns": ["practical tips", "decision trees", "competitive analysis"],
+    "sections": [
+      {
+        "title": "欧洲抗Aβ治疗竞争格局",
+        "content": "2025年欧洲监管部门对仑卡奈单抗和多奈单抗的审批决策反映了抗Aβ治疗的竞争态势。"
+      },
+      {
+        "title": "仑卡奈单抗在欧洲的优势",
+        "content": "仑卡奈单抗在欧洲市场获得积极审批结果，主要基于其在临床试验中的疗效和安全性数据。"
+      },
+      {
+        "title": "临床应用考量",
+        "content": "基层医护需要了解不同抗Aβ治疗药物的特点，根据患者具体情况选择合适的治疗方案。"
+      },
+      {
+        "title": "未来展望",
+        "content": "抗Aβ治疗的竞争将促使药物不断优化，基层医护需要持续关注新的证据和指南更新。"
+      }
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗在欧洲监管审批中显示出竞争优势",
+    "抗Aβ治疗是AD治疗领域的重要进展",
+    "基层医护需要根据患者情况选择合适的抗Aβ治疗方案",
+    "持续关注抗Aβ治疗的新证据和指南更新"
+  ],
+  "accessibility_notes": [
+    "内容涉及市场竞争分析，但重点应放在临床应用指导",
+    "基层医护需了解不同抗Aβ治疗药物的特点",
+    "强调证据驱动的治疗决策"
+  ]
+}

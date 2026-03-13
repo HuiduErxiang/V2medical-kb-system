@@ -1,0 +1,44 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.058994",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_7.27-Lecanemab+Two+Yea",
+    "asset_key": "AST-PPTX-2025-Q3_7.27-Lecanemab+Two+Yea",
+    "content_hash": "fe9ff34c36086847"
+  },
+  "metadata": {
+    "title": "7",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pptx",
+    "study_type": "real_world"
+  },
+  "distilled_content": {
+    "study_setting": "Real-world clinical practice",
+    "patient_count": "Not specified",
+    "outcomes": "Effectiveness and safety of Lecanemab in real-world settings",
+    "limitations": "Potential selection bias and limited follow-up duration"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] 7.27-Lecanemab+Two+Years+Post-Approval：Real-World+Case+Series+and+Patient+Pathway+Learnings+From+Diverse+US+Clinical+Settings(合辑).pptx",
+    "original_size_bytes": 205036803,
+    "distilled_at": "2026-03-10T03:54:51.059065"
+  }
+}

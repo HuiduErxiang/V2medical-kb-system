@@ -1,0 +1,286 @@
+{
+  "manifest_version": "1.0",
+  "batch_id": "H002",
+  "distillation_date": "2026-03-10T03:54:51.101070",
+  "total_files": 46,
+  "processed_files": 46,
+  "skipped_files": 0,
+  "files": [
+    {
+      "filename": "[2024-Q2] Clarity AD原文.pdf",
+      "output_filename": "lecanemab_evidence_1.json",
+      "content_hash": "270e73672ea52027",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Q2] Clarity AD补充附录.pdf",
+      "output_filename": "lecanemab_evidence_2.json",
+      "content_hash": "07e32ada0b10c847",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Q3] Clarity AD研究 3年随访（P46-66）.pdf",
+      "output_filename": "lecanemab_evidence_3.json",
+      "content_hash": "aae6aa3f718a56e9",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Q3] 仑卡奈单抗长期治疗的生物标志物改变.pdf",
+      "output_filename": "lecanemab_evidence_4.json",
+      "content_hash": "500ec8222d490e70",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Q4] Lecanemab 显示出与从阿尔茨海默病患者大脑中分离的 Aβ 原纤维的高度选择性结合.pdf",
+      "output_filename": "lecanemab_evidence_5.json",
+      "content_hash": "f9492183de877782",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Unknown] Akihiko Koyama. Mechanistic Rationale for Continued Lecanemab Dosing. CTAD 2024.pptx",
+      "output_filename": "lecanemab_evidence_6.json",
+      "content_hash": "62d3db385faf50b3",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Unknown] Christopher van Dyck, et al. Evidence for a Continued Benefit for Long-Term Lecanemab Treatment. CTAD 2024..pptx",
+      "output_filename": "lecanemab_evidence_7.json",
+      "content_hash": "08d13485027b26b5",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Unknown] Marwan Sabbagh. Lecanemab Treatment in Real World Settings in the United States. CTAD 2024.pptx",
+      "output_filename": "lecanemab_evidence_8.json",
+      "content_hash": "5fd731a5d28df70e",
+      "status": "processed"
+    },
+    {
+      "filename": "[2024-Unknown] Takeshi lwatsubo. Latest data from the clinic use of Lecanemab in Japan. CTAD 2024. .pptx",
+      "output_filename": "lecanemab_evidence_9.json",
+      "content_hash": "8069d8dad8a7bf90",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q1] 2、Lecanemab in Early Alzheimer's Disease.pdf",
+      "output_filename": "lecanemab_evidence_10.json",
+      "content_hash": "536c850b1833bd37",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q1] Lecanemab：问题多于答案！.pdf",
+      "output_filename": "lecanemab_evidence_11.json",
+      "content_hash": "4ba4af7d71034a06",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] AAIC-poster-Caregivers' attitudes regarding the application of Lecanemab for Alzheimer'sdisease.pptx",
+      "output_filename": "lecanemab_evidence_12.json",
+      "content_hash": "3674a0e1ea173025",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] Caregivers' attitudes regarding the application of Lecanemab for Alzheimer'sdisease a cross-sectional survey in China--鍏ㄦ枃.pdf",
+      "output_filename": "lecanemab_evidence_13.json",
+      "content_hash": "c784c47570b1454b",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] Caregivers' attitudes regarding the application of Lecanemab for Alzheimer'sdisease a cross-sectional survey in China.pdf",
+      "output_filename": "lecanemab_evidence_14.json",
+      "content_hash": "98b67ee1617706c4",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] Clarity AD Asian regional analysis of a phase III trial of lecanemab in early Alzheimer's disease.pdf",
+      "output_filename": "lecanemab_evidence_15.json",
+      "content_hash": "a4706b84dd555f55",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] Clarity AD 安全性结果.pdf",
+      "output_filename": "lecanemab_evidence_16.json",
+      "content_hash": "9fb219164a5d5473",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q2] Lecanemab preferentially binds to smaller aggregates presentat early Alzheimer’s disease(1).pdf",
+      "output_filename": "lecanemab_evidence_17.json",
+      "content_hash": "6995f4eefb41d5a5",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 2.吉崎崇仁-Lecanemab treatment in Japan 1.pptx",
+      "output_filename": "lecanemab_evidence_18.json",
+      "content_hash": "701d749ae9d50d33",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 7.27-Lecanemab+Two+Years+Post-Approval：Real-World+Case+Series+and+Patient+Pathway+Learnings+From+Diverse+US+Clinical+Settings(合辑).pptx",
+      "output_filename": "lecanemab_evidence_19.json",
+      "content_hash": "fe9ff34c36086847",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Anti-Amyloid Therapy in Alzheimer鈥檚 Disease Real-World Experience With Lecanemab in a Chinese Tertiar(4).pptx",
+      "output_filename": "lecanemab_evidence_20.json",
+      "content_hash": "e6e1f8d172163966",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Efficacy and Safety of Lecanemab in Treating Alzheimer's Disease A Real-World Study in South China(1).pptx",
+      "output_filename": "lecanemab_evidence_21.json",
+      "content_hash": "bed9baf004e236b7",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Functional Near-Infrared Spectroscopy Reveals Lecanemab-Induced Neural Changes During the Clock Drawing Test in Alzheimer鈥檚 Disease.pptx",
+      "output_filename": "lecanemab_evidence_22.json",
+      "content_hash": "e83c72d4ece2dcc7",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Lecanemab Stabilizes Glymphatic Dynamics and Free Water Homeostasis in Alzheimer鈥檚 Disease Insight(4).pptx",
+      "output_filename": "lecanemab_evidence_23.json",
+      "content_hash": "8486fae3cef3ac9f",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Lecanemab treatment for Alzheimer's Disease of varying severities and associated plasma biomarkers monitoring a multi-center r.pptx",
+      "output_filename": "lecanemab_evidence_24.json",
+      "content_hash": "1acb46b6bc06874d",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Multicenter Case Registry Study of Lecanemab in Early Alzheimer's Disease in Northwest China(1)(2).pptx",
+      "output_filename": "lecanemab_evidence_25.json",
+      "content_hash": "50192dba5ffedb33",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Operational standard for the clinical use of Lecanemab in Alzheimer鈥檚 Disease.pptx",
+      "output_filename": "lecanemab_evidence_26.json",
+      "content_hash": "2c260faa20a43827",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] AAIC-poster-Safety and Effectiveness of Lecanemab in Chinese Patients with Early Alzheimer's Disease Evidence from a Multidimensional Real-World Study(4).pptx",
+      "output_filename": "lecanemab_evidence_27.json",
+      "content_hash": "f76a4b1954aa3b98",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] Clarity AD研究 4年随访.pdf",
+      "output_filename": "lecanemab_evidence_28.json",
+      "content_hash": "ce78330da233f95d",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] Lecanemab 在美国的应用：一项真实世界观察性研究.pdf",
+      "output_filename": "lecanemab_evidence_29.json",
+      "content_hash": "067d5c30662c79b9",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 【仑卡奈单抗真实世界数据】Lecanemab in clinical practice real-world outcomes inearly Alzheimer's disease.pdf",
+      "output_filename": "lecanemab_evidence_30.json",
+      "content_hash": "327ba297f41f8097",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 抗 Tau Etalanetug (E2814) 联合 Lecanemab 疗法治疗显性遗传性阿尔茨海默病患者：DIAN-TU-001 NexGen 试验中 6 个月 Lecanemab 治疗对淀粉样蛋白 PET 和安全性的基线特征及影响的初步观察.pdf",
+      "output_filename": "lecanemab_evidence_31.json",
+      "content_hash": "66ea15083e2ae687",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 接受Lecanemab治疗的患者阿尔茨海默病血液生物标志物的变化.pdf",
+      "output_filename": "lecanemab_evidence_32.json",
+      "content_hash": "33c8e65b198684e9",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 接受Lecanemab治疗的患者阿尔茨海默病血液生物标志物的变化_1.pdf",
+      "output_filename": "lecanemab_evidence_33.json",
+      "content_hash": "73778c77cbee9bde",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 新英格兰阿尔茨海默病输液中心对 Lecanemab 现实世界应用的展望：回顾性图表回顾.pdf",
+      "output_filename": "lecanemab_evidence_34.json",
+      "content_hash": "8d727c50c76b25ea",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q3] 阿尔茨海默氏症治疗药物 Lecanemab 可诱导小胶质细胞启动淀粉样蛋白清除程序.pdf",
+      "output_filename": "lecanemab_evidence_35.json",
+      "content_hash": "3945570534b70b39",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] LB13-斑块清除后持续治疗获益仍可累积——CLARITY-AD 与 TRAILBLAZER-ALZ 2 维持性治疗获益估算.pdf",
+      "output_filename": "lecanemab_evidence_36.json",
+      "content_hash": "f66bd9b353d8877e",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] OC5-Lecanemab治疗对Clarity AD患者脑脊液中可溶性Aβ原纤维的影响.pdf",
+      "output_filename": "lecanemab_evidence_37.json",
+      "content_hash": "9aed909bde21bcb7",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] P096-比较 Lecanemab 与 Donanemab 引起淀粉样蛋白相关影像异常的风险及其潜在影响.md",
+      "output_filename": "lecanemab_evidence_38.json",
+      "content_hash": "a04247b5be2e2a7b",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] P096-比较 Lecanemab 与 Donanemab 引起淀粉样蛋白相关影像异常的风险及其潜在影响.pdf",
+      "output_filename": "lecanemab_evidence_39.json",
+      "content_hash": "271c51a6a9d77fd7",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] P279-神经动态定量系统药理学（QSP）模型预测：基于 Clarity AD 48 个月数据，持续使用仑卡奈单抗的获益递增.pdf",
+      "output_filename": "lecanemab_evidence_40.json",
+      "content_hash": "82934033fdfe7ddd",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] The Alzheimer’s therapeutic Lecanemab attenuates Aβ pathology by inducing an.pdf",
+      "output_filename": "lecanemab_evidence_41.json",
+      "content_hash": "a4be8f5c096ee1e0",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] 【原文】Lecanemab treatment for Alzheimer’s Disease of varying severities and associated plasma biomarkers monitoring.pdf",
+      "output_filename": "lecanemab_evidence_42.json",
+      "content_hash": "72130abb80dc6874",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Q4] 【原文】Lecanemab treatment for Alzheimer’s Disease of varying severities and associated plasma biomarkers monitoring_1_2.pdf",
+      "output_filename": "lecanemab_evidence_43.json",
+      "content_hash": "196b2d56cf0360bb",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Unknown] 7-Alzheimer s   Dementia - 2025 - Charil - Lecanemab Slows Tau PET Accumulation.pdf",
+      "output_filename": "lecanemab_evidence_44.json",
+      "content_hash": "a6b10cc148de92a0",
+      "status": "processed"
+    },
+    {
+      "filename": "[2025-Unknown] CTAD China 2025-Lecanemab OLE .pptx",
+      "output_filename": "lecanemab_evidence_45.json",
+      "content_hash": "9128a578f5e30789",
+      "status": "processed"
+    },
+    {
+      "filename": "[2026-Q1] 【原文】Real - World Application of Lecanemab in Early - stage Alzheimer's Disease A Single - center Prospective Cohort Analysis.pdf",
+      "output_filename": "lecanemab_evidence_46.json",
+      "content_hash": "d8df47d873b222b4",
+      "status": "processed"
+    }
+  ]
+}

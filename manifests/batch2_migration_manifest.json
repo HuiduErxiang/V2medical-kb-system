@@ -1,0 +1,119 @@
+{
+  "manifest_version": "1.0",
+  "migration_batch": "Batch-2",
+  "migration_date": "2026-03-09",
+  "migration_phase": "Phase 4",
+  "description": "Structured knowledge assets migration: L2 rules, L3 disease strategy, L4 metadata (reuse); L2 authors and L4 m6 (rebuild mapping)",
+  "summary": {
+    "total_reuse_files": 50,
+    "total_rebuild_mappings": 2,
+    "verification_status": "verified"
+  },
+  "assets": {
+    "L2_core_rules": {
+      "source_key": "SRC-L2-MEDICAL-PLAYBOOK-CORE",
+      "asset_key": "AST-PKG-L2-MEDICAL-PLAYBOOK-CORE",
+      "source_path": "medical_kb_system/L2_medical_playbook",
+      "target_path": "rules/l2_medical_playbook/core",
+      "decision": "reuse",
+      "file_count": 10,
+      "files": [
+        {"filename": "m0_persona_templates.json", "content_hash": "4a4dc042acbe6c7d", "size_bytes": 0},
+        {"filename": "m3_strategic_plays.json", "content_hash": "edc937bccd2e48c6", "size_bytes": 0},
+        {"filename": "m4_medical_blocks.json", "content_hash": "5f1c415a0254517f", "size_bytes": 0},
+        {"filename": "m5_compliance_schema.json", "content_hash": "9cb52d3e55205da5", "size_bytes": 0},
+        {"filename": "medical_expression_profiles.json", "content_hash": "4164fb3b67f0b775", "size_bytes": 0},
+        {"filename": "medical_syntax_rules.json", "content_hash": "3619c0fc5a76c145", "size_bytes": 0},
+        {"filename": "narrative_arcs.json", "content_hash": "4c6dfac72c979b4a", "size_bytes": 0},
+        {"filename": "persona_medical_overlay.json", "content_hash": "32abec9ec3e2f596", "size_bytes": 0},
+        {"filename": "rhetoric_blocks.json", "content_hash": "853746eef6c245de", "size_bytes": 0},
+        {"filename": "sentence_patterns.json", "content_hash": "842bac66fa75be62", "size_bytes": 0}
+      ]
+    },
+    "L2_authors": {
+      "source_key": "SRC-L2-MEDICAL-PLAYBOOK-AUTHORS",
+      "asset_key": "AST-PKG-L2-MEDICAL-PLAYBOOK-AUTHORS",
+      "source_path": "medical_kb_system/L2_medical_playbook/authors",
+      "decision": "rebuild",
+      "rebuild_manifest": "manifests/batch2_l2_authors_rebuild.json",
+      "note": "V1 persona_config needs mapping to V2 editorial contract"
+    },
+    "L3_disease_strategy": {
+      "source_key": "SRC-L3-DISEASE-STRATEGY",
+      "asset_key": "AST-PKG-L3-DISEASE-STRATEGY",
+      "source_path": "medical_kb_system/L3_disease_strategy",
+      "target_path": "structured/l3",
+      "decision": "reuse",
+      "file_count": 13,
+      "files": [
+        {"filename": "neurology/alzheimers_disease/disease_knowledge.json", "content_hash": "1243948993311ce5"},
+        {"filename": "neurology/alzheimers_disease/m1_thesis_derivation_rules.json", "content_hash": "2a4567836bd5f193"},
+        {"filename": "neurology/alzheimers_disease/source_registry.json", "content_hash": "769a8a3290536b51"},
+        {"filename": "neurology/insomnia/disease_knowledge.json", "content_hash": "826d7df0c2402883"},
+        {"filename": "neurology/insomnia/m1_thesis_derivation_rules.json", "content_hash": "c6864b95ac9cf2c1"},
+        {"filename": "oncology/disease_knowledge_shared.json", "content_hash": "5e25a8c1b77616a3"},
+        {"filename": "oncology/m1_thesis_derivation_rules_shared.json", "content_hash": "d7dccc78de44287e"},
+        {"filename": "oncology/source_registry.json", "content_hash": "c6faaacd60df4a66"},
+        {"filename": "oncology/gastric_cancer/disease_knowledge.json", "content_hash": "b677d59a9abb3b63"},
+        {"filename": "oncology/gastric_cancer/m1_thesis_derivation_rules.json", "content_hash": "d6766692a58d655a"},
+        {"filename": "oncology/lung_cancer/disease_knowledge.json", "content_hash": "341a8797c35cee78"},
+        {"filename": "oncology/lung_cancer/m1_thesis_derivation_rules.json", "content_hash": "a7be96fb9d57a35b"},
+        {"filename": "oncology/prostate/disease_knowledge.json", "content_hash": "6ae42f92e9cead51"}
+      ]
+    },
+    "L4_product_metadata": {
+      "source_key": "SRC-L4-PRODUCT-METADATA",
+      "asset_key": "AST-PKG-L4-PRODUCT-METADATA",
+      "source_path": "medical_kb_system/L4_product_knowledge",
+      "target_path": "structured/l4",
+      "decision": "reuse",
+      "file_count": 27,
+      "files": [
+        {"filename": "donanemab/expression_library.json", "content_hash": "ecc7d4165171c7ee"},
+        {"filename": "donanemab/m5_compliance_rules.json", "content_hash": "0b5d67dd94095eb4"},
+        {"filename": "donanemab/product_manifest.json", "content_hash": "8ce8fc816c286788"},
+        {"filename": "donanemab/product_taxonomy.json", "content_hash": "301db4e96bc33c7b"},
+        {"filename": "donanemab/client_style_instances/client_default.json", "content_hash": "d24b5db5bc1693d4"},
+        {"filename": "furmonertinib/expression_library.json", "content_hash": "670857500ba570e4"},
+        {"filename": "furmonertinib/m5_compliance_rules.json", "content_hash": "cee2b488c8c89378"},
+        {"filename": "furmonertinib/product_manifest.json", "content_hash": "6dab0cd7ad547957"},
+        {"filename": "furmonertinib/product_taxonomy.json", "content_hash": "a60c2a59dbb92980"},
+        {"filename": "lecanemab/expression_library.json", "content_hash": "4a52bc5fa6f02266"},
+        {"filename": "lecanemab/m5_compliance_rules.json", "content_hash": "b1fa8dc42c249d08"},
+        {"filename": "lecanemab/product_taxonomy.json", "content_hash": "de938ab7ea2f0f9b"},
+        {"filename": "lecanemab/client_style_instances/client_patient_empathetic.json", "content_hash": "3077d78287a9e15d"},
+        {"filename": "lecanemab/client_style_instances/client_pfizer_corporate.json", "content_hash": "bbda43fba3f1a31c"},
+        {"filename": "lecanemab/client_style_instances/client_startup_aggressive.json", "content_hash": "224129557407c0d6"},
+        {"filename": "lemborexant/expression_library.json", "content_hash": "c1c2d35580345c50"},
+        {"filename": "lemborexant/m5_compliance_rules.json", "content_hash": "d049f7a343f51695"},
+        {"filename": "lemborexant/product_taxonomy.json", "content_hash": "5a5a1107481b4bdf"},
+        {"filename": "pluvicto/expression_library.json", "content_hash": "46b09d37bdf19250"},
+        {"filename": "pluvicto/m5_compliance_rules.json", "content_hash": "c0c8b718d29ce987"},
+        {"filename": "pluvicto/product_manifest.json", "content_hash": "f68b7f78e7d79a7b"},
+        {"filename": "pluvicto/product_taxonomy.json", "content_hash": "26f0cd3175dc780f"},
+        {"filename": "pluvicto/client_style_instances/client_default.json", "content_hash": "b722b79848ce7463"},
+        {"filename": "trastuzumab_deruxtecan_gastric/expression_library.json", "content_hash": "32cbd269a173f12a"},
+        {"filename": "trastuzumab_deruxtecan_gastric/m5_compliance_rules.json", "content_hash": "174a3484b7dfada5"},
+        {"filename": "trastuzumab_deruxtecan_gastric/product_manifest.json", "content_hash": "ffda4a5ca3ae1097"},
+        {"filename": "trastuzumab_deruxtecan_gastric/product_taxonomy.json", "content_hash": "b50faed30609d868"}
+      ]
+    },
+    "L4_m6_evidence_database": {
+      "source_key": "SRC-L4-M6-EVIDENCE-DB",
+      "asset_key": "AST-PKG-L4-M6-EVIDENCE-DB",
+      "source_path": "medical_kb_system/L4_product_knowledge/*/m6_evidence_database.json",
+      "decision": "rebuild",
+      "rebuild_manifest": "manifests/batch2_l4_m6_rebuild.json",
+      "rebuild_status": "complete",
+      "rebuild_outputs": {
+        "lecanemab": {"file": "evidence/rebuilt/lecanemab_evidence_v2_sample.json", "hash": "ae700884f642a622"},
+        "furmonertinib": {"file": "evidence/rebuilt/furmonertinib_evidence_v2.json", "hash": "5ee25cab6233476d"},
+        "trastuzumab_deruxtecan_gastric": {"file": "evidence/rebuilt/trastuzumab_deruxtecan_gastric_evidence_v2.json", "hash": "670a17a0da0777fc"},
+        "lemborexant": {"file": "evidence/rebuilt/lemborexant_evidence_v2.json", "hash": "4e04075890bb5ad0"},
+        "donanemab": {"file": "evidence/rebuilt/donanemab_evidence_v2.json", "hash": "16eae22b3c8723ee"},
+        "pluvicto": {"file": "evidence/rebuilt/pluvicto_evidence_v2.json", "hash": "6f7078187e105f72"},
+        "test_product": {"file": "evidence/rebuilt/test_product_evidence_v2.json", "hash": "3d0c16cee9924286"}
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q2] V3 抗Aβ治疗能不能停药，其实主动权一直在患者手上！.docx",
+    "content_hash": "72ede4202a626f25",
+    "distilled_at": "2026-03-10T03:56:06.738348",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V3 抗Aβ治疗能不能停药，其实主动权一直在患者手上！",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q2",
+    "word_count": 1239,
+    "source_file": "[2025-Q2] V3 抗Aβ治疗能不能停药，其实主动权一直在患者手上！.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "抗Aβ治疗能不能停药，其实主动权一直在患者手上！\n​\n随着抗Aβ药物的获批，阿尔茨海默病有了延缓疾病...。",
+    "抗Aβ治疗能不能停药，其实主动权一直在患者手上！\n​\n随着抗Aβ药物的获批，阿尔茨海默病有了延缓疾病...。",
+    "抗Aβ治疗能不能停药，其实主动权一直在患者手上！\n​\n随着抗Aβ药物的获批，阿尔茨海默病有了延缓疾病...。",
+    "2、中国经验证明药物安全可靠\n目前仑卡奈单抗已经在中国大陆上市近一年时间，已经积累了超4000余例患...。",
+    "抗Aβ治疗能不能停药，其实主动权一直在患者手上！\n​\n随着抗Aβ药物的获批，阿尔茨海默病有了延缓疾病...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "抗Aβ治疗能不能停药，其实主动权一直在患者手上！\n​\n随着抗Aβ药物的获批，阿尔茨海默病有了延缓疾病进展的治疗方法，患者的结局也有了巨大的改变，很多使用过仑卡奈单抗的患者认知功能迅速稳定，甚至出现了提高的迹象。\n那么很多患者和家属由此产生了一个问题，使用仑卡奈单抗治疗后是不是一定要终身用药？听说另一款抗Aβ药物多奈单抗治疗周期结束后可以停药，使用起来压力更小。\n那么真相是什么呢？\n\n1、仑卡奈单抗..."
+}

@@ -1,0 +1,43 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.072632",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_接受Lecanemab治疗的患者阿尔茨海默病",
+    "asset_key": "AST-PDF-2025-Q3_接受Lecanemab治疗的患者阿尔茨海默病",
+    "content_hash": "33c8e65b198684e9"
+  },
+  "metadata": {
+    "title": "接受Lecanemab治疗的患者阿尔茨海默病血液生物标志物的变化",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": "mechanism"
+  },
+  "distilled_content": {
+    "mechanism_findings": "Lecanemab targets amyloid-beta aggregates in the brain",
+    "target_pathway": "Amyloid-beta clearance",
+    "key_experiments": "In vitro and in vivo studies evaluating Lecanemab binding and efficacy"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] 接受Lecanemab治疗的患者阿尔茨海默病血液生物标志物的变化.pdf",
+    "original_size_bytes": 341480,
+    "distilled_at": "2026-03-10T03:54:51.072683"
+  }
+}

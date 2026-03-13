@@ -1,0 +1,34 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product_info": {
+    "product_name_en": "furmonertinib",
+    "product_name_zh": "伏美替尼",
+    "manufacturer": "艾力斯 (Allist Pharma)",
+    "drug_class": "EGFR-TKI",
+    "generation": "3rd generation"
+  },
+  "therapeutic_area": "oncology",
+  "indication": "NSCLC",
+  "competitors": [
+    {
+      "name_en": "osimertinib",
+      "name_zh": "奥希替尼"
+    },
+    {
+      "name_en": "afatinib",
+      "name_zh": "阿法替尼"
+    }
+  ],
+  "key_studies": [
+    {
+      "study_name": "FURLONG",
+      "study_type": "",
+      "status": ""
+    }
+  ]
+}

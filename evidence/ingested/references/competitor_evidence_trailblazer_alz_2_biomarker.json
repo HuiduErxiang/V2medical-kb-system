@@ -1,0 +1,261 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-TRAILBLAZER-ALZ-2-BIOMARKER",
+    "asset_key": "AST-H003-TRAILBLAZER-ALZ-2-BIOMARKER",
+    "content_hash": "8d9e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e1f2a3b4c5d6e7f8a9b0c1d2",
+    "source_type": "journal_article"
+  },
+  "metadata": {
+    "title": "Association of Donanemab Treatment With Exploratory Plasma Biomarkers in Early Symptomatic Alzheimer Disease: A Secondary Analysis of the TRAILBLAZER-ALZ Randomized Clinical Trial",
+    "authors": [
+      "Michael J. Pontecorvo",
+      "Ming Lu",
+      "Samantha C. Burnham",
+      "Andrew E. Schade",
+      "Jeffrey L. Dage",
+      "Sergey Shcherbinin",
+      "Emily C. Collins",
+      "John R. Sims",
+      "Mark A. Mintun"
+    ],
+    "year": 2022,
+    "study": "TRAILBLAZER-ALZ",
+    "source_file": "[2024-Q4] TRAILBLAZER-ALZ 2的生物标志物分析.md",
+    "source_size_bytes": 70271
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "phase 2 randomized controlled trial",
+      "trial_identifier": "NCT03367403",
+      "location": "US and Canada",
+      "randomization_ratio": "1:1",
+      "treatment_duration": "up to 72 weeks",
+      "final_assessment": "week 76"
+    },
+    "population": {
+      "sample_size": {
+        "total": 272,
+        "donanemab": 123,
+        "placebo": 119
+      },
+      "inclusion_criteria": [
+        "Age 60-85 years",
+        "Early symptomatic AD (prodromal AD or mild dementia)",
+        "MMSE score 20-28",
+        "Elevated amyloid and intermediate tau levels via PET"
+      ],
+      "baseline_characteristics": {
+        "mean_age": 75.2,
+        "female_percentage": 53.3,
+        "apoe_e4_carriers": 74,
+        "mean_iadrs": null,
+        "baseline_biomarkers": {
+          "ptau217": "elevated",
+          "gfap": "elevated",
+          "nfL": "normal range",
+          "ab42_40": "reduced ratio"
+        }
+      },
+      "subgroup_analysis": "plasma biomarker analysis"
+    },
+    "endpoints": {
+      "primary": "Change in plasma biomarker levels following donanemab treatment",
+      "secondary": [
+        "Correlation of plasma biomarker changes with amyloid PET",
+        "Correlation of plasma biomarker changes with tau PET",
+        "Correlation of plasma biomarker changes with iADRS"
+      ]
+    },
+    "key_results": {
+      "biomarker_changes": {
+        "ptau217": {
+          "donanemab": {
+            "change": "-23% from baseline",
+            "statistical_significance": "P < .001"
+          },
+          "placebo": {
+            "change": "+6% from baseline",
+            "statistical_significance": null
+          },
+          "time_to_effect": "12 weeks",
+          "persistence": "up to 76 weeks"
+        },
+        "gfap": {
+          "donanemab": {
+            "change": "-12% from baseline",
+            "statistical_significance": "P < .001"
+          },
+          "placebo": {
+            "change": "+15% from baseline",
+            "statistical_significance": null
+          },
+          "time_to_effect": "12 weeks",
+          "persistence": "up to 76 weeks"
+        },
+        "nfL": {
+          "donanemab": {
+            "change": "+15% from baseline",
+            "statistical_significance": null
+          },
+          "placebo": {
+            "change": "+19% from baseline",
+            "statistical_significance": null
+          },
+          "treatment_difference": "no significant difference"
+        },
+        "ab42_40": {
+          "donanemab": {
+            "change": "+4% from baseline",
+            "statistical_significance": null
+          },
+          "placebo": {
+            "change": "+2% from baseline",
+            "statistical_significance": null
+          },
+          "treatment_difference": "significant only at week 36"
+        }
+      },
+      "correlations": {
+        "ptau217_amyloid": {
+          "spearman_correlation": 0.484,
+          "ci": "0.359-0.592",
+          "p_value": "< .001"
+        },
+        "gfap_amyloid": {
+          "spearman_correlation": 0.453,
+          "ci": "0.306-0.579",
+          "p_value": "< .001"
+        },
+        "ptau217_tau": {
+          "frontal_lobe": {
+            "correlation": 0.243,
+            "ci": "0.092-0.383",
+            "p_value": ".002"
+          },
+          "temporal_lobe": {
+            "correlation": 0.177,
+            "ci": "0.023-0.323",
+            "p_value": ".02"
+          },
+          "global": {
+            "correlation": 0.170,
+            "ci": "0.016-0.317",
+            "p_value": ".03"
+          }
+        },
+        "ptau217_gfap": {
+          "baseline": {
+            "correlation": 0.399,
+            "p_value": "< .001"
+          },
+          "endpoint": {
+            "correlation": 0.393,
+            "p_value": "< .001"
+          },
+          "change": {
+            "correlation": 0.475,
+            "p_value": "< .001"
+          }
+        },
+        "biomarker_iadrs": {
+          "ptau217": {
+            "correlation": null,
+            "mcid_association": "p = .04 at week 24"
+          },
+          "gfap": {
+            "correlation": null,
+            "mcid_association": null
+          },
+          "nfL": {
+            "correlation": -0.182,
+            "p_value": ".02"
+          },
+          "ab42_40": {
+            "correlation": null,
+            "mcid_association": null
+          }
+        }
+      },
+      "early_stopping_effects": {
+        "ptau217": {
+          "stopped_at_24_weeks": {
+            "change": "-23% from baseline",
+            "statistical_significance": "< .001"
+          },
+          "continued_treatment": {
+            "change": "-23% from baseline",
+            "statistical_significance": "< .001"
+          },
+          "no_difference": true
+        },
+        "gfap": {
+          "stopped_at_24_weeks": {
+            "change": "-12% from baseline",
+            "statistical_significance": "< .001"
+          },
+          "continued_treatment": {
+            "change": "-12% from baseline",
+            "statistical_significance": "< .001"
+          },
+          "no_difference": true
+        }
+      }
+    },
+    "safety_data": {
+      "biomarker_safety": {
+        "ptau217_reduction": {
+          "no_adverse_effects": true,
+          "independent_of_aria_e": true
+        },
+        "gfap_reduction": {
+          "no_adverse_effects": true,
+          "independent_of_aria_e": true
+        }
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "other anti-amyloid therapies",
+        "similar_effect": true,
+        "key_findings": "Consistent with findings from other anti-Aβ antibodies"
+      },
+      {
+        "comparator": "lecanemab (hypothetical)",
+        "efficacy_signals": {
+          "ptau217_reduction": "similar magnitude",
+          "gfap_reduction": "similar magnitude",
+          "timing_of_effect": "similar (12 weeks)"
+        }
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Donanemab",
+      "Plasma biomarkers",
+      "Phosphorylated tau 217",
+      "Glial fibrillary acidic protein",
+      "Neurofilament light chain",
+      "Amyloid beta 42/40",
+      "Positron-emission tomography",
+      "Amyloid plaque",
+      "Tau pathology"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Biomarkers",
+      "Blood Proteins",
+      "Brain",
+      "Amyloid beta-Peptides",
+      "Antibodies, Monoclonal",
+      "Neurofibrillary Tangles",
+      "Positron-Emission Tomography",
+      "Tau Proteins",
+      "Glial Fibrillary Acidic Protein"
+    ]
+  }
+}

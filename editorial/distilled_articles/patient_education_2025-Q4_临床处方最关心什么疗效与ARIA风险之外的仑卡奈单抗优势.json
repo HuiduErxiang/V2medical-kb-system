@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q4] 临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势.docx",
+    "content_hash": "56163885c91dd719",
+    "distilled_at": "2026-03-10T03:56:06.809233",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q4",
+    "word_count": 2376,
+    "source_file": "[2025-Q4] 临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势\n在神经内科门诊，一位早期阿尔茨海默病患者...。",
+    "临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势\n在神经内科门诊，一位早期阿尔茨海默病患者...。",
+    "当仑卡奈单抗将阿尔茨海默病治疗带入疾病修饰时代，医生的处方决策早已超越简单的有效或安全二元判断。",
+    "当仑卡奈单抗将阿尔茨海默病治疗带入疾病修饰时代，医生的处方决策早已超越简单的有效或安全二元判断。",
+    "当仑卡奈单抗将阿尔茨海默病治疗带入疾病修饰时代，医生的处方决策早已超越简单的有效或安全二元判断。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势\n在神经内科门诊，一位早期阿尔茨海默病患者的家属曾这样问：医生，这药真的能让妈妈记得回家的路吗？这个问题背后，是临床处方最核心的困境——如何在疗效数字与患者真实生活之间，建立可触摸的希望。\n当仑卡奈单抗将阿尔茨海默病治疗带入疾病修饰时代，医生的处方决策早已超越简单的有效或安全二元判断。面对这个每两周就要来输注一次的抗体药物，临床最关心的，其..."
+}

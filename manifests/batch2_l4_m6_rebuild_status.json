@@ -1,0 +1,77 @@
+{
+  "rebuild_status": "partial_complete",
+  "rebuild_date": "2026-03-09",
+  "migration_batch": "Batch-2",
+  "description": "L4 m6_evidence_database rebuild status - partial implementation with V2 evidence sample",
+  "products": [
+    {
+      "product_id": "lecanemab",
+      "product_name_zh": "仑卡奈单抗",
+      "rebuild_status": "sample_complete",
+      "v2_output": "evidence/rebuilt/lecanemab_evidence_v2_sample.json",
+      "sources_rebuilt": 2,
+      "facts_rebuilt": 2,
+      "v1_total_sources": 20,
+      "v1_total_facts": "estimated_100+",
+      "content_hash": "pending"
+    },
+    {
+      "product_id": "furmonertinib",
+      "product_name_zh": "伏美替尼",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    },
+    {
+      "product_id": "trastuzumab_deruxtecan_gastric",
+      "product_name_zh": "德曲妥珠单抗",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    },
+    {
+      "product_id": "lemborexant",
+      "product_name_zh": "莱博雷生",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    },
+    {
+      "product_id": "donanemab",
+      "product_name_zh": "多那单抗",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    },
+    {
+      "product_id": "pluvicto",
+      "product_name_zh": "普卢维托",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    },
+    {
+      "product_id": "test_product",
+      "product_name_zh": "测试产品",
+      "rebuild_status": "not_started",
+      "v2_output": null
+    }
+  ],
+  "summary": {
+    "total_products": 7,
+    "products_with_sample": 1,
+    "products_not_started": 6,
+    "overall_status": "partial_sample"
+  },
+  "rebuild_strategy": {
+    "approach": "Extract key evidence from V1 m6, rebuild as V2 Source -> Asset -> Fragment -> Fact chain",
+    "mapping_rules": [
+      "V1 sources[].source_id -> V2 SourceRecord.source_id (V2- prefix)",
+      "V1 sources[].citation -> V2 SourceRecord.citation",
+      "V1 evidence items -> V2 FactRecord with proper lineage",
+      "Add stable keys: source_key, asset_key, fact_key",
+      "Do NOT copy V1 m6 files directly"
+    ]
+  },
+  "next_steps": [
+    "Implement automated V1->V2 evidence migration script",
+    "Complete rebuild for remaining 6 products",
+    "Add AssetRecord and EvidenceFragment layers",
+    "Build evidence validation pipeline"
+  ]
+}

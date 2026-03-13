@@ -1,0 +1,43 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.041963",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2024-Unknown_Akihiko_Koyama._M",
+    "asset_key": "AST-PPTX-2024-Unknown_Akihiko_Koyama._M",
+    "content_hash": "62d3db385faf50b3"
+  },
+  "metadata": {
+    "title": "Akihiko Koyama",
+    "authors": [],
+    "year": "2024",
+    "source_type": "pptx",
+    "study_type": "mechanism"
+  },
+  "distilled_content": {
+    "mechanism_findings": "Lecanemab targets amyloid-beta aggregates in the brain",
+    "target_pathway": "Amyloid-beta clearance",
+    "key_experiments": "In vitro and in vivo studies evaluating Lecanemab binding and efficacy"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2024-Unknown] Akihiko Koyama. Mechanistic Rationale for Continued Lecanemab Dosing. CTAD 2024.pptx",
+    "original_size_bytes": 6905678,
+    "distilled_at": "2026-03-10T03:54:51.041987"
+  }
+}

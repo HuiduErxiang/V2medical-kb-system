@@ -1,0 +1,67 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] V1 《柳叶刀》AD专辑重磅解读！如何破解抗Aβ药物的“价值之争”…….docx",
+    "source_key": "SRC-HIST-2025-Q4_V1_《柳叶刀》AD专辑重磅解读！如何破解抗",
+    "asset_key": "AST-DOCX-2025-Q4_V1_《柳叶刀》AD专辑重磅解读！如何破解抗",
+    "content_hash": "3ab53a169fe558c9",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.251655",
+    "source_size_bytes": 108923
+  },
+  "metadata": {
+    "title": "V1 《柳叶刀》AD专辑重磅解读！如何破解抗Aβ药物的“价值之争”……",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q4",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性",
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "在阿尔茨海默病（AD）诊疗领域，长达数十年的研究始终围绕“如何阻止疾病进展”这一核心命题。",
+      "可见，仑卡奈单抗具有重要的临床价值，并在AD治疗中展现出了长期获益的潜力。",
+      "未来，AD应从“被动治疗”转向“主动预防”，建立“早筛-早诊-早治”路径，从源头上降低发病率和重症AD患者基数，这一改变对照护者与社会负担的减轻不容忽视。",
+      "争议不是终点，而是推动AD治疗进步的起点……",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "更关键的是，随着Clarity AD研究四年随访结果出炉[3]，以绝对有力的获益进一步证实了DMT的长期获益潜力，打破仑卡奈单抗“获益有限”的质疑。以ADNI作为对照组，仑卡奈单抗治疗18个月、36个月、48个月后的CDR-SB评分获益分别为0.52、1.01、1.75分，获益逐步扩大。前36个月CDR-SB评分获益约为0.5分/18个月，而在36~48个月期间，获益迅速拉开达到了0.74分/12个月。更令人振奋的是，从绝对数据看，仑卡奈单抗治疗4年后仍有81.4%的患者维持在轻度AD或MCI状态！"
+  ]
+}

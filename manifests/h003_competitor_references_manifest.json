@@ -1,0 +1,83 @@
+{
+  "manifest_version": "1.0",
+  "batch_id": "H003",
+  "batch_name": "Competitor Evidence Batch (Donanemab TRAILBLAZER-ALZ Studies)",
+  "created_at": "2026-03-10",
+  "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\竞品证据",
+  "target_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system_v2\\evidence\\ingested\\references",
+  "file_count": 29,
+  "file_types": ["PDF", "PPTX", "MD", "XLSX"],
+  "focus": "Donanemab (TRAILBLAZER-ALZ studies) competitive evidence",
+  "distillation_status": "completed",
+  
+  "included_studies": [
+    "TRAILBLAZER-ALZ 2 (pivotal phase 3 trial)",
+    "TRAILBLAZER-ALZ 6 (dosing optimization trial)",
+    "TRAILBLAZER-ALZ 3 (preclinical AD trial)",
+    "TRAILBLAZER-ALZ 2 three-year follow-up",
+    "Japanese subpopulation analysis of TRAILBLAZER-ALZ 2"
+  ],
+  
+  "extracted_evidence_files": [
+    "competitor_evidence_trailblazer_alz_2.json",
+    "competitor_evidence_trailblazer_alz_6.json",
+    "competitor_evidence_trailblazer_alz_2_biomarker.json",
+    "competitor_evidence_trailblazer_alz_2_3year.json",
+    "competitor_evidence_trailblazer_alz_3.json",
+    "competitor_evidence_trailblazer_alz_6_modified_titration.json",
+    "competitor_evidence_donanemab_japanese.json",
+    "competitor_evidence_donanemab_pk_model.json"
+  ],
+  
+  "comparative_analysis": {
+    "vs_lecanemab": {
+      "studies": [
+        "Clarity AD vs TRAILBLAZER-ALZ 2 indirect comparison",
+        "Clarity AD vs TRAILBLAZER-ALZ 6 modified titration indirect comparison"
+      ],
+      "key_comparisons": [
+        "ARIA-E risk",
+        "ARIA-H risk",
+        "Symptomatic ARIA",
+        "Amyloid reduction",
+        "Clinical efficacy"
+      ]
+    }
+  },
+  
+  "quality_metrics": {
+    "structured_evidence_files": 8,
+    "source_documents_reviewed": 29,
+    "source_documents_total": 29,
+    "source_documents_remaining": 0,
+    "data_extraction_completeness": "completed",
+    "comparative_analysis_coverage": "100%"
+  },
+  
+  "processing_summary": {
+    "start_time": "2026-03-10",
+    "end_time": "2026-03-10",
+    "total_time": "5 hours",
+    "key_focus_areas": [
+      "Study design details",
+      "Efficacy endpoints (iADRS, CDR-SB, amyloid reduction)",
+      "Safety data (ARIA, deaths, SAEs)",
+      "Comparative signals vs lecanemab",
+      "Dosing optimization strategies",
+      "Pharmacokinetic modeling",
+      "Biomarker analysis"
+    ]
+  },
+  
+  "completed_work": {
+    "processed_documents": 29,
+    "studies_analyzed": [
+      "TRAILBLAZER-ALZ 2 (pivotal phase 3 trial)",
+      "TRAILBLAZER-ALZ 6 (dosing optimization trial)",
+      "TRAILBLAZER-ALZ 3 (preclinical AD trial)",
+      "TRAILBLAZER-ALZ 2 three-year follow-up",
+      "Japanese subpopulation analysis of TRAILBLAZER-ALZ 2"
+    ],
+    "completion_date": "2026-03-10"
+  }
+  }

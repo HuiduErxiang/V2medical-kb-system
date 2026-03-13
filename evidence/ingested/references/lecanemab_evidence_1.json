@@ -1,0 +1,49 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.031718",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2024-Q2_Clarity_AD原文",
+    "asset_key": "AST-PDF-2024-Q2_Clarity_AD原文",
+    "content_hash": "270e73672ea52027"
+  },
+  "metadata": {
+    "title": "Clarity AD原文",
+    "authors": [],
+    "year": "2024",
+    "source_type": "pdf",
+    "study_type": "clinical_trial"
+  },
+  "distilled_content": {
+    "study_design": "Randomized controlled trial",
+    "population": "Patients with early Alzheimer's Disease",
+    "endpoints": [
+      "Cognitive decline",
+      "Amyloid reduction",
+      "Safety outcomes"
+    ],
+    "key_results": "This study demonstrated significant benefits of Lecanemab treatment in patients with early Alzheimer's Disease",
+    "safety_data": "Safety profile included amyloid-related imaging abnormalities (ARIA) and other adverse events"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2024-Q2] Clarity AD原文.pdf",
+    "original_size_bytes": 613519,
+    "distilled_at": "2026-03-10T03:54:51.032138"
+  }
+}

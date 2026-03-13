@@ -1,0 +1,54 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2024-Q4] 能停药的Aβ抗体，真的是DMT治疗吗？.docx",
+    "source_key": "SRC-HIST-2024-Q4_能停药的Aβ抗体，真的是DMT治疗吗？",
+    "asset_key": "AST-DOCX-2024-Q4_能停药的Aβ抗体，真的是DMT治疗吗？",
+    "content_hash": "2dfcbe62ad522fa0",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.002364",
+    "source_size_bytes": 523773
+  },
+  "metadata": {
+    "title": "能停药的Aβ抗体，真的是DMT治疗吗？",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2024-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "如何理解DMT？",
+      "因此，DMT的核心在于能够改变疾病的自然病程，一般来说是一种长期的、系统性的干预措施，以对疾病的病理生理过程产生积极影响，从而延缓疾病的进展并改善长期预后。",
+      "如果在长期的AD 疾病控制过程中，DMT药物的停用是对疾病控制有利的，只可能是因为治疗切断了疾病发展当中的一个关键环节，使得疾病的进展得以暂时停止或大幅减缓，且短时间内不会再次启动。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "Clarity AD研究[]和Study 201研究结果显示，在治疗期间。仑卡奈单抗可以显著降低患者的Aβ PET负荷、Tau PET负荷、CSF Tau负荷、CSF Aβ42/40、血浆 Aβ42/40、血浆 NfL、血浆 GFAP等生物标志物。"
+  ]
+}

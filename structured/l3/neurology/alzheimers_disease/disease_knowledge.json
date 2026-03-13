@@ -1,0 +1,793 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L3 — AD Disease Knowledge (阿尔茨海默病疾病知识)",
+  "version": "2.0",
+  "description": "阿尔茨海默病疾病级通用知识库，为论点推导(m1)和文章生成提供事实基础。换药还能用。",
+  "knowledge_categories": {
+    "pathology": {
+      "category_name": "病理机制",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "PATH_01",
+          "fact": "淀粉样蛋白级联假说(Amyloid Cascade Hypothesis)认为Aβ(β-淀粉样蛋白)的异常沉积是AD发病的起始事件，触发tau蛋白病理、神经炎症和神经元死亡",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_02",
+          "fact": "Aβ寡聚体(oligomers)比成熟斑块(plaques)具有更强的神经毒性，可破坏突触功能并诱导tau蛋白过度磷酸化",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016"
+          ]
+        },
+        {
+          "id": "PATH_03",
+          "fact": "Aβ原纤维(fibrils)是介于可溶性寡聚体和不可溶性斑块之间的中间形态，具有显著的突触毒性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016"
+          ]
+        },
+        {
+          "id": "PATH_04",
+          "fact": "Tau蛋白过度磷酸化导致神经原纤维缠结(neurofibrillary tangles, NFTs)形成，与认知功能下降的相关性比Aβ斑块更强",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_BRAAK_1991_STAGING",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_05",
+          "fact": "神经炎症(neuroinflammation)由小胶质细胞(microglia)和星形胶质细胞(astrocytes)激活介导，既是AD的病理特征也是疾病进展的驱动因素",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_06",
+          "fact": "突触丢失(synaptic loss)是AD早期最显著的病理改变之一，与认知障碍程度密切相关，发生在神经元死亡之前",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_07",
+          "fact": "神经元死亡主要通过凋亡(apoptosis)和坏死性凋亡(necroptosis)等程序性死亡途径发生，导致不可逆的脑萎缩",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_08",
+          "fact": "淀粉样蛋白级联假说已演进为更复杂的网络模型，纳入神经炎症、血管因素和代谢异常等多重病理机制的相互作用",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "PATH_09",
+          "fact": "Aβ的清除机制包括酶解降解、血脑屏障转运和小胶质细胞吞噬，清除功能障碍是Aβ沉积的关键因素",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016"
+          ]
+        },
+        {
+          "id": "PATH_10",
+          "fact": "脑血管淀粉样变性(cerebral amyloid angiopathy, CAA)是Aβ在脑血管壁沉积的病理表现，增加脑出血风险",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        }
+      ]
+    },
+    "genetics_risk": {
+      "category_name": "遗传与风险因素",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "GEN_01",
+          "fact": "APOE ε4等位基因是晚发型AD最强的遗传风险因素，杂合子携带者风险增加3-4倍，纯合子携带者风险增加12-15倍",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET",
+            "AD_SRC_LANCET_COMMISSION_2020"
+          ]
+        },
+        {
+          "id": "GEN_02",
+          "fact": "家族性AD(familial AD)由APP、PSEN1或PSEN2基因的常染色体显性突变引起，占AD病例的<1%",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "GEN_03",
+          "fact": "散发性AD(sporadic AD)占所有AD病例的99%以上，由多基因风险因素与环境因素共同作用导致",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "GEN_04",
+          "fact": "年龄是AD最大的风险因素，65岁后每增加5岁患病风险约翻倍，85岁以上人群患病率可达30-50%",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "GEN_05",
+          "fact": "女性AD发病率高于男性，部分原因是女性预期寿命更长，但也存在性别特异性的生物学风险因素",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "GEN_06",
+          "fact": "多基因风险评分(polygenic risk score, PRS)整合多个风险位点信息，可更准确地预测个体AD发病风险",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "GEN_07",
+          "fact": "TREM2基因变异影响小胶质细胞功能，是除APOE外最重要的AD遗传风险因素之一",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        }
+      ]
+    },
+    "epidemiology": {
+      "category_name": "流行病学",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "EPI_01",
+          "fact": "全球痴呆症患者约5500万人，其中AD占60-70%，预计到2050年将增至1.39亿人",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS",
+            "AD_SRC_WHO_2021_DEMENTIA"
+          ]
+        },
+        {
+          "id": "EPI_02",
+          "fact": "中国AD患者约1000万人，是全球AD患者最多的国家，患病率随人口老龄化持续上升",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "EPI_03",
+          "fact": "AD发病率在65岁前较低(<1%)，65-74岁约3%，75-84岁约17%，85岁以上可达32%",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "EPI_04",
+          "fact": "全球痴呆症相关经济负担超过1.3万亿美元/年，预计到2030年将翻倍，其中直接医疗成本约占50%",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS",
+            "AD_SRC_WHO_2021_DEMENTIA"
+          ]
+        },
+        {
+          "id": "EPI_05",
+          "fact": "AD患者的平均生存期从诊断起约4-8年，但病程可长达20年，是老年人致残和死亡的主要原因之一",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "EPI_06",
+          "fact": "全球约70%的痴呆症患者由家庭成员提供非正式照护，照护者负担沉重且常被忽视",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_WHO_2021_DEMENTIA"
+          ]
+        },
+        {
+          "id": "EPI_07",
+          "fact": "AD诊断率低，全球约50-75%的患者未被确诊，低收入国家的诊断率更低",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_WHO_2021_DEMENTIA"
+          ]
+        }
+      ]
+    },
+    "staging_progression": {
+      "category_name": "疾病分期与进程",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "STA_01",
+          "fact": "AD疾病进程分为：临床前期(preclinical)→轻度认知障碍due to AD(MCI due to AD)→轻度AD痴呆→中度AD→重度AD",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "STA_02",
+          "fact": "AD病理进程可长达20-30年，Aβ沉积在临床症状出现前15-20年即已开始",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016",
+            "AD_SRC_JACK_2018_ATAN"
+          ]
+        },
+        {
+          "id": "STA_03",
+          "fact": "CDR-SB(Sum of Boxes)评分范围0-18分，分数越高表示认知和功能损害越严重，是评估疾病进展的核心工具",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "STA_04",
+          "fact": "ADAS-Cog(Alzheimer's Disease Assessment Scale-Cognitive)评分范围0-70分，分数越高表示认知损害越严重",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "STA_05",
+          "fact": "MMSE(Mini-Mental State Examination)评分范围0-30分，<24分提示认知障碍，是广泛使用的筛查工具",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "STA_06",
+          "fact": "早期干预(临床前期或MCI阶段)的治疗窗口对于延缓疾病进展至关重要，晚期干预效果有限",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET",
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "STA_07",
+          "fact": "AD疾病进展具有不可逆性，一旦神经元大量死亡，认知功能难以恢复，强调早诊早治的重要性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "STA_08",
+          "fact": "Braak分期系统根据tau蛋白病理在大脑中的分布范围将AD分为I-VI期，与临床症状严重程度相关",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_BRAAK_1991_STAGING"
+          ]
+        }
+      ]
+    },
+    "diagnosis_biomarkers": {
+      "category_name": "诊断与生物标志物",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "DIA_01",
+          "fact": "Aβ-PET成像可可视化脑内Aβ斑块沉积，是AD病理诊断的金标准之一，但成本高昂且可及性有限",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "DIA_02",
+          "fact": "脑脊液(CSF)Aβ42/40比值降低是AD的核心生物标志物，反映脑内Aβ沉积导致的Aβ42选择性滞留",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN"
+          ]
+        },
+        {
+          "id": "DIA_03",
+          "fact": "血浆p-Tau181和p-Tau217是新兴的血液生物标志物，与tau-PET和CSF tau高度相关，检测便捷且成本低",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_HANSSON_2022_BLOOD_BM"
+          ]
+        },
+        {
+          "id": "DIA_04",
+          "fact": "神经丝轻链(NfL, Neurofilament Light)是神经元损伤的非特异性标志物，在多种神经退行性疾病中升高",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_HANSSON_2022_BLOOD_BM"
+          ]
+        },
+        {
+          "id": "DIA_05",
+          "fact": "胶质纤维酸性蛋白(GFAP)是星形胶质细胞激活的标志物，反映AD相关的神经炎症反应",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_HANSSON_2022_BLOOD_BM"
+          ]
+        },
+        {
+          "id": "DIA_06",
+          "fact": "AT(N)分类框架将AD生物标志物分为：A(Aβ病理)、T(tau病理)、N(神经变性)，用于生物学定义AD",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN"
+          ]
+        },
+        {
+          "id": "DIA_07",
+          "fact": "MoCA(Montreal Cognitive Assessment)评分对轻度认知障碍更敏感，cutoff值通常为26分",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "DIA_08",
+          "fact": "早期筛查和生物标志物检测对于识别临床前期AD患者、实现早期干预至关重要",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_HANSSON_2022_BLOOD_BM",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "DIA_09",
+          "fact": "tau-PET成像可可视化脑内tau蛋白缠结分布，与认知损害程度的空间相关性优于Aβ-PET",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        }
+      ]
+    },
+    "treatment_landscape": {
+      "category_name": "治疗格局",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "TRE_01",
+          "fact": "疾病修饰治疗(DMT, Disease-Modifying Therapy)旨在延缓或阻止疾病进展，与仅缓解症状的传统治疗有根本区别",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "TRE_02",
+          "fact": "胆碱酯酶抑制剂(donepezil, rivastigmine, galantamine)和美金刚(memantine)仅能暂时改善症状，不能改变疾病进程",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "TRE_03",
+          "fact": "抗Aβ抗体治疗范式通过清除脑内Aβ沉积，从疾病根源干预AD病理进程，代表DMT的重大突破",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "TRE_04",
+          "fact": "抗Aβ抗体治疗的最佳持续时间仍在研究中，目前存在持续给药与达到斑块清除标准后停药(treat-to-clearance)两种不同的治疗模式",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "TRE_05",
+          "fact": "联合治疗(如抗Aβ+抗tau+抗炎)被认为是未来AD治疗的重要方向，可能产生协同效应",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "TRE_06",
+          "fact": "个体化精准治疗趋势包括基于APOE基因型、生物标志物谱和疾病分期的治疗策略优化",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET",
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "TRE_07",
+          "fact": "早期治疗(临床前期或MCI阶段)的获益最大化，晚期AD患者因神经元大量丢失而获益有限",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT",
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "TRE_08",
+          "fact": "抗Aβ抗体治疗的目标人群为早期AD患者(MCI或轻度痴呆)，且需证实Aβ病理阳性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT",
+            "AD_SRC_JACK_2018_ATAN"
+          ]
+        },
+        {
+          "id": "TRE_09",
+          "fact": "治疗监测需结合临床认知评估和生物标志物变化，综合判断治疗效果",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        }
+      ]
+    },
+    "aria_knowledge": {
+      "category_name": "ARIA(淀粉样蛋白相关影像学异常)",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "ARI_01",
+          "fact": "ARIA-E(Edema)指血管源性水肿/渗出，MRI表现为T2-FLAIR高信号，通常可逆",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_02",
+          "fact": "ARIA-H(Hemosiderin)指含铁血黄素沉积，包括脑微出血(microbleeds)和表面含铁血黄素沉积(superficial siderosis)",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_03",
+          "fact": "ARIA发生机制与抗Aβ抗体清除血管壁Aβ沉积引发的局部炎症反应和血脑屏障通透性改变有关",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_04",
+          "fact": "APOE ε4纯合子是ARIA最强的风险因素，发生率可达30-40%，杂合子风险次之，非携带者风险最低",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_05",
+          "fact": "大多数ARIA为无症状(radiographic only)，通常在常规MRI监测中发现，数周至数月内可自行消退",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_06",
+          "fact": "ARIA监测要求：在治疗初期（通常为前半年）需进行密集的MRI监测，具体频率因药物而异，APOE ε4纯合子通常需要更密切的监测",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_07",
+          "fact": "有症状ARIA(头痛、意识模糊、视觉障碍、癫痫等)需暂停给药，待症状和影像学异常消退后考虑恢复",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_08",
+          "fact": "ARIA发生率与疗效可能存在正相关，反映药物对Aβ斑块的清除活性，但需平衡安全性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "ARI_09",
+          "fact": "ARIA风险随累积剂量增加而升高，治疗前6个月是ARIA高发期",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        }
+      ]
+    },
+    "caregiver_burden": {
+      "category_name": "照护者负担",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "CAR_01",
+          "fact": "AD照护者平均每日投入4-8小时进行照护，重度患者照护时间更长，相当于全职工作",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "CAR_02",
+          "fact": "照护者抑郁和焦虑发生率高达40-60%，显著高于普通人群，心理健康严重影响生活质量",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020"
+          ]
+        },
+        {
+          "id": "CAR_03",
+          "fact": "照护者因减少工作时间或提前退休导致的收入损失，加上直接照护支出，构成沉重的经济负担",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "CAR_04",
+          "fact": "社会隔离是照护者的常见问题，因照护责任限制社交活动，导致孤独感和支持网络减弱",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020"
+          ]
+        },
+        {
+          "id": "CAR_05",
+          "fact": "角色转换困境指配偶或子女从平等关系转变为照护者-被照护者关系，带来情感冲突和心理压力",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020"
+          ]
+        },
+        {
+          "id": "CAR_06",
+          "fact": "照护者支持体系包括喘息服务(respite care)、支持小组、心理咨询和照护技能培训，可显著减轻负担",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020",
+            "AD_SRC_WHO_2021_DEMENTIA"
+          ]
+        },
+        {
+          "id": "CAR_07",
+          "fact": "疾病进展导致照护需求增加，重度AD患者需要24小时监护，照护者负担呈进行性加重",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_LANCET_COMMISSION_2020"
+          ]
+        }
+      ]
+    },
+    "public_misconceptions": {
+      "category_name": "公众认知误区",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "MIS_01",
+          "fact": "\"老年痴呆\"刻板印象将AD错误地视为正常衰老的一部分，导致患者和家属延误就医和诊断",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_WHO_2021_DEMENTIA",
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "MIS_02",
+          "fact": "早发型AD(early-onset AD)指65岁前发病，约占AD病例的5-10%，患者多为在职人群，社会影响更大",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_ALZ_ASSOC_2025_FACTS"
+          ]
+        },
+        {
+          "id": "MIS_03",
+          "fact": "AD非记忆症状包括执行功能障碍、视空间能力下降、语言障碍和行为改变，常被忽视或误诊",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "MIS_04",
+          "fact": "\"正常衰老\"与病理性认知下降的区别在于：正常衰老不影响日常生活能力，而AD导致功能进行性丧失",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "MIS_05",
+          "fact": "早期筛查的可及性正在改善，血液生物标志物检测使大规模筛查成为可能，但仍需提高公众认知",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_HANSSON_2022_BLOOD_BM"
+          ]
+        },
+        {
+          "id": "MIS_06",
+          "fact": "AD不可治愈的误解导致治疗悲观主义，但DMT的出现证明早期干预可显著延缓疾病进展",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        }
+      ]
+    },
+    "regulatory_landscape": {
+      "category_name": "监管环境",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "REG_01",
+          "fact": "FDA(美国食品药品监督管理局)、EMA(欧洲药品管理局)和NMPA(中国国家药品监督管理局)是全球三大AD药物监管体系",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "REG_02",
+          "fact": "加速审批(Accelerated Approval)路径允许基于替代终点(如Aβ清除)批准药物，但需上市后验证临床获益",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "REG_03",
+          "fact": "常规审批(Traditional Approval)要求证实临床终点获益(如认知和功能改善)，证据标准更高",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "REG_04",
+          "fact": "抗Aβ抗体类药物的审批标准存在争议，核心问题是Aβ清除作为替代终点是否能可靠预测临床获益",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "REG_05",
+          "fact": "上市后研究要求(Post-marketing Requirements)是加速审批药物的必要条件，用于确认临床获益和长期安全性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "REG_06",
+          "fact": "真实世界证据(Real-World Evidence, RWE)在监管决策中的角色日益重要，可补充临床试验数据",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SCHELTENS_2021_LANCET"
+          ]
+        },
+        {
+          "id": "REG_07",
+          "fact": "监管指南强调患者分层和个体化治疗，要求明确目标人群(如早期AD、Aβ阳性)",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN",
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        }
+      ]
+    },
+    "competitive_landscape": {
+      "category_name": "竞争格局(通用)",
+      "origin_layer": "L3",
+      "facts": [
+        {
+          "id": "COM_01",
+          "fact": "抗Aβ赛道代表AD治疗范式的根本转变，从症状管理转向疾病修饰，市场潜力巨大",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "COM_02",
+          "fact": "靶向Aβ的不同策略包括：针对原纤维(fibrils)、斑块(plaques)、可溶性寡聚体(oligomers)或单体(monomers)",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_SELKOE_HARDY_2016",
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "COM_03",
+          "fact": "间接比较(ITC, Indirect Treatment Comparison)方法学用于跨试验比较不同药物的疗效和安全性，但存在方法学局限性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "COM_04",
+          "fact": "安全性差异化(尤其是ARIA发生率)是抗Aβ抗体类药物竞争的关键分野，影响临床采用和患者选择",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_ITC_ARIA_COMPARISON_2025Q4"
+          ]
+        },
+        {
+          "id": "COM_05",
+          "fact": "持续治疗vs可停药的治疗模式之争是抗Aβ抗体领域的重要议题，影响治疗成本和患者依从性",
+          "origin_layer": "L3",
+          "source_ids": [
+            "SRC_CRITIQUE_KAUR_2025Q1_CDI"
+          ]
+        },
+        {
+          "id": "COM_06",
+          "fact": "给药便利性(如皮下注射vs静脉输注、给药频率)是影响患者偏好和医疗资源利用的差异化因素",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        },
+        {
+          "id": "COM_07",
+          "fact": "生物标志物指导的患者选择策略可优化治疗获益风险比，是精准医疗在AD领域的体现",
+          "origin_layer": "L3",
+          "source_ids": [
+            "AD_SRC_JACK_2018_ATAN",
+            "AD_SRC_CUMMINGS_2024_DMT"
+          ]
+        }
+      ]
+    }
+  }
+}

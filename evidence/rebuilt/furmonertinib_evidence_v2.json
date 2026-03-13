@@ -1,0 +1,87 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/furmonertinib/m6_evidence_database.json",
+    "product_id": "furmonertinib",
+    "product_name_zh": "伏美替尼",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + 关键 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-FURMONERTINIB-FURLONG-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-FURMONERTINIB-FURLONG-2022-LANCET",
+      "title": "FURLONG Study",
+      "citation": "Shi Y, et al. Lancet Respir Med. 2022.",
+      "v1_source_id": "FURLONG",
+      "metadata": {
+        "study_type": "Phase 3 RCT",
+        "indication": "NSCLC"
+      }
+    },
+    {
+      "source_id": "V2-SRC-FURMONERTINIB-FAVOUR-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-FURMONERTINIB-FAVOUR-2024",
+      "title": "FAVOUR Study",
+      "citation": "Yang N, et al. 2024.",
+      "v1_source_id": "FAVOUR",
+      "metadata": {
+        "study_type": "Phase 2"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-FURMONERTINIB-EFFICACY-001",
+      "fact_key": "FACT-FURMONERTINIB-PFS-FURLONG",
+      "domain": "efficacy",
+      "definition": "PFS in FURLONG study",
+      "definition_zh": "FURLONG研究无进展生存期",
+      "value": "to_be_extracted",
+      "unit": "months",
+      "fragment_ids": ["V2-FRAG-FURMONERTINIB-FURLONG-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-FURMONERTINIB-FURLONG-2022-LANCET",
+        "asset_key": "AST-FURMONERTINIB-FURLONG-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_source_id": "FURLONG",
+        "rebuild_notes": "从V1 sources 和 facts 结构映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-FURMONERTINIB-SAFETY-001",
+      "fact_key": "FACT-FURMONERTINIB-SAFETY-PROFILE",
+      "domain": "safety",
+      "definition": "Safety profile summary",
+      "definition_zh": "安全性概况",
+      "value": "to_be_extracted",
+      "unit": "",
+      "fragment_ids": ["V2-FRAG-FURMONERTINIB-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-FURMONERTINIB-FURLONG-2022-LANCET",
+        "asset_key": "AST-FURMONERTINIB-FURLONG-SAFETY",
+        "extraction_date": "2026-03-10"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "meta": "product metadata",
+      "sources": "clinical trial sources array",
+      "facts": "evidence items with source_ids"
+    },
+    "v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (V2- prefix)",
+      "V1 sources[].citation -> V2 citation",
+      "V1 facts[] -> V2 FactRecord with lineage"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.092435",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q4_P096-比较_Lecanemab_与_Do",
+    "asset_key": "AST-PDF-2025-Q4_P096-比较_Lecanemab_与_Do",
+    "content_hash": "271c51a6a9d77fd7"
+  },
+  "metadata": {
+    "title": "P096-比较 Lecanemab 与 Donanemab 引起淀粉样蛋白相关影像异常的风险及其潜在影响",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": null
+  },
+  "distilled_content": {
+    "summary": "General information about Lecanemab and Alzheimer's Disease"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q4] P096-比较 Lecanemab 与 Donanemab 引起淀粉样蛋白相关影像异常的风险及其潜在影响.pdf",
+    "original_size_bytes": 316305,
+    "distilled_at": "2026-03-10T03:54:51.092510"
+  }
+}

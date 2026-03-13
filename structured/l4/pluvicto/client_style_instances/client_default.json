@@ -1,0 +1,17 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "style_id": "client_default",
+  "style_name": "默认样式",
+  "style_description": "pluvicto 产品的默认写作风格",
+  "style_attributes": {
+    "formality_level": "R3",
+    "tone": "neutral",
+    "sentence_structure": "balanced",
+    "terminology_level": "professional"
+  }
+}

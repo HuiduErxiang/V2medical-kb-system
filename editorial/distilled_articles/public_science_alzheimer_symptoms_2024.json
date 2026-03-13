@@ -1,0 +1,64 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2024-Q2] 丢三落四，说话不利索……别以为是正常衰老，还可能是阿尔茨海默病.docx",
+    "source_key": "SRC-H006-PUBLIC-001",
+    "asset_key": "AST-H006-PUBLIC-001",
+    "content_hash": "alzheimer_symptoms_recognition_2024",
+    "source_type": "public_science",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "丢三落四，说话不利索……别以为是正常衰老，还可能是阿尔茨海默病",
+    "title_en": "Memory Loss, Speech Difficulties... Don't Think It's Just Normal Aging - It Could Be Alzheimer's Disease",
+    "authors": [],
+    "journal": "公众科普",
+    "year": 2024,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "public_science",
+    "audience": "公众科普",
+    "register_level": "R5",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗"],
+    "content_focus": "awareness, early warning signs, destigmatization",
+    "narrative_patterns": ["everyday language", "relatable examples", "life impact"],
+    "sections": [
+      {
+        "title": "真实生活的场景",
+        "content": "描述了长者忘记钥匙、重复提问、找不到合适词汇等常见现象，指出这些可能不是正常衰老，而是阿尔茨海默病的早期信号。"
+      },
+      {
+        "title": "阿尔茨海默病早期症状",
+        "content": "详细介绍了记忆力减退、执行功能下降、语言沟通变化、情绪性格转变等早期症状，帮助读者识别疾病信号。"
+      },
+      {
+        "title": "早期干预的重要性",
+        "content": "虽然阿尔茨海默病目前无法治愈，但早期发现和干预可以控制疾病进展，仑卡奈单抗等新治疗方法为患者带来希望。"
+      },
+      {
+        "title": "行动建议",
+        "content": "鼓励读者关注家人健康，及时就医，不要因为疾病的污名化而延误诊断和治疗。"
+      }
+    ]
+  },
+  "key_messages": [
+    "阿尔茨海默病早期症状容易被误认为是正常衰老，需要提高警惕",
+    "记忆力减退、执行功能下降、语言沟通变化、情绪性格转变是早期预警信号",
+    "早期干预可以控制疾病进展，改善生活质量",
+    "仑卡奈单抗等新治疗方法为阿尔茨海默病患者带来希望"
+  ],
+  "accessibility_notes": [
+    "使用日常生活场景作为切入点，容易被公众理解",
+    "症状描述详细且具体，便于识别",
+    "避免过度专业术语，采用口语化表达",
+    "强调希望和积极的行动建议"
+  ]
+}

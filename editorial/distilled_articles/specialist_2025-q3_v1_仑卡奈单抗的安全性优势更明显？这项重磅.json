@@ -1,0 +1,76 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] V1 仑卡奈单抗的安全性优势更明显？这项重磅研究给出了肯定的答案…….docx",
+    "source_key": "SRC-HIST-2025-Q3_V1_仑卡奈单抗的安全性优势更明显？这项重磅",
+    "asset_key": "AST-DOCX-2025-Q3_V1_仑卡奈单抗的安全性优势更明显？这项重磅",
+    "content_hash": "cbb8878bccd7627c",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.024032",
+    "source_size_bytes": 391560
+  },
+  "metadata": {
+    "title": "V1 仑卡奈单抗的安全性优势更明显？这项重磅研究给出了肯定的答案……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "2025年阿尔茨海默病协会国际会议（AAIC）上，一项重要的研究成果《基于报告结果对仑卡奈单抗与多奈单抗的ARIA结果进行间接治疗比较》通过间接治疗比较（ITC）很好地解决并回答了这个问题。",
+      "ITC结果显示仑卡奈单抗安全性更佳",
+      "该ITC结果显示，相比于多奈单抗，仑卡奈单抗在早期AD治疗中的安全性优势更明显，且在多数患者群体中保持一致，为AD患者提供一种更安全的治疗选择。",
+      "NMA证实原始 ITC 结果",
+      "多奈单抗原本滴定方式较为激进，更换滴定方式能否减少ARIA发生率呢？",
+      "基于该研究结果，美国FDA已批准多奈单抗的标签更新，新增推荐的改良滴定给药方案。",
+      "研究结果显示，与多奈单抗改良滴定剂量相比，仑卡奈单抗在任何 ARIA、ARIA-E 和 ARIA-H 的风险数值上仍然更低，DRD分别为-4.6%、-2.1%和-8.1%。",
+      "即便如此，NMA仍进一步证实了原始 ITC 的结果，展现了仑卡奈单抗更加卓越的安全性优势。",
+      "这一安全性优势的背后，是其独特作用机制与临床实践的深度契合，在有效延缓疾病进展的同时，更精准地平衡了治疗获益与风险。（AI味儿）",
+      "在AD治疗领域不断探索的道路上，这样的安全优势将为进一步优化治疗方案、推动联合治疗策略的发展奠定坚实基础，助力患者拥有更高的生活质量。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": [
+    "2025年阿尔茨海默病协会国际会议（AAIC）上，一项重要的研究成果《基于报告结果对仑卡奈单抗与多奈单抗的ARIA结果进行间接治疗比较》通过间接治疗比较（ITC）很好地解决并回答了这个问题。",
+    "该研究的安全性数据来源于两项关键 III 期临床试验：仑卡奈单抗的Clarity AD研究和多奈单抗的TRAILBLAZER-ALZ 2研究，采用ITC方法，即通过将试验的各项安全性结果与共同对照组（安慰剂组）进行比较，从而推断两款药物的相对安全性，并以风险差异差值（DRD）为评价指标，即DRD=RD（仑卡奈单抗组-Clarity AD研究的安慰剂组）-RD（多奈单抗组-TRAILBLAZER-ALZ 2研究的安慰剂组），若 DRD 为负值，提示仑卡奈单抗的风险低于多奈单抗。",
+    "这一结果提示仑卡奈单抗的安全性优势在APOE ε4非携带者、携带者（尤其是杂合子）中均稳定存在。",
+    "该ITC结果显示，相比于多奈单抗，仑卡奈单抗在早期AD治疗中的安全性优势更明显，且在多数患者群体中保持一致，为AD患者提供一种更安全的治疗选择。",
+    "基于该研究结果，美国FDA已批准多奈单抗的标签更新，新增推荐的改良滴定给药方案。",
+    "研究结果显示，与多奈单抗改良滴定剂量相比，仑卡奈单抗在任何 ARIA、ARIA-E 和 ARIA-H 的风险数值上仍然更低，DRD分别为-4.6%、-2.1%和-8.1%。",
+    "即便如此，NMA仍进一步证实了原始 ITC 的结果，展现了仑卡奈单抗更加卓越的安全性优势。"
+  ]
+}

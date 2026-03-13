@@ -1,0 +1,155 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H001",
+    "source_file": "sources/guidelines/treatment_consensus_formatted.md",
+    "source_key": "SRC-GUIDELINE-EGFR-EX20INS-TREATMENT-2024",
+    "asset_key": "AST-GUIDELINE-EGFR-EX20INS-TREATMENT-2024",
+    "content_hash": "d4e5f6g7h8i9j0k1",
+    "source_type": "clinical_consensus",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "EGFR 20外显子插入突变非小细胞肺癌规范化诊疗中国专家共识（2024版）",
+    "title_en": "Chinese Expert Consensus on the Standardized Diagnosis and Treatment of Non-small Cell Lung Cancer with EGFR Exon 20 Insertion Mutations (2024 Edition)",
+    "authors": ["中国临床肿瘤学会非小细胞肺癌专家委员会"],
+    "journal": "中国肺癌杂志",
+    "year": 2024,
+    "volume": "27",
+    "issue": "7",
+    "pages": "485-492",
+    "doi": "10.3779/j.issn.1009-3419.2024.102.27",
+    "corresponding_author": "周彩存 (caicunzhoudr@163.com)"
+  },
+  "distilled_content": {
+    "article_type": "expert_consensus",
+    "disease_area": ["non_small_cell_lung_cancer"],
+    "gene_targets": ["EGFR ex20ins"],
+    "consensus_statements": [
+      {
+        "consensus_id": "CONSENSUS-001",
+        "statement": "EGFR ex20ins是第三大EGFR突变，在我国占EGFR突变NSCLC患者的2%-5%，异质性强，常规EGFR-TKIs治疗无效，患者预后差",
+        "evidence_level": "epidemiological_data",
+        "clinical_action": "临床需引起重视"
+      },
+      {
+        "consensus_id": "CONSENSUS-002",
+        "statement": "EGFR ex20ins可采用PCR和NGS进行检测；检测样本优选组织样本；组织样本不可及时，可选择液体样本；PCR检测结果为全阴性的患者，可使用NGS进行复测",
+        "evidence_level": "expert_opinion",
+        "clinical_action": "推荐NGS为优选检测手段"
+      },
+      {
+        "consensus_id": "CONSENSUS-003",
+        "statement": "国内尚无一线治疗局部晚期或转移性EGFR ex20ins NSCLC的靶向药物获批，建议参考无驱动基因晚期NSCLC的一线治疗",
+        "evidence_level": "regulatory_status",
+        "clinical_action": "含铂化疗为主"
+      },
+      {
+        "consensus_id": "CONSENSUS-004",
+        "statement": "EGFR ex20ins局部晚期或转移性NSCLC患者二线治疗，优先推荐靶向治疗药物舒沃替尼",
+        "evidence_level": "phase_ii_data",
+        "clinical_action": "I级推荐"
+      },
+      {
+        "consensus_id": "CONSENSUS-005",
+        "statement": "目前EGFR ex20ins NSCLC新型靶向药物研发主要是小分子EGFR-TKIs类药物和大分子抗体类药物",
+        "evidence_level": "drug_development_status",
+        "clinical_action": "关注临床试验"
+      },
+      {
+        "consensus_id": "CONSENSUS-006",
+        "statement": "目前有多个针对EGFR ex20ins治疗的靶向药物正在临床研究中，可建议患者积极参与临床研究",
+        "evidence_level": "clinical_trial_availability",
+        "clinical_action": "推荐患者参与临床试验"
+      }
+    ],
+    "treatment_recommendations": {
+      "first_line": {
+        "domestic_status": "无获批靶向药物",
+        "recommended_approach": "参考IV期无驱动基因NSCLC一线治疗",
+        "options": [
+          {
+            "option": "含铂化疗",
+            "evidence": "rwORR 19.5%, rwPFS 5.7个月"
+          },
+          {
+            "option": "免疫联合化疗",
+            "evidence": "rwORR 18.8%, rwPFS 4.5个月"
+          }
+        ],
+        "special_population": {
+          "condition": "无法耐受或拒绝化疗或PS评分较差",
+          "recommendation": "可选择舒沃替尼"
+        },
+        "emerging_option": {
+          "drug": "埃万妥单抗联合化疗",
+          "status": "美国FDA已批准",
+          "china_status": "审批中，III级推荐"
+        }
+      },
+      "second_line": {
+        "first_choice": {
+          "drug": "舒沃替尼",
+          "dose": "300 mg QD",
+          "evidence": "WU-KONG 6研究",
+          "efficacy": {
+            "ORR": "61%",
+            "DCR": "88%",
+            "tumor_shrinkage": "91%",
+            "brain_metastasis_ORR": "48%"
+          },
+          "safety": {
+            "grade3_trAEs": ["CPK升高 (17%)", "腹泻 (8%)", "贫血 (6%)"]
+          },
+          "recommendation_level": "I级推荐"
+        }
+      }
+    },
+    "drug_profiles": {
+      "sunvozertinib": {
+        "mechanism": "高选择性不可逆EGFR-TKI",
+        "developer": "国产自主研发",
+        "approval_china": "2023年8月",
+        "indication": "经含铂化疗进展或不耐受的EGFR ex20ins NSCLC",
+        "unique_features": [
+          "对EGFR ex20ins选择性是野生型的1.4-9.6倍",
+          "突破药物结合口袋空间位阻",
+          "可针对不同亚型灵活结合"
+        ]
+      },
+      "amivantamab": {
+        "mechanism": "EGFR-MET双特异性抗体",
+        "approval_us": "2021年5月(二线), 2024年3月(一线联合化疗)",
+        "indication_first_line": "EGFR ex20ins NSCLC一线治疗(联合化疗)",
+        "evidence": {
+          "study": "PAPILLON",
+          "mPFS": "11.4个月 vs 6.7个月(化疗)",
+          "ORR": "73% vs 47%(化疗)",
+          "HR": "0.40 (P<0.0001)"
+        },
+        "safety": {
+          "grade3_AEs": "75%",
+          "common_toxicities": ["中性粒细胞减少", "皮疹", "贫血", "白细胞减少"]
+        },
+        "china_status": "审批中"
+      }
+    },
+    "pipeline_drugs": [
+      {"drug": "Zipalertinib", "phase": "I/IIa期", "ORR": "38.4%", "mPFS": "10个月"},
+      {"drug": "BEBT-109", "phase": "II期", "status": "招募中"},
+      {"drug": "PLB1004", "phase": "I期", "ORR": "57.7%"},
+      {"drug": "JMT101+奥希替尼", "phase": "II期", "ORR": "50%", "DCR": "80%"},
+      {"drug": "伏美替尼 240mg", "phase": "Ib期", "ORR": "78.6%(一线)"}
+    ]
+  },
+  "index_terms": {
+    "keywords": ["EGFR ex20ins", "非小细胞肺癌", "舒沃替尼", "埃万妥单抗", "专家共识", "靶向治疗"],
+    "mesh_terms": ["Carcinoma, Non-Small-Cell Lung", "Mutation", "EGFR", "Antineoplastic Agents", "Consensus", "Drug Therapy"]
+  },
+  "lineage": {
+    "source_path": "sources/guidelines/treatment_consensus_formatted.md",
+    "original_size_bytes": 48933,
+    "distilled_at": "2026-03-10T03:48:00Z"
+  }
+}

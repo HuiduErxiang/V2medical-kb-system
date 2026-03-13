@@ -1,0 +1,22 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product_id": "donanemab",
+  "product_name_en": "donanemab",
+  "product_name_zh": "多那单抗",
+  "disease_domain": "neurology",
+  "disease": "alzheimers_disease",
+  "l3_chain": [
+    "neurology.alzheimers_disease"
+  ],
+  "files": {
+    "evidence_database": "m6_evidence_database.json",
+    "expression_library": "expression_library.json",
+    "compliance_rules": "m5_compliance_rules.json",
+    "product_taxonomy": "product_taxonomy.json"
+  }
+}

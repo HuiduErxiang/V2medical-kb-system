@@ -1,0 +1,32 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "gastric_cancer",
+    "version": "0.1.0",
+    "last_updated": "2026-03-02",
+    "description": "胃癌疾病特异性论点推导规则"
+  },
+  "rules": [
+    {
+      "id": "GASTRIC_001",
+      "category": "her2_pathway",
+      "pattern": "HER2 [表达状态]（IHC [评分]/FISH [结果]），推荐 [抗 HER2 治疗策略]",
+      "derivation_template": "免疫组化显示 HER2 [表达状态]（IHC [评分]，FISH [结果]）。根据 [指南名称]，[目标药物] 联合 [化疗方案] 作为 [治疗线数] 标准治疗，可期待 [预期疗效描述]。与 [竞品药物] 相比，[目标药物] 在 [差异化维度，如 ADC 载荷、旁观者效应] 方面具有 [优势描述]",
+      "required_evidence": ["HER2 检测报告", "病理诊断"],
+      "confidence_level": "high"
+    },
+    {
+      "id": "GASTRIC_002",
+      "category": "claudin18_2",
+      "pattern": "Claudin18.2 [表达状态]（阳性细胞比例≥[X]%），适合 [靶向治疗策略]",
+      "derivation_template": "检测显示 Claudin18.2 [表达状态]（阳性细胞比例≥[X]%）。[目标药物] 作为靶向 Claudin18.2 的 [药物类型]，在 [研究名称] 中显示 [疗效数据]。该患者从 [目标药物] 治疗中可期待 [临床获益描述]",
+      "required_evidence": ["Claudin18.2 检测报告"],
+      "confidence_level": "moderate"
+    }
+  ]
+}

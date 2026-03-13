@@ -1,0 +1,64 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2024-Q2] 别让这些错误认知，耽误了病情！盘点阿尔茨海默病早期筛查误区.docx",
+    "source_key": "SRC-H006-PUBLIC-002",
+    "asset_key": "AST-H006-PUBLIC-002",
+    "content_hash": "alzheimer_screening_misconceptions_2024",
+    "source_type": "public_science",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "别让这些错误认知，耽误了病情！盘点阿尔茨海默病早期筛查误区",
+    "title_en": "Don't Let These Misconceptions Delay Your Treatment! Common Misconceptions About Early Alzheimer's Screening",
+    "authors": [],
+    "journal": "公众科普",
+    "year": 2024,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "public_science",
+    "audience": "公众科普",
+    "register_level": "R5",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": [],
+    "content_focus": "awareness, early warning signs, destigmatization",
+    "narrative_patterns": ["everyday language", "relatable examples", "life impact"],
+    "sections": [
+      {
+        "title": "常见的筛查误区",
+        "content": "列举了公众对阿尔茨海默病早期筛查的常见误解，如认为只有老年人才会患病、记忆力下降都是正常衰老、早期筛查没有意义等。"
+      },
+      {
+        "title": "为什么早期筛查很重要",
+        "content": "早期发现阿尔茨海默病可以提高治疗效果，改善生活质量，减轻照料者负担。"
+      },
+      {
+        "title": "正确的筛查方法",
+        "content": "介绍了阿尔茨海默病早期筛查的常用方法，包括认知功能评估、血液检测、影像学检查等。"
+      },
+      {
+        "title": "克服污名化",
+        "content": "鼓励读者克服对阿尔茨海默病的污名化，及时就医，争取最佳治疗时机。"
+      }
+    ]
+  },
+  "key_messages": [
+    "阿尔茨海默病早期筛查存在很多误区，需要澄清和纠正",
+    "早期筛查对提高治疗效果和生活质量至关重要",
+    "正确的筛查方法包括认知评估、血液检测、影像学检查等",
+    "克服疾病污名化是及时就医的关键"
+  ],
+  "accessibility_notes": [
+    "通过具体的误区案例帮助读者理解",
+    "使用简洁明了的语言，避免专业术语",
+    "强调行动步骤，鼓励读者主动筛查",
+    "消除对疾病的污名化，提供支持和希望"
+  ]
+}

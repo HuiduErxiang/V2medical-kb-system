@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q4] V1【医学版-修订】 全球最大规模！仑卡奈单抗中国 407 例真实世界研究发表，海量证据出炉…….docx",
+    "content_hash": "fdefa42becc95e41",
+    "distilled_at": "2026-03-10T03:56:06.467871",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V1【医学版-修订】 全球最大规模！仑卡奈单抗中国 407 例真实世界研究发表，海量证据出炉……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "word_count": 2811,
+    "source_file": "[2025-Q4] V1【医学版-修订】 全球最大规模！仑卡奈单抗中国 407 例真实世界研究发表，海量证据出炉…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗作为首个获批的靶向β淀粉样蛋白（Aβ）的疾病修饰药物，在III期临床试验中证实可减缓早期A...。",
+    "阿尔茨海默病（AD）作为全球最主要的痴呆病因，已成为老龄化社会下不可忽视的公共卫生挑战。",
+    "仑卡奈单抗作为首个获批的靶向β淀粉样蛋白（Aβ）的疾病修饰药物，在III期临床试验中证实可减缓早期A...。",
+    "然而，中国人群因遗传背景、疾病特征等方面与西方人群存在差异，其在真实世界中的疗效及安全性仍需进一步验...。",
+    "治疗6个月后，淀粉样蛋白PET的Centiloid值较基线显著下降（β=-26.60，P<0.001...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "\n\n\n阿尔茨海默病（AD）作为全球最主要的痴呆病因，已成为老龄化社会下不可忽视的公共卫生挑战。\n仑卡奈单抗作为首个获批的靶向β淀粉样蛋白（Aβ）的疾病修饰药物，在III期临床试验中证实可减缓早期AD认知衰退，标志着AD治疗迈入“对因治疗”新时代。\n然而，中国人群因遗传背景、疾病特征等方面与西方人群存在差异，其在真实世界中的疗效及安全性仍需进一步验证。\n复旦大学附属华山医院郁金泰教授团队牵头开展了迄..."
+}

@@ -1,0 +1,61 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q2] V1【初稿】分子机制进一步明确后，仑卡奈单抗成为了抗Aβ治疗中的唯一.docx",
+    "source_key": "SRC-HIST-2025-Q2_V1【初稿】分子机制进一步明确后，仑卡奈单抗",
+    "asset_key": "AST-DOCX-2025-Q2_V1【初稿】分子机制进一步明确后，仑卡奈单抗",
+    "content_hash": "2868d0e9ec7b4877",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:08.904914",
+    "source_size_bytes": 299904
+  },
+  "metadata": {
+    "title": "V1【初稿】分子机制进一步明确后，仑卡奈单抗成为了抗Aβ治疗中的唯一",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q2",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "2、研究结果：仑卡奈单抗可“全面覆盖”Aβ形态",
+    "SiMoA 检测结果显示，仑卡奈单抗对 Aβ42 涂层纳米颗粒的检测限低至 2 pM，达到了皮摩尔浓度，是 Aducanumab（200 pM）的 100 倍、Gantenerumab（70 pM）的 35 倍。这意味着仑卡奈单抗能对Aβ寡聚体具有极高的亲和力，能识别到极微量的Aβ聚集体。",
+    "值得注意的是，Aβ42 涂层纳米颗粒表面包被的是未修饰的天然 Aβ42 单体，不含 pGlu3 修饰，因此多奈单抗对其结合信号极低。另外，由于pGlu3-Aβ主要存在于Aβ斑块中，且其修饰位点在斑块中更易被抗体识别，这导致多奈单抗与仑卡奈单抗的作用机制有巨大差异。这部分的研究结果表明，多奈对早期的可溶性Aβ几乎没有清除作用。",
+    "研究结果显示，仑卡奈单抗、多奈单抗、Aducanumab和Gantenerumab对pGlu3-Aβ 涂层纳米颗粒的检测限分别为4pM、5pM、56pM和220pM。",
+    "在对不同AD病理分期的人脑匀浆样本检测后，结果表明可溶性Aβ的体积和数量随着疾病进程的增加而增加，Aducanumab 和 Gantenerumab 对晚期大聚集如原纤维的结合能力更强，而仑卡奈单抗在 Braak 3阶段（早期病理阶段）的寡聚集体中信号最强。"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2024-Q3] 照护者的坚守：阿尔兹海默症家庭的新治疗选择与希望.docx",
+    "source_key": "SRC-H006-PUBLIC-003",
+    "asset_key": "AST-H006-PUBLIC-003",
+    "content_hash": "alzheimer_caregivers_hope_2024",
+    "source_type": "public_science",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "照护者的坚守：阿尔兹海默症家庭的新治疗选择与希望",
+    "title_en": "Caregivers' Persistence: New Treatment Options and Hope for Alzheimer's Families",
+    "authors": [],
+    "journal": "公众科普",
+    "year": 2024,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "public_science",
+    "audience": "公众科普",
+    "register_level": "R5",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗"],
+    "content_focus": "awareness, caregiver support, treatment hope",
+    "narrative_patterns": ["everyday language", "relatable examples", "life impact"],
+    "sections": [
+      {
+        "title": "照护者的困境",
+        "content": "描述了阿尔茨海默病家庭照护者所面临的身体、精神和经济压力，强调他们的坚守和奉献。"
+      },
+      {
+        "title": "新的治疗希望",
+        "content": "介绍仑卡奈单抗等新治疗方法为患者带来的改善，减轻照料者负担。"
+      },
+      {
+        "title": "支持资源",
+        "content": "列举了照护者可获得的支持资源，包括专业机构、社区服务、在线平台等。"
+      },
+      {
+        "title": "给予照护者的建议",
+        "content": "鼓励照护者关注自身健康，寻求支持，不要独自承担所有责任。"
+      }
+    ]
+  },
+  "key_messages": [
+    "阿尔茨海默病家庭照护者面临巨大压力，需要社会关注和支持",
+    "仑卡奈单抗等新治疗方法为患者带来改善，为家庭带来希望",
+    "照护者可通过专业机构和社区资源获得支持",
+    "照护者需要关注自身健康，避免倦怠"
+  ],
+  "accessibility_notes": [
+    "从照护者视角出发，引起读者共鸣",
+    "强调希望和积极的行动建议",
+    "提供实用的支持资源信息",
+    "避免过度专业术语，使用易于理解的语言"
+  ]
+}

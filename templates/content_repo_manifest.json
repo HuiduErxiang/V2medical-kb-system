@@ -1,0 +1,27 @@
+{
+  "manifest_version": "3.0",
+  "repository_type": "content",
+  "repository_id": "materials_repo_template",
+  "description": "内容仓库模板 - 用于独立素材添加工作",
+  "required_repositories": [
+    {
+      "repo_id": "medical_kb_core",
+      "path": "${MEDICAL_KB_CORE}",
+      "required_layers": ["L1_writing_craft", "L2_medical_playbook"]
+    }
+  ],
+  "provided_layers": {
+    "L4_product_knowledge": {
+      "path": "L4_product_knowledge",
+      "description": "产品知识与证据数据库",
+      "interface_version": "1.0",
+      "products": {}
+    }
+  },
+  "sync_config": {
+    "auto_sync_to_core": false,
+    "sync_target": "${MEDICAL_KB_CORE}/L4_product_knowledge/",
+    "sync_filter": ["*.json", "*.md"],
+    "pre_sync_validation": ["isolation.cli gate"]
+  }
+}

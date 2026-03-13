@@ -1,0 +1,41 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.076763",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_阿尔茨海默氏症治疗药物_Lecanemab_",
+    "asset_key": "AST-PDF-2025-Q3_阿尔茨海默氏症治疗药物_Lecanemab_",
+    "content_hash": "3945570534b70b39"
+  },
+  "metadata": {
+    "title": "阿尔茨海默氏症治疗药物 Lecanemab 可诱导小胶质细胞启动淀粉样蛋白清除程序",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": null
+  },
+  "distilled_content": {
+    "summary": "General information about Lecanemab and Alzheimer's Disease"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] 阿尔茨海默氏症治疗药物 Lecanemab 可诱导小胶质细胞启动淀粉样蛋白清除程序.pdf",
+    "original_size_bytes": 4671415,
+    "distilled_at": "2026-03-10T03:54:51.076798"
+  }
+}

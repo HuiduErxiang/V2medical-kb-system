@@ -1,0 +1,190 @@
+{
+  "batch_id": "H003",
+  "evidence_type": "competitor",
+  "drug": "donanemab",
+  "study_id": "TRAILBLAZER-ALZ 6",
+  "study_type": "phase 3b",
+  "study_phase": "dosing optimization",
+  "publication_date": "2025",
+  "source_filename": "[2025-Q3] Donanemab 的改良滴定法降低了 ARIA-E 风险并维持了淀粉样蛋白的减少：TRAILBLAZER-ALZ 6 的 18 个月结果.md",
+  "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\竞品证据\\[2025-Q3] Donanemab 的改良滴定法降低了 ARIA-E 风险并维持了淀粉样蛋白的减少：TRAILBLAZER-ALZ 6 的 18 个月结果.md",
+  
+  "study_details": {
+    "design": "Multicenter, randomized, double-blind, phase 3b trial",
+    "registration": "NCT05738486",
+    "objectives": "Assess the impact of different donanemab dosing regimens on ARIA-E frequency and amyloid reduction",
+    "randomization": "1:1:1:1 randomization stratified by APOE and baseline amyloid PET",
+    "sample_size": 843,
+    "enrollment_criteria": [
+      "Age 60-85 years",
+      "Early symptomatic Alzheimer's disease",
+      "MMSE 20-28 (inclusive)",
+      "Amyloid PET ≥24.1 Centiloids",
+      "US and UK participants only"
+    ],
+    "exclusion_criteria": [
+      "Screening MRI of ARIA-E",
+      ">4 cerebral microhemorrhages",
+      ">1 superficial siderosis",
+      "Any macrohemorrhage",
+      "Severe white matter disease"
+    ]
+  },
+  
+  "dosing_regimens": {
+    "standard": {
+      "description": "Standard dosing regimen",
+      "schedule": "700 mg for first 3 doses, 1400 mg thereafter",
+      "n": 207
+    },
+    "modified_titration": {
+      "description": "Modified titration regimen",
+      "schedule": "350 mg → 700 mg → 1050 mg → 1400 mg (weekly escalation)",
+      "n": 212
+    },
+    "dose_skipping": {
+      "description": "Dose skipping regimen",
+      "schedule": "700 mg, then placebo, then 1400 mg",
+      "n": 210
+    },
+    "cmax": {
+      "description": "Cmax-controlled regimen",
+      "schedule": "350 mg for first 5 doses, 1400 mg thereafter",
+      "n": 213
+    }
+  },
+  
+  "primary_outcome": {
+    "measure": "ARIA-E frequency at 24 weeks",
+    "success_criterion": "Posterior probability of RRR ≥20% >80%",
+    "results": {
+      "standard": 23.7,
+      "modified_titration": 13.7,
+      "dose_skipping": 18.6,
+      "cmax": 18.3,
+      "modified_vs_standard": {
+        "rrr": 0.405,
+        "ci": [0.135, 0.616],
+        "posterior_probability_rrr_20": 94.1
+      }
+    }
+  },
+  
+  "key_76_week_results": {
+    "aria_e": {
+      "standard": 24.2,
+      "modified_titration": 15.6,
+      "rrr": 0.346,
+      "ci": [0.061, 0.565],
+      "posterior_probability_rrr_20": 87.1
+    },
+    "symptomatic_aria_e": {
+      "standard": 4.8,
+      "modified_titration": 2.8
+    },
+    "serious_aria_e": {
+      "standard": 0,
+      "modified_titration": 0.5
+    },
+    "aria_h": {
+      "standard": 27.5,
+      "modified_titration": 25.5
+    },
+    "cortical_superficial_siderosis": {
+      "standard": 15.0,
+      "modified_titration": 9.0
+    },
+    "macrohemorrhage": {
+      "standard": 0.5,
+      "modified_titration": 0.9
+    },
+    "amyloid_reduction": {
+      "standard": {
+        "centiloid_change": -72.1,
+        "below_24.1_cl": 80.5
+      },
+      "modified_titration": {
+        "centiloid_change": -70.9,
+        "below_24.1_cl": 82.8
+      }
+    }
+  },
+  
+  "safety_data": {
+    "deaths": {
+      "standard": 0.5,
+      "modified_titration": 0.5
+    },
+    "serious_ae": {
+      "standard": 24.6,
+      "modified_titration": 23.1
+    },
+    "discontinuations_due_to_ae": {
+      "standard": 2.9,
+      "modified_titration": 2.8
+    },
+    "treatment_emergent_ae": {
+      "standard": 92.3,
+      "modified_titration": 93.9
+    },
+    "treatment_related_ae": {
+      "standard": 53.1,
+      "modified_titration": 53.8
+    }
+  },
+  
+  "arae_risk_by_apoe_status": {
+    "apoe_e4_non_carrier": {
+      "standard": 24.0,
+      "modified_titration": 16.0,
+      "rrr": 0.293,
+      "ci": [0.068, 0.493],
+      "probability_rrr_20": 80.4
+    },
+    "apoe_e4_heterozygote": {
+      "standard": 24.0,
+      "modified_titration": 15.0,
+      "rrr": 0.344,
+      "ci": [0.065, 0.568],
+      "probability_rrr_20": 86.1
+    },
+    "apoe_e4_homozygote": {
+      "standard": 24.0,
+      "modified_titration": 15.0,
+      "rrr": 0.381,
+      "ci": [0.081, 0.613],
+      "probability_rrr_20": 89.7
+    }
+  },
+  
+  "comparative_signals": {
+    "vs_lecanemab": {
+      "study": "Clarity AD vs TRAILBLAZER-ALZ 6 modified titration indirect comparison",
+      "any_aria_rdd": -4.6,
+      "aria_e_rdd": -2.1,
+      "symptomatic_aria_e_rdd": -1.3,
+      "aria_h_rdd": -8.1,
+      "microhemorrhage_rdd": -8.9,
+      "superficial_siderosis_rdd": -2.8
+    }
+  },
+  
+  "key_findings": [
+    "Modified titration arm met primary objective with 94.1% posterior probability of ≥20% RRR in ARIA-E at 24 weeks",
+    "At 76 weeks, modified titration arm had significantly lower ARIA-E frequency (15.6% vs 24.2%)",
+    "Numerically lower symptomatic ARIA-E (2.8% vs 4.8%) in modified titration arm",
+    "No new ARIA-E events detected after 52 weeks",
+    "Significantly lower radiographic severity of ARIA-E in modified titration arm",
+    "Similar amyloid PET and plasma P-tau217 reduction between modified titration and standard arms",
+    "Lower ARIA-E frequency regardless of APOE ε4 status",
+    "Modified titration regimen currently approved in Australia, Singapore, and the United States"
+  ],
+  
+  "regulatory_status": {
+    "approved": ["Australia", "Singapore", "United States"],
+    "under_review": ["Several other countries"]
+  },
+  
+  "sponsor": "Eli Lilly and Company",
+  "presentation": "Presented at AAIC 2025"
+}

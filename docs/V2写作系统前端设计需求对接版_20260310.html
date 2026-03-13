@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V2 写作系统前端设计需求对接版</title>
+  <style>
+    :root {
+      --bg: #f5efe5;
+      --paper: rgba(255, 252, 246, 0.92);
+      --ink: #1f1b17;
+      --muted: #685d4f;
+      --line: rgba(74, 59, 42, 0.15);
+      --operator: #0f766e;
+      --operator-soft: rgba(15, 118, 110, 0.10);
+      --user: #17324d;
+      --user-soft: rgba(23, 50, 77, 0.10);
+      --shared: #8b3a2e;
+      --shared-soft: rgba(139, 58, 46, 0.10);
+      --gold: #b98a2f;
+      --gold-soft: rgba(185, 138, 47, 0.12);
+      --shadow: 0 26px 60px rgba(44, 31, 18, 0.12);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 22%),
+        radial-gradient(circle at 86% 12%, rgba(185, 138, 47, 0.10), transparent 20%),
+        radial-gradient(circle at right bottom, rgba(23, 50, 77, 0.08), transparent 26%),
+        var(--bg);
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+    }
+
+    .page {
+      width: min(1280px, calc(100vw - 30px));
+      margin: 24px auto 56px;
+    }
+
+    .hero,
+    .panel,
+    .evidence {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      filter: blur(8px);
+    }
+
+    .hero::before {
+      width: 260px;
+      height: 260px;
+      top: -100px;
+      right: -70px;
+      background: rgba(15, 118, 110, 0.08);
+    }
+
+    .hero::after {
+      width: 220px;
+      height: 220px;
+      bottom: -90px;
+      left: -50px;
+      background: rgba(139, 58, 46, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #7c5d1d;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    h1, h2, h3 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 940px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.92;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .hero-card,
+    .card,
+    .role-card,
+    .mini-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(246, 240, 231, 0.82));
+      padding: 18px;
+    }
+
+    .hero-card h3,
+    .card h3,
+    .role-card h3,
+    .mini-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .hero-card p,
+    .card p,
+    .role-card p,
+    .mini-card p,
+    .card li,
+    .panel > p,
+    .evidence li {
+      color: var(--muted);
+      line-height: 1.82;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 22px 0 18px;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 244, 0.72);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    .tab:hover,
+    .tab[aria-selected="true"] {
+      background: var(--user);
+      border-color: var(--user);
+      color: #f8fbff;
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      display: none;
+      padding: 26px;
+    }
+
+    .panel.is-active {
+      display: block;
+      animation: fadeIn 0.18s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .panel > p {
+      margin: 0 0 18px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cards.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cards.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .roles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .role-card.operator { border-color: rgba(15, 118, 110, 0.24); }
+    .role-card.user { border-color: rgba(23, 50, 77, 0.24); }
+
+    .label {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .label.operator { background: var(--operator-soft); color: var(--operator); }
+    .label.user { background: var(--user-soft); color: var(--user); }
+    .label.shared { background: var(--shared-soft); color: var(--shared); }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .flow-item {
+      position: relative;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: #fffdf8;
+    }
+
+    .flow-item:not(:last-child)::after {
+      content: "↓";
+      position: absolute;
+      left: 18px;
+      bottom: -18px;
+      color: var(--shared);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .flow-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .flow-item span {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.operator { background: var(--operator-soft); color: var(--operator); }
+    .tag.user { background: var(--user-soft); color: var(--user); }
+    .tag.shared { background: var(--shared-soft); color: var(--shared); }
+    .tag.gold { background: var(--gold-soft); color: #8b6420; }
+
+    .quote {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      border-radius: 20px;
+      background: rgba(185, 138, 47, 0.09);
+      color: #5e4921;
+      line-height: 1.9;
+    }
+
+    .evidence {
+      margin-top: 18px;
+      padding: 18px 20px;
+    }
+
+    .evidence h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .evidence ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 980px) {
+      .roles,
+      .cards.cols-3,
+      .cards.cols-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100vw - 18px, 100%);
+        margin: 16px auto 36px;
+      }
+
+      .hero,
+      .panel {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">前端设计需求对接版</div>
+      <h1>V2 现在最需要的，是一个可用的前端入口</h1>
+      <p>
+        当前系统的核心逻辑已经形成，但最大问题是没有一套真正可用的前端界面，导致触发门槛高、操作分散、协作成本大。
+        如果后续要设计前端，至少要同时服务两类角色：一类是维护系统的人，一类是使用系统提交素材和文章需求的人。
+      </p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <h3>运营者是谁</h3>
+          <p>运营者就是系统维护者，负责填充物料、维护写作规则、调整策略、管理项目和追踪日志。</p>
+        </article>
+        <article class="hero-card">
+          <h3>使用者是谁</h3>
+          <p>使用者就是提交素材和文章需求的人，希望用尽量简单的方式发起写作任务并看到结果。</p>
+        </article>
+        <article class="hero-card">
+          <h3>前端要解决什么</h3>
+          <p>把系统从“只有懂内部结构的人才能触发”，变成“运营者和使用者都能找到自己入口”的状态。</p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="toolbar" aria-label="需求视图切换">
+      <button class="tab" type="button" data-target="panel-overview" aria-selected="true">总览</button>
+      <button class="tab" type="button" data-target="panel-operator" aria-selected="false">运营者端</button>
+      <button class="tab" type="button" data-target="panel-user" aria-selected="false">使用者端</button>
+      <button class="tab" type="button" data-target="panel-shared" aria-selected="false">共享流程</button>
+      <button class="tab" type="button" data-target="panel-mvp" aria-selected="false">MVP优先级</button>
+    </nav>
+
+    <section id="panel-overview" class="panel is-active">
+      <h2>总览：前端至少要分成两套工作面</h2>
+      <p>前端不应该只做一个统一首页，因为运营者和使用者面对的对象、动作和信息密度完全不同。更合理的是：共享入口一致，但进入后迅速分成两套工作面。</p>
+      <div class="roles">
+        <article class="role-card operator">
+          <span class="label operator">运营者端</span>
+          <h3>目标</h3>
+          <p>让系统维护者能稳定管理规则、证据、素材、项目和留档，而不是反复在目录和文档之间手工切换。</p>
+          <div class="tag-row">
+            <span class="tag operator">物料填充</span>
+            <span class="tag operator">L1-L2维护</span>
+            <span class="tag operator">项目治理</span>
+            <span class="tag operator">日志回查</span>
+          </div>
+        </article>
+        <article class="role-card user">
+          <span class="label user">使用者端</span>
+          <h3>目标</h3>
+          <p>让普通使用者能简单提交素材和写作需求，不需要理解内部结构，也不用知道规则资产和证据层放在哪里。</p>
+          <div class="tag-row">
+            <span class="tag user">提交素材</span>
+            <span class="tag user">填写需求</span>
+            <span class="tag user">查看进度</span>
+            <span class="tag user">收取结果</span>
+          </div>
+        </article>
+      </div>
+      <div class="quote">
+        最关键的一条：前端不能让使用者直接面对系统内部结构，但也不能让运营者失去对规则和物料的控制。
+      </div>
+    </section>
+
+    <section id="panel-operator" class="panel">
+      <h2>运营者端：你最需要什么页面</h2>
+      <p>运营者端不是“提交文章需求”的地方，而是系统运营后台。它最少应该包含下面这几组页面。</p>
+      <div class="cards cols-3">
+        <article class="card">
+          <h3>运营总览台</h3>
+          <ul>
+            <li>当前项目状态</li>
+            <li>最近新增素材</li>
+            <li>待处理的写作请求</li>
+            <li>待确认的变更记录</li>
+            <li>近期交付与日志入口</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>物料中心</h3>
+          <ul>
+            <li>上传和整理素材</li>
+            <li>查看素材属于哪个批次</li>
+            <li>查看哪些素材已整理、哪些未整理</li>
+            <li>把素材挂到具体项目或主题下</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>规则维护中心</h3>
+          <ul>
+            <li>维护写作规则</li>
+            <li>调整医学写作策略</li>
+            <li>更新模板和常用表达</li>
+            <li>查看规则最近是否发生变更</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>证据与知识工作台</h3>
+          <ul>
+            <li>查看当前可用的知识和证据</li>
+            <li>判断哪些内容已可用、哪些待补充</li>
+            <li>把新整理好的内容挂进可消费区</li>
+            <li>处理“同主题下证据不完整”的问题</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>项目治理台</h3>
+          <ul>
+            <li>创建项目执行卡</li>
+            <li>冻结交付契约</li>
+            <li>记录结构和方向变更</li>
+            <li>查看每个项目当前规则状态</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>日志与回溯中心</h3>
+          <ul>
+            <li>查看系统摘要日志</li>
+            <li>进入项目日志</li>
+            <li>按项目、时间、交付物筛选</li>
+            <li>回查某篇文章为什么这样写</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="panel-user" class="panel">
+      <h2>使用者端：普通人需要什么入口</h2>
+      <p>使用者端要尽量像一个清晰的工作台，而不是知识库目录浏览器。最少应有下面这些页面。</p>
+      <div class="cards cols-3">
+        <article class="card">
+          <h3>新建写作请求</h3>
+          <ul>
+            <li>选择项目或创建新项目</li>
+            <li>填写文章主题</li>
+            <li>说明读者对象</li>
+            <li>选择交付类型</li>
+            <li>填写补充要求</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>素材提交页</h3>
+          <ul>
+            <li>上传素材文件</li>
+            <li>填写素材说明</li>
+            <li>区分“事实材料”和“风格参考”</li>
+            <li>看到素材是否已成功进入任务</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>任务详情页</h3>
+          <ul>
+            <li>查看当前写作状态</li>
+            <li>看到已确认的任务规则</li>
+            <li>查看是否有变更</li>
+            <li>确认当前是否缺素材或缺说明</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>结果查看页</h3>
+          <ul>
+            <li>查看交付内容</li>
+            <li>下载成稿</li>
+            <li>查看相关参考资料</li>
+            <li>查看这次结果属于哪个版本</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>反馈与返修入口</h3>
+          <ul>
+            <li>提交修改意见</li>
+            <li>标记是“补充要求”还是“规则变更”</li>
+            <li>避免一句新话直接覆盖旧规则</li>
+            <li>让运营者能清楚看到改动性质</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>我的项目列表</h3>
+          <ul>
+            <li>按项目看所有文章</li>
+            <li>按状态筛选进行中和已完成</li>
+            <li>快速回到上次未完成任务</li>
+            <li>不必自己翻目录找文件</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="panel-shared" class="panel">
+      <h2>共享流程：前端里最重要的信息流应该怎么走</h2>
+      <p>无论是运营者端还是使用者端，最终都要汇到同一条任务链里。前端设计时最重要的不是页面数量，而是信息不要在中途丢失。</p>
+      <div class="flow">
+        <div class="flow-item">
+          <strong>使用者提交文章需求</strong>
+          <span>填写文章主题、受众、交付物类型，并上传相关素材。</span>
+        </div>
+        <div class="flow-item">
+          <strong>系统先形成任务卡</strong>
+          <span>把模糊需求压成清晰任务，避免直接把用户输入原样推进正文。</span>
+        </div>
+        <div class="flow-item">
+          <strong>运营者补规则或补物料</strong>
+          <span>如果这是一项正式项目任务，运营者需要补执行卡、补规则、补素材归类，必要时修订写法策略。</span>
+        </div>
+        <div class="flow-item">
+          <strong>系统进入文章处理链</strong>
+          <span>开始选择证据、组织结构、生成写作方案，并准备交付。</span>
+        </div>
+        <div class="flow-item">
+          <strong>结果回到前端</strong>
+          <span>使用者看结果，运营者看日志和问题。若发生返修，必须走变更记录而不是直接覆盖原规则。</span>
+        </div>
+      </div>
+      <div class="quote">
+        前端最怕的不是“页面少”，而是“信息在角色切换时断掉”。一旦任务、规则、素材和变更记录没有打通，系统就会重新退回纯人工协调。
+      </div>
+    </section>
+
+    <section id="panel-mvp" class="panel">
+      <h2>MVP 优先级：如果只做第一版前端，先做什么</h2>
+      <p>第一版前端不必一口气把全部能力都做完，但入口必须打通。下面是更现实的优先级顺序。</p>
+      <div class="cards cols-2">
+        <article class="card">
+          <h3>第一优先级</h3>
+          <ul>
+            <li>新建写作请求页</li>
+            <li>素材上传页</li>
+            <li>任务详情页</li>
+            <li>运营者项目治理台</li>
+            <li>日志查看入口</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>第二优先级</h3>
+          <ul>
+            <li>规则维护中心</li>
+            <li>知识与证据工作台</li>
+            <li>版本对比和返修对话面板</li>
+            <li>更细的批次和素材状态视图</li>
+          </ul>
+        </article>
+      </div>
+      <div class="quote">
+        最小可用前端不是“能展示系统多强”，而是“让使用者能提交任务、让运营者能接住任务、让结果能被回看”。
+      </div>
+    </section>
+
+    <section class="evidence">
+      <h3>Evidence Summary</h3>
+      <ul>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2">medical_kb_system_v2</a> 当前目录结构，没有独立的前端工程或前端入口目录，所以“现在最大问题是没有前端界面”这个判断是有目录依据的。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/runtime/app.py">app.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/contracts/route_context.py">route_context.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/delivery/task_logger.py">task_logger.py</a>，确认当前系统已经有任务上下文和留档能力，所以前端设计应围绕“如何更容易触发这条链”来做。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/rules">rules</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/structured">structured</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/evidence">evidence</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/editorial">editorial</a> 的现有分层，确认运营者端确实需要一个面向规则、物料和知识的后台，而不是仅有用户提交入口。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll(".tab"));
+    const panels = Array.from(document.querySelectorAll(".panel"));
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.target;
+        tabs.forEach((item) => {
+          item.setAttribute("aria-selected", String(item === tab));
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === target);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

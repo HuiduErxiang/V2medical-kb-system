@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q2] 阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据…….docx",
+    "content_hash": "c7d397b4247f9896",
+    "distilled_at": "2026-03-10T03:56:06.379454",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q2",
+    "word_count": 2303,
+    "source_file": "[2025-Q2] 阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "而同时，大会上公布的仑卡奈单抗Ⅲ期临床研究Clarity AD的亚洲人群数据分析，也为此提供了重要的...。",
+    "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据……\n在不久前奥地利维也...。",
+    "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据……\n在不久前奥地利维也...。",
+    "另外，从安全性上看，亚洲患者使用仑卡奈单抗之后发生不良事件的风险和严重性也较全人群更低，与安慰剂组相...。",
+    "我们也期待AD/PD会议上凝聚的共识能够切实推动AD领域的进步，助力人类早日攻克阿尔茨海默病，逮捕这...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据……\n在不久前奥地利维也纳召开的阿尔茨海默病与帕金森病及相关神经系统疾病大会（AD/PD会议）上，阿尔茨海默病（AD）生物学诊断的发起人和代言人——美国梅奥医学中心的Clifford Jack教授代表阿尔茨海默病协会（AA）再次向另一AD领域的权威组织阿尔茨海默病国际工作组（IWG）提出了不同的意见。\n这两年来，两大阿尔茨..."
+}

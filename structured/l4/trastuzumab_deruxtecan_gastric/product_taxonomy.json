@@ -1,0 +1,59 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product_info": {
+    "product_name_en": "trastuzumab_deruxtecan",
+    "product_name_zh": "德曲妥珠单抗",
+    "manufacturer": "阿斯利康/第一三共 (AstraZeneca/Daiichi Sankyo)",
+    "drug_class": "ADC",
+    "target": "HER2"
+  },
+  "therapeutic_area": "oncology",
+  "indication": "gastric_cancer",
+  "competitors": [
+    {
+      "name_en": "trastuzumab",
+      "name_zh": "曲妥珠单抗"
+    },
+    {
+      "name_en": "ramucirumab",
+      "name_zh": "雷莫西尤单抗"
+    }
+  ],
+  "key_studies": [
+    {
+      "study_name": "DESTINY-Gastric01",
+      "study_type": "",
+      "status": ""
+    },
+    {
+      "study_name": "DESTINY-Gastric02",
+      "study_type": "",
+      "status": ""
+    },
+    {
+      "study_name": "DESTINY-Gastric03",
+      "study_type": "",
+      "status": ""
+    },
+    {
+      "study_name": "DESTINY-Gastric04",
+      "study_type": "",
+      "status": ""
+    },
+    {
+      "study_name": "DESTINY-Gastric05",
+      "study_type": "",
+      "status": ""
+    },
+    {
+      "study_name": "DESTINY-Gastric06",
+      "study_type": "",
+      "status": ""
+    }
+  ]
+}

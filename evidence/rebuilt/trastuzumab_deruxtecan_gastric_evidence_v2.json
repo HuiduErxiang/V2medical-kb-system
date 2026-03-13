@@ -1,0 +1,87 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/trastuzumab_deruxtecan_gastric/m6_evidence_database.json",
+    "product_id": "trastuzumab_deruxtecan_gastric",
+    "product_name_zh": "德曲妥珠单抗",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + 关键 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-TDXD-GASTRIC-DG01-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-TDXD-DESTINY-GASTRIC01-2020-NEJM",
+      "title": "DESTINY-Gastric01",
+      "citation": "Shitara K, et al. N Engl J Med. 2020;382(25):2419-2430.",
+      "v1_source_id": "DG01",
+      "metadata": {
+        "study_type": "Phase 2 RCT",
+        "indication": "gastric_cancer"
+      }
+    },
+    {
+      "source_id": "V2-SRC-TDXD-GASTRIC-DG02-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-TDXD-DESTINY-GASTRIC02-2023-LANCET",
+      "title": "DESTINY-Gastric02",
+      "citation": "Van Cutsem E, et al. Lancet Oncol. 2023;24(7):744-756.",
+      "v1_source_id": "DG02",
+      "metadata": {
+        "study_type": "Phase 2 single-arm"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-TDXD-GASTRIC-EFFICACY-001",
+      "fact_key": "FACT-TDXD-GASTRIC-ORR-DG01",
+      "domain": "efficacy",
+      "definition": "Objective response rate in DG01",
+      "definition_zh": "DG01研究客观缓解率",
+      "value": "to_be_extracted",
+      "unit": "%",
+      "fragment_ids": ["V2-FRAG-TDXD-DG01-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-TDXD-DESTINY-GASTRIC01-2020-NEJM",
+        "asset_key": "AST-TDXD-DG01-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_source_id": "DG01",
+        "rebuild_notes": "从V1 sources 和 facts 结构映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-TDXD-GASTRIC-SAFETY-001",
+      "fact_key": "FACT-TDXD-GASTRIC-SAFETY-PROFILE",
+      "domain": "safety",
+      "definition": "Safety profile summary",
+      "definition_zh": "安全性概况",
+      "value": "to_be_extracted",
+      "unit": "",
+      "fragment_ids": ["V2-FRAG-TDXD-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-TDXD-DESTINY-GASTRIC01-2020-NEJM",
+        "asset_key": "AST-TDXD-DG01-SAFETY",
+        "extraction_date": "2026-03-10"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "meta": "product metadata",
+      "sources": "DESTINY-Gastric trial sources",
+      "facts": "efficacy and safety evidence items"
+    },
+    "v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (V2- prefix)",
+      "V1 sources[].citation -> V2 citation",
+      "V1 facts[] -> V2 FactRecord with lineage"
+    ]
+  }
+}

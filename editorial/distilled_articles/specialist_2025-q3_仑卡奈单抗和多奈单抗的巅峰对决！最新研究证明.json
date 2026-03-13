@@ -1,0 +1,67 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] 仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明：仑卡奈单抗ARIA发生风险显著更低，适合大多数患者人群…….docx",
+    "source_key": "SRC-HIST-2025-Q3_仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明",
+    "asset_key": "AST-DOCX-2025-Q3_仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明",
+    "content_hash": "508c463d6fde43d8",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.213957",
+    "source_size_bytes": 101691
+  },
+  "metadata": {
+    "title": "仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明：仑卡奈单抗ARIA发生风险显著更低，适合大多数患者人群……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明：仑卡奈单抗ARIA发生风险显著更低，适合大多数患者人群……",
+      "然后在排除掉身体状态的基础差异水平后得出的ARIA发生率，可以在相当程度上比对二者的ARIA风险。",
+      "研究结果显示，在所有关键ARIA类型的发生风险中，仑卡奈单抗的发生风险都更低。",
+      "AD治疗是一个长期过程，仑卡奈单抗在早期AD治疗中的安全性优势更明显，且在多数患者群体中保持一致，能够平衡好“治疗获益”与“安全风险”，为AD患者提供一种更安全的治疗选择。",
+      "该研究又纳入并对比了多奈单抗最新研究的安全性数据，研究结果显示，仑卡奈单抗的安全性优势仍然存在，相比于多奈单抗改良滴定剂量，仑卡奈单抗的ARIA发生风险仍然更低。",
+      "对于AD患者及其家属来说，“有效”和“安全”同样重要，而仑卡奈单抗恰好同时满足需求，始终展现出显著更低的ARIA发生风险，在大多数患者群体都能体现安全益处。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 中等技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "研究结果显示，在所有关键ARIA类型的发生风险中，仑卡奈单抗的发生风险都更低。",
+    "这项研究的分类结果显示，仑卡奈单抗在APOE ε4非携带者、携带者、杂合子中发生ARIA-E风险都显著更低，即仑卡奈单抗在APOE ε4基因不同携带状态的人群中，安全性优势大多稳定存在，也说明仑卡奈单抗更加普适，能为更多患者提供安全的治疗选择。",
+    "近日，美国FDA基于TRAILBLAZER-ALZ 6（TB-ALZ 6）研究结果批准了多奈单抗的说明书更新，改变了多奈单抗的输注方案，让药物剂量递增变得“更加温和”。那么改良给药方案后，两者的安全性又如何呢？",
+    "该研究又纳入并对比了多奈单抗最新研究的安全性数据，研究结果显示，仑卡奈单抗的安全性优势仍然存在，相比于多奈单抗改良滴定剂量，仑卡奈单抗的ARIA发生风险仍然更低。"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L2",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "schema_version": "1.0",
+  "description": "M5 compliance mapping layer: binds selected M4 rhetoric blocks to minimum M6 evidence anchors to reduce unsupported claims. L2 generic rules apply to all products; L4 may override or extend.",
+  "policy": {
+    "on_validation_failure": "drop_non_compliant_block",
+    "log_prefix": "M5 Gate Validation Failed",
+    "strict_mode": false
+  },
+  "rules": [
+    {
+      "rule_id": "M5_L2_R01_EFFICACY_NEEDS_QUANTITATIVE_ANCHOR",
+      "description": "疗效数据块必须包含至少一个量化终点指标和一个统计学锚点",
+      "required_any_patterns": ["VAR_EFFICACY_*"],
+      "required_any_refs": ["P-value", "HR", "CI", "NNT", "相对风险降低", "绝对风险降低"],
+      "logic": "all_groups_required",
+      "message": "Efficacy block requires at least one quantitative efficacy variable and one statistical anchor (P-value, HR, CI, or NNT).",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_EFFICACY_DATA"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R02_SAFETY_NEEDS_INCIDENCE",
+      "description": "安全性块必须包含不良事件发生率数据",
+      "required_any_refs": ["incidence rate", "发生率", "AE incidence", "VAR_SAFETY_*"],
+      "logic": "any_of",
+      "message": "Safety block requires incidence-rate style evidence anchor to support AE claims.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_SAFETY"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R03_BIOMARKER_NEEDS_OBJECTIVE_DATA",
+      "description": "生物标志物块必须包含客观检测数据",
+      "required_any_patterns": ["VAR_BIOMARKER_*"],
+      "logic": "all_groups_required",
+      "message": "Biomarker block requires at least one VAR_BIOMARKER_* anchor with objective measurement data.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_BIOMARKER"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R04_COMPETITIVE_NEEDS_MULTI_SOURCE",
+      "description": "竞品对比块必须引用证据变量并说明比较方法学",
+      "required_any_patterns": ["VAR_EFFICACY_*", "VAR_SAFETY_*", "VAR_COMPETITOR_*"],
+      "required_any_refs": ["间接比较", "ITC", "NMA", "head-to-head", "交叉对比"],
+      "logic": "all_groups_required",
+      "message": "Competitive comparison block requires evidence variables from multiple sources and a stated comparison methodology.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_COMPETITIVE"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R05_MECHANISM_NEEDS_PATHWAY",
+      "description": "机制解析块必须包含靶点或通路级别的科学依据",
+      "required_any_patterns": ["VAR_MOA_*"],
+      "logic": "all_groups_required",
+      "message": "Mechanism block requires at least one VAR_MOA_* anchor describing the molecular/cellular pathway.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_MECHANISM", "M4_B_机制创新"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R06_GUIDELINE_NEEDS_CITATION",
+      "description": "权威引用块必须包含可追溯的文献或指南出处",
+      "required_any_refs": ["DOI", "PMID", "指南", "guideline", "共识", "consensus", "期刊"],
+      "logic": "any_of",
+      "message": "Guideline/authority block requires a verifiable citation reference (DOI, PMID, or named guideline).",
+      "fallback_action": "flag_unverified",
+      "m4_block_ids": ["M4_B_GUIDELINE"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R07_DISEASE_BURDEN_NEEDS_EPIDEMIOLOGY",
+      "description": "疾病负担块必须包含流行病学或卫生经济学数据",
+      "required_any_refs": ["患病率", "发病率", "prevalence", "incidence", "经济负担", "DALYs", "QALYs"],
+      "logic": "any_of",
+      "message": "Disease burden block requires epidemiological or health-economic data anchors.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_DISEASE_BURDEN"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R08_STATS_TEARDOWN_NEEDS_RAW_STATS",
+      "description": "统计学拆解块必须包含原始统计量和证据变量",
+      "required_any_refs": ["HR", "P-value", "CI", "KM", "删失", "OR", "RR"],
+      "required_any_patterns": ["VAR_EFFICACY_*", "VAR_SAFETY_*"],
+      "logic": "all_groups_required",
+      "message": "Stats teardown block requires raw statistical measures (HR, P-value, CI) and at least one evidence variable.",
+      "fallback_action": "reject_block",
+      "m4_block_ids": ["M4_B_STATS_TEARDOWN"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R09_NEG_ENDPOINT_NEEDS_DEFENSE",
+      "description": "负面终点保全块必须同时包含安全性证据和替代获益证据",
+      "required_pattern_groups": {
+        "safety_evidence": ["VAR_SAFETY_*"],
+        "efficacy_evidence": ["VAR_EFFICACY_*"]
+      },
+      "logic": "all_groups_required",
+      "message": "Negative-endpoint recovery block must include BOTH safety evidence (VAR_SAFETY_*) AND alternative efficacy evidence (VAR_EFFICACY_*) to maintain clinical defensibility.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_负面终点"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R10_LONG_TERM_NEEDS_FOLLOWUP",
+      "description": "长期主义对照块必须包含纵向随访数据",
+      "required_any_refs": ["随访", "follow-up", "OLE", "长期", "long-term", "延续期"],
+      "required_any_patterns": ["VAR_EFFICACY_*"],
+      "logic": "all_groups_required",
+      "message": "Long-term framing block requires longitudinal follow-up data anchors and efficacy variables.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_长期主义"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R11_CROSS_AUTHORITY_NEEDS_MULTI_REGULATORY",
+      "description": "跨机构分歧块必须引用至少两个监管机构的立场",
+      "required_any_refs": ["FDA", "EMA", "NMPA", "PMDA", "TGA"],
+      "logic": "any_of",
+      "min_distinct_refs": 2,
+      "message": "Cross-authority block requires positions from at least two distinct regulatory agencies.",
+      "fallback_action": "flag_incomplete",
+      "m4_block_ids": ["M4_B_跨机构分"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R12_INDICATION_NEEDS_POPULATION_CRITERIA",
+      "description": "获益人群块必须包含明确的入排标准或人群特征",
+      "required_any_refs": ["纳入标准", "排除标准", "inclusion", "exclusion", "适应症", "indication", "目标人群"],
+      "logic": "any_of",
+      "message": "Indication block requires explicit population criteria or indication scope.",
+      "fallback_action": "flag_vague",
+      "m4_block_ids": ["M4_B_INDICATION"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R13_FRONTIER_NEEDS_EVIDENCE_LADDER",
+      "description": "无人区突破块必须按证据层级递进（分子→体外→临床）",
+      "required_any_patterns": ["VAR_MOA_*"],
+      "required_any_refs": ["首次", "唯一", "first-in-class", "novel", "无人区", "空白"],
+      "logic": "all_groups_required",
+      "message": "Frontier evidence ladder block requires MOA-level anchors and novelty claims backed by evidence.",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_无人区突"],
+      "origin_layer": "L2"
+    },
+    {
+      "rule_id": "M5_L2_R14_MULTI_DIM_NEEDS_DIVERSE_ENDPOINTS",
+      "description": "多维获益块必须覆盖至少两个不同维度的终点",
+      "required_any_patterns": ["VAR_EFFICACY_*", "VAR_SAFETY_*"],
+      "required_any_refs": ["生活质量", "QoL", "PRO", "依从性", "adherence", "功能改善"],
+      "logic": "all_groups_required",
+      "message": "Multi-dimensional value block requires evidence across at least two distinct outcome dimensions (efficacy + patient-centric).",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_多维获益"],
+      "origin_layer": "L2"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q3] V2 重磅研究验证！仑卡奈单抗如何“指挥”小胶质细胞清除Aβ…….docx",
+    "content_hash": "180fc7d7db4d51a9",
+    "distilled_at": "2026-03-10T03:56:06.755600",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2 重磅研究验证！仑卡奈单抗如何“指挥”小胶质细胞清除Aβ……",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q3",
+    "word_count": 2276,
+    "source_file": "[2025-Q3] V2 重磅研究验证！仑卡奈单抗如何“指挥”小胶质细胞清除Aβ…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "重磅研究验证！仑卡奈单抗如何“指挥“小胶质细胞清除Aβ……\n\n阿尔茨海默病（AD）是一种神经退行性疾...。",
+    "重磅研究验证！仑卡奈单抗如何“指挥“小胶质细胞清除Aβ……\n\n阿尔茨海默病（AD）是一种神经退行性疾...。",
+    "仑卡奈单抗作为全球首款获批的抗Aβ疾病修饰药物，能够靶向清除患者脑内的“顽固垃圾”Aβ，从而延缓AD...。",
+    "随着医学的不断进步，我们有理由相信，终将找到更有效的方法，守护珍贵的记忆与认知。",
+    "AD最重要的致病机制源自于患者的大脑中异常堆积的β淀粉样蛋白（Aβ），它们具有很强的神经毒性，且难以...。"
+  ],
+  "accessibility_notes": [
+    "包含术语解释",
+    "句子长度适中"
+  ],
+  "raw_text_preview": "重磅研究验证！仑卡奈单抗如何“指挥“小胶质细胞清除Aβ……\n\n阿尔茨海默病（AD）是一种神经退行性疾病，起病隐匿，病程缓慢进展，是最常见的痴呆类型。AD最重要的致病机制源自于患者的大脑中异常堆积的β淀粉样蛋白（Aβ），它们具有很强的神经毒性，且难以清除，如同“顽固垃圾”，会杀死神经细胞，破坏脑内功能，最终导致患者出现记忆力衰退、认知障碍等症状。\n仑卡奈单抗作为全球首款获批的抗Aβ疾病修饰药物，能够..."
+}

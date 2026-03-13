@@ -1,0 +1,44 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.069001",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_Lecanemab_在美国的应用：一项真实世",
+    "asset_key": "AST-PDF-2025-Q3_Lecanemab_在美国的应用：一项真实世",
+    "content_hash": "067d5c30662c79b9"
+  },
+  "metadata": {
+    "title": "Lecanemab 在美国的应用：一项真实世界观察性研究",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": "real_world"
+  },
+  "distilled_content": {
+    "study_setting": "Real-world clinical practice",
+    "patient_count": "Not specified",
+    "outcomes": "Effectiveness and safety of Lecanemab in real-world settings",
+    "limitations": "Potential selection bias and limited follow-up duration"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] Lecanemab 在美国的应用：一项真实世界观察性研究.pdf",
+    "original_size_bytes": 558428,
+    "distilled_at": "2026-03-10T03:54:51.069035"
+  }
+}

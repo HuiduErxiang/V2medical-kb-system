@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\场景_指导\\[2024-Q4] V2 阿尔茨海默病致病元凶是Aβ？对，但不全对.docx",
+    "content_hash": "49d5298e1e1b46f6",
+    "distilled_at": "2026-03-10T03:56:06.836070",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2 阿尔茨海默病致病元凶是Aβ？对，但不全对",
+    "content_type": "场景_指导",
+    "publication_quarter": "2024-Q4",
+    "word_count": 1403,
+    "source_file": "[2024-Q4] V2 阿尔茨海默病致病元凶是Aβ？对，但不全对.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "除了潜在的安全性问题以外，不少试验药物的失败原因都是疗效不佳，并没有达到预期的治疗效果，这一困境直到...。",
+    "阿尔茨海默病致病元凶是Aβ？对，但不全对\n谈到阿尔茨海默病，稍有了解的患者都能大致说出其致病原因：由...。",
+    "靶向Aβ寡聚体是治疗阿尔茨海默病的新方向\n在此之前，由于受到基础科学的限制，很长一段时间学界只发现阿...。",
+    "除了潜在的安全性问题以外，不少试验药物的失败原因都是疗效不佳，并没有达到预期的治疗效果，这一困境直到...。",
+    "随着科学界对于阿尔茨海默病的理解逐渐深入、公众对于阿尔茨海默病的认知逐渐提升，以及更加方便精准的阿尔...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔茨海默病致病元凶是Aβ？对，但不全对\n谈到阿尔茨海默病，稍有了解的患者都能大致说出其致病原因：由于种种原因，大脑中一种叫做Aβ（β淀粉样蛋白）的有毒蛋白被源源不断的错误生成，这种毒蛋白无法被正常分解，只能像垃圾一样堆在大脑里糊成一团，并不断杀造成神经细胞的死亡。\n这种说法，对也不对。\nAβ确实是阿尔茨海默病的致病元凶之一，但单个的Aβ并不足以构成威胁，他们必须相互组合聚集在一起才能真正影响神经..."
+}

@@ -1,0 +1,17 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L3 — Insomnia Disease Knowledge (失眠症疾病知识)",
+  "m1_disease_knowledge": [
+    "失眠是一种常见的睡眠障碍，以难以入睡、维持睡眠困难或早醒为主要特征",
+    "长期失眠会导致注意力不集中、记忆力下降、情绪波动等认知和心理问题",
+    "失眠与心血管疾病、糖尿病、肥胖症等多种慢性病密切相关",
+    "传统失眠治疗包括生活方式调整、心理治疗和药物治疗",
+    "传统药物治疗存在依赖、戒断反应等局限性",
+    "新型失眠药物通过精准作用机制改善睡眠质量"
+  ]
+}

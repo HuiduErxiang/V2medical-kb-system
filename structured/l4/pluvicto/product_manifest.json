@@ -1,0 +1,23 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product_id": "pluvicto",
+  "product_name_en": "pluvicto",
+  "product_name_zh": "普卢维托",
+  "disease_domain": "oncology",
+  "disease": "prostate",
+  "l3_chain": [
+    "oncology.shared",
+    "oncology.prostate"
+  ],
+  "files": {
+    "evidence_database": "m6_evidence_database.json",
+    "expression_library": "expression_library.json",
+    "compliance_rules": "m5_compliance_rules.json",
+    "product_taxonomy": "product_taxonomy.json"
+  }
+}

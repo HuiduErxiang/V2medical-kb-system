@@ -1,0 +1,53 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q2] V2 为什么仑卡奈单抗是更好的阿尔茨海默病新药？这是全球唯一在中、美、欧三地获批的抗Aβ药物.docx",
+    "source_key": "SRC-HIST-2025-Q2_V2_为什么仑卡奈单抗是更好的阿尔茨海默病新",
+    "asset_key": "AST-DOCX-2025-Q2_V2_为什么仑卡奈单抗是更好的阿尔茨海默病新",
+    "content_hash": "b56dd35faf4583e6",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.133283",
+    "source_size_bytes": 19532
+  },
+  "metadata": {
+    "title": "V2 为什么仑卡奈单抗是更好的阿尔茨海默病新药？这是全球唯一在中、美、欧三地获批的抗Aβ药物",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q2",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向"
+    ]
+  },
+  "key_messages": [
+    "一方面，仑卡奈单抗可以长期使用，持续对患者脑内不断生成的毒性蛋白进行清除，保护神经元功能，最大程度阻止AD病理发展，延缓患者的疾病进程。Clarity AD研究结果显示，在治疗期间，仑卡奈单抗可以显著降低患者的Aβ PET负荷、Tau PET负荷、等生物标志物。",
+    "另一方面，研究结果还表明，仑卡奈单抗治疗18个月后，患者脑内淀粉样斑块负荷降低到18 centiloids，低于阳性阈值的30 centiloids，实现临床意义清除，此时患者可以根据Aβ PET情况选择暂时停止给药，已经获得的疗效并不会反弹。"
+  ]
+}

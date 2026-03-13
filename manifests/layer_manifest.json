@@ -1,0 +1,174 @@
+{
+  "manifest_version": "2.0",
+  "system_root": ".",
+  "layers": {
+    "L1_writing_craft": {
+      "path": "L1_writing_craft",
+      "description": "Universal writing craft rules — language-agnostic, domain-agnostic",
+      "files": {
+        "native_syntax_rules": "native_syntax_rules.json",
+        "expression_base": "expression_base.json",
+        "persona_kernels": "persona_kernels.json",
+        "m2_narrative_primitives": "m2_narrative_primitives.json",
+        "m4_rhetoric_blocks": "m4_rhetoric_blocks.json",
+        "register_levels": "register_levels.json",
+        "style_dna_schema": "style_dna_schema.json"
+      }
+    },
+    "L2_medical_playbook": {
+      "path": "L2_medical_playbook",
+      "description": "Medical writing strategies — drug/disease agnostic",
+      "files": {
+        "m0_persona_templates": "m0_persona_templates.json",
+        "m3_strategic_plays": "m3_strategic_plays.json",
+        "m4_medical_blocks": "m4_medical_blocks.json",
+        "m5_compliance_schema": "m5_compliance_schema.json",
+        "medical_expression_profiles": "medical_expression_profiles.json",
+        "medical_syntax_rules": "medical_syntax_rules.json"
+      }
+    }
+  },
+  "l3_catalog": {
+    "neurology": {
+      "alzheimers_disease": {
+        "path": "L3_disease_strategy/neurology/alzheimers_disease",
+        "disease_knowledge": "disease_knowledge.json",
+        "m1_thesis_derivation_rules": "m1_thesis_derivation_rules.json"
+      },
+      "insomnia": {
+        "path": "L3_disease_strategy/neurology/insomnia",
+        "disease_knowledge": "disease_knowledge.json",
+        "m1_thesis_derivation_rules": "m1_thesis_derivation_rules.json"
+      }
+    },
+    "oncology": {
+      "shared": {
+        "path": "L3_disease_strategy/oncology",
+        "disease_knowledge": "disease_knowledge_shared.json",
+        "m1_thesis_derivation_rules": "m1_thesis_derivation_rules_shared.json",
+        "source_registry": "source_registry.json"
+      },
+      "lung_cancer": {
+        "path": "L3_disease_strategy/oncology/lung_cancer",
+        "disease_knowledge": "disease_knowledge.json",
+        "m1_thesis_derivation_rules": "m1_thesis_derivation_rules.json",
+        "source_registry": "source_registry.json"
+      },
+      "gastric_cancer": {
+        "path": "L3_disease_strategy/oncology/gastric_cancer",
+        "disease_knowledge": "disease_knowledge.json",
+        "m1_thesis_derivation_rules": "m1_thesis_derivation_rules.json",
+        "source_registry": "source_registry.json"
+      }
+    }
+  },
+  "products": {
+    "lecanemab": {
+      "product_name_zh": "仑卡奈单抗",
+      "product_name_en": "Lecanemab",
+      "sponsor": "卫材/Eisai",
+      "domain": "neurology",
+      "disease": "alzheimers_disease",
+      "l3_chain": ["neurology.alzheimers_disease"],
+      "l4": {
+        "path": "L4_product_knowledge/lecanemab",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    },
+    "furmonertinib": {
+      "product_name_zh": "伏美替尼",
+      "product_name_en": "Furmonertinib",
+      "sponsor": "艾力斯/Allist",
+      "domain": "oncology",
+      "disease": "lung_cancer",
+      "l3_chain": ["oncology.shared", "oncology.lung_cancer"],
+      "l4": {
+        "path": "L4_product_knowledge/furmonertinib",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    },
+    "lemborexant": {
+      "product_name_zh": "莱博雷生",
+      "product_name_en": "Lemborexant",
+      "sponsor": "卫材/Eisai",
+      "domain": "neurology",
+      "disease": "insomnia",
+      "l3_chain": ["neurology.insomnia"],
+      "l4": {
+        "path": "L4_product_knowledge/lemborexant",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    },
+    "trastuzumab_deruxtecan_gastric": {
+      "product_name_zh": "德曲妥珠单抗",
+      "product_name_en": "Trastuzumab Deruxtecan (T-DXd)",
+      "sponsor": "阿斯利康 - 第一三共/AstraZeneca-Daiichi Sankyo",
+      "domain": "oncology",
+      "disease": "gastric_cancer",
+      "l3_chain": ["oncology.shared", "oncology.gastric_cancer"],
+      "l4": {
+        "path": "L4_product_knowledge/trastuzumab_deruxtecan_gastric",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    },
+    "donanemab": {
+      "product_name_zh": "多那单抗",
+      "product_name_en": "Donanemab",
+      "sponsor": "礼来/Eli Lilly",
+      "domain": "neurology",
+      "disease": "alzheimers_disease",
+      "l3_chain": ["neurology.alzheimers_disease"],
+      "l4": {
+        "path": "L4_product_knowledge/donanemab",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    },
+    "pluvicto": {
+      "product_name_zh": "普卢维托",
+      "product_name_en": "Pluvicto",
+      "sponsor": "诺华/Novartis",
+      "domain": "oncology",
+      "disease": "prostate",
+      "l3_chain": ["oncology.shared", "oncology.prostate"],
+      "l4": {
+        "path": "L4_product_knowledge/pluvicto",
+        "m6_evidence_database": "m6_evidence_database.json",
+        "expression_library": "expression_library.json",
+        "m5_compliance_rules": "m5_compliance_rules.json",
+        "product_taxonomy": "product_taxonomy.json",
+        "client_style_instances": "client_style_instances/"
+      }
+    }
+  },
+  "routing_policies": {
+    "allow_cross_product_reference": false,
+    "allow_cross_domain_reference": false,
+    "strict_isolation": true,
+    "l3_merge_strategy": "chain_override",
+    "l3_chain_description": "Load L3 entries in order; later entries override same-ID entries from earlier in chain"
+  },
+  "runtime_defaults": {
+    "active_product": "lecanemab",
+    "log_cross_reference_attempts": true
+  }
+}

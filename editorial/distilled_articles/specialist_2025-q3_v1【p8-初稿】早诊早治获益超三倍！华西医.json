@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] V1【P8-初稿】早诊早治获益超三倍！华西医院披露仑卡奈单抗最新临床疗效.docx",
+    "source_key": "SRC-HIST-2025-Q3_V1【P8-初稿】早诊早治获益超三倍！华西医",
+    "asset_key": "AST-DOCX-2025-Q3_V1【P8-初稿】早诊早治获益超三倍！华西医",
+    "content_hash": "ac7a998e2fb34c9d",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.754763",
+    "source_size_bytes": 15262
+  },
+  "metadata": {
+    "title": "V1【P8-初稿】早诊早治获益超三倍！华西医院披露仑卡奈单抗最新临床疗效",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q3",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "所以说，无论性别和基因携带情况如何，仑卡奈单抗治疗都是有获益的。AD患者可以放心使用这个药物，不用担心性别和APOE状态对疗效的影响。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "2025 年 7 月，在全球顶尖的阿尔茨海默病（AD）研究大会——美国阿尔茨海默病协会国际会议（AAIC）召开。会议上，四川大学华西医院的陈芹教授团队公布了一项振奋人心的研究成果：中国早期AD患者使用仑卡奈单抗治疗后认知功能评分下降幅度竟超晚期AD患者三倍！这也就意味着，越早使用仑卡奈单抗，延缓AD患者认知衰退的效果就越好。这项真实世界研究的结果，再一次论证了仑卡奈单抗治疗中国AD患者的疗效十分显著，为AD患者带来值得信服的好消息。",
+    "研究结果显示，在 68 位患者中，50例女性与18例男性患者的认知改善幅度没有统计学差异，ADAS-cog14下降值分别为6.52和6.73，这说明性别不影响疗效。而且，对于携带 AD 风险基因（APOEε4）的患者和不携带该基因的患者，治疗后认知能力的改善和血液中生物标志物的下降幅度也没有明显区别。"
+  ]
+}

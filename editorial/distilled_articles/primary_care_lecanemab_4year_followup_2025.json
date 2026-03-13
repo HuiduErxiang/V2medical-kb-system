@@ -1,0 +1,63 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2025-Q3] 仑卡奈单抗4年随访数据披露，更显著的获益出现.docx",
+    "source_key": "SRC-H006-PRIMARY-001",
+    "asset_key": "AST-H006-PRIMARY-001",
+    "content_hash": "lecanemab_4year_followup_2025",
+    "source_type": "clinical_education",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "仑卡奈单抗4年随访数据披露，更显著的获益出现",
+    "title_en": "Lecanemab 4-Year Follow-Up Data Reveals More Significant Benefits",
+    "authors": [],
+    "journal": "2025 AAIC",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": "AAIC 2025"
+  },
+  "distilled_content": {
+    "article_type": "clinical_education",
+    "audience": "基层医护",
+    "register_level": "R3",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗"],
+    "content_focus": "practical guidance, clinical evidence, treatment outcomes",
+    "narrative_patterns": ["case scenarios", "practical tips", "evidence-based analysis"],
+    "sections": [
+      {
+        "title": "引言",
+        "content": "2023年仑卡奈单抗获FDA批准开启AD治疗DMT时代，Clarity AD研究18个月结果显示对早期AD患者认知和功能下降有延缓作用。但AD病程漫长，需要更长随访观察明确获益。"
+      },
+      {
+        "title": "研究背景",
+        "content": "Clarity AD研究纳入1795名早期AD患者，1:1接受仑卡奈单抗或安慰剂治疗。18个月后安慰剂组转入治疗组，开放标签扩展期以ADNI数据库作为自然病程对照组。"
+      },
+      {
+        "title": "4年随访核心结果",
+        "content": "4年随访显示仑卡奈单抗持续获益，尤其在3-4年期间获益迅速拉开（0.74分/12个月），表明Aβ对认知损害具有延时性，强调早期干预的重要性。"
+      },
+      {
+        "title": "临床意义",
+        "content": "对于基线Tau沉积水平较低的患者，4年后56%认知功能改善，69%无衰退，提示早期抗Aβ治疗对延缓AD疾病进程的关键作用。"
+      }
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗4年随访数据显示持续获益，3-4年期间认知功能下降延缓更显著",
+    "Aβ对认知损害具有延时性，早期干预是关键",
+    "基线Tau沉积水平较低的患者治疗4年后56%认知功能改善",
+    "Clarity AD研究开放标签扩展期表明抗Aβ治疗的长期疗效"
+  ],
+  "accessibility_notes": [
+    "内容包含临床研究数据，建议结合患者具体情况进行个性化评估",
+    "强调早期干预的重要性，基层医护应关注AD早期症状识别",
+    "随访数据表明长期治疗的获益，需与患者及家属充分沟通治疗策略"
+  ]
+}

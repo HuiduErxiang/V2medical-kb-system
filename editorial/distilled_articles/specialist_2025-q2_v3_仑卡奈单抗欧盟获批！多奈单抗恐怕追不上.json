@@ -1,0 +1,53 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q2] V3 仑卡奈单抗欧盟获批！多奈单抗恐怕追不上了…… .docx",
+    "source_key": "SRC-HIST-2025-Q2_V3_仑卡奈单抗欧盟获批！多奈单抗恐怕追不上",
+    "asset_key": "AST-DOCX-2025-Q2_V3_仑卡奈单抗欧盟获批！多奈单抗恐怕追不上",
+    "content_hash": "6f2f06100c1e6d7e",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.162925",
+    "source_size_bytes": 304874
+  },
+  "metadata": {
+    "title": "V3 仑卡奈单抗欧盟获批！多奈单抗恐怕追不上了…… ",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q2",
+    "version": "V3",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "基于斑块水平评估停药的治疗逻辑是否符合 AD 的疾病特点，这一点暂且不提，多奈单抗可停药的特点导致其患者的平均暴露时间差别很大，患者停药后也很难持续随访，这导致其在长期疗效数据上的追踪非常困难。",
+      "而仑卡奈单抗不仅在去年的AAIC大会上披露了3年治疗数据，证明了其长期的有效性和对生物标志物的清除作用，还在刚刚结束的AD/PD大会上披露了亚洲亚组的数据。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": []
+}

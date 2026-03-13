@@ -1,0 +1,104 @@
+{
+  "manifest_version": "1.0",
+  "batch_id": "H006",
+  "batch_type": "CLINICAL_AND_PUBLIC_SCIENCE",
+  "created_at": "2026-03-10T19:55:00Z",
+  "description": "H006 批次 - 7篇基层医护与公众科普文章蒸馏",
+  "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles",
+  "target_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system_v2\\editorial\\distilled_articles",
+  "distillation_status": "completed",
+  "files": [
+    {
+      "source_file": "基层医护/主张_证据/[2025-Q3] 仑卡奈单抗4年随访数据披露，更显著的获益出现.docx",
+      "target_file": "primary_care_lecanemab_4year_followup_2025.json",
+      "source_key": "SRC-H006-PRIMARY-001",
+      "asset_key": "AST-H006-PRIMARY-001",
+      "content_hash": "e321e2bc7059908b5f2efaaafab22c69d5312d97efe052d8ccd23ea4b6c19bf8",
+      "source_size_bytes": 220876,
+      "distillation_type": "primary_care",
+      "audience": "基层医护",
+      "register_level": "R3"
+    },
+    {
+      "source_file": "基层医护/主张_证据/[2025-Q4] 高效且安全！仑卡奈单抗的ARIA管理临床策略.docx",
+      "target_file": "primary_care_lecanemab_aria_management_2025.json",
+      "source_key": "SRC-H006-PRIMARY-002",
+      "asset_key": "AST-H006-PRIMARY-002",
+      "content_hash": "9f7f11d73ab2c1023ab28f3c26aa4618c065abcc07936ae618503a8c1da33a6c",
+      "source_size_bytes": 15580,
+      "distillation_type": "primary_care",
+      "audience": "基层医护",
+      "register_level": "R3"
+    },
+    {
+      "source_file": "基层医护/新闻_评论/[2025-Q2] V2【初稿】多奈单抗被拒20天后，仑卡奈单抗获批！.docx",
+      "target_file": "primary_care_lecanemab_approval_2025.json",
+      "source_key": "SRC-H006-PRIMARY-003",
+      "asset_key": "AST-H006-PRIMARY-003",
+      "content_hash": "1eb21750bd403f86aa1ee23ded4fdb0edb7b95a5c5462092a40f900e2d18140e",
+      "source_size_bytes": 401044,
+      "distillation_type": "primary_care",
+      "audience": "基层医护",
+      "register_level": "R3"
+    },
+    {
+      "source_file": "基层医护/新闻_评论/[2025-Q2] V3 抗Aβ治疗终局之战，在欧洲已经分出胜负！.docx",
+      "target_file": "primary_care_anti_ab_landscape_2025.json",
+      "source_key": "SRC-H006-PRIMARY-004",
+      "asset_key": "AST-H006-PRIMARY-004",
+      "content_hash": "2eae6014a9b52260b32ea13fd94e4636eb43fc79eb550d0d91d50f943b248ae3",
+      "source_size_bytes": 401501,
+      "distillation_type": "primary_care",
+      "audience": "基层医护",
+      "register_level": "R3"
+    },
+    {
+      "source_file": "公众科普/叙事_反思/[2024-Q2] 丢三落四，说话不利索……别以为是正常衰老，还可能是阿尔茨海默病.docx",
+      "target_file": "public_science_alzheimer_symptoms_2024.json",
+      "source_key": "SRC-H006-PUBLIC-001",
+      "asset_key": "AST-H006-PUBLIC-001",
+      "content_hash": "d87577a87af6a31e2a551ff68908dcb8844879b90a056c889ba62ba19c2c5b6d",
+      "source_size_bytes": 18143,
+      "distillation_type": "public_science",
+      "audience": "公众科普",
+      "register_level": "R5"
+    },
+    {
+      "source_file": "公众科普/叙事_反思/[2024-Q2] 别让这些错误认知，耽误了病情！盘点阿尔茨海默病早期筛查误区.docx",
+      "target_file": "public_science_screening_misconceptions_2024.json",
+      "source_key": "SRC-H006-PUBLIC-002",
+      "asset_key": "AST-H006-PUBLIC-002",
+      "content_hash": "4725e781b77d6628e18379c67dc3907cbdf67847fbdd778dc45cb6d64c0e1fa0",
+      "source_size_bytes": 18357,
+      "distillation_type": "public_science",
+      "audience": "公众科普",
+      "register_level": "R5"
+    },
+    {
+      "source_file": "公众科普/叙事_反思/[2024-Q3] 照护者的坚守：阿尔兹海默症家庭的新治疗选择与希望.docx",
+      "target_file": "public_science_caregivers_hope_2024.json",
+      "source_key": "SRC-H006-PUBLIC-003",
+      "asset_key": "AST-H006-PUBLIC-003",
+      "content_hash": "2b4a07ecaf8d14c0d95e89c87b75c0d1e7e84a67eb5a5e91f3cc467c9cd338b8",
+      "source_size_bytes": 14595,
+      "distillation_type": "public_science",
+      "audience": "公众科普",
+      "register_level": "R5"
+    }
+  ],
+  "excluded_files": [],
+  "statistics": {
+    "source_files_total": 7,
+    "source_files_processed": 7,
+    "source_files_excluded": 0,
+    "total_source_size_bytes": 1090096,
+    "output_files": 7
+  },
+  "distillation_summary": {
+    "primary_care_articles": 4,
+    "public_science_articles": 3,
+    "disease_areas_covered": ["阿尔茨海默病"],
+    "products_mentioned": ["仑卡奈单抗", "多奈单抗"],
+    "key_topics_extracted": ["仑卡奈单抗疗效", "ARIA安全性管理", "阿尔茨海默病症状识别", "早期筛查", "照护者支持"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2026-Q1] 抗Aβ单抗治疗到底该不该斑块清除后停药？研究显示「持续治疗获益」较「停药」差距竟有66%！.docx",
+    "source_key": "SRC-HIST-2026-Q1_抗Aβ单抗治疗到底该不该斑块清除后停药？研究",
+    "asset_key": "AST-DOCX-2026-Q1_抗Aβ单抗治疗到底该不该斑块清除后停药？研究",
+    "content_hash": "2d624a959f248952",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.670239",
+    "source_size_bytes": 480018
+  },
+  "metadata": {
+    "title": "抗Aβ单抗治疗到底该不该斑块清除后停药？研究显示「持续治疗获益」较「停药」差距竟有66%！",
+    "content_type": "主张_证据",
+    "publication_quarter": "2026-Q1",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "近日，在2025年阿尔茨海默病临床试验大会（CTAD）上公布的一项研究[3]回答了这个问题。",
+      "在多奈单抗的III期临床试验TB2研究中，试验组在停药后相较安慰剂组依然展现出了一定的持续获益，但一个疑问始终围绕着多奈单抗：患者已经停止治疗，没有持续用药的干预，为何仍能比未治疗的患者进展更慢？",
+      "对此，我们可以给出两种猜测：",
+      "这两种猜测直接决定了临床决策的方向：如果是前者，停药后的“获益”可能被高估，临床需重新评估其真实疗效；如果是后者，则说明DMT的疾病修饰作用确实可靠，停药策略具有科学依据。",
+      "本研究明确了两种单抗的获益模式差异，证实“仑卡奈单抗持续治疗”的获益优于“多奈单抗斑块清除后停药”的策略，为AD的长期治疗方案选择提供了数据支撑。",
+      "这提示我们，AD的病理进程是多靶点、持续性的，仅以“斑块清除”为终点可能低估了长期治疗的价值，针对“持续产生的病理标志物”的长期干预，或许是最大化DMT获益的核心逻辑。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "抗Aβ单抗治疗到底该不该斑块清除后停药？研究显示「持续治疗获益」较「停药」差距竟有66%！",
+    "对于采用“清斑后停药”策略的多奈单抗，在排除基线病情差异、聚焦12-18个月的随访期后，结果显示，停药患者的疾病进展速度较模拟匹配安慰剂组减慢了17.4%（图2左）。",
+    "这表明，多奈单抗的确通过降低整体Aβ负荷，一定程度延缓了患者的疾病进展。但我们也可以看到，17.4%这个数据其实要远逊于TB2研究的「CDR-SB评分18个月进展减缓28.9%」的试验结果，说明多奈单抗的疗效持续性较弱，获益更多源于患者在“轻症状态”的维持。"
+  ]
+}

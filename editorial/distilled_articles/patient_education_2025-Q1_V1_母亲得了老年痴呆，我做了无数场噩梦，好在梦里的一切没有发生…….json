@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q1] V1 母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生…….docx",
+    "content_hash": "0bd68a30afeccc79",
+    "distilled_at": "2026-03-10T03:56:06.717683",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V1 母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生……",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q1",
+    "word_count": 1481,
+    "source_file": "[2025-Q1] V1 母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "为此，蔡医生做了大量功课，为了和主治医生沟通顺畅，她写了满满一张A4纸的问题提纲，其中一个最重要的问...。",
+    "蔡医生非常清楚阿尔茨海默病的症状，潘阿姨当时的状态实在太符合阿尔茨海默病早期症状了。",
+    "蔡医生下定决心，一定要尽快完成妈妈的疾病诊断，然后尽快采用有效的治疗方案。",
+    "蔡医生下定决心，一定要尽快完成妈妈的疾病诊断，然后尽快采用有效的治疗方案。",
+    "这个“记忆杀手”不止会夺走患者的记忆，让患者变的忘事，而且还会让他们难以胜任原本可以下意识完成的任务。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生\n\n我的妈妈，是不是生病了\n当潘阿姨房间里的衣服散落一地，她却总是反反复复地把衣服从一处挪到另一处时，她的女儿，一家三甲医院的外科医生蔡医生，就在心里敲响了警钟。\n蔡医生非常清楚阿尔茨海默病的症状，潘阿姨当时的状态实在太符合阿尔茨海默病早期症状了。\n这个“记忆杀手”不止会夺走患者的记忆，让患者变的忘事，而且还会让他们难以胜任原本可以下意识完..."
+}

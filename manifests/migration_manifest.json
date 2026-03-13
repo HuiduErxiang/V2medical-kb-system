@@ -1,0 +1,96 @@
+{
+  "manifest_version": "1.0",
+  "migration_batch": "Batch-1",
+  "migration_date": "2026-03-09",
+  "migration_phase": "Phase 4",
+  "description": "Low-risk lightweight assets migration: L1 rules, templates, and layer manifest",
+  "assets": {
+    "L1_writing_craft": {
+      "source_key": "SRC-L1-WRITING-CRAFT",
+      "asset_key": "AST-PKG-L1-WRITING-CRAFT",
+      "source_path": "medical_kb_system/L1_writing_craft",
+      "target_path": "rules/l1_writing_craft",
+      "decision": "reuse",
+      "files": [
+        {
+          "filename": "expression_base.json",
+          "content_hash": "ff217c285ab717be",
+          "size_bytes": 2610
+        },
+        {
+          "filename": "lighthouse_dailaoban.json",
+          "content_hash": "a307b60879458469",
+          "size_bytes": 7963
+        },
+        {
+          "filename": "m2_narrative_primitives.json",
+          "content_hash": "42915833be0354e2",
+          "size_bytes": 2445
+        },
+        {
+          "filename": "m4_rhetoric_blocks.json",
+          "content_hash": "daa78eba14c812ec",
+          "size_bytes": 7990
+        },
+        {
+          "filename": "native_syntax_rules.json",
+          "content_hash": "99653a0e363a3a83",
+          "size_bytes": 9000
+        },
+        {
+          "filename": "persona_kernels.json",
+          "content_hash": "4931c9dfb6f1857d",
+          "size_bytes": 6013
+        },
+        {
+          "filename": "register_levels.json",
+          "content_hash": "c244d155e9ba53d6",
+          "size_bytes": 1912
+        },
+        {
+          "filename": "style_dna_schema.json",
+          "content_hash": "da8c3e86215f39a5",
+          "size_bytes": 912
+        }
+      ]
+    },
+    "templates": {
+      "source_key": "SRC-TEMPLATES",
+      "asset_key": "AST-PKG-TEMPLATES",
+      "source_path": "medical_kb_system/templates",
+      "target_path": "templates",
+      "decision": "reuse",
+      "files": [
+        {
+          "filename": ".env.example",
+          "content_hash": "3ef47c0beacce48b",
+          "size_bytes": 471
+        },
+        {
+          "filename": "content_repo_manifest.json",
+          "content_hash": "cb44c7cde214227e",
+          "size_bytes": 789
+        }
+      ]
+    },
+    "layer_manifest": {
+      "source_key": "SRC-LAYER-MANIFEST",
+      "asset_key": "AST-LAYER-MANIFEST",
+      "source_path": "medical_kb_system/layer_manifest.json",
+      "target_path": "manifests/layer_manifest.json",
+      "decision": "reuse",
+      "files": [
+        {
+          "filename": "layer_manifest.json",
+          "content_hash": "4580bc1d789484be",
+          "size_bytes": 6975
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_files": 11,
+    "total_size_bytes": 47080,
+    "verification_status": "verified"
+  }
+}

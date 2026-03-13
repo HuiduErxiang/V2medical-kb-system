@@ -1,0 +1,323 @@
+{
+  "batch_id": "H005",
+  "batch_name": "患者教育历史文章",
+  "total_articles": 34,
+  "categories": [
+    "主张_证据",
+    "叙事_反思",
+    "场景_指导",
+    "新闻_评论",
+    "问题_解决"
+  ],
+  "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育",
+  "target_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system_v2\\editorial\\distilled_articles",
+  "processed_at": "2026-03-10T03:56:06.906159",
+  "articles": [
+    {
+      "filename": "[2025-Q2] 阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据…….docx",
+      "title": "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q2",
+      "word_count": 2303,
+      "content_hash": "c7d397b4247f9896",
+      "output_file": "patient_education_2025-Q2_阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据…….json"
+    },
+    {
+      "filename": "[2025-Q3] V1 重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1).docx",
+      "title": "V1 重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1)",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q3",
+      "word_count": 2097,
+      "content_hash": "b910020f8a7797fd",
+      "output_file": "patient_education_2025-Q3_V1_重磅研究数据这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1).json"
+    },
+    {
+      "filename": "[2025-Q3] V1 阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…….docx",
+      "title": "V1 阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q3",
+      "word_count": 2253,
+      "content_hash": "0f50b36c55ab2510",
+      "output_file": "patient_education_2025-Q3_V1_阿尔茨海默病治疗有新对比AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…….json"
+    },
+    {
+      "filename": "[2025-Q3] V2-AAIC后续报道：血栓合并用药.docx",
+      "title": "V2-AAIC后续报道：血栓合并用药",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q3",
+      "word_count": 1895,
+      "content_hash": "a0f01f1f8adc1d9f",
+      "output_file": "patient_education_2025-Q3_V2-AAIC后续报道：血栓合并用药.json"
+    },
+    {
+      "filename": "[2025-Q4] V1【医学版-修订】 全球最大规模！仑卡奈单抗中国 407 例真实世界研究发表，海量证据出炉…….docx",
+      "title": "V1【医学版-修订】 全球最大规模！仑卡奈单抗中国 407 例真实世界研究发表，海量证据出炉……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q4",
+      "word_count": 2811,
+      "content_hash": "fdefa42becc95e41",
+      "output_file": "patient_education_2025-Q4_V1_医学版-修订__全球最大规模仑卡奈单抗中国_407_例真实世界研究发表，海量证据出炉…….json"
+    },
+    {
+      "filename": "[2025-Q4] V1【医学版】 全球最大规模！仑卡奈单抗中国407例患者真实世界研究发表，海量证据出炉…….docx",
+      "title": "V1【医学版】 全球最大规模！仑卡奈单抗中国407例患者真实世界研究发表，海量证据出炉……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q4",
+      "word_count": 3819,
+      "content_hash": "d2ff3171d3052c80",
+      "output_file": "patient_education_2025-Q4_V1_医学版__全球最大规模仑卡奈单抗中国407例患者真实世界研究发表，海量证据出炉…….json"
+    },
+    {
+      "filename": "[2025-Q4] V1【大众版】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx",
+      "title": "V1【大众版】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q4",
+      "word_count": 2824,
+      "content_hash": "1ef4b6824e6d56ca",
+      "output_file": "patient_education_2025-Q4_V1_大众版_407_例中国患者实证仑卡奈单抗中国真实世界研究带来这些好消息…….json"
+    },
+    {
+      "filename": "[2025-Q4] V2【大众版-修订】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx",
+      "title": "V2【大众版-修订】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q4",
+      "word_count": 2770,
+      "content_hash": "5cf6e3253d3ac0c4",
+      "output_file": "patient_education_2025-Q4_V2_大众版-修订_407_例中国患者实证仑卡奈单抗中国真实世界研究带来这些好消息…….json"
+    },
+    {
+      "filename": "[2025-Q4] 为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象…….docx",
+      "title": "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象……",
+      "content_type": "主张_证据",
+      "publication_quarter": "2025-Q4",
+      "word_count": 2472,
+      "content_hash": "36e851004bf51d72",
+      "output_file": "patient_education_2025-Q4_为什么脑内已无Aβ斑块还不能停药抗Aβ治疗的长期获益，超乎想象…….json"
+    },
+    {
+      "filename": "[2024-Q1] 不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状.docx",
+      "title": "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q1",
+      "word_count": 2331,
+      "content_hash": "b1921ee9cbadf5a4",
+      "output_file": "patient_education_2024-Q1_不只是记忆消逝阿尔茨海默病还有这些隐蔽症状.json"
+    },
+    {
+      "filename": "[2024-Q2] V4【脚本】第一篇：阿尔茨海默病带走的，不只患者的记忆 .docx",
+      "title": "V4【脚本】第一篇：阿尔茨海默病带走的，不只患者的记忆 ",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 848,
+      "content_hash": "ac90fd42483e19c7",
+      "output_file": "patient_education_2024-Q2_V4_脚本_第一篇：阿尔茨海默病带走的，不只患者的记忆_.json"
+    },
+    {
+      "filename": "[2024-Q2] 守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑.docx",
+      "title": "守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1477,
+      "content_hash": "df3e67053469a7ea",
+      "output_file": "patient_education_2024-Q2_守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑.json"
+    },
+    {
+      "filename": "[2024-Q2] 莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！.docx",
+      "title": "莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1518,
+      "content_hash": "c89b4568363af890",
+      "output_file": "patient_education_2024-Q2_莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状.json"
+    },
+    {
+      "filename": "[2024-Q2] 被误解的“老年痴呆”，阿尔茨海默病并非老年专属.docx",
+      "title": "被误解的“老年痴呆”，阿尔茨海默病并非老年专属",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1337,
+      "content_hash": "13301da8b11ad0c8",
+      "output_file": "patient_education_2024-Q2_被误解的“老年痴呆”，阿尔茨海默病并非老年专属.json"
+    },
+    {
+      "filename": "[2024-Q2] 阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车…….docx",
+      "title": "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车……",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1326,
+      "content_hash": "9e06e3456f11522d",
+      "output_file": "patient_education_2024-Q2_阿尔茨海默病新药来了为记忆的持续丢失，踩下刹车…….json"
+    },
+    {
+      "filename": "[2024-Q2] 阿尔茨海默病：揭秘早期症状，早知道，早准备.docx",
+      "title": "阿尔茨海默病：揭秘早期症状，早知道，早准备",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1946,
+      "content_hash": "08c3256574594d9d",
+      "output_file": "patient_education_2024-Q2_阿尔茨海默病：揭秘早期症状，早知道，早准备.json"
+    },
+    {
+      "filename": "[2024-Q2] 预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑.docx",
+      "title": "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q2",
+      "word_count": 1139,
+      "content_hash": "bb3ba5d86caed188",
+      "output_file": "patient_education_2024-Q2_预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑.json"
+    },
+    {
+      "filename": "[2024-Q3] 守护记忆的新药，阿尔茨海默病曙光来临.docx",
+      "title": "守护记忆的新药，阿尔茨海默病曙光来临",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q3",
+      "word_count": 1419,
+      "content_hash": "c554e0740db58a9e",
+      "output_file": "patient_education_2024-Q3_守护记忆的新药，阿尔茨海默病曙光来临.json"
+    },
+    {
+      "filename": "[2024-Q3] （改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）.docx",
+      "title": "（改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2024-Q3",
+      "word_count": 1426,
+      "content_hash": "26354dac96d84715",
+      "output_file": "patient_education_2024-Q3_（改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）.json"
+    },
+    {
+      "filename": "[2025-Q1] V1 母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生…….docx",
+      "title": "V1 母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生……",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q1",
+      "word_count": 1481,
+      "content_hash": "0bd68a30afeccc79",
+      "output_file": "patient_education_2025-Q1_V1_母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生…….json"
+    },
+    {
+      "filename": "[2025-Q2] V2 父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”…….docx",
+      "title": "V2 父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”……",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q2",
+      "word_count": 1688,
+      "content_hash": "e2297b866549390c",
+      "output_file": "patient_education_2025-Q2_V2_父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”…….json"
+    },
+    {
+      "filename": "[2025-Q2] V3 抗Aβ治疗能不能停药，其实主动权一直在患者手上！.docx",
+      "title": "V3 抗Aβ治疗能不能停药，其实主动权一直在患者手上！",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q2",
+      "word_count": 1239,
+      "content_hash": "72ede4202a626f25",
+      "output_file": "patient_education_2025-Q2_V3_抗Aβ治疗能不能停药，其实主动权一直在患者手上.json"
+    },
+    {
+      "filename": "[2025-Q3] V2 重磅研究验证！仑卡奈单抗如何“指挥”小胶质细胞清除Aβ…….docx",
+      "title": "V2 重磅研究验证！仑卡奈单抗如何“指挥”小胶质细胞清除Aβ……",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q3",
+      "word_count": 2276,
+      "content_hash": "180fc7d7db4d51a9",
+      "output_file": "patient_education_2025-Q3_V2_重磅研究验证仑卡奈单抗如何“指挥”小胶质细胞清除Aβ…….json"
+    },
+    {
+      "filename": "[2025-Q3] V2AAIC后续报道第四篇：华西经验.docx",
+      "title": "V2AAIC后续报道第四篇：华西经验",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q3",
+      "word_count": 1915,
+      "content_hash": "713fb0d53c6a2d9b",
+      "output_file": "patient_education_2025-Q3_V2AAIC后续报道第四篇：华西经验.json"
+    },
+    {
+      "filename": "[2025-Q3] V5.2重磅研究验证！仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展(2).docx",
+      "title": "V5.2重磅研究验证！仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展(2)",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q3",
+      "word_count": 2227,
+      "content_hash": "875fb7f3d77b358d",
+      "output_file": "patient_education_2025-Q3_V5.2重磅研究验证仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展(2).json"
+    },
+    {
+      "filename": "[2025-Q3] 重磅研究验证！仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展.docx",
+      "title": "重磅研究验证！仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q3",
+      "word_count": 2122,
+      "content_hash": "a2372ef2eec8554e",
+      "output_file": "patient_education_2025-Q3_重磅研究验证仑卡奈单抗可以激活脑内免疫系统，高效清除Aβ，延缓疾病进展.json"
+    },
+    {
+      "filename": "[2025-Q4] 临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势.docx",
+      "title": "临床处方最关心什么？疗效与ARIA风险之外的仑卡奈单抗优势",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2025-Q4",
+      "word_count": 2376,
+      "content_hash": "56163885c91dd719",
+      "output_file": "patient_education_2025-Q4_临床处方最关心什么疗效与ARIA风险之外的仑卡奈单抗优势.json"
+    },
+    {
+      "filename": "[2026-Q1] V4-停药超过两年，AD抗Aβ治疗的获益——就全没了？！.docx",
+      "title": "V4-停药超过两年，AD抗Aβ治疗的获益——就全没了？！",
+      "content_type": "叙事_反思",
+      "publication_quarter": "2026-Q1",
+      "word_count": 1425,
+      "content_hash": "c3d89842c89fdae4",
+      "output_file": "patient_education_2026-Q1_V4-停药超过两年，AD抗Aβ治疗的获益——就全没了.json"
+    },
+    {
+      "filename": "[2024-Q4] V2 阿尔茨海默病致病元凶是Aβ？对，但不全对.docx",
+      "title": "V2 阿尔茨海默病致病元凶是Aβ？对，但不全对",
+      "content_type": "场景_指导",
+      "publication_quarter": "2024-Q4",
+      "word_count": 1403,
+      "content_hash": "49d5298e1e1b46f6",
+      "output_file": "patient_education_2024-Q4_V2_阿尔茨海默病致病元凶是Aβ对，但不全对.json"
+    },
+    {
+      "filename": "[2025-Q1] 当家中老人记性变差，我们做子女的该干些什么？V2.1 20250103.docx",
+      "title": "当家中老人记性变差，我们做子女的该干些什么？V2.1 20250103",
+      "content_type": "场景_指导",
+      "publication_quarter": "2025-Q1",
+      "word_count": 1414,
+      "content_hash": "2ad4e92f18d19d2a",
+      "output_file": "patient_education_2025-Q1_当家中老人记性变差，我们做子女的该干些什么V2.1_20250103.json"
+    },
+    {
+      "filename": "[2025-Q2] 炮轰学术专家！国际大会上居然也会发生这种事…….docx",
+      "title": "炮轰学术专家！国际大会上居然也会发生这种事……",
+      "content_type": "场景_指导",
+      "publication_quarter": "2025-Q2",
+      "word_count": 1965,
+      "content_hash": "7d6930c303611854",
+      "output_file": "patient_education_2025-Q2_炮轰学术专家国际大会上居然也会发生这种事…….json"
+    },
+    {
+      "filename": "[2024-Q3] （邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路.docx",
+      "title": "（邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路",
+      "content_type": "新闻_评论",
+      "publication_quarter": "2024-Q3",
+      "word_count": 1370,
+      "content_hash": "604b83b2ff2cc83e",
+      "output_file": "patient_education_2024-Q3_（邱1）阿尔兹海默症新药获批上市，照亮患者记忆之路.json"
+    },
+    {
+      "filename": "[2025-Q3] 惠民保铺路，让阿尔茨海默病治疗唾手可得.docx",
+      "title": "惠民保铺路，让阿尔茨海默病治疗唾手可得",
+      "content_type": "新闻_评论",
+      "publication_quarter": "2025-Q3",
+      "word_count": 1823,
+      "content_hash": "d6f81827957dc3fb",
+      "output_file": "patient_education_2025-Q3_惠民保铺路，让阿尔茨海默病治疗唾手可得.json"
+    },
+    {
+      "filename": "[2025-Q1] 阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心V1.3 20250103.docx",
+      "title": "阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心V1.3 20250103",
+      "content_type": "问题_解决",
+      "publication_quarter": "2025-Q1",
+      "word_count": 1592,
+      "content_hash": "79da0b62ac2a8e4a",
+      "output_file": "patient_education_2025-Q1_阿尔茨海默病新药会导致脑出血没那么夸张，也不必过度担心V1.3_20250103.json"
+    }
+  ]
+}

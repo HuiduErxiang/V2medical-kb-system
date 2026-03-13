@@ -1,0 +1,108 @@
+{
+  "manifest_version": "1.0",
+  "mapping_type": "rebuild",
+  "description": "L4 m6_evidence_database rebuild mapping for V2 evidence layer",
+  "source_assets": {
+    "source_path": "medical_kb_system/L4_product_knowledge/*/m6_evidence_database.json",
+    "count": 7,
+    "products": [
+      "lecanemab",
+      "furmonertinib",
+      "trastuzumab_deruxtecan_gastric",
+      "lemborexant",
+      "donanemab",
+      "pluvicto",
+      "test_product"
+    ],
+    "decision": "rebuild",
+    "reason": "V1 m6 structure is legacy format, should not be direct V2 evidence truth source"
+  },
+  "rebuild_strategy": {
+    "approach": "Extract evidence facts from V1 m6 files, rebuild as V2 Evidence objects with proper lineage",
+    "v1_structure": {
+      "format": "Legacy m6_evidence_database.json",
+      "content": "Sources list + evidence items with attributes",
+      "size_range": "~5000-15000 lines per file"
+    },
+    "v2_target": {
+      "evidence_objects": "Source -> Asset -> Fragment -> Fact chain",
+      "lineage": "Proper lineage tracking with source_key, asset_key, fact_id",
+      "query_interface": "EvidenceQuery with time-based selection"
+    },
+    "mapping_notes": [
+      "V1 sources[] -> V2 Source objects with source_key",
+      "V1 evidence items -> V2 Fact objects with fact_key and lineage",
+      "V1 citations -> V2 LineageChain with proper attribution",
+      "Do NOT copy V1 m6 files directly to V2"
+    ]
+  },
+  "status": "complete",
+  "rebuild_outputs": {
+    "products": [
+      {
+        "product_id": "lecanemab",
+        "product_name_zh": "仑卡奈单抗",
+        "output_file": "evidence/rebuilt/lecanemab_evidence_v2_sample.json",
+        "content_hash": "ae700884f642a622",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      },
+      {
+        "product_id": "furmonertinib",
+        "product_name_zh": "伏美替尼",
+        "output_file": "evidence/rebuilt/furmonertinib_evidence_v2.json",
+        "content_hash": "5ee25cab6233476d",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      },
+      {
+        "product_id": "trastuzumab_deruxtecan_gastric",
+        "product_name_zh": "德曲妥珠单抗",
+        "output_file": "evidence/rebuilt/trastuzumab_deruxtecan_gastric_evidence_v2.json",
+        "content_hash": "670a17a0da0777fc",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      },
+      {
+        "product_id": "lemborexant",
+        "product_name_zh": "莱博雷生",
+        "output_file": "evidence/rebuilt/lemborexant_evidence_v2.json",
+        "content_hash": "4e04075890bb5ad0",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 3
+      },
+      {
+        "product_id": "donanemab",
+        "product_name_zh": "多那单抗",
+        "output_file": "evidence/rebuilt/donanemab_evidence_v2.json",
+        "content_hash": "16eae22b3c8723ee",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      },
+      {
+        "product_id": "pluvicto",
+        "product_name_zh": "派威妥",
+        "output_file": "evidence/rebuilt/pluvicto_evidence_v2.json",
+        "content_hash": "6f7078187e105f72",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      },
+      {
+        "product_id": "test_product",
+        "product_name_zh": "测试产品",
+        "output_file": "evidence/rebuilt/test_product_evidence_v2.json",
+        "content_hash": "3d0c16cee9924286",
+        "sources_rebuilt": 2,
+        "facts_rebuilt": 2
+      }
+    ]
+  },
+  "rebuild_summary": {
+    "total_products": 7,
+    "products_complete": 7,
+    "products_not_started": 0,
+    "total_sources_rebuilt": 14,
+    "total_facts_rebuilt": 15
+  },
+  "verification_status": "verified"
+}

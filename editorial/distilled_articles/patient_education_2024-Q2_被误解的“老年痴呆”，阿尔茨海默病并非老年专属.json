@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 被误解的“老年痴呆”，阿尔茨海默病并非老年专属.docx",
+    "content_hash": "13301da8b11ad0c8",
+    "distilled_at": "2026-03-10T03:56:06.645812",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "被误解的“老年痴呆”，阿尔茨海默病并非老年专属",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1337,
+    "source_file": "[2024-Q2] 被误解的“老年痴呆”，阿尔茨海默病并非老年专属.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "在针对这种核心病理特征上，生物制药仑卡奈单抗被研发出来，它具体是一种人源化单克隆抗体，这种抗体药物设...。",
+    "被误解的“老年痴呆”，阿尔茨海默病并非老年专属\n\n阿尔茨海默病，一种常被称为“老年痴呆症”的神经退行...。",
+    "同时，一旦发现自身或家人出现记忆减退、语言表达困难、判断力下降、执行能力减弱等症状时，应尽快寻求专业...。",
+    "这有助于我们在日常生活中采取有效的预防措施，例如保持健康的生活方式、定期体检、提升脑力活动、积极参与...。",
+    "同时，一旦发现自身或家人出现记忆减退、语言表达困难、判断力下降、执行能力减弱等症状时，应尽快寻求专业...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "被误解的“老年痴呆”，阿尔茨海默病并非老年专属\n\n阿尔茨海默病，一种常被称为“老年痴呆症”的神经退行性疾病，长久以来在大众心中被误解为仅影响老年人群的疾病。然而，随着医学研究的深入，我们了解到阿尔茨海默病并非是老年人的专利。 \n尽管统计数据显示，年龄确实是阿尔茨海默病的主要风险因素之一，但并不意味着只有老年人才会罹患此病。早发型阿尔茨海默病（Early-Onset Alzheimer’s Dise..."
+}

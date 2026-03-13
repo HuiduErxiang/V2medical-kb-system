@@ -1,0 +1,666 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L2",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "_meta": {
+    "version": "1.0",
+    "layer": "L2",
+    "description": "Medical domain expression profiles — audience-specific writing patterns for medical/pharmaceutical content. Templates use generic medical placeholders ({药物名}, {疾病}). Product-specific examples, metaphors, and voice markers are in L4.",
+    "distilled_from": "L4_product_knowledge/lecanemab/m6_expression_library.json",
+    "distillation_date": "2026-03-01",
+    "extends_L1": "L1_writing_craft/expression_base.json",
+    "merge_note": "At runtime, L1 universal_additions.transition_phrases and forbidden_expressions are prepended to each profile. L4 product_overlays inject examples, metaphors, and voice markers."
+  },
+  "audience_profiles": {
+    "specialist": {
+      "label": "专科医师",
+      "applicable_m0_personas": [
+        "临床审慎派",
+        "学术权威派"
+      ],
+      "recommended_register": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "recommended_m3_plays": [
+        "EVIDENCE_CASCADE",
+        "HEAD_TO_HEAD"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_PANORAMIC_REVIEW",
+          "template": "{药物名}{研究领域}全景解读：{核心价值}的实证之路",
+          "tone": "学术概览，暗示全面性"
+        },
+        {
+          "pattern_id": "HOOK_EVIDENCE_STATEMENT",
+          "template": "{药物名}的{研究类型}为{疾病领域}提供了新的循证依据",
+          "tone": "克制、客观、以证据为主语"
+        },
+        {
+          "pattern_id": "HOOK_PROVOCATIVE_COMPARISON",
+          "template": "{领域}新药对比！{药物名}的「{优势维度}」还是太突出了……",
+          "tone": "挑衅式对比，用「」强调核心卖点，省略号制造悬念"
+        },
+        {
+          "pattern_id": "HOOK_JOURNAL_DEBATE_FRAME",
+          "template": "《{权威期刊}》{专辑/专题}重磅解读！如何破解{药物类型}的'{争议命题}'……",
+          "tone": "借期刊权威背书 + 争议命题吸引点击，适用于新闻_评论"
+        },
+        {
+          "pattern_id": "HOOK_FEAR_ADDRESS_ACTION",
+          "template": "{疾病}用药怕{风险}？{高风险人群}该这么办！",
+          "tone": "直面恐惧 + 给出行动指南承诺，适用于场景_指导"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_PRECISE_CONTEXT",
+          "template": "{量表/指标}显示，治疗组的{功能描述}达到{数值}%",
+          "note": "始终提供量表全名 + 百分比 + 临床含义三要素"
+        },
+        {
+          "pattern_id": "DATA_TEMPORAL_ONSET",
+          "template": "治疗获益从第{时间点}开始显现，随着治疗时间的延长，{趋势描述}",
+          "note": "强调效果的时间动态性"
+        },
+        {
+          "pattern_id": "DATA_LAYERED_ENDPOINTS",
+          "template": "在主要终点之外，{次要指标}同样提供了重要信息",
+          "note": "层层递进，从主要到次要终点"
+        },
+        {
+          "pattern_id": "DATA_NNT_HUMANIZED",
+          "template": "如果有{N}名患者选择{药物}治疗，会有{n}名患者因为这种选择免于{事件}发生",
+          "note": "将风险差异转化为NNT式的具体人数，增强可感知性"
+        },
+        {
+          "pattern_id": "DATA_RESOURCE_CONSUMPTION_QUANT",
+          "template": "每{N}名接受{药物}治疗的患者，就能减少{N1}次{检查项}和{N2}次{就诊项}",
+          "note": "将安全性优势转化为可量化的医疗资源节约，对临床决策者有说服力"
+        },
+        {
+          "pattern_id": "DATA_MULTI_PERSPECTIVE_FRAMEWORK",
+          "template": "从{视角A}来看……从{视角B}来看……从{视角C}来看……",
+          "note": "多维度分析框架，适用于综述/评论类文章，逐层递进展开论证"
+        },
+        {
+          "pattern_id": "DATA_RWE_VS_RCT_CONTRAST",
+          "template": "在真实世界的临床观察中，{指标}远{方向}于{临床试验}中的{数值}，仅{真实世界数值}",
+          "note": "真实世界数据 vs 临床试验数据对比，用于增强安全性信心"
+        },
+        {
+          "pattern_id": "DATA_CROSS_DISEASE_BENCHMARK",
+          "template": "{药物类型}年治疗费用并非最贵，甚至均低于{对照领域}生物制剂",
+          "note": "跨疾病成本对标，用外部参照系重新锚定药物价值"
+        }
+      ],
+      "transition_phrases": [
+        "在主要终点之外",
+        "针对不同患者特征开展的亚组分析进一步揭示了",
+        "时间维度的延长带来了更有价值的信息",
+        "将上述数据置于临床实践视角下考量",
+        "这些临床改善也获得了生物学层面的客观印证",
+        "进一步分析{指标}各个维度的变化",
+        "可能有人会好奇，同样是{药物类型}，为什么{差异维度}这么大？",
+        "那么，{改良方案}是否能逆袭呢？",
+        "围绕{药物}的{争议维度}从未停歇，成为领域内亟待厘清的关键议题",
+        "其实大家不用这么紧张，从临床研究数据来看，情况并没有这么绝对",
+        "如果{参照类药物}能被接受，那么{本类药物}也应如此"
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_BALANCED_FACTUAL",
+          "template": "虽然{获益描述}，但{安全性指标}存在差异，这些数据有助于{临床决策}",
+          "note": "不回避风险，但嵌入临床可操作建议"
+        },
+        {
+          "pattern_id": "SAFETY_TEMPORAL_DECLINE",
+          "template": "随着治疗时间的延长，{风险}显著降低，大多数{事件}发生在{时期}",
+          "note": "用时间趋势弱化恐惧感"
+        },
+        {
+          "pattern_id": "SAFETY_EVEN_UNDER_FAVORABLE",
+          "template": "即便在{有利条件描述}下，{药物}依然保持了{优势}，这进一步证明了{结论}",
+          "note": "在对手最有利条件下仍获胜的论证方式，极具说服力"
+        },
+        {
+          "pattern_id": "SAFETY_CROSS_DISEASE_NORMALIZATION",
+          "template": "{本药风险}并非不可接受，{其他领域}生物制剂同样存在{类似级别风险}",
+          "note": "通过跨疾病风险横比实现正常化"
+        },
+        {
+          "pattern_id": "SAFETY_COGNITION_BREAKING",
+          "template": "这一发现打破了'{固有认知}'的固有认知，说明{新发现}",
+          "note": "用'打破'动词冲击读者既有框架，引导接受新证据"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_EVIDENCE_FOUNDATION",
+          "template": "{药物名}的{研究}数据为{决策类型}提供了坚实基础",
+          "tone": "收束于证据价值，不煽情"
+        },
+        {
+          "pattern_id": "CTA_CONFIDENCE_FIGHT",
+          "template": "意味着更{正面属性}的治疗选择，也意味着能更有信心地和疾病抗争",
+          "tone": "将安全性数据转化为患者信心"
+        },
+        {
+          "pattern_id": "CTA_CONTROVERSY_AS_STARTING_POINT",
+          "template": "争议不是终点，而是推动{领域}进步的起点……",
+          "tone": "哲学式收束，将争议转化为前进动力"
+        }
+      ],
+      "structural_patterns": [
+        {
+          "pattern_id": "STRUCT_ITC_EXPLAINER",
+          "description": "先用一句话定义方法学，再用'简单来说'降维解释",
+          "example": "研究采用锚定Bucher间接治疗比较法（ITC）。简单来说，就是找一个'共同参照物'……",
+          "note": "在专科文章中为非统计学专业读者做方法学降维"
+        }
+      ]
+    },
+    "patient_education": {
+      "label": "患者教育",
+      "applicable_m0_personas": [
+        "科普翻译官",
+        "临床审慎派"
+      ],
+      "recommended_register": [
+        "R4",
+        "R5"
+      ],
+      "recommended_m3_plays": [
+        "NARRATIVE_ARC",
+        "MYTH_BUSTER"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_EXCLAMATION_REVEAL",
+          "template": "重磅研究验证！{药物名}可以{机制动作}，{临床结果}……",
+          "tone": "新闻感 + 悬念省略号"
+        },
+        {
+          "pattern_id": "HOOK_EMOTIONAL_GRAVITY",
+          "template": "{疾病}起病隐匿，{比喻性后果描述}",
+          "tone": "感性类比，将病理过程拟人化"
+        },
+        {
+          "pattern_id": "HOOK_DOMESTIC_SCENE_IMMERSION",
+          "template": "当{家庭日常场景}时，{亲人}又{重复行为}：'{具体台词}'……就会让你心里{情绪反应}",
+          "tone": "沉浸式家庭场景还原，用具体台词制造代入感"
+        },
+        {
+          "pattern_id": "HOOK_INNER_MONOLOGUE",
+          "template": "这时你在心里琢磨：{疑问A}？还是{疑问B}？",
+          "tone": "第二人称内心独白，拉近距离"
+        },
+        {
+          "pattern_id": "HOOK_FEAR_DEBUNK",
+          "template": "{疾病}新药会导致{恐怖副作用}？没那么夸张，也不必过度担心",
+          "tone": "先放大恐惧再立即安抚，标题即结论"
+        },
+        {
+          "pattern_id": "HOOK_CASE_STUDY_OPENER",
+          "template": "{人名}是{身份描述}。在{亲属}确定患有{疾病}之后，{人名}就定下了一个目标：{行动计划}",
+          "tone": "真实案例开篇，身份设定增加可信度"
+        },
+        {
+          "pattern_id": "HOOK_POLICY_BENEFIT",
+          "template": "{惠民政策}铺路，让{疾病}治疗唾手可得",
+          "tone": "政策利好 + 可及性承诺"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_SIMPLIFIED_PERCENT",
+          "template": "{动作描述}的速度减慢{数值}%",
+          "note": "只保留一个百分比，省略量表名"
+        },
+        {
+          "pattern_id": "DATA_RISK_REDUCTION_PAIR",
+          "template": "{结局A}和{结局B}的风险分别降低{数值A}%和{数值B}%",
+          "note": "两个数字并列，制造'加倍获益'的印象"
+        },
+        {
+          "pattern_id": "DATA_BENEFIT_AS_TIME_QUALITY",
+          "template": "延缓的{时长}，是让患者更长时间维持在{较轻阶段}，此时{生活质量描述}",
+          "note": "将抽象的'延缓进展'转化为可感知的生活质量维持"
+        },
+        {
+          "pattern_id": "DATA_SOCIETAL_BURDEN_ANCHOR",
+          "template": "当前{疾病}对中国经济的负担约为每年{数字}万亿元",
+          "note": "万亿级数字锚定，为后续药物价值论证铺垫"
+        },
+        {
+          "pattern_id": "DATA_CAREGIVER_SURVEY",
+          "template": "{比例}%的照护者表示{正面结果}，其中{比例B}%认为{具体改善}",
+          "note": "照护者视角数据，转化药物获益为家庭体验"
+        }
+      ],
+      "transition_phrases": [
+        "这时，很多患者和家属可能会好奇：",
+        "那么{主题}的作用是什么呢？",
+        "这就要从{引入新概念}讲起",
+        "从实验室的机制研究到临床中的真实数据",
+        "要是真得病了，后面该咋整……",
+        "那么{风险名称}为什么会出现？一旦出现又该如何应对？这还要从{根因}说起",
+        "首先，应对{风险}最好的办法就是{解法}",
+        "就像{人名}一家这样，坚定信念，实现{目标}",
+        "早一天用药，就多一分守护的可能"
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_MINIMAL_REASSURE",
+          "template": "让'{负面结果描述}'的速度大大减缓",
+          "note": "用比喻包裹风险，不直接提具体不良反应数字"
+        },
+        {
+          "pattern_id": "SAFETY_GRADUATED_REASSURANCE",
+          "template": "{恐怖印象}在大众的印象中，好像是{极端描述}，但实际上，{实际情况}比较温和",
+          "note": "先承认恐惧的合理性，再用'但实际上'转向客观事实"
+        },
+        {
+          "pattern_id": "SAFETY_NOT_MONSTER",
+          "template": "{风险}并非'{夸张比喻}'，只要做好{管理措施}，大部分患者都能安全应对",
+          "note": "用否定夸张比喻来去恐惧化"
+        },
+        {
+          "pattern_id": "SAFETY_COLLOQUIAL_REASSURE",
+          "template": "所以大家不用怕，只要做好{措施}，{风险}是可控的，不会成为治疗的'{比喻}'",
+          "note": "口语化安抚 + 比喻化风险"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_HOPE_FORWARD",
+          "template": "给{患者群体}带来了更多希望，也为{领域}提供了新的见解",
+          "tone": "温暖、有希望感，不过度承诺"
+        },
+        {
+          "pattern_id": "CTA_GUARD_MEMORY",
+          "template": "我们有理由相信，终将找到更有效的方法，守护{珍贵事物}",
+          "tone": "诗意收束，呼应患者最深恐惧"
+        },
+        {
+          "pattern_id": "CTA_CASE_ANCHORED",
+          "template": "就要像{人名}一家这样，坚定信念，实现{目标}",
+          "tone": "用文中案例人物做行动榜样"
+        },
+        {
+          "pattern_id": "CTA_EARLY_INSURANCE",
+          "template": "早一天{行动}，就多一分{正面结果}。家有老人的家庭，一定要尽早为亲人{规划}",
+          "tone": "紧迫感 + 家庭责任感驱动"
+        }
+      ],
+      "forbidden_expressions": [
+        "P值",
+        "hazard ratio",
+        "置信区间",
+        "ITT人群",
+        "统计学显著性",
+        "亚组分析",
+        "生存曲线"
+      ],
+      "structural_patterns": [
+        {
+          "pattern_id": "STRUCT_COLLOQUIAL_SECTION_HOOK",
+          "description": "用口语化问句作为章节标题",
+          "examples": [
+            "{风险名称}是怎么来滴？",
+            "如何做好安全管理",
+            "确诊{疾病}会如何治疗"
+          ],
+          "note": "比正式标题更亲切，降低专业门槛"
+        }
+      ]
+    },
+    "primary_care": {
+      "label": "基层医护",
+      "applicable_m0_personas": [
+        "临床审慎派",
+        "新药快讯派"
+      ],
+      "recommended_register": [
+        "R3",
+        "R4"
+      ],
+      "recommended_m3_plays": [
+        "EVIDENCE_CASCADE",
+        "NEWS_HOOK"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_NEWS_PUNCH",
+          "template": "{药物名}{时间跨度}随访数据披露，{核心发现}出现",
+          "tone": "新闻标题感，简洁有力"
+        },
+        {
+          "pattern_id": "HOOK_MILESTONE_CONTEXT",
+          "template": "{时间}，{事件}，开启{领域}{新纪元}",
+          "tone": "时间锚点 + 里程碑定位"
+        },
+        {
+          "pattern_id": "HOOK_DRAMATIC_CONTRAST_NEWS",
+          "template": "{竞品}被拒{时间}后，{药物}获批！",
+          "tone": "新闻冲击力极强，一句话涵盖竞争格局逆转"
+        },
+        {
+          "pattern_id": "HOOK_COMPETENCY_CHALLENGE",
+          "template": "当{治疗突破}成为现实，一个关键问题摆在所有临床医生面前：如何掌握{关键环节}？",
+          "tone": "以挑战性问题激发医护人员的专业使命感"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_TREND_COMPARISON",
+          "template": "{前期}获益约为{数值A}/月，而在{后期}，获益迅速拉开达到了{数值B}/月",
+          "note": "用速率对比制造加速感"
+        },
+        {
+          "pattern_id": "DATA_MILESTONE_PERCENT",
+          "template": "持续治疗{时间}后，{指标}的比例高达{数值}%，并有{数值B}%的患者存在{正面结果}",
+          "note": "双数字叠加，两个积极结果并列"
+        },
+        {
+          "pattern_id": "DATA_REGULATORY_SCOPE_COMPARE",
+          "template": "{监管A}批准适应症为{范围A}，{监管B}则批准用于{范围B}，使用条件更为{特征}",
+          "note": "通过监管批准范围对比，展示不同市场格局"
+        },
+        {
+          "pattern_id": "DATA_ETHNIC_SUBGROUP_ADVANTAGE",
+          "template": "对于{人群}患者，{药物}不仅实现了比总人群更强的{效果A}（{指标}：{数值A} vs {数值B}），还展现了更好的{效果B}",
+          "note": "中国/亚洲亚组数据亮点呈现，强化本土适用性"
+        },
+        {
+          "pattern_id": "DATA_SELF_LIMITING_TIMELINE",
+          "template": "约{比例A}%的{事件}在{时间A}内自行缓解，{比例B}%在{时间B}内消退",
+          "note": "用双时间节点的自限性数据来弱化恐惧"
+        },
+        {
+          "pattern_id": "DATA_HIGH_RISK_WINDOW",
+          "template": "超过{比例}%的{事件}集中发生在前{次数}次{操作}期间，这一高风险期为{管理措施}划定了精准时间表",
+          "note": "将风险窗口期具象化，指导临床监测节点"
+        }
+      ],
+      "transition_phrases": [
+        "但{疾病}作为一种{性质}疾病，{需要更多观察}",
+        "从已披露的摘要数据看，已经有足够的信息值得关注",
+        "结果充分表明了{结论}的关键作用",
+        "表明{机制解释}，这也是{更大结论}的原因",
+        "另外，对于{亚组}",
+        "这一数据甚至高于{对比基准}",
+        "一批一拒，似乎昭示着两款药物不同的命运走向",
+        "那既然{A}没有获批{范围}，{B}自然无法获批{更小范围}",
+        "没有基线，就没有真相",
+        "这不仅是技术标准，更是新时代{领域}的核心能力要求",
+        "及时发现、科学应对，风险完全可控"
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_BRIEF_CONTEXTUAL",
+          "template": "需要更长的随访观察以明确{治疗}带来的获益",
+          "note": "将安全性问题转化为'需要更多数据'的科学态度"
+        },
+        {
+          "pattern_id": "SAFETY_COMPETITOR_RISK_FRAME",
+          "template": "{竞品}的{指标A}和{指标B}发生率分别比{药物}高出{倍数}倍，还出现了{严重事件}",
+          "note": "通过竞品风险数据来反衬本品安全性"
+        },
+        {
+          "pattern_id": "SAFETY_STEPPED_PROTOCOL",
+          "template": "从规范的{环节A}到个体化的{环节B}，从{环节C}到{环节D}，这一完整体系确保了{目标}",
+          "note": "系统化管理全景概述"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_CLINICAL_ACTION",
+          "template": "这进一步强调了{临床行动}的必要性",
+          "tone": "直接指向临床决策"
+        },
+        {
+          "pattern_id": "CTA_HOPE_HORIZON",
+          "template": "也让我们看到了{目标}的希望",
+          "tone": "简洁乐观，不拖泥带水"
+        },
+        {
+          "pattern_id": "CTA_CHINA_ADVANTAGE",
+          "template": "至少{本土患者}在使用{药物}治疗后取得的获益，是要高于{全球患者}的",
+          "tone": "以本土数据优势作为终极说服力"
+        },
+        {
+          "pattern_id": "CTA_CORE_COMPETENCY",
+          "template": "这不仅是{技术层面}，更是新时代{领域}的核心能力要求",
+          "tone": "将知识提升到专业能力门槛高度"
+        }
+      ],
+      "structural_patterns": [
+        {
+          "pattern_id": "STRUCT_REGULATORY_NARRATIVE",
+          "description": "以监管审批事件为时间轴展开叙事，对比不同药物的审批结局",
+          "example_flow": "事件A（竞品被拒）→ 事件B（本品获批）→ 监管态度分析 → 数据差异解读 → 结论",
+          "note": "适用于新闻_评论子类，新闻叙事+深度分析结合"
+        },
+        {
+          "pattern_id": "STRUCT_MANAGEMENT_GUIDE",
+          "description": "按时间轴/管理阶段组织内容：治疗前→治疗中→事件处理→长期管理→团队协作",
+          "note": "适用于主张_证据子类中的临床管理指南类文章"
+        }
+      ]
+    },
+    "public_education": {
+      "label": "公众科普",
+      "applicable_m0_personas": [
+        "科普翻译官"
+      ],
+      "recommended_register": [
+        "R4",
+        "R5"
+      ],
+      "recommended_m3_plays": [
+        "MYTH_BUSTER",
+        "NARRATIVE_ARC"
+      ],
+      "hook_patterns": [
+        {
+          "pattern_id": "HOOK_MYTH_BUST",
+          "template": "别让{错误认知类型}，{负面后果}！盘点{领域}{误区类型}",
+          "tone": "警示 + 点名 + 清单承诺"
+        },
+        {
+          "pattern_id": "HOOK_QUESTION_CHALLENGE",
+          "template": "{常见错误观念}？",
+          "tone": "用反问句挑战读者成见"
+        },
+        {
+          "pattern_id": "HOOK_CAREGIVER_NARRATIVE",
+          "template": "照护者的坚守：{疾病}家庭的{主题}与希望",
+          "tone": "以照护者为主角，情感共鸣先行"
+        },
+        {
+          "pattern_id": "HOOK_EVERYDAY_SYMPTOM_LIST",
+          "template": "{日常症状A}，{日常症状B}……别以为是{常见误解}，还可能是{疾病}",
+          "tone": "用日常可感知的症状描述替代医学术语，省略号承接转折"
+        },
+        {
+          "pattern_id": "HOOK_CHARACTER_BACKSTORY",
+          "template": "患病前，周围人对于{人名}的评价一直是'{人设标签}'……变化发生于{时间}前",
+          "tone": "先建立人物正常形象，再引入疾病变化，制造反差"
+        }
+      ],
+      "data_presentation_patterns": [
+        {
+          "pattern_id": "DATA_CONCEPTUAL_ONLY",
+          "template": "可以有效对{病因}进行清除，从而延缓{疾病}的发展进程",
+          "note": "不使用百分比或P值，只陈述概念性获益"
+        },
+        {
+          "pattern_id": "DATA_FIRST_EVER",
+          "template": "全球首个{类别}药物",
+          "note": "用'首个'制造权威感，替代具体数据"
+        },
+        {
+          "pattern_id": "DATA_NARRATIVE_CASE_EMBEDDED",
+          "template": "经过{时间}的{治疗}，{患者}的{指标}有了{正面描述}，在{检查}中几乎达到了与{参照}相当的水平",
+          "note": "将疗效数据包裹在具体病例叙事中，避免出现任何量表或百分比"
+        },
+        {
+          "pattern_id": "DATA_DELAY_AS_LIFE_QUALITY",
+          "template": "{药物}可延缓疾病进展{时长}。而对于{早期患者}，这延缓的{时长}，是让患者更长时间{维持在较好状态}",
+          "note": "将抽象延缓时间转化为生活质量意义"
+        },
+        {
+          "pattern_id": "DATA_SYMPTOM_DOMAIN_CLUSTERS",
+          "description": "按认知功能域分组描述早期症状，每个域用日常场景而非医学术语",
+          "domains": [
+            "记忆力减退 → 忘记刚发生的事、重复提问",
+            "执行功能下降 → 管理财务困难、烹饪生疏",
+            "时空定向减退 → 对日期混淆、熟悉环境迷路",
+            "语言沟通变化 → 找词困难、频繁停顿",
+            "情绪性格转变 → 淡漠、易怒、多疑、社交退缩"
+          ],
+          "note": "公众科普中的症状教育标准结构"
+        }
+      ],
+      "transition_phrases": [
+        "这种看法忽视了{A}与{B}之间的本质区别",
+        "不应简单归咎于{常见误解}，而应警惕可能是{正确归因}",
+        "尽管{限制}，但现有的{手段}依然对{目标}有巨大帮助",
+        "而每一个{疾病}患者背后，往往都有一个濒临崩溃的家庭",
+        "直至{时间}开始，{恶化描述}",
+        "虽然药物并不能完全逆转病程，但它为{患者}提供了{价值}"
+      ],
+      "safety_communication_patterns": [
+        {
+          "pattern_id": "SAFETY_OMIT_OR_GENERALIZE",
+          "template": "特别是在疾病早期阶段，带来的长期获益巨大",
+          "note": "对公众：聚焦获益，不主动提及专业风险术语"
+        },
+        {
+          "pattern_id": "SAFETY_COMPLETE_OMISSION",
+          "template": "(不提及任何安全性风险术语或数据)",
+          "note": "在叙事_反思类公众科普中，安全性话题完全不出现，100%聚焦获益与希望"
+        }
+      ],
+      "cta_patterns": [
+        {
+          "pattern_id": "CTA_ATTITUDE_CALL",
+          "template": "积极应对，尽早介入，才是面对{疾病}的理性态度",
+          "tone": "行动号召，短句排比"
+        },
+        {
+          "pattern_id": "CTA_WIN_TIME",
+          "template": "唯有如此，才能{具体目标}，为患者赢得宝贵的{资源}",
+          "tone": "紧迫感 + 时间稀缺框架"
+        },
+        {
+          "pattern_id": "CTA_STORY_HOPE_BRIDGE",
+          "template": "他们的故事不仅为其他{患者群体}家庭带来了希望，也为{领域}注入了新的动力",
+          "tone": "用故事主人公作为希望的载体"
+        },
+        {
+          "pattern_id": "CTA_SOCIAL_CALL",
+          "template": "也希望社会各界能够更加关注{疾病}的防治工作，为更多{受益群体}带去光明",
+          "tone": "从个体故事升华到社会呼吁"
+        },
+        {
+          "pattern_id": "CTA_RECOGNITION_ACTION",
+          "template": "需正确认识{疾病}，高度重视并识别{关键信号}，树立{正确观念}",
+          "tone": "三段式行动号召：认识→识别→行动"
+        }
+      ],
+      "forbidden_expressions": [
+        "P值",
+        "hazard ratio",
+        "置信区间",
+        "ITT人群",
+        "intent-to-treat",
+        "统计学显著性",
+        "亚组分析",
+        "生存曲线",
+        "开放标签扩展研究"
+      ],
+      "structural_patterns": [
+        {
+          "pattern_id": "STRUCT_MYTH_SECTIONS",
+          "description": "每个误区作为独立小节，用加粗问句做标题",
+          "examples": [
+            "{常见错误观念A}？",
+            "忽视早期症状",
+            "{疾病}治不了，就不管了",
+            "听信错误的预防与治疗方法"
+          ],
+          "note": "每节300-500字，结构统一：误区→纠正→正确认知"
+        },
+        {
+          "pattern_id": "STRUCT_SYMPTOM_BULLETS",
+          "description": "用bullet list列举具体症状，每条以加粗关键词开头",
+          "example_items": [
+            "短期记忆受损：刚刚发生的事情很快就忘记……",
+            "找词困难，词不达意：忘记简单的词语……",
+            "社交功能障碍：早期患者与人交流往往会出现一定障碍……",
+            "睡眠障碍：昼夜节律改变……",
+            "情绪波动、性格改变：无缘无故地情绪涨落……"
+          ],
+          "note": "5-7项为佳，每项用冒号分隔关键词和解释"
+        },
+        {
+          "pattern_id": "STRUCT_CHARACTER_ARC",
+          "description": "完整的人物叙事弧线：人物正常生活→疾病初现→确诊→家庭影响→治疗转机→希望结尾",
+          "phases": [
+            "人物背景建立（职业、性格、日常）",
+            "疾病信号出现（被忽视的早期症状）",
+            "确诊冲击（就医、检查、结果）",
+            "照护困境（家庭压力、角色转变）",
+            "治疗转机（新药出现、病友案例）",
+            "希望收束（展望未来、社会呼吁）"
+          ],
+          "note": "公众科普叙事_反思子类的标准叙事结构"
+        },
+        {
+          "pattern_id": "STRUCT_SYMPTOM_VS_AGING",
+          "description": "通过'正常衰老 vs 疾病信号'的对比框架展开症状教育",
+          "example_flow": "日常场景引入→容易被误认为正常衰老→实际是疾病信号→按功能域逐一描述→呼吁就医",
+          "note": "适用于早期识别类科普文章"
+        }
+      ]
+    }
+  },
+  "audience_mapping_rules": {
+    "description": "Rules for the M7 engine to select which audience profile to inject based on M0 persona and register",
+    "rules": [
+      {
+        "rule_id": "EXPR_R1",
+        "condition": "register IN [R1, R2] AND persona IN [临床审慎派, 学术权威派]",
+        "audience_profile": "specialist"
+      },
+      {
+        "rule_id": "EXPR_R2",
+        "condition": "register = R3 AND persona IN [临床审慎派, 新药快讯派]",
+        "audience_profile": "primary_care"
+      },
+      {
+        "rule_id": "EXPR_R3",
+        "condition": "register IN [R4, R5] AND persona = 科普翻译官",
+        "audience_profile": "public_education"
+      },
+      {
+        "rule_id": "EXPR_R4",
+        "condition": "register IN [R4, R5] AND persona IN [临床审慎派, 科普翻译官]",
+        "audience_profile": "patient_education"
+      },
+      {
+        "rule_id": "EXPR_FALLBACK",
+        "condition": "no other rule matches",
+        "audience_profile": "specialist",
+        "note": "Default to specialist as safest option (most constrained)"
+      }
+    ]
+  }
+}

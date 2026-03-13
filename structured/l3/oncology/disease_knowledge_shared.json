@@ -1,0 +1,950 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "oncology_shared",
+    "version": "2.2.0",
+    "last_updated": "2026-03-02",
+    "description": "肿瘤学通用共享知识库，适用于所有肿瘤适应证的跨疾病领域知识"
+  },
+  "categories": {
+    "staging_systems": {
+      "description": "通用肿瘤分期系统",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_STG_001",
+          "title": "TNM Staging System",
+          "title_zh": "TNM 分期系统",
+          "content": "The TNM staging system is the most widely used cancer staging system globally. T describes the size of the primary tumor and extent of local invasion, N describes whether regional lymph nodes are involved, and M describes whether there is distant metastasis. Each component is assigned a number (0-4) indicating the severity, with higher numbers indicating more advanced disease. The combination of TNM classifications determines the overall stage group (I-IV).",
+          "content_zh": "TNM 分期系统是全球最广泛使用的癌症分期系统。T 描述原发肿瘤的大小和局部浸润程度，N 描述区域淋巴结是否受累，M 描述是否存在远处转移。每个组成部分被分配一个数字（0-4）表示严重程度，数字越高表示疾病越晚期。TNM 分期的组合决定总体分期组（I-IV 期）。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_AJCC_8TH_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_STG_002",
+          "title": "AJCC 8th Edition Principles",
+          "title_zh": "AJCC 第 8 版原则",
+          "content": "The American Joint Committee on Cancer (AJCC) 8th Edition Cancer Staging Manual introduced significant updates including incorporation of biomarkers into staging for certain cancers, refinement of anatomic staging based on contemporary data, and emphasis on evidence-based staging. The 8th edition emphasizes personalized prognosis prediction and integrates molecular markers where validated. Stage grouping now considers both anatomic and non-anatomic factors for selected tumor types.",
+          "content_zh": "美国癌症联合委员会（AJCC）第 8 版癌症分期手册引入了重大更新，包括将生物标志物纳入某些癌症的分期、基于当代数据细化解剖学分期，以及强调循证分期。第 8 版强调个性化预后预测，并在验证后整合分子标志物。对于选定的肿瘤类型，分期分组现在考虑解剖学和非解剖学因素。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_AJCC_8TH_2017"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_STG_003",
+          "title": "Performance Status Scales",
+          "title_zh": "体能状态评分量表",
+          "content": "Performance status scales assess a patient's general well-being and ability to perform activities of daily life. The Eastern Cooperative Oncology Group (ECOG) scale ranges from 0 (fully active) to 5 (death), while the Karnofsky Performance Status (KPS) scale ranges from 0% (death) to 100% (no complaints). These scales are critical for treatment decision-making, clinical trial eligibility, and prognosis prediction. Poor performance status often contraindicates aggressive therapy.",
+          "content_zh": "体能状态评分量表评估患者的一般健康状况和进行日常生活活动的能力。东部肿瘤协作组（ECOG）评分范围从 0（完全活跃）到 5（死亡），而 Karnofsky 体能状态（KPS）评分范围从 0%（死亡）到 100%（无不适）。这些评分对于治疗决策、临床试验入组标准和预后预测至关重要。体能状态差通常禁忌积极治疗。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_SUPPORTIVE_2025"
+          ]
+        }
+      ]
+    },
+    "response_evaluation": {
+      "description": "肿瘤反应评估标准",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_RESP_001",
+          "title": "RECIST 1.1 Target Lesion Criteria",
+          "title_zh": "RECIST 1.1 靶病灶标准",
+          "content": "According to RECIST 1.1, target lesions are selected for response assessment with a maximum of 5 lesions total and 2 lesions per organ. Measurable lesions must be at least 10 mm by CT scan (slice thickness ≤5 mm), 10 mm by clinical caliper measurement, or 20 mm by chest X-ray. Pathological lymph nodes qualify as target lesions if short axis is ≥15 mm. The sum of diameters (longest for non-nodal, short axis for nodal) is calculated at baseline and used as reference for response evaluation.",
+          "content_zh": "根据 RECIST 1.1，选择靶病灶进行反应评估，最多总共 5 个病灶，每个器官最多 2 个。可测量病灶必须至少为 CT 扫描 10 mm（切片厚度≤5 mm）、临床卡尺测量 10 mm 或胸部 X 线 20 mm。如果短轴≥15 mm，病理淋巴结可作为靶病灶。在基线时计算直径之和（非淋巴结为最长径，淋巴结为短轴），并用作反应评估的参考。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_002",
+          "title": "RECIST 1.1 Complete Response Definition",
+          "title_zh": "RECIST 1.1 完全缓解定义",
+          "content": "Complete Response (CR) in RECIST 1.1 requires disappearance of all target lesions and all non-target lesions. Any pathological lymph nodes, whether target or non-target, must have reduction in short axis to less than 10 mm. Tumor markers must normalize if initially elevated. CR represents the most favorable response category and is associated with improved outcomes, though not all patients achieving CR are cured. Confirmation of CR may be required in non-randomized trials.",
+          "content_zh": "RECIST 1.1 中的完全缓解（CR）需要所有靶病灶和所有非靶病灶消失。任何病理淋巴结，无论是靶病灶还是非靶病灶，短轴必须减少到小于 10 mm。如果肿瘤标志物初始升高，必须恢复正常。CR 代表最有利的反应类别，与改善的预后相关，尽管并非所有达到 CR 的患者都能治愈。在非随机试验中可能需要确认 CR。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_003",
+          "title": "RECIST 1.1 Partial Response Definition",
+          "title_zh": "RECIST 1.1 部分缓解定义",
+          "content": "Partial Response (PR) in RECIST 1.1 is defined as at least a 30% decrease in the sum of diameters of target lesions, taking as reference the baseline sum diameters. This threshold was established based on data showing that a 30% decrease in unidimensional measurements approximates a 50% decrease in bidimensional measurements (WHO criteria). PR also requires no progression of non-target lesions and no new lesions. In non-randomized trials, confirmation of PR at least 4 weeks later is typically required.",
+          "content_zh": "RECIST 1.1 中的部分缓解（PR）定义为靶病灶直径之和较基线直径之和减少至少 30%。该阈值的建立基于一维测量减少 30% 近似于二维测量（WHO 标准）减少 50% 的数据。PR 还需要非靶病灶无进展且无新病灶。在非随机试验中，通常需要在至少 4 周后确认 PR。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_004",
+          "title": "RECIST 1.1 Progressive Disease Definition",
+          "title_zh": "RECIST 1.1 疾病进展定义",
+          "content": "Progressive Disease (PD) in RECIST 1.1 requires at least a 20% increase in the sum of diameters of target lesions, taking as reference the smallest sum on study (including baseline if it is the smallest). In addition to the relative 20% increase, there must be an absolute increase of at least 5 mm to avoid overcalling PD when total sum is very small. The appearance of one or more new lesions also constitutes PD. For non-target disease, unequivocal progression must be demonstrated.",
+          "content_zh": "RECIST 1.1 中的疾病进展（PD）需要靶病灶直径之和较研究中的最小直径之和（如果基线是最小值则包括基线）增加至少 20%。除了相对增加 20% 外，还必须有至少 5 mm 的绝对增加，以避免在总和非常小时过度判定 PD。一个或多个新病灶的出现也构成 PD。对于非靶病灶，必须证明明确的进展。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_005",
+          "title": "RECIST 1.1 Stable Disease Definition",
+          "title_zh": "RECIST 1.1 疾病稳定定义",
+          "content": "Stable Disease (SD) in RECIST 1.1 is defined as neither sufficient shrinkage to qualify for PR nor sufficient increase to qualify for PD, taking as reference the smallest sum diameters while on study. SD is not a distinct biological state but rather represents disease that does not meet criteria for response or progression. The clinical relevance of SD varies by disease type and treatment context. Protocols may specify minimum duration requirements for SD to be considered clinically meaningful.",
+          "content_zh": "RECIST 1.1 中的疾病稳定（SD）定义为既没有足够的缩小以符合 PR 标准，也没有足够的增加以符合 PD 标准，以研究中的最小直径之和为参考。SD 不是一个独特的生物学状态，而是代表不符合反应或进展标准的疾病。SD 的临床相关性因疾病类型和治疗背景而异。方案可能规定 SD 被认为具有临床意义所需的最短持续时间。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_006",
+          "title": "New Lesion Assessment in RECIST 1.1",
+          "title_zh": "RECIST 1.1 新病灶评估",
+          "content": "The appearance of new malignant lesions denotes disease progression in RECIST 1.1. A lesion identified on follow-up in an anatomical location not scanned at baseline is considered new. New lesion detection should be unequivocal and not attributable to differences in scanning technique or imaging modality. FDG-PET can complement CT for new lesion assessment: negative FDG-PET at baseline with positive FDG-PET at follow-up indicates PD. Equivocal new lesions should be followed up to confirm true progression.",
+          "content_zh": "在 RECIST 1.1 中，新恶性病灶的出现表示疾病进展。在基线未扫描的解剖位置随访中发现的病灶被视为新病灶。新病灶检测应明确，不能归因于扫描技术或成像模式的差异。FDG-PET 可以补充 CT 进行新病灶评估：基线 FDG-PET 阴性而随访 FDG-PET 阳性表示 PD。模棱两可的新病灶应随访以确认真正的进展。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RESP_007",
+          "title": "Non-Target Lesion Evaluation",
+          "title_zh": "非靶病灶评估",
+          "content": "Non-target lesions in RECIST 1.1 include all other lesions not selected as target lesions, including small lesions and those not meeting measurability criteria. These are assessed qualitatively as present, absent, or unequivocal progression. Complete response requires disappearance of all non-target lesions. Progressive disease requires unequivocal progression of non-target disease, which must represent substantial worsening comparable to the increase required for measurable disease progression. Modest increase in non-target lesions is usually insufficient for PD designation.",
+          "content_zh": "RECIST 1.1 中的非靶病灶包括所有未选为靶病灶的其他病灶，包括小病灶和不符合可测量标准的病灶。这些病灶定性评估为存在、消失或明确进展。完全缓解需要所有非靶病灶消失。疾病进展需要非靶疾病的明确进展，这必须代表与可测量疾病进展所需的增加相当的实质性恶化。非靶病灶的适度增加通常不足以指定为 PD。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        }
+      ]
+    },
+    "biomarker_testing": {
+      "description": "生物标志物检测",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_BIO_001",
+          "title": "Immunohistochemistry Methodology",
+          "title_zh": "免疫组织化学方法学",
+          "content": "Immunohistochemistry (IHC) is a laboratory technique that uses antibodies to detect specific proteins in tissue sections. IHC is widely used in oncology for diagnostic, prognostic, and predictive purposes. The process involves antigen retrieval, antibody incubation, and visualization using chromogenic or fluorescent detection systems. Proper controls, standardized protocols, and validated antibodies are essential for reliable results. IHC scoring systems vary by biomarker and may include intensity and percentage of positive cells.",
+          "content_zh": "免疫组织化学（IHC）是一种使用抗体检测组织切片中特定蛋白质的实验室技术。IHC 广泛用于肿瘤学的诊断、预后和预测目的。该过程涉及抗原修复、抗体孵育和使用显色或荧光检测系统进行可视化。适当的对照、标准化方案和验证的抗体对于可靠的结果至关重要。IHC 评分系统因生物标志物而异，可能包括阳性细胞的强度和百分比。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN",
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_002",
+          "title": "FISH Testing Principles",
+          "title_zh": "FISH 检测原则",
+          "content": "Fluorescence In Situ Hybridization (FISH) is a molecular cytogenetic technique that uses fluorescent probes to detect and localize specific DNA sequences on chromosomes. FISH is used to identify gene amplifications, deletions, and translocations in cancer. The technique provides spatial information about genetic alterations within tissue architecture. FISH results are typically reported as ratios (e.g., gene copy number to chromosome copy number) or as percentage of cells showing abnormality. Proper probe selection and interpretation criteria are critical.",
+          "content_zh": "荧光原位杂交（FISH）是一种分子细胞遗传学技术，使用荧光探针检测和定位染色体上的特定 DNA 序列。FISH 用于识别癌症中的基因扩增、缺失和易位。该技术提供组织结构内遗传改变的空间信息。FISH 结果通常报告为比率（例如，基因拷贝数与染色体拷贝数之比）或显示异常的细胞百分比。适当的探针选择和解释标准至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_003",
+          "title": "Next-Generation Sequencing Principles",
+          "title_zh": "下一代测序原理",
+          "content": "Next-Generation Sequencing (NGS) enables massively parallel sequencing of millions of DNA fragments simultaneously. NGS panels for oncology typically include genes with known or suspected cancer relevance. The technology allows detection of single nucleotide variants, insertions/deletions, copy number alterations, and some structural variants. Key quality metrics include coverage depth, uniformity, and variant allele frequency. NGS results require careful interpretation considering tumor purity, clonality, and clinical context.",
+          "content_zh": "下一代测序（NGS）能够同时对数百万个 DNA 片段进行大规模并行测序。肿瘤学 NGS panel 通常包括已知或疑似与癌症相关的基因。该技术可检测单核苷酸变异、插入/缺失、拷贝数改变和一些结构变异。关键质量指标包括覆盖深度、均匀性和变异等位基因频率。NGS 结果需要仔细解释，考虑肿瘤纯度、克隆性和临床背景。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022",
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_004",
+          "title": "PD-L1 Scoring Systems",
+          "title_zh": "PD-L1 评分系统",
+          "content": "PD-L1 expression assessment uses several scoring systems depending on tumor type and assay. Tumor Proportion Score (TPS) measures the percentage of viable tumor cells showing partial or complete membrane staining. Combined Positive Score (CPS) calculates the number of PD-L1 staining cells (tumor cells, lymphocytes, macrophages) divided by the total number of viable tumor cells, multiplied by 100. Immune Cell (IC) score assesses the percentage of tumor area occupied by PD-L1-positive immune cells. Different assays (22C3, 28-8, SP142, SP263) have varying staining characteristics and scoring algorithms.",
+          "content_zh": "PD-L1 表达评估根据肿瘤类型和检测方法使用几种评分系统。肿瘤比例评分（TPS）测量显示部分或完全膜染色的活肿瘤细胞百分比。联合阳性评分（CPS）计算 PD-L1 染色细胞（肿瘤细胞、淋巴细胞、巨噬细胞）的数量除以活肿瘤细胞总数，乘以 100。免疫细胞（IC）评分评估 PD-L1 阳性免疫细胞占用的肿瘤面积百分比。不同的检测方法（22C3、28-8、SP142、SP263）具有不同的染色特征和评分算法。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022",
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_005",
+          "title": "HER2 Testing Standards",
+          "title_zh": "HER2 检测标准",
+          "content": "HER2 testing in solid tumors follows established algorithms using IHC and/or in situ hybridization (ISH). IHC scoring ranges from 0 (no staining) to 3+ (strong complete membrane staining in >10% of tumor cells). Scores of 0 and 1+ are considered negative, 2+ is equivocal requiring ISH confirmation, and 3+ is positive. ISH measures HER2 gene copies per cell or HER2/CEP17 ratio. Testing should be performed in certified laboratories with validated assays. Proper tissue fixation and handling are critical for accurate results.",
+          "content_zh": "实体瘤中的 HER2 检测遵循使用 IHC 和/或原位杂交（ISH）的既定算法。IHC 评分范围从 0（无染色）到 3+（>10% 肿瘤细胞中强完全膜染色）。0 和 1+ 分被视为阴性，2+ 分为不确定需要 ISH 确认，3+ 分为阳性。ISH 测量每个细胞的 HER2 基因拷贝数或 HER2/CEP17 比率。检测应在经过认证的实验室中使用验证的检测方法进行。适当的组织固定和处理对于准确的结果至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_006",
+          "title": "EGFR Mutation Testing",
+          "title_zh": "EGFR 突变检测",
+          "content": "EGFR mutation testing identifies specific genetic alterations in the epidermal growth factor receptor gene that predict response to EGFR-targeted therapies. Common sensitizing mutations include exon 19 deletions and L858R point mutation in exon 21. Testing methods include PCR-based assays, NGS, and fragment analysis. Sample requirements include adequate tumor cellularity (typically ≥20% tumor nuclei) and proper DNA quality. Results should specify the exact mutation detected, as different mutations confer varying degrees of sensitivity to targeted agents.",
+          "content_zh": "EGFR 突变检测识别表皮生长因子受体基因中的特定遗传改变，预测对 EGFR 靶向治疗的反应。常见的敏感突变包括外显子 19 缺失和外显子 21 中的 L858R 点突变。检测方法包括基于 PCR 的检测、NGS 和片段分析。样本要求包括足够的肿瘤细胞密度（通常≥20% 肿瘤细胞核）和适当的 DNA 质量。结果应指定检测到的确切突变，因为不同的突变赋予对靶向药物不同程度的敏感性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN"
+          ]
+        }
+      ]
+    },
+    "immunotherapy_principles": {
+      "description": "免疫治疗原则",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_IMM_001",
+          "title": "Checkpoint Inhibitor Mechanism",
+          "title_zh": "检查点抑制剂机制",
+          "content": "Immune checkpoint inhibitors block inhibitory pathways that tumors exploit to evade immune surveillance. PD-1/PD-L1 inhibitors prevent the interaction between programmed death-1 receptor on T cells and its ligand PD-L1 on tumor cells, restoring T cell function. CTLA-4 inhibitors block cytotoxic T-lymphocyte-associated protein 4, enhancing T cell priming and activation in lymph nodes. These mechanisms differ in their site of action: PD-1/PD-L1 primarily acts in the tumor microenvironment, while CTLA-4 acts during initial T cell activation.",
+          "content_zh": "免疫检查点抑制剂阻断肿瘤利用的抑制性通路以逃避免疫监视。PD-1/PD-L1 抑制剂阻止 T 细胞上的程序性死亡 -1 受体与肿瘤细胞上的其配体 PD-L1 之间的相互作用，恢复 T 细胞功能。CTLA-4 抑制剂阻断细胞毒性 T 淋巴细胞相关蛋白 4，增强淋巴结中的 T 细胞启动和激活。这些机制的作用部位不同：PD-1/PD-L1 主要在肿瘤微环境中起作用，而 CTLA-4 在初始 T 细胞激活期间起作用。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_IMM_002",
+          "title": "Immunotherapy Combination Strategies",
+          "title_zh": "免疫治疗联合策略",
+          "content": "Combination immunotherapy strategies aim to enhance antitumor immune responses through complementary mechanisms. Common approaches include dual checkpoint inhibition (e.g., PD-1 plus CTLA-4 blockade), immunotherapy combined with chemotherapy (chemotherapy may increase tumor antigen release and reduce immunosuppressive cells), immunotherapy with anti-angiogenic agents (normalizing tumor vasculature improves T cell infiltration), and immunotherapy with radiation (abscopal effect may enhance systemic immunity). Combination strategies typically increase efficacy but also increase toxicity risks.",
+          "content_zh": "联合免疫治疗策略旨在通过互补机制增强抗肿瘤免疫反应。常见方法包括双重检查点抑制（例如，PD-1 加 CTLA-4 阻断）、免疫治疗联合化疗（化疗可能增加肿瘤抗原释放并减少免疫抑制细胞）、免疫治疗联合抗血管生成药物（正常化肿瘤血管改善 T 细胞浸润）以及免疫治疗联合放疗（远隔效应可能增强全身免疫）。联合策略通常提高疗效，但也增加毒性风险。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_IMM_003",
+          "title": "Immunotherapy Predictive Biomarkers",
+          "title_zh": "免疫治疗预测生物标志物",
+          "content": "Several biomarkers help predict response to immunotherapy. PD-L1 expression by IHC is the most established but imperfect predictor. Tumor mutational burden (TMB) measures the number of somatic mutations per megabase of DNA; higher TMB correlates with increased neoantigen formation and better immunotherapy response. Microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) status indicates defective DNA repair and high mutational load. Other emerging biomarkers include gene expression profiles, tumor-infiltrating lymphocyte density, and peripheral blood markers.",
+          "content_zh": "几种生物标志物有助于预测免疫治疗反应。IHC 检测的 PD-L1 表达是最成熟但不完美的预测因子。肿瘤突变负荷（TMB）测量每兆碱基 DNA 的体细胞突变数量；较高的 TMB 与新抗原形成增加和更好的免疫治疗反应相关。微卫星不稳定性高（MSI-H）或错配修复缺陷（dMMR）状态表明 DNA 修复缺陷和高突变负荷。其他新兴生物标志物包括基因表达谱、肿瘤浸润淋巴细胞密度和外周血标志物。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_IMM_004",
+          "title": "Immune-Related Adverse Event Management",
+          "title_zh": "免疫相关不良事件管理",
+          "content": "Immune-related adverse events (irAEs) result from non-specific immune activation affecting normal tissues. Common irAEs include dermatologic (rash, pruritus), gastrointestinal (colitis, diarrhea), endocrine (thyroiditis, hypophysitis), pulmonary (pneumonitis), and hepatic (hepatitis) toxicities. Management follows grade-based algorithms: Grade 1-2 typically managed with symptomatic treatment and close monitoring; Grade 3 usually requires treatment interruption and corticosteroids; Grade 4 often necessitates permanent discontinuation and high-dose immunosuppression. Early recognition and intervention are critical to prevent severe complications.",
+          "content_zh": "免疫相关不良事件（irAE）源于影响正常组织的非特异性免疫激活。常见的 irAE 包括皮肤（皮疹、瘙痒）、胃肠道（结肠炎、腹泻）、内分泌（甲状腺炎、垂体炎）、肺部（肺炎）和肝脏（肝炎）毒性。管理遵循基于分级的算法：1-2 级通常通过症状治疗和密切监测管理；3 级通常需要中断治疗和皮质类固醇；4 级通常需要永久停药和高剂量免疫抑制。早期识别和干预对于预防严重并发症至关重要。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "adc_principles": {
+      "description": "抗体药物偶联物原理",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_ADC_001",
+          "title": "ADC Molecular Structure",
+          "title_zh": "ADC 分子结构",
+          "content": "Antibody-Drug Conjugates (ADCs) consist of three critical components: a monoclonal antibody that targets tumor-specific antigens, a cytotoxic payload (small molecule drug), and a chemical linker connecting them. The antibody provides specificity and extends circulation half-life. The payload is typically 100-1000 times more potent than conventional chemotherapy and includes microtubule inhibitors (MMAE, MMAF, DM1), DNA-damaging agents (calicheamicin, deruxtecan, duocarmycin), or other mechanisms. The linker must be stable in circulation but release the payload efficiently inside tumor cells through cleavage mechanisms (protease-sensitive, acid-labile, or non-cleavable).",
+          "content_zh": "抗体药物偶联物（ADC）由三个关键组分组成：靶向肿瘤特异性抗原的单克隆抗体、细胞毒性载荷（小分子药物）和连接它们的化学连接子。抗体提供特异性并延长循环半衰期。载荷通常比传统化疗药物强 100-1000 倍，包括微管抑制剂（MMAE、MMAF、DM1）、DNA 损伤剂（卡奇霉素、德鲁替康、杜卡霉素）或其他机制。连接子必须在循环中稳定，但通过切割机制（蛋白酶敏感、酸不稳定或不可切割）在肿瘤细胞内有效释放载荷。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_ADC_002",
+          "title": "Drug-to-Antibody Ratio Optimization",
+          "title_zh": "药物抗体比优化",
+          "content": "The Drug-to-Antibody Ratio (DAR) represents the average number of payload molecules attached to each antibody. Typical DAR values range from 2 to 8. Higher DAR increases potency but may reduce stability, increase aggregation, accelerate clearance, and increase toxicity. Lower DAR may reduce efficacy. Optimal DAR balances efficacy, safety, and pharmacokinetics. Site-specific conjugation technologies enable more homogeneous DAR distributions compared to traditional random conjugation. The ideal DAR depends on the specific antibody, linker, payload, and target antigen characteristics.",
+          "content_zh": "药物抗体比（DAR）代表附着在每个抗体上的载荷分子的平均数量。典型的 DAR 值范围为 2 到 8。较高的 DAR 增加效力，但可能降低稳定性、增加聚集、加速清除并增加毒性。较低的 DAR 可能降低疗效。最佳 DAR 平衡疗效、安全性和药代动力学。与传统的随机偶联相比，位点特异性偶联技术能够实现更均匀的 DAR 分布。理想的 DAR 取决于特定的抗体、连接子、载荷和靶抗原特性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "NAKADA_2019_CPB"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_ADC_003",
+          "title": "Bystander Effect Mechanism",
+          "title_zh": "旁观者效应机制",
+          "content": "The bystander effect refers to the ability of some ADCs to kill neighboring tumor cells beyond those directly targeted by the antibody. This occurs when the released payload is membrane-permeable and can diffuse into adjacent cells. The bystander effect is particularly important for heterogeneous tumors with variable antigen expression. Payloads with bystander activity include MMAE, deruxtecan, and duocarmycin derivatives. While beneficial for tumor killing, the bystander effect may also contribute to toxicity in normal tissues near tumor sites. The extent of bystander effect depends on payload properties and linker design.",
+          "content_zh": "旁观者效应是指某些 ADC 杀死抗体直接靶向细胞之外的邻近肿瘤细胞的能力。当释放的载荷具有膜通透性并可扩散到相邻细胞时，就会发生这种情况。旁观者效应对于抗原表达不同的异质性肿瘤尤为重要。具有旁观者活性的载荷包括 MMAE、德鲁替康和杜卡霉素衍生物。虽然有益于肿瘤杀伤，但旁观者效应也可能导致肿瘤部位附近正常组织的毒性。旁观者效应的程度取决于载荷特性和连接子设计。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_ADC_004",
+          "title": "ADC-Specific Toxicities: Interstitial Lung Disease",
+          "title_zh": "ADC 特异性毒性：间质性肺病",
+          "content": "Interstitial Lung Disease (ILD) is a serious, potentially fatal toxicity associated with certain ADCs, particularly those with topoisomerase I inhibitor payloads. ILD incidence varies by ADC but ranges from approximately 5-15% in clinical trials. Risk factors include pre-existing lung disease, prior thoracic radiation, and cumulative exposure. Symptoms include dyspnea, cough, fever, and hypoxia. Diagnosis requires imaging (CT showing ground-glass opacities or consolidation) and exclusion of other causes. Management involves immediate treatment discontinuation, corticosteroids, and supportive care. Early detection through regular monitoring is critical.",
+          "content_zh": "间质性肺病（ILD）是与某些 ADC 相关的严重、可能致命的毒性，特别是那些具有拓扑异构酶 I 抑制剂载荷的 ADC。ILD 发生率因 ADC 而异，但在临床试验中约为 5-15%。危险因素包括既往肺病、既往胸部放疗和累积暴露。症状包括呼吸困难、咳嗽、发热和低氧血症。诊断需要影像学（CT 显示磨玻璃影或实变）并排除其他原因。管理包括立即停药、皮质类固醇和支持治疗。通过定期监测早期发现至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "OGITANI_2016_BYSTANDER"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_ADC_005",
+          "title": "ADC-Specific Toxicities: Hematologic and Gastrointestinal",
+          "title_zh": "ADC 特异性毒性：血液学和胃肠道",
+          "content": "Hematologic toxicities are common with ADCs, particularly neutropenia, anemia, and thrombocytopenia. These result from payload exposure to bone marrow and vary by payload class. Microtubule inhibitors commonly cause neutropenia, while DNA-damaging agents may cause broader myelosuppression. Gastrointestinal toxicities including nausea, vomiting, diarrhea, and decreased appetite are frequently observed. Antiemetic prophylaxis is often recommended. Monitoring complete blood counts before each dose and managing with dose delays, reductions, or growth factor support per guidelines is essential for safe administration.",
+          "content_zh": "血液学毒性在 ADC 中很常见，特别是中性粒细胞减少、贫血和血小板减少。这些源于载荷对骨髓的暴露，因载荷类别而异。微管抑制剂通常引起中性粒细胞减少，而 DNA 损伤剂可能引起更广泛的骨髓抑制。经常观察到包括恶心、呕吐、腹泻和食欲减退在内的胃肠道毒性。通常建议预防性使用止吐药。在每次给药前监测全血细胞计数，并根据指南通过延迟给药、减量或生长因子支持进行管理，对于安全给药至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_ADC_006",
+          "title": "ADC Internalization and Payload Release",
+          "title_zh": "ADC 内化和载荷释放",
+          "content": "After binding to the target antigen on the tumor cell surface, ADCs are internalized through endocytosis. The ADC-antigen complex traffics to endosomes and then lysosomes, where the acidic environment and proteolytic enzymes facilitate linker cleavage and payload release. Some linkers are designed to be cleaved by specific lysosomal proteases (e.g., cathepsin B), while others are acid-labile or non-cleavable requiring complete antibody degradation. The released payload then exerts its cytotoxic effect, typically by binding to intracellular targets such as tubulin or DNA. Efficient internalization is critical for ADC activity.",
+          "content_zh": "在与肿瘤细胞表面的靶抗原结合后，ADC 通过内吞作用被内化。ADC-抗原复合物运输到内体，然后到溶酶体，在那里酸性环境和蛋白水解酶促进连接子切割和载荷释放。一些连接子设计为由特定溶酶体蛋白酶（例如，组织蛋白酶 B）切割，而其他连接子是酸不稳定的或不可切割的需要完全抗体降解。释放的载荷然后发挥其细胞毒性作用，通常通过与细胞内靶标如微管蛋白或 DNA 结合。有效的内化对于 ADC 活性至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ADC_RESISTANCE_REVIEW_2023",
+            "RESISTANCE_ADC_MECHANISMS"
+          ]
+        }
+      ]
+    },
+    "tumor_biology": {
+      "description": "肿瘤生物学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_BIO_007",
+          "title": "Hallmarks of Cancer",
+          "title_zh": "癌症的标志",
+          "content": "The hallmarks of cancer represent the essential alterations in cell physiology that collectively dictate malignant growth. The original six hallmarks include: sustaining proliferative signaling, evading growth suppressors, resisting cell death, enabling replicative immortality, inducing angiogenesis, and activating invasion and metastasis. Two emerging hallmarks were added: reprogramming energy metabolism and evading immune destruction. Two enabling characteristics facilitate these hallmarks: genome instability and mutation, and tumor-promoting inflammation. Understanding these hallmarks guides therapeutic strategy development.",
+          "content_zh": "癌症的标志代表决定恶性生长的细胞生理学基本改变。最初的六个标志包括：维持增殖信号、逃避生长抑制、抵抗细胞死亡、实现复制永生、诱导血管生成和激活侵袭和转移。增加了两个新兴标志：能量代谢重编程和逃避免疫破坏。两个促成特征促进这些标志：基因组不稳定和突变，以及肿瘤促进性炎症。了解这些标志指导治疗策略开发。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022",
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_008",
+          "title": "Tumor Microenvironment",
+          "title_zh": "肿瘤微环境",
+          "content": "The tumor microenvironment (TME) consists of cellular and non-cellular components surrounding and interacting with tumor cells. Cellular components include cancer-associated fibroblasts, immune cells (T cells, B cells, macrophages, myeloid-derived suppressor cells), and endothelial cells. Non-cellular components include the extracellular matrix, cytokines, chemokines, and growth factors. The TME plays critical roles in tumor progression, metastasis, and treatment response. Immunosuppressive TME features include regulatory T cells, M2 macrophages, and inhibitory cytokines. Targeting the TME is an active area of therapeutic research.",
+          "content_zh": "肿瘤微环境（TME）由围绕并与肿瘤细胞相互作用的细胞和非细胞组分组成。细胞组分包括癌症相关成纤维细胞、免疫细胞（T 细胞、B 细胞、巨噬细胞、髓源性抑制细胞）和内皮细胞。非细胞组分包括细胞外基质、细胞因子、趋化因子和生长因子。TME 在肿瘤进展、转移和治疗反应中起关键作用。免疫抑制性 TME 特征包括调节性 T 细胞、M2 巨噬细胞和抑制性细胞因子。靶向 TME 是治疗研究的活跃领域。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022",
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_009",
+          "title": "Tumor Angiogenesis",
+          "title_zh": "肿瘤血管生成",
+          "content": "Tumor angiogenesis is the process by which tumors develop their own blood supply to support growth beyond 1-2 mm in size. The angiogenic switch occurs when pro-angiogenic factors (VEGF, FGF, PDGF) outweigh anti-angiogenic factors (thrombospondin, angiostatin). Tumor vasculature is typically abnormal: disorganized, leaky, and poorly perfused, creating hypoxic regions that drive further angiogenesis and select for aggressive phenotypes. Anti-angiogenic therapies target VEGF signaling pathways but face challenges including innate and acquired resistance, and potential for increased invasiveness.",
+          "content_zh": "肿瘤血管生成是肿瘤发展自身血液供应以支持超过 1-2 mm 大小生长的过程。当促血管生成因子（VEGF、FGF、PDGF）超过抗血管生成因子（血小板反应蛋白、血管抑素）时，发生血管生成开关。肿瘤血管通常异常：紊乱、渗漏和灌注不良，产生驱动进一步血管生成并选择侵袭性表型的缺氧区域。抗血管生成治疗靶向 VEGF 信号通路，但面临挑战，包括先天性和获得性耐药，以及侵袭性增加的潜力。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_BIOMARKER_2025",
+            "ONCO_SRC_CSCO_BIOMARKER_2025"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_BIO_010",
+          "title": "Immune Evasion Mechanisms",
+          "title_zh": "免疫逃逸机制",
+          "content": "Tumors employ multiple mechanisms to evade immune surveillance and destruction. These include downregulation of antigen presentation (MHC class I loss), expression of immune checkpoint molecules (PD-L1, CTLA-4 ligands), recruitment of immunosuppressive cells (regulatory T cells, myeloid-derived suppressor cells, M2 macrophages), secretion of immunosuppressive cytokines (TGF-β, IL-10), creation of physical barriers (dense stroma), and metabolic competition (tryptophan depletion, adenosine production). Understanding these mechanisms informs immunotherapy development and combination strategies.",
+          "content_zh": "肿瘤采用多种机制逃避免疫监视和破坏。这些包括抗原呈递下调（MHC I 类丢失）、免疫检查点分子表达（PD-L1、CTLA-4 配体）、招募免疫抑制细胞（调节性 T 细胞、髓源性抑制细胞、M2 巨噬细胞）、分泌免疫抑制细胞因子（TGF-β、IL-10）、产生物理屏障（致密基质）和代谢竞争（色氨酸耗竭、腺苷产生）。了解这些机制为免疫治疗开发和联合策略提供信息。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BRAHMER_PD_L1_2018",
+            "ONCO_SRC_NCCN_BIOMARKER_2025"
+          ]
+        }
+      ]
+    },
+    "clinical_trial_design": {
+      "description": "临床试验设计",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_TRIAL_001",
+          "title": "Overall Survival Endpoint",
+          "title_zh": "总生存期终点",
+          "content": "Overall Survival (OS) is defined as the time from randomization (or treatment initiation in single-arm trials) until death from any cause. OS is considered the gold standard endpoint in oncology trials as it is objective, easily measured, and directly reflects patient benefit. However, OS requires large sample sizes, long follow-up, and may be confounded by subsequent therapies. OS benefit must be balanced against toxicity and quality of life considerations. Regulatory approvals increasingly accept surrogate endpoints, but OS remains the definitive measure of clinical benefit.",
+          "content_zh": "总生存期（OS）定义为从随机化（或单臂试验中的治疗开始）到任何原因死亡的时间。OS 被认为是肿瘤学试验的金标准终点，因为它是客观的、易于测量的，并直接反映患者获益。然而，OS 需要大样本量、长期随访，并可能受到后续治疗的混淆。OS 获益必须与毒性和生活质量考虑相平衡。监管批准越来越多地接受替代终点，但 OS 仍然是临床获益的决定性指标。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_TRIAL_002",
+          "title": "Progression-Free Survival Endpoint",
+          "title_zh": "无进展生存期终点",
+          "content": "Progression-Free Survival (PFS) is defined as the time from randomization until objective tumor progression or death from any cause, whichever occurs first. PFS is a composite endpoint that captures both tumor growth control and survival. Advantages include earlier readout than OS, no confounding by subsequent therapy, and direct assessment of treatment effect on tumor. Limitations include potential assessment bias, need for frequent imaging, and variable correlation with OS across tumor types. PFS is accepted as a primary endpoint for many regulatory approvals.",
+          "content_zh": "无进展生存期（PFS）定义为从随机化到客观肿瘤进展或任何原因死亡的时间，以先发生者为准。PFS 是一个复合终点，捕捉肿瘤生长控制和生存。优势包括比 OS 更早读出、不受后续治疗混淆、直接评估治疗对肿瘤的影响。局限性包括潜在的评估偏倚、需要频繁成像、以及在肿瘤类型间与 OS 的相关性可变。PFS 被接受为许多监管批准的主要终点。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_TRIAL_003",
+          "title": "Objective Response Rate and Duration",
+          "title_zh": "客观缓解率和缓解持续时间",
+          "content": "Objective Response Rate (ORR) is the proportion of patients with best overall response of complete response or partial response. ORR is commonly used in single-arm phase II trials as a screening endpoint. Duration of Response (DOR) measures the time from first documentation of response until disease progression or death. DOR provides information about the durability of tumor shrinkage. Disease Control Rate (DCR) combines CR, PR, and SD, representing the proportion of patients achieving disease control. These endpoints are particularly relevant for therapies with cytotoxic mechanisms.",
+          "content_zh": "客观缓解率（ORR）是完全缓解或部分缓解的最佳总体缓解患者比例。ORR 通常用作单臂 II 期试验的筛选终点。缓解持续时间（DOR）测量从首次记录缓解到疾病进展或死亡的时间。DOR 提供有关肿瘤缩小持久性的信息。疾病控制率（DCR）结合 CR、PR 和 SD，代表实现疾病控制的患者比例。这些终点对于具有细胞毒性机制的治疗尤其相关。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_TRIAL_004",
+          "title": "Hazard Ratio and Confidence Intervals",
+          "title_zh": "风险比和置信区间",
+          "content": "Hazard Ratio (HR) is a measure of the relative risk of an event (death, progression) occurring in the treatment group compared to the control group at any given time. HR < 1 indicates benefit for the experimental treatment, HR = 1 indicates no difference, and HR > 1 indicates harm. Confidence Intervals (CI), typically 95%, provide a range of plausible values for the true HR. If the 95% CI excludes 1.0, the result is statistically significant at p < 0.05. Narrower CIs indicate more precise estimates. HR assumes proportional hazards over time.",
+          "content_zh": "风险比（HR）是在任何给定时间治疗组与对照组相比发生事件（死亡、进展）的相对风险的度量。HR < 1 表示实验治疗有益，HR = 1 表示无差异，HR > 1 表示有害。置信区间（CI），通常为 95%，提供真实 HR 的合理值范围。如果 95% CI 排除 1.0，则结果在 p < 0.05 时具有统计学意义。较窄的 CI 表示更精确的估计。HR 假设风险随时间成比例。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_TRIAL_005",
+          "title": "Randomization and Blinding",
+          "title_zh": "随机化和盲法",
+          "content": "Randomization is the process of assigning trial participants to treatment groups by chance, ensuring comparable groups and eliminating selection bias. Common methods include simple randomization, block randomization, and stratified randomization (balancing important prognostic factors). Blinding (masking) prevents participants, investigators, or assessors from knowing treatment assignment, reducing bias in outcome assessment. Single-blind masks participants, double-blind masks both participants and investigators, and open-label has no masking. Blinding is particularly important for subjective endpoints.",
+          "content_zh": "随机化是通过机会将试验参与者分配到治疗组的过程，确保可比的组并消除选择偏倚。常见方法包括简单随机化、区组随机化和分层随机化（平衡重要预后因素）。盲法（掩蔽）防止参与者、研究者或评估者知道治疗分配，减少结果评估中的偏倚。单盲掩蔽参与者，双盲掩蔽参与者和研究者，开放标签无掩蔽。盲法对于主观终点尤为重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_TRIAL_006",
+          "title": "Clinical Trial Phases",
+          "title_zh": "临床试验阶段",
+          "content": "Clinical trials progress through sequential phases. Phase I trials assess safety, tolerability, pharmacokinetics, and determine recommended phase II dose, typically in 20-100 patients. Phase II trials evaluate preliminary efficacy and further assess safety in 100-300 patients, often using single-arm or randomized designs. Phase III trials confirm efficacy and monitor adverse reactions in large populations (hundreds to thousands), comparing to standard of care for regulatory approval. Phase IV trials occur post-approval to monitor long-term safety and effectiveness in real-world settings.",
+          "content_zh": "临床试验通过连续阶段进行。I 期试验评估安全性、耐受性、药代动力学，并确定推荐的 II 期剂量，通常在 20-100 名患者中。II 期试验在 100-300 名患者中评估初步疗效并进一步评估安全性，通常使用单臂或随机设计。III 期试验在大量人群（数百到数千）中确认疗效并监测不良反应，与标准治疗比较以获得监管批准。IV 期试验在批准后进行，以监测真实世界环境中的长期安全性和有效性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_EISENHAUER_RECIST_2009"
+          ]
+        }
+      ]
+    },
+    "supportive_care": {
+      "description": "支持治疗",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_SUP_001",
+          "title": "Chemotherapy-Induced Nausea and Vomiting Management",
+          "title_zh": "化疗引起的恶心和呕吐管理",
+          "content": "Chemotherapy-Induced Nausea and Vomiting (CINV) is classified as acute (within 24 hours), delayed (24 hours to 7 days), or anticipatory (before chemotherapy). Risk stratification is based on emetogenic potential of chemotherapy: high, moderate, low, or minimal risk. Prevention is superior to treatment. Antiemetic selection follows guidelines based on risk: high-risk regimens require NK1 receptor antagonist + 5-HT3 antagonist + dexamethasone + olanzapine; moderate-risk requires 5-HT3 antagonist + dexamethasone ± NK1 antagonist. Breakthrough CINV requires addition of agents from different classes.",
+          "content_zh": "化疗引起的恶心和呕吐（CINV）分为急性（24 小时内）、延迟（24 小时至 7 天）或预期性（化疗前）。风险分层基于化疗的致吐潜能：高、中、低或最低风险。预防优于治疗。止吐药选择遵循基于风险的指南：高风险方案需要 NK1 受体拮抗剂 + 5-HT3 拮抗剂 + 地塞米松 + 奥氮平；中风险需要 5-HT3 拮抗剂 + 地塞米松±NK1 拮抗剂。突破性 CINV 需要添加不同类别的药物。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_SUP_002",
+          "title": "G-CSF and Bone Marrow Support",
+          "title_zh": "G-CSF 和骨髓支持",
+          "content": "Granulocyte-Colony Stimulating Factor (G-CSF) stimulates neutrophil production and reduces the risk of febrile neutropenia. Indications for primary prophylaxis include chemotherapy regimens with ≥20% febrile neutropenia risk, or 10-20% risk with patient-specific risk factors (age >65, poor performance status, comorbidities, prior neutropenia). G-CSF is typically administered 24-72 hours after chemotherapy completion. Common agents include filgrastim (daily) and pegfilgrastim (once per cycle). Side effects include bone pain and, rarely, splenic rupture or ARDS. G-CSF should not be given within 24 hours before or after cytotoxic chemotherapy.",
+          "content_zh": "粒细胞集落刺激因子（G-CSF）刺激中性粒细胞生成并降低发热性中性粒细胞减少的风险。一级预防的适应症包括发热性中性粒细胞减少风险≥20% 的化疗方案，或 10-20% 风险伴有患者特异性危险因素（年龄>65 岁、体能状态差、合并症、既往中性粒细胞减少）。G-CSF 通常在化疗完成后 24-72 小时给药。常见药物包括非格司亭（每日）和培非格司亭（每周期一次）。副作用包括骨痛，罕见脾破裂或 ARDS。G-CSF 不应在细胞毒性化疗前或后 24 小时内给药。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_SUP_003",
+          "title": "Cancer Pain Management Principles",
+          "title_zh": "癌症疼痛管理原则",
+          "content": "Cancer pain management follows the WHO analgesic ladder and comprehensive assessment principles. Assessment should characterize pain intensity, quality, location, and impact on function. The WHO ladder recommends: mild pain (non-opioids ± adjuvants), moderate pain (weak opioids ± non-opioids ± adjuvants), and severe pain (strong opioids ± non-opioids ± adjuvants). Opioid selection considers pain characteristics, patient factors, and route availability. Adjuvant analgesics include antidepressants, anticonvulsants, corticosteroids, and bisphosphonates for specific pain types. Regular reassessment and dose titration are essential.",
+          "content_zh": "癌症疼痛管理遵循 WHO 镇痛阶梯和综合评估原则。评估应描述疼痛强度、性质、部位和对功能的影响。WHO 阶梯推荐：轻度疼痛（非阿片类±辅助药）、中度疼痛（弱阿片类±非阿片类±辅助药）和重度疼痛（强阿片类±非阿片类±辅助药）。阿片类药物选择考虑疼痛特征、患者因素和给药途径可用性。辅助镇痛药包括抗抑郁药、抗惊厥药、皮质类固醇和双膦酸盐用于特定疼痛类型。定期重新评估和剂量滴定至关重要。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "epidemiology": {
+      "description": "流行病学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_EPI_001",
+          "title": "Global Cancer Burden Statistics",
+          "title_zh": "全球癌症负担统计",
+          "content": "According to GLOBOCAN data, there were approximately 19.3 million new cancer cases and 10.0 million cancer deaths worldwide in 2020. The most commonly diagnosed cancers globally are lung, breast, colorectal, prostate, and stomach cancers. Lung cancer is the leading cause of cancer death. Cancer incidence and mortality vary substantially by region, reflecting differences in risk factor exposure, screening practices, and healthcare access. The global cancer burden is projected to increase due to population growth, aging, and lifestyle changes associated with economic development.",
+          "content_zh": "根据 GLOBOCAN 数据，2020 年全球约有 1930 万新发癌症病例和 1000 万癌症死亡。全球最常见的诊断癌症是肺癌、乳腺癌、结直肠癌、前列腺癌和胃癌。肺癌是癌症死亡的主要原因。癌症发病率和死亡率因地区而异，反映了危险因素暴露、筛查实践和医疗保健可及性的差异。由于人口增长、老龄化和与经济发展相关的生活方式变化，预计全球癌症负担将增加。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_EPI_002",
+          "title": "China Cancer Epidemiology",
+          "title_zh": "中国癌症流行病学",
+          "content": "China accounts for approximately 24% of global new cancer cases and 30% of cancer deaths. The most common cancers in China are lung, colorectal, stomach, liver, and breast cancers. Lung cancer remains the leading cause of cancer incidence and mortality. Notable features of Chinese cancer epidemiology include high rates of liver cancer (related to hepatitis B prevalence), stomach cancer (related to H. pylori infection and dietary factors), and esophageal cancer. Cancer incidence patterns are transitioning with economic development, showing increases in colorectal, breast, and prostate cancers.",
+          "content_zh": "中国占全球新发癌症病例的约 24% 和癌症死亡的 30%。中国最常见的癌症是肺癌、结直肠癌、胃癌、肝癌和乳腺癌。肺癌仍然是癌症发病和死亡的主要原因。中国癌症流行病学的显著特征包括高肝癌发病率（与乙型肝炎患病率相关）、胃癌（与幽门螺杆菌感染和饮食因素相关）和食管癌。随着经济发展，癌症发病模式正在转变，结直肠癌、乳腺癌和前列腺癌发病率增加。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_EPI_003",
+          "title": "Cancer Risk Factors",
+          "title_zh": "癌症危险因素",
+          "content": "Major modifiable cancer risk factors include tobacco use (responsible for approximately 25% of cancer deaths), alcohol consumption, unhealthy diet, physical inactivity, obesity, and infections (HPV, HBV, HCV, H. pylori, EBV). Environmental and occupational exposures contribute to cancer risk including air pollution, asbestos, and certain chemicals. Non-modifiable risk factors include age, sex, genetic predisposition, and family history. Primary prevention through risk factor modification could prevent 30-50% of cancers. Vaccination against HBV and HPV prevents related cancers.",
+          "content_zh": "主要的可改变癌症危险因素包括烟草使用（约占癌症死亡的 25%）、饮酒、不健康饮食、缺乏运动、肥胖和感染（HPV、HBV、HCV、幽门螺杆菌、EBV）。环境和职业暴露增加癌症风险，包括空气污染、石棉和某些化学物质。不可改变的危险因素包括年龄、性别、遗传易感性和家族史。通过危险因素改变的一级预防可预防 30-50% 的癌症。针对 HBV 和 HPV 的疫苗接种预防相关癌症。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_GLOBOCAN_2020",
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        }
+      ]
+    },
+    "pharmacokinetics": {
+      "description": "药代动力学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_PK_001",
+          "title": "Drug Metabolism Pathways",
+          "title_zh": "药物代谢途径",
+          "content": "Drug metabolism primarily occurs in the liver through Phase I and Phase II reactions. Phase I reactions (oxidation, reduction, hydrolysis) are mediated mainly by cytochrome P450 enzymes, particularly CYP3A4, CYP2D6, and CYP2C19. These reactions introduce or expose functional groups, often creating more polar metabolites. Phase II reactions (conjugation) involve glucuronidation, sulfation, acetylation, or methylation, further increasing water solubility for excretion. Genetic polymorphisms in metabolic enzymes can significantly alter drug exposure and response. Drug-drug interactions often involve CYP enzyme inhibition or induction.",
+          "content_zh": "药物代谢主要通过 I 相和 II 相反应在肝脏中发生。I 相反应（氧化、还原、水解）主要由细胞色素 P450 酶介导，特别是 CYP3A4、CYP2D6 和 CYP2C19。这些反应引入或暴露官能团，通常产生更极性的代谢物。II 相反应（结合）涉及葡萄糖醛酸化、硫酸化、乙酰化或甲基化，进一步增加水溶性以便排泄。代谢酶的基因多态性可显著改变药物暴露和反应。药物 - 药物相互作用通常涉及 CYP 酶抑制或诱导。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_PK_002",
+          "title": "Half-Life and Steady State",
+          "title_zh": "半衰期和稳态",
+          "content": "Elimination half-life (t1/2) is the time required for plasma drug concentration to decrease by 50%. Half-life determines dosing frequency and time to reach steady state. Steady state is achieved after approximately 4-5 half-lives of regular dosing, when drug input equals elimination. At steady state, plasma concentrations fluctuate between peak (Cmax) and trough (Cmin) levels within a predictable range. Loading doses may be used to achieve therapeutic concentrations more rapidly. Factors affecting half-life include age, organ function, drug interactions, and genetic factors.",
+          "content_zh": "消除半衰期（t1/2）是血浆药物浓度降低 50% 所需的时间。半衰期决定给药频率和达到稳态的时间。稳态在定期给药约 4-5 个半衰期后达到，此时药物输入等于消除。在稳态时，血浆浓度在可预测范围内在峰浓度（Cmax）和谷浓度（Cmin）之间波动。负荷剂量可用于更快地达到治疗浓度。影响半衰期的因素包括年龄、器官功能、药物相互作用和遗传因素。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_WEINBERG_BIOLOGY"
+          ]
+        }
+      ]
+    },
+    "safety_monitoring": {
+      "description": "安全性监测",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_SAFE_001",
+          "title": "CTCAE Grading System",
+          "title_zh": "CTCAE 分级系统",
+          "content": "The Common Terminology Criteria for Adverse Events (CTCAE) is the standard system for grading adverse event severity in oncology trials and practice. Grades range from 1 to 5: Grade 1 (mild, asymptomatic, clinical observations only), Grade 2 (moderate, minimal intervention indicated), Grade 3 (severe, medically significant, hospitalization indicated), Grade 4 (life-threatening, urgent intervention indicated), and Grade 5 (death related to AE). Consistent grading enables standardized safety reporting, dose modification decisions, and cross-trial comparisons. The latest version is CTCAE v5.0.",
+          "content_zh": "不良事件通用术语标准（CTCAE）是肿瘤学试验和实践中分级不良事件严重程度的标准系统。分级范围从 1 到 5:1 级（轻度，无症状，仅临床观察）、2 级（中度，需要最少干预）、3 级（严重，医学显著，需要住院）、4 级（危及生命，需要紧急干预）和 5 级（与 AE 相关的死亡）。一致的分级实现标准化安全报告、剂量修改决策和跨试验比较。最新版本是 CTCAE v5.0。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "ONCO_SHARED_SAFE_002",
+          "title": "Laboratory Monitoring Requirements",
+          "title_zh": "实验室监测要求",
+          "content": "Standard laboratory monitoring for cancer therapy includes complete blood count (CBC) with differential, comprehensive metabolic panel (including liver and kidney function), and additional tests based on specific therapy risks. CBC monitoring detects myelosuppression (neutropenia, anemia, thrombocytopenia). Liver function tests (AST, ALT, bilirubin, alkaline phosphatase) monitor hepatotoxicity. Renal function (creatinine, eGFR) is critical for renally cleared drugs. Monitoring frequency depends on treatment phase: more frequent during initiation and dose escalation, then before each cycle. Specific therapies require additional monitoring (e.g., thyroid function for immunotherapy, cardiac function for anthracyclines).",
+          "content_zh": "癌症治疗的标准实验室监测包括带分类的全血细胞计数（CBC）、综合代谢 panel（包括肝肾功能），以及基于特定治疗风险的额外检测。CBC 监测检测骨髓抑制（中性粒细胞减少、贫血、血小板减少）。肝功能检测（AST、ALT、胆红素、碱性磷酸酶）监测肝毒性。肾功能（肌酐、eGFR）对于肾清除药物至关重要。监测频率取决于治疗阶段：开始和剂量递增期间更频繁，然后每个周期前。特定治疗需要额外监测（例如，免疫治疗的甲状腺功能、蒽环类药物的心脏功能）。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "molecular_oncology": {
+      "description": "分子肿瘤学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_MOL_001",
+          "title": "Oncogenes and Tumor Suppressors",
+          "title_zh": "癌基因和肿瘤抑制因子",
+          "content": "Oncogenes are mutated or overexpressed forms of normal genes (proto-oncogenes) that promote cell growth and division. Examples include RAS, MYC, HER2, and EGFR. Oncogene activation occurs through mutation, amplification, or translocation, resulting in constitutive activation of growth signaling. Tumor suppressor genes normally inhibit cell proliferation or promote apoptosis. Examples include TP53, RB1, PTEN, and BRCA1/2. Tumor suppressor inactivation requires loss of both alleles (Knudson's two-hit hypothesis). Understanding these genetic alterations guides targeted therapy selection.",
+          "content_zh": "癌基因是促进细胞生长和分裂的正常基因（原癌基因）的突变或过表达形式。示例包括 RAS、MYC、HER2 和 EGFR。癌基因激活通过突变、扩增或易位发生，导致生长信号的组成性激活。肿瘤抑制基因通常抑制细胞增殖或促进细胞凋亡。示例包括 TP53、RB1、PTEN 和 BRCA1/2。肿瘤抑制因子失活需要两个等位基因的丢失（Knudson 的二次打击假说）。了解这些遗传改变指导靶向治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_WEINBERG_BIOLOGY",
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_MOL_002",
+          "title": "DNA Repair Pathways",
+          "title_zh": "DNA 修复通路",
+          "content": "Cells employ multiple DNA repair mechanisms to maintain genomic integrity. Mismatch repair (MMR) corrects base-base mismatches and insertion-deletion loops. Homologous recombination (HR) repairs double-strand breaks using sister chromatid templates. Non-homologous end joining (NHEJ) directly ligates broken DNA ends. Nucleotide excision repair (NER) removes bulky DNA adducts. Base excision repair (BER) fixes small base lesions. Defects in DNA repair pathways create therapeutic vulnerabilities: MMR deficiency causes MSI-H tumors sensitive to immunotherapy; BRCA mutations cause HR deficiency sensitive to PARP inhibitors.",
+          "content_zh": "细胞采用多种 DNA 修复机制来维持基因组完整性。错配修复（MMR）纠正碱基 - 碱基错配和插入 - 缺失环。同源重组（HR）使用姐妹染色单体模板修复双链断裂。非同源末端连接（NHEJ）直接连接断裂的 DNA 末端。核苷酸切除修复（NER）去除大块 DNA 加合物。碱基切除修复（BER）修复小碱基损伤。DNA 修复通路缺陷产生治疗弱点：MMR 缺陷导致 MSI-H 肿瘤对免疫治疗敏感；BRCA 突变导致 HR 缺陷对 PARP 抑制剂敏感。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_WEINBERG_BIOLOGY",
+            "ONCO_SRC_HANAHAN_HALLMARKS_2022"
+          ]
+        }
+      ]
+    },
+    "radiation_oncology": {
+      "description": "放射肿瘤学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_RAD_001",
+          "title": "Radiation Therapy Principles",
+          "title_zh": "放射治疗原则",
+          "content": "Radiation therapy uses high-energy photons or particles to damage tumor cell DNA, leading to cell death. The therapeutic ratio depends on differential DNA repair capacity between tumor and normal tissues. Fractionation (dividing total dose into multiple smaller doses) allows normal tissue repair between treatments while accumulating tumor damage. Common fractionation schedules include conventional (1.8-2 Gy per fraction), hypofractionation (larger doses per fraction, fewer fractions), and stereotactic body radiation therapy (SBRT, very high doses in 1-5 fractions). Radiation can be curative, adjuvant, neoadjuvant, or palliative.",
+          "content_zh": "放射治疗使用高能光子或粒子损伤肿瘤细胞 DNA，导致细胞死亡。治疗比取决于肿瘤和正常组织之间的 DNA 修复能力差异。分次（将总剂量分成多个较小剂量）允许正常组织在治疗间修复，同时累积肿瘤损伤。常见的分次方案包括常规（每次分次 1.8-2 Gy）、大分割（每次分次较大剂量，较少分次）和立体定向体部放射治疗（SBRT，1-5 次分次中非常高剂量）。放射可以是根治性、辅助性、新辅助性或姑息性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_RAD_002",
+          "title": "Radiation Toxicity Management",
+          "title_zh": "放射毒性管理",
+          "content": "Radiation toxicity is classified as acute (during or within 90 days of treatment) or late (after 90 days). Acute effects result from cell death in rapidly dividing tissues (skin, mucosa, bone marrow) and typically resolve after treatment. Late effects result from vascular and connective tissue damage and may be permanent. Site-specific toxicities include dermatitis (skin), mucositis (head and neck), pneumonitis (thorax), enteritis (abdomen), and cystitis (pelvis). Management includes supportive care, topical treatments, and medication. Prevention through precise treatment planning and normal tissue sparing is paramount.",
+          "content_zh": "放射毒性分为急性（治疗期间或 90 天内）或晚期（90 天后）。急性效应源于快速分裂组织（皮肤、黏膜、骨髓）的细胞死亡，通常在治疗后消退。晚期效应源于血管和结缔组织损伤，可能是永久性的。部位特异性毒性包括皮炎（皮肤）、黏膜炎（头颈部）、肺炎（胸部）、肠炎（腹部）和膀胱炎（盆腔）。管理包括支持治疗、局部治疗和药物。通过精确治疗计划和正常组织保护进行预防至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "surgical_oncology": {
+      "description": "外科肿瘤学",
+      "entries": [
+        {
+          "id": "ONCO_SHARED_SURG_001",
+          "title": "Surgical Margins and Resection",
+          "title_zh": "手术切缘和切除",
+          "content": "Surgical margin status is a critical prognostic factor in oncologic surgery. R0 resection indicates microscopically margin-negative (no tumor at inked margin), R1 indicates microscopically margin-positive (tumor at inked margin), and R2 indicates macroscopically incomplete resection (gross residual disease). Negative margins are associated with improved local control and survival across most tumor types. Margin requirements vary by tumor type and location. Intraoperative frozen section analysis may guide margin assessment. Adjuvant therapy is often recommended for positive margins when re-resection is not feasible.",
+          "content_zh": "手术切缘状态是肿瘤外科手术的关键预后因素。R0 切除表示显微镜下切缘阴性（墨染切缘无肿瘤）、R1 表示显微镜下切缘阳性（墨染切缘有肿瘤）、R2 表示肉眼不完全切除（大体残留疾病）。阴性切缘与大多数肿瘤类型的局部控制和生存改善相关。切缘要求因肿瘤类型和部位而异。术中冰冻切片分析可指导切缘评估。当再次切除不可行时，通常建议对阳性切缘进行辅助治疗。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_AJCC_8TH_2017"
+          ]
+        },
+        {
+          "id": "ONCO_SHARED_SURG_002",
+          "title": "Sentinel Lymph Node Biopsy",
+          "title_zh": "前哨淋巴结活检",
+          "content": "Sentinel lymph node biopsy (SLNB) identifies the first lymph node(s) draining a tumor, which are most likely to contain metastases if spread has occurred. The procedure uses radioactive tracers and/or blue dye injected near the tumor to map lymphatic drainage. SLNB is standard for clinically node-negative breast cancer and melanoma, allowing selective lymph node dissection only if the sentinel node is positive. This approach reduces morbidity compared to complete lymph node dissection while maintaining accurate staging. False negative rates should be <5-10% for SLNB to be considered reliable.",
+          "content_zh": "前哨淋巴结活检（SLNB）识别引流肿瘤的第一个淋巴结，如果发生扩散，这些淋巴结最可能含有转移。该程序使用在肿瘤附近注射的放射性示踪剂和/或蓝色染料来绘制淋巴引流图。SLNB 是临床淋巴结阴性乳腺癌和黑色素瘤的标准，仅在前哨淋巴结阳性时允许选择性淋巴结清扫。与完全淋巴结清扫相比，这种方法降低发病率，同时保持准确分期。SLNB 的假阴性率应<5-10% 才被认为是可靠的。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_AJCC_8TH_2017"
+          ]
+        }
+      ]
+    },
+    "adc_safety_principles": {
+      "description": "ADC 药物共性安全管理原则",
+      "entries": [
+        {
+          "id": "ONCO_SAF_ADC_001",
+          "title": "ADC Structure and Mechanism",
+          "title_zh": "ADC 结构与机制",
+          "content": "Antibody-drug conjugates (ADCs) are a class of targeted biological agents that link cytotoxic drugs to monoclonal antibodies through linkers. ADC drugs typically include three components: high-specificity and high-affinity antibodies, stable linkers, and efficient small-molecule cytotoxic drugs. The monoclonal antibody targets tumor cells and transports small-molecule cytotoxic drugs for specific delivery with minimal off-target side effects.",
+          "content_zh": "抗体药物偶联物 (ADC) 是一类通过连接子将细胞毒性药物连接到单克隆抗体的靶向生物制剂。ADC 药物通常包括 3 个组分：高特异性和高亲和力的抗体、稳定性的连接子、高效的小分子细胞毒药物。单克隆抗体作为载体将小分子细胞毒性药物以靶向的方式高效地运输至目标肿瘤细胞中，在减少小分子细胞毒性药物脱靶作用的同时保留其抗肿瘤特性。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_002",
+          "title": "Common ADC Toxicities Overview",
+          "title_zh": "ADC 药物常见毒性概述",
+          "content": "The adverse reactions of ADC drugs depend on multiple factors including the physiological function and expression of the target in tumor tissue, linker properties, and the number and type of cytotoxic drugs. Therefore, for each ADC drug, specific adverse reactions should be closely monitored and treated symptomatically. Multi-disciplinary consultation should be invited when necessary. Due to different targets and mechanisms of action of ADC drugs, adverse reactions cannot be generalized.",
+          "content_zh": "ADC 药物的不良反应取决于肿瘤组织靶标的生理功能和表达情况、连接子的性质、细胞毒性药物的数量和类型等多种因素。因此，针对每种 ADC 药物应密切关注特异性的不良反应，并给予对症处理，必要时应邀请相关学科专家会诊。由于 ADC 药物的靶点和作用机制不同，不良反应难以一概而论。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_003",
+          "title": "Class-Wide Safety Signals",
+          "title_zh": "共性安全性信号",
+          "content": "Common adverse reactions across ADC drugs include: neutropenia, thrombocytopenia, anemia, peripheral sensory and motor neuropathy, nausea, diarrhea, fatigue, infusion-related reactions, elevated transaminases, and interstitial lung disease (ILD). The incidence of ILD varies by ADC type, with some agents showing rates of 1.9-15.8%. Hepatotoxicity including hepatic sinusoidal obstruction syndrome is a concern with certain calicheamicin-based ADCs.",
+          "content_zh": "ADC 药物共性不良反应包括：中性粒细胞减少症、血小板减少症、贫血、周围感觉和运动神经病变、恶心、腹泻、疲劳、输液相关反应、转氨酶升高、间质性肺病 (ILD)。ILD 发生率因 ADC 类型而异，某些药物发生率为 1.9-15.8%。肝毒性包括肝窦阻塞综合征是某些卡奇霉素类 ADC 的关注重点。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_004",
+          "title": "Dose Modification General Principles",
+          "title_zh": "剂量调整通用原则",
+          "content": "For ADC-related adverse reactions, general dose modification principles include: (1) Monitor patients closely during treatment; (2) Interrupt dosing for Grade 3-4 toxicities until recovery to Grade 1 or baseline; (3) Resume at reduced dose level after recovery; (4) Permanently discontinue for life-threatening reactions (Grade 4) or recurrent severe toxicities despite dose reductions; (5) For ILD specifically, permanent discontinuation is required for confirmed Grade 2 or higher ILD.",
+          "content_zh": "ADC 相关不良反应的通用剂量调整原则包括：(1) 治疗期间密切监测患者；(2) 对于 3-4 级毒性暂停给药直至恢复至 1 级或基线；(3) 恢复后降低剂量水平继续治疗；(4) 对于危及生命的反应 (4 级) 或尽管减量仍复发的严重毒性永久停药；(5) 对于 ILD，确诊 2 级或更高 ILD 需永久停药。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_005",
+          "title": "Peripheral Neuropathy Management",
+          "title_zh": "周围神经病变管理",
+          "content": "Peripheral neuropathy is a common class effect of MMAE-containing ADCs. Management includes: monitoring for symptoms of numbness, tingling, or pain in extremities; dose interruption for Grade 2 or higher neuropathy; dose reduction upon resumption; permanent discontinuation for severe or persistent neuropathy. Patients should be educated to report symptoms early.",
+          "content_zh": "周围神经病变是含 MMAE 的 ADC 药物的类效应。管理包括：监测四肢麻木、刺痛或疼痛症状；2 级或更高神经病变暂停给药；恢复时减量；严重或持续性神经病变永久停药。应教育患者尽早报告症状。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_006",
+          "title": "Hematologic Toxicity Management",
+          "title_zh": "血液学毒性管理",
+          "content": "Hematologic toxicities including neutropenia, thrombocytopenia, and anemia are common with ADC drugs. Management includes: regular complete blood count monitoring (before each dose); dose interruption for Grade 3-4 neutropenia or thrombocytopenia; use of growth factor support for neutropenia as clinically indicated; platelet transfusion for severe thrombocytopenia with bleeding; dose reduction upon recovery.",
+          "content_zh": "血液学毒性包括中性粒细胞减少症、血小板减少症和贫血是 ADC 药物常见毒性。管理包括：定期全血细胞计数监测 (每剂前)；3-4 级中性粒细胞减少或血小板减少暂停给药；临床指征时使用生长因子支持治疗中性粒细胞减少；严重血小板减少伴出血时输注血小板；恢复后减量。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_007",
+          "title": "Infusion-Related Reactions",
+          "title_zh": "输液相关反应",
+          "content": "Infusion-related reactions (IRR) occur in approximately 10-30% of patients receiving ADC therapy. Symptoms may include fever, chills, rash, dyspnea, and hypotension. Management includes: premedication with antihistamines and corticosteroids for high-risk patients; interrupting infusion for mild to moderate reactions; permanent discontinuation for severe or life-threatening reactions; slowing infusion rate upon resumption.",
+          "content_zh": "输液相关反应 (IRR) 发生于约 10-30% 接受 ADC 治疗的患者。症状可能包括发热、寒战、皮疹、呼吸困难和低血压。管理包括：高危患者预先使用抗组胺药和皮质类固醇；轻中度反应中断输注；严重或危及生命反应永久停药；恢复时减慢输注速度。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ADC_008",
+          "title": "Hepatotoxicity Monitoring and Management",
+          "title_zh": "肝毒性监测与管理",
+          "content": "Hepatotoxicity including elevated transaminases and bilirubin is observed with certain ADC classes, particularly calicheamicin-based agents. Hepatic sinusoidal obstruction syndrome (SOS) is a serious concern. Management includes: baseline and periodic liver function tests; dose interruption for Grade 2 or higher elevations; permanent discontinuation for confirmed SOS; avoid use in patients with severe hepatic impairment.",
+          "content_zh": "肝毒性包括转氨酶和胆红素升高在某些 ADC 类别中观察到，特别是卡奇霉素类药物。肝窦阻塞综合征 (SOS) 是严重关注点。管理包括：基线和定期肝功能检查；2 级或更高升高暂停给药；确诊 SOS 永久停药；严重肝功能不全患者避免使用。",
+          "origin_layer": "L3",
+          "source": "ADC consensus 2023",
+          "source_ids": [
+            "ADC_CHEMISTRY_2021",
+            "ADC_ILD_REVIEW"
+          ]
+        }
+      ]
+    },
+    "ild_management": {
+      "description": "间质性肺病管理",
+      "entries": [
+        {
+          "id": "ONCO_SAF_ILD_001",
+          "title": "ILD Definition and Epidemiology",
+          "title_zh": "ILD 定义与流行病学",
+          "content": "Drug-induced interstitial lung disease (DILD) is one of the common pulmonary adverse reactions in clinical application of anticancer drugs. With the rapid development of clinical oncology and approval of many novel anticancer drugs, the incidence of anticancer drug-related DILD is showing an increasing trend year by year. The incidence varies by drug class: chemotherapy drugs (1.0-40.0%), TKI (0.4-5.3%), mTOR inhibitors (3.0-54.0%), ICI (0.9-3.6%), ADC (1.9-15.8%).",
+          "content_zh": "药物引起的间质性肺病 (DILD) 是抗肿瘤药物临床应用中常见的肺部不良反应之一。随着临床肿瘤学的快速发展和大量新型抗肿瘤药物获得批准上市，抗肿瘤药物相关间质性肺病的发病率也随之呈现逐年升高的趋势。不同药物类别发生率不同：化疗药物 (1.0-40.0%)、TKI(0.4-5.3%)、mTOR 抑制剂 (3.0-54.0%)、ICI(0.9-3.6%)、ADC(1.9-15.8%)。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_002",
+          "title": "ILD Risk Factors",
+          "title_zh": "ILD 危险因素",
+          "content": "Non-specific risk factors for DILD include: age >60 years, pre-existing lung disease (especially interstitial pneumonia), smoking history, occupational exposure history, history of pulmonary radiation exposure, pulmonary surgery history, renal function impairment (reduced drug clearance leading to increased blood concentration), ECOG performance status ≥2, low body surface area. Combination therapy often results in more severe DILD than monotherapy with longer recovery time.",
+          "content_zh": "DILD 的非特异性危险因素包括：年龄>60 岁、基线存在肺部病变 (尤其是间质性肺炎)、吸烟史、职业暴露史、肺部放射线暴露史、肺部手术史、肾功能损害 (药物清除减少导致血药浓度升高)、ECOG 体能状态评分≥2、低体表面积。联合治疗往往比单药治疗导致更严重的 DILD 且恢复期更长。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_003",
+          "title": "Clinical Manifestations",
+          "title_zh": "临床表现",
+          "content": "DILD lacks specific clinical manifestations. Symptoms may include: dry cough, progressive exertional dyspnea, fatigue, fever, rash. Some patients may have no obvious symptoms in early stages. Physical signs may include: increased respiratory rate, cyanosis of lips and nail beds. Lung auscultation is usually normal, but some patients may have wet rales or Velcro rales. Symptoms can appear within days to weeks after drug initiation or develop slowly over months.",
+          "content_zh": "DILD 缺乏特异性临床表现。症状可能包括：干咳、逐渐加重的劳力性呼吸困难、乏力、发热、皮疹等。部分患者早期可无明显临床症状。体征可能包括：呼吸频率增快、口唇发绀。肺部听诊通常正常，部分患者可闻及湿性啰音或 Velcro 啰音。症状可在用药后数日到数周内出现，也可缓慢发生于用药后数月。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_004",
+          "title": "Imaging Characteristics",
+          "title_zh": "影像学特征",
+          "content": "High-resolution CT (HRCT) plays a very important role in diagnosing DILD. Common imaging patterns include: (1) Diffuse alveolar damage (DAD): bilateral extensive ground-glass opacities and air space consolidation in exudative phase, traction bronchiectasis and honeycombing in fibrotic phase; (2) Non-specific interstitial pneumonia (NSIP): ground-glass opacities and reticular shadows, lower lung predominance; (3) Organizing pneumonia (OP): patchy consolidations or ground-glass opacities, peripheral distribution, may show reversed halo sign; (4) Hypersensitivity pneumonitis: ground-glass opacities, mosaic pattern, ill-defined centrilobular nodules.",
+          "content_zh": "高分辨率 CT(HRCT) 在诊断 DILD 中扮演非常重要的角色。常见影像学表现包括：(1) 弥漫性肺泡损伤 (DAD)：渗出期双侧广泛磨玻璃影和气腔实变，纤维化期牵引性支气管扩张和蜂窝状；(2) 非特异性间质性肺炎 (NSIP)：磨玻璃影和网格影，中下肺为主；(3) 机化性肺炎 (OP)：片状实变影或磨玻璃影，周围分布，可出现反晕征；(4) 过敏性肺炎：磨玻璃影、马赛克征象、边界不清楚的小叶中心结节。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_005",
+          "title": "ASCO Pneumonitis Grading Criteria",
+          "title_zh": "ASCO 肺炎分级标准",
+          "content": "ASCO immune-related adverse event pneumonitis grading: Grade 1 (G1): Asymptomatic, clinical or diagnostic findings only, involvement <25% of lung parenchyma (single lobe or less). Grade 2 (G2): Symptomatic, limiting instrumental activities of daily living, affecting 25-50% of lung parenchyma (more than one lobe). Grade 3 (G3): Severe symptoms, limiting self-care activities of daily living, requiring oxygen, involving >50% of lung parenchyma (all lobes). Grade 4 (G4): Life-threatening respiratory failure requiring urgent intervention such as tracheostomy or intubation.",
+          "content_zh": "ASCO 免疫相关不良事件肺炎分级：1 级 (G1)：无症状，仅为临床或诊断所见，累及<25% 的肺实质 (单个肺叶或更少)。2 级 (G2)：有症状，限制工具性日常生活活动，累及 25-50% 的肺实质 (一个以上肺叶)。3 级 (G3)：重度症状，限制个人自理能力，需吸氧，累及>50% 的肺实质 (所有肺叶)。4 级 (G4)：危及生命的呼吸功能衰竭，需要紧急干预如气管切开或插管。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_006",
+          "title": "CTCAE v5.0 Pneumonitis Grading",
+          "title_zh": "CTCAE v5.0 肺炎分级",
+          "content": "NCI-CTCAE v5.0 pneumonitis grading: Grade 1: Asymptomatic, clinical or diagnostic findings only, no treatment indicated. Grade 2: Symptomatic, medical intervention indicated, limiting instrumental activities of daily living. Grade 3: Severe symptoms, limiting self-care activities of daily living, oxygen indicated. Grade 4: Life-threatening respiratory failure requiring urgent intervention (e.g., tracheostomy, intubation). Grade 5: Death.",
+          "content_zh": "NCI-CTCAE v5.0 肺炎分级：1 级：无症状，仅为临床或诊断所见，无需治疗。2 级：有症状，需要医学干预，限制工具性日常生活活动。3 级：重度症状，限制个人自理能力，需吸氧。4 级：危及生命的呼吸功能衰竭，需要紧急干预 (如气管切开、插管)。5 级：死亡。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_007",
+          "title": "Diagnostic Algorithm",
+          "title_zh": "诊断流程",
+          "content": "DILD diagnostic approach: (1) High-resolution CT (HRCT) is recommended for all suspected cases - more sensitive than chest X-ray (>90% sensitivity); (2) Bronchoscopy with bronchoalveolar lavage fluid (BALF) analysis helps exclude infection, pulmonary hemorrhage, or tumor progression though not diagnostic for DILD itself; (3) Lung biopsy may be necessary when clinical, laboratory, and imaging findings cannot confirm specific lung injury type or when tumor progression needs to be ruled out; (4) Multidisciplinary team (MDT) consultation including oncology, pulmonology, radiology, and pathology is recommended for complex cases.",
+          "content_zh": "DILD 诊断方法：(1) 所有疑似病例推荐高分辨率 CT(HRCT) 检查 - 比胸片更敏感 (>90% 敏感度)；(2) 支气管镜检查伴支气管肺泡灌洗液 (BALF) 分析有助于排除感染、肺出血或肿瘤进展，尽管对 DILD 本身无确诊价值；(3) 当临床、实验室和影像学表现不能明确特定肺损伤类型或需排除肿瘤进展时可能需要进行肺活检；(4) 复杂病例建议多学科团队 (MDT) 会诊，包括肿瘤科、呼吸科、放射科和病理科。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_008",
+          "title": "Differential Diagnosis",
+          "title_zh": "鉴别诊断",
+          "content": "DILD must be differentiated from: (1) Infectious pneumonia (bacterial, viral, fungal) - distinguished by microbiological cultures, serology, NGS testing; (2) Tumor progression (lymphangitic carcinomatosis, lung metastases) - distinguished by imaging, tumor markers, PET-CT, biopsy if needed; (3) Radiation pneumonitis - distinguished by radiation history and imaging pattern within radiation field; (4) Heart failure/pulmonary edema - distinguished by cardiac evaluation, BNP, echocardiography; (5) Pulmonary embolism - distinguished by D-dimer, CT pulmonary angiography.",
+          "content_zh": "DILD 需与以下疾病鉴别：(1) 感染性肺炎 (细菌性、病毒性、真菌性) - 通过微生物培养、血清学、NGS 检测鉴别；(2) 肿瘤进展 (癌性淋巴管炎、肺转移) - 通过影像学、肿瘤标志物、PET-CT、必要时活检鉴别；(3) 放射性肺炎 - 通过放疗史和照射野内影像学表现鉴别；(4) 心力衰竭/肺水肿 - 通过心脏评估、BNP、超声心动图鉴别；(5) 肺栓塞 - 通过 D-二聚体、CT 肺动脉造影鉴别。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_009",
+          "title": "Grade 1 ILD Management",
+          "title_zh": "1 级 ILD 管理",
+          "content": "Grade 1 ILD (asymptomatic, radiographic findings only): Continue anticancer therapy with close monitoring. Monitor respiratory symptoms and signs. Repeat chest CT in 3-4 weeks. If imaging improves, continue treatment with close follow-up. If imaging shows no change or new symptoms develop, upgrade to Grade 2 management. Consider pulmonary function tests and bronchoscopy if diagnosis uncertain.",
+          "content_zh": "1 级 ILD(无症状，仅影像学表现)：继续抗肿瘤治疗并密切监测。监测呼吸系统症状和体征。3-4 周后复查胸部 CT。如影像学好转，继续治疗并密切随访。如影像学无改变或出现新症状，升级至 2 级管理。如诊断不明确可考虑肺功能检查和支气管镜检查。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_010",
+          "title": "Grade 2 ILD Management",
+          "title_zh": "2 级 ILD 管理",
+          "content": "Grade 2 ILD (symptomatic, limiting instrumental ADL): Interrupt anticancer therapy immediately. Initiate corticosteroid therapy: prednisone 0.5-1 mg/kg/day or equivalent. Consider bronchoscopy with BALF. If infection cannot be completely excluded, consider empirical antimicrobial therapy. Monitor symptoms and repeat chest CT in 2-4 weeks. If symptoms improve to Grade 1 or less, taper steroids gradually over 4-6 weeks. Resume anticancer therapy only after complete resolution. If no improvement after 48-72 hours, escalate to Grade 3-4 management.",
+          "content_zh": "2 级 ILD(有症状，限制工具性日常生活活动)：立即暂停抗肿瘤治疗。开始皮质类固醇治疗：泼尼松 0.5-1 mg/kg/天或等效药物。考虑支气管镜检查伴 BALF。如不能完全排除感染，考虑经验性抗感染治疗。监测症状并 2-4 周后复查胸部 CT。如症状改善至 1 级或更低，4-6 周内逐渐减量激素。仅在完全缓解后恢复抗肿瘤治疗。如 48-72 小时后无改善，升级至 3-4 级管理。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_011",
+          "title": "Grade 3-4 ILD Management",
+          "title_zh": "3-4 级 ILD 管理",
+          "content": "Grade 3-4 ILD (severe symptoms, oxygen required, or life-threatening): Permanently discontinue anticancer therapy. Hospitalize patient. Initiate high-dose corticosteroids: methylprednisolone 500-1000 mg/day IV for 3 days, then prednisone 1-2 mg/kg/day or equivalent. If no improvement after 48 hours, consider additional immunosuppressants (infliximab 5 mg/kg, mycophenolate mofetil, or IV immunoglobulin). Provide supportive care including oxygen therapy, mechanical ventilation if needed. Consider empirical antimicrobial therapy if infection not excluded. Taper steroids over at least 4-6 weeks after improvement. Permanent discontinuation of causative agent is required.",
+          "content_zh": "3-4 级 ILD(重度症状、需吸氧或危及生命)：永久停用抗肿瘤药物。住院治疗。开始大剂量皮质类固醇：甲泼尼龙 500-1000 mg/天静脉滴注连续 3 天，然后泼尼松 1-2 mg/kg/天或等效药物。如 48 小时后无改善，考虑加用其他免疫抑制剂 (英夫利昔单抗 5 mg/kg、吗替麦考酚酯或静脉注射免疫球蛋白)。提供支持治疗包括氧疗、必要时机械通气。如未排除感染考虑经验性抗感染治疗。改善后至少 4-6 周内逐渐减量激素。需永久停用致病药物。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_012",
+          "title": "Monitoring Recommendations",
+          "title_zh": "监测建议",
+          "content": "Baseline assessment before starting drugs associated with ILD risk: chest CT (baseline for comparison), pulmonary function tests, comprehensive history including lung disease and smoking history. During treatment: educate patients to report new or worsening respiratory symptoms immediately. For high-risk patients or drugs with high ILD incidence, consider chest CT every 6-12 weeks. After ILD diagnosis: follow-up chest CT every 2-4 weeks during acute phase, then every 3-6 months for chronic fibrotic ILD. Pulmonary function tests may help monitor disease progression.",
+          "content_zh": "开始与 ILD 风险相关药物前的基线评估：胸部 CT(用于比较的基线)、肺功能检查、包括肺病史和吸烟史的全面病史。治疗期间：教育患者立即报告新发或加重的呼吸系统症状。对于高危患者或 ILD 发生率高的药物，考虑每 6-12 周行胸部 CT。ILD 诊断后：急性期每 2-4 周随访胸部 CT，慢性纤维化 ILD 则每 3-6 个月。肺功能检查可能有助于监测疾病进展。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_013",
+          "title": "Corticosteroid Therapy Principles",
+          "title_zh": "皮质类固醇治疗原则",
+          "content": "Corticosteroids are the mainstay of DILD treatment. Principles: (1) Start steroids after discontinuing causative anticancer drug; (2) Dose depends on severity: Grade 2: 0.5-1 mg/kg/day prednisone equivalent; Grade 3-4: 1-2 mg/kg/day or pulse methylprednisolone; (3) Duration: minimum 4-6 weeks with gradual tapering; (4) Taper only after clinical and radiographic improvement; (5) For steroid-refractory cases, consider immunosuppressants (mycophenolate mofetil, infliximab, IVIG); (6) Monitor for steroid-related adverse effects including hyperglycemia, infection risk, osteoporosis.",
+          "content_zh": "皮质类固醇是 DILD 治疗的主要手段。原则：(1) 停用致病抗肿瘤药物后开始激素治疗；(2) 剂量取决于严重程度：2 级：0.5-1 mg/kg/天泼尼松等效剂量；3-4 级：1-2 mg/kg/天或甲泼尼龙冲击治疗；(3) 疗程：至少 4-6 周并逐渐减量；(4) 仅在临床和影像学改善后减量；(5) 对于激素难治性病例，考虑免疫抑制剂 (吗替麦考酚酯、英夫利昔单抗、静脉注射免疫球蛋白)；(6) 监测激素相关不良反应包括高血糖、感染风险、骨质疏松。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_014",
+          "title": "Antifibrotic Therapy",
+          "title_zh": "抗纤维化治疗",
+          "content": "For chronic fibrotic DILD, antifibrotic agents may be considered: nintedanib and pirfenidone are commonly used. These agents can slow decline in lung function in idiopathic pulmonary fibrosis (IPF) and progressive fibrosing interstitial lung diseases. They may reduce risk of acute exacerbations and hospitalizations. Evidence in drug-induced ILD is limited but may be considered in selected patients with progressive fibrotic phenotype despite corticosteroid therapy.",
+          "content_zh": "对于慢性纤维化 DILD，可考虑抗纤维化药物：尼达尼布和吡非尼酮是常用药物。这些药物可延缓特发性肺纤维化 (IPF) 和进展性纤维化间质性肺疾病的肺功能下降。它们可能降低急性加重和住院风险。在药物性 ILD 中的证据有限，但对于尽管皮质类固醇治疗仍呈现进展性纤维化表型的选定患者可考虑使用。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        },
+        {
+          "id": "ONCO_SAF_ILD_015",
+          "title": "Pulmonary Rehabilitation",
+          "title_zh": "肺康复",
+          "content": "Pulmonary rehabilitation is recommended for DILD patients to improve symptoms and promote lung injury repair. Components include: (1) Endurance training: cycling or walking at 70-85% of maximum exercise capacity; (2) Interval training: alternating high-intensity exercise with rest or low-intensity periods; (3) Education, nutritional support, psychological support. Monitor oxygen saturation during exercise (target SpO2 >88%, provide supplemental oxygen if SpO2 <85%). Rehabilitation can improve lung function, exercise capacity, and quality of life.",
+          "content_zh": "建议 DILD 患者进行肺康复以改善症状和促进肺损伤修复。内容包括：(1) 耐力训练：以最大运动能力的 70-85% 进行骑车或步行运动；(2) 间歇训练：高强度运动与休息或低强度运动交替进行；(3) 教育、营养支持、心理支持。运动过程中监测血氧饱和度 (目标 SpO2 >88%，如 SpO2 <85% 提供补充氧气)。康复可改善肺功能、运动能力和生活质量。",
+          "origin_layer": "L3",
+          "source": "ILD management consensus",
+          "source_ids": [
+            "ADC_ILD_REVIEW"
+          ]
+        }
+      ]
+    }
+  }
+}

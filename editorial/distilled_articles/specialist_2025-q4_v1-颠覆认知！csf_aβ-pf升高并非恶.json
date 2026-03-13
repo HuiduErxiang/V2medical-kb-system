@@ -1,0 +1,65 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] V1-颠覆认知！CSF Aβ-PF升高并非恶化，仑卡奈单抗治疗AD核心机制揭秘…….docx",
+    "source_key": "SRC-HIST-2025-Q4_V1-颠覆认知！CSF_Aβ-PF升高并非恶",
+    "asset_key": "AST-DOCX-2025-Q4_V1-颠覆认知！CSF_Aβ-PF升高并非恶",
+    "content_hash": "105532cd301b2537",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.426391",
+    "source_size_bytes": 599276
+  },
+  "metadata": {
+    "title": "V1-颠覆认知！CSF Aβ-PF升高并非恶化，仑卡奈单抗治疗AD核心机制揭秘……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "根据纵向随访数据显示，仑卡奈单抗治疗组的CFS Aβ-PF水平在各治疗后时间点均高于安慰剂组（下图左）：",
+      "按18个月时 Aβ-PET Centiloid 评分进行分层分析（下图右）后发现：",
+      "结语：",
+      "未来，随着相关研究的深入，有望进一步优化治疗方案，提高AD治疗的精准性和有效性，为更多患者带来福音。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": [
+    "第18届阿尔茨海默病临床试验会议（CTAD）上公布了最新研究结果[1]：运通过用超灵敏脑脊液（CSF）Aβ-PF检测方法对仑卡奈单抗Ⅲ期临床研究（Clarity AD研究）的CSF亚组进行分析，首次精准解析了仑卡奈单抗对CSF Aβ-PF以及下游AD生物标志物的影响，进一步揭示了仑卡奈单抗延缓AD进展的机制，为AD治疗提供了突破性循证依据。",
+    "这一结果彻底颠覆了“标志物升高即病情恶化”的传统认知，反过来证明仑卡奈单抗确实发挥了靶向作用，支持了“动员假说”。",
+    "而在仑卡奈单抗治疗组中，上述显著正相关性被完全破坏，所有指标的相关性分析结果均无统计学意义。同时，仑卡奈单抗治疗组的下游AD生物标志物水平均呈下降趋势，提示Aβ-PF的毒性作用被抑制，其介导的下游病理进展被阻断。",
+    "这一结果进一步证实，仑卡奈单抗不仅能结合Aβ-PF，还能有效中和其毒性，切断其介导的病理连锁反应，从源头阻止了神经退行性变的加重。"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "product": "trastuzumab_deruxtecan",
+    "version": "0.1.0"
+  },
+  "expressions": {
+    "efficacy": [],
+    "safety": [],
+    "moa": [],
+    "positioning": []
+  }
+}

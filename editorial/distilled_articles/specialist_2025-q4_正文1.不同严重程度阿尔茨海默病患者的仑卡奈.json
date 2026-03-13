@@ -1,0 +1,69 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] 正文1.不同严重程度阿尔茨海默病患者的仑卡奈单抗治疗及其相关血浆生物标志物监测：中国多中心真实世界研究.docx",
+    "source_key": "SRC-HIST-2025-Q4_正文1.不同严重程度阿尔茨海默病患者的仑卡奈",
+    "asset_key": "AST-DOCX-2025-Q4_正文1.不同严重程度阿尔茨海默病患者的仑卡奈",
+    "content_hash": "d1cbefed2b6902b5",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.533853",
+    "source_size_bytes": 996879
+  },
+  "metadata": {
+    "title": "正文1.不同严重程度阿尔茨海默病患者的仑卡奈单抗治疗及其相关血浆生物标志物监测：中国多中心真实世界研究",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论",
+      "conclusion: 未来研究方向"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 直接陈述"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "方法：这是一项多中心前瞻性队列研究，共纳入68例AD患者。分别在基线（V0）、2.5个月（V1）及7个月（V2）时评估认知量表及血浆生物标志物。",
+      "讨论：研究结果支持仑卡奈单抗在早期AD患者中的短期疗效与安全性，并提示血浆生物标志物可作为治疗反应性指标。",
+      "研究亮点：",
+      "在基线（V0）、治疗2.5个月（V1）及治疗7个月（V2）时，对患者进行以下认知评估：",
+      "3.5.3 CDR分级",
+      "缩写说明：APOE：载脂蛋白E；BMI：体质指数；CDR：临床痴呆评定量表；SUVR：标准摄取值比（参考区域：小脑全体）。",
+      "缩写说明：ARIA-E：淀粉样蛋白相关影像异常–水肿；ARIA-H：淀粉样蛋白相关影像异常–含铁血黄素沉积。",
+      "图3 血浆生物标志物与认知评分的相关性分析及其预测价值评估。AUC：曲线下面积"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "讨论：研究结果支持仑卡奈单抗在早期AD患者中的短期疗效与安全性，并提示血浆生物标志物可作为治疗反应性指标。"
+  ]
+}

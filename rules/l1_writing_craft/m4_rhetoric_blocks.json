@@ -1,0 +1,153 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L1",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L1 — 修辞积木通用原型 (Universal Rhetoric Block Prototypes)",
+  "version": "2.0",
+  "description": "跨领域通用的修辞积木原型。定义每种积木的修辞目的和结构功能。领域实例由L2叠加，M2→M4映射亦由L2定义。",
+  "m4_rhetoric_prototypes": [
+    {
+      "prototype_id": "M4_P_PROBLEM_STATEMENT",
+      "name": "[问题陈述块]",
+      "description": "以宏观数据或具体痛点建立问题的严重性与紧迫性，激发读者关注。适用于任何需要「先立困境」的开头。"
+    },
+    {
+      "prototype_id": "M4_P_MECHANISM_EXPLAINER",
+      "name": "[机制解析块]",
+      "description": "深入解释事物在底层如何运作——技术原理、因果链条或系统架构。读者读完应理解「为什么这样设计」。"
+    },
+    {
+      "prototype_id": "M4_P_CORE_EVIDENCE",
+      "name": "[核心证据展示块]",
+      "description": "以严谨口吻呈现关键定量证据：效果数据、基准测试、A/B实验结果等，形成论点的事实基座。"
+    },
+    {
+      "prototype_id": "M4_P_COMPETITIVE_COMPARE",
+      "name": "[横向对比块]",
+      "description": "将目标方案与主流替代方案进行结构化对比，突出差异化优势或揭示各方案的适用边界。"
+    },
+    {
+      "prototype_id": "M4_P_OBJECTIVE_METRICS",
+      "name": "[客观指标分析块]",
+      "description": "展示不依赖主观判断的硬核指标——仪器测量、自动化评分、物理检测结果，增强论证的不可反驳性。"
+    },
+    {
+      "prototype_id": "M4_P_AUTHORITY_CITATION",
+      "name": "[权威引用块]",
+      "description": "引用行业标准、权威机构发布、顶级出版物或公认专家观点进行背书，强化论点的外部合法性。"
+    },
+    {
+      "prototype_id": "M4_P_RISK_DEFENSE",
+      "name": "[风险防守块]",
+      "description": "正面呈现已知风险、副作用或局限性，并提供应对策略或管理方案，将「潜在弱点」转化为「透明可控」。"
+    },
+    {
+      "prototype_id": "M4_P_TARGET_PROFILE",
+      "name": "[目标画像块]",
+      "description": "明确界定方案最适合的受众类型、使用场景或前置条件，帮助读者判断「这是否适合我」。"
+    },
+    {
+      "prototype_id": "M4_P_EVOLUTION_NARRATIVE",
+      "name": "[演变叙事块]",
+      "description": "梳理方案的设计演变史、关键决策节点与战略博弈，揭示表面数据背后的商业或技术逻辑。"
+    },
+    {
+      "prototype_id": "M4_P_DATA_DEEP_DIVE",
+      "name": "[数据深度拆解块]",
+      "description": "对关键数据进行图文穿插式的统计学/方法论拆解，直接分析置信区间、效应量、偏差来源等技术细节。"
+    },
+    {
+      "prototype_id": "M4_P_CROSS_AUTHORITY",
+      "name": "[跨权威分歧块]",
+      "description": "当不同权威机构对同一事物给出相反结论时，先放大分歧的戏剧张力，再用体系差异解释分歧的合理性，最后锚定目标市场的权威共识。"
+    },
+    {
+      "prototype_id": "M4_P_NEGATIVE_RECOVERY",
+      "name": "[负面结果修复块]",
+      "description": "先正面承认不利结果，再通过多维证据重排（特异性、分层、替代指标），完成从「单点受挫」到「整体价值仍成立」的叙事修复。"
+    },
+    {
+      "prototype_id": "M4_P_LONG_TERM_FRAMING",
+      "name": "[长期主义框架块]",
+      "description": "通过二元叙事将方案的长期可持续价值与短期一次性收益进行对照，引导读者从长期视角评估决策。"
+    },
+    {
+      "prototype_id": "M4_P_FRONTIER_LADDER",
+      "name": "[前沿证据阶梯块]",
+      "description": "先用「空白地带/唯一方案」等高张力命名锁定未满足需求，再按理论→验证→实践逐级递进，构建从可解释机制到可迁移价值的说服闭环。"
+    },
+    {
+      "prototype_id": "M4_P_MULTI_DIM_VALUE",
+      "name": "[多维价值正当化块]",
+      "description": "有意识地将论证从单一核心指标扩展到成本、体验、可持续性与可及性等多维度，形成全面的价值框架。"
+    },
+    {
+      "prototype_id": "M4_P_INNOVATION_BRIDGE",
+      "name": "[创新桥接块]",
+      "description": "先通过结构创新或技术差异解释方案的理论优势，再下接实测数据，最终上收为性能与可靠性的双重领先，完成从创新叙事到实践结论的闭环。"
+    },
+    {
+      "prototype_id": "M4_P_CINEMATIC_OPENING",
+      "name": "[电影级特写开场块]",
+      "description": "以精确的时间、地点、人物和极具画面感的动作细节开篇，像电影镜头一样将读者拉入事件现场，创造即时的沉浸感。",
+      "source_author": "戴老板"
+    },
+    {
+      "prototype_id": "M4_P_HISTORICAL_ECHO",
+      "name": "[历史回音壁块]",
+      "description": "将当前事件与数年或数十年前的相似历史事件进行对照，揭示事物发展的周期性规律或宿命感，增加论述的纵深。",
+      "source_author": "戴老板"
+    },
+    {
+      "prototype_id": "M4_P_TAXONOMY_TEARDOWN",
+      "name": "[流派图谱拆解块]",
+      "description": "将复杂的行业生态或竞争格局高度抽象并命名为若干形象流派，逐一拆解其打法、特征和代表案例，帮助读者建立全景认知。",
+      "source_author": "戴老板"
+    },
+    {
+      "prototype_id": "M4_P_CONSENSUS_TEARDOWN",
+      "name": "[共识拆解块]",
+      "description": "先陈述当前市场或大众的普遍共识，然后用一个简单的常识比喻或底层逻辑指出其荒谬之处，瓦解读者的思维定式。",
+      "source_author": "空之客"
+    },
+    {
+      "prototype_id": "M4_P_SOURCE_TRACING",
+      "name": "[溯源求证块]",
+      "description": "面对二手信息的发酵或恐慌，直接跳过媒体解读，寻找并展示最原始的文件、数据或监管文件，以一手材料作为立论基础。",
+      "source_author": "空之客"
+    },
+    {
+      "prototype_id": "M4_P_DIMENSIONAL_REDUCTION",
+      "name": "[降维打击块]",
+      "description": "将复杂的技术或商业竞争还原为最基础的资源、产能或常识问题，剥离技术光环和叙事泡沫，回归本质。",
+      "source_author": "空之客"
+    },
+    {
+      "prototype_id": "M4_P_DRAMATIC_FRAG_HOOK",
+      "name": "[极简戏剧化开篇块]",
+      "description": "以1-2个极简断句（常为不完整句）开篇，制造即时悬念或先声夺人地抛出结论，然后再展开上下文。",
+      "source_author": "阿基米德Biotech"
+    },
+    {
+      "prototype_id": "M4_P_CONTRARIAN_PIVOT",
+      "name": "[反共识转折块]",
+      "description": "先引入一个被广泛接受的事实或近期热点，然后以'然而''其实'等词猛然转折，引出与主流认知相反的真实分析。",
+      "source_author": "阿基米德Biotech"
+    },
+    {
+      "prototype_id": "M4_P_DATA_GATLING",
+      "name": "[数据加特林块]",
+      "description": "以高密度、快节奏连续输出一串统计数字、百分比或实验结果，用数据量级本身形成压倒性的说服力。",
+      "source_author": "阿基米德Biotech"
+    },
+    {
+      "prototype_id": "M4_P_RUTHLESS_TEARDOWN",
+      "name": "[冷酷拆解块]",
+      "description": "剥去营销包装和叙事泡沫，直接暴露底层现实——揭示估值或炒作与实际业绩之间的落差，语气冷静但结论犀利。",
+      "source_author": "阿基米德Biotech"
+    }
+  ]
+}

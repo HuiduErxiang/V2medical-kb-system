@@ -1,0 +1,1063 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "_meta": {
+    "generated_from": "85 [target_drug] articles in 往期文章/",
+    "corpus_span": "2024-Q1 to 2026-Q1",
+    "audiences_observed": [
+      "专科医师",
+      "患者教育",
+      "基层医护",
+      "公众科普"
+    ],
+    "sub_categories_observed": [
+      "主张_证据",
+      "叙事_反思",
+      "对比_推荐",
+      "新闻_评论",
+      "场景_指导",
+      "问题_解决"
+    ],
+    "total_articles_analyzed": 85,
+    "unique_titles_after_dedup": 72,
+    "purpose": "Reverse-engineered thesis derivation rules for M1 layer — how a specific thesis gets derived from evidence + audience + play selection"
+  },
+  "thesis_derivation_rules": [
+    {
+      "rule_id": "THESIS_R1",
+      "name": "权威来源首发机制",
+      "audience": [
+        "专科医师"
+      ],
+      "sub_category": "主张_证据",
+      "pattern": "以顶级期刊/会议名称开篇作为权威信号，引出该来源独家披露的机制或数据发现。论点核心是「该权威来源证实了X」。",
+      "template": "{顶刊/会议名称}{修饰词}！{药物}{核心机制/发现}，{下游意义}",
+      "template_variants": [
+        "{来源}重磅！{药物}{发现}",
+        "{来源}最具看点报告，{对比发现}",
+        "《{期刊}》{专题}重磅解读！{核心问题}"
+      ],
+      "examples": [
+        "Nature重磅！[目标药物]作用机制全景揭秘，小胶质细胞被精准“拿捏”了",
+        "AAIC最具看点报告，两款抗Aβ药物ARIA发生率的间接比较，[目标药物]赢了",
+        "《柳叶刀》AD专辑重磅解读！如何破解抗Aβ药物的“价值之争”"
+      ],
+      "trigger_evidence_types": [
+        "moa",
+        "biomarker",
+        "head_to_head_comparison"
+      ],
+      "trigger_conditions": "证据来自Nature/Lancet/AAIC等顶级来源，且含有首发或独家数据",
+      "recommended_m3_plays": [
+        "M3_PLAY_机制中枢",
+        "M3_PLAY_重建监管"
+      ],
+      "derivation_logic": "当证据出处本身具备极高权威性时，论点应借助来源权威性为核心数据背书。来源名称前置为「注意力锚点」，核心发现紧随其后。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R2",
+      "name": "量化优势锚定",
+      "audience": [
+        "专科医师",
+        "基层医护"
+      ],
+      "sub_category": "主张_证据",
+      "pattern": "以具体数字（百分比/倍数）作为论点锚，直接呈现量化差距。论点核心是「X指标差距达Y」。",
+      "template": "{疗效/安全性指标}{量化差距}！{药物}{优势结论}",
+      "template_variants": [
+        "疗效提高{N}倍，{安全指标}大幅下降！{药物}又一重要证据出炉",
+        "{持续vs停药}，效果竟差{N}%！",
+        "早诊早治获益超{N}倍！{机构}披露{药物}最新临床疗效"
+      ],
+      "examples": [
+        "疗效提高[N]倍，ARIA发生率大幅下降！[目标药物]又一重要证据出炉",
+        "抗Aβ单抗治疗到底该不该斑块清除后停药？研究显示「持续治疗获益」较「停药」差距竟有[X]%！",
+        "早诊早治获益超[N]倍！[国内知名三甲医院]披露[目标药物]最新临床疗效"
+      ],
+      "trigger_evidence_types": [
+        "efficacy",
+        "subgroup_analysis",
+        "long_term_followup"
+      ],
+      "trigger_conditions": "数据中存在可量化的对比差距（≥2倍或≥30%绝对差值），且差距具有临床意义",
+      "recommended_m3_plays": [
+        "M3_PLAY_跨试验参",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "当证据含有鲜明的量化对比时，将最具冲击力的数字前置为论点核心。数字本身即论点——无需修饰，让数据说话。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R3",
+      "name": "安全性差异化定位",
+      "audience": [
+        "专科医师"
+      ],
+      "sub_category": [
+        "主张_证据",
+        "对比_推荐"
+      ],
+      "pattern": "将ARIA发生率的差异作为核心竞争论点，定位[目标药物]为「更安全的选择」。",
+      "template": "{对比框架}！{药物}的{安全性指标}{优势程度}",
+      "template_variants": [
+        "AD新药对比！{药物}的「安全性」还是太突出了",
+        "{药物}ARIA发生风险显著更低，{临床意义}",
+        "{药物}的安全性优势更明显？这项重磅研究给出了肯定的答案"
+      ],
+      "examples": [
+        "AD新药对比！[目标药物]的「安全性」还是太突出了",
+        "[目标药物]和[竞品药物]的巅峰对决！最新研究证明：[目标药物]ARIA发生风险显著更低，适合大多数患者人群",
+        "[目标药物]的安全性优势更明显？这项重磅研究给出了肯定的答案"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "head_to_head_comparison",
+        "aria_data"
+      ],
+      "trigger_conditions": "存在[目标药物]与竞品（[竞品药物]）的ARIA发生率直接或间接比较数据",
+      "recommended_m3_plays": [
+        "M3_PLAY_跨试验参",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "在抗Aβ赛道中，安全性（尤其ARIA）是临床决策的关键分野。当证据指向安全性差异时，论点应直接打「更安全」定位牌，将安全优势从数据层面提升为战略定位。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R4",
+      "name": "中国真实世界验证",
+      "audience": [
+        "专科医师",
+        "患者教育"
+      ],
+      "sub_category": "主张_证据",
+      "pattern": "以中国本土RWE数据为核心论据，强调「国际证据在中国人群中得到验证」或「中国数据填补空白」。",
+      "template": "{中国机构/样本规模}{研究类型}！{药物}{中国特异性结论}",
+      "template_variants": [
+        "{N}例中国患者实证！{药物}中国真实世界研究带来这些好消息",
+        "多中心真实世界研究填补国内空白：{药物}为{患者群体}带来{获益}",
+        "{机构}研究亮相{会议}！{药物}治疗中国AD患者的真实世界疗效如何？"
+      ],
+      "examples": [
+        "[N]例中国患者实证！[目标药物]中国真实世界研究带来这些好消息",
+        "多中心真实世界研究填补国内空白：[目标药物]为阿尔茨海默病患者带来认知改善新曙光",
+        "[国内知名三甲医院]研究亮相AAIC大会！[目标药物]治疗中国AD患者的真实世界疗效如何？",
+        "[目标药物]可扭转中国早期阿尔茨海默病患者症状，中国患者用药更安全，中国多中心研究成果出炉！",
+        "AD发病年龄越早，认知下降越快！[研究团队][目标药物]真实世界研究发表"
+      ],
+      "trigger_evidence_types": [
+        "rwe",
+        "china_data",
+        "subgroup_ethnicity"
+      ],
+      "trigger_conditions": "存在来自中国医院/中国患者的真实世界数据，或国际研究中的亚洲/中国亚组分析",
+      "recommended_m3_plays": [
+        "M3_PLAY_证据缺口",
+        "M3_PLAY_跨试验参"
+      ],
+      "derivation_logic": "中国临床医师对「国际数据能否外推至中国人群」高度敏感。当存在中国本土RWE时，论点应强调「中国验证」的独特价值，将国际RCT到中国RWE的证据链作为核心叙事。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R5",
+      "name": "机制首发揭秘",
+      "audience": [
+        "专科医师"
+      ],
+      "sub_category": "主张_证据",
+      "pattern": "以「首次证实」或「颠覆认知」为开篇信号，揭示药物作用的深层生物学机制。",
+      "template": "{首发/颠覆修饰}！{药物}{具体分子机制}{验证结论}",
+      "template_variants": [
+        "首次！{药物}{机制}被证实，{靶点}都被干掉了",
+        "颠覆认知！{生物标志物变化}并非恶化，{药物}治疗{疾病}核心机制揭秘",
+        "{药物}清除Aβ背后的秘密！{效应细胞}成{疾病}治疗关键"
+      ],
+      "examples": [
+        "首次！[目标药物]全面清除Aβ机制被证实，寡聚体和斑块都被干掉了",
+        "颠覆认知！CSF Aβ-PF升高并非恶化，[目标药物]治疗AD核心机制揭秘",
+        "[目标药物]清除Aβ背后的秘密！小胶质细胞成阿尔茨海默病治疗关键",
+        "分子机制进一步明确后，[目标药物]成为了抗Aβ治疗中的唯一"
+      ],
+      "trigger_evidence_types": [
+        "moa",
+        "biomarker",
+        "preclinical"
+      ],
+      "trigger_conditions": "证据揭示了药物作用的新机制通路，或纠正了此前对生物标志物变化的误读",
+      "recommended_m3_plays": [
+        "M3_PLAY_机制中枢",
+        "M3_PLAY_跨试验参"
+      ],
+      "derivation_logic": "机制类证据需要转化为临床叙事。论点应抓住「首次/颠覆」的新闻性，同时将机制解释到「为什么这个药更好」的临床逻辑层面。关键句式：机制发现 → 临床意义。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R6",
+      "name": "竞品失败反衬",
+      "audience": [
+        "专科医师",
+        "基层医护"
+      ],
+      "sub_category": "新闻_评论",
+      "pattern": "以竞品的监管失败/安全性问题为切入，反衬[目标药物]的优势定位。论点核心是「竞品倒下，本品胜出」。",
+      "template": "{竞品}{负面事件}，{本品}{正面定位}",
+      "template_variants": [
+        "{竞品}被拒{N}天后，{本品}获批！",
+        "{本品}欧盟获批！{竞品}恐怕追不上了",
+        "抗Aβ治疗终局之战，在欧洲已经分出胜负！",
+        "欧盟药品监管机构拒绝批准{竞品}，安全风险成核心考量"
+      ],
+      "examples": [
+        "[竞品药物]被拒[N]天后，[目标药物]获批！",
+        "[目标药物]欧盟获批！[竞品药物]恐怕追不上了",
+        "抗Aβ治疗终局之战，在欧洲已经分出胜负！",
+        "欧盟药品监管机构拒绝批准[竞品公司]阿尔茨海默病新药[竞品商品名]，安全风险成核心考量"
+      ],
+      "trigger_evidence_types": [
+        "regulatory",
+        "competitor_negative",
+        "safety"
+      ],
+      "trigger_conditions": "竞品（[竞品药物]/[竞品商品名]）遭遇监管拒绝、安全性警告、或市场退出等负面事件",
+      "recommended_m3_plays": [
+        "M3_PLAY_重建监管",
+        "M3_PLAY_跨试验参"
+      ],
+      "derivation_logic": "竞品负面事件是最佳定位窗口。论点不应直接攻击竞品，而是通过并列叙事（竞品被拒 ↔ 本品获批）让读者自行得出「本品更优」的结论。时间线并置是核心手法。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R7",
+      "name": "反直觉追问",
+      "audience": [
+        "专科医师"
+      ],
+      "sub_category": "新闻_评论",
+      "pattern": "以看似合理但实际错误的假设作为标题疑问，引发认知冲突，再通过文章论证纠正。",
+      "template": "{看似合理的假设}？{暗示颠覆性答案}",
+      "template_variants": [
+        "{指标A}越高，{指标B}的效率越高？",
+        "能{看似优势的特性}的{药物类别}，真的是{治疗标准}吗？",
+        "{竞品}比{本品}更高的{指标}，背后透露了哪些信息？",
+        "同样是{药物类别}，{本品}和{竞品}有啥区别？一个{正面标签}，一个是{负面标签}"
+      ],
+      "examples": [
+        "ARIA发生率越高，清除Aβ的效率越高？",
+        "能停药的Aβ抗体，真的是DMT治疗吗？",
+        "[竞品药物]比[目标药物]更高的ARIA发生率，背后透露了哪些信息？",
+        "同样是Aβ抗体，[目标药物]和[竞品药物]有啥区别？一个长期主义，一个是一锤子买卖"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "moa",
+        "competitor_comparison",
+        "treatment_paradigm"
+      ],
+      "trigger_conditions": "存在可被反直觉重构的临床假设，尤其是竞品宣传中隐含的逻辑漏洞",
+      "recommended_m3_plays": [
+        "M3_PLAY_终点失利",
+        "M3_PLAY_跨试验参"
+      ],
+      "derivation_logic": "医学专业读者对「直觉悖论」有天然好奇心。论点应将竞品的表面优势（如能停药、清除率高）重新框架为隐患（如非持续治疗、ARIA风险），通过提问制造认知张力。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R8",
+      "name": "照护者情感叙事",
+      "audience": [
+        "患者教育",
+        "公众科普"
+      ],
+      "sub_category": "叙事_反思",
+      "pattern": "以照护者第一人称视角切入，用具体生活场景呈现情感痛点，隐含治疗希望。",
+      "template": "{照护者关系}{情感痛点场景}，{转折/希望}",
+      "template_variants": [
+        "{亲属}只是得了阿尔茨海默病，我却变成了“{身份异化}”",
+        "{亲属}得了老年痴呆，我做了无数场噩梦，好在{希望}",
+        "守护{患者代称}，{照护者}与阿尔茨海默病的赛跑",
+        "照护者的坚守：{疾病}家庭的新治疗选择与希望"
+      ],
+      "examples": [
+        "父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”",
+        "母亲得了老年痴呆，我做了无数场噩梦，好在梦里的一切没有发生",
+        "守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑",
+        "照护者的坚守：阿尔兹海默症家庭的新治疗选择与希望"
+      ],
+      "trigger_evidence_types": [
+        "patient_story",
+        "caregiver_burden",
+        "treatment_access"
+      ],
+      "trigger_conditions": "目标受众为患者家属/公众，且有可用的真实照护者故事或典型照护场景素材",
+      "recommended_m3_plays": [
+        "M3_PLAY_证据缺口",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "患者教育类论点必须从情感入口进入，而非从数据入口。论点应聚焦照护者（而非患者）的内心世界，用一个具体、私密的生活场景建立情感连接，再自然引出治疗希望。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R9",
+      "name": "症状认知纠偏",
+      "audience": [
+        "患者教育",
+        "公众科普"
+      ],
+      "sub_category": "叙事_反思",
+      "pattern": "挑战公众对AD的刻板印象（如「只是老糊涂」），呈现被忽视的早期信号，呼吁早筛。",
+      "template": "{常见误解/刻板印象}！{被忽视的真相}，{行动呼吁}",
+      "template_variants": [
+        "不只是{刻板症状}！阿尔茨海默病还有这些隐蔽症状",
+        "{日常表现}……别以为是正常衰老，还可能是阿尔茨海默病",
+        "被误解的“{俗称}”，阿尔茨海默病并非{刻板认知}",
+        "别让这些错误认知，耽误了病情！盘点{疾病}早期筛查误区"
+      ],
+      "examples": [
+        "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状",
+        "丢三落四，说话不利索……别以为是正常衰老，还可能是阿尔茨海默病",
+        "被误解的“老年痴呆”，阿尔茨海默病并非老年专属",
+        "别让这些错误认知，耽误了病情！盘点阿尔茨海默病早期筛查误区"
+      ],
+      "trigger_evidence_types": [
+        "epidemiology",
+        "screening",
+        "early_diagnosis"
+      ],
+      "trigger_conditions": "目标为提升公众疾病认知，无需特定临床数据，可基于疾病通识教育",
+      "recommended_m3_plays": [
+        "M3_PLAY_证据缺口",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "公众科普论点的核心是「认知差距」——你以为的 vs 事实上的。论点应从公众最大的认知误区切入，制造「原来如此」的顿悟感，自然导向早筛行动。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R10",
+      "name": "续停药争议裁决",
+      "audience": [
+        "专科医师",
+        "患者教育"
+      ],
+      "sub_category": [
+        "主张_证据",
+        "叙事_反思"
+      ],
+      "pattern": "直接回应「是否应停药」这一核心临床争议，用数据给出倾向性但非绝对化的答案。",
+      "template": "{停药相关争议问题}？{数据支持的答案}",
+      "template_variants": [
+        "{斑块清除后}，抗Aβ治疗到底该不该停药？研究显示：{量化对比}",
+        "停药超过{N}年，{治疗}的获益——就全没了？！",
+        "为什么{条件达成}还不能停药？{治疗}的长期获益，超乎想象",
+        "抗Aβ治疗能不能停药，其实主动权一直在患者手上！"
+      ],
+      "examples": [
+        "斑块清除后，抗Aβ治疗到底该不该停药？研究显示：不停 vs 停，效果竟差[X]%！",
+        "停药超过两年，AD抗Aβ治疗的获益——就全没了？！",
+        "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象",
+        "抗Aβ治疗能不能停药，其实主动权一直在患者手上！"
+      ],
+      "trigger_evidence_types": [
+        "long_term_followup",
+        "discontinuation_data",
+        "efficacy"
+      ],
+      "trigger_conditions": "存在治疗持续/中断的对比数据，或竞品以「可停药」为卖点时需要反击",
+      "recommended_m3_plays": [
+        "M3_PLAY_终点失利",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "续停药是抗Aβ赛道的核心叙事战场——竞品（[竞品药物]）以「清除后可停」为卖点，[目标药物]需将「持续治疗」重新定义为优势。论点应用数据证明停药=获益流失，将「持续治疗」定位为「长期主义」的正面标签。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R11",
+      "name": "监管里程碑叙事",
+      "audience": [
+        "专科医师",
+        "基层医护"
+      ],
+      "sub_category": "新闻_评论",
+      "pattern": "以监管审批事件（获批/被拒/大反转）为时间锚点，解读背后的科学与政策逻辑。",
+      "template": "{监管事件}！{背后的逻辑/意义}",
+      "template_variants": [
+        "大反转！{机构}建议批准{药物}，背后的逻辑是什么？",
+        "{药物}是全球唯一在{多地区}获批的{药物类别}",
+        "{新药}获批上市，照亮{疾病}患者{希望隐喻}"
+      ],
+      "examples": [
+        "大反转！EMA建议批准[目标药物]，背后的逻辑是什么？",
+        "为什么[目标药物]是更好的阿尔茨海默病新药？这是全球唯一在中、美、欧三地获批的抗Aβ药物",
+        "阿尔兹海默症新药获批上市，照亮患者记忆之路"
+      ],
+      "trigger_evidence_types": [
+        "regulatory",
+        "market_access"
+      ],
+      "trigger_conditions": "发生重大监管审批事件（EMA/FDA/NMPA批准或拒绝），尤其是出现戏剧性反转时",
+      "recommended_m3_plays": [
+        "M3_PLAY_重建监管",
+        "M3_PLAY_跨试验参"
+      ],
+      "derivation_logic": "监管决策是医学界的「判决书」。论点应将审批结果解读为对药物价值的第三方背书，同时点明审批逻辑（安全性/有效性权衡），使监管事件成为学术叙事的一部分。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R12",
+      "name": "临床场景处方指导",
+      "audience": [
+        "专科医师",
+        "基层医护"
+      ],
+      "sub_category": "场景_指导",
+      "pattern": "针对特定高风险/高频临床场景，提供具体可操作的用药决策指导。",
+      "template": "{特定临床场景/顾虑}？{具体管理策略}",
+      "template_variants": [
+        "{疾病}用药怕{不良反应}？{高风险亚组}患者该这么办！",
+        "使用{药物}，安全吗？",
+        "高效且安全！{药物}的{不良反应}管理临床策略"
+      ],
+      "examples": [
+        "阿尔茨海默病用药怕ARIA？E4纯合子患者该这么办！",
+        "使用[目标药物]，安全吗？",
+        "高效且安全！[目标药物]的ARIA管理临床策略"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "clinical_management",
+        "subgroup_analysis"
+      ],
+      "trigger_conditions": "存在针对特定患者亚组（如ApoE4纯合子、合并抗栓药物）的安全性管理数据",
+      "recommended_m3_plays": [
+        "M3_PLAY_强化收益",
+        "M3_PLAY_证据缺口"
+      ],
+      "derivation_logic": "场景指导类论点必须从临床医师的「处方焦虑」出发——他们最怕什么？ARIA。论点应直接命名恐惧（而非回避），然后提供可操作的管理方案，降低处方决策的心理门槛。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R13",
+      "name": "患者赋权与恐惧消解",
+      "audience": [
+        "患者教育"
+      ],
+      "sub_category": [
+        "问题_解决",
+        "叙事_反思",
+        "场景_指导"
+      ],
+      "pattern": "直接点名患者/家属的核心恐惧（如脑出血、副作用），用通俗语言进行安抚和赋权。",
+      "template": "{患者恐惧}？{安抚措辞}，{赋权信息}",
+      "template_variants": [
+        "{疾病}新药会导致{恐惧副作用}？没那么夸张，也不必过度担心",
+        "当{日常场景}，我们做{家属角色}的该干些什么？",
+        "临床处方最关心什么？{已知顾虑}之外的{药物}优势",
+        "{治疗}的治疗窗口很可能特别长，{数据来源}提供关键证据"
+      ],
+      "examples": [
+        "阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心",
+        "当家中老人记性变差，我们做子女的该干些什么？",
+        "临床处方最关心什么？疗效与ARIA风险之外的[目标药物]优势",
+        "阿尔茨海默病的治疗窗口很可能特别长，抗Aβ治疗亚洲人群数据公布，提供关键证据"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "patient_reported_outcomes",
+        "treatment_access"
+      ],
+      "trigger_conditions": "目标受众存在对新药的恐惧或误解，需要通过科普化语言进行认知校准",
+      "recommended_m3_plays": [
+        "M3_PLAY_证据缺口",
+        "M3_PLAY_强化收益"
+      ],
+      "derivation_logic": "患者端论点的核心挑战是「恐惧管理」。论点应先承认恐惧的合理性（不否认副作用存在），然后用数据和类比将风险重新定义为「可控」，最终将决策主动权交还患者/家属。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R14",
+      "name": "疾病叙事与希望隐喻",
+      "audience": [
+        "患者教育",
+        "公众科普"
+      ],
+      "sub_category": "叙事_反思",
+      "pattern": "以隐喻/意象构建疾病与治疗的叙事张力（如「赛跑」「刹车」「曙光」），传递情感化的治疗希望。",
+      "template": "{疾病意象/隐喻}，{治疗希望}",
+      "template_variants": [
+        "守护记忆的新药，{疾病}曙光来临",
+        "{疾病}新药来了！为记忆的持续丢失，踩下刹车",
+        "如果不能留住{患者}的记忆，那就让它晚点走",
+        "预见未来，从容应对：早期筛查助力{疾病}家庭重塑"
+      ],
+      "examples": [
+        "守护记忆的新药，阿尔茨海默病曙光来临",
+        "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车",
+        "如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（[国内知名三甲医院]）",
+        "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑"
+      ],
+      "trigger_evidence_types": [
+        "efficacy",
+        "patient_story",
+        "treatment_access"
+      ],
+      "trigger_conditions": "面向非专业受众传递治疗希望，无需精确数据，以情感共鸣为优先",
+      "recommended_m3_plays": [
+        "M3_PLAY_证据缺口",
+        "M3_PLAY_强化收益"
+      ],
+      "_note": "公众类论点需要将医学获益翻译为生活语言。「延缓认知下降[X]%」对公众无感，但「为记忆踩下刹车」有感。论点应找到一个核心隐喻（刹车/曙光/赛跑），用它贯穿全文。",
+      "origin_layer": "L3"
+    },
+    {
+      "rule_id": "THESIS_R15",
+      "name": "合并用药安全验证",
+      "audience": [
+        "专科医师",
+        "患者教育"
+      ],
+      "sub_category": "主张_证据",
+      "pattern": "针对特定合并用药场景（如抗血栓药物），用数据证实安全性不增加风险。",
+      "template": "{高风险合并用药场景}，{安全性验证结论}",
+      "template_variants": [
+        "重磅研究数据！{高风险人群}，合并使用不会增加抗Aβ治疗ARIA发生的风险",
+        "AAIC后续报道：{合并用药场景}"
+      ],
+      "examples": [
+        "重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险",
+        "AAIC后续报道：血栓合并用药"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "subgroup_analysis",
+        "comorbidity"
+      ],
+      "trigger_conditions": "存在合并用药（抗凝/抗血小板）与ARIA风险的相关性分析数据",
+      "recommended_m3_plays": [
+        "M3_PLAY_强化收益",
+        "M3_PLAY_证据缺口"
+      ],
+      "derivation_logic": "合并用药是阻碍处方的关键「最后一公里」障碍。论点应精准命名临床医师的合并用药顾虑，然后用亚组数据消除这一障碍。",
+      "origin_layer": "L3"
+    }
+  ],
+  "thesis_angle_taxonomy": {
+    "description": "Classification of all observed thesis angles across 85 articles, based on the core argumentative strategy encoded in the title",
+    "angles": [
+      {
+        "angle_id": "ANGLE_SAFETY_SUPERIORITY",
+        "description": "以ARIA发生率等安全性指标为核心，定位[目标药物]为更安全的抗Aβ选择",
+        "frequency": 14,
+        "typical_audiences": [
+          "专科医师",
+          "基层医护"
+        ],
+        "typical_sub_categories": [
+          "主张_证据",
+          "对比_推荐"
+        ],
+        "representative_title": "AD新药对比！[目标药物]的「安全性」还是太突出了"
+      },
+      {
+        "angle_id": "ANGLE_MECHANISM_REVELATION",
+        "description": "揭示药物的分子/细胞作用机制（小胶质细胞、Aβ清除通路等），建立学术深度认知",
+        "frequency": 8,
+        "typical_audiences": [
+          "专科医师"
+        ],
+        "typical_sub_categories": [
+          "主张_证据"
+        ],
+        "representative_title": "首次！[目标药物]全面清除Aβ机制被证实，寡聚体和斑块都被干掉了"
+      },
+      {
+        "angle_id": "ANGLE_CHINA_RWE_VALIDATION",
+        "description": "以中国本土真实世界证据验证国际RCT结论，强调中国特异性获益/安全性",
+        "frequency": 10,
+        "typical_audiences": [
+          "专科医师",
+          "患者教育"
+        ],
+        "typical_sub_categories": [
+          "主张_证据"
+        ],
+        "representative_title": "[N]例中国患者实证！[目标药物]中国真实世界研究带来这些好消息"
+      },
+      {
+        "angle_id": "ANGLE_COMPETITOR_DEFEAT",
+        "description": "通过竞品（[竞品药物]）的监管失败、安全性问题反衬[目标药物]的优势定位",
+        "frequency": 8,
+        "typical_audiences": [
+          "专科医师",
+          "基层医护"
+        ],
+        "typical_sub_categories": [
+          "新闻_评论"
+        ],
+        "representative_title": "[竞品药物]被拒[N]天后，[目标药物]获批！"
+      },
+      {
+        "angle_id": "ANGLE_QUANTIFIED_EFFICACY",
+        "description": "以具体数字（倍数/百分比）锚定疗效优势，让数据本身成为论点",
+        "frequency": 7,
+        "typical_audiences": [
+          "专科医师"
+        ],
+        "typical_sub_categories": [
+          "主张_证据"
+        ],
+        "representative_title": "疗效提高[N]倍，ARIA发生率大幅下降！[目标药物]又一重要证据出炉"
+      },
+      {
+        "angle_id": "ANGLE_CONTINUATION_IMPERATIVE",
+        "description": "论证持续治疗的必要性，将「不可停药」从劣势重塑为长期主义优势",
+        "frequency": 6,
+        "typical_audiences": [
+          "专科医师",
+          "患者教育"
+        ],
+        "typical_sub_categories": [
+          "主张_证据",
+          "叙事_反思"
+        ],
+        "representative_title": "为什么脑内已无Aβ斑块还不能停药？抗Aβ治疗的长期获益，超乎想象"
+      },
+      {
+        "angle_id": "ANGLE_EARLY_DETECTION",
+        "description": "强调早期筛查/早诊早治的紧迫性，纠正公众对AD的认知误区",
+        "frequency": 9,
+        "typical_audiences": [
+          "患者教育",
+          "公众科普"
+        ],
+        "typical_sub_categories": [
+          "叙事_反思"
+        ],
+        "representative_title": "别让这些错误认知，耽误了病情！盘点阿尔茨海默病早期筛查误区"
+      },
+      {
+        "angle_id": "ANGLE_CAREGIVER_EMPATHY",
+        "description": "以照护者第一人称视角呈现情感痛点，建立共情连接后引出治疗希望",
+        "frequency": 7,
+        "typical_audiences": [
+          "患者教育",
+          "公众科普"
+        ],
+        "typical_sub_categories": [
+          "叙事_反思"
+        ],
+        "representative_title": "父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”"
+      },
+      {
+        "angle_id": "ANGLE_REGULATORY_MILESTONE",
+        "description": "以监管审批事件为叙事锚点，解读审批逻辑背后的科学判断",
+        "frequency": 5,
+        "typical_audiences": [
+          "专科医师",
+          "基层医护",
+          "患者教育"
+        ],
+        "typical_sub_categories": [
+          "新闻_评论"
+        ],
+        "representative_title": "大反转！EMA建议批准[目标药物]，背后的逻辑是什么？"
+      },
+      {
+        "angle_id": "ANGLE_CLINICAL_MANAGEMENT",
+        "description": "针对特定临床场景（ARIA管理、合并用药）提供实操指导",
+        "frequency": 5,
+        "typical_audiences": [
+          "专科医师",
+          "基层医护"
+        ],
+        "typical_sub_categories": [
+          "场景_指导"
+        ],
+        "representative_title": "阿尔茨海默病用药怕ARIA？E4纯合子患者该这么办！"
+      },
+      {
+        "angle_id": "ANGLE_PARADIGM_CHALLENGE",
+        "description": "以反直觉提问挑战临床常识或竞品叙事，重新框架化理解",
+        "frequency": 6,
+        "typical_audiences": [
+          "专科医师"
+        ],
+        "typical_sub_categories": [
+          "新闻_评论"
+        ],
+        "representative_title": "ARIA发生率越高，清除Aβ的效率越高？"
+      },
+      {
+        "angle_id": "ANGLE_HOPE_METAPHOR",
+        "description": "以文学隐喻（曙光/刹车/赛跑）传递治疗希望，适用于公众传播",
+        "frequency": 5,
+        "typical_audiences": [
+          "患者教育",
+          "公众科普"
+        ],
+        "typical_sub_categories": [
+          "叙事_反思"
+        ],
+        "representative_title": "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车"
+      }
+    ]
+  },
+  "audience_thesis_constraints": {
+    "专科医师": {
+      "max_claims_per_thesis": 1,
+      "must_include": [
+        "data_reference",
+        "study_source",
+        "specific_endpoint"
+      ],
+      "forbidden": [
+        "绝对化表述（100%、彻底治愈）",
+        "过度情感化修辞",
+        "脱离证据的价值判断"
+      ],
+      "preferred_tone": "学术锐评",
+      "title_style": "以数据/来源/机制为锚，可适度使用反问和悬念",
+      "typical_length_range": "18-45字",
+      "observed_patterns": {
+        "dominant_sub_categories": [
+          "主张_证据",
+          "新闻_评论"
+        ],
+        "dominant_angles": [
+          "ANGLE_SAFETY_SUPERIORITY",
+          "ANGLE_MECHANISM_REVELATION",
+          "ANGLE_QUANTIFIED_EFFICACY"
+        ],
+        "article_count": 38,
+        "percentage_of_corpus": "44.7%"
+      }
+    },
+    "患者教育": {
+      "max_claims_per_thesis": 1,
+      "must_include": [
+        "emotional_hook_or_relatable_scenario"
+      ],
+      "forbidden": [
+        "专业缩写未解释（如CDR-SB、ADAS-Cog）",
+        "纯数据堆砌",
+        "恐吓式表述"
+      ],
+      "preferred_tone": "温暖但不矫情，通俗但不低俗",
+      "title_style": "以情感场景/生活隐喻为锚，可使用问句和感叹号",
+      "typical_length_range": "15-35字",
+      "observed_patterns": {
+        "dominant_sub_categories": [
+          "叙事_反思",
+          "主张_证据"
+        ],
+        "dominant_angles": [
+          "ANGLE_CAREGIVER_EMPATHY",
+          "ANGLE_EARLY_DETECTION",
+          "ANGLE_HOPE_METAPHOR"
+        ],
+        "article_count": 33,
+        "percentage_of_corpus": "38.8%"
+      }
+    },
+    "基层医护": {
+      "max_claims_per_thesis": 1,
+      "must_include": [
+        "practical_takeaway",
+        "simplified_data_point"
+      ],
+      "forbidden": [
+        "过度学术化表述",
+        "复杂分子机制细节"
+      ],
+      "preferred_tone": "实用导向，简洁有力",
+      "title_style": "以结论前置+感叹号/省略号为主，强调「可直接用」的信息",
+      "typical_length_range": "12-25字",
+      "observed_patterns": {
+        "dominant_sub_categories": [
+          "主张_证据",
+          "新闻_评论"
+        ],
+        "dominant_angles": [
+          "ANGLE_COMPETITOR_DEFEAT",
+          "ANGLE_QUANTIFIED_EFFICACY"
+        ],
+        "article_count": 4,
+        "percentage_of_corpus": "4.7%"
+      }
+    },
+    "公众科普": {
+      "max_claims_per_thesis": 1,
+      "must_include": [
+        "relatable_daily_scenario",
+        "myth_correction_or_emotional_narrative"
+      ],
+      "forbidden": [
+        "任何专业术语（需完全翻译为白话）",
+        "数据密集型论述"
+      ],
+      "preferred_tone": "故事化、科普化，读起来像生活类推文",
+      "title_style": "以日常场景/情感故事为切入，完全回避医学术语",
+      "typical_length_range": "15-30字",
+      "observed_patterns": {
+        "dominant_sub_categories": [
+          "叙事_反思"
+        ],
+        "dominant_angles": [
+          "ANGLE_EARLY_DETECTION",
+          "ANGLE_CAREGIVER_EMPATHY",
+          "ANGLE_HOPE_METAPHOR"
+        ],
+        "article_count": 3,
+        "percentage_of_corpus": "3.5%"
+      }
+    }
+  },
+  "evidence_to_angle_mapping": {
+    "description": "Maps evidence types to the thesis angles they most naturally trigger",
+    "mappings": [
+      {
+        "evidence_type": "efficacy",
+        "description": "疗效数据（CDR-SB、ADAS-Cog、认知改善率等）",
+        "primary_angles": [
+          "ANGLE_QUANTIFIED_EFFICACY",
+          "ANGLE_CHINA_RWE_VALIDATION"
+        ],
+        "secondary_angles": [
+          "ANGLE_HOPE_METAPHOR"
+        ]
+      },
+      {
+        "evidence_type": "safety",
+        "description": "安全性数据（ARIA-E/H发生率、严重不良事件等）",
+        "primary_angles": [
+          "ANGLE_SAFETY_SUPERIORITY",
+          "ANGLE_CLINICAL_MANAGEMENT"
+        ],
+        "secondary_angles": [
+          "ANGLE_COMPETITOR_DEFEAT"
+        ]
+      },
+      {
+        "evidence_type": "biomarker",
+        "description": "生物标志物数据（CSF Aβ、血浆p-tau、PET斑块变化等）",
+        "primary_angles": [
+          "ANGLE_MECHANISM_REVELATION",
+          "ANGLE_CONTINUATION_IMPERATIVE"
+        ],
+        "secondary_angles": [
+          "ANGLE_QUANTIFIED_EFFICACY"
+        ]
+      },
+      {
+        "evidence_type": "moa",
+        "description": "作用机制研究（小胶质细胞激活、Aβ清除路径等）",
+        "primary_angles": [
+          "ANGLE_MECHANISM_REVELATION"
+        ],
+        "secondary_angles": [
+          "ANGLE_PARADIGM_CHALLENGE"
+        ]
+      },
+      {
+        "evidence_type": "competitor_comparison",
+        "description": "与竞品（[竞品药物]）的直接/间接比较数据",
+        "primary_angles": [
+          "ANGLE_SAFETY_SUPERIORITY",
+          "ANGLE_COMPETITOR_DEFEAT"
+        ],
+        "secondary_angles": [
+          "ANGLE_PARADIGM_CHALLENGE",
+          "ANGLE_CONTINUATION_IMPERATIVE"
+        ]
+      },
+      {
+        "evidence_type": "regulatory",
+        "description": "监管审批事件（获批/被拒/咨询委员会投票等）",
+        "primary_angles": [
+          "ANGLE_REGULATORY_MILESTONE",
+          "ANGLE_COMPETITOR_DEFEAT"
+        ],
+        "secondary_angles": [
+          "ANGLE_HOPE_METAPHOR"
+        ]
+      },
+      {
+        "evidence_type": "rwe",
+        "description": "真实世界证据（中国多中心、单中心病例系列等）",
+        "primary_angles": [
+          "ANGLE_CHINA_RWE_VALIDATION"
+        ],
+        "secondary_angles": [
+          "ANGLE_QUANTIFIED_EFFICACY",
+          "ANGLE_CLINICAL_MANAGEMENT"
+        ]
+      },
+      {
+        "evidence_type": "long_term_followup",
+        "description": "长期随访数据（OLE延伸研究、3-4年随访等）",
+        "primary_angles": [
+          "ANGLE_CONTINUATION_IMPERATIVE",
+          "ANGLE_QUANTIFIED_EFFICACY"
+        ],
+        "secondary_angles": [
+          "ANGLE_SAFETY_SUPERIORITY"
+        ]
+      },
+      {
+        "evidence_type": "patient_story",
+        "description": "患者/照护者故事、生活场景素材",
+        "primary_angles": [
+          "ANGLE_CAREGIVER_EMPATHY",
+          "ANGLE_HOPE_METAPHOR"
+        ],
+        "secondary_angles": [
+          "ANGLE_EARLY_DETECTION"
+        ]
+      },
+      {
+        "evidence_type": "subgroup_analysis",
+        "description": "亚组分析（ApoE4状态、年龄、疾病严重程度、合并用药）",
+        "primary_angles": [
+          "ANGLE_CLINICAL_MANAGEMENT",
+          "ANGLE_CHINA_RWE_VALIDATION"
+        ],
+        "secondary_angles": [
+          "ANGLE_QUANTIFIED_EFFICACY"
+        ]
+      }
+    ]
+  },
+  "cross_tabulation": {
+    "description": "Article count by audience x sub_category matrix (including version duplicates)",
+    "matrix": {
+      "专科医师": {
+        "主张_证据": 22,
+        "叙事_反思": 4,
+        "对比_推荐": 2,
+        "新闻_评论": 11,
+        "场景_指导": 2,
+        "问题_解决": 0
+      },
+      "患者教育": {
+        "主张_证据": 8,
+        "叙事_反思": 18,
+        "对比_推荐": 0,
+        "新闻_评论": 1,
+        "场景_指导": 3,
+        "问题_解决": 1
+      },
+      "基层医护": {
+        "主张_证据": 2,
+        "叙事_反思": 0,
+        "对比_推荐": 0,
+        "新闻_评论": 2,
+        "场景_指导": 0,
+        "问题_解决": 0
+      },
+      "公众科普": {
+        "主张_证据": 0,
+        "叙事_反思": 3,
+        "对比_推荐": 0,
+        "新闻_评论": 0,
+        "场景_指导": 0,
+        "问题_解决": 0
+      }
+    },
+    "key_insights": [
+      "专科医师内容以「主张_证据」（22篇）和「新闻_评论」（11篇）为绝对主力，占该受众87%",
+      "患者教育内容以「叙事_反思」（18篇）为核心策略，占该受众58%",
+      "基层医护内容极少（仅4篇），平均分布在证据类和新闻类",
+      "公众科普仅有3篇，全部为叙事_反思，说明该受众仅用故事/科普类策略",
+      "「对比_推荐」仅在专科医师中使用（2篇），其他受众不适用直接对比",
+      "「问题_解决」仅在患者教育中出现（1篇），为最少使用的策略"
+    ]
+  },
+  "m1_derivation_algorithm": {
+    "description": "Recommended step-by-step algorithm for M1 to derive a thesis from evidence + audience + play",
+    "steps": [
+      {
+        "step": 1,
+        "action": "CLASSIFY_EVIDENCE",
+        "instruction": "将输入证据归类为以下类型之一或多个：efficacy, safety, biomarker, moa, competitor_comparison, regulatory, rwe, long_term_followup, patient_story, subgroup_analysis"
+      },
+      {
+        "step": 2,
+        "action": "LOOKUP_PRIMARY_ANGLES",
+        "instruction": "根据 evidence_to_angle_mapping，确定该证据类型触发的 primary_angles（1-2个）"
+      },
+      {
+        "step": 3,
+        "action": "FILTER_BY_AUDIENCE",
+        "instruction": "根据 audience_thesis_constraints，排除该受众不适用的角度。例如：公众科普不应使用 ANGLE_MECHANISM_REVELATION"
+      },
+      {
+        "step": 4,
+        "action": "SELECT_RULE",
+        "instruction": "从 thesis_derivation_rules 中选择与 (audience, sub_category, angle) 最匹配的规则"
+      },
+      {
+        "step": 5,
+        "action": "INSTANTIATE_TEMPLATE",
+        "instruction": "使用选中规则的 template/template_variants，填充证据中的具体数据/来源/机制名称"
+      },
+      {
+        "step": 6,
+        "action": "VALIDATE_CONSTRAINTS",
+        "instruction": "检查生成的论点是否违反 audience_thesis_constraints 中的 forbidden 列表，确保 must_include 要素齐全"
+      },
+      {
+        "step": 7,
+        "action": "OUTPUT_THESIS",
+        "instruction": "输出论点及其对应的 recommended_m3_plays，供 M3 层选择修辞策略"
+      }
+    ]
+  },
+  "version_pattern_insights": {
+    "description": "Observations about V1/V2/V3/V4 version iterations in filenames",
+    "insights": [
+      "同一主题平均产出2.3个版本，最多达V8（因为新药到来，他们建立了一个新的阿尔茨海默病疗效评价体系）",
+      "V1通常为初稿（标注「初稿」），V2-V3为修订版，V4+为重大改写",
+      "同一主题的不同版本会调整论点锐度：如V1版「全球最大规模」在修订版改为更克制的表述",
+      "部分文章会产出「医学版」和「大众版」两个分支，共享核心证据但论点框架完全不同",
+      "「医学版->大众版」的论点转化规律：去掉数据细节，保留结论+增加情感化修饰"
+    ]
+  },
+  "temporal_evolution": {
+    "description": "How thesis strategies evolved over time (2024-Q1 to 2026-Q1)",
+    "phases": [
+      {
+        "period": "2024-Q1 to 2024-Q3",
+        "focus": "疾病科普+情感叙事",
+        "dominant_angles": [
+          "ANGLE_EARLY_DETECTION",
+          "ANGLE_CAREGIVER_EMPATHY",
+          "ANGLE_HOPE_METAPHOR"
+        ],
+        "note": "药物上市初期，以疾病认知提升和治疗希望传递为主，论点不含竞品对比"
+      },
+      {
+        "period": "2024-Q4 to 2025-Q2",
+        "focus": "竞品差异化+监管叙事",
+        "dominant_angles": [
+          "ANGLE_COMPETITOR_DEFEAT",
+          "ANGLE_REGULATORY_MILESTONE",
+          "ANGLE_PARADIGM_CHALLENGE"
+        ],
+        "note": "[竞品药物]被EMA拒绝后，论点战场转向竞品对比和监管背书"
+      },
+      {
+        "period": "2025-Q3 to 2026-Q1",
+        "focus": "中国RWE+机制深化+安全性差异化",
+        "dominant_angles": [
+          "ANGLE_CHINA_RWE_VALIDATION",
+          "ANGLE_MECHANISM_REVELATION",
+          "ANGLE_SAFETY_SUPERIORITY",
+          "ANGLE_CONTINUATION_IMPERATIVE"
+        ],
+        "note": "中国多中心RWE数据出炉后，论点战场转向中国验证和机制深度，续停药争议成为新战线"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q1] 《使用仑卡奈单抗，安全吗？》.docx",
+    "source_key": "SRC-HIST-2025-Q1_《使用仑卡奈单抗，安全吗？》",
+    "asset_key": "AST-DOCX-2025-Q1_《使用仑卡奈单抗，安全吗？》",
+    "content_hash": "c16c49fa75793f66",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.788515",
+    "source_size_bytes": 16568
+  },
+  "metadata": {
+    "title": "《使用仑卡奈单抗，安全吗？》",
+    "content_type": "场景_指导",
+    "publication_quarter": "2025-Q1",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗在研发和临床试验过程中，把安全性放在了至关重要的位置。科研人员进行了大量严格的实验和测试，以确保药物在治疗疾病的同时，尽可能减少对患者身体的不良影响。从 Clarity AD 研究等多项大规模临床试验的结果来看，仑卡奈单抗的整体安全性表现令人放心。在这些研究中，仑卡奈单抗治疗组和安慰剂组的不良事件总体发生率相似，这意味着使用仑卡奈单抗并不会显著增加患者出现不良反应的风险。而且，在整个研究过程中，没有发现与仑卡奈单抗治疗直接相关的死亡案例，这无疑是一个令人欣慰的消息。"
+  ]
+}

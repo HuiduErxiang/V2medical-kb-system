@@ -1,0 +1,104 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H001",
+    "source_file": "sources/guidelines/detection_consensus.md",
+    "source_key": "SRC-GUIDELINE-EGFR-EX20INS-DETECTION-2024",
+    "asset_key": "AST-GUIDELINE-EGFR-EX20INS-DETECTION-2024",
+    "content_hash": "b2c3d4e5f6g7h8i9",
+    "source_type": "clinical_consensus",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "非小细胞肺癌表皮生长因子受体20号外显子插入突变检测临床实践中国专家共识（2024版）",
+    "title_en": "Expert consensus on clinical practice of EGFR exon 20 insertion detection in non-small cell lung cancer in China (2024 edition)",
+    "authors": ["中国抗癌协会肿瘤病理专业委员会分子病理协作组", "中国医师协会肿瘤多学科诊疗专业委员会"],
+    "journal": "中华肿瘤杂志",
+    "year": 2024,
+    "volume": "46",
+    "issue": "3",
+    "pages": "179-188",
+    "doi": "10.3760/cma.j.cn1121522023090500125",
+    "registration": "PREPARE-2023CN328"
+  },
+  "distilled_content": {
+    "article_type": "expert_consensus",
+    "disease_area": ["non_small_cell_lung_cancer"],
+    "gene_targets": ["EGFR ex20ins"],
+    "key_recommendations": [
+      {
+        "recommendation_id": "REC-DETECT-001",
+        "recommendation_level": "strong",
+        "statement": "EGFR ex20ins检测可采用PCR和NGS进行检测",
+        "rationale": "传统PCR检测对EGFR ex20ins有较高漏检率，NGS检测几乎可以全面覆盖不同亚型"
+      },
+      {
+        "recommendation_id": "REC-DETECT-002",
+        "recommendation_level": "strong",
+        "statement": "检测样本优选组织样本；组织样本不可及时，可选择液体样本",
+        "rationale": "约30%晚期NSCLC患者采集组织标本存在困难"
+      },
+      {
+        "recommendation_id": "REC-DETECT-003",
+        "recommendation_level": "strong",
+        "statement": "PCR检测结果为全阴性的患者，可使用NGS进行复测",
+        "rationale": "NGS在EGFR ex20ins全体人群突变检出率显著高于PCR（2% vs 1.3%）"
+      },
+      {
+        "recommendation_id": "REC-DETECT-004",
+        "recommendation_level": "recommend",
+        "statement": "ctDNA检测有望成为EGFR ex20ins诊断和疗效监测的补充手段",
+        "rationale": "液体活检在无法获取合格组织样本时可考虑"
+      }
+    ],
+    "epidemiology": {
+      "prevalence_china": {
+        "all_nsclc": "0.3%-2.9%",
+        "among_egfr_mutations": "2%-5%"
+      },
+      "clinical_characteristics": [
+        "多见于亚裔、不吸烟、女性、肺腺癌患者",
+        "与EGFR常见突变临床特征相似"
+      ],
+      "subtypes": {
+        "total_reported": ">200种",
+        "common_subtypes": [
+          {"subtype": "A767_V769dup", "frequency": "26.5%"},
+          {"subtype": "S768_D770dup", "frequency": "17.6%"},
+          {"subtype": "A763_Y764insFQEA", "frequency": "4.8%"}
+        ]
+      }
+    },
+    "detection_methods_comparison": {
+      "pcr": {
+        "advantages": ["快速简便", "可及性高"],
+        "limitations": ["漏检率高", "对ex20ins不同亚型检测覆盖率仅19%-58%"],
+        "recommended_use": "初步筛查"
+      },
+      "multiplex_pcr": {
+        "advantages": ["检测能力高于传统PCR"],
+        "example": "AmoyDx 11基因mPCR试剂盒诊断符合率91.2%(阳性)和100%(阴性)"
+      },
+      "ngs": {
+        "advantages": ["几乎全面覆盖所有亚型", "敏感性及特异性更优"],
+        "limitations": ["费用略高", "报告耗时略长", "医保覆盖率略低"],
+        "recommended_use": "优选检测手段"
+      }
+    },
+    "clinical_significance": {
+      "prognosis": "EGFR ex20ins患者整体预后较差，类似于EGFR野生型",
+      "tki_response": "传统EGFR-TKIs治疗无效（除极少数亚型如A763_Y764insFQEA约占5.1%）",
+      "treatment_implication": "需要特异性靶向药物"
+    }
+  },
+  "index_terms": {
+    "keywords": ["EGFR ex20ins", "非小细胞肺癌", "基因检测", "NGS", "PCR", "专家共识"],
+    "mesh_terms": ["Carcinoma, Non-Small-Cell Lung", "Mutation", "EGFR", "Genetic Testing", "Consensus"]
+  },
+  "lineage": {
+    "source_path": "sources/guidelines/detection_consensus.md",
+    "original_size_bytes": 87270,
+    "distilled_at": "2026-03-10T03:48:00Z"
+  }
+}

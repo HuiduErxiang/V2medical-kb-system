@@ -1,0 +1,64 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] V2【AAIC患者端-P5-初稿】.docx",
+    "source_key": "SRC-HIST-2025-Q3_V2【AAIC患者端-P5-初稿】",
+    "asset_key": "AST-DOCX-2025-Q3_V2【AAIC患者端-P5-初稿】",
+    "content_hash": "6fd543a2be9db28a",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.110476",
+    "source_size_bytes": 19302
+  },
+  "metadata": {
+    "title": "V2【AAIC患者端-P5-初稿】",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 问题背景引入",
+      "hook: 问题背景引入",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "血液检查即可确诊有无痴呆？仑卡奈单抗治疗AD的最新真实经验！",
+      "引言：",
+      "在人口老龄化背景下，阿尔茨海默病（AD）已成为我国不容忽视的健康难题，给患者、家庭和社会带来了沉重的负担。",
+      "摆脱昂贵、有创检查！血液检查就能确定有没有患AD？",
+      "美国阿尔茨海默病协会认为，BBM检测有助于减少诊断流程中的潜在瓶颈，缩短诊断时间。这对于存在不可逆病理进程的阿尔茨海默病而言是意义重大的，有助于进一步推动AD的早诊早治。",
+      "除了诊断方面的前瞻性，美国阿尔茨海默病协会还提到，BBM检测在DMT的疗效评估及AD的预后上也有巨大潜力。",
+      "AAIC公布仑卡奈单抗真实治疗经验，BBM检测助力AD早诊早治",
+      "AAIC大会上，许多来自世界各地的学者分享了近两年来仑卡奈单抗治疗AD患者的宝贵经验。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "目前，AD治疗药物中批准上市的DMT药物均为靶向Aβ沉积的单抗类药物，如仑卡奈单抗和多奈单抗。研究显示，仑卡奈单抗使用18个月可明显改善患者的生活能力及照料者负担，同时可显著降低BBMs指标。"
+  ]
+}

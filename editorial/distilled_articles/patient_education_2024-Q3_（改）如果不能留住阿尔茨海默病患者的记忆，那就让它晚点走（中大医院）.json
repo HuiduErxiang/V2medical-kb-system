@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q3] （改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）.docx",
+    "content_hash": "26354dac96d84715",
+    "distilled_at": "2026-03-10T03:56:06.708581",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "（改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q3",
+    "word_count": 1426,
+    "source_file": "[2024-Q3] （改）如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走（中大医院）.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "目前，全球唯一靶向β淀粉样蛋白的药物仑卡奈单抗已经进入中国，也已正式投入临床使用，这是广大AD患者的...。",
+    "如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走\n\n阿尔茨海默病正在一步步悄悄抹去患者的记忆\n阿尔...。",
+    "通过早期的疾病筛查，尽早确诊、尽早干预，而不是等到已经开始影响生活的中后期阶段才进行治疗。",
+    "通过精准的靶向作用，它能够有效地减缓AD病理过程，患者就有机会通过仑卡奈单抗的治疗来延缓病程，从而维...。",
+    "如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走\n\n阿尔茨海默病正在一步步悄悄抹去患者的记忆\n阿尔...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "如果不能留住阿尔茨海默病患者的记忆，那就让它晚点走\n\n阿尔茨海默病正在一步步悄悄抹去患者的记忆\n阿尔茨海默症（Alzheimer's disease，AD），俗称老年痴呆，它的发病进程缓慢，并随时间不断恶化且不可逆转，疾病后期，患者大脑会出现明显的萎缩和空洞。\nAD最常见的早期症状是短期记忆丧失。患者难以记住近期的事，却对遥远的事件记忆犹新。慢慢的，他们开始找不准词语表达感受。比如他们想说巧克力很..."
+}

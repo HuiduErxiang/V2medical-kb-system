@@ -1,0 +1,86 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product": "trastuzumab_deruxtecan_gastric",
+  "rules": [
+    {
+      "rule_id": "COMP-TDXG-001",
+      "category": "efficacy_claim",
+      "rule": "",
+      "severity": "high",
+      "logic": "any_of",
+      "message": "",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_EFFICACY_DATA"],
+      "examples": {
+        "compliant": [],
+        "non_compliant": []
+      },
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "COMP-TDXG-002",
+      "category": "safety_claim",
+      "rule": "",
+      "severity": "high",
+      "logic": "any_of",
+      "message": "",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": ["M4_B_SAFETY"],
+      "examples": {
+        "compliant": [],
+        "non_compliant": []
+      },
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "COMP-TDXG-003",
+      "category": "indication_scope",
+      "rule": "",
+      "severity": "high",
+      "logic": "any_of",
+      "message": "",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [],
+      "examples": {
+        "compliant": [],
+        "non_compliant": []
+      },
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "COMP-TDXG-004",
+      "category": "competitor_comparison",
+      "rule": "",
+      "severity": "medium",
+      "logic": "any_of",
+      "message": "",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [],
+      "examples": {
+        "compliant": [],
+        "non_compliant": []
+      },
+      "origin_layer": "L4"
+    },
+    {
+      "rule_id": "COMP-TDXG-005",
+      "category": "biomarker_claim",
+      "rule": "",
+      "severity": "high",
+      "logic": "any_of",
+      "message": "",
+      "fallback_action": "downgrade_to_qualitative",
+      "m4_block_ids": [],
+      "examples": {
+        "compliant": [],
+        "non_compliant": []
+      },
+      "origin_layer": "L4"
+    }
+  ]
+}

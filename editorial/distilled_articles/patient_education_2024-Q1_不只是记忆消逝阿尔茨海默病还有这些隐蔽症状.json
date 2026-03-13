@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q1] 不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状.docx",
+    "content_hash": "b1921ee9cbadf5a4",
+    "distilled_at": "2026-03-10T03:56:06.579338",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q1",
+    "word_count": 2331,
+    "source_file": "[2024-Q1] 不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗则是对阿尔茨海默病的“对因治疗”，是首款针对阿尔茨海默病潜在病因——β淀粉样蛋白沉积进行干...。",
+    "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状\n\n在你我生活的世界中，一场静默而严峻的战斗可能正在悄然...。",
+    "每一位家庭成员和社会公众都应当提高对此的认知，及时察觉上述提及的早期迹象，并在早期进行科学治疗。",
+    "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状\n\n在你我生活的世界中，一场静默而严峻的战斗可能正在悄然...。",
+    "执行功能障碍\n大脑皮层尤其是前额叶扮演着大脑的首席执行官角色，它主管逻辑推理、决策制定、工作记忆及各...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "不只是记忆消逝！阿尔茨海默病还有这些隐蔽症状\n\n在你我生活的世界中，一场静默而严峻的战斗可能正在悄然发生在我们身边亲朋好友的脑海中，这就是与阿尔茨海默病的较量。\n当听到“阿尔茨海默病”事，你也许首先想到的是记忆消逝，然而，这只是冰山一角。尽管“健忘”是阿尔茨海默病最早和最明显的受损表现，但其背后所代表的记忆功能，实际上只是大脑众多功能中的一部分。从语言流畅度的滑坡，到情绪控制的失调，再到日常生活技..."
+}

@@ -1,0 +1,82 @@
+{
+  "registry_version": "1.0",
+  "created_at": "2026-03-10",
+  "created_by": "Batch-3 migration",
+  "description": "V2 Intake 批次注册表 - 记录所有进入系统的 intake 批次",
+  "schema": {
+    "batch_id": "string - 批次唯一标识，格式: BATCH-{YYYY}-{MM}-{序号}",
+    "status": "enum - pending/processing/completed/partial/failed",
+    "created_at": "string - ISO时间戳",
+    "source_count": "number - 来源数量",
+    "asset_count": "number - 资产数量",
+    "manifest_path": "string - 批次清单文件路径",
+    "storage_zone": "string - 存储区域"
+  },
+  "batches": [
+    {
+      "batch_id": "H001",
+      "status": "completed",
+      "created_at": "2026-03-10T03:48:00Z",
+      "source_count": 5,
+      "asset_count": 4,
+      "manifest_path": "manifests/h001_guidelines_distillation_manifest.json",
+      "storage_zone": "evidence/ingested/guidelines",
+      "batch_type": "GUIDELINE"
+    },
+    {
+      "batch_id": "H002",
+      "status": "completed",
+      "created_at": "2026-03-10T03:50:00Z",
+      "source_count": 46,
+      "asset_count": 46,
+      "manifest_path": "manifests/h002_lecanemab_references_manifest.json",
+      "storage_zone": "evidence/ingested/references",
+      "batch_type": "REFERENCE"
+    },
+    {
+      "batch_id": "H003",
+      "status": "completed",
+      "created_at": "2026-03-10T03:50:00Z",
+      "source_count": 29,
+      "asset_count": 8,
+      "manifest_path": "manifests/h003_competitor_references_manifest.json",
+      "storage_zone": "evidence/ingested/references",
+      "batch_type": "REFERENCE"
+    {
+      "batch_id": "H004",
+      "status": "completed",
+      "created_at": "2026-03-10T03:50:00Z",
+      "source_count": 44,
+      "asset_count": 44,
+      "manifest_path": "manifests/h004_specialist_articles_manifest.json",
+      "storage_zone": "editorial/distilled_articles",
+      "batch_type": "HISTORICAL"
+    },
+    {
+      "batch_id": "H005",
+      "status": "completed",
+      "created_at": "2026-03-10T03:50:00Z",
+      "source_count": 34,
+      "asset_count": 34,
+      "manifest_path": "manifests/h005_patient_education_manifest.json",
+      "storage_zone": "editorial/distilled_articles",
+      "batch_type": "HISTORICAL"
+    },
+    {
+      "batch_id": "H006",
+      "status": "completed",
+      "created_at": "2026-03-10T03:50:00Z",
+      "source_count": 7,
+      "asset_count": 7,
+      "manifest_path": "manifests/h006_primary_care_public_manifest.json",
+      "storage_zone": "editorial/distilled_articles",
+      "batch_type": "HISTORICAL"
+    }
+  ],
+  "statistics": {
+    "total_batches": 6,
+    "total_sources": 165,
+    "total_assets": 143,
+    "last_updated": "2026-03-10T14:30:00Z"
+  },
+  "note": "历史素材蒸馏所有批次 H001-H006 已全部完成"

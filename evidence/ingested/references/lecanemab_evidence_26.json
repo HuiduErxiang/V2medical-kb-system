@@ -1,0 +1,42 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.065785",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q3_AAIC-poster-Operationa",
+    "asset_key": "AST-PPTX-2025-Q3_AAIC-poster-Operationa",
+    "content_hash": "2c260faa20a43827"
+  },
+  "metadata": {
+    "title": "AAIC-poster-Operational standard for the clinical use of Lecanemab in Alzheimer鈥檚 Disease",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pptx",
+    "study_type": "conference_poster"
+  },
+  "distilled_content": {
+    "presentation_type": "Conference poster",
+    "key_findings": "Key findings from the study presented at the conference"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q3] AAIC-poster-Operational standard for the clinical use of Lecanemab in Alzheimer鈥檚 Disease.pptx",
+    "original_size_bytes": 136000,
+    "distilled_at": "2026-03-10T03:54:51.065815"
+  }
+}

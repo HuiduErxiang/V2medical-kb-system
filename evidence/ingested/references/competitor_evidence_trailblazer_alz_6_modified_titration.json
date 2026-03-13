@@ -1,0 +1,218 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-TRAILBLAZER-ALZ-6-MODIFIED-TITRATION",
+    "asset_key": "AST-H003-TRAILBLAZER-ALZ-6-MODIFIED-TITRATION",
+    "content_hash": "b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2",
+    "source_type": "conference_poster"
+  },
+  "metadata": {
+    "title": "Modified Titration of Donanemab Reduced ARIA-E Risk and Maintained Amyloid Reduction: 18-Month Results from TRAILBLAZER-ALZ 6",
+    "authors": [
+      "Hong Wang",
+      "Emel Serap Monkul Nery",
+      "Paul Ardayfio",
+      "Rashna Khanna",
+      "Diana Otero Svaldi",
+      "Sergey Shcherbinin",
+      "Wen Xu",
+      "Scott W. Andersen",
+      "Paula M. Hauck",
+      "Dawn A. Brooks",
+      "Emily C. Collins",
+      "Mark A. Mintun",
+      "John R. Sims"
+    ],
+    "year": 2025,
+    "study": "TRAILBLAZER-ALZ 6 (phase 3b dosing optimization trial)",
+    "source_file": "[2025-Q3] Donanemab 的改良滴定法降低了 ARIA-E 风险并维持了淀粉样蛋白的减少：TRAILBLAZER-ALZ 6 的 18 个月结果.md",
+    "source_size_bytes": 20124
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "phase 3b dosing optimization trial",
+      "trial_identifier": "NCT05738486",
+      "location": "US and UK",
+      "randomization": "1:1:1:1 stratified by APOE and baseline amyloid PET",
+      "treatment_arms": [
+        "Standard: 700 mg ×3 doses, then 1400 mg Q4W",
+        "Modified Titration: 350 mg, 700 mg, 1050 mg, then 1400 mg Q4W",
+        "Dose Skipping: 700 mg, then 1400 mg with dose skipping",
+        "Cmax: dose escalation to 1400 mg"
+      ],
+      "treatment_duration": "76 weeks",
+      "primary_outcome": "ARIA-E frequency at 24 weeks",
+      "success_criterion": "Posterior probability >80% of ≥20% RRR in ARIA-E frequency"
+    },
+    "population": {
+      "sample_size": {
+        "total": 843,
+        "standard": 207,
+        "modified_titration": 212,
+        "dose_skipping": 210,
+        "cmax": 213
+      },
+      "inclusion_criteria": [
+        "Age 60-85 years",
+        "Early symptomatic AD (MMSE 20-28)",
+        "Amyloid PET ≥24.1 Centiloids",
+        "US and UK participants"
+      ],
+      "exclusion_criteria": [
+        "Screening MRI showing ARIA-E",
+        ">4 cerebral microhemorrhages",
+        ">1 superficial siderosis",
+        "Any macrohemorrhage",
+        "Severe white matter disease"
+      ]
+    },
+    "endpoints": {
+      "primary": "ARIA-E frequency at 24 weeks",
+      "secondary": [
+        "ARIA-E frequency at 76 weeks",
+        "Symptomatic ARIA-E",
+        "SAE of ARIA-E",
+        "ARIA-H frequency",
+        "Amyloid reduction",
+        "Plasma P-tau217 reduction",
+        "SAE rates"
+      ]
+    },
+    "key_results": {
+      "aria_e_risk_reduction": {
+        "24_weeks": {
+          "standard": 23.7,
+          "modified_titration": 13.7,
+          "rrr": 40.5,
+          "posterior_probability": 94.1,
+          "statistical_significance": "P < 0.001"
+        },
+        "76_weeks": {
+          "standard": 24.2,
+          "modified_titration": 15.6,
+          "rrr": 34.6,
+          "posterior_probability": 87.1,
+          "statistical_significance": "P = 0.036"
+        },
+        "symptomatic_aria_e": {
+          "standard": 4.8,
+          "modified_titration": 2.8,
+          "hazard_ratio": 0.584
+        },
+        "radiographic_severity": {
+          "standard": {
+            "mild": 15.5,
+            "moderate": 7.7,
+            "severe": 1.0
+          },
+          "modified_titration": {
+            "mild": 11.3,
+            "moderate": 4.2,
+            "severe": 0
+          },
+          "no_severe_events": true
+        },
+        "apoe_stratification": {
+          "homozygote": {
+            "rrr": 29.3,
+            "posterior_probability": 80.4
+          },
+          "heterozygote": {
+            "rrr": 34.4,
+            "posterior_probability": 86.1
+          },
+          "non-carrier": {
+            "rrr": 38.1,
+            "posterior_probability": 89.7
+          }
+        }
+      },
+      "aria_h_risk": {
+        "76_weeks": {
+          "standard": 27.5,
+          "modified_titration": 25.5
+        },
+        "symptomatic_aria_h": {
+          "standard": 0.5,
+          "modified_titration": 0.5
+        }
+      },
+      "safety_profile": {
+        "serious_ae": {
+          "standard": 24.6,
+          "modified_titration": 23.1
+        },
+        "discontinuations": {
+          "due_to_ae": {
+            "standard": 2.9,
+            "modified_titration": 2.8
+          }
+        },
+        "deaths": {
+          "standard": 0.5,
+          "modified_titration": 0.5
+        }
+      },
+      "biomarker_reduction": {
+        "amyloid_reduction": {
+          "standard": {
+            "mean_change": "-72.1 CL",
+            "clearance_rate": 80.5
+          },
+          "modified_titration": {
+            "mean_change": "-70.9 CL",
+            "clearance_rate": 82.8
+          },
+          "no_statistical_difference": true
+        },
+        "ptau217_reduction": {
+          "standard": "-39.7%",
+          "modified_titration": "-42.5%",
+          "comparable": true
+        }
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "standard donanemab dosing",
+        "key_improvement": "34.6% RRR in ARIA-E at 76 weeks",
+        "maintained_efficacy": "Similar amyloid and ptau217 reduction",
+        "safety_benefit": "No severe ARIA-E events in modified titration arm"
+      },
+      {
+        "comparator": "lecanemab",
+        "aria_e_risk": {
+          "donanemab_modified": 15.6,
+          "lecanemab": "~12% (Clarity AD)",
+          "difference": "3.6 percentage points"
+        },
+        "titration_strategy": "Gradual dose escalation vs standard"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Donanemab",
+      "TRAILBLAZER-ALZ 6",
+      "Modified titration",
+      "ARIA-E",
+      "Amyloid reduction",
+      "Dosing optimization",
+      "APOE ε4",
+      "Amyloid PET",
+      "Plasma P-tau217"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Antibodies, Monoclonal",
+      "Amyloid beta-Peptides",
+      "Amyloid-Related Imaging Abnormalities",
+      "Dose-Response Relationship, Drug",
+      "Treatment Outcome",
+      "Biomarkers"
+    ]
+  }
+}

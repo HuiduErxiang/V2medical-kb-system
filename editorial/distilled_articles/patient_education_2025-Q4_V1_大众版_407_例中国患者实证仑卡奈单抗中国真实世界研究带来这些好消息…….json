@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q4] V1【大众版】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx",
+    "content_hash": "1ef4b6824e6d56ca",
+    "distilled_at": "2026-03-10T03:56:06.516764",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V1【大众版】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "word_count": 2824,
+    "source_file": "[2025-Q4] V1【大众版】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n当记忆渐渐褪色，认知慢慢衰退...。",
+    "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n当记忆渐渐褪色，认知慢慢衰退...。",
+    "作为一种无法逆转的进行性神经退行性疾病，其治疗一直是医学领域的攻坚重点。",
+    "但药物在真实临床场景中表现如何？中国患者使用后疗效是否理想？安全性是否有保障？这些都是患者和家属最关...。",
+    "这表明仑卡奈单抗能精准作用于疾病的病根，有效清除大脑内导致疾病的“有害物质”，为病情控制打下好基础。"
+  ],
+  "accessibility_notes": [
+    "包含术语解释",
+    "句子长度适中"
+  ],
+  "raw_text_preview": "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n当记忆渐渐褪色，认知慢慢衰退，阿尔茨海默病（AD）不仅让患者失去生活自主性，更让无数家庭陷入照护困境。作为一种无法逆转的进行性神经退行性疾病，其治疗一直是医学领域的攻坚重点。\n靶向β淀粉样蛋白（Aβ）的疾病修饰药物仑卡奈单抗的获批，为治疗带来了突破性方向。\n但药物在真实临床场景中表现如何？中国患者使用后疗效是否理想？安全性是否..."
+}

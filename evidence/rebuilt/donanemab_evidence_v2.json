@@ -1,0 +1,89 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/donanemab/m6_evidence_database.json",
+    "product_id": "donanemab",
+    "product_name_zh": "多那单抗",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + 关键 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-DONANEMAB-TRAILBLAZER-ALZ2-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-DONANEMAB-TRAILBLAZER-ALZ2-2023-JAMA",
+      "title": "TRAILBLAZER-ALZ 2",
+      "citation": "Sims JR, et al. Donanemab in Early Symptomatic Alzheimer Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial. JAMA. 2023;330(6):512-527.",
+      "v1_source_id": "SRC_TRAILBLAZER_ALZ2_2024Q4",
+      "metadata": {
+        "study_type": "pivotal_phase3_RCT",
+        "indication": "alzheimers_disease",
+        "sample_size": 1736
+      }
+    },
+    {
+      "source_id": "V2-SRC-DONANEMAB-TRAILBLAZER-ALZ6-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-DONANEMAB-TRAILBLAZER-ALZ6-2025",
+      "title": "TRAILBLAZER-ALZ 6 (Dose Optimization)",
+      "citation": "Wang H, et al. Modified titration of donanemab reduces ARIA risk and maintains amyloid reduction. Alzheimers Dement. 2025;21:e70062.",
+      "v1_source_id": "SRC_TRAILBLAZER_ALZ6_2025Q3",
+      "metadata": {
+        "study_type": "phase3_dose_optimization",
+        "sample_size": 843
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-DONANEMAB-EFFICACY-001",
+      "fact_key": "FACT-DONANEMAB-CDRSB-CFB",
+      "domain": "efficacy",
+      "definition": "Change from baseline in CDR-SB",
+      "definition_zh": "CDR-SB较基线变化",
+      "value": "to_be_extracted",
+      "unit": "points",
+      "fragment_ids": ["V2-FRAG-DONANEMAB-TRAILBLAZER-ALZ2-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-DONANEMAB-TRAILBLAZER-ALZ2-2023-JAMA",
+        "asset_key": "AST-DONANEMAB-ALZ2-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_source_id": "SRC_TRAILBLAZER_ALZ2_2024Q4",
+        "rebuild_notes": "从V1 sources 和 evidence 结构映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-DONANEMAB-SAFETY-001",
+      "fact_key": "FACT-DONANEMAB-ARIA-RATE",
+      "domain": "safety",
+      "definition": "ARIA incidence rate",
+      "definition_zh": "ARIA发生率",
+      "value": "to_be_extracted",
+      "unit": "%",
+      "fragment_ids": ["V2-FRAG-DONANEMAB-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-DONANEMAB-TRAILBLAZER-ALZ6-2025",
+        "asset_key": "AST-DONANEMAB-ALZ6-SAFETY",
+        "extraction_date": "2026-03-10"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "meta": "product metadata",
+      "sources": "TRAILBLAZER-ALZ trial sources",
+      "evidence": "efficacy and safety items"
+    },
+    "v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (V2- prefix)",
+      "V1 sources[].citation -> V2 citation",
+      "V1 evidence[] -> V2 FactRecord with lineage"
+    ]
+  }
+}

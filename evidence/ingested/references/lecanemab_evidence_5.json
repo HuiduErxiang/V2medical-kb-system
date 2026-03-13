@@ -1,0 +1,41 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.041376",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2024-Q4_Lecanemab_显示出与从阿尔茨海默病患",
+    "asset_key": "AST-PDF-2024-Q4_Lecanemab_显示出与从阿尔茨海默病患",
+    "content_hash": "f9492183de877782"
+  },
+  "metadata": {
+    "title": "Lecanemab 显示出与从阿尔茨海默病患者大脑中分离的 Aβ 原纤维的高度选择性结合",
+    "authors": [],
+    "year": "2024",
+    "source_type": "pdf",
+    "study_type": null
+  },
+  "distilled_content": {
+    "summary": "General information about Lecanemab and Alzheimer's Disease"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2024-Q4] Lecanemab 显示出与从阿尔茨海默病患者大脑中分离的 Aβ 原纤维的高度选择性结合.pdf",
+    "original_size_bytes": 2194857,
+    "distilled_at": "2026-03-10T03:54:51.041403"
+  }
+}

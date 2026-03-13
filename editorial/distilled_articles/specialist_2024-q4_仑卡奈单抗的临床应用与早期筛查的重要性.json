@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2024-Q4] 仑卡奈单抗的临床应用与早期筛查的重要性.docx",
+    "source_key": "SRC-HIST-2024-Q4_仑卡奈单抗的临床应用与早期筛查的重要性",
+    "asset_key": "AST-DOCX-2024-Q4_仑卡奈单抗的临床应用与早期筛查的重要性",
+    "content_hash": "b69f1938c8d06d84",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:08.855033",
+    "source_size_bytes": 18028
+  },
+  "metadata": {
+    "title": "仑卡奈单抗的临床应用与早期筛查的重要性",
+    "content_type": "主张_证据",
+    "publication_quarter": "2024-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 问题背景引入",
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "尽管仑卡奈单抗为AD患者带来了新的治疗希望，但其临床管理仍需严格遵循科学规范，以确保患者的安全和治疗效果的最大化。以下是仑卡奈单抗临床管理的几个关键要点："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "在早期筛查的基础上，仑卡奈单抗的使用可以更加精准和有效。临床试验结果显示，仑卡奈单抗在轻度认知障碍和轻度痴呆阶段的患者中效果最佳。在这些阶段，患者的认知功能尚未受到严重损害，通过清除Aβ斑块，可以显著减缓认知能力的下降。如果在疾病晚期使用仑卡奈单抗，由于神经元已经大量死亡，治疗效果将大打折扣。",
+    "在安全性方面，仑卡奈单抗的III期临床试验结果显示，最常见的不良事件包括输液反应、ARIA-E和ARIA-H等。尽管这些不良反应的发生率较高，但大多数事件为轻中度，且通常在4个月内自行缓解。此外，仑卡奈单抗组和安慰剂组的死亡率相近，没有发现与仑卡奈单抗治疗或ARIA相关的死亡。这些结果表明，仑卡奈单抗在治疗AD时具有可接受的安全性和耐受性。"
+  ]
+}

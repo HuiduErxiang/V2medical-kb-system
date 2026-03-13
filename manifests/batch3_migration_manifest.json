@@ -1,0 +1,108 @@
+{
+  "manifest_version": "1.0",
+  "migration_batch": "Batch-3",
+  "migration_date": "2026-03-10",
+  "migration_phase": "Phase 4",
+  "description": "来源索引与批次登记结构建立 - 源端 source_ingestion/manifests 为空，建立 V2 正式索引骨架",
+  "summary": {
+    "source_migration_files": 0,
+    "new_index_files": 5,
+    "disposal_assets": 2,
+    "verification_status": "verified"
+  },
+  "important_notes": [
+    "源端 source_ingestion/manifests 为空目录，无文件需要迁移",
+    "本轮建立的是 V2 来源索引骨架和批次登记结构",
+    "state 资产属于处置范围，不计入迁移完成率"
+  ],
+  "assets": {
+    "source_ingestion_manifests": {
+      "source_key": "SRC-INGESTION-MANIFESTS",
+      "asset_key": "AST-PKG-INGESTION-MANIFESTS",
+      "source_path": "medical_kb_system/source_ingestion/manifests",
+      "target_path": "intake/manifests",
+      "decision": "rebuild",
+      "source_file_count": 0,
+      "reason": "源端目录为空，建立 V2 正式来源索引骨架",
+      "files_created": [
+        {
+          "path": "medical_kb_system_v2/intake/manifests/source_index_schema.json",
+          "content_hash": "fc66f33100a2b357",
+          "size_bytes": 2075,
+          "purpose": "来源索引规范定义"
+        },
+        {
+          "path": "medical_kb_system_v2/intake/manifests/batch_registry.json",
+          "content_hash": "3dfcd5633a161be6",
+          "size_bytes": 806,
+          "purpose": "批次注册表"
+        },
+        {
+          "path": "medical_kb_system_v2/intake/README.md",
+          "content_hash": "c585d26ae0deb710",
+          "size_bytes": 1324,
+          "purpose": "intake 目录说明"
+        }
+      ]
+    },
+    "intake_batches_registry": {
+      "source_key": "n/a",
+      "asset_key": "AST-INTAKE-BATCHES-REGISTRY",
+      "source_path": "n/a - 新建目标结构",
+      "target_path": "sources/intake_batches",
+      "decision": "rebuild",
+      "source_file_count": 0,
+      "reason": "建立批次登记结构，供后续 intake 批次使用",
+      "files_created": [
+        {
+          "path": "sources/intake_batches/batch_registry.json",
+          "content_hash": "b5f020e004a8310b",
+          "size_bytes": 1255,
+          "purpose": "批次登记表"
+        },
+        {
+          "path": "sources/intake_batches/README.md",
+          "content_hash": "245204eaa96386b6",
+          "size_bytes": 1184,
+          "purpose": "intake_batches 目录说明"
+        }
+      ]
+    }
+  },
+  "disposal_assets": {
+    "manifest_path": "manifests/v1_state_disposal_manifest.json",
+    "manifest_hash": "df62a407e4cf4a34",
+    "description": "V1 state 资产处置说明（不计入迁移完成率）",
+    "assets": {
+      "task_logs": {
+        "source_path": "medical_kb_system/state/task_logs",
+        "decision": "archive",
+        "file_count": 2,
+        "files": [
+          {
+            "path": "2026-03-08/task_20260308174204050240.md",
+            "content_hash": "eeee37adf8879725",
+            "size_bytes": 741
+          },
+          {
+            "path": "2026-03-08/task_20260308174204050240.json",
+            "content_hash": "a088b65d6db57dfb",
+            "size_bytes": 722
+          }
+        ]
+      },
+      "isolation": {
+        "source_path": "medical_kb_system/state/isolation",
+        "decision": "drop",
+        "file_count": 0
+      }
+    }
+  },
+  "verification": {
+    "source_dir_verified": true,
+    "target_structure_verified": true,
+    "hash_verified": true,
+    "pytest_status": "passed (146 tests)",
+    "manifest_content_hash": "0661437881d8cc0b"
+  }
+}

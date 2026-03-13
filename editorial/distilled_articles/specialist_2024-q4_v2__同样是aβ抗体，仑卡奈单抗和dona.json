@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2024-Q4] V2  同样是Aβ抗体，仑卡奈单抗和Donanemab有啥区别？一个长期主义，一个是一锤子买卖…….docx",
+    "source_key": "SRC-HIST-2024-Q4_V2__同样是Aβ抗体，仑卡奈单抗和Dona",
+    "asset_key": "AST-DOCX-2024-Q4_V2__同样是Aβ抗体，仑卡奈单抗和Dona",
+    "content_hash": "3222109c8afae67b",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.960099",
+    "source_size_bytes": 979468
+  },
+  "metadata": {
+    "title": "V2  同样是Aβ抗体，仑卡奈单抗和Donanemab有啥区别？一个长期主义，一个是一锤子买卖……",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2024-Q4",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "III期研究的筛选比例降至4.75 : 1，但依然高于仑卡奈单抗的筛选比例。后者在两项临床研究中都在3.5：1左右。",
+      "从这个角度看，TRAILBLAZER-ALZ 2 研究结论的描述存在争议的。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "由于Aβ寡聚体/原纤维是AD病理过程的中间枢纽，所以仑卡奈单抗还可以同时影响更多环节。Clarity AD研究结果[6]显示，仑卡奈单抗可以显著降低患者的Aβ PET负荷、Tau PET负荷、CSF Tau负荷、CSF Aβ42/40、血浆 Aβ42/40、血浆 NfL、血浆 GFAP等生物标志物。",
+    "临床研究结果表明，Donanemab的ARIA-E和ARIA-H发生率都比仑卡奈单抗高出一倍左右，ADA发生率也显著高于仑卡奈单抗[8,9]。"
+  ]
+}

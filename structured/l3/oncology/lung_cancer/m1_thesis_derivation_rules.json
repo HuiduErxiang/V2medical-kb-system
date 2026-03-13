@@ -1,0 +1,32 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "lung_cancer",
+    "version": "0.1.0",
+    "last_updated": "2026-03-02",
+    "description": "肺癌疾病特异性论点推导规则"
+  },
+  "rules": [
+    {
+      "id": "LUNG_001",
+      "category": "egfr_pathway",
+      "pattern": "患者携带 [EGFR 突变亚型]，属于 [突变类别]，推荐 [治疗策略]",
+      "derivation_template": "基因检测证实患者携带 [EGFR 突变亚型]，该突变属于 [突变类别]。根据 [指南名称]，[目标药物] 作为 [治疗线数] 治疗选择，可期待 [预期疗效描述]。与 [竞品药物] 相比，[目标药物] 在 [差异化维度] 方面具有 [优势描述]",
+      "required_evidence": ["NGS 基因检测报告", "病理诊断"],
+      "confidence_level": "high"
+    },
+    {
+      "id": "LUNG_002",
+      "category": "resistance_mechanisms",
+      "pattern": "[既往 TKI 治疗] 后出现疾病进展，耐药机制可能涉及 [耐药机制类型]",
+      "derivation_template": "患者既往接受 [既往 TKI 治疗] 后出现疾病进展，再次基因检测提示 [耐药突变/机制]。该耐药机制提示 [病理生理描述]，[目标药物] 针对该机制的 [作用特点] 可能提供 [临床获益描述]",
+      "required_evidence": ["既往治疗史", "进展后基因检测"],
+      "confidence_level": "moderate"
+    }
+  ]
+}

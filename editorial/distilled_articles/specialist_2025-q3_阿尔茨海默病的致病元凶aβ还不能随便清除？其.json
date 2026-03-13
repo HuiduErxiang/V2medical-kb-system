@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] 阿尔茨海默病的致病元凶Aβ还不能随便清除？其中大有门道.docx",
+    "source_key": "SRC-HIST-2025-Q3_阿尔茨海默病的致病元凶Aβ还不能随便清除？其",
+    "asset_key": "AST-DOCX-2025-Q3_阿尔茨海默病的致病元凶Aβ还不能随便清除？其",
+    "content_hash": "40dff92e5f118e79",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.235481",
+    "source_size_bytes": 120784
+  },
+  "metadata": {
+    "title": "阿尔茨海默病的致病元凶Aβ还不能随便清除？其中大有门道",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 直接陈述"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "CTAD大会（阿尔茨海默病临床试验大会）是阿尔茨海默病临床试验领域久负盛名的顶级学术平台，CTAD CHINA上会发布众多来自中国学者、中国临床科研机构的最新研究成果。",
+      "我们可以把斑块理解成一个大监狱，关押了大量“囚犯”当监狱坍塌之时，囚犯就会越狱而出。抗体药物就像是奉命捉拿逃犯的，。仑卡奈单抗能力极强，，也能出色的完成阻止ARIA发生的任务。",
+      "通过深入研究仑卡奈单抗的药物安全机制，不仅为 AD 免疫治疗锚定 “疗效 - 安全” 平衡的核心方向，更以机制突破为基石，为攻克神经退行性疾病、守护人类认知健康开辟了科学新路径。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "此前披露的横向对比研究显示，仑卡奈单抗的ARIA发生率显著低于另一款已上市Aβ抗体药物多奈单抗，在APOE ε4基因不同携带状态的人群中，仑卡奈单抗的安全性优势稳定存在，也说明仑卡奈单抗更加普适，能为更多患者提供安全的治疗选择，即便多奈单抗调整滴定方案，安全性仍不及多奈单抗。"
+  ]
+}

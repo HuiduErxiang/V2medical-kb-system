@@ -1,0 +1,467 @@
+{
+  "manifest_version": "1.0",
+  "batch_id": "H004",
+  "batch_type": "HISTORICAL_ARTICLE_SPECIALIST",
+  "created_at": "2026-03-10T03:56:10.252994",
+  "description": "H004批次专科医师历史文章蒸馏 - 44篇文章的编辑风格资产",
+  "source_path": "medical_kb_system/source_ingestion/raw_documents/historical_articles/专科医师",
+  "target_path": "medical_kb_system_v2/editorial/distilled_articles",
+  "distillation_status": "completed",
+  "files": [
+    {
+      "source_file": "[2024-Q4] 仑卡奈单抗的临床应用与早期筛查的重要性.docx",
+      "target_file": "specialist_2024-q4_仑卡奈单抗的临床应用与早期筛查的重要性.json",
+      "source_key": "SRC-HIST-2024-Q4_仑卡奈单抗的临床应用与早期筛查的重要性",
+      "asset_key": "AST-DOCX-2024-Q4_仑卡奈单抗的临床应用与早期筛查的重要性",
+      "content_hash": "b69f1938c8d06d84",
+      "source_size_bytes": 18028,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q2] V1【初稿】分子机制进一步明确后，仑卡奈单抗成为了抗Aβ治疗中的唯一.docx",
+      "target_file": "specialist_2025-q2_v1【初稿】分子机制进一步明确后，仑卡奈单抗.json",
+      "source_key": "SRC-HIST-2025-Q2_V1【初稿】分子机制进一步明确后，仑卡奈单抗",
+      "asset_key": "AST-DOCX-2025-Q2_V1【初稿】分子机制进一步明确后，仑卡奈单抗",
+      "content_hash": "2868d0e9ec7b4877",
+      "source_size_bytes": 299904,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q2] V2【初稿】首次！仑卡奈单抗全面清除Aβ机制被证实，寡聚体和斑块都被干掉了…… .docx",
+      "target_file": "specialist_2025-q2_v2【初稿】首次！仑卡奈单抗全面清除aβ机制.json",
+      "source_key": "SRC-HIST-2025-Q2_V2【初稿】首次！仑卡奈单抗全面清除Aβ机制",
+      "asset_key": "AST-DOCX-2025-Q2_V2【初稿】首次！仑卡奈单抗全面清除Aβ机制",
+      "content_hash": "569b7b9c6e526cc9",
+      "source_size_bytes": 299438,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] AAIC最具看点报告，两款抗Aβ药物ARIA发生率的间接比较，仑卡奈单抗赢了…….docx",
+      "target_file": "specialist_2025-q3_aaic最具看点报告，两款抗aβ药物aria.json",
+      "source_key": "SRC-HIST-2025-Q3_AAIC最具看点报告，两款抗Aβ药物ARIA",
+      "asset_key": "AST-DOCX-2025-Q3_AAIC最具看点报告，两款抗Aβ药物ARIA",
+      "content_hash": "b7ac0a3ad269f8c3",
+      "source_size_bytes": 391346,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V1 仑卡奈单抗的安全性优势更明显？这项重磅研究给出了肯定的答案…….docx",
+      "target_file": "specialist_2025-q3_v1_仑卡奈单抗的安全性优势更明显？这项重磅.json",
+      "source_key": "SRC-HIST-2025-Q3_V1_仑卡奈单抗的安全性优势更明显？这项重磅",
+      "asset_key": "AST-DOCX-2025-Q3_V1_仑卡奈单抗的安全性优势更明显？这项重磅",
+      "content_hash": "cbb8878bccd7627c",
+      "source_size_bytes": 391560,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V1-疗效提高3倍，ARIA发生率大幅下降！仑卡奈单抗又一重要证据出炉…….docx",
+      "target_file": "specialist_2025-q3_v1-疗效提高3倍，aria发生率大幅下降！.json",
+      "source_key": "SRC-HIST-2025-Q3_V1-疗效提高3倍，ARIA发生率大幅下降！",
+      "asset_key": "AST-DOCX-2025-Q3_V1-疗效提高3倍，ARIA发生率大幅下降！",
+      "content_hash": "0f930063696b59e9",
+      "source_size_bytes": 603455,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V1初稿-返【AAICHCP-P7】华西医院研究亮相AAIC大会！仑卡奈单抗治疗中国AD患者的真实世界疗效如何？.docx",
+      "target_file": "specialist_2025-q3_v1初稿-返【aaichcp-p7】华西医院.json",
+      "source_key": "SRC-HIST-2025-Q3_V1初稿-返【AAICHCP-P7】华西医院",
+      "asset_key": "AST-DOCX-2025-Q3_V1初稿-返【AAICHCP-P7】华西医院",
+      "content_hash": "aab6fd85309587e9",
+      "source_size_bytes": 600696,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V2.2【AAIC患者端-P5-血检优势相关】20250810-JMM.docx",
+      "target_file": "specialist_2025-q3_v2.2【aaic患者端-p5-血检优势相关.json",
+      "source_key": "SRC-HIST-2025-Q3_V2.2【AAIC患者端-P5-血检优势相关",
+      "asset_key": "AST-DOCX-2025-Q3_V2.2【AAIC患者端-P5-血检优势相关",
+      "content_hash": "7c00e4842cb3a5f0",
+      "source_size_bytes": 26208,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V2【AAIC患者端-P5-初稿】.docx",
+      "target_file": "specialist_2025-q3_v2【aaic患者端-p5-初稿】.json",
+      "source_key": "SRC-HIST-2025-Q3_V2【AAIC患者端-P5-初稿】",
+      "asset_key": "AST-DOCX-2025-Q3_V2【AAIC患者端-P5-初稿】",
+      "content_hash": "6fd543a2be9db28a",
+      "source_size_bytes": 19302,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V3初稿【AAICHCP-P7】华西医院研究亮相AAIC大会！仑卡奈单抗治疗中国AD患者的真实世界疗效如何？.docx",
+      "target_file": "specialist_2025-q3_v3初稿【aaichcp-p7】华西医院研究.json",
+      "source_key": "SRC-HIST-2025-Q3_V3初稿【AAICHCP-P7】华西医院研究",
+      "asset_key": "AST-DOCX-2025-Q3_V3初稿【AAICHCP-P7】华西医院研究",
+      "content_hash": "a1c1778e82aaf276",
+      "source_size_bytes": 603411,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] 【4年随访解读完整版】阿尔茨海默病新时代，两款新药长期随访证据相继出炉，我们能看到什么？.docx",
+      "target_file": "specialist_2025-q3_【4年随访解读完整版】阿尔茨海默病新时代，两.json",
+      "source_key": "SRC-HIST-2025-Q3_【4年随访解读完整版】阿尔茨海默病新时代，两",
+      "asset_key": "AST-DOCX-2025-Q3_【4年随访解读完整版】阿尔茨海默病新时代，两",
+      "content_hash": "97fbf06f3386384f",
+      "source_size_bytes": 2050422,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] 仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明：仑卡奈单抗ARIA发生风险显著更低，适合大多数患者人群…….docx",
+      "target_file": "specialist_2025-q3_仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明.json",
+      "source_key": "SRC-HIST-2025-Q3_仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明",
+      "asset_key": "AST-DOCX-2025-Q3_仑卡奈单抗和多奈单抗的巅峰对决！最新研究证明",
+      "content_hash": "508c463d6fde43d8",
+      "source_size_bytes": 101691,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] 阿尔茨海默病的致病元凶Aβ还不能随便清除？其中大有门道.docx",
+      "target_file": "specialist_2025-q3_阿尔茨海默病的致病元凶aβ还不能随便清除？其.json",
+      "source_key": "SRC-HIST-2025-Q3_阿尔茨海默病的致病元凶Aβ还不能随便清除？其",
+      "asset_key": "AST-DOCX-2025-Q3_阿尔茨海默病的致病元凶Aβ还不能随便清除？其",
+      "content_hash": "40dff92e5f118e79",
+      "source_size_bytes": 120784,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的真实世界数据：疗效、安全性及生物标志物应用.docx",
+      "target_file": "specialist_2025-q4_2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的.json",
+      "source_key": "SRC-HIST-2025-Q4_2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的",
+      "asset_key": "AST-DOCX-2025-Q4_2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的",
+      "content_hash": "14e739e90e569e48",
+      "source_size_bytes": 20653,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1-仑卡奈单抗清除Aβ背后的秘密！小胶质细胞成阿尔茨海默病治疗关键…….docx",
+      "target_file": "specialist_2025-q4_v1-仑卡奈单抗清除aβ背后的秘密！小胶质细.json",
+      "source_key": "SRC-HIST-2025-Q4_V1-仑卡奈单抗清除Aβ背后的秘密！小胶质细",
+      "asset_key": "AST-DOCX-2025-Q4_V1-仑卡奈单抗清除Aβ背后的秘密！小胶质细",
+      "content_hash": "080238f292acb850",
+      "source_size_bytes": 848636,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1-颠覆认知！CSF Aβ-PF升高并非恶化，仑卡奈单抗治疗AD核心机制揭秘…….docx",
+      "target_file": "specialist_2025-q4_v1-颠覆认知！csf_aβ-pf升高并非恶.json",
+      "source_key": "SRC-HIST-2025-Q4_V1-颠覆认知！CSF_Aβ-PF升高并非恶",
+      "asset_key": "AST-DOCX-2025-Q4_V1-颠覆认知！CSF_Aβ-PF升高并非恶",
+      "content_hash": "105532cd301b2537",
+      "source_size_bytes": 599276,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 仑卡奈单抗临床数据全景解读：延缓AD进展的实证之路.docx",
+      "target_file": "specialist_2025-q4_仑卡奈单抗临床数据全景解读：延缓ad进展的实.json",
+      "source_key": "SRC-HIST-2025-Q4_仑卡奈单抗临床数据全景解读：延缓AD进展的实",
+      "asset_key": "AST-DOCX-2025-Q4_仑卡奈单抗临床数据全景解读：延缓AD进展的实",
+      "content_hash": "ef21b747bd5ab6a5",
+      "source_size_bytes": 14588,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状，中国患者用药更安全，中国多中心研究成果出炉！.docx",
+      "target_file": "specialist_2025-q4_仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状.json",
+      "source_key": "SRC-HIST-2025-Q4_仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状",
+      "asset_key": "AST-DOCX-2025-Q4_仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状",
+      "content_hash": "76a268fdf33ef730",
+      "source_size_bytes": 19525,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 初稿修-告别平均疗效，解码仑卡奈单抗治疗的“高获益人群”(1).docx",
+      "target_file": "specialist_2025-q4_初稿修-告别平均疗效，解码仑卡奈单抗治疗的“.json",
+      "source_key": "SRC-HIST-2025-Q4_初稿修-告别平均疗效，解码仑卡奈单抗治疗的“",
+      "asset_key": "AST-DOCX-2025-Q4_初稿修-告别平均疗效，解码仑卡奈单抗治疗的“",
+      "content_hash": "1a055fd1d5330932",
+      "source_size_bytes": 647798,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 多中心真实世界研究填补国内空白：仑卡奈单抗为阿尔茨海默病患者带来认知改善新曙光.docx",
+      "target_file": "specialist_2025-q4_多中心真实世界研究填补国内空白：仑卡奈单抗为.json",
+      "source_key": "SRC-HIST-2025-Q4_多中心真实世界研究填补国内空白：仑卡奈单抗为",
+      "asset_key": "AST-DOCX-2025-Q4_多中心真实世界研究填补国内空白：仑卡奈单抗为",
+      "content_hash": "e94ef92aa47565c4",
+      "source_size_bytes": 180500,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] 正文1.不同严重程度阿尔茨海默病患者的仑卡奈单抗治疗及其相关血浆生物标志物监测：中国多中心真实世界研究.docx",
+      "target_file": "specialist_2025-q4_正文1.不同严重程度阿尔茨海默病患者的仑卡奈.json",
+      "source_key": "SRC-HIST-2025-Q4_正文1.不同严重程度阿尔茨海默病患者的仑卡奈",
+      "asset_key": "AST-DOCX-2025-Q4_正文1.不同严重程度阿尔茨海默病患者的仑卡奈",
+      "content_hash": "d1cbefed2b6902b5",
+      "source_size_bytes": 996879,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2026-Q1] V1-Nature重磅！仑卡奈单抗作用机制全景揭秘，小胶质细胞被精准“拿捏”了…….docx",
+      "target_file": "specialist_2026-q1_v1-nature重磅！仑卡奈单抗作用机制全.json",
+      "source_key": "SRC-HIST-2026-Q1_V1-Nature重磅！仑卡奈单抗作用机制全",
+      "asset_key": "AST-DOCX-2026-Q1_V1-Nature重磅！仑卡奈单抗作用机制全",
+      "content_hash": "27d2fd15d049fd57",
+      "source_size_bytes": 1802298,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2026-Q1] V4-斑块清除后，抗Aβ治疗到底该不该停药？研究显示：不停 vs 停，效果竟差66%！.docx",
+      "target_file": "specialist_2026-q1_v4-斑块清除后，抗aβ治疗到底该不该停药？.json",
+      "source_key": "SRC-HIST-2026-Q1_V4-斑块清除后，抗Aβ治疗到底该不该停药？",
+      "asset_key": "AST-DOCX-2026-Q1_V4-斑块清除后，抗Aβ治疗到底该不该停药？",
+      "content_hash": "b853c120b87e85cf",
+      "source_size_bytes": 1465783,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2026-Q1] 【V1-浙二报道】AD发病年龄越早，认知下降越快！浙二团队仑卡奈单抗真实世界研究发表.docx",
+      "target_file": "specialist_2026-q1_【v1-浙二报道】ad发病年龄越早，认知下降.json",
+      "source_key": "SRC-HIST-2026-Q1_【V1-浙二报道】AD发病年龄越早，认知下降",
+      "asset_key": "AST-DOCX-2026-Q1_【V1-浙二报道】AD发病年龄越早，认知下降",
+      "content_hash": "e1f3768d28abaced",
+      "source_size_bytes": 394927,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2026-Q1] 抗Aβ单抗治疗到底该不该斑块清除后停药？研究显示「持续治疗获益」较「停药」差距竟有66%！.docx",
+      "target_file": "specialist_2026-q1_抗aβ单抗治疗到底该不该斑块清除后停药？研究.json",
+      "source_key": "SRC-HIST-2026-Q1_抗Aβ单抗治疗到底该不该斑块清除后停药？研究",
+      "asset_key": "AST-DOCX-2026-Q1_抗Aβ单抗治疗到底该不该斑块清除后停药？研究",
+      "content_hash": "2d624a959f248952",
+      "source_size_bytes": 480018,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] V8 因为新药到来，他们建立了一个新的阿尔茨海默病疗效评价体系…….docx",
+      "target_file": "specialist_2025-q1_v8_因为新药到来，他们建立了一个新的阿尔茨.json",
+      "source_key": "SRC-HIST-2025-Q1_V8_因为新药到来，他们建立了一个新的阿尔茨",
+      "asset_key": "AST-DOCX-2025-Q1_V8_因为新药到来，他们建立了一个新的阿尔茨",
+      "content_hash": "7d762f79cb0914f9",
+      "source_size_bytes": 783369,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] 《仑卡奈单抗的疗效如何》.docx",
+      "target_file": "specialist_2025-q1_《仑卡奈单抗的疗效如何》.json",
+      "source_key": "SRC-HIST-2025-Q1_《仑卡奈单抗的疗效如何》",
+      "asset_key": "AST-DOCX-2025-Q1_《仑卡奈单抗的疗效如何》",
+      "content_hash": "7d775f1a5ddf50cc",
+      "source_size_bytes": 16761,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V1【P8-初稿】早诊早治获益超三倍！华西医院披露仑卡奈单抗最新临床疗效.docx",
+      "target_file": "specialist_2025-q3_v1【p8-初稿】早诊早治获益超三倍！华西医.json",
+      "source_key": "SRC-HIST-2025-Q3_V1【P8-初稿】早诊早治获益超三倍！华西医",
+      "asset_key": "AST-DOCX-2025-Q3_V1【P8-初稿】早诊早治获益超三倍！华西医",
+      "content_hash": "ac7a998e2fb34c9d",
+      "source_size_bytes": 15262,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2026-Q1] V3-碾压式安全优势？仑卡奈单抗的AD治疗逻辑太绝了…….docx",
+      "target_file": "specialist_2026-q1_v3-碾压式安全优势？仑卡奈单抗的ad治疗逻.json",
+      "source_key": "SRC-HIST-2026-Q1_V3-碾压式安全优势？仑卡奈单抗的AD治疗逻",
+      "asset_key": "AST-DOCX-2026-Q1_V3-碾压式安全优势？仑卡奈单抗的AD治疗逻",
+      "content_hash": "fa4ddb40f5dfc500",
+      "source_size_bytes": 25976,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] 《使用仑卡奈单抗，安全吗？》.docx",
+      "target_file": "specialist_2025-q1_《使用仑卡奈单抗，安全吗？》.json",
+      "source_key": "SRC-HIST-2025-Q1_《使用仑卡奈单抗，安全吗？》",
+      "asset_key": "AST-DOCX-2025-Q1_《使用仑卡奈单抗，安全吗？》",
+      "content_hash": "c16c49fa75793f66",
+      "source_size_bytes": 16568,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1【AE管理】阿尔茨海默病用药怕 ARIA？E4 纯合子患者该这么办！.docx",
+      "target_file": "specialist_2025-q4_v1【ae管理】阿尔茨海默病用药怕_aria.json",
+      "source_key": "SRC-HIST-2025-Q4_V1【AE管理】阿尔茨海默病用药怕_ARIA",
+      "asset_key": "AST-DOCX-2025-Q4_V1【AE管理】阿尔茨海默病用药怕_ARIA",
+      "content_hash": "b688842a5829671b",
+      "source_size_bytes": 28884,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1-AD新药对比！仑卡奈单抗的「安全性」还是太突出了…….docx",
+      "target_file": "specialist_2025-q4_v1-ad新药对比！仑卡奈单抗的「安全性」还.json",
+      "source_key": "SRC-HIST-2025-Q4_V1-AD新药对比！仑卡奈单抗的「安全性」还",
+      "asset_key": "AST-DOCX-2025-Q4_V1-AD新药对比！仑卡奈单抗的「安全性」还",
+      "content_hash": "f6d62fd023616a68",
+      "source_size_bytes": 1046557,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1【修】-AD新药对比！仑卡奈单抗的「安全性」还是太突出了…….docx",
+      "target_file": "specialist_2025-q4_v1【修】-ad新药对比！仑卡奈单抗的「安全.json",
+      "source_key": "SRC-HIST-2025-Q4_V1【修】-AD新药对比！仑卡奈单抗的「安全",
+      "asset_key": "AST-DOCX-2025-Q4_V1【修】-AD新药对比！仑卡奈单抗的「安全",
+      "content_hash": "8a3ea06a8653a300",
+      "source_size_bytes": 1048625,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2024-Q4] V2  同样是Aβ抗体，仑卡奈单抗和Donanemab有啥区别？一个长期主义，一个是一锤子买卖…….docx",
+      "target_file": "specialist_2024-q4_v2__同样是aβ抗体，仑卡奈单抗和dona.json",
+      "source_key": "SRC-HIST-2024-Q4_V2__同样是Aβ抗体，仑卡奈单抗和Dona",
+      "asset_key": "AST-DOCX-2024-Q4_V2__同样是Aβ抗体，仑卡奈单抗和Dona",
+      "content_hash": "3222109c8afae67b",
+      "source_size_bytes": 979468,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2024-Q4] V2 大反转！EMA建议批准仑卡奈单抗，背后的逻辑是什么？.docx",
+      "target_file": "specialist_2024-q4_v2_大反转！ema建议批准仑卡奈单抗，背后.json",
+      "source_key": "SRC-HIST-2024-Q4_V2_大反转！EMA建议批准仑卡奈单抗，背后",
+      "asset_key": "AST-DOCX-2024-Q4_V2_大反转！EMA建议批准仑卡奈单抗，背后",
+      "content_hash": "dc765642cf05d99f",
+      "source_size_bytes": 18647,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2024-Q4] 能停药的Aβ抗体，真的是DMT治疗吗？.docx",
+      "target_file": "specialist_2024-q4_能停药的aβ抗体，真的是dmt治疗吗？.json",
+      "source_key": "SRC-HIST-2024-Q4_能停药的Aβ抗体，真的是DMT治疗吗？",
+      "asset_key": "AST-DOCX-2024-Q4_能停药的Aβ抗体，真的是DMT治疗吗？",
+      "content_hash": "2dfcbe62ad522fa0",
+      "source_size_bytes": 523773,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] V2 多奈单抗比仑卡奈单抗更高的ARIA发生率，背后透露了哪些信息？_1.docx",
+      "target_file": "specialist_2025-q1_v2_多奈单抗比仑卡奈单抗更高的aria发生.json",
+      "source_key": "SRC-HIST-2025-Q1_V2_多奈单抗比仑卡奈单抗更高的ARIA发生",
+      "asset_key": "AST-DOCX-2025-Q1_V2_多奈单抗比仑卡奈单抗更高的ARIA发生",
+      "content_hash": "5d72fa41bf5404c5",
+      "source_size_bytes": 349152,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] V3 ARIA发生率越高，清除Aβ的效率越高？.docx",
+      "target_file": "specialist_2025-q1_v3_aria发生率越高，清除aβ的效率越高.json",
+      "source_key": "SRC-HIST-2025-Q1_V3_ARIA发生率越高，清除Aβ的效率越高",
+      "asset_key": "AST-DOCX-2025-Q1_V3_ARIA发生率越高，清除Aβ的效率越高",
+      "content_hash": "112e768162e6836a",
+      "source_size_bytes": 393175,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q1] 欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药Kisunla，安全风险成核心考量.docx",
+      "target_file": "specialist_2025-q1_欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药.json",
+      "source_key": "SRC-HIST-2025-Q1_欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药",
+      "asset_key": "AST-DOCX-2025-Q1_欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药",
+      "content_hash": "2ce59c4b63c617ee",
+      "source_size_bytes": 16035,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q2] V2 为什么仑卡奈单抗是更好的阿尔茨海默病新药？这是全球唯一在中、美、欧三地获批的抗Aβ药物.docx",
+      "target_file": "specialist_2025-q2_v2_为什么仑卡奈单抗是更好的阿尔茨海默病新.json",
+      "source_key": "SRC-HIST-2025-Q2_V2_为什么仑卡奈单抗是更好的阿尔茨海默病新",
+      "asset_key": "AST-DOCX-2025-Q2_V2_为什么仑卡奈单抗是更好的阿尔茨海默病新",
+      "content_hash": "b56dd35faf4583e6",
+      "source_size_bytes": 19532,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q2] V3 仑卡奈单抗欧盟获批！多奈单抗恐怕追不上了…… .docx",
+      "target_file": "specialist_2025-q2_v3_仑卡奈单抗欧盟获批！多奈单抗恐怕追不上.json",
+      "source_key": "SRC-HIST-2025-Q2_V3_仑卡奈单抗欧盟获批！多奈单抗恐怕追不上",
+      "asset_key": "AST-DOCX-2025-Q2_V3_仑卡奈单抗欧盟获批！多奈单抗恐怕追不上",
+      "content_hash": "6f2f06100c1e6d7e",
+      "source_size_bytes": 304874,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] ARIA-H 2.0(1).docx",
+      "target_file": "specialist_2025-q3_aria-h_2.0(1).json",
+      "source_key": "SRC-HIST-2025-Q3_ARIA-H_2.0(1)",
+      "asset_key": "AST-DOCX-2025-Q3_ARIA-H_2.0(1)",
+      "content_hash": "27d1610081c50c14",
+      "source_size_bytes": 21489,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q3] V2【初稿】20 年沉疴之后：AD新药为何总有ARIA-H 风险？是什么阻碍了抗Aβ药物“高效又安全”？.docx",
+      "target_file": "specialist_2025-q3_v2【初稿】20_年沉疴之后：ad新药为何总.json",
+      "source_key": "SRC-HIST-2025-Q3_V2【初稿】20_年沉疴之后：AD新药为何总",
+      "asset_key": "AST-DOCX-2025-Q3_V2【初稿】20_年沉疴之后：AD新药为何总",
+      "content_hash": "938c8c8ff869b884",
+      "source_size_bytes": 1434020,
+      "distillation_type": "historical_article_specialist"
+    },
+    {
+      "source_file": "[2025-Q4] V1 《柳叶刀》AD专辑重磅解读！如何破解抗Aβ药物的“价值之争”…….docx",
+      "target_file": "specialist_2025-q4_v1_《柳叶刀》ad专辑重磅解读！如何破解抗.json",
+      "source_key": "SRC-HIST-2025-Q4_V1_《柳叶刀》AD专辑重磅解读！如何破解抗",
+      "asset_key": "AST-DOCX-2025-Q4_V1_《柳叶刀》AD专辑重磅解读！如何破解抗",
+      "content_hash": "3ab53a169fe558c9",
+      "source_size_bytes": 108923,
+      "distillation_type": "historical_article_specialist"
+    }
+  ],
+  "statistics": {
+    "source_files_total": 44,
+    "source_files_processed": 44,
+    "source_files_excluded": 0,
+    "total_source_size_bytes": 20148216,
+    "output_files": 44
+  },
+  "distillation_summary": {
+    "content_types": [
+      "场景_指导",
+      "新闻_评论",
+      "对比_推荐",
+      "叙事_反思",
+      "主张_证据"
+    ],
+    "publication_quarters": [
+      "2025-Q3",
+      "2025-Q2",
+      "2025-Q4",
+      "2025-Q1",
+      "2026-Q1",
+      "2024-Q4"
+    ],
+    "article_count_by_type": {
+      "主张_证据": 25,
+      "叙事_反思": 4,
+      "场景_指导": 2,
+      "对比_推荐": 2,
+      "新闻_评论": 11
+    },
+    "key_patterns_identified": {
+      "narrative_patterns": [
+        "研究发现-结论推导",
+        "对比分析",
+        "问题背景引入"
+      ],
+      "rhetoric_blocks": [
+        "证据支持的主张",
+        "机制解释",
+        "安全性分析",
+        "对比论证"
+      ],
+      "hook_patterns": [
+        "强调重要性",
+        "问题导向",
+        "直接陈述"
+      ],
+      "risk_patterns": [
+        "明确提及风险",
+        "量化风险",
+        "风险管理措施"
+      ],
+      "cta_patterns": [
+        "建议性行动",
+        "研究方向建议",
+        "临床应用指导"
+      ]
+    }
+  }
+}

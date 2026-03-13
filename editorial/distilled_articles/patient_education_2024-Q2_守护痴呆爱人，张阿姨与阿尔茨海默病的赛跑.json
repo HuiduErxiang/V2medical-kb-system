@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑.docx",
+    "content_hash": "df3e67053469a7ea",
+    "distilled_at": "2026-03-10T03:56:06.607539",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1477,
+    "source_file": "[2024-Q2] 守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "来自新药的曙光\n幸运的是，随着医学研究的进步，针对阿尔茨海默病的对因治疗药物——仑卡奈单抗已经问世。",
+    "守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑\n我国是全球阿尔茨海默病（AD）患病人数最多的国家之一，根据...。",
+    "医生告诉他们，只要尽早治疗，就能有效延缓病程进展。",
+    "更为棘手的是，他们的走失问题，每一次都可能带来极大的安全风险。",
+    "医生告诉他们，只要尽早治疗，就能有效延缓病程进展。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "守护痴呆爱人，张阿姨与阿尔茨海默病的赛跑\n我国是全球阿尔茨海默病（AD）患病人数最多的国家之一，根据《2022年中国阿尔茨海默病报告》，我国AD患者已近千万。\n而另一面的现实是，很多人都还没来得及知道什么是“AD”，就被卷入了这场无尽的旋涡。\n\n病影初现\n老刘是一位退休工程师，与妻子张阿姨携手走过了五十余载的风风雨雨。他们的生活平静而幸福，然而，从2016年开始，老刘的行为逐渐变得反常。他经常忘记..."
+}

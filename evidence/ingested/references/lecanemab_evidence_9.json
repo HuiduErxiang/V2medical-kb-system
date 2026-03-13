@@ -1,0 +1,41 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.047378",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2024-Unknown_Takeshi_lwatsubo.",
+    "asset_key": "AST-PPTX-2024-Unknown_Takeshi_lwatsubo.",
+    "content_hash": "8069d8dad8a7bf90"
+  },
+  "metadata": {
+    "title": "Takeshi lwatsubo",
+    "authors": [],
+    "year": "2024",
+    "source_type": "pptx",
+    "study_type": null
+  },
+  "distilled_content": {
+    "summary": "General information about Lecanemab and Alzheimer's Disease"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2024-Unknown] Takeshi lwatsubo. Latest data from the clinic use of Lecanemab in Japan. CTAD 2024. .pptx",
+    "original_size_bytes": 3933281,
+    "distilled_at": "2026-03-10T03:54:51.047445"
+  }
+}

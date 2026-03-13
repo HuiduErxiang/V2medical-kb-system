@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\新闻_评论\\[2025-Q3] 惠民保铺路，让阿尔茨海默病治疗唾手可得.docx",
+    "content_hash": "d6f81827957dc3fb",
+    "distilled_at": "2026-03-10T03:56:06.888763",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "惠民保铺路，让阿尔茨海默病治疗唾手可得",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q3",
+    "word_count": 1823,
+    "source_file": "[2025-Q3] 惠民保铺路，让阿尔茨海默病治疗唾手可得.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "惠民保铺路，让阿尔茨海默病治疗唾手可得\n2025年6月19日，互联网保险优选平台蚂蚁保宣布，阿尔茨海...。",
+    "惠民保铺路，让阿尔茨海默病治疗唾手可得\n2025年6月19日，互联网保险优选平台蚂蚁保宣布，阿尔茨海...。",
+    "惠民保铺路，让阿尔茨海默病治疗唾手可得\n2025年6月19日，互联网保险优选平台蚂蚁保宣布，阿尔茨海...。",
+    "发布于中华医学杂志的《中国阿尔茨海默病蓝皮书》显示[2]，中国是全球AD患者最多的国家，我跟AD及相...。",
+    "很多阿尔茨海默病患者刚刚发病时常常会被家属认为是上了年纪的健忘而被忽略，但随着被抹去的记忆越来越多，...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "惠民保铺路，让阿尔茨海默病治疗唾手可得\n2025年6月19日，互联网保险优选平台蚂蚁保宣布，阿尔茨海默病（AD）疾病修饰治疗药物仑卡奈单抗纳入旗下品牌“好医保”。这对AD家庭无疑是一个令人欣喜的好消息。仑卡奈单抗是用于治疗由阿尔茨海默病引起的轻度认知障碍和阿尔茨海默病轻度痴呆的药物，于2024年1月获得国家药品监督管理局批准。\n发布于中华医学杂志的《中国阿尔茨海默病蓝皮书》显示[2]，中国是全球A..."
+}

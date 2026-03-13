@@ -1,0 +1,89 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-10",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/test_product/m6_evidence_database.json",
+    "product_id": "test_product",
+    "product_name_zh": "测试产品",
+    "rebuild_status": "complete",
+    "rebuild_scope": "V1->V2 evidence 重建：sources 映射 + facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-TEST-PRODUCT-001",
+      "source_type": "pdf",
+      "source_key": "SRC-TEST-PDF-2023",
+      "title": "Test Source 1",
+      "citation": "Test Author et al., 2023",
+      "v1_source_id": "test-src-1",
+      "metadata": {
+        "file": "test_article.pdf"
+      }
+    },
+    {
+      "source_id": "V2-SRC-TEST-PRODUCT-002",
+      "source_type": "web",
+      "source_key": "SRC-TEST-WEB-2023",
+      "title": "Test Source 2",
+      "citation": "Test Website, accessed 2023",
+      "v1_source_id": "test-src-2",
+      "metadata": {
+        "url": "https://www.testwebsite.com"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-TEST-PRODUCT-001",
+      "fact_key": "FACT-TEST-EFFICACY-001",
+      "domain": "efficacy",
+      "definition": "Test Definition",
+      "definition_zh": "测试定义",
+      "value": "Test Value",
+      "unit": "mg",
+      "fragment_ids": ["test-fragment-1"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-TEST-PDF-2023",
+        "asset_key": "AST-TEST-PRIMARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_fact_id": "test-fact-1",
+        "rebuild_notes": "从V1 facts 直接映射"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-TEST-PRODUCT-002",
+      "fact_key": "FACT-TEST-SAFETY-001",
+      "domain": "safety",
+      "definition": "Another Definition",
+      "definition_zh": "另一个定义",
+      "value": "Another Value",
+      "unit": "ml",
+      "fragment_ids": ["test-fragment-2"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-TEST-WEB-2023",
+        "asset_key": "AST-TEST-SECONDARY",
+        "extraction_date": "2026-03-10"
+      },
+      "v1_mapping": {
+        "v1_fact_id": "test-fact-2",
+        "rebuild_notes": "从V1 facts 直接映射"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_structure": {
+      "sources": "test source array",
+      "facts": "test facts array"
+    },
+    "v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (V2- prefix)",
+      "V1 facts[].fact_id -> V2 fact_id (V2- prefix)",
+      "Added lineage structure for V2 compliance"
+    ]
+  }
+}

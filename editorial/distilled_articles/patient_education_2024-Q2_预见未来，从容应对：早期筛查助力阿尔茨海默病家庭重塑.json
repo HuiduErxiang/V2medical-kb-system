@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑.docx",
+    "content_hash": "bb3ba5d86caed188",
+    "distilled_at": "2026-03-10T03:56:06.676418",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1139,
+    "source_file": "[2024-Q2] 预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗作为针对Aβ的药物，能够特异性地与Aβ结合，降低脑内Aβ的水平，从而减缓阿尔茨海默病的病理...。",
+    "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑\n阿尔茨海默病作为一种严重影响认知功能的神经退行...。",
+    "这不仅有助于患者及早了解自身健康状况，也为后续的治疗和管理争取到了宝贵的时间窗口。",
+    "对患者而言，由于疾病侵蚀，记忆力减退、认知功能受损，患者日常生活能力逐渐丧失，生活质量造成毁灭性打击。",
+    "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑\n阿尔茨海默病作为一种严重影响认知功能的神经退行...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "预见未来，从容应对：早期筛查助力阿尔茨海默病家庭重塑\n阿尔茨海默病作为一种严重影响认知功能的神经退行性疾病，对患者及其家庭带来了沉重的生活与精神压力。\n对患者而言，由于疾病侵蚀，记忆力减退、认知功能受损，患者日常生活能力逐渐丧失，生活质量造成毁灭性打击。\n对家属而言，他们不仅要面对亲人病情日益严重的心理压力，还要承担起长期、细致且高强度的照护责任，包括日常生活的照料、情绪的安抚以及医疗事务的处理等..."
+}

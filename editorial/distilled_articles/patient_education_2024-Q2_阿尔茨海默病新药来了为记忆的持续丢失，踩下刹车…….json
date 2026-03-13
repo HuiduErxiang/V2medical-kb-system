@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车…….docx",
+    "content_hash": "9e06e3456f11522d",
+    "distilled_at": "2026-03-10T03:56:06.653715",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车……",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1326,
+    "source_file": "[2024-Q2] 阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "而现在，新型AD治疗药物，针对AD疾病成因的仑卡奈单抗来了。",
+    "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车……\n\n用了五个疗程后，我问妈妈感觉怎么样，妈妈说：...。",
+    "在过去，我们无法阻止下行的趋势，仅有的“对症治疗”的药物也只能起到 “把车窗擦净”、“打开远光灯”的...。",
+    "有部分患者可能会对新型药物的安全性产生担忧，尤其是脑内的水肿或出血，认为这会带来危险。",
+    "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车……\n\n用了五个疗程后，我问妈妈感觉怎么样，妈妈说：...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔茨海默病新药来了！为记忆的持续丢失，踩下刹车……\n\n用了五个疗程后，我问妈妈感觉怎么样，妈妈说：“感觉自己的大脑慢慢清晰起来了，觉得记忆比原来好一些了，不那么爱找东西了”。\n\n阿尔茨海默病（AD）患者的认知功能，就像是坐在一辆行驶在下坡路上的汽车。\n在数年甚至十数年的疾病进程里，这辆车不断向下滑行，随着疾病的进展，坡度也变得越来越陡。随着车辆从山顶驶向山底，从山底进入地下，车窗外的风景变得越来..."
+}

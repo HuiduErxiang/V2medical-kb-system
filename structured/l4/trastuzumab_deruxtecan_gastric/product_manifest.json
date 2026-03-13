@@ -1,0 +1,23 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "product_id": "trastuzumab_deruxtecan_gastric",
+  "product_name_en": "trastuzumab_deruxtecan",
+  "product_name_zh": "德曲妥珠单抗",
+  "disease_domain": "oncology",
+  "disease": "gastric_cancer",
+  "l3_chain": [
+    "oncology.shared",
+    "oncology.gastric_cancer"
+  ],
+  "files": {
+    "evidence_database": "m6_evidence_database.json",
+    "expression_library": "expression_library.json",
+    "compliance_rules": "m5_compliance_rules.json",
+    "product_taxonomy": "product_taxonomy.json"
+  }
+}

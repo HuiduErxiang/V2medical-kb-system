@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q3] V1 阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…….docx",
+    "content_hash": "0f50b36c55ab2510",
+    "distilled_at": "2026-03-10T03:56:06.422961",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V1 阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "word_count": 2253,
+    "source_file": "[2025-Q3] V1 阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…...。",
+    "阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…...。",
+    "阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…...。",
+    "阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证…...。",
+    "近年来，已获批的抗Aβ药物仑卡奈单抗和多奈单抗能有效清除这些“垃圾”，从而延缓疾病进展，给AD患者及...。"
+  ],
+  "accessibility_notes": [
+    "包含术语解释",
+    "存在较多长句"
+  ],
+  "raw_text_preview": "阿尔茨海默病治疗有新对比！AAIC数据证实：仑卡奈单抗ARIA发生风险显著更低，安全性优势再添力证……\n\n阿尔茨海默病（AD）是一种神经退行性疾病，随着病情发展，患者会逐渐丧失记忆、认知能力和生活自理能力，给家庭和社会带来沉重负担。\n目前医学界普遍认为，大脑中β淀粉样蛋白（Aβ）的异常沉积是AD发病的关键原因，它们就像“垃圾”一样堆积在大脑里，杀死神经细胞，影响大脑功能。近年来，已获批的抗Aβ药物..."
+}

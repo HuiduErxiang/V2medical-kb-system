@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\问题_解决\\[2025-Q1] 阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心V1.3 20250103.docx",
+    "content_hash": "79da0b62ac2a8e4a",
+    "distilled_at": "2026-03-10T03:56:06.904730",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心V1.3 20250103",
+    "content_type": "问题_解决",
+    "publication_quarter": "2025-Q1",
+    "word_count": 1592,
+    "source_file": "[2025-Q1] 阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心V1.3 20250103.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "在已上市或者还未上市的抗Aβ药物里，仑卡奈单抗对Aβ40的结合是最低的，所以引发的ARIA风险也最低。",
+    "阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心\n蔡琼是一家三甲医院的医生。",
+    "在她的母亲潘阿姨在确定患有阿尔茨海默病之后，蔡琼就定下了一个目标：尽快完成诊断，然后尽可能采用抗Aβ...。",
+    "尽管抗Aβ药物对阿尔茨海默病治疗非常有效，但由于其有可能引发淀粉样蛋白相关影响异常（ARIA），如脑...。",
+    "尽管抗Aβ药物对阿尔茨海默病治疗非常有效，但由于其有可能引发淀粉样蛋白相关影响异常（ARIA），如脑...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔茨海默病新药会导致脑出血？没那么夸张，也不必过度担心\n蔡琼是一家三甲医院的医生。在她的母亲潘阿姨在确定患有阿尔茨海默病之后，蔡琼就定下了一个目标：尽快完成诊断，然后尽可能采用抗Aβ药物治疗。\n截止去年10月，潘阿姨已经完成了第13次注射，出了短暂的头晕、头痛之外，没有其他不适，蔡琼松了一口气。\n长期以来，阿尔茨海默药物只能部分缓解疾病症状，直到近两年，才有能够延缓阿尔茨海默病疾病进展的抗Aβ药..."
+}

@@ -1,0 +1,26 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L1",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L1 — Style DNA Schema (文风配置结构定义)",
+  "description": "Defines the structure of a client style profile. Actual instances live in L4.",
+  "style_profile_schema": {
+    "required_fields": [
+      "label",
+      "style_positioning",
+      "vocabulary_biases",
+      "sentence_patterns",
+      "rhetorical_devices"
+    ],
+    "field_types": {
+      "label": "string — short style tag",
+      "style_positioning": "string — one-sentence positioning statement",
+      "vocabulary_biases": "string[] — preferred vocabulary terms",
+      "sentence_patterns": "string[] — characteristic sentence templates",
+      "rhetorical_devices": "string[] — rhetorical strategy instructions"
+    }
+  }
+}

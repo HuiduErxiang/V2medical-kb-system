@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2026-Q1] V3-碾压式安全优势？仑卡奈单抗的AD治疗逻辑太绝了…….docx",
+    "source_key": "SRC-HIST-2026-Q1_V3-碾压式安全优势？仑卡奈单抗的AD治疗逻",
+    "asset_key": "AST-DOCX-2026-Q1_V3-碾压式安全优势？仑卡奈单抗的AD治疗逻",
+    "content_hash": "fa4ddb40f5dfc500",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.780375",
+    "source_size_bytes": 25976
+  },
+  "metadata": {
+    "title": "V3-碾压式安全优势？仑卡奈单抗的AD治疗逻辑太绝了……",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2026-Q1",
+    "version": "V3",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "碾压式安全优势？仑卡奈单抗的AD治疗逻辑太绝了……",
+      "这些迁移到血管的淀粉样斑块，成了引发ARIA的“导火索”。",
+      "这些“灰尘”可不是普通废物，它们是构成淀粉样斑块的核心成分，并且具有更强的毒性[3]，是导致AD疾病进展的主要元凶。",
+      "这种提前拦截“灰尘”的模式，也是仑卡奈单抗在临床试验和真实世界中表现出明显更低的ARIA发生率的原因，成为更让患者和家属放心的治疗选择。",
+      "这对AD患者及家属来说，意味着更安全、更稳定的治疗选择，也意味着能更有信心地和疾病抗争。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": []
+}

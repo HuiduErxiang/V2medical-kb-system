@@ -1,0 +1,188 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-TRAILBLAZER-ALZ-2-3YEAR",
+    "asset_key": "AST-H003-TRAILBLAZER-ALZ-2-3YEAR",
+    "content_hash": "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f",
+    "source_type": "conference_poster"
+  },
+  "metadata": {
+    "title": "Donanemab in Early Symptomatic Alzheimer's Disease: Efficacy and Safety from the TRAILBLAZER-ALZ 2 Long-Term Extension",
+    "authors": [
+      "Mark A. Mintun",
+      "John R. Sims",
+      "Jennifer A. Zimmer",
+      "Cynthia D. Evans",
+      "Emel Serap Monkul Nery",
+      "Hong Wang",
+      "Alette M. Wessels",
+      "Giulia Tronchin",
+      "Shoichiro Sato",
+      "Lars Lau Raket",
+      "Scott W. Andersen",
+      "Christophe Sapin",
+      "Marie-Ange Paget",
+      "Ivelina Gueorguieva",
+      "Paul Ardayfio",
+      "Rashna Khanna",
+      "Dawn A. Brooks"
+    ],
+    "year": 2025,
+    "study": "TRAILBLAZER-ALZ 2 (long-term extension)",
+    "source_file": "[2025-Q3] TRAILBLAZER-ALZ 2 三年随访.md",
+    "source_size_bytes": 16910
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "long-term extension (LTE) of phase 3 trial",
+      "trial_identifier": "NCT04437511",
+      "location": "global",
+      "treatment_groups": [
+        "Early Start: donanemab initiated at week 0",
+        "Delayed Start: donanemab initiated at week 78",
+        "External Comparator: ADNI cohort (propensity weighted)"
+      ],
+      "treatment_duration": "up to 36 months",
+      "observation_period": "154 weeks"
+    },
+    "population": {
+      "sample_size": {
+        "total": 657,
+        "early_start": 157,
+        "delayed_start": 393
+      },
+      "completion_criteria": "Amyloid clearance (<11 CL or <25 CL on two consecutive scans)",
+      "baseline_characteristics": {
+        "delayed_start": {
+          "mean_age": 74.9,
+          "mean_mmse": 19.8,
+          "mci_percentage": 10.7,
+          "mild_ad_percentage": 44.1,
+          "moderate_ad_percentage": 45.2,
+          "mean_cdr_sb": 5.7
+        }
+      }
+    },
+    "endpoints": {
+      "primary": "Sustained efficacy and safety over 3 years",
+      "secondary": [
+        "Clinical decline measured by CDR-SB",
+        "Risk of progression to next disease stage",
+        "Amyloid reduction and clearance",
+        "Safety profile over extended period"
+      ]
+    },
+    "key_results": {
+      "clinical_efficacy": {
+        "early_start": {
+          "cdr_sb_change": {
+            "18_months": "-0.6 vs ADNI",
+            "36_months": "-1.2 vs ADNI"
+          },
+          "clinical_progression": {
+            "hazard_ratio": "0.729 (0.62, 0.86)",
+            "p_value": "<0.001"
+          }
+        },
+        "delayed_start": {
+          "efficacy": true,
+          "amyloid_reduction": "similar to early start",
+          "clinical_benefit": "observed after treatment initiation"
+        }
+      },
+      "amyloid_reduction": {
+        "early_start": {
+          "mean_reduction": "-86 CL from baseline",
+          "clearance_rate": ">75% <24.1 CL at 18 months"
+        },
+        "delayed_start": {
+          "mean_reduction": "-86 CL from baseline",
+          "clearance_rate": ">75% <24.1 CL at 18 months"
+        },
+        "reaccumulation_rate": "2.4 CL/year"
+      },
+      "safety_data": {
+        "adverse_events": {
+          "early_start": {
+            "serious_ae": 17.4,
+            "discontinuations": 8.6
+          },
+          "delayed_start": {
+            "serious_ae": 19.6,
+            "discontinuations": 5.9
+          }
+        },
+        "aria": {
+          "aria_e": {
+            "early_start": 24.0,
+            "delayed_start": 26.0
+          },
+          "symptomatic_aria_e": {
+            "early_start": 6.1,
+            "delayed_start": 6.1
+          },
+          "aria_h": {
+            "early_start": 31.5,
+            "delayed_start": 39.7
+          },
+          "symptomatic_aria_h": {
+            "early_start": 1.2,
+            "delayed_start": 0.5
+          }
+        },
+        "infusion_reactions": {
+          "early_start": 8.8,
+          "delayed_start": 7.5
+        },
+        "safety_profile_convergence": {
+          "observation": "Safety profile began to approximate placebo over time",
+          "related_ae_frequency": {
+            "donanemab": 14.9,
+            "placebo": 20.1
+          }
+        }
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "ADNI external cohort",
+        "key_findings": "Donanemab showed 1.2-point CDR-SB benefit at 36 months",
+        "clinical_progression": "Significant slowing of disease progression"
+      },
+      {
+        "comparator": "lecanemab (hypothetical long-term)",
+        "efficacy_comparison": "Similar sustained benefit pattern",
+        "safety_comparison": "ARIA rates consistent with Clarity AD",
+        "treatment_duration": "Limited duration dosing"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Donanemab",
+      "Long-term extension",
+      "Early treatment",
+      "Delayed treatment",
+      "Amyloid clearance",
+      "Amyloid reduction",
+      "Clinical Dementia Rating",
+      "CDR-SB",
+      "Safety profile",
+      "ADNI"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Antibodies, Monoclonal",
+      "Amyloid beta-Peptides",
+      "Treatment Outcome",
+      "Long-Term Care",
+      "Progression Free Survival",
+      "Cognition Disorders",
+      "Dementia",
+      "Neuroimaging"
+    ]
+  }
+}

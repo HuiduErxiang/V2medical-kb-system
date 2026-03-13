@@ -1,0 +1,192 @@
+{
+  "_metadata": {
+    "title": "修辞积木库",
+    "version": "1.0",
+    "last_updated": "2026-03-04",
+    "total_blocks": 15,
+    "sources": ["ajmd", "kongzhike", "chen_gongzi", "universal"]
+  },
+
+  "universal_blocks": [
+    {
+      "block_id": "M4_P_HOOK",
+      "name": "通用钩子块",
+      "description": "开篇吸引注意力的通用结构",
+      "function": "建立阅读动机",
+      "usage_context": "任何类型文章开篇"
+    },
+    {
+      "block_id": "M4_P_PROOF",
+      "name": "通用证据块",
+      "description": "呈现数据、事实支持的通用结构",
+      "function": "建立可信度",
+      "usage_context": "需要数据支撑时"
+    }
+  ],
+
+  "author_blocks": {
+    "ajmd": {
+      "author_id": "ajmd",
+      "author_name": "阿基米德Biotech",
+      "signature_blocks": [
+        {
+          "block_id": "M4_AJMD_001",
+          "name": "极简戏剧化开篇块",
+          "description": "Uses 1-2 extremely short, punchy sentences (often fragments) to create immediate suspense or state a bold conclusion before providing context.",
+          "function": "开篇制造戏剧冲突",
+          "example": "回来了，一切都回来了\n经过两年的估值消化和筹码清洗，医药终于恢复穿越周期的韧性。",
+          "m2_mapping": "M2_HOOK",
+          "emotional_tone": "戏剧化、挑衅性",
+          "typical_length": "1-2句"
+        },
+        {
+          "block_id": "M4_AJMD_002",
+          "name": "反共识转折块",
+          "description": "Introduces a widely accepted fact or recent hype, then abruptly pivots with a contrarian statement to introduce the real analysis.",
+          "function": "打破共识，引入分析",
+          "example": "诺和诺德年内多次上调业绩指引，还是低估了人类对减肥的热情。... 然而，资本市场开始出现审美疲劳。",
+          "m2_mapping": "M2_TEARDOWN",
+          "transition_markers": ["然而", "其实", "真相是"]
+        },
+        {
+          "block_id": "M4_AJMD_003",
+          "name": "数据加特林块",
+          "description": "Rapidly fires a dense sequence of statistics, percentages, or trial results to overwhelm doubt and establish undeniable proof.",
+          "function": "用数据轰炸建立可信度",
+          "example": "2023Q3营收6亿元，同比增长176%，环比增长27%，净利润1.889亿元，同比增长595%，环比增长9%。",
+          "m2_mapping": "M2_PROOF",
+          "data_density": "极高",
+          "typical_format": "指标+同比+环比"
+        },
+        {
+          "block_id": "M4_AJMD_004",
+          "name": "冷酷拆解块",
+          "description": "Strips away marketing fluff to expose the underlying reality, often highlighting discrepancies between valuation/hype and actual pipeline/revenue.",
+          "function": "剥离包装，暴露现实",
+          "example": "在思路迪临床阶段8款管线中，仅有3D011为自主开发... 除恩维达外，管线乏善可陈，但董事长、首席执行官龚兆龙博士的年薪却是亮点。",
+          "m2_mapping": "M2_TEARDOWN",
+          "tone": "冷酷、直接"
+        }
+      ],
+      "metaphor_systems": ["商业隐喻", "战争隐喻", "灾难隐喻"],
+      "signature_metaphors": ["死亡海域", "裂缝里的光", "避风港", "坍塌", "全剧终"]
+    },
+
+    "kongzhike": {
+      "author_id": "kongzhike",
+      "author_name": "空之客",
+      "signature_blocks": [
+        {
+          "block_id": "M4_KZK_001",
+          "name": "共识拆解块",
+          "description": "先陈述当前市场或大众的普遍共识，然后用一个简单的常识比喻或底层逻辑指出其荒谬之处。",
+          "function": "用常识拆解市场共识",
+          "example": "'然而泡沫之所以能出现，就因为情绪往往不是逻辑的朋友...一个比较简单粗暴的比方是：刘邦就要登基了，那些丰沛勋贵们纷纷出来要跟汉王比试文武艺...'",
+          "m2_mapping": "M2_TEARDOWN",
+          "technique": "常识类比",
+          "typical_opening": "然而/诚然"
+        },
+        {
+          "block_id": "M4_KZK_002",
+          "name": "溯源求证块",
+          "description": "面对二手信息的发酵，直接跳过媒体解读，寻找并展示最原始的监管文件或临床数据源。",
+          "function": "寻找一手资料还原真相",
+          "example": "'秉承着一切信息追溯源头的宗旨，我们找到了EMA的这篇'警告'的原文，看看到底说了些什么...'",
+          "m2_mapping": "M2_HOOK",
+          "signature": true,
+          "methodology": "跳过二手，直找源头"
+        },
+        {
+          "block_id": "M4_KZK_003",
+          "name": "降维打击块",
+          "description": "将复杂的医学或商业竞争，还原为最基础的资源、产能或常识问题，剥离技术光环。",
+          "function": "复杂问题简单化",
+          "example": "'如此震古烁今的销售额增长，让我们可能都快忘了两个事实：一是...二是...Tirzepatide也处在严重的产能不足状态...'",
+          "m2_mapping": "M2_TEARDOWN",
+          "technique": "还原本质"
+        }
+      ],
+      "metaphor_systems": ["武侠/历史隐喻", "常识隐喻"],
+      "signature_metaphors": ["乔帮主的太祖长拳", "刘邦登基", "一桌子打麻将"]
+    },
+
+    "chen_gongzi": {
+      "author_id": "chen_gongzi",
+      "author_name": "辰公子",
+      "signature_blocks": [
+        {
+          "block_id": "M4_CG_001",
+          "name": "研格分析块",
+          "description": "辰公子标志性拆解：深入试验设计细节，从入组标准、终点设定到统计假设的因果链分析",
+          "function": "专业拆解试验设计",
+          "evolution": {
+            "phase1_2": "萌芽期",
+            "phase3_4": "成型期",
+            "phase5": "成熟期"
+          },
+          "signature_techniques": ["头对头对比", "历史对读", "设计批判"],
+          "m2_mapping": "M2_TEARDOWN"
+        },
+        {
+          "block_id": "M4_CG_002",
+          "name": "复杂概念可视化块",
+          "description": "用比喻、类比将晦涩的分子机制或临床概念可视化",
+          "function": "复杂概念通俗化",
+          "evolution": {
+            "phase1_2": ["西游记五指山比喻AD", "魔法子弹"],
+            "phase3_4": ["分子机制拆解", "信号通路可视化"],
+            "phase5": ["靶点生态位", "排兵布阵"]
+          },
+          "m2_mapping": "M2_SETUP"
+        },
+        {
+          "block_id": "M4_CG_003",
+          "name": "人文关怀收束块",
+          "description": "在冰冷数据背后，关注患者生存境遇与治疗可及性",
+          "function": "理性中保留人文温度",
+          "example": "在冰冷的mOS数据背后，一半以上的患者...",
+          "evolution": {
+            "phase1_2": "无",
+            "phase3_4": "数据背后的悲悯",
+            "phase5": "人学关怀"
+          },
+          "m2_mapping": "M2_CTA"
+        }
+      ],
+      "metaphor_systems": ["古典文学隐喻", "军事战争隐喻", "空间物理隐喻", "生物医学隐喻"],
+      "signature_metaphors": ["五指山", "研格", "生态位", "排兵布阵", "灰色地带"]
+    }
+  },
+
+  "metaphor_systems": {
+    "classical_literature": {
+      "name": "古典文学隐喻",
+      "examples": ["西游记五指山", "唐僧手", "柏林之围", "魔法子弹"],
+      "authors": ["chen_gongzi"]
+    },
+    "military_warfare": {
+      "name": "军事战争隐喻",
+      "examples": ["降维打击", "排兵布阵", "药王之争", "翻身仗", "头对头"],
+      "authors": ["chen_gongzi", "ajmd"]
+    },
+    "business_commercial": {
+      "name": "商业隐喻",
+      "examples": ["死亡海域", "裂缝里的光", "避风港", "坍塌", "全剧终"],
+      "authors": ["ajmd"]
+    },
+    "wuxia_history": {
+      "name": "武侠/历史隐喻",
+      "examples": ["乔帮主的太祖长拳", "刘邦登基", "一桌子打麻将"],
+      "authors": ["kongzhike"]
+    }
+  },
+
+  "block_selection_guide": {
+    "by_scenario": {
+      "开篇吸引": ["M4_AJMD_001", "M4_KZK_002", "M4_CG_001"],
+      "数据论证": ["M4_AJMD_003"],
+      "拆解共识": ["M4_AJMD_004", "M4_KZK_001"],
+      "人文收束": ["M4_CG_003"]
+    }
+  }
+}

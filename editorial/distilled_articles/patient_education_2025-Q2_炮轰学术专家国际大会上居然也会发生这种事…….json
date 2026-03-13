@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\场景_指导\\[2025-Q2] 炮轰学术专家！国际大会上居然也会发生这种事…….docx",
+    "content_hash": "7d6930c303611854",
+    "distilled_at": "2026-03-10T03:56:06.859216",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "炮轰学术专家！国际大会上居然也会发生这种事……",
+    "content_type": "场景_指导",
+    "publication_quarter": "2025-Q2",
+    "word_count": 1965,
+    "source_file": "[2025-Q2] 炮轰学术专家！国际大会上居然也会发生这种事…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "以抗Aβ治疗药物仑卡奈单抗地临床数据为例，持续接受仑卡奈单抗治疗3年后，患者CDR-SB评分的获益从...。",
+    "炮轰学术专家！阿尔茨海默病国际会议上居然发生了种事…….\n备选标题：国际会议上的惊人一幕：专家炮轰当...。",
+    "炮轰学术专家！阿尔茨海默病国际会议上居然发生了种事…….\n备选标题：国际会议上的惊人一幕：专家炮轰当...。",
+    "我们也期待AD/PD会议上凝聚的共识能够切实推动AD领域的进步，助力人类早日攻克阿尔茨海默病，逮捕这...。",
+    "炮轰学术专家！阿尔茨海默病国际会议上居然发生了种事…….\n备选标题：国际会议上的惊人一幕：专家炮轰当...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "炮轰学术专家！阿尔茨海默病国际会议上居然发生了种事…….\n备选标题：国际会议上的惊人一幕：专家炮轰当今的阿尔茨海默病诊断标准是错的！\n备选标题：阿尔茨海默病的治疗窗口很可能特别长，原来是疾病症状骗了我们所有人！\n\n在不久前奥地利维也纳召开的AD/PD会议上，AD生物学诊断的发起人和代言人——Clifford Jack教授代表阿尔茨海默病协会（AA）向另一AD领域的权威组织阿尔茨海默病国际工作组（I..."
+}

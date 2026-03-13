@@ -1,0 +1,55 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] V4【脚本】第一篇：阿尔茨海默病带走的，不只患者的记忆 .docx",
+    "content_hash": "ac90fd42483e19c7",
+    "distilled_at": "2026-03-10T03:56:06.592365",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V4【脚本】第一篇：阿尔茨海默病带走的，不只患者的记忆 ",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 848,
+    "source_file": "[2024-Q2] V4【脚本】第一篇：阿尔茨海默病带走的，不只患者的记忆 .docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "V4【脚本】第一篇\n阿尔茨海默病带走的，不只患者的记忆\n角色设定：\n奶奶：60岁左右，从阿尔茨海默病...。",
+    "V4【脚本】第一篇\n阿尔茨海默病带走的，不只患者的记忆\n角色设定：\n奶奶：60岁左右，从阿尔茨海默病...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "V4【脚本】第一篇\n阿尔茨海默病带走的，不只患者的记忆\n角色设定：\n奶奶：60岁左右，从阿尔茨海默病早期~中晚期的形象\n儿子：30岁出头，阿尔茨海默病家属。\n画面串词\n对话框\n\n画面1\n在一片柔和的光晕下，一座巨大的时间沙漏矗立中央，金色的沙粒缓缓流淌。一位老人的背影步入沙漏投下的阴影之中，显得孤独而深远。\n在时间的长河里，“脑海里的橡皮擦”开始摩挲，记忆悄悄流逝……\n没人察觉到，家中老人渐渐发生..."
+}

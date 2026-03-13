@@ -1,0 +1,128 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-DONANEMAB-PK-MODEL",
+    "asset_key": "AST-H003-DONANEMAB-PK-MODEL",
+    "content_hash": "c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3",
+    "source_type": "conference_poster"
+  },
+  "metadata": {
+    "title": "Donanemab Physiologically Based Pharmacokinetic Model Coupled With Natural Life Cycle Model for Amyloid Plaque Aggregation to Predict Target CSF and ISF Concentrations Associated With Amyloid Plaque Reduction",
+    "authors": [
+      "Drew Butkowski",
+      "Ronald B. Demattos",
+      "Sergey Shcherbinin",
+      "Dawn A. Brooks",
+      "John R. Sims",
+      "Ivelina Gueorguieva"
+    ],
+    "year": 2025,
+    "study": "Pharmacokinetic modeling of donanemab across studies",
+    "source_file": "[2025-Q3] Donanemab 生理药代动力学模型与淀粉样斑块聚集的自然生命周期模型相结合，预测与淀粉样斑块减少相关的目标脑脊液 (CSF) 和脑间质液 (ISF) 浓度.md",
+    "source_size_bytes": 5278
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "pharmacokinetic modeling analysis",
+      "data_sources": [
+        "Phase 1 donanemab study (NCT02624778)",
+        "TRAILBLAZER-ALZ (Phase 2; NCT03367403)",
+        "TRAILBLAZER-ALZ 2 (Phase 3; NCT04437511)"
+      ],
+      "modeling_approach": {
+        "pbpk": "Reduced physiologically based pharmacokinetic (rPBPK) model",
+        "amyloid_model": "Natural life cycle model of amyloid aggregation",
+        "cns_modeling": "Two-compartmental model for brain distribution",
+        "endpoints": "CSF, ISF concentrations, and amyloid plaque levels"
+      },
+      "dosing_regimens": "700 mg ×3 doses followed by 1400 mg Q4W (standard 76-week regimen)"
+    },
+    "population": {
+      "participant_count": {
+        "phase_1": 61,
+        "trailblazer_alz": 256,
+        "trailblazer_alz_2": 1954,
+        "total": 2271
+      },
+      "disease_severity": [
+        "Early symptomatic AD (MCI or mild dementia)",
+        "Moderate dementia due to AD"
+      ]
+    },
+    "endpoints": {
+      "primary": "Predict target ISF concentrations for amyloid plaque reduction",
+      "secondary": [
+        "Model natural amyloid aggregation life cycle",
+        "Simulate CSF/ISF concentration dynamics",
+        "Evaluate different dosing regimens",
+        "Predict amyloid plaque response"
+      ]
+    },
+    "key_results": {
+      "pharmacokinetic_predictions": {
+        "serum_concentrations": {
+          "standard_regimen": "Model predicts steady-state concentrations following 76-week regimen",
+          "prediction_accuracy": "Median predicted vs observed concentrations with 90% prediction intervals"
+        },
+        "csf_concentrations": {
+          "700mg_q4w": "Predictable CSF distribution",
+          "1400mg_q4w": "Higher CSF exposure with dose escalation"
+        },
+        "isf_concentrations": {
+          "standard_regimen": "Rapid reduction in ISF amyloid following donanemab treatment",
+          "target_levels": "Identified ISF concentrations associated with therapeutic effect"
+        }
+      },
+      "amyloid_aggregation": {
+        "natural_progression": {
+          "isf_ab42": "Steep reductions in ISF Aβ42 concentrations near age 65",
+          "amyloid_pet": "Sharp rise in amyloid PET around age 65, attenuating with increasing age",
+          "age_effect": "Accelerated amyloid aggregation in later adulthood"
+        },
+        "donanemab_effect": {
+          "plaque_response": "Rapid reduction in ISF amyloid plaque concentrations",
+          "treatment_response": "Coupled model predicts amyloid plaque reduction dynamics"
+        }
+      },
+      "model_validation": {
+        "observed_vs_predicted": "Good agreement between model predictions and observed concentrations",
+        "prediction_intervals": "90% prediction intervals include observed participant-level concentrations"
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "other anti-amyloid therapies",
+        "pharmacokinetic_advantage": "Predictable CSF/ISF distribution with standard dosing",
+        "amyloid_response": "Rapid ISF amyloid reduction following treatment initiation",
+        "modeling_approach": "Combined PBPK/amyloid plaque modeling"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Donanemab",
+      "Pharmacokinetics",
+      "PBPK modeling",
+      "CSF concentrations",
+      "ISF concentrations",
+      "Amyloid aggregation",
+      "Amyloid plaque reduction",
+      "Natural life cycle model",
+      "Dosing regimens"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Amyloid beta-Peptides",
+      "Antibodies, Monoclonal",
+      "Pharmacokinetics",
+      "Cerebrospinal Fluid",
+      "Interstitial Fluid",
+      "Amyloid Plaques",
+      "Models, Biological",
+      "Positron-Emission Tomography"
+    ]
+  }
+}

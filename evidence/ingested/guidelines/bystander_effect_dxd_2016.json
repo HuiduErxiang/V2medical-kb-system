@@ -1,0 +1,85 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H001",
+    "source_file": "sources/guidelines/bystander_2016.md",
+    "source_key": "SRC-GUIDELINE-BYSTANDER-2016",
+    "asset_key": "AST-GUIDELINE-BYSTANDER-DXD-2016",
+    "content_hash": "a1b2c3d4e5f6g7h8",
+    "source_type": "journal_article",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "Bystander killing effect of DS-8201a, a novel anti-HER2 antibody-drug conjugate, in tumors with HER2 heterogeneity",
+    "authors": ["Yusuke Ogitani", "Katsunobu Hagihara", "Masataka Oitate", "Hiroyuki Naito", "Toshinori Agatsuma"],
+    "journal": "Cancer Science",
+    "year": 2016,
+    "volume": "107",
+    "issue": "7",
+    "pages": "1039-1046",
+    "doi": "10.1111/cas.12966",
+    "institution": "Daiichi Sankyo Co., Ltd., Tokyo, Japan"
+  },
+  "distilled_content": {
+    "article_type": "original_research",
+    "disease_area": ["breast_cancer", "gastric_cancer"],
+    "product_related": ["T-DXd", "DS-8201a", "trastuzumab_deruxtecan"],
+    "key_findings": [
+      {
+        "finding_id": "FIND-BYSTANDER-001",
+        "domain": "mechanism",
+        "statement": "DS-8201a (T-DXd) payload DXd is highly membrane-permeable, enabling bystander killing effect on HER2-negative cells adjacent to HER2-positive cells",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "high"
+      },
+      {
+        "finding_id": "FIND-BYSTANDER-002",
+        "domain": "mechanism",
+        "statement": "T-DM1 payload Lys-SMCC-DM1 has low membrane permeability and lacks bystander killing effect",
+        "evidence_level": "preclinical",
+        "clinical_relevance": "high"
+      },
+      {
+        "finding_id": "FIND-BYSTANDER-003",
+        "domain": "efficacy",
+        "statement": "DS-8201a killed both HER2-positive KPL-4 cells and HER2-negative MDA-MB-468 cells in coculture, while T-DM1 did not",
+        "evidence_level": "preclinical_in_vitro",
+        "clinical_relevance": "high"
+      },
+      {
+        "finding_id": "FIND-BYSTANDER-004",
+        "domain": "efficacy",
+        "statement": "DS-8201a bystander effect is limited to cells neighboring HER2-positive cells, indicating low systemic toxicity concern",
+        "evidence_level": "preclinical_in_vivo",
+        "clinical_relevance": "medium"
+      }
+    ],
+    "recommendations": [
+      {
+        "recommendation_id": "REC-BYSTANDER-001",
+        "statement": "DS-8201a may be beneficial for treating tumors with HER2 heterogeneity that are unresponsive to T-DM1",
+        "evidence_grade": "preclinical",
+        "applicability": "breast_cancer, gastric_cancer"
+      }
+    ],
+    "comparative_signals": [
+      {
+        "comparison_id": "COMP-BYSTANDER-001",
+        "comparison_type": "mechanism",
+        "agents": ["DS-8201a", "T-DM1"],
+        "finding": "DS-8201a has bystander killing effect; T-DM1 does not",
+        "implication": "DS-8201a may be more effective in heterogeneous HER2 tumors"
+      }
+    ]
+  },
+  "index_terms": {
+    "keywords": ["bystander killing", "HER2", "antibody-drug conjugate", "T-DXd", "DS-8201a", "T-DM1", "topoisomerase I inhibitor", "membrane permeability"],
+    "mesh_terms": ["Antibody-Drug Conjugates", "Receptor, ErbB-2", "Drug Delivery Systems", "Breast Neoplasms", "Stomach Neoplasms"]
+  },
+  "lineage": {
+    "source_path": "sources/guidelines/bystander_2016.md",
+    "original_size_bytes": 41239,
+    "distilled_at": "2026-03-10T03:48:00Z"
+  }
+}

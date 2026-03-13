@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2025-Q2] V2 父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”…….docx",
+    "content_hash": "e2297b866549390c",
+    "distilled_at": "2026-03-10T03:56:06.728890",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2 父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”……",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2025-Q2",
+    "word_count": 1688,
+    "source_file": "[2025-Q2] V2 父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "幸运的是，我爸对能延缓阿尔茨海默病疾病进展的仑卡奈单抗耐受程度还不错，这一年疾病没有什么进展。",
+    "父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”……\n\n我的父亲在2024年确诊了轻度阿尔茨海默病，如...。",
+    "和其他病友家属聊天，会觉得我们一家已经是很幸运的了，疾病发现得及时，也正好赶上抗Aβ治疗在国内上市，...。",
+    "昨晚的画面又卡住了：父亲穿着条纹睡衣在客厅打转，凌晨两点十七分走到冰箱前，盯着冷冻层的速冻包子看了 ...。",
+    "医生说，这是AD 患者常见的漫游行为。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "父亲只是得了阿尔茨海默病，我却变成了“偷窥狂”……\n\n我的父亲在2024年确诊了轻度阿尔茨海默病，如今病程刚满 11 个月零 7 天 —— 这个精确到天的计数，来自电子门锁 APP 里存储的 341 条开关记录。\n他脾气太犟了，坚持不要我和他住一起照顾他，我爸觉得自己还没到那时候，为这件事，已经跟我吵了好几次架。于是我妥协了，在客厅书架顶端藏好微型摄像头，在他外套内衬缝进定位器，用每月 2500 ..."
+}

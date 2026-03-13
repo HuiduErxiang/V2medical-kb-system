@@ -1,0 +1,55 @@
+{
+  "manifest_version": "1.0",
+  "created_at": "2026-03-10",
+  "created_by": "Batch-3 migration",
+  "disposal_batch": "Dispose-1",
+  "description": "V1 state 资产处置说明 - 记录 V1 运行时状态的处置决策",
+  "important_notice": "本清单所列资产为处置资产，不计入 Batch-3 迁移完成率",
+  "assets": {
+    "task_logs": {
+      "source_path": "medical_kb_system/state/task_logs",
+      "decision": "archive",
+      "reason": "V1 运行时任务日志，保留追溯意义，但不作为 V2 默认运行依赖",
+      "file_count": 2,
+      "files": [
+        {
+          "path": "2026-03-08/task_20260308174204050240.md",
+          "type": "task_log_markdown",
+          "content_hash": "eeee37adf8879725",
+          "size_bytes": 741,
+          "description": "任务运行日志 markdown 格式"
+        },
+        {
+          "path": "2026-03-08/task_20260308174204050240.json",
+          "type": "task_log_json",
+          "content_hash": "a088b65d6db57dfb",
+          "size_bytes": 722,
+          "description": "任务运行日志 JSON 格式"
+        }
+      ],
+      "disposal_action": "保留在 V1 原位置，V2 不复制",
+      "v2_equivalent": "V2 使用新的任务日志格式和存储位置（待定义）",
+      "traceable": true
+    },
+    "isolation": {
+      "source_path": "medical_kb_system/state/isolation",
+      "decision": "drop",
+      "reason": "V1 isolation 运行时目录，当前为空，无迁移价值",
+      "file_count": 0,
+      "disposal_action": "不迁移，不保留",
+      "v2_equivalent": "V2 隔离机制在 engine/isolation/ 中实现",
+      "traceable": false
+    }
+  },
+  "summary": {
+    "total_files": 2,
+    "archive_count": 2,
+    "drop_count": 0,
+    "migrate_count": 0
+  },
+  "notes": [
+    "V1 state 资产属于运行时状态，不是静态知识资产",
+    "这些资产不应成为 V2 的默认运行依赖",
+    "保留追溯意义即可，不需要复制到 V2"
+  ]
+}

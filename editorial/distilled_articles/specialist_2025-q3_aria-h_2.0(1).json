@@ -1,0 +1,69 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] ARIA-H 2.0(1).docx",
+    "source_key": "SRC-HIST-2025-Q3_ARIA-H_2.0(1)",
+    "asset_key": "AST-DOCX-2025-Q3_ARIA-H_2.0(1)",
+    "content_hash": "27d1610081c50c14",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.194179",
+    "source_size_bytes": 21489
+  },
+  "metadata": {
+    "title": "ARIA-H 2.0(1)",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q3",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "ARIA 分为两种类型：脑水肿/渗出 ARIA-E，脑出血性异常 ARIA-H。",
+      "大多数 ARIA-E 病例通常无症状，但部分患者可能出现头痛、意识混乱、恶心、眩晕、癫痫发作，极少数情况下会导致死亡。",
+      "ARIA-H 则可能导致头痛、意识模糊、癫痫发作，极少数情况下可能出现致命脑出血，因此，其风险控制对患者和临床医生至关重要。",
+      "本次这篇最新研究旨在回答 2 个问题：",
+      "不同抗体诱导 ARIA-H 的能力相差甚远，这又引发下一个讨论话题：抗体本身的结构与功能特点对 ARIA-H 风险究竟有没有影响？",
+      "这篇最新研究提出了 5 个可能的机制性决定因素，并逐一进行分析比较，结果显示："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "而最近，一项来自南京大学鼓楼医院神经科徐运教授团队的研究显示，在 7 款已获批或在研的 mAbs 中，Donanemab 引发 ARIA-H 的风险最高；而 Lecanemab 不仅ARIA-H 风险相对较低，研究还再度证实了其原理机制的优越性。",
+    "结果显示，7 种抗体在诱发 ARIA-H 风险上的等级差异，结果从高到低排序依次为：Donanemab > Aducanumab > Bapineuzumab > Lecanemab > Gantenerumab > Crenezumab > Solanezumab。",
+    "相似的结论，在此前一些临床研究数据中也有证实：ARIA-H 在 Donanemab 组发生率为 31.3%，而安慰剂组为 13.0%。[2]相较而言，Lecanemab 的 ARIA-H 发生率仅为 17% 对 9%（安慰剂组）。[3]",
+    "结果表明，缺乏结合中小寡聚体能力的抗体，其 ARIA-H 发生率更高。原因可能在于，这类抗体几乎只针对大型淀粉样聚集物（斑块），无法中和游离的 Aβ 低聚体，因而清除过程更剧烈且局限于斑块部位，容易诱发局部炎症和血管渗漏。"
+  ]
+}

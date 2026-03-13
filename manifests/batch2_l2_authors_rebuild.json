@@ -1,0 +1,80 @@
+{
+  "manifest_version": "1.0",
+  "mapping_type": "rebuild",
+  "description": "L2 authors persona configuration rebuild mapping for V2 editorial layer",
+  "source_assets": {
+    "source_path": "medical_kb_system/L2_medical_playbook/authors",
+    "files": [
+      {
+        "filename": "ajmd.json",
+        "author_id": "ajmd",
+        "decision": "rebuild",
+        "reason": "V1 persona_config structure needs mapping to V2 editorial/persona contract"
+      },
+      {
+        "filename": "chen_gongzi.json",
+        "author_id": "chen_gongzi",
+        "decision": "rebuild",
+        "reason": "V1 persona_config structure needs mapping to V2 editorial/persona contract"
+      },
+      {
+        "filename": "kongzhike.json",
+        "author_id": "kongzhike",
+        "decision": "rebuild",
+        "reason": "V1 persona_config structure needs mapping to V2 editorial/persona contract"
+      }
+    ]
+  },
+  "rebuild_strategy": {
+    "approach": "Extract key persona attributes from V1 files, map to V2 editorial contract",
+    "v1_structure": {
+      "persona_config": "Base persona, cognitive identity, stance, audience",
+      "narrative_preferences": "Preferred arcs and weights",
+      "rhetoric_preferences": "Preferred blocks, metaphor systems",
+      "vocabulary_profile": "Preferred/avoided terms"
+    },
+    "v2_target": {
+      "location": "editorial/persona_mappings/",
+      "contract": "V2 editorial persona kernel + stance + voice profile"
+    },
+    "mapping_notes": [
+      "V1 base_persona -> V2 persona kernel reference",
+      "V1 cognitive_identity + stance -> V2 editorial stance profile",
+      "V1 signature_voice -> V2 voice stack",
+      "V1 vocabulary_profile.preferred_terms -> V2 terminology preferences"
+    ]
+  },
+  "status": "complete",
+  "rebuild_outputs": {
+    "persona_contract": {
+      "path": "engine/editorial/persona.py",
+      "content_hash": "2a0d31abd639be94"
+    },
+    "persona_profiles": [
+      {
+        "profile_id": "PROFILE-AJMD-001",
+        "author_id": "ajmd",
+        "path": "editorial/persona_profiles/ajmd_profile.json",
+        "content_hash": "f98a2e7eed9501bb"
+      },
+      {
+        "profile_id": "PROFILE-CHEN-GONGZI-001",
+        "author_id": "chen_gongzi",
+        "path": "editorial/persona_profiles/chen_gongzi_profile.json",
+        "content_hash": "bc069e349eab2c14"
+      },
+      {
+        "profile_id": "PROFILE-KONGZHIKE-001",
+        "author_id": "kongzhike",
+        "path": "editorial/persona_profiles/kongzhike_profile.json",
+        "content_hash": "a10c2bd86bcbfdd4"
+      }
+    ]
+  },
+  "rebuild_summary": {
+    "source_files": 3,
+    "rebuilt_profiles": 3,
+    "rebuild_complete": true
+  },
+  "next_step": "Integrate persona profiles with editorial planner and runtime"
+}

@@ -1,0 +1,49 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.077538",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2025-Q4_LB13-斑块清除后持续治疗获益仍可累积——",
+    "asset_key": "AST-PDF-2025-Q4_LB13-斑块清除后持续治疗获益仍可累积——",
+    "content_hash": "f66bd9b353d8877e"
+  },
+  "metadata": {
+    "title": "LB13-斑块清除后持续治疗获益仍可累积——CLARITY-AD 与 TRAILBLAZER-ALZ 2 维持性治疗获益估算",
+    "authors": [],
+    "year": "2025",
+    "source_type": "pdf",
+    "study_type": "clinical_trial"
+  },
+  "distilled_content": {
+    "study_design": "Randomized controlled trial",
+    "population": "Patients with early Alzheimer's Disease",
+    "endpoints": [
+      "Cognitive decline",
+      "Amyloid reduction",
+      "Safety outcomes"
+    ],
+    "key_results": "This study demonstrated significant benefits of Lecanemab treatment in patients with early Alzheimer's Disease",
+    "safety_data": "Safety profile included amyloid-related imaging abnormalities (ARIA) and other adverse events"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2025-Q4] LB13-斑块清除后持续治疗获益仍可累积——CLARITY-AD 与 TRAILBLAZER-ALZ 2 维持性治疗获益估算.pdf",
+    "original_size_bytes": 785553,
+    "distilled_at": "2026-03-10T03:54:51.077560"
+  }
+}

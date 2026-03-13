@@ -1,0 +1,191 @@
+{
+  "_metadata": {
+    "title": "句式模板库",
+    "version": "1.0",
+    "last_updated": "2026-03-04",
+    "total_patterns": 12,
+    "sources": ["ajmd", "kongzhike", "chen_gongzi", "universal"]
+  },
+
+  "universal_patterns": {
+    "opening": [
+      {
+        "pattern_id": "PAT_OPEN_001",
+        "type": "突发新闻型",
+        "template": "[时间]，[机构]宣布[事件]，[影响范围]",
+        "example": "6月7日，FDA宣布批准Aducanumab，引发行业震动",
+        "register": "R2-R3",
+        "usage_frequency": "高"
+      },
+      {
+        "pattern_id": "PAT_OPEN_002",
+        "type": "数据冲击型",
+        "template": "[试验]结果令人震惊，[关键数据]",
+        "example": "FRUTIGA研究OS结果令人震惊，mOS为9.6个月 vs 8.4个月",
+        "register": "R2-R3",
+        "usage_frequency": "高"
+      },
+      {
+        "pattern_id": "PAT_OPEN_003",
+        "type": "历史纵深型",
+        "template": "过去[X]年来，[疾病]的标准治疗...",
+        "example": "过去四十年来，晚期肝癌的标准治疗仍主要依赖TACE",
+        "register": "R1-R2",
+        "usage_frequency": "中"
+      }
+    ],
+    "transition": [
+      {
+        "pattern_id": "PAT_TRANS_001",
+        "type": "逻辑递进",
+        "template": "更重要的是，这一结果揭示了..."
+      },
+      {
+        "pattern_id": "PAT_TRANS_002",
+        "type": "转折质疑",
+        "template": "然而，如果我们仔细审视试验设计..."
+      }
+    ],
+    "closing": [
+      {
+        "pattern_id": "PAT_CLOSE_001",
+        "type": "临床启示型",
+        "template": "对于临床医生而言，这一结果提示我们..."
+      },
+      {
+        "pattern_id": "PAT_CLOSE_002",
+        "type": "灰色地带型",
+        "template": "XX获批后，反而对临床诊疗提出了更高的要求..."
+      }
+    ]
+  },
+
+  "author_patterns": {
+    "ajmd": {
+      "author_id": "ajmd",
+      "author_name": "阿基米德Biotech",
+      "signature_patterns": [
+        {
+          "pattern_id": "PAT_AJMD_001",
+          "type": "极简戏剧化开篇",
+          "template": "[极简短句/碎片]",
+          "examples": ["回来了，一切都回来了", "大国大药。"],
+          "description": "使用1-2个极短、极具冲击力的句子片段制造悬念或抛出结论",
+          "register": "R3-R4",
+          "emotional_tone": "戏剧化、挑衅性"
+        },
+        {
+          "pattern_id": "PAT_AJMD_002",
+          "type": "设问后接冷酷断言",
+          "template": "[反问句]？[冷酷断言]",
+          "examples": ["国内有没有生物医药基础研究？这只能露出尴尬而不失礼貌的微笑。"],
+          "description": "用反问引出话题，然后给出直接、不留情面的判断",
+          "register": "R3-R4"
+        },
+        {
+          "pattern_id": "PAT_AJMD_003",
+          "type": "数据重击收尾",
+          "template": "[时间范围]，[主体][指标]：[数据]，同比增长[X]%，环比下降[Y]%。",
+          "examples": ["2023年1-7月，中国规模以上企业白酒产量236.7万千升，同比下降13.3%。按照这种趋势，白酒大陆的坍塌最终会到达茅台的地盘。"],
+          "description": "用密集数据轰炸强化观点，并做趋势推演",
+          "register": "R2-R3"
+        },
+        {
+          "pattern_id": "PAT_AJMD_004",
+          "type": "反共识转折",
+          "template": "然而，[主体]开始出现[负面趋势]。 / 尘归尘，这次也不例外。",
+          "examples": ["然而，资本市场开始出现审美疲劳。", "尘归尘，这次也不例外。"],
+          "description": "在铺垫共识后突然转向，制造反差",
+          "register": "R3-R4"
+        }
+      ]
+    },
+
+    "kongzhike": {
+      "author_id": "kongzhike",
+      "author_name": "空之客",
+      "signature_patterns": [
+        {
+          "pattern_id": "PAT_KZK_001",
+          "type": "让步转折式",
+          "template": "诚然，[让步事实]，但反过来想，[核心转折逻辑]...",
+          "examples": ["诚然，这款药物的早期数据看起来不错，但反过来想，商业化路径真的清晰吗？"],
+          "description": "先承认对方观点合理性，再从另一角度拆解",
+          "register": "R2-R3"
+        },
+        {
+          "pattern_id": "PAT_KZK_002",
+          "type": "逻辑漏洞指出式",
+          "template": "这种思路的问题，是仅从逻辑而无需专业判断就可以发现的：[逻辑推演]...",
+          "examples": ["这种思路的问题，是仅从逻辑而无需专业判断就可以发现的：如果A成立，那么B必然..."],
+          "description": "用纯逻辑指出对方论证漏洞，无需专业知识也能看出",
+          "register": "R2-R3"
+        },
+        {
+          "pattern_id": "PAT_KZK_003",
+          "type": "本质还原式",
+          "template": "然而毕竟[事物本质]不是一个单纯对比[表面指标]的游戏...",
+          "examples": ["然而毕竟创新药投资不是一个单纯对比账面估值的游戏..."],
+          "description": "将复杂问题还原到本质，指出表面比较的谬误",
+          "register": "R2-R3"
+        },
+        {
+          "pattern_id": "PAT_KZK_004",
+          "type": "溯源求证式",
+          "template": "秉承着一切信息追溯源头的宗旨，我们找到了[原始文献]，看看到底说了些什么...",
+          "examples": ["秉承着一切信息追溯源头的宗旨，我们找到了EMA的这篇'警告'的原文..."],
+          "description": "直接寻找一手资料，跳过二手解读",
+          "register": "R1-R2",
+          "signature": true
+        }
+      ]
+    },
+
+    "chen_gongzi": {
+      "author_id": "chen_gongzi",
+      "author_name": "辰公子",
+      "signature_patterns": [
+        {
+          "pattern_id": "PAT_CG_001",
+          "type": "研格溯源式",
+          "template": "为了找到[问题]的原因，我还找到了[X]篇历史临床试验报告...",
+          "examples": ["为了找到试验失败的原因，我还找到了4篇此前克拉生坦做过的临床试验报告..."],
+          "description": "辰公子标志性开篇，展现深度调研",
+          "register": "R2-R3",
+          "signature": true
+        },
+        {
+          "pattern_id": "PAT_CG_002",
+          "type": "研格评判式收束",
+          "template": "看看XX的失败，究竟是'意料之外'，还是'情理之中'",
+          "description": "用研格视角总结试验成败",
+          "register": "R2-R3",
+          "signature": true
+        },
+        {
+          "pattern_id": "PAT_CG_003",
+          "type": "临床痛点型",
+          "template": "对于[患者群体]而言，当前指南存在灰色地带...",
+          "examples": ["对于CLDN18.2合并PD-L1高表达患者而言，当前指南存在一个灰色地带"],
+          "description": "从临床未满足需求切入",
+          "register": "R2-R3",
+          "phase": "phase5"
+        }
+      ]
+    }
+  },
+
+  "pattern_selection_guide": {
+    "by_scenario": {
+      "临床试验解读": ["PAT_OPEN_001", "PAT_OPEN_002", "PAT_CG_001"],
+      "竞品对比": ["PAT_KZK_001", "PAT_OPEN_003"],
+      "市场分析": ["PAT_AJMD_001", "PAT_AJMD_003", "PAT_AJMD_004"],
+      "溯源求证": ["PAT_KZK_004", "PAT_CG_001"]
+    },
+    "by_author": {
+      "ajmd": ["PAT_AJMD_001", "PAT_AJMD_002", "PAT_AJMD_003", "PAT_AJMD_004"],
+      "kongzhike": ["PAT_KZK_001", "PAT_KZK_002", "PAT_KZK_003", "PAT_KZK_004"],
+      "chen_gongzi": ["PAT_CG_001", "PAT_CG_002", "PAT_CG_003"]
+    }
+  }
+}

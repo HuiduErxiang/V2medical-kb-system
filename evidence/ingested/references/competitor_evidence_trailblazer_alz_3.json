@@ -1,0 +1,169 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H003",
+    "source_key": "SRC-H003-TRAILBLAZER-ALZ-3",
+    "asset_key": "AST-H003-TRAILBLAZER-ALZ-3",
+    "content_hash": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1",
+    "source_type": "conference_poster"
+  },
+  "metadata": {
+    "title": "Flortaucipir Patterns in Preclinical Alzheimer's Disease: An Evaluation of TRAILBLAZER-ALZ 3 Baseline Data",
+    "authors": [
+      "Vikas Kotari",
+      "Karen Chilcott Holdridge",
+      "Roy Yaari",
+      "Melissa Williamson",
+      "John R. Sims",
+      "Sergey Shcherbinin"
+    ],
+    "year": 2025,
+    "study": "TRAILBLAZER-ALZ 3 (preclinical AD trial)",
+    "source_file": "[2025-Q3] 临床前阿尔茨海默病中的Flortaucipir模式：对TRAILBLAZER-ALZ 3基线数据的评估.md",
+    "source_size_bytes": 14069
+  },
+  "distilled_content": {
+    "study_design": {
+      "study_type": "phase 3 trial in preclinical AD",
+      "trial_identifier": "NCT05026866",
+      "location": "global",
+      "comparator_studies": [
+        "LEARN (observational)",
+        "A4 (solanezumab)",
+        "TRAILBLAZER-ALZ 2 (early symptomatic AD)"
+      ],
+      "imaging_endpoints": {
+        "tau_pet": "flortaucipir (FTP)",
+        "amyloid_pet": "florbetapir"
+      }
+    },
+    "population": {
+      "sample_size": {
+        "total": 173,
+        "cdr_gs_0": 137,
+        "cdr_gs_0.5": 36
+      },
+      "inclusion_criteria": [
+        "Preclinical AD: elevated amyloid without cognitive impairment",
+        "CDR-GS 0 or 0.5",
+        "Age 60-85 years"
+      ],
+      "baseline_characteristics": {
+        "mean_age": {
+          "cdr_gs_0": 70.2,
+          "cdr_gs_0.5": 71.7
+        },
+        "apoe_e4_carriers": {
+          "cdr_gs_0": 59,
+          "cdr_gs_0.5": 57
+        },
+        "mean_amyloid_level": {
+          "cdr_gs_0": 63.6,
+          "cdr_gs_0.5": 73.2
+        },
+        "cdr_sb_score": {
+          "cdr_gs_0": 0.09,
+          "cdr_gs_0.5": 1.46
+        }
+      },
+      "subgroup_analysis": "tau PET patterns in preclinical AD"
+    },
+    "endpoints": {
+      "primary": "Characterize tau PET patterns in preclinical AD",
+      "secondary": [
+        "Compare global and regional tau accumulation across studies",
+        "Identify tau PET cut points for preclinical AD",
+        "Assess regional tau staging patterns"
+      ]
+    },
+    "key_results": {
+      "tau_accumulation": {
+        "global_suvr_cutoffs": {
+          "positive": "≥1.10 SUVR",
+          "high_tau": ">1.46 SUVR"
+        },
+        "population_comparison": {
+          "tb3_cdr_gs_0": {
+            "positive_tau": 15.0,
+            "high_tau": 0.6
+          },
+          "tb3_cdr_gs_0.5": {
+            "positive_tau": 26.3,
+            "high_tau": 3.7
+          },
+          "a4": {
+            "positive_tau": 8.4,
+            "high_tau": 0.3
+          },
+          "tb2_cdr_gs_0.5": {
+            "positive_tau": 82.8,
+            "high_tau": 22.4
+          }
+        },
+        "regional_patterns": {
+          "highest_suvr": "medial temporal lobe (1.25 SUVR)",
+          "followed_by": "lateral temporal (1.24), parietal (1.12), frontal (1.07)",
+          "pattern_consistent": true
+        }
+      },
+      "amyloid_tau_correlation": {
+        "amyloid_level": {
+          "cdr_gs_0": 63.6,
+          "cdr_gs_0.5": 73.2
+        },
+        "tau_positivity": "More likely with higher amyloid burden",
+        "clinical_progression": "Higher amyloid levels correlate with progression to symptomatic AD"
+      }
+    },
+    "comparative_signals": [
+      {
+        "comparator": "A4 (solanezumab)",
+        "tb3_cdr_gs_0": {
+          "amyloid_level": "similar",
+          "tau_positivity": "higher (15% vs 8.4%)"
+        }
+      },
+      {
+        "comparator": "TRAILBLAZER-ALZ 2 (early symptomatic)",
+        "cdr_gs_0.5": {
+          "tau_burden": "lower (1.25 vs 1.43 SUVR)",
+          "regional_pattern": "similar"
+        }
+      },
+      {
+        "comparator": "lecanemab (hypothetical)",
+        "preclinical_population": {
+          "amyloid_level": "similar",
+          "tau_distribution": "similar regional pattern"
+        }
+      }
+    ],
+    "safety_data": {
+      "not_reported": true
+    }
+  },
+  "index_terms": {
+    "keywords": [
+      "Alzheimer disease",
+      "Preclinical AD",
+      "Donanemab",
+      "Tau PET",
+      "Flortaucipir",
+      "TRAILBLAZER-ALZ 3",
+      "Amyloid",
+      "CDR-GS",
+      "Neurodegeneration",
+      "Biomarkers"
+    ],
+    "mesh_terms": [
+      "Alzheimer Disease",
+      "Preclinical Disease",
+      "Positron-Emission Tomography",
+      "Tau Proteins",
+      "Amyloid beta-Peptides",
+      "Biomarkers",
+      "Neurodegenerative Diseases"
+    ]
+  }
+}

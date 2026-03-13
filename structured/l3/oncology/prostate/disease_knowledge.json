@@ -1,0 +1,294 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "prostate_cancer",
+    "version": "3.0.0",
+    "last_updated": "2026-03-03",
+    "description": "前列腺癌疾病层知识（流行病学、后ARPI治疗格局、PSMA靶点与影像评估）；不含具体产品名，可用于跨药物复用"
+  },
+  "sources": [
+    {
+      "source_id": "PC_SRC_HAN_2024",
+      "citation": "Han B, et al. J Natl Cancer Cent. 2024;4(1):47-53.",
+      "study_type": "epidemiology"
+    },
+    {
+      "source_id": "PC_SRC_WANG_2025",
+      "citation": "Wang ZY, et al. J Natl Cancer Cent. 2025;14:32.",
+      "study_type": "epidemiology"
+    },
+    {
+      "source_id": "PC_SRC_ZENG_2024",
+      "citation": "Zeng H, et al. J Natl Cancer Cent. 2024;4(3):203-213.",
+      "study_type": "epidemiology"
+    },
+    {
+      "source_id": "PC_SRC_MOREIRA_2017",
+      "citation": "Moreira DM, et al. Clin Genitourin Cancer. 2017;15(1):60-66.e2.",
+      "study_type": "real_world_epidemiology"
+    },
+    {
+      "source_id": "PC_SRC_SWAMI_2025",
+      "citation": "Swami U, et al. J Clin Oncol. 2025;43(suppl):104.",
+      "study_type": "practice_pattern"
+    },
+    {
+      "source_id": "PC_SRC_GEORGE_2020",
+      "citation": "George DJ, et al. Clin Genitourin Cancer. 2020;18(4):284-294.",
+      "study_type": "real_world_sequence"
+    },
+    {
+      "source_id": "PC_SRC_FREEDLAND_2024",
+      "citation": "Freedland SJ, et al. Prostate Cancer Prostatic Dis. 2024;27(2):327-333.",
+      "study_type": "real_world_sequence"
+    },
+    {
+      "source_id": "PC_SRC_KHALAF_2019",
+      "citation": "Khalaf DJ, et al. Lancet Oncol. 2019;20(12):1730-1739.",
+      "study_type": "comparative_trial"
+    },
+    {
+      "source_id": "PC_SRC_KOMURA_2019",
+      "citation": "Komura K, et al. J Clin Med. 2019;8(8):1251.",
+      "study_type": "retrospective_study"
+    },
+    {
+      "source_id": "PC_SRC_PCWG3_2016",
+      "citation": "Scher HI, et al. J Clin Oncol. 2016;34(12):1402-1418.",
+      "study_type": "consensus_guideline"
+    },
+    {
+      "source_id": "PC_SRC_HOFMAN_2024",
+      "citation": "Hofman MS, et al. ESMO 2024, Abstract 1608P.",
+      "study_type": "conference_analysis"
+    },
+    {
+      "source_id": "PC_SRC_GAFITA_2022",
+      "citation": "Gafita A, et al. J Nucl Med. 2022;63(11):1651-1658.",
+      "study_type": "imaging_response_criteria"
+    },
+    {
+      "source_id": "PC_SRC_GAFITA_2025",
+      "citation": "Gafita A. J Nucl Med. 2025;66(7):995-1004.",
+      "study_type": "review"
+    },
+    {
+      "source_id": "PC_SRC_BAKHT_2025",
+      "citation": "Bakht MK, et al. Nat Rev Urol. 2025;22(1):26-45.",
+      "study_type": "biology_review"
+    },
+    {
+      "source_id": "PC_SRC_MORRIS_2024",
+      "citation": "Morris MJ, et al. Lancet. 2024;404(10459):1227-1239.",
+      "study_type": "phase_3_trial_methodology"
+    },
+    {
+      "source_id": "PC_SRC_SARTOR_2021",
+      "citation": "Sartor O, et al. N Engl J Med. 2021;385(12):1091-1103.",
+      "study_type": "phase_3_trial_methodology"
+    },
+    {
+      "source_id": "PC_SRC_CALDERONI_2023",
+      "citation": "Calderoni L, et al. J Nucl Med. 2023;64(6):910-917.",
+      "study_type": "imaging_selection"
+    },
+    {
+      "source_id": "PC_SRC_ROSAR_2022",
+      "citation": "Rosar F, et al. Cancers (Basel). 2022;14(11):2691.",
+      "study_type": "translational_study"
+    },
+    {
+      "source_id": "PC_SRC_FANTI_2021",
+      "citation": "Fanti S, et al. Eur J Nucl Med Mol Imaging. 2021;48(2):469-476.",
+      "study_type": "expert_consensus"
+    }
+  ],
+  "categories": {
+    "epidemiology_and_burden": {
+      "description": "前列腺癌在中国的疾病负担、分期特征与生存结局",
+      "entries": [
+        {
+          "id": "PC_EPI_001",
+          "title": "China prostate cancer burden continues to rise",
+          "title_zh": "中国前列腺癌疾病负担持续上升",
+          "content": "China reports approximately 134,200 new prostate cancer cases and 47,500 deaths, indicating a sustained increase in burden and high health-system pressure.",
+          "content_zh": "中国前列腺癌新发约13.42万例、死亡约4.75万例，整体疾病负担仍在上升，晚期管理压力持续增加。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_HAN_2024"
+          ]
+        },
+        {
+          "id": "PC_EPI_002",
+          "title": "High de novo metastatic proportion at diagnosis",
+          "title_zh": "初诊转移比例高",
+          "content": "The proportion of patients presenting with metastatic disease at initial diagnosis in China is reported around 54%, higher than several developed countries.",
+          "content_zh": "中国患者初诊即远处转移比例约54%，明显高于部分发达国家，提示早筛与早诊仍是关键短板。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_WANG_2025"
+          ]
+        },
+        {
+          "id": "PC_EPI_003",
+          "title": "Advanced-stage survival remains poor",
+          "title_zh": "晚期患者长期生存仍差",
+          "content": "Five-year survival is around 27% in metastatic prostate cancer and around 15% in metastatic castration-resistant disease, reflecting substantial unmet need after progression.",
+          "content_zh": "转移性前列腺癌5年生存率约27%，进入去势抵抗并伴转移后约15%，提示后线阶段仍存在显著未满足需求。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_WANG_2025",
+            "PC_SRC_MOREIRA_2017"
+          ]
+        },
+        {
+          "id": "PC_EPI_004",
+          "title": "Overall survival has improved, but stage gap persists",
+          "title_zh": "总体生存率改善但分期差距仍显著",
+          "content": "China's age-standardized 5-year net survival increased from 57.7% to 71.1% over time, yet outcomes remain highly stage-dependent.",
+          "content_zh": "中国前列腺癌5年年龄标化净生存率由57.7%提升至71.1%，但晚期与早期之间的预后鸿沟依旧明显。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_ZENG_2024"
+          ]
+        }
+      ]
+    },
+    "treatment_landscape_post_arpi": {
+      "description": "后ARPI时代的治疗路径、耐药挑战与序贯决策要点",
+      "entries": [
+        {
+          "id": "PC_TRT_001",
+          "title": "Frontline ARPI use has become dominant",
+          "title_zh": "ARPI前移已成为主流",
+          "content": "Frontline ARPI-based combinations have increased rapidly, with real-world usage reported above 80%, shifting resistance patterns and downstream treatment choices.",
+          "content_zh": "ARPI联合方案一线使用率已快速提升并超过80%，推动了后续耐药谱变化，也重塑了二线决策逻辑。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_SWAMI_2025",
+            "PC_SRC_FREEDLAND_2024"
+          ]
+        },
+        {
+          "id": "PC_TRT_002",
+          "title": "Cross-resistance limits ARPI switch benefit",
+          "title_zh": "ARPI互换受交叉耐药限制",
+          "content": "After progression on one ARPI, switching to another ARPI typically yields short PSA-PFS and low objective response rates, supporting mechanism-switch strategies.",
+          "content_zh": "首个ARPI进展后再换同机制ARPI，常见PSA-PFS较短、客观缓解率偏低，提示应优先考虑机制转换而非惯性互换。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_KHALAF_2019",
+            "PC_SRC_KOMURA_2019",
+            "PC_SRC_FREEDLAND_2024"
+          ]
+        },
+        {
+          "id": "PC_TRT_003",
+          "title": "Treatment transition rates decline with later lines",
+          "title_zh": "后线治疗承接率逐级下降",
+          "content": "In real-world cohorts, rates of receiving second- and third-line treatment are low, indicating a narrow therapeutic window and the need to optimize earlier effective therapy.",
+          "content_zh": "真实世界中，进入二线和三线治疗的患者比例明显下降，提示治疗窗口较窄，应尽量在更早阶段完成高价值干预。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_GEORGE_2020",
+            "PC_SRC_FREEDLAND_2024"
+          ]
+        },
+        {
+          "id": "PC_TRT_004",
+          "title": "Post-ARPI sequencing should be biomarker-driven",
+          "title_zh": "后ARPI序贯应采用生物标志物驱动",
+          "content": "Decision-making after ARPI progression should combine disease burden, symptoms, organ function, and biomarkers (such as DNA repair status and PSMA imaging) to guide mechanism-based sequencing.",
+          "content_zh": "ARPI进展后应综合疾病负荷、症状、器官功能及分子分层（如DNA修复状态、PSMA影像）进行机制化序贯，而非仅按既往用药惯性推进。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_FREEDLAND_2024",
+            "PC_SRC_PCWG3_2016"
+          ]
+        },
+        {
+          "id": "PC_TRT_005",
+          "title": "Single-metric progression assessment is insufficient",
+          "title_zh": "单一指标评估进展不足以支持转线决策",
+          "content": "PSA dynamics and structural imaging can be asynchronous; integrated assessment using symptoms, PSA kinetics, and imaging is required to reduce delayed or inappropriate line switching.",
+          "content_zh": "PSA变化与结构影像进展可出现不同步，仅依赖单一指标易造成延迟或误判；应采用症状、PSA动力学与影像联合评估。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_PCWG3_2016",
+            "PC_SRC_GAFITA_2025"
+          ]
+        }
+      ]
+    },
+    "psma_target_and_imaging": {
+      "description": "PSMA靶点生物学、筛选逻辑与影像评估方法学",
+      "entries": [
+        {
+          "id": "PC_PSMA_001",
+          "title": "PSMA is a core actionable target in advanced disease",
+          "title_zh": "PSMA是晚期前列腺癌的核心可行动靶点",
+          "content": "PSMA is a transmembrane target broadly expressed in advanced prostate cancer and supports both disease characterization and target-directed radioligand strategies.",
+          "content_zh": "PSMA为前列腺癌相关跨膜靶点，在晚期阶段表达广泛，可同时支撑分子影像评估与靶向放射配体治疗策略。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_BAKHT_2025"
+          ]
+        },
+        {
+          "id": "PC_PSMA_002",
+          "title": "PSMA PET positivity requires both inclusion and exclusion criteria",
+          "title_zh": "PSMA PET筛选需同时满足阳性纳入与阴性排除",
+          "content": "Typical screening requires at least one lesion with uptake above liver background and excludes patients with large PSMA-negative lesions, reducing mismatched biology.",
+          "content_zh": "PSMA筛选通常要求至少存在一个摄取高于肝背景的病灶，同时排除较大PSMA阴性病灶，以降低生物学不匹配导致的疗效不确定性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_MORRIS_2024",
+            "PC_SRC_SARTOR_2021"
+          ]
+        },
+        {
+          "id": "PC_PSMA_003",
+          "title": "Most post-ARPI mCRPC patients are PSMA-positive but still heterogeneous",
+          "title_zh": "后ARPI mCRPC总体PSMA阳性比例高但仍存在异质性",
+          "content": "PSMA-positive prevalence can exceed 90% under trial criteria, yet intrapatient heterogeneity remains clinically relevant for response prediction and sequencing.",
+          "content_zh": "在研究筛选标准下，PSMA阳性比例可超过90%，但个体内病灶异质性仍会影响疗效与序贯策略，需要持续分层管理。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_CALDERONI_2023",
+            "PC_SRC_GAFITA_2025"
+          ]
+        },
+        {
+          "id": "PC_PSMA_004",
+          "title": "PSMA PET response frameworks improve prognostic discrimination",
+          "title_zh": "PSMA PET评估框架可提升预后区分能力",
+          "content": "Compared with conventional structural criteria, PSMA PET-based progression frameworks (for example PPP and RECIP) show stronger association with overall survival and can detect progression earlier in selected settings.",
+          "content_zh": "相较传统结构影像标准，基于PSMA PET的进展判定框架（如PPP、RECIP）与总生存相关性更强，并可在部分场景更早识别进展。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_GAFITA_2022",
+            "PC_SRC_HOFMAN_2024",
+            "PC_SRC_GAFITA_2025"
+          ]
+        },
+        {
+          "id": "PC_PSMA_005",
+          "title": "Endocrine therapy can transiently modulate PSMA imaging signals",
+          "title_zh": "内分泌治疗可短期影响PSMA信号解读",
+          "content": "Androgen-pathway interventions may upregulate PSMA signal and induce early imaging flare; when clinically feasible, timing PSMA PET at or beyond 3 months after endocrine initiation helps reduce misclassification.",
+          "content_zh": "雄激素通路干预可上调PSMA表达并引发早期影像“闪烁”现象；在临床允许的前提下，内分泌治疗启动后至少约3个月再行PSMA PET有助于降低误判。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PC_SRC_ROSAR_2022",
+            "PC_SRC_FANTI_2021"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "batch_id": "H003",
+  "evidence_type": "competitor",
+  "drug": "donanemab",
+  "study_id": "TRAILBLAZER-ALZ 2",
+  "study_type": "phase 3",
+  "study_phase": "pivotal",
+  "publication_date": "2023-07-17",
+  "source_filename": "[2024-Q4] TRAILBLAZER-ALZ 2.md",
+  "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\竞品证据\\[2024-Q4] TRAILBLAZER-ALZ 2.md",
+  
+  "study_details": {
+    "design": "Multicenter, randomized, double-blind, placebo-controlled, 18-month phase 3 trial",
+    "centers": "277 medical research centers/hospitals in 8 countries",
+    "enrollment_period": "June 2020 to November 2021",
+    "last_patient_visit": "April 2023",
+    "sample_size": {
+      "total": 1736,
+      "donanemab": 860,
+      "placebo": 876,
+      "low_medium_tau": 1182,
+      "high_tau": 552
+    },
+    "inclusion_criteria": [
+      "Age 60-85 years",
+      "Early symptomatic Alzheimer disease (mild cognitive impairment/mild dementia)",
+      "Amyloid pathology (≥37 Centiloids) on PET",
+      "Tau pathology on 18F-flortaucipir PET",
+      "MMSE score 20-28"
+    ],
+    "exclusion_criteria": [
+      "Presence of amyloid-related imaging abnormalities of edema/effusion",
+      ">4 cerebral microhemorrhages",
+      ">1 area of superficial siderosis",
+      "Any intracerebral hemorrhage >1 cm",
+      "Severe white matter disease on MRI"
+    ]
+  },
+  
+  "intervention": {
+    "donanemab_dose": "700 mg for first 3 doses, 1400 mg thereafter",
+    "administration": "Intravenous every 4 weeks for up to 72 weeks",
+    "treatment_completion_criteria": "Amyloid plaque level <11 Centiloids on single PET scan or 11-<25 Centiloids on 2 consecutive scans"
+  },
+  
+  "primary_outcome": {
+    "measure": "Change in integrated Alzheimer Disease Rating Scale (iADRS) score from baseline to 76 weeks",
+    "iADRS_range": "0-144 (lower scores indicate greater impairment)",
+    "results": {
+      "low_medium_tau": {
+        "donanemab": -6.02,
+        "placebo": -9.27,
+        "difference": 3.25,
+        "ci": [1.88, 4.62],
+        "p_value": "<0.001",
+        "slowing": "35.1%"
+      },
+      "combined": {
+        "donanemab": -10.19,
+        "placebo": -13.11,
+        "difference": 2.92,
+        "ci": [1.51, 4.33],
+        "p_value": "<0.001",
+        "slowing": "22.3%"
+      },
+      "high_tau": {
+        "donanemab": null,
+        "placebo": null,
+        "difference": 1.26,
+        "ci": [-1.77, 4.28],
+        "p_value": "0.42",
+        "slowing": null
+      }
+    }
+  },
+  
+  "secondary_outcomes": {
+    "cdr_sb": {
+      "measure": "Sum of boxes of the Clinical Dementia Rating Scale",
+      "range": "0-18 (higher scores indicate greater impairment)",
+      "results": {
+        "low_medium_tau": {
+          "donanemab": 1.20,
+          "placebo": 1.88,
+          "difference": -0.67,
+          "ci": [-0.95, -0.40],
+          "p_value": "<0.001",
+          "slowing": "36.0%"
+        },
+        "combined": {
+          "donanemab": 1.72,
+          "placebo": 2.42,
+          "difference": -0.70,
+          "ci": [-0.95, -0.45],
+          "p_value": "<0.001",
+          "slowing": "28.9%"
+        },
+        "high_tau": {
+          "difference": -0.69,
+          "ci": [-1.19, -0.20],
+          "p_value": "0.006"
+        }
+      }
+    },
+    "adcs_iadl": {
+      "measure": "Alzheimer Disease Cooperative Study—Instrumental Activities of Daily Living",
+      "results": {
+        "low_medium_tau": {
+          "difference": 1.83,
+          "ci": [0.91, 2.75],
+          "slowing": "39.9%"
+        },
+        "combined": {
+          "difference": 1.70,
+          "ci": [0.84, 2.57],
+          "slowing": "27.8%"
+        }
+      }
+    },
+    "adas_cog13": {
+      "measure": "13-item cognitive subscale of the Alzheimer Disease Assessment Scale",
+      "results": {
+        "low_medium_tau": {
+          "difference": -1.52,
+          "ci": [-2.25, -0.79],
+          "slowing": "32.4%"
+        },
+        "combined": {
+          "difference": -1.33,
+          "ci": [-2.09, -0.57],
+          "slowing": "19.5%"
+        }
+      }
+    },
+    "amyloid_clearance": {
+      "measure": "Amyloid plaque level reduction",
+      "results": {
+        "76_weeks_change": {
+          "donanemab": -88.0,
+          "placebo": 0.2
+        },
+        "percentage_below_24.1_centiloids": {
+          "24_weeks": 34.2,
+          "76_weeks": 80.1
+        }
+      }
+    },
+    "plasma_ptau217": {
+      "measure": "Plasma phosphorylated tau 217",
+      "results": {
+        "log10_change": {
+          "low_medium_tau": -0.25,
+          "combined": -0.22
+        }
+      }
+    }
+  },
+  
+  "safety_data": {
+    "arae_e": {
+      "incidence": 24.0,
+      "symptomatic": 6.1,
+      "placebo_incidence": 2.1
+    },
+    "arae_h": {
+      "incidence": 31.4,
+      "placebo_incidence": 13.6
+    },
+    "infusion_reactions": {
+      "incidence": 8.7,
+      "placebo_incidence": 0.5
+    },
+    "deaths": {
+      "total": 1.9,
+      "treatment_related": 3,
+      "placebo": 1.1
+    },
+    "serious_adverse_events": {
+      "donanemab": 17.4,
+      "placebo": 15.8
+    },
+    "discontinuations_due_to_ae": {
+      "donanemab": 13.1,
+      "placebo": 4.3
+    }
+  },
+  
+  "comparative_signals": {
+    "vs_lecanemab": {
+      "study": "Clarity AD vs TRAILBLAZER-ALZ 2 indirect comparison",
+      "arae_e_rdd": -10.7,
+      "arae_h_rdd": -10.1,
+      "symptomatic_arae_e_rdd": -3.3,
+      "microhemorrhage_rdd": -7.5,
+      "superficial_siderosis_rdd": -8.8
+    }
+  },
+  
+  "key_conclusions": [
+    "Donanemab significantly slowed clinical progression at 76 weeks in participants with early symptomatic Alzheimer disease and amyloid and tau pathology",
+    "Greatest benefit observed in low/medium tau population (35.1% slowing)",
+    "Combined population also showed significant benefit (22.3% slowing)",
+    "High tau population showed no statistically significant benefit in primary outcome",
+    "Donanemab demonstrated rapid amyloid clearance with 80.1% of participants achieving amyloid clearance (<24.1 Centiloids) at 76 weeks",
+    "ARIA-E incidence was 24.0% with 6.1% symptomatic cases",
+    "Treatment-related deaths were rare (0.35%)",
+    "Indirect comparison shows lecanemab has significantly lower ARIA risk than donanemab"
+  ],
+  
+  "trial_registration": "ClinicalTrials.gov Identifier: NCT04437511",
+  "publication": {
+    "journal": "JAMA",
+    "volume": 330,
+    "issue": 6,
+    "pages": "512-527",
+    "doi": "10.1001/jama.2023.13239"
+  }
+}

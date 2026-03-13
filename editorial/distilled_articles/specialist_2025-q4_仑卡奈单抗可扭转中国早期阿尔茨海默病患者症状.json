@@ -1,0 +1,65 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] 仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状，中国患者用药更安全，中国多中心研究成果出炉！.docx",
+    "source_key": "SRC-HIST-2025-Q4_仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状",
+    "asset_key": "AST-DOCX-2025-Q4_仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状",
+    "content_hash": "76a268fdf33ef730",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.460490",
+    "source_size_bytes": 19525
+  },
+  "metadata": {
+    "title": "仑卡奈单抗可扭转中国早期阿尔茨海默病患者症状，中国患者用药更安全，中国多中心研究成果出炉！",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 证据支持的主张",
+      "argument: 机制解释",
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "早期AD患者症状可扭转",
+      "普遍观点认为，仑卡奈单抗具有明确的延缓乃至阻止AD疾病进展的效果，但是不一定能够扭转疾病进程。中国研究显示，接受仑卡奈单抗治疗的早期AD患者存在症状改善趋势。",
+      "不过对于中重度AD患者而言，仑卡奈单抗的疗效相对有限，尽管也在一定程度上维持了疾病的稳定，但是总体疗效不如轻度患者。",
+      "这也再次说明AD是一种应该早发现早治疗的“慢性病”，越早启动仑卡奈单抗治疗，疗效越好。",
+      "此前有临床证据显示，亚洲人群发生ARIA事件的可能性远低于其他人群，这一结论也在本次真实世界研究中得到了重复验证。",
+      "仅有9.52%的中国早期AD患者发生了ARIA，且均为无症状患者，ARIA发生率低于总人群。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性",
+      "tone: 证据支持"
+    ]
+  },
+  "key_messages": [
+    "该研究通过多项量表以及生物标志物检测得出结论：仑卡奈单抗可以延缓中国AD患者的疾病进展，并改善AD患者的症状，无论性别或APOE ε4的携带状态，患者都可获益。",
+    "普遍观点认为，仑卡奈单抗具有明确的延缓乃至阻止AD疾病进展的效果，但是不一定能够扭转疾病进程。中国研究显示，接受仑卡奈单抗治疗的早期AD患者存在症状改善趋势。",
+    "此前曾有研究显示，抗Aβ治疗的疗效可能存在性别差异，女性患者疗效可能不如男性患者，甚至缺乏疗效。",
+    "此前有临床证据显示，亚洲人群发生ARIA事件的可能性远低于其他人群，这一结论也在本次真实世界研究中得到了重复验证。"
+  ]
+}

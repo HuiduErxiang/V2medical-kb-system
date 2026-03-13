@@ -1,0 +1,62 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L4 — Lecanemab Product Taxonomy (仑卡奈单抗产品变量与约束)",
+  "m4_variable_schemas": [
+    {
+      "variable_group": "VAR_TARGET_PATHWAY",
+      "required_elements": [
+        "Aβ聚集体类型 (单体/寡聚体/原纤维/斑块)",
+        "结合特异性",
+        "清除机制 (如小胶质细胞吞噬)"
+      ],
+      "example": "仑卡奈单抗高亲和力结合并清除具有高神经毒性的可溶性Aβ原纤维，同时清除不可溶斑块"
+    },
+    {
+      "variable_group": "VAR_EFFICACY_NUM",
+      "required_elements": [
+        "ADAS-cog14评分下降比例",
+        "CDR-SB评分下降比例",
+        "随访时间点 (如18个月, 36个月)"
+      ],
+      "example": "Clarity AD研究显示18个月延缓临床衰退27%"
+    },
+    {
+      "variable_group": "VAR_SAFETY_RISK",
+      "required_elements": [
+        "ARIA-E发生率",
+        "ARIA-H发生率",
+        "合并用药禁忌 (如抗凝药)"
+      ],
+      "example": "仑卡奈单抗ARIA-E发生率为12.6%，且主要为无症状的轻中度"
+    },
+    {
+      "variable_group": "VAR_BIOMARKER_CHANGES",
+      "required_elements": [
+        "Aβ-PET摄取率下降",
+        "CSF/血浆 p-Tau181下降",
+        "GFAP变化",
+        "NfL变化"
+      ],
+      "example": "治疗18个月后，血浆p-Tau181水平显著降低，反映了下游tau病理的改善"
+    },
+    {
+      "variable_group": "VAR_COMPETITOR_DATA",
+      "required_elements": [
+        "多奈单抗的ARIA发生率",
+        "研究之间的ITC间接比较方法",
+        "DRD(风险差异)的统计学意义"
+      ],
+      "example": "ITC研究显示仑卡奈单抗的任何ARIA发生率显著低于多奈单抗(DRD -10.1%)"
+    }
+  ],
+  "m4_block_instantiation_rules": {
+    "M3_U_B_MECHANISM_DEEPDIVE": "必须强调对『原纤维/寡聚体』的清除，不可仅提斑块。",
+    "M3_U_B_TRIAL_DATA": "凡提Clarity AD，必须挂载ADAS-cog14或CDR-SB的准确百分比数据。",
+    "M3_U_B_SAFETY_MANAGEMENT": "提及ARIA风险时，必须同时提及MRI监测频率建议和大多数为无症状的定性描述。"
+  }
+}

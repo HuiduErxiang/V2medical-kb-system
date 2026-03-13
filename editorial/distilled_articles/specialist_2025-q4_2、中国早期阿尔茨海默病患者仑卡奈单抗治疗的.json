@@ -1,0 +1,55 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] 2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的真实世界数据：疗效、安全性及生物标志物应用.docx",
+    "source_key": "SRC-HIST-2025-Q4_2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的",
+    "asset_key": "AST-DOCX-2025-Q4_2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的",
+    "content_hash": "14e739e90e569e48",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.271564",
+    "source_size_bytes": 20653
+  },
+  "metadata": {
+    "title": "2、中国早期阿尔茨海默病患者仑卡奈单抗治疗的真实世界数据：疗效、安全性及生物标志物应用",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 问题背景引入",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "总体耐受性良好，输注反应发生率 5.88%（均为轻度），ARIA 发生率 17.65%（中重度患者达 43.75%，早期患者仅 9.62%），所有 ARIA 患者均无症状，仅 4 例因不良反应停药。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 临床应用导向"
+    ]
+  },
+  "key_messages": [
+    "本研究聚焦仑卡奈单抗在中国阿尔茨海默病（AD）患者中的真实世界疗效、安全性及血浆生物标志物动态变化，为多中心前瞻性队列研究，纳入 68 例 AD 患者，于基线（V0）、2.5 个月（V1）、7 个月（V2）进行评估。结果显示，早期 AD 患者认知功能显著改善，血浆 p-tau181、p-tau217 与认知功能相关且可预测治疗反应，药物耐受性良好，中至重度患者疗效有限。"
+  ]
+}

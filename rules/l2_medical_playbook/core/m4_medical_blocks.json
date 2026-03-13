@@ -1,0 +1,239 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L2",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L2 — 医学修辞积木实例与叙事映射 (Medical Rhetoric Block Instances & Mappings)",
+  "version": "1.0",
+  "description": "在L1通用原型基础上叠加医学领域的专业命名、描述。同时定义M2叙事弧→M4积木的默认映射（领域特定决策）。",
+  "m4_rhetoric_blocks": [
+    {
+      "extends_L1_prototype": "M4_P_PROBLEM_STATEMENT",
+      "id": "M4_B_DISEASE_BURDEN",
+      "name": "[流行病学/疾病负担综述块]",
+      "description": "医学意图：用宏观流行病学数据或卫生经济学负担描述疾病的严重性与临床困境。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_MECHANISM_EXPLAINER",
+      "id": "M4_B_MECHANISM",
+      "name": "[靶点/病理生理机制深度解析块]",
+      "description": "医学意图：专业的医学通路解释，说明药物是如果在微观层面产生作用的。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_CORE_EVIDENCE",
+      "id": "M4_B_EFFICACY_DATA",
+      "name": "[核心临床/RWS疗效数据罗列表]",
+      "description": "医学意图：以严谨学术口吻列出试验的关键终点数据（如核心量表变化，P值）。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_COMPETITIVE_COMPARE",
+      "id": "M4_B_COMPETITIVE",
+      "name": "[竞品/标准治疗横向对比块]",
+      "description": "医学意图：通过间接比较或NMA，将目标疗法与竞品进行数据对比。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_OBJECTIVE_METRICS",
+      "id": "M4_B_BIOMARKER",
+      "name": "[客观检查/生物标志物分析块]",
+      "description": "医学意图：分析影像学改变或血液标志物变化，提供硬核证据。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_AUTHORITY_CITATION",
+      "id": "M4_B_GUIDELINE",
+      "name": "[权威文献/指南/专家引用块]",
+      "description": "医学意图：引用顶级期刊或权威指南（如NCCN）进行背书。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_RISK_DEFENSE",
+      "id": "M4_B_SAFETY",
+      "name": "[安全性/不良事件风险防守块]",
+      "description": "医学意图：说明特定不良事件(AE)发生率，并提供临床应对措施。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_TARGET_PROFILE",
+      "id": "M4_B_INDICATION",
+      "name": "[获益人群/适应症画像块]",
+      "description": "医学意图：明确指出疗法最适合的患者类型、分期及特定基因突变亚组。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_EVOLUTION_NARRATIVE",
+      "id": "M4_B_TRIAL_HISTORY",
+      "name": "[试验设计演变与商业博弈块]",
+      "description": "医学意图：列举方案变更、财报交易，论证产品数据背后的商业逻辑。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_DATA_DEEP_DIVE",
+      "id": "M4_B_STATS_TEARDOWN",
+      "name": "[图文穿插式统计学拆解块]",
+      "description": "医学意图：直接引用生存曲线图，硬核拆解HR、P值和删失数据。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_CROSS_AUTHORITY",
+      "id": "M4_B_跨机构分",
+      "name": "[跨机构分歧去魅与本土锚定块]",
+      "description": "先放大FDA/EMA分歧的戏剧张力，再用历史案例与医疗体系差异解释分歧常态化，最后以“本土监管+本土共识”完成立场收束，强化目标市场的处方信心。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_NEGATIVE_RECOVERY",
+      "id": "M4_B_负面终点",
+      "name": "[负面终点后临床意义保全块]",
+      "description": "先正面承认主要终点不显著或获益幅度争议，再转入靶点特异性、人群分层、联合/序贯方案与指南推荐证据，完成从“单点受挫”到“整体治疗价值仍成立”的叙事修复。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_LONG_TERM_FRAMING",
+      "id": "M4_B_长期主义",
+      "name": "长期主义 vs 一次性获益对照",
+      "description": "通过二元叙事把治疗理念具象化：将可持续清除上游毒性、延缓后续病理进展定义为长期主义；将仅清除存量终末病灶且停药后难以继续扩大获益的策略定义为一次性获益。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_FRONTIER_LADDER",
+      "id": "M4_B_无人区突",
+      "name": "无人区突破的证据阶梯",
+      "description": "先用“空白地带/无人区/唯一证据”等高张力命名锁定未满足需求，再按分子结构-体外活性-临床分层结果逐级递进，形成从可解释机制到可迁移临床价值的说服闭环。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_MULTI_DIM_VALUE",
+      "id": "M4_B_多维获益",
+      "name": "[多维获益正当化块]",
+      "description": "有意识地把论证从单一生存终点扩展到毒性、生活质量、PRO与依从性，形成\"延寿+减负+功能改善\"的患者中心价值框架，用于支撑同类药物中的优先推荐。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_INNOVATION_BRIDGE",
+      "id": "M4_B_机制创新",
+      "name": "[机制创新到临床优势映射块]",
+      "description": "先通过结构改造或双靶点机制解释药物的理论差异，再下接IC50选择性、剂量窗口与不良反应数据，最终上收为疗效与安全性的双重领先，完成从分子叙事到临床结论的闭环。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_CINEMATIC_OPENING",
+      "id": "M4_B_CASE_VIGNETTE",
+      "name": "[患者病例特写开场块]",
+      "description": "医学意图：以典型患者病例或临床场景的画面感细节开篇，如门诊对话、检查结果的屏息瞬间，将读者拉入临床现场，连接疾病负担与情感共鸣。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_HISTORICAL_ECHO",
+      "id": "M4_B_TREATMENT_EVOLUTION",
+      "name": "[治疗史演变回顾块]",
+      "description": "医学意图：将当前疗法与历史上的标准治疗变迁进行对照，如从化疗时代到靠向时代再到免疗时代，揭示治疗范式的周期性突破与当前新疗法的历史定位。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_TAXONOMY_TEARDOWN",
+      "id": "M4_B_TREATMENT_LANDSCAPE",
+      "name": "[治疗格局图谱拆解块]",
+      "description": "医学意图：将某疾病领域的竞争格局抽象为若干流派（如TKI派、免疗派、ADC派、双抗派），逐一拆解各流派的机制、代表药物与证据强度。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_CONSENSUS_TEARDOWN",
+      "id": "M4_B_CLINICAL_MYTH_BUST",
+      "name": "[临床共识拆解块]",
+      "description": "医学意图：先陈述临床实践中的普遍共识或指南推荐，然后用新的临床证据或真实世界数据指出其局限性，为新疗法开辟论证空间。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_SOURCE_TRACING",
+      "id": "M4_B_PRIMARY_LITERATURE",
+      "name": "[原始文献溯源块]",
+      "description": "医学意图：面对媒体报道或二手解读，直接跳过中间层，找到FDA/EMA原始警告文件、临床试验注册信息或原始论文，逐字拆解作为立论基础。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_DIMENSIONAL_REDUCTION",
+      "id": "M4_B_ENDPOINT_REDUCTION",
+      "name": "[终点降维分析块]",
+      "description": "医学意图：将复杂的多终点临床试验结果还原为最基础的临床问题——整体生存获益、产能约束或可及性问题，剥离数据光环，回归临床本质。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_DRAMATIC_FRAG_HOOK",
+      "id": "M4_B_CLINICAL_DRAMA_HOOK",
+      "name": "[戏剧化临床数据开场块]",
+      "description": "医学意图：以1-2个极简断句开篇，如“OS突破了”“终于，无药可用的局面被打破了”，用戏剧张力抛出核心临床结论后再展开证据链。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_CONTRARIAN_PIVOT",
+      "id": "M4_B_CONTRARIAN_CLINICAL",
+      "name": "[反共识临床视角转折块]",
+      "description": "医学意图：先引入临床界广泛接受的疗法共识或近期学术会议热点，然后用新证据或亚组分析猛然转折，引出与主流认知不同的临床见解。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_DATA_GATLING",
+      "id": "M4_B_TRIAL_DATA_BARRAGE",
+      "name": "[密集临床数据轰炸块]",
+      "description": "医学意图：以高密度连续输出临床试验数据（ORR/PFS/OS/HR/CI），用数据量级本身形成压倒性的疗效证据链。",
+      "origin_layer": "L2"
+    },
+    {
+      "extends_L1_prototype": "M4_P_RUTHLESS_TEARDOWN",
+      "id": "M4_B_PIPELINE_REALITY",
+      "name": "[管线真相拆解块]",
+      "description": "医学意图：剥去药企营销叙事和估值泡沫，直接暴露管线真实状态——自研vs.License-in比例、核心产品营收贡献、临床数据与市值的偏离度。",
+      "origin_layer": "L2"
+    }
+  ],
+  "m4_block_mappings": {
+    "M2_HOOK": [
+      "M4_B_DISEASE_BURDEN",
+      "M4_B_CASE_VIGNETTE",
+      "M4_B_CLINICAL_DRAMA_HOOK"
+    ],
+    "M2_SETUP": [
+      "M4_B_MECHANISM",
+      "M4_B_TREATMENT_EVOLUTION",
+      "M4_B_TREATMENT_LANDSCAPE"
+    ],
+    "M2_SOLUTION": [
+      "M4_B_INDICATION"
+    ],
+    "M2_PROOF": [
+      "M4_B_EFFICACY_DATA",
+      "M4_B_BIOMARKER",
+      "M4_B_TRIAL_DATA_BARRAGE",
+      "M4_B_PRIMARY_LITERATURE"
+    ],
+    "M2_DEFENSE": [
+      "M4_B_SAFETY",
+      "M4_B_CONTRARIAN_CLINICAL"
+    ],
+    "M2_CTA": [
+      "M4_B_GUIDELINE"
+    ],
+    "M2_GUIDANCE": [
+      "M4_B_GUIDELINE",
+      "M4_B_INDICATION"
+    ],
+    "M2_EMOTIVE_INTRO": [
+      "M4_B_DISEASE_BURDEN",
+      "M4_B_CASE_VIGNETTE"
+    ],
+    "M2_TEARDOWN": [
+      "M4_B_STATS_TEARDOWN",
+      "M4_B_EFFICACY_DATA",
+      "M4_B_COMPETITIVE",
+      "M4_B_CLINICAL_MYTH_BUST",
+      "M4_B_ENDPOINT_REDUCTION",
+      "M4_B_PIPELINE_REALITY"
+    ]
+  }
+}

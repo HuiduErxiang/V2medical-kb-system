@@ -1,0 +1,52 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L4 — Lemborexant Product Taxonomy (莱博雷生产品变量与约束)",
+  "m4_variable_schemas": [
+    {
+      "variable_group": "VAR_TARGET_PATHWAY",
+      "required_elements": [
+        "作用机制类型",
+        "受体阻断方式",
+        "睡眠调节效果"
+      ],
+      "example": "精准阻断促觉醒信号通路，改善睡眠的同时不破坏正常睡眠结构"
+    },
+    {
+      "variable_group": "VAR_EFFICACY_NUM",
+      "required_elements": [
+        "入睡时间缩短",
+        "总睡眠时间延长",
+        "睡眠维持改善"
+      ],
+      "example": "临床研究显示，用药后入睡时间显著缩短，总睡眠时间明显延长"
+    },
+    {
+      "variable_group": "VAR_SAFETY_RISK",
+      "required_elements": [
+        "日间残留效应",
+        "跌倒风险",
+        "戒断反应"
+      ],
+      "example": "长期使用未观察到明显的生理依赖，突然停药后无戒断症状"
+    },
+    {
+      "variable_group": "VAR_COMPETITOR_DATA",
+      "required_elements": [
+        "与传统药物对比",
+        "起效速度",
+        "安全性差异"
+      ],
+      "example": "与传统药物相比，新型药物起效更快，安全性更高"
+    }
+  ],
+  "m4_block_instantiation_rules": {
+    "M3_U_B_MECHANISM_DEEPDIVE": "必须强调精准作用机制，不可仅提促眠效果。",
+    "M3_U_B_TRIAL_DATA": "凡提临床研究，必须挂载具体的疗效数据。",
+    "M3_U_B_SAFETY_MANAGEMENT": "提及安全性时，必须同时提及无戒断反应和低日间残留风险的定性描述。"
+  }
+}

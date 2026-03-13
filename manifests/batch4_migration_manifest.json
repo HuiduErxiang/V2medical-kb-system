@@ -1,0 +1,84 @@
+{
+  "manifest_version": "1.0",
+  "migration_batch": "Batch-4",
+  "migration_date": "2026-03-10",
+  "migration_phase": "Phase 4",
+  "description": "大文件与视觉资产外置 - 为 references 和 historical_articles 建立外置索引和稳定引用",
+  "summary": {
+    "total_externalized_files": 163,
+    "references_files": 78,
+    "historical_articles_files": 85,
+    "disposal_files": 6,
+    "verification_status": "verified"
+  },
+  "important_notes": [
+    "大文件不进入 medical_kb_system_v2 Git 历史",
+    "V2 中保留的是索引和引用关系，不是二进制副本",
+    "test_extractions 属于 Dispose-1 处置资产，不计入 Batch-4 完成率"
+  ],
+  "assets": {
+    "references": {
+      "source_key": "SRC-RAW-REFERENCES",
+      "asset_key": "AST-PKG-RAW-REFERENCES",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/references",
+      "target_storage": "sources/evidence_assets/references",
+      "decision": "externalize",
+      "file_count": 78,
+      "extension_distribution": {
+        ".pdf": 43,
+        ".pptx": 17,
+        ".md": 15,
+        ".xlsx": 2,
+        ".txt": 1
+      },
+      "categories": {
+        "竞品证据": 29,
+        "仑卡奈核心证据": 46,
+        "root": 3
+      },
+      "index_file": "manifests/batch4_references_index.json"
+    },
+    "historical_articles": {
+      "source_key": "SRC-RAW-HISTORICAL-ARTICLES",
+      "asset_key": "AST-PKG-RAW-HISTORICAL-ARTICLES",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/historical_articles",
+      "target_storage": "sources/evidence_assets/historical_articles",
+      "decision": "externalize",
+      "file_count": 85,
+      "extension_distribution": {
+        ".docx": 85
+      },
+      "audiences": {
+        "专科医师": 44,
+        "患者教育": 34,
+        "公众科普": 3,
+        "基层医护": 4
+      },
+      "index_file": "manifests/batch4_historical_articles_index.json"
+    }
+  },
+  "disposal_assets": {
+    "test_extractions": {
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/test_extractions",
+      "target_storage": "sources/analysis_snapshots/test_extractions",
+      "decision": "archive",
+      "disposal_batch": "Dispose-1",
+      "file_count": 6,
+      "important_notice": "不计入 Batch-4 迁移完成率",
+      "index_file": "manifests/batch4_test_extractions_disposal.json"
+    }
+  },
+  "verification": {
+    "source_files_verified": true,
+    "hash_calculated": true,
+    "index_files_created": true,
+    "pytest_status": "passed (146 tests)",
+    "index_files_hash": {
+      "batch4_references_index.json": "3cd643823aa13578",
+      "batch4_historical_articles_index.json": "c0568650bd81c6ef",
+      "batch4_test_extractions_disposal.json": "16545dee632946f2",
+      "batch4_migration_manifest.json": "6416b6d05ce126bf"
+    },
+    "readme_hash": "3bfe9be42a8a6a02"
+  }
+}

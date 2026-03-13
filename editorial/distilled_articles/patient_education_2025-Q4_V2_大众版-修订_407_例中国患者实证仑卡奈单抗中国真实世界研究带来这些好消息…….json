@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q4] V2【大众版-修订】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx",
+    "content_hash": "5cf6e3253d3ac0c4",
+    "distilled_at": "2026-03-10T03:56:06.540247",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V2【大众版-修订】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q4",
+    "word_count": 2770,
+    "source_file": "[2025-Q4] V2【大众版-修订】407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息…….docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n记忆渐渐褪色，认知慢慢衰退，...。",
+    "作为一种无法逆转的神经退行性疾病，其治疗一直是医学领域的攻坚重点。",
+    "药物在真实临床场景中表现如何？中国患者使用后疗效是否理想？安全性是否有保障？这些都是患者和家属最关心...。",
+    "针对这种情况，医生也有应对办法：对于有复发风险的患者，后续输液前可预防性使用抗组胺药或糖皮质激素，能...。",
+    "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n记忆渐渐褪色，认知慢慢衰退，...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "407 例中国患者实证！仑卡奈单抗中国真实世界研究带来这些好消息……\n\n记忆渐渐褪色，认知慢慢衰退，不仅患者失去生活自主性，更无数家庭陷入照护困境。作为一种无法逆转的神经退行性疾病，其治疗一直是医学领域的攻坚重点。\n靶向β淀粉样蛋白（Aβ）的疾病修饰药物仑卡奈单抗的获批，为治疗带来了突破性方向。\n药物在真实临床场景中表现如何？中国患者使用后疗效是否理想？安全性是否有保障？这些都是患者和家属最关心的..."
+}

@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\主张_证据\\[2025-Q3] V1 重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1).docx",
+    "content_hash": "b910020f8a7797fd",
+    "distilled_at": "2026-03-10T03:56:06.397718",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "V1 重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1)",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "word_count": 2097,
+    "source_file": "[2025-Q3] V1 重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险(1).docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗（lecanemab）是全球首款用于治疗AD的抗Aβ药物，已于2023年获FDA批准上市，...。",
+    "重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险\n\nPart-1：背景+设...。",
+    "重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险\n\nPart-1：背景+设...。",
+    "可喜的是，约68%接受抗血栓治疗的早期AD患者没有发生疾病进展，这说明，接受抗血栓治疗同时接受仑卡奈...。",
+    "重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险\n\nPart-1：背景+设...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "重磅研究数据！这类高风险患者，合并使用不会增加抗Aβ治疗ARIA发生的风险\n\nPart-1：背景+设问\n阿尔茨海默病（AD）是一种神经退行性疾病，已成为威胁老年人健康的“记忆杀手”，随着全球老龄化加剧，越来越多家庭正面临这一挑战。而随着年龄的增长，老年人不仅仅受AD困扰，高血压、冠心病等慢性病也常常“结伴而来”。高龄和合并多种基础疾病使得老年人的出血风险升高，因此他们常常需要使用抗血栓药物。\n仑卡..."
+}

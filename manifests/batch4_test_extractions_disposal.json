@@ -1,0 +1,54 @@
+{
+  "index_version": "1.0",
+  "created_at": "2026-03-10",
+  "source_path": "medical_kb_system/source_ingestion/raw_documents/test_extractions",
+  "target_storage": "sources/analysis_snapshots/test_extractions",
+  "decision": "archive",
+  "disposal_batch": "Dispose-1",
+  "important_notice": "本资产为处置资产，不计入 Batch-4 迁移完成率",
+  "file_count": 6,
+  "files": [
+    {
+      "filename": "pdf2_content.md",
+      "relative_path": "pdf2_content.md",
+      "content_hash": "ee57a04faadf7497",
+      "size_bytes": 68876,
+      "extension": ".md"
+    },
+    {
+      "filename": "pdf3_content.md",
+      "relative_path": "pdf3_content.md",
+      "content_hash": "712ded4ba0a63ea6",
+      "size_bytes": 134987,
+      "extension": ".md"
+    },
+    {
+      "filename": "文献48.md",
+      "relative_path": "文献48.md",
+      "content_hash": "0042581336354426",
+      "size_bytes": 46616,
+      "extension": ".md"
+    },
+    {
+      "filename": "文献48：Small-diffusible aggregates, plaques, tangles, and dynamic equilibria Untangling Alzheimer's disease..pdf",
+      "relative_path": "文献48：Small-diffusible aggregates, plaques, tangles, and dynamic equilibria Untangling Alzheimer's disease..pdf",
+      "content_hash": "5c661431af6e40f9",
+      "size_bytes": 1096315,
+      "extension": ".pdf"
+    },
+    {
+      "filename": "文献6_extracted.md",
+      "relative_path": "文献6_extracted.md",
+      "content_hash": "ee57a04faadf7497",
+      "size_bytes": 68876,
+      "extension": ".md"
+    },
+    {
+      "filename": "文献6：Lecanemab treatment for Alzheimer’s Disease of varying severities and associated plasma biomarkers monitoring A multi-center real-world study in China.pdf",
+      "relative_path": "文献6：Lecanemab treatment for Alzheimer’s Disease of varying severities and associated plasma biomarkers monitoring A multi-center real-world study in China.pdf",
+      "content_hash": "72130abb80dc6874",
+      "size_bytes": 1791152,
+      "extension": ".pdf"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q3] 守护记忆的新药，阿尔茨海默病曙光来临.docx",
+    "content_hash": "c554e0740db58a9e",
+    "distilled_at": "2026-03-10T03:56:06.689684",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "守护记忆的新药，阿尔茨海默病曙光来临",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q3",
+    "word_count": 1419,
+    "source_file": "[2024-Q3] 守护记忆的新药，阿尔茨海默病曙光来临.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "近期，AD治疗新药——仑卡奈单抗，在我国正式上市。",
+    "守护记忆的新药，阿尔茨海默病曙光来临\n阿尔兹海默病（AD）就像是时间沙漏中一粒粒加速下落的细沙，无声...。",
+    "近期，AD治疗新药——仑卡奈单抗，在我国正式上市。",
+    "安全性如何？\n仑卡奈单抗通过拮抗脑内β淀粉样蛋白，介导小胶质细胞的吞噬发挥清除脑内老年斑的作用，可能...。",
+    "通过精准靶向并快速清除这些致病元凶，仑卡奈单抗有效阻止了神经元的进一步损伤，从而延缓了疾病的发展进程。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "守护记忆的新药，阿尔茨海默病曙光来临\n阿尔兹海默病（AD）就像是时间沙漏中一粒粒加速下落的细沙，无声却不可阻挡地消耗着个体的记忆与认知功能。随着病情的加深，这沙漏仿佛被无形之手倒置，加速了记忆与认知能力的流失，让患者逐渐无法识别身边的人和事，生活的色彩与过往的片段在时间的洪流中逐渐模糊，直至消失。\n近期，AD治疗新药——仑卡奈单抗，在我国正式上市。这款新药的到来，不仅标志着AD治疗领域的重大突破，..."
+}

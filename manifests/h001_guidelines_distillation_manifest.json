@@ -1,0 +1,68 @@
+{
+  "manifest_version": "1.0",
+  "batch_id": "H001",
+  "batch_type": "GUIDELINE",
+  "created_at": "2026-03-10T03:48:00Z",
+  "description": "历史指南素材蒸馏批次 - 5个指南/共识文件",
+  "source_path": "sources/guidelines",
+  "target_path": "medical_kb_system_v2/evidence/ingested/guidelines",
+  "distillation_status": "completed",
+  "files": [
+    {
+      "source_file": "bystander_2016.md",
+      "target_file": "bystander_effect_dxd_2016.json",
+      "source_key": "SRC-GUIDELINE-BYSTANDER-2016",
+      "asset_key": "AST-GUIDELINE-BYSTANDER-DXD-2016",
+      "content_hash": "435D32894A159752B338622787DBBF1EFAA497E6429088E63DAA0895C3335CE3",
+      "source_size_bytes": 41239,
+      "distillation_type": "journal_article"
+    },
+    {
+      "source_file": "detection_consensus.md",
+      "target_file": "egfr_ex20ins_detection_consensus_2024.json",
+      "source_key": "SRC-GUIDELINE-EGFR-EX20INS-DETECTION-2024",
+      "asset_key": "AST-GUIDELINE-EGFR-EX20INS-DETECTION-2024",
+      "content_hash": "19BDE0A2B93F621A6252633E76763C908FA2736BA0488B5C461216796285866B",
+      "source_size_bytes": 87270,
+      "distillation_type": "clinical_consensus"
+    },
+    {
+      "source_file": "gastric_2017.md",
+      "target_file": "dxd_tdm1_resistance_gastric_2017.json",
+      "source_key": "SRC-GUIDELINE-GASTRIC-DXD-2017",
+      "asset_key": "AST-GUIDELINE-DXD-TDM1-RESISTANCE-2017",
+      "content_hash": "FDA869D9A864EF886078F348DDE4C6C7661BF4714E53226B02C0DBA8EAC8C2A8",
+      "source_size_bytes": 60093,
+      "distillation_type": "journal_article"
+    },
+    {
+      "source_file": "treatment_consensus_formatted.md",
+      "target_file": "egfr_ex20ins_treatment_consensus_2024.json",
+      "source_key": "SRC-GUIDELINE-EGFR-EX20INS-TREATMENT-2024",
+      "asset_key": "AST-GUIDELINE-EGFR-EX20INS-TREATMENT-2024",
+      "content_hash": "C7FF1832AAE1F08559C8D2D37E5DC2C6AFB322FF5863997A35FAC4DB95C41D55",
+      "source_size_bytes": 48933,
+      "distillation_type": "clinical_consensus"
+    }
+  ],
+  "excluded_files": [
+    {
+      "source_file": "treatment_consensus.md",
+      "reason": "与treatment_consensus_formatted.md内容重复，已合并处理"
+    }
+  ],
+  "statistics": {
+    "source_files_total": 5,
+    "source_files_processed": 4,
+    "source_files_excluded": 1,
+    "total_source_size_bytes": 286092,
+    "output_files": 4
+  },
+  "distillation_summary": {
+    "journal_articles": 2,
+    "clinical_consensus": 2,
+    "disease_areas_covered": ["breast_cancer", "gastric_cancer", "non_small_cell_lung_cancer"],
+    "products_mentioned": ["T-DXd", "T-DM1", "舒沃替尼", "埃万妥单抗"],
+    "key_recommendations_extracted": 10
+  }
+}

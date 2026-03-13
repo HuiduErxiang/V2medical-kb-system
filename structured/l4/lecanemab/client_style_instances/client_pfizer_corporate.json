@@ -1,0 +1,30 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "label": "rigid_safe",
+  "style_positioning": "Conservative corporate medical communication prioritizing clarity, compliance, and risk control.",
+  "vocabulary_biases": [
+    "稳健",
+    "合规边界",
+    "风险控制",
+    "循证路径",
+    "审慎推进",
+    "标准化流程",
+    "可追溯"
+  ],
+  "sentence_patterns": [
+    "在...前提下，...可被审慎采用。",
+    "基于现有证据，优先建议...路径。",
+    "需要先明确...，再进入...决策。",
+    "与其强调突破，不如强调可控与可执行。"
+  ],
+  "rhetorical_devices": [
+    "Prioritize non-inflated claims and explicit caveats",
+    "Use policy-and-practice alignment language",
+    "Frame recommendations as controlled implementation steps"
+  ]
+}

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V2 写作系统流程视图</title>
+  <style>
+    :root {
+      --paper: #f6f1e7;
+      --ink: #1f1c17;
+      --muted: #645a4c;
+      --panel: rgba(255, 251, 244, 0.88);
+      --line: rgba(77, 63, 45, 0.18);
+      --teal: #0f766e;
+      --teal-soft: rgba(15, 118, 110, 0.12);
+      --wine: #8b3a2e;
+      --wine-soft: rgba(139, 58, 46, 0.11);
+      --gold: #b98a2f;
+      --shadow: 0 24px 60px rgba(44, 31, 17, 0.12);
+      --radius: 26px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 24%),
+        radial-gradient(circle at 85% 10%, rgba(185, 138, 47, 0.12), transparent 22%),
+        radial-gradient(circle at right bottom, rgba(139, 58, 46, 0.10), transparent 26%),
+        var(--paper);
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+    }
+
+    .page {
+      width: min(1220px, calc(100vw - 32px));
+      margin: 28px auto 56px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px 34px 30px;
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      background: linear-gradient(155deg, rgba(255, 251, 244, 0.95), rgba(248, 242, 233, 0.93));
+      box-shadow: var(--shadow);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 260px;
+      height: 260px;
+      top: -90px;
+      right: -50px;
+      background: rgba(15, 118, 110, 0.08);
+    }
+
+    .hero::after {
+      width: 220px;
+      height: 220px;
+      bottom: -80px;
+      left: -70px;
+      background: rgba(139, 58, 46, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 860px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.85fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .hero-card,
+    .panel,
+    .aside,
+    .evidence {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 12px 30px rgba(46, 32, 17, 0.06);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card {
+      padding: 18px 18px 16px;
+    }
+
+    .hero-card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .hero-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 22px 0 18px;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 244, 0.68);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    .tab:hover,
+    .tab[aria-selected="true"] {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #f8fffd;
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      display: none;
+      padding: 26px;
+    }
+
+    .panel.is-active {
+      display: block;
+      animation: fadeIn 0.18s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .panel-head {
+      margin-bottom: 20px;
+    }
+
+    .panel-head h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .panel-head p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(247, 241, 232, 0.82));
+    }
+
+    .step-no {
+      display: grid;
+      place-items: center;
+      width: 74px;
+      height: 74px;
+      border-radius: 22px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      font-size: 26px;
+      font-weight: 800;
+      font-family: "Source Han Serif SC", "Noto Serif SC", serif;
+    }
+
+    .step h3 {
+      margin: 2px 0 8px;
+      font-size: 22px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .step .mini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .mini span {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(15, 118, 110, 0.08);
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.8fr);
+      gap: 18px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 252, 247, 0.94), rgba(247, 241, 232, 0.80));
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .aside {
+      padding: 18px 20px;
+      align-self: start;
+    }
+
+    .aside h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .aside p,
+    .aside li {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .aside ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .flow-item {
+      position: relative;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: #fffdf8;
+    }
+
+    .flow-item:not(:last-child)::after {
+      content: "↓";
+      position: absolute;
+      left: 18px;
+      bottom: -18px;
+      color: var(--wine);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .flow-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .flow-item span {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--wine-soft);
+      color: var(--wine);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.teal {
+      background: var(--teal-soft);
+      color: var(--teal);
+    }
+
+    .evidence {
+      margin-top: 18px;
+      padding: 18px 20px;
+    }
+
+    .evidence h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .evidence ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .quote {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      border-radius: 20px;
+      background: rgba(185, 138, 47, 0.08);
+      color: #5f4a1f;
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100vw - 18px, 100%);
+        margin: 16px auto 36px;
+      }
+
+      .hero,
+      .panel {
+        padding: 20px;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .step-no {
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">V2 写作系统 · 文章处理逻辑</div>
+      <h1>一篇完整文章需求，进入系统后会发生什么</h1>
+      <p>
+        这张图不再按程序模块解释，而是按真实写作逻辑来讲：系统先把需求变成稳定任务，再选证据、定结构、生成写作指令，最后交付并留档。
+        重点不是“看到题目立刻写”，而是“先把规则固定，再让文章沿着一条可追溯的链路往前走”。
+      </p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <h3>现在这套系统最重要的转变</h3>
+          <ul>
+            <li>不再直接从一句需求跳到正文，而是先定义任务和项目约束。</li>
+            <li>不再先写后找证据，而是先选证据、再定大纲和核心论点。</li>
+            <li>不再把交付当作终点，交付后还要自动留档，方便回看问题出在哪一段。</li>
+          </ul>
+        </article>
+        <article class="hero-card">
+          <h3>当前默认入口</h3>
+          <ul>
+            <li>V2 已经是当前默认入口。</li>
+            <li>项目写作任务先挂项目执行卡，再进入文章主链。</li>
+            <li>医学内容项目还会额外挂上医学写作规范。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <nav class="toolbar" aria-label="视图切换">
+      <button class="tab" type="button" data-target="panel-process" aria-selected="true">完整流程</button>
+      <button class="tab" type="button" data-target="panel-roles" aria-selected="false">系统分工</button>
+      <button class="tab" type="button" data-target="panel-flow" aria-selected="false">内容流动</button>
+      <button class="tab" type="button" data-target="panel-boundary" aria-selected="false">当前边界</button>
+    </nav>
+
+    <section id="panel-process" class="panel is-active">
+      <div class="panel-head">
+        <h2>完整流程</h2>
+        <p>按一篇文章真正进入系统后的顺序来看，它会先经过“任务定义与规则冻结”，再进入“证据驱动的写作主链”，最后进入“交付与留档”。</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-no">1</div>
+          <div>
+            <h3>先把需求说清楚</h3>
+            <p>系统先确认这篇文章到底写什么、写给谁、语气到什么级别、这次交付的是全文还是提纲、它是否属于某个具体项目。也就是说，第一步不是动笔，而是把一句需求变成一个清晰任务。</p>
+            <div class="mini">
+              <span>主题</span>
+              <span>读者</span>
+              <span>语气级别</span>
+              <span>交付物类型</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">2</div>
+          <div>
+            <h3>把项目规则固定下来</h3>
+            <p>如果它属于项目，系统会先固定交付契约、结构大方向、引用方式、文末参考文献规则、证据闭环要求，以及后续变更应该记在哪里。这样做的目的，是避免写到一半时，后面的新要求把前面的约束悄悄冲掉。</p>
+            <div class="mini">
+              <span>交付契约冻结</span>
+              <span>结构冻结</span>
+              <span>证据包闭环</span>
+              <span>变更记录</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">3</div>
+          <div>
+            <h3>先拿证据，不直接开写</h3>
+            <p>系统不会一上来就组织句子，而是优先去拿已经整理好的事实、证据片段、结构化知识和可复用规则。也就是说，它先确认“这篇文章站在哪些证据上”，再决定怎么写。</p>
+            <div class="mini">
+              <span>事实点</span>
+              <span>证据片段</span>
+              <span>结构化知识</span>
+              <span>写作规则</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">4</div>
+          <div>
+            <h3>把证据整理成写作方案</h3>
+            <p>拿到材料之后，系统先做一层编辑规划：确定这篇文章的核心论点、大纲结构、每一段重点讲什么、哪些证据最关键、整体要走什么写法。这一步更像写前策划会，而不是直接生成正文。</p>
+            <div class="mini">
+              <span>核心论点</span>
+              <span>大纲</span>
+              <span>叙事方式</span>
+              <span>关键证据</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">5</div>
+          <div>
+            <h3>把写法翻译成明确指令</h3>
+            <p>有了写作方案以后，系统会把它变成一份可执行的写作说明：这篇文章要站在什么角度、怎么展开、必须体现哪些证据、语气和表达风格应该注意什么。你可以把这一步理解为“把编辑意图翻译成写作指令”。</p>
+            <div class="mini">
+              <span>写作角度</span>
+              <span>结构展开</span>
+              <span>必带证据</span>
+              <span>风格要求</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">6</div>
+          <div>
+            <h3>先过一轮基础检查</h3>
+            <p>在交付前，系统会先检查这个任务是不是至少完整、清楚、能交出去。当前这一层更像基础闸门，主要拦明显缺项，还不是最细致的医学终审。</p>
+            <div class="mini">
+              <span>任务信息完整</span>
+              <span>写作说明成型</span>
+              <span>输出结构完整</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-no">7</div>
+          <div>
+            <h3>交付，并自动留档</h3>
+            <p>系统交付结果后，会自动留两层日志：一层放在主系统里，方便全局检索；一层放进项目内部，方便以后追查这个项目为什么这样写、哪一步改过规则、最终交付在哪里。</p>
+            <div class="mini">
+              <span>主系统摘要</span>
+              <span>项目详细日志</span>
+              <span>交付路径</span>
+              <span>后续可追溯</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="quote">
+        一句话说，这套系统现在的写作逻辑不是“看到题目就开写”，而是“先把任务和规则固定，再基于证据生成写作方案，最后交付并留档”。
+      </div>
+    </section>
+
+    <section id="panel-roles" class="panel">
+      <div class="panel-head">
+        <h2>系统分工</h2>
+        <p>如果把它拆开看，当前系统其实分成三层：前面的项目治理层，中间的文章主链层，后面的交付留档层。三层做的事完全不同。</p>
+      </div>
+      <div class="split">
+        <div class="cards">
+          <article class="card">
+            <h3>项目治理层</h3>
+            <p>这一层负责把需求变成稳定约束。它管的是：项目启动卡、交付契约冻结、结构冻结、证据闭环、变更记录。它不直接写文章，但决定这篇文章后面能不能稳定推进。</p>
+          </article>
+          <article class="card">
+            <h3>文章主链层</h3>
+            <p>这一层负责真正的文章处理：拿证据、定论点、排大纲、生成写作指令、过基础检查。它像一个写作编排器，不像传统意义上的“直接吐全文的黑箱”。</p>
+          </article>
+          <article class="card">
+            <h3>交付留档层</h3>
+            <p>这一层负责把结果写出来，并把过程留痕。它要回答的是：这篇文章产出了什么、日志放在哪里、以后出了问题往哪一层回溯。</p>
+          </article>
+        </div>
+        <aside class="aside">
+          <h3>你最需要记住的分工</h3>
+          <ul>
+            <li>项目治理层决定“这篇文章按什么规则写”。</li>
+            <li>文章主链层决定“这篇文章具体怎么被组织出来”。</li>
+            <li>交付留档层决定“这篇文章之后还能不能被追溯”。</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="panel-flow" class="panel">
+      <div class="panel-head">
+        <h2>内容流动</h2>
+        <p>如果只看内容本身，它在系统里会经历一个很固定的变形过程：从模糊需求，变成清晰任务；从材料堆，变成证据；从证据，变成结构；从结构，变成交付物。</p>
+      </div>
+      <div class="split">
+        <div class="flow">
+          <div class="flow-item">
+            <strong>模糊需求</strong>
+            <span>一开始只有一句需求，比如“写一篇关于某产品的文章”。这时还没有固定读者、交付形式、结构和证据范围。</span>
+          </div>
+          <div class="flow-item">
+            <strong>清晰任务</strong>
+            <span>需求被压成一张稳定任务卡，明确写什么、给谁写、写到什么程度、属于哪个项目。</span>
+          </div>
+          <div class="flow-item">
+            <strong>可用证据</strong>
+            <span>系统从已整理好的材料中挑出事实点、证据片段、结构化知识和规则资产，形成真正可消费的证据集合。</span>
+          </div>
+          <div class="flow-item">
+            <strong>写作方案</strong>
+            <span>证据被整理成核心论点、大纲和写法策略，文章结构在这里被真正定下来。</span>
+          </div>
+          <div class="flow-item">
+            <strong>写作指令</strong>
+            <span>系统把“怎么写”翻译成清楚的写作说明，供后续正文生成或人工/上层执行器继续推进。</span>
+          </div>
+          <div class="flow-item">
+            <strong>交付物与日志</strong>
+            <span>最后落出交付结果，同时把过程写进主系统摘要和项目详细日志，形成闭环。</span>
+          </div>
+        </div>
+        <aside class="aside">
+          <h3>内容流动里最关键的变化</h3>
+          <p>旧逻辑常常是“先写，再回头补规则、补证据、补日志”。现在的 V2 则是反过来：先固定任务和证据，再让正文沿着同一条链往下走。</p>
+          <div class="tag-row">
+            <span class="tag teal">需求 → 任务</span>
+            <span class="tag">材料 → 证据</span>
+            <span class="tag teal">证据 → 结构</span>
+            <span class="tag">结构 → 交付</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="panel-boundary" class="panel">
+      <div class="panel-head">
+        <h2>当前边界</h2>
+        <p>这套系统已经把“项目规则、证据选择、写作规划、交付留档”串起来了，但它也有明确边界。把这些边界说清，才能避免对系统能力的误判。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>它不是拿原始资料直接一键成文</h3>
+          <p>当前主链优先消费已经整理好的证据和结构化知识，而不是直接从原始 PDF、PPT 或 docx 开始写。原始素材要先经过整理和蒸馏，才会进入文章主链。</p>
+        </article>
+        <article class="card">
+          <h3>它更像写作编排系统，不是全文黑箱生成器</h3>
+          <p>当前主链最擅长的是：定任务、拿证据、排结构、生成写作指令、写出交付框架、自动留档。完整正文是否自动生成，还取决于上层调用方式和实际执行器有没有把正文生成接上。</p>
+        </article>
+        <article class="card">
+          <h3>当前质量检查仍是基础闸门</h3>
+          <p>它已经能拦住明显不完整的输出，但还不能把它等同于完整医学终审。医学层面的统计表达、标题语义、数据归因，仍然需要挂你已经补好的医学规范来一起约束。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="evidence">
+      <h3>Evidence Summary</h3>
+      <ul>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/runtime/app.py">app.py</a> 的主链顺序，当前真实顺序是：证据解析 → 编辑规划 → 写作指令编译 → 基础质量门 → 交付 → 留档。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/contracts/route_context.py">route_context.py</a> 和 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/delivery/task_logger.py">task_logger.py</a>，确认系统已经有项目级上下文和双层留档能力。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/editorial/planner.py">planner.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/prompt/compiler.py">compiler.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/delivery/markdown_writer.py">markdown_writer.py</a>，确认当前主链更像“写作编排和交付框架生成”，不是原始素材到全文的一步黑箱。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll(".tab"));
+    const panels = Array.from(document.querySelectorAll(".panel"));
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.target;
+
+        tabs.forEach((item) => {
+          item.setAttribute("aria-selected", String(item === tab));
+        });
+
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === target);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10",
+    "batch_id": "H006",
+    "source_file": "[2025-Q2] V2【初稿】多奈单抗被拒20天后，仑卡奈单抗获批！.docx",
+    "source_key": "SRC-H006-PRIMARY-003",
+    "asset_key": "AST-H006-PRIMARY-003",
+    "content_hash": "lecanemab_approval_2025",
+    "source_type": "clinical_education",
+    "distillation_status": "completed"
+  },
+  "metadata": {
+    "title": "仑卡奈单抗获批与多奈单抗被拒的思考",
+    "title_en": "Reflections on Lecanemab Approval and Donanemab Rejection",
+    "authors": [],
+    "journal": "医学新闻评论",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "institution": ""
+  },
+  "distilled_content": {
+    "article_type": "clinical_education",
+    "audience": "基层医护",
+    "register_level": "R3",
+    "disease_area": ["阿尔茨海默病"],
+    "product_related": ["仑卡奈单抗", "多奈单抗"],
+    "content_focus": "practical guidance, regulatory context, treatment selection",
+    "narrative_patterns": ["practical tips", "decision trees", "evidence-based analysis"],
+    "sections": [
+      {
+        "title": "关键事件背景",
+        "content": "2025年Q2多奈单抗被拒20天后，仑卡奈单抗获FDA加速批准，引发对阿尔茨海默病治疗选择的思考。"
+      },
+      {
+        "title": "仑卡奈单抗的优势",
+        "content": "仑卡奈单抗在临床研究中显示出明确的疗效，能够延缓早期AD患者的认知功能下降，且安全性管理策略相对成熟。"
+      },
+      {
+        "title": "监管考量",
+        "content": "FDA加速批准仑卡奈单抗主要基于其在Clarity AD研究中的积极结果，为AD治疗提供了新的选择。"
+      },
+      {
+        "title": "基层医护视角",
+        "content": "基层医护需要了解仑卡奈单抗的适应症、用法用量、安全性监测要点，为患者提供准确的治疗建议。"
+      }
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗的加速批准为早期AD患者提供了新的治疗选择",
+    "多奈单抗的被拒显示监管部门对阿尔茨海默病治疗药物审批的严格标准",
+    "基层医护需熟悉仑卡奈单抗的临床应用要点",
+    "仑卡奈单抗的获批标志着AD治疗进入新的阶段"
+  ],
+  "accessibility_notes": [
+    "内容包含监管决策分析，但重点应放在临床应用指导",
+    "基层医护应关注适应症和安全性管理要点",
+    "患者教育需强调早期干预的重要性和治疗期望管理"
+  ]
+}

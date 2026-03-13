@@ -1,0 +1,41 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "distillation_date": "2026-03-10T03:54:51.099807",
+    "batch_id": "H002",
+    "source_key": "SRC-REF-2026-Q1_【原文】Real_-_World_Appli",
+    "asset_key": "AST-PDF-2026-Q1_【原文】Real_-_World_Appli",
+    "content_hash": "d8df47d873b222b4"
+  },
+  "metadata": {
+    "title": "【原文】Real - World Application of Lecanemab in Early - stage Alzheimer's Disease A Single - center Prospective Cohort Analysis",
+    "authors": [],
+    "year": "2026",
+    "source_type": "pdf",
+    "study_type": null
+  },
+  "distilled_content": {
+    "summary": "General information about Lecanemab and Alzheimer's Disease"
+  },
+  "index_terms": {
+    "keywords": [
+      "Lecanemab",
+      "仑卡奈单抗",
+      "Alzheimer's Disease",
+      "AD",
+      "Amyloid-beta",
+      "Aβ"
+    ],
+    "mesh_terms": [
+      "Lecanemab",
+      "Alzheimer Disease",
+      "Amyloid beta-Protein Precursor",
+      "Monoclonal Antibodies"
+    ]
+  },
+  "lineage": {
+    "source_path": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\references\\仑卡奈核心证据\\[2026-Q1] 【原文】Real - World Application of Lecanemab in Early - stage Alzheimer's Disease A Single - center Prospective Cohort Analysis.pdf",
+    "original_size_bytes": 2633616,
+    "distilled_at": "2026-03-10T03:54:51.099846"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-03-10",
+  "created_by": "Batch-3 migration",
+  "description": "V2 来源索引规范 - 定义来源资产的稳定引用结构",
+  "purpose": "为 intake 批次提供统一的来源登记和索引契约",
+  "source_key_format": {
+    "pattern": "SRC-{category}-{name}",
+    "examples": [
+      "SRC-REFERENCE-CLINICAL-TRIAL-001",
+      "SRC-HISTORICAL-ARTICLE-NEUROLOGY-2024"
+    ],
+    "components": {
+      "category": "来源类别 (REFERENCE, HISTORICAL, EXTERNAL, INTERNAL)",
+      "name": "来源名称标识符"
+    }
+  },
+  "asset_key_format": {
+    "pattern": "AST-{type}-{name}",
+    "examples": [
+      "AST-PDF-CLINICAL-TRIAL-001",
+      "AST-DOCX-ARTICLE-NEUROLOGY"
+    ],
+    "components": {
+      "type": "资产类型 (PDF, DOCX, PPTX, IMAGE, JSON)",
+      "name": "资产名称标识符"
+    }
+  },
+  "storage_key_format": {
+    "pattern": "{storage_zone}/{category}/{year}/{month}/{filename}",
+    "examples": [
+      "evidence_assets/references/2024/03/trial_report.pdf",
+      "evidence_assets/historical_articles/2023/12/article_draft.docx"
+    ],
+    "storage_zones": {
+      "evidence_assets": "外部证据资产 - PDF/DOCX/PPTX等",
+      "analysis_snapshots": "分析快照 - 测试抽取物/调试留档"
+    }
+  },
+  "content_hash_algorithm": "sha256-truncated-16",
+  "index_entry_schema": {
+    "source_key": "string - 来源唯一标识",
+    "asset_key": "string - 资产唯一标识",
+    "storage_key": "string - 存储路径",
+    "content_hash": "string - 内容哈希（前16位）",
+    "size_bytes": "number - 文件大小",
+    "mime_type": "string - MIME类型",
+    "ingested_at": "string - ISO时间戳",
+    "batch_id": "string - 所属批次ID",
+    "metadata": {
+      "original_filename": "string - 原始文件名",
+      "source_path": "string - 来源路径",
+      "tags": "array - 标签列表"
+    }
+  },
+  "current_status": {
+    "v1_source_ingestion_manifests": "empty - 源端目录为空",
+    "note": "本规范为 V2 新建，源端无现有资产需要迁移"
+  }
+}

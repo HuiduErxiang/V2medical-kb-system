@@ -1,0 +1,32 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "oncology_shared",
+    "version": "0.1.0",
+    "last_updated": "2026-03-02",
+    "description": "肿瘤学通用共享论点推导规则，适用于所有肿瘤适应证的跨疾病领域论点生成"
+  },
+  "rules": [
+    {
+      "id": "ONCO_SHARED_001",
+      "category": "staging_systems",
+      "pattern": "当患者分期为 [分期系统] 定义的 [分期级别] 期时，提示疾病已处于 [疾病阶段描述]",
+      "derivation_template": "根据 [分期系统] 标准，该患者 [分期级别] 期提示 [疾病阶段描述]，治疗目标应聚焦于 [治疗目标]",
+      "required_evidence": ["病理报告", "影像学分期评估"],
+      "confidence_level": "high"
+    },
+    {
+      "id": "ONCO_SHARED_002",
+      "category": "response_criteria",
+      "pattern": "靶病灶直径总和较基线减少≥[X]%，符合 RECIST 1.1 [疗效等级] 标准",
+      "derivation_template": "影像学评估显示靶病灶直径总和较基线减少 [X]%，根据 RECIST 1.1 标准判定为 [疗效等级]，提示 [目标药物] 在该患者中观察到 [临床意义描述]",
+      "required_evidence": ["基线影像学测量", "随访影像学测量"],
+      "confidence_level": "high"
+    }
+  ]
+}

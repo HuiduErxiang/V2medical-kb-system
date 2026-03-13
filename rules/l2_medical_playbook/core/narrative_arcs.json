@@ -1,0 +1,156 @@
+{
+  "_metadata": {
+    "title": "医学叙事弧库",
+    "version": "1.0",
+    "last_updated": "2026-03-04",
+    "total_arcs": 12,
+    "sources": ["chen_gongzi", "kongzhike", "ajmd", "universal"]
+  },
+
+  "universal_arcs": [
+    {
+      "arc_id": "ARC_MED_001",
+      "name": "标准临床试验解读",
+      "description": "通用的临床试验结果解读叙事结构",
+      "structure": ["背景", "试验设计", "主要结果", "临床意义"],
+      "applicable_scenarios": ["临床试验结果发布", "新药获批"],
+      "register": "R2-R3"
+    },
+    {
+      "arc_id": "ARC_MED_002",
+      "name": "头对头对比分析",
+      "description": "两种药物/疗法的直接或间接对比",
+      "structure": ["临床困境", "药物A机制", "药物B机制", "头对头数据", "选择逻辑"],
+      "applicable_scenarios": ["竞品对比", "治疗选择"],
+      "register": "R2-R3"
+    }
+  ],
+
+  "author_arcs": {
+    "chen_gongzi": {
+      "author_id": "chen_gongzi",
+      "author_name": "辰公子",
+      "evolution_periods": ["2021-2022", "2023-2024", "2025-2026"],
+      "signature_arcs": [
+        {
+          "arc_id": "ARC_CHEN_001",
+          "name": "研格解构型",
+          "description": "辰公子标志性叙事：拆解试验设计逻辑",
+          "phases": ["phase3", "phase4", "phase5"],
+          "structure": ["临床痛点/试验失败引入", "历史溯源", "设计拆解", "对比分析", "临床推演"],
+          "signature_elements": {
+            "opening_hook": "研格溯源式",
+            "opening_example": "为了找到试验失败的原因，我还找到了4篇历史临床试验报告...",
+            "key_techniques": ["头对头对比", "历史对读", "设计批判"]
+          },
+          "key_blocks": ["M4_CG_001"],
+          "usage_context": "临床试验深度剖析",
+          "register_preference": "R2-R3"
+        },
+        {
+          "arc_id": "ARC_CHEN_002",
+          "name": "全景生态排布型",
+          "description": "Phase 5成熟期：靶向-免疫-化疗三维排布",
+          "phases": ["phase5"],
+          "structure": ["指南盲区切入", "多靶点生态分析", "排兵布阵推演", "临床启示"],
+          "signature_elements": {
+            "ecological_thinking": ["HER2/CLDN18.2/PD-L1多靶点", "靶向-免疫-化疗三维"],
+            "key_terms": ["生态位", "排兵布阵", "灰色地带"]
+          },
+          "key_blocks": ["M4_CG_002"],
+          "usage_context": "治疗格局全局分析",
+          "register_preference": "R2"
+        }
+      ]
+    },
+
+    "kongzhike": {
+      "author_id": "kongzhike",
+      "author_name": "空之客",
+      "evolution_periods": ["2019-2026"],
+      "signature_arcs": [
+        {
+          "arc_id": "ARC_KZK_001",
+          "name": "溯源求证弧",
+          "description": "面对二手信息，直接寻找原始数据源还原真相",
+          "structure": ["市场热点/恐慌引入", "溯源声明", "原始文献展示", "逐句拆解", "真相还原"],
+          "signature_elements": {
+            "opening_example": "秉承着一切信息追溯源头的宗旨，我们找到了...",
+            "methodology": "跳过二手，直找源头",
+            "key_techniques": ["原始文献引用", "逐句拆解", "常识验证"]
+          },
+          "key_blocks": ["M4_KZK_002"],
+          "usage_context": "监管新闻解读、风险事件分析",
+          "register_preference": "R1-R2",
+          "signature": true
+        },
+        {
+          "arc_id": "ARC_KZK_002",
+          "name": "常识拆解弧",
+          "description": "用朴素逻辑和常识拆解复杂的市场狂热",
+          "structure": ["市场共识陈述", "常识类比", "逻辑推演", "本质还原"],
+          "signature_elements": {
+            "technique": "常识回归",
+            "typical_analogy": "一桌子打麻将不可能四个人都输钱",
+            "key_phrase": "最朴素的逻辑告诉我们"
+          },
+          "key_blocks": ["M4_KZK_001"],
+          "usage_context": "破除市场迷信",
+          "register_preference": "R2-R3"
+        }
+      ]
+    },
+
+    "ajmd": {
+      "author_id": "ajmd",
+      "author_name": "阿基米德Biotech",
+      "evolution_periods": ["2018-2026"],
+      "signature_arcs": [
+        {
+          "arc_id": "ARC_AJMD_001",
+          "name": "戏剧化反转弧",
+          "description": "极简开篇→情绪铺垫→数据重击→反转收束",
+          "structure": ["极简戏剧化开篇", "情绪/共识铺垫", "数据加特林", "反共识反转", "冷酷断言收束"],
+          "signature_elements": {
+            "opening_example": "回来了，一切都回来了 / 大国大药。",
+            "data_technique": "密集财务/临床数据轰炸",
+            "pivot_markers": ["然而", "尘归尘"],
+            "closing_tone": "冷酷、不留情面"
+          },
+          "key_blocks": ["M4_AJMD_001", "M4_AJMD_003", "M4_AJMD_004"],
+          "usage_context": "市场分析、财报解读",
+          "register_preference": "R3-R4",
+          "emotional_arc": "戏剧化起伏"
+        },
+        {
+          "arc_id": "ARC_AJMD_002",
+          "name": "真相揭露弧",
+          "description": "剥离包装，暴露估值与基本面脱节的现实",
+          "structure": ["市场共识/hype", "冷酷拆解", "现实暴露", "结论断言"],
+          "signature_elements": {
+            "teardown_style": "冷酷直接",
+            "reveal": "暴露估值与现实的差距"
+          },
+          "key_blocks": ["M4_AJMD_004"],
+          "usage_context": "公司分析、管线评估"
+        }
+      ]
+    }
+  },
+
+  "arc_selection_guide": {
+    "by_scenario": {
+      "临床试验解读": ["ARC_CHEN_001", "ARC_MED_001"],
+      "竞品对比": ["ARC_CHEN_001", "ARC_MED_002"],
+      "市场分析": ["ARC_AJMD_001", "ARC_AJMD_002"],
+      "监管解读": ["ARC_KZK_001"],
+      "逻辑拆解": ["ARC_KZK_002"]
+    },
+    "by_author": {
+      "chen_gongzi": ["ARC_CHEN_001", "ARC_CHEN_002"],
+      "kongzhike": ["ARC_KZK_001", "ARC_KZK_002"],
+      "ajmd": ["ARC_AJMD_001", "ARC_AJMD_002"],
+      "通用": ["ARC_MED_001", "ARC_MED_002"]
+    }
+  }
+}

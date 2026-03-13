@@ -1,0 +1,70 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L3 — Insomnia Thesis Derivation Rules (失眠症论文推导规则)",
+  "thesis_derivation_rules": [
+    {
+      "rule_id": "THESIS_001",
+      "name": "传统治疗的局限性",
+      "template": "传统失眠治疗存在依赖、戒断反应等局限性，需要寻找新的治疗方案",
+      "pattern": "传统治疗 + 局限性 + 新方案",
+      "audience": [
+        "specialist",
+        "primary_care"
+      ],
+      "trigger_evidence_types": [
+        "safety",
+        "mechanism"
+      ],
+      "recommended_m3_plays": []
+    },
+    {
+      "rule_id": "THESIS_002",
+      "name": "新型药物的优势",
+      "template": "新型失眠药物通过精准作用机制，改善睡眠质量的同时避免了传统药物的局限性",
+      "pattern": "新型药物 + 精准机制 + 优势",
+      "audience": [
+        "specialist",
+        "patient_education"
+      ],
+      "trigger_evidence_types": [
+        "efficacy",
+        "safety"
+      ],
+      "recommended_m3_plays": []
+    },
+    {
+      "rule_id": "THESIS_003",
+      "name": "个体化治疗的重要性",
+      "template": "失眠治疗需要个体化，结合生活方式调整、心理治疗和药物治疗",
+      "pattern": "个体化治疗 + 综合方案",
+      "audience": [
+        "primary_care",
+        "patient_education"
+      ],
+      "trigger_evidence_types": [
+        "efficacy",
+        "safety"
+      ],
+      "recommended_m3_plays": []
+    },
+    {
+      "rule_id": "THESIS_004",
+      "name": "睡眠质量的重要性",
+      "template": "良好的睡眠质量对于维护身体健康和心理健康至关重要",
+      "pattern": "睡眠质量 + 重要性",
+      "audience": [
+        "patient_education"
+      ],
+      "trigger_evidence_types": [
+        "efficacy",
+        "safety"
+      ],
+      "recommended_m3_plays": []
+    }
+  ]
+}

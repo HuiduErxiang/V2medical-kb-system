@@ -1,0 +1,481 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "oncology_shared",
+    "version": "2.2.0",
+    "last_updated": "2026-03-02",
+    "description": "肿瘤学通用共享知识来源注册表"
+  },
+  "sources": [
+    {
+      "id": "ONCO_SRC_001",
+      "type": "guideline",
+      "title": "CSCO 肿瘤诊疗指南通用原则",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ONCO_SRC_002",
+      "type": "guideline",
+      "title": "NCCN Clinical Practice Guidelines in Oncology - Principles of Cancer Treatment",
+      "year": 2025,
+      "organization": "National Comprehensive Cancer Network"
+    },
+    {
+      "id": "ONCO_SRC_003",
+      "type": "consensus",
+      "title": "RECIST 1.1 肿瘤疗效评估标准专家共识",
+      "year": 2009,
+      "organization": "EORTC/NCIC"
+    },
+    {
+      "id": "ONCO_SRC_004",
+      "type": "guideline",
+      "title": "CTCAE 常见不良事件评价标准",
+      "year": 2017,
+      "organization": "NCI"
+    },
+    {
+      "id": "PACC_CONSENSUS_2025",
+      "type": "consensus",
+      "title": "EGFR PACC突变诊疗专家共识(2025版)",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会 非小细胞肺癌专委会"
+    },
+    {
+      "id": "PACC_CN",
+      "type": "consensus",
+      "title": "EGFR PACC突变专家共识(2025)",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ROBICHAUX_NATURE_2021",
+      "type": "journal_article",
+      "title": "Structure-based classification predicts drug response in EGFR-mutant NSCLC",
+      "citation": "Robichaux JP, et al. Nature. 2021;597:732-737",
+      "year": 2021
+    },
+    {
+      "id": "EX20INS_DETECTION_CN",
+      "type": "consensus",
+      "title": "非小细胞肺癌EGFR 20号外显子插入突变检测中国专家共识(2024版)",
+      "year": 2024,
+      "organization": "中国抗癌协会"
+    },
+    {
+      "id": "EX20INS_TREATMENT_CN",
+      "type": "consensus",
+      "title": "EGFR 20号外显子插入突变非小细胞肺癌规范化诊疗中国专家共识(2024版)",
+      "year": 2024,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ADC_CHEMISTRY_2021",
+      "type": "review_article",
+      "title": "Antibody-Drug Conjugate Chemistry and Design",
+      "citation": "ADC化学/连接子技术综述 2021",
+      "year": 2021
+    },
+    {
+      "id": "ADC_ILD_REVIEW",
+      "type": "review_article",
+      "title": "ADC-Associated Interstitial Lung Disease Review",
+      "citation": "ADC相关间质性肺病综述",
+      "year": 2023
+    },
+    {
+      "id": "OGITANI_2016_BYSTANDER",
+      "type": "journal_article",
+      "title": "Bystander killing effect of DS-8201a in HER2-heterogeneous tumors",
+      "citation": "Ogitani Y, et al. Cancer Sci. 2016;107:1039-1046",
+      "year": 2016
+    },
+    {
+      "id": "NAKADA_2019_CPB",
+      "type": "journal_article",
+      "title": "DXd payload pharmacology (exatecan derivative)",
+      "citation": "Nakada T, et al. Chem Pharm Bull. 2019;67:173-185",
+      "year": 2019
+    },
+    {
+      "id": "HER2_HETEROGENEITY_GC",
+      "type": "journal_article",
+      "title": "HER2 heterogeneity in gastric cancer",
+      "year": 2020
+    },
+    {
+      "id": "GASTHER3_HER2_LOSS",
+      "type": "journal_article",
+      "title": "HER2 loss after trastuzumab treatment (GASTHER3)",
+      "year": 2020
+    },
+    {
+      "id": "RESISTANCE_GEA_REVIEW",
+      "type": "review_article",
+      "title": "Resistance mechanisms in gastroesophageal adenocarcinoma review",
+      "year": 2021
+    },
+    {
+      "id": "RESISTANCE_ADC_MECHANISMS",
+      "type": "review_article",
+      "title": "ADC resistance mechanisms review",
+      "year": 2022
+    },
+    {
+      "id": "ADC_RESISTANCE_REVIEW_2023",
+      "type": "review_article",
+      "title": "ADC resistance mechanisms comprehensive review",
+      "citation": "Khoury R, et al. 2023",
+      "year": 2023
+    },
+    {
+      "id": "GASTRIC_CHEMORESISTANCE_2016",
+      "type": "review_article",
+      "title": "Gastric cancer chemoresistance framework (MOC-1~5)",
+      "citation": "Marin JJ, et al. 2016",
+      "year": 2016
+    },
+    {
+      "id": "ANTI_HER2_RESISTANCE_GC_2020",
+      "type": "review_article",
+      "title": "Emerging anti-HER2 therapies overcoming resistance in gastric cancer",
+      "citation": "Mitani S, et al. 2020",
+      "year": 2020
+    },
+    {
+      "id": "GEA_HER2_RESISTANCE_SYSTEMATIC_2022",
+      "type": "systematic_review",
+      "title": "HER2 resistance in GEA: systematic review of 73 studies",
+      "citation": "Blangé D, et al. 2022",
+      "year": 2022
+    },
+    {
+      "id": "OGITANI_2016_CCR",
+      "type": "journal_article",
+      "title": "DS-8201a vs T-DM1 antitumor activity comparison",
+      "citation": "Ogitani Y, et al. Clin Cancer Res. 2016",
+      "year": 2016
+    },
+    {
+      "id": "TAKEGAWA_2017_GASTRIC",
+      "type": "journal_article",
+      "title": "T-DM1 resistance in gastric cancer N87 model",
+      "citation": "Takegawa N, et al. 2017",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_NCCN_NSCLC_2025",
+      "type": "guideline",
+      "title": "NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer",
+      "year": 2025,
+      "organization": "National Comprehensive Cancer Network"
+    },
+    {
+      "id": "ONCO_SRC_NCCN_GASTRIC_2025",
+      "type": "guideline",
+      "title": "NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer",
+      "year": 2025,
+      "organization": "National Comprehensive Cancer Network"
+    },
+    {
+      "id": "ONCO_SRC_CSCO_NSCLC_2025",
+      "type": "guideline",
+      "title": "CSCO 非小细胞肺癌诊疗指南",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ONCO_SRC_CSCO_GASTRIC_2025",
+      "type": "guideline",
+      "title": "CSCO 胃癌诊疗指南",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ONCO_SRC_WEINBERG_BIOLOGY",
+      "type": "textbook",
+      "title": "The Biology of Cancer",
+      "citation": "Weinberg RA. The Biology of Cancer. 3rd ed. Garland Science; 2023",
+      "year": 2023
+    },
+    {
+      "id": "ONCO_SRC_HANAHAN_HALLMARKS_2022",
+      "type": "journal_article",
+      "title": "Hallmarks of Cancer: New Dimensions",
+      "citation": "Hanahan D. Hallmarks of Cancer: New Dimensions. Cancer Discov. 2022;12:31-46",
+      "year": 2022
+    },
+    {
+      "id": "ONCO_SRC_AJCC_8TH_2017",
+      "type": "manual",
+      "title": "AJCC Cancer Staging Manual",
+      "citation": "Amin MB, et al. AJCC Cancer Staging Manual. 8th ed. Springer; 2017",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_EISENHAUER_RECIST_2009",
+      "type": "journal_article",
+      "title": "New response evaluation criteria in solid tumours: Revised RECIST guideline (version 1.1)",
+      "citation": "Eisenhauer EA, et al. New response evaluation criteria in solid tumours: revised RECIST guideline (version 1.1). Eur J Cancer. 2009;45:228-247",
+      "year": 2009
+    },
+    {
+      "id": "ONCO_SRC_TCGA_GASTRIC_2014",
+      "type": "journal_article",
+      "title": "Comprehensive molecular characterization of gastric adenocarcinoma",
+      "citation": "TCGA. Comprehensive molecular characterization of gastric adenocarcinoma. Nature. 2014;513:202-209",
+      "year": 2014
+    },
+    {
+      "id": "ONCO_SRC_WHO_LUNG_2021",
+      "type": "classification",
+      "title": "WHO Classification of Tumours: Thoracic Tumours",
+      "citation": "WHO Classification of Tumours Editorial Board. Thoracic Tumours. 5th ed. IARC; 2021",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_WHO_DIGESTIVE_2019",
+      "type": "classification",
+      "title": "WHO Classification of Tumours: Digestive System Tumours",
+      "citation": "WHO Classification of Tumours Editorial Board. Digestive System Tumours. 5th ed. IARC; 2019",
+      "year": 2019
+    },
+    {
+      "id": "ONCO_SRC_GLOBOCAN_2020",
+      "type": "journal_article",
+      "title": "Global Cancer Statistics 2020: GLOBOCAN Estimates",
+      "citation": "Sung H, et al. Global Cancer Statistics 2020: GLOBOCAN Estimates of Incidence and Mortality Worldwide. CA Cancer J Clin. 2021;71:209-249",
+      "year": 2020
+    },
+    {
+      "id": "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+      "type": "journal_article",
+      "title": "Cancer Statistics in China 2024",
+      "citation": "Chen W, et al. Cancer Statistics in China, 2024. CA Cancer J Clin. 2024",
+      "year": 2024
+    },
+    {
+      "id": "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+      "type": "journal_article",
+      "title": "ALK in non-small cell lung cancer: From biology to therapy",
+      "citation": "Soria JC, et al. ALK in non-small cell lung cancer: From biology to therapy. Lancet Oncol. 2017;18:e679-e690",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_SKOULIDIS_KRAS_2019",
+      "type": "journal_article",
+      "title": "KRAS-Mutant Lung Cancers: From Biology to Therapy",
+      "citation": "Skoulidis F, Heymach JV. KRAS-Mutant Lung Cancers: From Biology to Therapy. Nat Rev Cancer. 2019;19:495-513",
+      "year": 2019
+    },
+    {
+      "id": "ONCO_SRC_LAUREN_1965",
+      "type": "journal_article",
+      "title": "The Two Histological Main Types of Gastric Carcinoma",
+      "citation": "Lauren P. The Two Histological Main Types of Gastric Carcinoma. Acta Pathol Microbiol Scand. 1965;64:31-49",
+      "year": 1965
+    },
+    {
+      "id": "ONCO_SRC_POSTOW_IRAE_2018",
+      "type": "journal_article",
+      "title": "Immune-Related Adverse Events Associated with Immune Checkpoint Blockade",
+      "citation": "Postow MA, et al. Immune-Related Adverse Events Associated with Immune Checkpoint Blockade. N Engl J Med. 2018;378:158-168",
+      "year": 2018
+    },
+    {
+      "id": "ONCO_SRC_HESKETH_CINV_2017",
+      "type": "guideline",
+      "title": "Antiemetic Guideline Update",
+      "citation": "Hesketh PJ, et al. Antiemetic Guideline Update. J Clin Oncol. 2017;35:3316-3317",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_SIEWERT_GEJ_2000",
+      "type": "journal_article",
+      "title": "Classification of adenocarcinoma of the oesophagogastric junction",
+      "citation": "Siewert JR, Stein HJ. Classification of adenocarcinoma of the oesophagogastric junction. Br J Surg. 2000;87:1-5",
+      "year": 2000
+    },
+    {
+      "id": "ONCO_SRC_PSILOIDIS_ROS1_2018",
+      "type": "journal_article",
+      "title": "ROS1 rearrangements in lung cancer: From biology to therapy",
+      "citation": "Psoidis D, et al. ROS1 rearrangements in lung cancer: From biology to therapy. Cancer Treat Rev. 2018;71:63-71",
+      "year": 2018
+    },
+    {
+      "id": "ONCO_SRC_DRILON_RET_2018",
+      "type": "journal_article",
+      "title": "RET Fusion-Positive Lung Cancers: From Biology to Therapy",
+      "citation": "Drilon A, et al. RET Fusion-Positive Lung Cancers: From Biology to Therapy. J Clin Oncol. 2018;36:2606-2613",
+      "year": 2018
+    },
+    {
+      "id": "ONCO_SRC_SABARI_MET_2021",
+      "type": "journal_article",
+      "title": "MET Exon 14 Skipping Mutations in NSCLC",
+      "citation": "Sabari JK, et al. MET Exon 14 Skipping Mutations in NSCLC. JCO Precis Oncol. 2021;5:PO.20.00438",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_BRAHMER_PD_L1_2018",
+      "type": "review_article",
+      "title": "PD-L1 as a Biomarker in NSCLC",
+      "citation": "Brahmer JR. PD-L1 as a Biomarker in NSCLC. Am Soc Clin Oncol Educ Book. 2018;38:570-576",
+      "year": 2018
+    },
+    {
+      "id": "ONCO_SRC_GIBNEY_TMB_2017",
+      "type": "journal_article",
+      "title": "Tumor Mutational Burden as a Predictive Biomarker",
+      "citation": "Gibney GT, et al. Tumor Mutational Burden as a Predictive Biomarker. Lancet Oncol. 2017;18:e731-e732",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_MERINO_CNV_2020",
+      "type": "journal_article",
+      "title": "Copy Number Alterations in Cancer",
+      "citation": "Merino DM, et al. Copy Number Alterations in Cancer. Nat Rev Clin Oncol. 2020;17:609-625",
+      "year": 2020
+    },
+    {
+      "id": "ONCO_SRC_NCCN_BIOMARKER_2025",
+      "type": "guideline",
+      "title": "NCCN Biomarkers Compendium",
+      "year": 2025,
+      "organization": "National Comprehensive Cancer Network"
+    },
+    {
+      "id": "ONCO_SRC_CSCO_BIOMARKER_2025",
+      "type": "guideline",
+      "title": "CSCO 肿瘤生物标志物检测指南",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ONCO_SRC_NCCN_SUPPORTIVE_2025",
+      "type": "guideline",
+      "title": "NCCN Guidelines: Palliative Care",
+      "year": 2025,
+      "organization": "National Comprehensive Cancer Network"
+    },
+    {
+      "id": "ONCO_SRC_CSCO_SUPPORTIVE_2025",
+      "type": "guideline",
+      "title": "CSCO 肿瘤支持治疗指南",
+      "year": 2025,
+      "organization": "中国临床肿瘤学会"
+    },
+    {
+      "id": "ONCO_SRC_CASCINU_GASTRIC_2020",
+      "type": "review_article",
+      "title": "Gastric Cancer: From Prevention to Treatment",
+      "citation": "Cascinelli C, et al. Gastric Cancer: From Prevention to Treatment. ESMO Open. 2020;5:e000698",
+      "year": 2020
+    },
+    {
+      "id": "ONCO_SRC_SMYRK_CLAUDIN18_2023",
+      "type": "review_article",
+      "title": "Claudin 18.2 as a Therapeutic Target in Gastric Cancer",
+      "citation": "Smyrk T, et al. Claudin 18.2 as a Therapeutic Target in Gastric Cancer. Nat Rev Clin Oncol. 2023;20:335-350",
+      "year": 2023
+    },
+    {
+      "id": "ONCO_SRC_MARRELLI_HER2_2011",
+      "type": "journal_article",
+      "title": "HER2 Testing in Gastric Cancer",
+      "citation": "Marrelli D, et al. HER2 Testing in Gastric Cancer. J Surg Oncol. 2011;104:682-688",
+      "year": 2011
+    },
+    {
+      "id": "ONCO_SRC_BARTLETT_MSI_2017",
+      "type": "review_article",
+      "title": "MSI in Gastric Cancer: Clinical Implications",
+      "citation": "Bartlett AN, et al. MSI in Gastric Cancer: Clinical Implications. J Gastrointest Oncol. 2017;8:430-438",
+      "year": 2017
+    },
+    {
+      "id": "ONCO_SRC_VAN_CUTSEM_GASTRIC_2020",
+      "type": "review_article",
+      "title": "Gastric Cancer: Epidemiology and Treatment",
+      "citation": "Van Cutsem E, et al. Gastric Cancer: Epidemiology and Treatment. CA Cancer J Clin. 2020;70:322-340",
+      "year": 2020
+    },
+    {
+      "id": "ONCO_SRC_CUNNINGHAM_GASTRIC_2019",
+      "type": "review_article",
+      "title": "Gastric Cancer: Advances in Treatment",
+      "citation": "Cunningham D, et al. Gastric Cancer: Advances in Treatment. Lancet. 2019;393:1980-1993",
+      "year": 2019
+    },
+    {
+      "id": "ONCO_SRC_LORDICK_PERIOPERATIVE_2021",
+      "type": "review_article",
+      "title": "Perioperative Therapy for Gastric Cancer",
+      "citation": "Lordick F, et al. Perioperative Therapy for Gastric Cancer. Nat Rev Clin Oncol. 2021;18:561-576",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_THUSS_PATIENCE_2022",
+      "type": "review_article",
+      "title": "Second-Line and Later Therapy in Gastric Cancer",
+      "citation": "Thuss-Patience P, et al. Second-Line and Later Therapy in Gastric Cancer. ESMO Open. 2022;7:100403",
+      "year": 2022
+    },
+    {
+      "id": "ONCO_SRC_BANG_HER2_2010",
+      "type": "journal_article",
+      "title": "Trastuzumab in combination with chemotherapy versus chemotherapy alone for HER2-positive advanced gastric cancer",
+      "citation": "Bang YJ, et al. Trastuzumab in combination with chemotherapy versus chemotherapy alone for HER2-positive advanced gastric cancer (ToGA). Lancet. 2010;376:687-697",
+      "year": 2010
+    },
+    {
+      "id": "ONCO_SRC_SHITARA_FUTURE_2021",
+      "type": "review_article",
+      "title": "Future Directions in Gastric Cancer Treatment",
+      "citation": "Shitara K, et al. Future Directions in Gastric Cancer Treatment. Nat Rev Clin Oncol. 2021;18:649-664",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_JANJIGIAN_IMMU_2021",
+      "type": "journal_article",
+      "title": "Immunotherapy in Gastric Cancer",
+      "citation": "Janjigian YY, et al. Immunotherapy in Gastric Cancer. J Clin Oncol. 2021;39:2103-2113",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_KELLY_GASTRIC_2022",
+      "type": "review_article",
+      "title": "Gastric Cancer: Current Status and Future Directions",
+      "citation": "Kelly RJ, et al. Gastric Cancer: Current Status and Future Directions. Am Soc Clin Oncol Educ Book. 2022;42:1-11",
+      "year": 2022
+    },
+    {
+      "id": "ONCO_SRC_FUCHS_GASTRIC_2018",
+      "type": "review_article",
+      "title": "Gastric Cancer: Contemporary Management",
+      "citation": "Fuchs CS, et al. Gastric Cancer: Contemporary Management. CA Cancer J Clin. 2018;68:26-46",
+      "year": 2018
+    },
+    {
+      "id": "ONCO_SRC_AJALLOUEIAN_LIQUID_2021",
+      "type": "review_article",
+      "title": "Liquid Biopsy in NSCLC",
+      "citation": "Ajalloueian F, et al. Liquid Biopsy in NSCLC. Crit Rev Oncol Hematol. 2021;161:103308",
+      "year": 2021
+    },
+    {
+      "id": "ONCO_SRC_HIRSCH_HER2_LUNG_2019",
+      "type": "review_article",
+      "title": "HER2 Alterations in NSCLC",
+      "citation": "Hirsch FR, et al. HER2 Alterations in NSCLC. J Thorac Oncol. 2019;14:1358-1365",
+      "year": 2019
+    }
+  ]
+}

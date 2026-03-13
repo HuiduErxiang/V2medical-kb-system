@@ -1,0 +1,30 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L4",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "label": "warm_accessible",
+  "style_positioning": "Compassionate and plain-language communication focused on patient and caregiver understanding.",
+  "vocabulary_biases": [
+    "看得见的变化",
+    "可理解风险",
+    "安心感",
+    "照护负担",
+    "共同决策",
+    "一步一步",
+    "可持续陪伴"
+  ],
+  "sentence_patterns": [
+    "先把...讲明白，再谈...。",
+    "对家属来说，最重要的是...。",
+    "这意味着...，不是奇迹，而是可预期的改善。",
+    "如果担心...，可以先从...做起。"
+  ],
+  "rhetorical_devices": [
+    "Translate technical claims into day-to-day implications",
+    "Use reassurance without minimizing uncertainty",
+    "Keep terminology simple and define unavoidable jargon immediately"
+  ]
+}

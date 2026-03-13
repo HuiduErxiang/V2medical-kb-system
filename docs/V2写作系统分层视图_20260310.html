@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V2 写作系统分层视图</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --ink: #1f1b16;
+      --muted: #665b4d;
+      --panel: rgba(255, 251, 244, 0.9);
+      --line: rgba(73, 59, 42, 0.16);
+      --deep: #17324d;
+      --deep-soft: rgba(23, 50, 77, 0.1);
+      --teal: #0f766e;
+      --teal-soft: rgba(15, 118, 110, 0.1);
+      --rust: #8b3a2e;
+      --rust-soft: rgba(139, 58, 46, 0.1);
+      --gold: #b98a2f;
+      --gold-soft: rgba(185, 138, 47, 0.12);
+      --shadow: 0 24px 56px rgba(47, 34, 20, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 22%),
+        radial-gradient(circle at 82% 12%, rgba(185, 138, 47, 0.11), transparent 22%),
+        radial-gradient(circle at right bottom, rgba(23, 50, 77, 0.12), transparent 26%),
+        var(--bg);
+    }
+
+    .page {
+      width: min(1220px, calc(100vw - 32px));
+      margin: 28px auto 54px;
+    }
+
+    .hero,
+    .panel,
+    .evidence {
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      filter: blur(8px);
+    }
+
+    .hero::before {
+      width: 240px;
+      height: 240px;
+      top: -90px;
+      right: -60px;
+      background: rgba(15, 118, 110, 0.08);
+    }
+
+    .hero::after {
+      width: 220px;
+      height: 220px;
+      bottom: -90px;
+      left: -50px;
+      background: rgba(139, 58, 46, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--deep-soft);
+      color: var(--deep);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5.8vw, 56px);
+      line-height: 1.06;
+    }
+
+    .hero p {
+      max-width: 860px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 17px;
+    }
+
+    .hero-notes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .note {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 252, 247, 0.82);
+    }
+
+    .note h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .note p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 22px 0 18px;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255, 251, 244, 0.72);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.18s ease;
+    }
+
+    .tab:hover,
+    .tab[aria-selected="true"] {
+      background: var(--deep);
+      border-color: var(--deep);
+      color: #f7fafc;
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      display: none;
+      padding: 26px;
+    }
+
+    .panel.is-active {
+      display: block;
+      animation: fadeIn 0.18s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .panel-head {
+      margin-bottom: 20px;
+    }
+
+    .panel-head h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .panel-head p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .shell-layer,
+    .core-layer,
+    .card,
+    .mini-card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(246, 240, 231, 0.82));
+    }
+
+    .shell-layer {
+      padding: 18px 20px;
+    }
+
+    .shell-layer h3,
+    .core-layer h3,
+    .card h3,
+    .mini-card h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+    }
+
+    .shell-layer p,
+    .core-layer p,
+    .card p,
+    .mini-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .core-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .core-layer {
+      padding: 18px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.deep { background: var(--deep-soft); color: var(--deep); }
+    .tag.teal { background: var(--teal-soft); color: var(--teal); }
+    .tag.rust { background: var(--rust-soft); color: var(--rust); }
+    .tag.gold { background: var(--gold-soft); color: #8b6420; }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.82fr);
+      gap: 18px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .card,
+    .mini-card {
+      padding: 18px;
+    }
+
+    .aside {
+      display: grid;
+      gap: 14px;
+      align-self: start;
+    }
+
+    .mini-card ul,
+    .card ul,
+    .evidence ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .compare .card {
+      min-height: 100%;
+    }
+
+    .quote {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      border-radius: 22px;
+      background: rgba(185, 138, 47, 0.09);
+      color: #5a4620;
+      line-height: 1.88;
+    }
+
+    .evidence {
+      margin-top: 18px;
+      padding: 18px 20px;
+    }
+
+    .evidence h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    @media (max-width: 980px) {
+      .split,
+      .compare,
+      .core-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100vw - 18px, 100%);
+        margin: 16px auto 34px;
+      }
+
+      .hero,
+      .panel {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">V2 写作系统 · 压缩理解版</div>
+      <h1>底层还是 L1 到 L4，只是在外面包了两层壳</h1>
+      <p>
+        如果你觉得现在的 V2 比最开始复杂很多，这个感觉是对的。但真正新增的，不是知识分层本身，而是“知识怎么被稳定地用来生产文章”。
+        所以最容易理解的方式，不是推翻原来的四层，而是把它看成：底层还是 L1 到 L4，外面再包一层文章处理流程壳，再包一层项目治理和留档壳。
+      </p>
+      <div class="hero-notes">
+        <article class="note">
+          <h3>最早的四层</h3>
+          <p>它回答的是“系统知道什么”。也就是写作规则、医学规则、疾病知识、产品知识分别放在哪里。</p>
+        </article>
+        <article class="note">
+          <h3>现在新增的壳</h3>
+          <p>它回答的是“系统怎么稳定写文章”。包括任务进入方式、证据选择、写作规划、交付留档。</p>
+        </article>
+        <article class="note">
+          <h3>你可以这样记</h3>
+          <p>L1 到 L4 没被推翻，只是从“知识库”升级成了“知识库加生产流程”。</p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="toolbar" aria-label="视图切换">
+      <button class="tab" type="button" data-target="panel-layer" aria-selected="true">三层理解</button>
+      <button class="tab" type="button" data-target="panel-l1l4" aria-selected="false">L1~L4 对照</button>
+      <button class="tab" type="button" data-target="panel-article" aria-selected="false">文章怎么走</button>
+      <button class="tab" type="button" data-target="panel-compare" aria-selected="false">为什么更复杂</button>
+    </nav>
+
+    <section id="panel-layer" class="panel is-active">
+      <div class="panel-head">
+        <h2>三层理解法</h2>
+        <p>如果把 V2 压缩回最容易理解的样子，它可以被看成三层：最底下是知识四层，中间是文章处理主链，最外面是项目治理和留档。</p>
+      </div>
+
+      <div class="stack">
+        <article class="shell-layer">
+          <h3>最外层：项目治理与留档壳</h3>
+          <p>这一层不直接写内容，但它负责把项目规则固定住，并把过程留痕。它处理的是：项目执行卡、交付契约冻结、结构冻结、变更记录、项目日志和主系统日志。</p>
+          <div class="tag-row">
+            <span class="tag deep">项目启动</span>
+            <span class="tag deep">冻结约束</span>
+            <span class="tag deep">变更记录</span>
+            <span class="tag deep">双层留档</span>
+          </div>
+        </article>
+
+        <article class="shell-layer">
+          <h3>中间层：文章处理流程壳</h3>
+          <p>这一层负责真正把知识拿来用。它处理的是：任务定义、拿证据、定论点、排大纲、生成写作指令、过基础检查、形成交付结果。</p>
+          <div class="tag-row">
+            <span class="tag teal">任务定义</span>
+            <span class="tag teal">证据选择</span>
+            <span class="tag teal">写作规划</span>
+            <span class="tag teal">交付</span>
+          </div>
+        </article>
+
+        <article class="shell-layer">
+          <h3>最底层：L1 到 L4 知识底盘</h3>
+          <p>这还是原来的四层，只是现在被系统真正消费了。换句话说，L1 到 L4 不再只是“静态放在仓库里”，而是成为文章处理主链的底盘。</p>
+          <div class="core-grid">
+            <article class="core-layer">
+              <h3>L1</h3>
+              <p>写作技法、表达习惯、行文原则。现在主要落在规则层里。</p>
+            </article>
+            <article class="core-layer">
+              <h3>L2</h3>
+              <p>医学写作 playbook、面向不同受众和语气的策略。</p>
+            </article>
+            <article class="core-layer">
+              <h3>L3</h3>
+              <p>疾病层知识。定义疾病、机制、终点、场景等较稳定知识。</p>
+            </article>
+            <article class="core-layer">
+              <h3>L4</h3>
+              <p>产品层知识。定义具体产品、证据、定位、表达资产。</p>
+            </article>
+          </div>
+        </article>
+      </div>
+
+      <div class="quote">
+        所以最适合你的理解方式不是“V2 变成了一个完全不同的怪物”，而是“原来的 L1 到 L4 还在，只是外面多了流程壳和治理壳”。
+      </div>
+    </section>
+
+    <section id="panel-l1l4" class="panel">
+      <div class="panel-head">
+        <h2>L1 到 L4 在 V2 里分别落到了哪里</h2>
+        <p>最开始你脑子里的四层，现在没有消失，而是被拆散后放进了几个更可运行的位置。下面这张对照表，就是“原来的层”和“现在系统里的落点”的对应关系。</p>
+      </div>
+      <div class="split">
+        <div class="cards">
+          <article class="card">
+            <h3>L1：写作技法层</h3>
+            <p>现在主要落在规则资产里，对应的是写作 craft、结构习惯、表达原则。它本质上还是在，但从“一个孤立层级”变成了可被文章主链直接消费的规则资源。</p>
+            <div class="tag-row">
+              <span class="tag teal">rules/l1_writing_craft</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>L2：医学写作 playbook 层</h3>
+            <p>现在也主要落在规则资产里，但更偏写作策略、受众适配、医学表达方式。它负责告诉系统“面对不同读者、不同语气，文章应该怎么讲”。</p>
+            <div class="tag-row">
+              <span class="tag teal">rules/l2_medical_playbook</span>
+              <span class="tag rust">persona_profiles</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>L3：疾病知识层</h3>
+            <p>现在主要落在结构化知识区。它不直接变成文章句子，而是先成为可查询、可调用的疾病知识底盘，再被文章处理流程拿来组织论点。</p>
+            <div class="tag-row">
+              <span class="tag gold">structured/l3</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>L4：产品知识层</h3>
+            <p>现在落在结构化产品知识和重建后的证据资产里。它既负责产品层信息，也负责更接近证据和定位的内容。</p>
+            <div class="tag-row">
+              <span class="tag gold">structured/l4</span>
+              <span class="tag rust">evidence/rebuilt</span>
+            </div>
+          </article>
+        </div>
+
+        <aside class="aside">
+          <article class="mini-card">
+            <h3>为什么现在看起来不是纯四层了</h3>
+            <p>因为 V2 不再只问“知识放哪”，还问“知识怎么被文章消费”。所以原来的四层继续存在，但被放进了更接近运行的资产区。</p>
+          </article>
+          <article class="mini-card">
+            <h3>你可以这样记忆</h3>
+            <ul>
+              <li>L1/L2 更偏规则和写法。</li>
+              <li>L3/L4 更偏知识和证据。</li>
+              <li>文章主链站在它们上面做编排。</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section id="panel-article" class="panel">
+      <div class="panel-head">
+        <h2>一篇文章在这三层里怎么走</h2>
+        <p>如果把“文章是怎么被产出来的”压缩回这个三层模型，它其实就是：先在最外层把规则定住，再在中间层跑写作流程，底下不断调用 L1 到 L4 的知识底盘。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>第一步：在最外层，把规则定住</h3>
+          <p>先确认这篇文章的项目归属、交付契约、引用要求、结构方向和后续变更入口。这一步是治理层，不是正文层。</p>
+        </article>
+        <article class="card">
+          <h3>第二步：在中间层，拿证据和知识</h3>
+          <p>系统开始去调用底盘：从 L1/L2 拿写法和策略，从 L3/L4 拿疾病和产品知识，从证据层拿事实点和片段，然后组合成当前这篇文章真正可用的材料。</p>
+        </article>
+        <article class="card">
+          <h3>第三步：在中间层，生成写作方案</h3>
+          <p>它会把这些材料整理成：核心论点、大纲、写作角度、关键证据和风格要求。这个阶段仍然不是最终正文，而是“可执行写法”。</p>
+        </article>
+        <article class="card">
+          <h3>第四步：交付后回到最外层，自动留档</h3>
+          <p>文章交付后，系统再把这次任务写回项目日志和主系统摘要。这样以后出现问题时，不是只剩正文，而是能顺着项目规则、证据选择和交付结果往回查。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="panel-compare" class="panel">
+      <div class="panel-head">
+        <h2>为什么你会觉得它复杂了很多</h2>
+        <p>因为最开始的四层架构，只负责回答“系统知道什么”。现在的 V2 还要回答“系统怎么稳定写文章”，所以复杂度是被新增工作带上去的，不是原来的四层坏掉了。</p>
+      </div>
+      <div class="compare">
+        <article class="card">
+          <h3>最开始的四层架构</h3>
+          <ul>
+            <li>重点：知识怎么分层摆放</li>
+            <li>解决：规则、疾病知识、产品知识分别放哪里</li>
+            <li>优势：简单、清楚、容易理解</li>
+            <li>不足：没把“项目怎么推进、文章怎么落地、规则怎么留痕”纳进来</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>现在的 V2</h3>
+          <ul>
+            <li>重点：知识怎么被稳定地拿来生成文章</li>
+            <li>新增：任务定义、证据选择、写作规划、交付、留档</li>
+            <li>优势：更稳、更可追溯、更适合多项目协作</li>
+            <li>代价：看起来不再像一张简单的 L1 到 L4 图</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="quote">
+        所以现在的复杂，不是“系统失控”，而是“系统从知识库进化成了生产系统”。只要你把它重新压回“三层理解法”，就不会觉得它乱。
+      </div>
+    </section>
+
+    <section class="evidence">
+      <h3>Evidence Summary</h3>
+      <ul>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2">medical_kb_system_v2</a> 顶层目录，当前确实同时存在 <code>rules</code>、<code>structured</code>、<code>editorial</code>、<code>evidence</code>、<code>engine</code>、<code>intake</code>、<code>manifests</code> 这些层，所以“底层知识 + 外层流程壳”的表述有目录依据。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/rules">rules</a> 下的 <code>l1_writing_craft</code>、<code>l2_medical_playbook</code>，以及 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/structured">structured</a> 下的 <code>l3</code>、<code>l4</code>，确认原来的 L1 到 L4 仍然能在 V2 里找到清楚落点。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/runtime/app.py">app.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/editorial/planner.py">planner.py</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/delivery/task_logger.py">task_logger.py</a>，确认当前确实存在“文章处理主链”和“交付留档壳”。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll(".tab"));
+    const panels = Array.from(document.querySelectorAll(".panel"));
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.target;
+        tabs.forEach((item) => {
+          item.setAttribute("aria-selected", String(item === tab));
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === target);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

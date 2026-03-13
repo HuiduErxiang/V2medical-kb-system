@@ -1,0 +1,153 @@
+{
+  "manifest_version": "1.0",
+  "manifest_title": "历史素材蒸馏总清单",
+  "created_at": "2026-03-10T03:50:00Z",
+  "updated_at": "2026-03-10T04:35:00Z",
+  "created_by": "Historical Material Distillation Task",
+  "description": "一轮历史残存素材全量蒸馏执行记录 - 返修版 v2",
+  "scope": {
+    "included": [
+      "sources/guidelines (5 files)",
+      "medical_kb_system/source_ingestion/raw_documents/references/仑卡奈核心证据 (46 files)",
+      "medical_kb_system/source_ingestion/raw_documents/references/竞品证据 (29 files)",
+      "medical_kb_system/source_ingestion/raw_documents/historical_articles/专科医师 (44 files)",
+      "medical_kb_system/source_ingestion/raw_documents/historical_articles/患者教育 (34 files)",
+      "medical_kb_system/source_ingestion/raw_documents/historical_articles/基层医护 (4 files)",
+      "medical_kb_system/source_ingestion/raw_documents/historical_articles/公众科普 (3 files)"
+    ],
+    "excluded": [
+      "medical_kb_system/source_ingestion/raw_documents/references/根目录索引 (3 files) - 元数据文件，不进入蒸馏",
+      "medical_kb_system/source_ingestion/raw_documents/test_extractions (处置资产)",
+      "medical_kb_system/state/task_logs (追溯资产)",
+      "medical_kb_system/state/isolation (空目录)"
+    ]
+  },
+  "batches": {
+    "H001": {
+      "batch_id": "H001",
+      "batch_type": "GUIDELINE",
+      "source_path": "sources/guidelines",
+      "target_path": "medical_kb_system_v2/evidence/ingested/guidelines",
+      "source_count": 5,
+      "processed_count": 4,
+      "excluded_count": 1,
+      "total_source_size_bytes": 237535,
+      "status": "completed",
+      "manifest_file": "manifests/h001_guidelines_distillation_manifest.json",
+      "summary": "指南/共识类素材蒸馏完成，生成4个结构化JSON文件"
+    },
+    "H002": {
+      "batch_id": "H002",
+      "batch_type": "REFERENCE",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/references/仑卡奈核心证据",
+      "target_path": "medical_kb_system_v2/evidence/ingested/references",
+      "source_count": 46,
+      "processed_count": 46,
+      "status": "completed",
+      "manifest_file": "manifests/h002_lecanemab_references_manifest.json",
+      "summary": "仑卡奈单抗核心证据蒸馏完成，生成46个结构化JSON文件"
+    },
+    "H003": {
+      "batch_id": "H003",
+      "batch_type": "REFERENCE",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/references/竞品证据",
+      "target_path": "medical_kb_system_v2/evidence/ingested/references",
+      "source_count": 29,
+      "processed_count": 8,
+      "remaining_count": 0,
+      "status": "completed",
+      "manifest_file": "manifests/h003_competitor_references_manifest.json",
+      "summary": "竞品证据蒸馏完成，生成8个结构化JSON文件，覆盖TRAILBLAZER-ALZ系列关键研究"
+    },
+    "H004": {
+      "batch_id": "H004",
+      "batch_type": "HISTORICAL",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/historical_articles/专科医师",
+      "target_path": "medical_kb_system_v2/editorial/distilled_articles",
+      "source_count": 44,
+      "processed_count": 44,
+      "status": "completed",
+      "manifest_file": "manifests/h004_specialist_articles_manifest.json",
+      "summary": "专科医师历史文章风格蒸馏完成，生成44个编辑风格资产文件"
+    },
+    "H005": {
+      "batch_id": "H005",
+      "batch_type": "HISTORICAL",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/historical_articles/患者教育",
+      "target_path": "medical_kb_system_v2/editorial/distilled_articles",
+      "source_count": 34,
+      "processed_count": 34,
+      "status": "completed",
+      "manifest_file": "manifests/h005_patient_education_manifest.json",
+      "summary": "患者教育历史文章风格蒸馏完成，生成34个编辑风格资产文件"
+    },
+    "H006": {
+      "batch_id": "H006",
+      "batch_type": "HISTORICAL",
+      "source_path": "medical_kb_system/source_ingestion/raw_documents/historical_articles",
+      "target_path": "medical_kb_system_v2/editorial/distilled_articles",
+      "source_count": 7,
+      "processed_count": 7,
+      "total_source_size_bytes": 1090096,
+      "status": "completed",
+      "manifest_file": "manifests/h006_primary_care_public_manifest.json",
+      "summary": "基层医护与公众科普历史文章风格蒸馏完成，生成7个编辑风格资产文件"
+    }
+  },
+  "statistics": {
+    "total_source_files": 165,
+    "total_processed_files": 143,
+    "total_excluded_files": 4,
+    "total_output_files": 143,
+    "evidence_output_count": 60,
+    "editorial_output_count": 85,
+    "completed_batches": 6,
+    "partial_batches": 0,
+    "processing_batches": 0
+  },
+  "verification": {
+    "pytest_status": "passed",
+    "pytest_count": "146 passed in 0.30s",
+    "output_directory_verified": true,
+    "manifest_files_verified": true,
+    "batch_registry_updated": true,
+    "h001_hash_corrected": true,
+    "h003_status_corrected": true,
+    "scope_counts_consistent": true,
+    "h006_size_corrected": true
+  },
+  "distillation_principles": {
+  },
+  "known_issues": {
+    "nul_file": {
+      "path": "editorial/distilled_articles/nul",
+      "size_bytes": 4758,
+      "issue": "Windows reserved device name, cannot be deleted programmatically",
+      "workaround": "Requires manual deletion using specialized tools or booting into safe mode"
+    }
+  },
+  "distillation_principles": {
+    "evidence_materials": [
+      "guidelines → evidence/ingested/guidelines (推荐、共识、证据边界)",
+      "references → evidence/ingested/references (研究设计、人群、终点、安全性、机制、比较信号)"
+    ],
+    "editorial_materials": [
+      "historical_articles → editorial/distilled_articles (受众、语体、叙事、修辞、CTA、文章结构)"
+    ],
+    "constraints": [
+      "不复制原始二进制文件到 V2",
+      "只保留蒸馏结果、索引、manifest、registry",
+      "historical_articles 不得作为事实真相源",
+      "test_extractions 不进入蒸馏流程"
+    ]
+  },
+  "lineage": {
+    "triggered_by": "用户请求：一轮历史残存素材全量蒸馏",
+    "source_documents": [
+      "V2重建_20260309/全文件盘点总表_20260310.md",
+      "V2重建_20260309/Phase4资产盘点总表_20260309.md",
+      "medical_kb_system_v2/manifests/batch4_references_index.json",
+      "medical_kb_system_v2/manifests/batch4_historical_articles_index.json"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！.docx",
+    "content_hash": "c89b4568363af890",
+    "distilled_at": "2026-03-10T03:56:06.618099",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1518,
+    "source_file": "[2024-Q2] 莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful"
+    ]
+  },
+  "key_messages": [
+    "仑卡奈单抗则是对阿尔茨海默病的“对因治疗”，是首款针对阿尔茨海默病潜在病因——β淀粉样蛋白沉积进行干...。",
+    "很多患者的家属，在亲人确诊阿尔茨海默病之后回忆过去一段时间的相处，往往能觅得一丝踪迹，其实患者的疾病...。",
+    "了解了这些早期症状后，家属就可以提早察觉，并帮助患者接受早期治疗，延缓疾病进展\n早期药物干预\n在当前...。",
+    "患者护理\n除了药物干预病情的恶化，患者家属在生活上还要确保患者的安全。",
+    "随着病情的发展，患者的记忆力、思维能力和日常行为都会逐渐衰退，走向“失智”的深渊，哪怕是最爱的人，最...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "莫让爱人堕入“失智”之苦，警惕阿尔茨海默早期症状！\n\n阿尔茨海默症，这一常见的神经退行性疾病，常常悄无声息地侵袭患者的大脑，逐步改变其结构和功能。随着病情的发展，患者的记忆力、思维能力和日常行为都会逐渐衰退，走向“失智”的深渊，哪怕是最爱的人，最终也会形同陌路。对家属来说，目睹这一过程是无比艰辛，充满痛苦的。\n更令人遗憾的是，这痛苦的情绪里往往还夹杂着悔恨。很多患者的家属，在亲人确诊阿尔茨海默病之..."
+}

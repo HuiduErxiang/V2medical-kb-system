@@ -1,0 +1,65 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q4] V1【AE管理】阿尔茨海默病用药怕 ARIA？E4 纯合子患者该这么办！.docx",
+    "source_key": "SRC-HIST-2025-Q4_V1【AE管理】阿尔茨海默病用药怕_ARIA",
+    "asset_key": "AST-DOCX-2025-Q4_V1【AE管理】阿尔茨海默病用药怕_ARIA",
+    "content_hash": "b688842a5829671b",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.821413",
+    "source_size_bytes": 28884
+  },
+  "metadata": {
+    "title": "V1【AE管理】阿尔茨海默病用药怕 ARIA？E4 纯合子患者该这么办！",
+    "content_type": "场景_指导",
+    "publication_quarter": "2025-Q4",
+    "version": "V1",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 安全性分析"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "阿尔茨海默病（AD）是老年人群中常见的神经退行性疾病，会慢慢侵蚀人的认知能力和生活自理能力。我国60岁以上人群中，有不少AD患者和相关认知障碍人群，大家都盼着能有办法延缓病情进展。",
+      "那么，究竟如何做好ARIA的安全管理呢？",
+      "ARIA是治疗中可能出现的“脑部影像异常信号”",
+      "而且这些患者里，90%没有明显症状，仅4例患者出现有症状的ARIA，7例为严重ARIA，没有出现死亡或严重脑出血的情况，安全性更有保障。",
+      "所以大家不用怕，只要做好监测，ARIA是可控的，不会成为治疗的“绊脚石”。",
+      "这里要特别叮嘱一句：ARIA 大多在治疗最初 3 个月内出现，这段时间要多留意身体感受，有不舒服及时和医生沟通。",
+      "治疗前一定要做两项关键检查，这是安全用药的基础：",
+      "用3.0T及以上设备做MRI，且要包含特定序列，重点看看脑部有没有微出血。研究发现，治疗前就有微出血的患者，出现ARIA的风险会明显升高；",
+      "明确自己的APOE基因类型，提前知晓基因情况，能给后续治疗和监测提供参考，心里也更踏实。",
+      "要严格按照医生的计划做MRI：第5次、第7次、第14次输液前必须复查；如果治疗前就有微出血或者还在服用抗血小板药物，医生还会建议在第26次输液前额外加做一次。",
+      "随着临床研究的深入，AD的治疗会越来越精准，患者和照护者无需过度焦虑，只要和医疗团队密切配合，做好每一步的评估和监测，就能更好地和疾病抗争，守护好生活质量。",
+      "参考文献："
+    ],
+    "writing_style_notes": [
+      "vocabulary: 中等技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": [
+    "这一发现打破了“APOE ε4纯合子一定会增加ARIA风险”的固有认知，说明该基因对ARIA发生的影响可能和种族相关，不能单凭这一个基因结果就否定用药的可能。"
+  ]
+}

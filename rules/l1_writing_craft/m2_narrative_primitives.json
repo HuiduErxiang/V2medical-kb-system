@@ -1,0 +1,65 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L1",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "layer": "L1 — M2 Narrative Primitives (叙事原语层)",
+  "m2_primitives": [
+    {
+      "id": "M2_HOOK",
+      "name": "Hook (抛出引子/制造冲突)",
+      "description": "纯写作逻辑：文章开篇用于吸引读者，指出一个痛点、冲突或打破一个旧常识。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_SETUP",
+      "name": "Setup (建立背景框架)",
+      "description": "纯写作逻辑：在引入具体方案前，为读者搭建理解所需的知识背景或时空背景。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_SOLUTION",
+      "name": "Solution (引入解决方案)",
+      "description": "纯写作逻辑：正式抛出文章的核心主体或概念，作为解决前面冲突的答案。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_PROOF",
+      "name": "Proof (提供硬核证据)",
+      "description": "纯写作逻辑：使用客观数据、案例或对比分析来证明 Solution 的有效性。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_DEFENSE",
+      "name": "Defense (防守质疑/打消顾虑)",
+      "description": "纯写作逻辑：主动指出方案的局限性或风险，并给出解释，增强客观性。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_GUIDANCE",
+      "name": "Guidance (提供实操指南)",
+      "description": "纯写作逻辑：给出具体的执行步骤，解决“我该怎么做”的问题。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_CTA",
+      "name": "Call to Action (呼吁行动/总结)",
+      "description": "纯写作逻辑：文章结尾，升华主题并促成读者的认知改变或实际行动。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_EMOTIVE_INTRO",
+      "name": "Emotive Intro (个人化情绪铺垫)",
+      "description": "纯写作逻辑：带有强烈个人风格的开篇，交代写作动机与读者互动。",
+      "origin_layer": "L1"
+    },
+    {
+      "id": "M2_TEARDOWN",
+      "name": "Tear-down (深度拆解/扒皮)",
+      "description": "纯写作逻辑：对某一复杂事件、数据或图表进行抽丝剥茧的深度反向拆解。",
+      "origin_layer": "L1"
+    }
+  ]
+}

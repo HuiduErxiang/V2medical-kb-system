@@ -1,0 +1,32 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "neurology_ad",
+    "version": "1.0.0",
+    "last_updated": "2026-03-02",
+    "description": "阿尔茨海默病疾病级知识来源注册表（通用学术文献，非产品特异性试验）"
+  },
+  "sources": [
+    {
+      "id": "SRC_ITC_ARIA_COMPARISON_2025Q4",
+      "type": "conference_poster",
+      "title": "Comparison of ARIA Risk for Lecanemab versus Donanemab and Potential Implications",
+      "citation": "Sabbagh MN, Cohen S, Chao A, et al. 18th CTAD, San Diego, 2025. P096.",
+      "year": 2025,
+      "origin": "L4_lecanemab"
+    },
+    {
+      "id": "SRC_CRITIQUE_KAUR_2025Q1_CDI",
+      "type": "review_article",
+      "title": "Lecanemab: More Questions than Answers!",
+      "citation": "Kaur U, Reddy J, et al. Clin Drug Investig. 2024;44:1-10",
+      "year": 2024,
+      "origin": "L4_lecanemab"
+    }
+  ]
+}

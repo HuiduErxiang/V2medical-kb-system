@@ -1,0 +1,889 @@
+{
+  "_origin_layer_policy": {
+    "layer_default": "L3",
+    "tag_field": "origin_layer",
+    "primitive_resolution": "inherit_default",
+    "version": "1.0"
+  },
+  "meta": {
+    "disease_area": "lung_cancer",
+    "version": "2.2.0",
+    "last_updated": "2026-03-02",
+    "description": "肺癌疾病特异性知识库，涵盖驱动基因通路、耐药机制及中国流行病学特征"
+  },
+  "categories": {
+    "egfr_pathway": {
+      "description": "EGFR信号通路及其在非小细胞肺癌中的突变亚型、信号级联和中国人群患病率",
+      "entries": [
+        {
+          "id": "LUNG_EGFR_001",
+          "title": "EGFR Exon 19 Deletion (Ex19del)",
+          "title_zh": "EGFR 19号外显子缺失突变",
+          "content": "Exon 19 deletion is one of the two most common EGFR activating mutations in NSCLC, accounting for approximately 45% of all EGFR mutations. This mutation removes amino acids 747-750 (LREA motif) from the tyrosine kinase domain, leading to constitutive activation of the EGFR signaling pathway. Patients with Ex19del mutations generally demonstrate superior progression-free survival compared to L858R mutation carriers when treated with EGFR-TKIs. The deletion creates a more favorable binding conformation for tyrosine kinase inhibitors.",
+          "content_zh": "19号外显子缺失突变是非小细胞肺癌中最常见的EGFR激活突变之一，约占所有EGFR突变的45%。该突变从酪氨酸激酶结构域中删除氨基酸747-750（LREA基序），导致EGFR信号通路持续激活。与L858R突变携带者相比，Ex19del突变患者在接受EGFR-TKI治疗时通常表现出更优的无进展生存期。该缺失为酪氨酸激酶抑制剂创造了更有利的结合构象。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGFR_002",
+          "title": "EGFR L858R Point Mutation",
+          "title_zh": "EGFR L858R点突变",
+          "content": "The L858R mutation in exon 21 is the second most prevalent EGFR activating mutation, representing approximately 40% of EGFR-mutant NSCLC cases. This point mutation substitutes leucine with arginine at position 858 in the activation loop of the EGFR kinase domain. While L858R mutations confer sensitivity to EGFR-TKIs, clinical outcomes are generally less favorable compared to Exon 19 deletions. The mutation stabilizes the active conformation of the kinase domain, enhancing ATP binding affinity.",
+          "content_zh": "21号外显子的L858R突变是第二常见的EGFR激活突变，约占EGFR突变型非小细胞肺癌病例的40%。该点突变在EGFR激酶结构域的激活环中将858位的亮氨酸替换为精氨酸。虽然L858R突变赋予对EGFR-TKI的敏感性，但与19号外显子缺失相比，临床结局通常较差。该突变稳定了激酶结构域的活性构象，增强了ATP结合亲和力。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGFR_003",
+          "title": "EGFR T790M Resistance Mutation",
+          "title_zh": "EGFR T790M耐药突变",
+          "content": "The T790M mutation in exon 20 is the most common mechanism of acquired resistance to first- and second-generation EGFR-TKIs, occurring in approximately 50-60% of resistant cases. This gatekeeper mutation substitutes threonine with methionine at position 790, increasing ATP binding affinity and sterically hindering first-generation inhibitor binding. T790M confers resistance by restoring kinase activity despite inhibitor presence. Third-generation EGFR-TKIs were specifically designed to overcome T790M-mediated resistance while sparing wild-type EGFR.",
+          "content_zh": "20号外显子的T790M突变是对第一代和第二代EGFR-TKI获得性耐药的最常见机制，发生在约50-60%的耐药病例中。该守门员突变将790位的苏氨酸替换为甲硫氨酸，增加ATP结合亲和力并在空间上阻碍第一代抑制剂结合。尽管存在抑制剂，T790M通过恢复激酶活性而赋予耐药性。第三代EGFR-TKI专门设计用于克服T790M介导的耐药性，同时不伤害野生型EGFR。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CN",
+            "ROBICHAUX_NATURE_2021"
+          ]
+        },
+        {
+          "id": "LUNG_EGFR_004",
+          "title": "EGFR C797S Resistance Mutation",
+          "title_zh": "EGFR C797S耐药突变",
+          "content": "The C797S mutation represents a key resistance mechanism to third-generation EGFR-TKIs, occurring after treatment with agents targeting T790M-positive disease. This mutation affects the covalent binding site, preventing irreversible inhibitor attachment to cysteine 797. C797S can occur in cis or trans configuration with T790M, with cis configuration conferring resistance to all current generations of EGFR-TKIs. This mutation highlights the evolutionary pressure exerted by sequential TKI therapy on tumor clones.",
+          "content_zh": "C797S突变代表了对第三代EGFR-TKI的关键耐药机制，发生在针对T790M阳性疾病的治疗之后。该突变影响共价结合位点，阻止不可逆抑制剂与半胱氨酸797的附着。C797S可与T790M以顺式或反式构型发生，顺式构型对所有当前代的EGFR-TKI均赋予耐药性。该突变突显了序贯TKI治疗对肿瘤克隆施加的进化压力。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ROBICHAUX_NATURE_2021",
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGFR_005",
+          "title": "EGFR Exon 20 Insertion Mutations",
+          "title_zh": "EGFR 20号外显子插入突变",
+          "content": "Exon 20 insertion mutations account for approximately 4-10% of all EGFR mutations in NSCLC and are characterized by insertions or duplications in the alpha-helix of exon 20. These mutations confer intrinsic resistance to first- and second-generation EGFR-TKIs due to steric hindrance in the drug binding pocket. Unlike classic EGFR mutations, Ex20ins mutations maintain a conformation that limits inhibitor access. Specialized agents targeting Ex20ins have been developed to address this unmet medical need.",
+          "content_zh": "20号外显子插入突变约占非小细胞肺癌中所有EGFR突变的4-10%，其特征是20号外显子α螺旋中的插入或重复。由于药物结合口袋中的空间位阻，这些突变对第一代和第二代EGFR-TKI赋予内在耐药性。与经典EGFR突变不同，Ex20ins突变维持限制抑制剂进入的构象。已开发出针对Ex20ins的专用药物以满足这一未满足的医疗需求。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ROBICHAUX_NATURE_2021"
+          ]
+        },
+        {
+          "id": "LUNG_EGFR_006",
+          "title": "EGFR PACC Mutations",
+          "title_zh": "EGFR PACC突变",
+          "content": "PACC (Proline-Alanine-Coiled-Coil) mutations represent a distinct class of EGFR alterations involving the coiled-coil domain. These rare mutations affect protein-protein interactions and dimerization properties of the EGFR receptor. PACC mutations may influence response to EGFR-targeted therapies through altered receptor trafficking and signaling dynamics. Understanding these mutations is important for comprehensive molecular profiling of NSCLC patients.",
+          "content_zh": "PACC（脯氨酸 - 丙氨酸-卷曲螺旋）突变代表一类独特的EGFR改变，涉及卷曲螺旋结构域。这些罕见突变影响EGFR受体的蛋白质相互作用和二聚化特性。PACC突变可能通过改变受体内吞和信号动力学而影响对EGFR靶向治疗的反应。了解这些突变对于非小细胞肺癌患者的全面分子谱分析很重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN",
+            "EX20INS_TREATMENT_CN"
+          ]
+        }
+      ]
+    },
+    "egfr_resistance": {
+      "description": "EGFR-TKI耐药机制，包括T790M、C797S、MET扩增、HER2扩增和小细胞转化",
+      "entries": [
+        {
+          "id": "LUNG_EGRES_001",
+          "title": "T790M-Mediated Resistance Mechanism",
+          "title_zh": "T790M介导的耐药机制",
+          "content": "T790M-mediated resistance occurs through increased ATP affinity that outcompetes first-generation inhibitor binding. The methionine substitution creates a larger side chain that sterically blocks drug access while maintaining ATP binding. This mechanism typically emerges after 9-14 months of first-generation EGFR-TKI treatment. Detection of T790M is critical for guiding subsequent therapy selection toward third-generation inhibitors.",
+          "content_zh": "T790M介导的耐药通过增加ATP亲和力而发生，超过第一代抑制剂的结合。甲硫氨酸取代产生更大的侧链，在空间上阻断药物进入，同时维持ATP结合。该机制通常在第一代EGFR-TKI治疗9-14个月后出现。T790M的检测对于指导后续治疗选择朝向第三代抑制剂至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGRES_002",
+          "title": "C797S-Mediated Resistance to Third-Generation TKIs",
+          "title_zh": "C797S介导的第三代TKI耐药",
+          "content": "C797S mutation emerges as the predominant resistance mechanism to third-generation EGFR-TKIs in T790M-positive disease. The cysteine-to-serine substitution abolishes the covalent binding required for irreversible inhibitor activity. When C797S occurs in cis with T790M, the tumor becomes resistant to all approved EGFR-TKIs. This resistance pattern necessitates alternative therapeutic strategies including chemotherapy or investigational agents.",
+          "content_zh": "C797S突变作为T790M阳性疾病中对第三代EGFR-TKI的主要耐药机制而出现。半胱氨酸到丝氨酸的取代消除了不可逆抑制剂活性所需的共价结合。当C797S与T790M以顺式发生时，肿瘤对所有批准的EGFR-TKI均产生耐药性。这种耐药模式需要替代治疗策略，包括化疗或研究性药物。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGRES_003",
+          "title": "MET Amplification as Bypass Resistance",
+          "title_zh": "MET扩增作为旁路耐药",
+          "content": "MET amplification accounts for approximately 5-20% of acquired resistance to EGFR-TKIs in NSCLC. This bypass mechanism activates downstream PI3K/AKT and MAPK signaling independently of EGFR. MET-driven resistance can be detected through FISH, NGS, or IHC testing. Combination strategies targeting both EGFR and MET pathways are under investigation to overcome this resistance mechanism.",
+          "content_zh": "MET扩增约占非小细胞肺癌中EGFR-TKI获得性耐药的5-20%。这种旁路机制独立于EGFR激活下游PI3K/AKT和MAPK信号传导。MET驱动的耐药可通过FISH、NGS或IHC检测发现。正在研究同时靶向EGFR和MET通路的联合策略以克服这种耐药机制。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGRES_004",
+          "title": "HER2 Amplification in EGFR-TKI Resistance",
+          "title_zh": "EGFR-TKI耐药中的HER2扩增",
+          "content": "HER2 amplification represents an alternative bypass pathway contributing to EGFR-TKI resistance in 3-12% of cases. HER2 forms heterodimers with EGFR and other HER family members, maintaining downstream signaling despite EGFR inhibition. This mechanism is more common after prolonged EGFR-TKI exposure. HER2-targeted therapies may provide benefit in this resistance setting.",
+          "content_zh": "HER2扩增代表另一种旁路通路，在3-12%的病例中导致EGFR-TKI耐药。HER2与EGFR和其他HER家族成员形成异二聚体，尽管存在EGFR抑制仍维持下游信号传导。这种机制在长期EGFR-TKI暴露后更常见。HER2靶向治疗可能在这种耐药情况下提供益处。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGRES_005",
+          "title": "Small Cell Lung Cancer Transformation",
+          "title_zh": "小细胞肺癌转化",
+          "content": "Small cell transformation occurs in 3-14% of EGFR-mutant NSCLC patients developing resistance to EGFR-TKIs. This histological transformation maintains the original EGFR mutation but acquires small cell characteristics including RB1 and TP53 loss. Transformed tumors typically lose dependence on EGFR signaling and require platinum-etoposide chemotherapy. Repeat biopsy is essential for diagnosing this transformation.",
+          "content_zh": "小细胞转化发生在3-14%的对EGFR-TKI产生耐药的EGFR突变型非小细胞肺癌患者中。这种组织学转化维持原始EGFR突变，但获得小细胞特征，包括RB1和TP53缺失。转化的肿瘤通常失去对EGFR信号传导的依赖性，需要铂类 - 依托泊苷化疗。重复活检对于诊断这种转化至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_EGRES_006",
+          "title": "Bypass Signaling Activation",
+          "title_zh": "旁路信号激活",
+          "content": "Bypass signaling encompasses multiple alternative pathways including AXL, IGF1R, and FGFR activation that sustain tumor growth despite EGFR inhibition. These pathways converge on common downstream effectors such as PI3K/AKT/mTOR and RAS/RAF/MEK/ERK. Bypass activation often results from tumor heterogeneity and clonal selection under therapeutic pressure. Comprehensive molecular profiling is required to identify specific bypass mechanisms.",
+          "content_zh": "旁路信号传导包括多种替代通路，包括AXL、IGF1R和FGFR激活，尽管存在EGFR抑制仍维持肿瘤生长。这些通路汇聚于共同的下游效应器，如PI3K/AKT/mTOR和RAS/RAF/MEK/ERK。旁路激活通常源于治疗压力下的肿瘤异质性和克隆选择。需要全面的分子谱分析来识别特定的旁路机制。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "alk_pathway": {
+      "description": "ALK重排在非小细胞肺癌中的特征、EML4-ALK融合变体和治疗策略",
+      "entries": [
+        {
+          "id": "LUNG_ALK_001",
+          "title": "ALK Rearrangement in NSCLC",
+          "title_zh": "非小细胞肺癌中的ALK重排",
+          "content": "ALK rearrangements occur in approximately 3-7% of unselected NSCLC patients and up to 5% of adenocarcinomas in Western populations. The rearrangement typically involves fusion of ALK with EML4 on chromosome 2p, creating a constitutively active tyrosine kinase. ALK-positive patients are typically younger, never-smokers, and have adenocarcinoma histology. ALK inhibitors have transformed the prognosis of this molecular subtype with median overall survival exceeding 7 years.",
+          "content_zh": "ALK重排发生在约3-7%的未选择非小细胞肺癌患者中，在西方人群中高达5%的腺癌。重排通常涉及2p号染色体上ALK与EML4的融合，产生持续激活的酪氨酸激酶。ALK阳性患者通常较年轻、从不吸烟，且为腺癌组织学。ALK抑制剂改变了这种分子亚型的预后，中位总生存期超过7年。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_ALK_002",
+          "title": "EML4-ALK Fusion Variants",
+          "title_zh": "EML4-ALK融合变体",
+          "content": "Multiple EML4-ALK fusion variants exist, with variant 1 (V1) and variant 3 (V3) being most common in NSCLC. Variant 3a/b is associated with shorter progression-free survival on first-generation ALK inhibitors compared to variant 1. Different variants may influence response to specific ALK inhibitors and patterns of metastatic spread. Understanding variant type may inform treatment selection and monitoring strategies.",
+          "content_zh": "存在多种EML4-ALK融合变体，其中变体1（V1）和变体3（V3）在非小细胞肺癌中最常见。与变体1相比，变体3a/b与第一代ALK抑制剂的无进展生存期较短相关。不同变体可能影响对特定ALK抑制剂的反应和转移扩散模式。了解变体类型可能为治疗选择和监测策略提供信息。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_ALK_003",
+          "title": "ALK Inhibitor Treatment Sequencing",
+          "title_zh": "ALK抑制剂治疗序贯",
+          "content": "Treatment sequencing for ALK-positive NSCLC has evolved with multiple generations of ALK inhibitors available. First-generation inhibitors established efficacy but limited CNS penetration. Second and third-generation inhibitors offer improved CNS activity and potency against resistance mutations. Optimal sequencing strategy balances efficacy, toxicity, and resistance profiles across available agents.",
+          "content_zh": "随着多代ALK抑制剂的可用性，ALK阳性非小细胞肺癌的治疗序贯已经演变。第一代抑制剂确立了疗效但CNS渗透有限。第二代和第三代抑制剂提供改善的CNS活性和对耐药突变的效力。最佳序贯策略平衡可用药物的疗效、毒性和耐药性特征。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_ALK_004",
+          "title": "ALK Resistance Mutations",
+          "title_zh": "ALK耐药突变",
+          "content": "Acquired resistance to ALK inhibitors develops through on-target mutations and bypass mechanisms. Common on-target mutations include L1196M (gatekeeper), G1202R, and F1174L in the ALK kinase domain. G1202R confers resistance to first and second-generation inhibitors but remains sensitive to third-generation agents. Resistance profiling guides selection of next-line ALK inhibitor therapy.",
+          "content_zh": "对ALK抑制剂的获得性耐药通过靶点突变和旁路机制发展。常见的靶点突变包括ALK激酶结构域中的L1196M（守门员）、G1202R和F1174L。G1202R对第一代和第二代抑制剂赋予耐药性，但对第三代药物保持敏感。耐药谱分析指导下一线ALK抑制剂治疗的选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "kras_pathway": {
+      "description": "KRAS突变在非小细胞肺癌中的特征、亚型和治疗策略",
+      "entries": [
+        {
+          "id": "LUNG_KRAS_001",
+          "title": "KRAS G12C Mutation in NSCLC",
+          "title_zh": "非小细胞肺癌中的KRAS G12C突变",
+          "content": "KRAS G12C mutation occurs in approximately 13% of NSCLC cases in Western populations and 8-10% in Asian populations. This mutation locks KRAS in the GDP-bound inactive state, creating a druggable pocket for covalent inhibitors. G12C inhibitors bind to the switch-II pocket, trapping KRAS in the inactive conformation. This represents the first successful direct targeting of KRAS mutations in lung cancer.",
+          "content_zh": "KRAS G12C突变发生在西方人群约13%的非小细胞肺癌病例中，在亚洲人群中为8-10%。该突变将KRAS锁定在GDP结合的失活状态，为共价抑制剂创造可成药口袋。G12C抑制剂结合到switch-II口袋，将KRAS捕获在失活构象中。这代表了肺癌中KRAS突变的首次成功直接靶向。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SKOULIDIS_KRAS_2019",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_KRAS_002",
+          "title": "KRAS G12D and Other Non-G12C Mutations",
+          "title_zh": "KRAS G12D和其他非G12C突变",
+          "content": "KRAS G12D represents the second most common KRAS mutation in NSCLC, occurring in 3-5% of cases. Unlike G12C, G12D maintains GTP-bound active state and lacks the cysteine residue for covalent binding. Non-G12C KRAS mutations remain challenging to target directly and often require indirect approaches through downstream effectors. Pan-KRAS inhibitors and combination strategies are under development for these mutations.",
+          "content_zh": "KRAS G12D代表非小细胞肺癌中第二常见的KRAS突变，发生在3-5%的病例中。与G12C不同，G12D维持GTP结合的活性状态，缺乏共价结合的半胱氨酸残基。非G12C KRAS突变仍然难以直接靶向，通常需要通过对下游效应器的间接方法。针对这些突变正在开发泛KRAS抑制剂和联合策略。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SKOULIDIS_KRAS_2019",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_KRAS_003",
+          "title": "Direct KRAS Inhibitors",
+          "title_zh": "直接KRAS抑制剂",
+          "content": "Direct KRAS G12C inhibitors represent a breakthrough in targeting previously undruggable KRAS mutations. These covalent inhibitors specifically bind to the mutant cysteine residue in the switch-II pocket. Clinical trials demonstrate meaningful response rates and progression-free survival benefit in KRAS G12C-mutant NSCLC. Resistance mechanisms to direct KRAS inhibitors are being characterized for future therapeutic development.",
+          "content_zh": "直接KRAS G12C抑制剂代表了靶向以前不可成药的KRAS突变的突破。这些共价抑制剂特异性结合switch-II口袋中的突变半胱氨酸残基。临床试验显示在KRAS G12C突变型非小细胞肺癌中有意义的缓解率和无进展生存期获益。正在表征对直接KRAS抑制剂的耐药机制以用于未来治疗开发。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SKOULIDIS_KRAS_2019",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_KRAS_004",
+          "title": "Indirect KRAS Pathway Inhibition",
+          "title_zh": "间接KRAS通路抑制",
+          "content": "Indirect KRAS inhibition targets downstream effectors including MEK, ERK, and SHP2 in the RAS-MAPK pathway. MEK inhibitors have shown limited single-agent activity but may enhance efficacy in combination with other agents. SHP2 inhibition prevents RAS activation by blocking signal transduction from receptor tyrosine kinases. Combination approaches targeting multiple nodes in the pathway aim to overcome feedback activation.",
+          "content_zh": "间接KRAS抑制靶向RAS-MAPK通路中的下游效应器，包括MEK、ERK和SHP2。MEK抑制剂显示有限的单药活性，但可能在与其他药物联合时增强疗效。SHP2抑制通过阻断受体酪氨酸激酶的信号转导来阻止RAS激活。靶向通路中多个节点的联合方法旨在克服反馈激活。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SKOULIDIS_KRAS_2019",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "nsclc_classification": {
+      "description": "非小细胞肺癌的组织学分类、分子亚型和PD-L1表达模式",
+      "entries": [
+        {
+          "id": "LUNG_NSCLCC_001",
+          "title": "Lung Adenocarcinoma",
+          "title_zh": "肺腺癌",
+          "content": "Adenocarcinoma is the most common histological subtype of NSCLC, accounting for approximately 40-50% of all lung cancers. This subtype arises from glandular cells and is the predominant type in never-smokers and women. Adenocarcinomas frequently harbor driver mutations including EGFR, ALK, ROS1, and KRAS. Molecular testing is mandatory for advanced adenocarcinoma to guide targeted therapy selection.",
+          "content_zh": "腺癌是非小细胞肺癌最常见的组织学亚型，约占所有肺癌的40-50%。该亚型起源于腺细胞，是从不吸烟者和女性中的主要类型。腺癌经常携带驱动突变，包括EGFR、ALK、ROS1和KRAS。必须对晚期腺癌进行分子检测以指导靶向治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_NSCLCC_002",
+          "title": "Lung Squamous Cell Carcinoma",
+          "title_zh": "肺鳞状细胞癌",
+          "content": "Squamous cell carcinoma represents 25-30% of NSCLC cases and is strongly associated with smoking history. This subtype arises from bronchial epithelial cells and typically presents as central lung masses. Driver mutations are less common in squamous cell carcinoma compared to adenocarcinoma, with FGFR amplification and PI3K pathway alterations being more frequent. Immunotherapy plays a prominent role in treatment given the higher tumor mutational burden.",
+          "content_zh": "鳞状细胞癌占非小细胞肺癌病例的25-30%，与吸烟史密切相关。该亚型起源于支气管上皮细胞，通常表现为中央肺肿块。与腺癌相比，鳞状细胞癌中驱动突变较少见，FGFR扩增和PI3K通路改变更频繁。鉴于较高的肿瘤突变负荷，免疫治疗在治疗中发挥突出作用。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_NSCLCC_003",
+          "title": "Large Cell Carcinoma",
+          "title_zh": "大细胞癌",
+          "content": "Large cell carcinoma is an undifferentiated NSCLC subtype accounting for 5-10% of cases. Diagnosis requires exclusion of glandular or squamous differentiation through immunohistochemistry. These tumors tend to be aggressive with rapid growth and early metastatic spread. Large cell carcinoma lacks specific driver mutations and is typically managed with chemotherapy and immunotherapy regimens.",
+          "content_zh": "大细胞癌是一种未分化的非小细胞肺癌亚型，占病例的5-10%。诊断需要通过免疫组织化学排除腺或鳞状分化。这些肿瘤往往具有侵袭性，生长迅速且早期转移。大细胞癌缺乏特异性驱动突变，通常用化疗和免疫治疗方案管理。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_NSCLCC_004",
+          "title": "PD-L1 Expression Patterns in NSCLC",
+          "title_zh": "非小细胞肺癌中的PD-L1表达模式",
+          "content": "PD-L1 expression varies across NSCLC subtypes and predicts response to immune checkpoint inhibitors. Approximately 30% of NSCLC patients express PD-L1 at TPS ≥50%, while 40% express at TPS 1-49%. Adenocarcinomas tend to have lower PD-L1 expression compared to squamous cell carcinomas. PD-L1 testing by IHC is standard for guiding first-line immunotherapy decisions in driver-negative NSCLC.",
+          "content_zh": "PD-L1表达在非小细胞肺癌亚型间变化，预测对免疫检查点抑制剂的反应。约30%的非小细胞肺癌患者在TPS≥50%时表达PD-L1，而40%在TPS 1-49%时表达。与鳞状细胞癌相比，腺癌往往具有较低的PD-L1表达。通过IHC进行PD-L1检测是指导驱动基因阴性非小细胞肺癌一线免疫治疗决策的标准。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "nsclc_staging": {
+      "description": "非小细胞肺癌的TNM分期系统（第8版）和肺癌特异性分期考虑因素",
+      "entries": [
+        {
+          "id": "LUNG_STAGING_001",
+          "title": "TNM 8th Edition for Lung Cancer",
+          "title_zh": "肺癌TNM第8版分期",
+          "content": "The TNM 8th edition introduced refined tumor size categories and separate staging for cN and pN classifications. T staging now includes five categories: T1 (≤3cm), T2 (>3-5cm), T3 (>5-7cm), T4 (>7cm or invasion), with further subdivisions. N staging distinguishes between ipsilateral peribronchial/hilar nodes (N1) and mediastinal nodes (N2/N3). M staging differentiates single extrathoracic metastasis (M1b) from multiple metastases (M1c).",
+          "content_zh": "TNM第8版引入了精细的肿瘤大小分类和cN与pN分类的单独分期。T分期现在包括五个类别：T1（≤3cm）、T2（>3-5cm）、T3（>5-7cm）、T4（>7cm或侵犯），有进一步细分。N分期区分同侧支气管周围/肺门淋巴结（N1）和纵隔淋巴结（N2/N3）。M分期区分单个胸外转移（M1b）和多个转移（M1c）。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_STAGING_002",
+          "title": "Stage Grouping in NSCLC",
+          "title_zh": "非小细胞肺癌的分期分组",
+          "content": "Stage grouping combines T, N, and M categories to define prognostic groups from Stage I to Stage IV. Stage I includes T1-2 N0 M0 tumors with 5-year survival of 68-92%. Stage III represents locally advanced disease with mediastinal nodal involvement, requiring multimodal therapy. Stage IV encompasses all M1 disease with systemic therapy as the primary treatment approach. Stage migration has occurred with the 8th edition due to refined categorization.",
+          "content_zh": "分期分组结合T、N和M类别来定义从I期到IV期的预后组。I期包括T1-2 N0 M0肿瘤，5年生存率为68-92%。III期代表有纵隔淋巴结受累的局部晚期疾病，需要多模式治疗。IV期包括所有M1疾病，以系统治疗为主要治疗方法。由于分类精细化，第8版发生了分期迁移。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_STAGING_003",
+          "title": "Brain Metastasis in Staging",
+          "title_zh": "分期中的脑转移",
+          "content": "Brain metastases are classified as M1b (single) or M1c (multiple) in the TNM 8th edition. The presence of brain metastases significantly impacts prognosis and treatment selection. Asymptomatic brain metastases may be managed with CNS-penetrant systemic therapy alone. Symptomatic brain metastases typically require local therapy such as stereotactic radiosurgery before or concurrent with systemic treatment.",
+          "content_zh": "在TNM第8版中，脑转移被分类为M1b（单个）或M1c（多个）。脑转移的存在显著影响预后和治疗选择。无症状脑转移可单独用CNS渗透性系统治疗管理。有症状脑转移通常需要在系统治疗之前或同时进行局部治疗，如立体定向放射外科。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "treatment_landscape_1l": {
+      "description": "非小细胞肺癌一线治疗格局，按驱动突变分层",
+      "entries": [
+        {
+          "id": "LUNG_TT1L_001",
+          "title": "First-Line EGFR-Mutant NSCLC Treatment",
+          "title_zh": "EGFR突变型非小细胞肺癌一线治疗",
+          "content": "Third-generation EGFR-TKIs are the preferred first-line treatment for EGFR-mutant advanced NSCLC based on superior progression-free survival and CNS efficacy. These agents demonstrate median PFS of 18-19 months compared to 10-11 months with first-generation TKIs. Third-generation TKIs also show overall survival benefit and improved tolerability profiles. Treatment selection considers mutation subtype, CNS involvement, and patient comorbidities.",
+          "content_zh": "基于更优的无进展生存期和CNS疗效，第三代EGFR-TKI是EGFR突变型晚期非小细胞肺癌的首选一线治疗。与第一代TKI的10-11个月相比，这些药物显示18-19个月的中位PFS。第三代TKI还显示总生存期获益和改善的耐受性特征。治疗选择考虑突变亚型、CNS受累和患者合并症。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT1L_002",
+          "title": "First-Line ALK-Positive NSCLC Treatment",
+          "title_zh": "ALK阳性非小细胞肺癌一线治疗",
+          "content": "Second and third-generation ALK inhibitors have replaced first-generation agents as preferred first-line therapy. These newer agents demonstrate superior CNS penetration and activity against resistance mutations. Median progression-free survival exceeds 3 years with second-generation ALK inhibitors in the first-line setting. Treatment choice balances efficacy, CNS activity, and toxicity profiles across available options.",
+          "content_zh": "第二代和第三代ALK抑制剂已取代第一代药物成为首选一线治疗。这些新型药物显示更优的CNS渗透性和对耐药突变的活性。在一线情况下，第二代ALK抑制剂的中位无进展生存期超过3年。治疗选择在可用选项中平衡疗效、CNS活性和毒性特征。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT1L_003",
+          "title": "First-Line KRAS G12C-Mutant NSCLC Treatment",
+          "title_zh": "KRAS G12C突变型非小细胞肺癌一线治疗",
+          "content": "KRAS G12C-mutant NSCLC is currently treated with chemoimmunotherapy in the first-line setting. Direct KRAS G12C inhibitors are approved in later-line settings following progression on prior therapy. Clinical trials are evaluating KRAS G12C inhibitors combined with immunotherapy or chemotherapy in first-line. Optimal first-line sequencing strategies continue to evolve with emerging data.",
+          "content_zh": "KRAS G12C突变型非小细胞肺癌目前在一线情况下用化疗免疫治疗治疗。直接KRAS G12C抑制剂在先前治疗后进展的后期线中获得批准。临床试验正在评估一线中KRAS G12C抑制剂与免疫治疗或化疗的联合。随着新数据的出现，最佳一线序贯策略继续演变。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SKOULIDIS_KRAS_2019",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT1L_004",
+          "title": "First-Line Driver-Negative NSCLC Treatment",
+          "title_zh": "驱动基因阴性非小细胞肺癌一线治疗",
+          "content": "Driver-negative NSCLC without actionable mutations is managed with chemoimmunotherapy combinations. PD-L1 expression guides treatment intensity, with TPS ≥50% eligible for immunotherapy monotherapy. Platinum-doublet chemotherapy combined with PD-1/PD-L1 inhibitors is standard for most patients. Histology influences chemotherapy backbone selection with pemetrexed for non-squamous and taxane/gemcitabine for squamous.",
+          "content_zh": "无可行动突变的驱动基因阴性非小细胞肺癌用化疗免疫治疗联合管理。PD-L1表达指导治疗强度，TPS≥50%有资格接受免疫治疗单药治疗。铂类双药化疗联合PD-1/PD-L1抑制剂是大多数患者的标准。组织学影响化疗骨干选择，培美曲塞用于非鳞状，紫杉烷/吉西他滨用于鳞状。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT1L_005",
+          "title": "First-Line ROS1-Rearranged NSCLC Treatment",
+          "title_zh": "ROS1重排型非小细胞肺癌一线治疗",
+          "content": "ROS1-rearranged NSCLC is treated with ROS1 inhibitors as first-line therapy. First-generation ROS1 inhibitors demonstrate high response rates exceeding 70% with durable disease control. Second-generation ROS1 inhibitors offer improved CNS activity and activity against resistance mutations. ROS1-positive patients represent a distinct molecular subtype requiring specialized testing and targeted treatment approaches.",
+          "content_zh": "ROS1重排型非小细胞肺癌用ROS1抑制剂作为一线治疗。第一代ROS1抑制剂显示超过70%的高缓解率，具有持久的疾病控制。第二代ROS1抑制剂提供改善的CNS活性和对耐药突变的活性。ROS1阳性患者代表需要专门检测和靶向治疗方法的独特分子亚型。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_PSILOIDIS_ROS1_2018",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "treatment_landscape_2l": {
+      "description": "非小细胞肺癌二线治疗选择和奥希替尼耐药情况下的管理",
+      "entries": [
+        {
+          "id": "LUNG_TT2L_001",
+          "title": "Second-Line After First-Generation EGFR-TKI",
+          "title_zh": "第一代EGFR-TKI后的二线治疗",
+          "content": "Patients progressing on first-generation EGFR-TKIs should undergo re-biopsy or liquid biopsy for resistance mechanism assessment. T790M-positive patients benefit from switching to third-generation EGFR-TKIs. T790M-negative patients may receive platinum-based chemotherapy or continue EGFR-TKI with chemotherapy addition. Resistance profiling guides optimal second-line selection.",
+          "content_zh": "在第一代EGFR-TKI上进展的患者应进行再活检或液体活检以评估耐药机制。T790M阳性患者受益于切换到第三代EGFR-TKI。T790M阴性患者可接受铂类化疗或在EGFR-TKI基础上加用化疗。耐药谱分析指导最佳二线选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT2L_002",
+          "title": "Second-Line After Third-Generation EGFR-TKI",
+          "title_zh": "第三代EGFR-TKI后的二线治疗",
+          "content": "Progression on third-generation EGFR-TKIs requires comprehensive molecular profiling to identify resistance mechanisms. Options include platinum-doublet chemotherapy, antibody-drug conjugates targeting HER3 or c-Met, and clinical trials. Local therapy may be considered for oligoprogressive disease while continuing TKI. No standard targeted therapy exists for C797S-mediated resistance.",
+          "content_zh": "第三代EGFR-TKI进展需要全面的分子谱分析以识别耐药机制。选择包括铂类双药化疗、靶向HER3或c-Met的抗体药物偶联物和临床试验。对于寡进展疾病可考虑局部治疗，同时继续TKI。对于C797S介导的耐药不存在标准靶向治疗。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT2L_003",
+          "title": "Second-Line ALK Inhibitor Sequencing",
+          "title_zh": "二线ALK抑制剂序贯",
+          "content": "ALK inhibitor sequencing depends on prior therapy and resistance mutation profile. Patients progressing on first-generation ALK inhibitors benefit from second or third-generation agents. Resistance mutation testing guides selection among available ALK inhibitors. G1202R mutations require third-generation ALK inhibitors for effective disease control.",
+          "content_zh": "ALK抑制剂序贯取决于既往治疗和耐药突变谱。在第一代ALK抑制剂上进展的患者受益于第二代或第三代药物。耐药突变检测指导可用ALK抑制剂之间的选择。G1202R突变需要第三代ALK抑制剂进行有效疾病控制。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_TT2L_004",
+          "title": "Chemotherapy in Second-Line NSCLC",
+          "title_zh": "二线非小细胞肺癌中的化疗",
+          "content": "Platinum-doublet chemotherapy remains a cornerstone of second-line treatment for driver-negative NSCLC. Docetaxel with or without ramucirumab is a standard second-line option after chemoimmunotherapy failure. Pemetrexed rechallenge may be considered if initial response was durable and treatment-free interval exceeds 6 months. Performance status and prior toxicity guide chemotherapy selection.",
+          "content_zh": "铂类双药化疗仍然是驱动基因阴性非小细胞肺癌二线治疗的基石。多西他赛联合或不联合雷莫芦单抗是化疗免疫治疗失败后的标准二线选择。如果初始反应持久且无治疗间隔超过6个月，可考虑培美曲塞再挑战。体能状态和既往毒性指导化疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "cns_metastasis": {
+      "description": "非小细胞肺癌脑转移的管理，包括发生率、血脑屏障穿透和软脑膜疾病",
+      "entries": [
+        {
+          "id": "LUNG_CNS_001",
+          "title": "Brain Metastasis Incidence in NSCLC",
+          "title_zh": "非小细胞肺癌脑转移发生率",
+          "content": "Brain metastases develop in 30-50% of NSCLC patients during the disease course, with higher rates in adenocarcinoma and driver-mutant subtypes. EGFR-mutant and ALK-rearranged tumors have particularly high CNS tropism exceeding 50% lifetime risk. Brain metastases significantly impact quality of life and neurological function. Early detection through surveillance imaging is critical for optimal management.",
+          "content_zh": "在疾病过程中，30-50%的非小细胞肺癌患者发生脑转移，腺癌和驱动突变亚型的比率更高。EGFR突变型和ALK重排型肿瘤具有特别高的CNS趋向性，终生风险超过50%。脑转移显著影响生活质量和神经功能。通过监测成像早期检测对于最佳管理至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_CNS_002",
+          "title": "Blood-Brain Barrier Penetration",
+          "title_zh": "血脑屏障穿透",
+          "content": "Blood-brain barrier penetration is a critical property for systemic therapies in NSCLC with CNS involvement. First-generation EGFR and ALK inhibitors have limited CNS penetration due to P-glycoprotein efflux. Third-generation TKIs are designed with improved BBB penetration through reduced P-gp substrate affinity. CNS efficacy is now a key consideration in TKI development and selection.",
+          "content_zh": "血脑屏障穿透是伴有CNS受累的非小细胞肺癌系统治疗的关键特性。由于P-糖蛋白外排，第一代EGFR和ALK抑制剂的CNS渗透有限。第三代TKI通过降低P-gp底物亲和力设计为改善BBB穿透。CNS疗效现在是TKI开发和选择的关键考虑因素。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_CNS_003",
+          "title": "Leptomeningeal Disease in NSCLC",
+          "title_zh": "非小细胞肺癌软脑膜疾病",
+          "content": "Leptomeningeal disease occurs in 3-5% of NSCLC patients and carries poor prognosis with median survival of 3-6 months. EGFR-mutant and HER2-positive tumors have higher predisposition to leptomeningeal spread. Diagnosis requires CSF analysis and contrast-enhanced MRI showing leptomeningeal enhancement. High-dose CNS-penetrant TKIs and intrathecal chemotherapy are treatment options.",
+          "content_zh": "软脑膜疾病发生在3-5%的非小细胞肺癌患者中，预后差，中位生存期为3-6个月。EGFR突变型和HER2阳性肿瘤更容易发生软脑膜扩散。诊断需要CSF分析和显示软脑膜增强的对比增强MRI。高剂量CNS渗透性TKI和鞘内化疗是治疗选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_CNS_004",
+          "title": "Intracranial Efficacy Assessment",
+          "title_zh": "颅内疗效评估",
+          "content": "Intracranial efficacy is assessed using modified RANO criteria for brain metastases and RECIST for measurable CNS lesions. CNS objective response rate and CNS progression-free survival are key endpoints in clinical trials. Intracranial disease control is particularly important in driver-mutant NSCLC with long systemic control. Serial MRI monitoring is recommended for patients at high risk of CNS progression.",
+          "content_zh": "颅内疗效使用脑转移的改良RANO标准和可测量CNS病变的RECIST进行评估。CNS客观缓解率和CNS无进展生存期是临床试验的关键终点。颅内疾病控制在具有长期系统控制的驱动突变型非小细胞肺癌中特别重要。建议对CNS进展高风险患者进行系列MRI监测。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_CNS_005",
+          "title": "Local Therapy for Brain Metastases",
+          "title_zh": "脑转移的局部治疗",
+          "content": "Local therapy options include stereotactic radiosurgery, whole-brain radiotherapy, and neurosurgical resection. SRS is preferred for limited brain metastases (1-4 lesions) with high local control rates. WBRT is reserved for extensive brain metastases but carries cognitive toxicity risks. Surgical resection is indicated for large, symptomatic, or diagnostically uncertain lesions.",
+          "content_zh": "局部治疗选择包括立体定向放射外科、全脑放疗和神经外科切除。SRS是有限脑转移（1-4个病变）的首选，具有高局部控制率。WBRT保留用于广泛脑转移，但带有认知毒性风险。手术切除适用于大、有症状或诊断不确定的病变。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "china_epidemiology": {
+      "description": "中国肺癌流行病学特征，包括发病率、从不吸烟者EGFR阳性腺癌特征和城乡差异",
+      "entries": [
+        {
+          "id": "LUNG_CHINA_001",
+          "title": "Lung Cancer as Leading Cancer in China",
+          "title_zh": "肺癌作为中国首要癌症",
+          "content": "Lung cancer is the most commonly diagnosed cancer and leading cause of cancer death in China, accounting for approximately 20% of all cancer cases. Annual incidence exceeds 800,000 new cases with over 700,000 deaths per year. The burden is driven by aging population, historical smoking rates, and environmental exposures. Lung cancer control is a national health priority in China.",
+          "content_zh": "肺癌是中国最常见的诊断癌症和癌症死亡的主要原因，约占所有癌症病例的20%。年发病率超过80万新病例，每年死亡超过70万。负担由人口老龄化、历史吸烟率和环境暴露驱动。肺癌控制是中国的国家健康优先事项。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        },
+        {
+          "id": "LUNG_CHINA_002",
+          "title": "Never-Smoker EGFR-Positive Adenocarcinoma Profile",
+          "title_zh": "从不吸烟者EGFR阳性腺癌特征",
+          "content": "China has a unique epidemiological profile with high rates of lung cancer in never-smokers, particularly women. EGFR mutation frequency in Chinese NSCLC patients is 40-50%, significantly higher than Western populations at 10-15%. Never-smoker adenocarcinoma represents the predominant molecular subtype in Chinese female patients. This profile necessitates universal molecular testing regardless of smoking history.",
+          "content_zh": "中国具有独特的流行病学特征，从不吸烟者（尤其是女性）的肺癌发病率高。中国非小细胞肺癌患者的EGFR突变频率为40-50%，显著高于西方人群的10-15%。从不吸烟腺癌代表中国女性患者的主要分子亚型。这种特征需要普遍进行分子检测，无论吸烟史如何。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024"
+          ]
+        },
+        {
+          "id": "LUNG_CHINA_003",
+          "title": "Age-Standardized Incidence in China",
+          "title_zh": "中国年龄标准化发病率",
+          "content": "Age-standardized incidence rate of lung cancer in China is approximately 50-60 per 100,000 population, with significant gender disparity. Male incidence remains higher due to historical smoking patterns, but female incidence is rising. Urban areas show higher incidence compared to rural regions, reflecting environmental and lifestyle factors. Incidence peaks in the 60-74 age group.",
+          "content_zh": "中国肺癌年龄标准化发病率约为每10万人口50-60例，存在显著的性别差异。由于历史吸烟模式，男性发病率仍然较高，但女性发病率正在上升。与农村地区相比，城市地区显示更高的发病率，反映环境和生活方式因素。发病率在60-74岁年龄组达到峰值。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN"
+          ]
+        },
+        {
+          "id": "LUNG_CHINA_004",
+          "title": "Urban vs Rural Differences",
+          "title_zh": "城乡差异",
+          "content": "Urban areas in China demonstrate 20-30% higher lung cancer incidence compared to rural regions. This disparity reflects differences in air pollution exposure, occupational hazards, and lifestyle factors. Rural areas face challenges in early detection and access to molecular testing and targeted therapies. Healthcare infrastructure development aims to reduce urban-rural outcome gaps.",
+          "content_zh": "中国城市地区的肺癌发病率比农村地区高20-30%。这种差异反映了空气污染暴露、职业危害和生活方式因素的差异。农村地区在早期检测和获得分子检测及靶向治疗方面面临挑战。医疗基础设施发展旨在缩小城乡结果差距。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN",
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_CHINA_005",
+          "title": "Smoking and Environmental Risk Factors",
+          "title_zh": "吸烟和环境危险因素",
+          "content": "Tobacco smoking remains the primary risk factor for lung cancer in Chinese men, with over 50% male smoking rate historically. Indoor air pollution from coal burning and cooking fumes contributes to lung cancer risk in never-smokers, particularly women. Occupational exposures including asbestos, arsenic, and silica add to the burden. Secondhand smoke exposure affects a large proportion of the population.",
+          "content_zh": "烟草吸烟仍然是中国男性肺癌的主要危险因素，历史上男性吸烟率超过50%。燃煤和烹饪油烟造成的室内空气污染导致从不吸烟者（尤其是女性）的肺癌风险。包括石棉、砷和二氧化硅在内的职业暴露增加了负担。二手烟暴露影响很大一部分人口。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_CHEN_CHINA_CANCER_2024",
+            "ONCO_SRC_GLOBOCAN_2020"
+          ]
+        }
+      ]
+    },
+    "biomarker_testing_lung": {
+      "description": "肺癌生物标志物检测方法，包括EGFR检测、ALK检测、PD-L1评分和液体活检",
+      "entries": [
+        {
+          "id": "LUNG_BIO_001",
+          "title": "EGFR Testing Methods",
+          "title_zh": "EGFR检测方法",
+          "content": "EGFR mutation testing is mandatory for all advanced non-squamous NSCLC patients in China. PCR-based methods provide rapid results for common mutations including Ex19del and L858R. NGS panels offer comprehensive mutation profiling including rare variants and co-mutations. Testing turnaround time should not exceed 7-10 days to avoid treatment delays.",
+          "content_zh": "EGFR突变检测对中国所有晚期非鳞状非小细胞肺癌患者是强制性的。基于PCR的方法为常见突变（包括Ex19del和L858R）提供快速结果。NGS panel提供全面的突变谱分析，包括罕见变异和共突变。检测周转时间不应超过7-10天以避免治疗延迟。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN",
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_BIO_002",
+          "title": "ALK Testing Approaches",
+          "title_zh": "ALK检测方法",
+          "content": "ALK testing can be performed through IHC, FISH, or NGS methodologies with high concordance. IHC using D5F3 clone is highly sensitive and specific as a screening tool. FISH remains the gold standard for ALK rearrangement detection. NGS provides simultaneous detection of ALK and other driver mutations in a single assay.",
+          "content_zh": "ALK检测可通过IHC、FISH或NGS方法进行，具有高度一致性。使用D5F3克隆的IHC作为筛查工具具有高度敏感性和特异性。FISH仍然是ALK重排检测的金标准。NGS在一次检测中提供ALK和其他驱动突变的同时检测。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SORIA_ALK_REVIEW_2017",
+            "ONCO_SRC_NCCN_BIOMARKER_2025"
+          ]
+        },
+        {
+          "id": "LUNG_BIO_003",
+          "title": "PD-L1 TPS Scoring",
+          "title_zh": "PD-L1 TPS评分",
+          "content": "PD-L1 testing by IHC uses tumor proportion score (TPS) to quantify expression on tumor cells. TPS ≥50% indicates high expression eligible for immunotherapy monotherapy. TPS 1-49% represents intermediate expression supporting chemoimmunotherapy combinations. Different antibody clones (22C3, 28-8, SP142, SP263) have varying approval statuses across indications.",
+          "content_zh": "通过IHC进行PD-L1检测使用肿瘤比例评分（TPS）来量化肿瘤细胞上的表达。TPS≥50%表示有资格接受免疫治疗单药治疗的高表达。TPS 1-49%代表支持化疗免疫治疗联合的中等表达。不同抗体克隆（22C3、28-8、SP142、SP263）在不同适应症中具有不同的批准状态。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_BRAHMER_PD_L1_2018",
+            "ONCO_SRC_NCCN_BIOMARKER_2025"
+          ]
+        },
+        {
+          "id": "LUNG_BIO_004",
+          "title": "Tumor Mutational Burden",
+          "title_zh": "肿瘤突变负荷",
+          "content": "TMB quantifies the number of somatic mutations per megabase of tumor DNA. High TMB (≥10 mut/Mb) correlates with improved response to immune checkpoint inhibitors. TMB assessment requires NGS with adequate coverage and validated bioinformatics pipelines. TMB is more commonly elevated in squamous cell carcinoma and smoking-associated tumors.",
+          "content_zh": "TMB量化每兆碱基肿瘤DNA的体细胞突变数量。高TMB（≥10 mut/Mb）与对免疫检查点抑制剂的改善反应相关。TMB评估需要具有足够覆盖范围和经过验证的生物信息学流程的NGS。TMB在鳞状细胞癌和吸烟相关肿瘤中更常升高。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_GIBNEY_TMB_2017",
+            "ONCO_SRC_NCCN_BIOMARKER_2025"
+          ]
+        },
+        {
+          "id": "LUNG_BIO_005",
+          "title": "Liquid Biopsy and ctDNA",
+          "title_zh": "液体活检和ctDNA",
+          "content": "Liquid biopsy using circulating tumor DNA provides a minimally invasive option for molecular profiling. ctDNA testing is particularly useful when tissue is insufficient or re-biopsy is not feasible. Sensitivity of liquid biopsy ranges from 60-80% for EGFR mutations depending on tumor burden. Positive liquid biopsy results are actionable, but negative results require tissue confirmation.",
+          "content_zh": "使用循环肿瘤DNA的液体活检为分子谱分析提供微创选择。当组织不足或再活检不可行时，ctDNA检测特别有用。根据肿瘤负荷，液体活检对EGFR突变的敏感性范围为60-80%。阳性液体活检结果可操作，但阴性结果需要组织确认。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN"
+          ]
+        },
+        {
+          "id": "LUNG_BIO_006",
+          "title": "Comprehensive Genomic Profiling",
+          "title_zh": "全面基因组谱分析",
+          "content": "Comprehensive genomic profiling using large NGS panels enables simultaneous detection of multiple driver mutations and resistance mechanisms. CGP identifies co-mutations that may influence treatment response and prognosis. Testing should include DNA and RNA sequencing to detect gene fusions and splice variants. Turnaround time and tissue requirements are key practical considerations.",
+          "content_zh": "使用大型NGS panel的全面基因组谱分析能够同时检测多种驱动突变和耐药机制。CGP识别可能影响治疗反应和预后的共突变。检测应包括DNA和RNA测序以检测基因融合和剪接变体。周转时间和组织要求是关键的实际考虑因素。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "EX20INS_DETECTION_CN",
+            "PACC_CONSENSUS_2025"
+          ]
+        }
+      ]
+    },
+    "perioperative": {
+      "description": "围手术期治疗演变，包括新辅助/辅助治疗、辅助EGFR-TKI和辅助免疫治疗",
+      "entries": [
+        {
+          "id": "LUNG_PERI_001",
+          "title": "Neoadjuvant Therapy Evolution",
+          "title_zh": "新辅助治疗演变",
+          "content": "Neoadjuvant chemoimmunotherapy has transformed resectable NSCLC treatment with significant pathological complete response rates. Trials demonstrate improved event-free survival with neoadjuvant PD-1/PD-L1 inhibitors plus chemotherapy. Pathological response assessment guides adjuvant therapy decisions post-surgery. Neoadjuvant approach enables in vivo sensitivity testing and early micrometastasis treatment.",
+          "content_zh": "新辅助化疗免疫治疗改变了可切除非小细胞肺癌治疗，具有显著的病理完全缓解率。试验显示新辅助PD-1/PD-L1抑制剂加化疗改善了无事件生存期。病理反应评估指导术后辅助治疗决策。新辅助方法实现体内敏感性测试和早期微转移治疗。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_PERI_002",
+          "title": "Adjuvant EGFR-TKI Therapy",
+          "title_zh": "辅助EGFR-TKI治疗",
+          "content": "Adjuvant EGFR-TKI therapy is recommended for completely resected EGFR-mutant Stage IB-IIIA NSCLC. Third-generation EGFR-TKIs demonstrate superior disease-free survival compared to first-generation agents. Treatment duration typically extends to 3 years based on clinical trial protocols. Adjuvant TKI reduces recurrence risk particularly in CNS and distant metastases.",
+          "content_zh": "辅助EGFR-TKI治疗推荐用于完全切除的EGFR突变型IB-IIIA期非小细胞肺癌。与第一代药物相比，第三代EGFR-TKI显示更优的无病生存期。基于临床试验方案，治疗持续时间通常延长至3年。辅助TKI降低复发风险，特别是在CNS和远处转移中。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_PERI_003",
+          "title": "Adjuvant Immunotherapy",
+          "title_zh": "辅助免疫治疗",
+          "content": "Adjuvant immunotherapy with PD-1/PD-L1 inhibitors is approved for Stage IB-IIIA NSCLC following complete resection and chemotherapy. PD-L1 expression may guide patient selection though benefit is seen across expression levels. Treatment duration is typically 1 year following standard dosing schedules. Adjuvant IO improves disease-free survival in driver-negative populations.",
+          "content_zh": "PD-1/PD-L1抑制剂的辅助免疫治疗在完全切除和化疗后批准用于IB-IIIA期非小细胞肺癌。PD-L1表达可能指导患者选择，尽管在所有表达水平中都观察到获益。治疗持续时间在标准给药方案后通常为1年。辅助IO改善驱动基因阴性人群中的无病生存期。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_PERI_004",
+          "title": "Perioperative Biomarker Testing",
+          "title_zh": "围手术期生物标志物检测",
+          "content": "Molecular testing is essential in the perioperative setting to guide adjuvant therapy selection. EGFR, ALK, and PD-L1 testing should be performed on resection specimens. Molecular status determines eligibility for targeted adjuvant therapies versus immunotherapy. Rapid turnaround is critical to initiate adjuvant therapy within the recommended 8-12 week postoperative window.",
+          "content_zh": "分子检测在围手术期环境中至关重要，以指导辅助治疗选择。应在切除标本上进行EGFR、ALK和PD-L1检测。分子状态决定靶向辅助治疗与免疫治疗的资格。快速周转对于在推荐的术后8-12周窗口内开始辅助治疗至关重要。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_NSCLC_2025",
+            "ONCO_SRC_CSCO_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "ros1_pathway": {
+      "description": "ROS1重排在非小细胞肺癌中的特征和治疗策略",
+      "entries": [
+        {
+          "id": "LUNG_ROS1_001",
+          "title": "ROS1 Rearrangement Characteristics",
+          "title_zh": "ROS1重排特征",
+          "content": "ROS1 rearrangements occur in 1-2% of NSCLC patients and define a distinct molecular subtype. ROS1-positive patients share clinical characteristics with ALK-positive disease including younger age and never-smoker status. Multiple fusion partners exist with CD74-ROS1 being most common. ROS1 inhibitors demonstrate high response rates exceeding 70% in treatment-naive patients.",
+          "content_zh": "ROS1重排发生在1-2%的非小细胞肺癌患者中，定义了独特的分子亚型。ROS1阳性患者与ALK阳性疾病共享临床特征，包括较年轻年龄和从不吸烟状态。存在多种融合伴侣，CD74-ROS1最常见。ROS1抑制剂在未治疗患者中显示超过70%的高缓解率。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_ROS1_002",
+          "title": "ROS1 Resistance Mechanisms",
+          "title_zh": "ROS1耐药机制",
+          "content": "Acquired resistance to ROS1 inhibitors develops through on-target mutations including G2032R and solvent front mutations. G2032R confers resistance to first-generation ROS1 inhibitors but remains sensitive to next-generation agents. Bypass mechanisms including MET amplification and KRAS mutations also contribute to resistance. Resistance profiling guides selection of subsequent ROS1-targeted therapy.",
+          "content_zh": "对ROS1抑制剂的获得性耐药通过靶点突变发展，包括G2032R和溶剂前沿突变。G2032R对第一代ROS1抑制剂赋予耐药性，但对下一代药物保持敏感。包括MET扩增和KRAS突变在内的旁路机制也导致耐药。耐药谱分析指导后续ROS1靶向治疗的选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_PSILOIDIS_ROS1_2018",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_ROS1_003",
+          "title": "ROS1 Inhibitor Development",
+          "title_zh": "ROS1抑制剂开发",
+          "content": "First-generation ROS1 inhibitors established efficacy with durable disease control in ROS1-positive NSCLC. Next-generation ROS1 inhibitors offer improved CNS penetration and activity against resistance mutations. Sequential therapy with different generation inhibitors extends disease control duration. CNS metastases are common in ROS1-positive disease requiring CNS-active agents.",
+          "content_zh": "第一代ROS1抑制剂在ROS1阳性非小细胞肺癌中确立了疗效，具有持久的疾病控制。下一代ROS1抑制剂提供改善的CNS渗透性和对耐药突变的活性。使用不同代抑制剂的序贯治疗延长疾病控制持续时间。CNS转移在ROS1阳性疾病中常见，需要CNS活性药物。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_PSILOIDIS_ROS1_2018",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "ret_pathway": {
+      "description": "RET融合在非小细胞肺癌中的特征和治疗",
+      "entries": [
+        {
+          "id": "LUNG_RET_001",
+          "title": "RET Fusion in NSCLC",
+          "title_zh": "非小细胞肺癌中的RET融合",
+          "content": "RET fusions occur in 1-2% of NSCLC patients with KIF5B-RET being the most common fusion partner. RET-positive tumors share clinical features with other driver subtypes including adenocarcinoma histology and never-smoker status. Selective RET inhibitors demonstrate superior efficacy compared to multikinase inhibitors with lower toxicity. RET testing is recommended as part of comprehensive molecular profiling.",
+          "content_zh": "RET融合发生在1-2%的非小细胞肺癌患者中，KIF5B-RET是最常见的融合伴侣。RET阳性肿瘤与其他驱动亚型共享临床特征，包括腺癌组织学和从不吸烟状态。与多激酶抑制剂相比，选择性RET抑制剂显示更优的疗效，毒性更低。推荐RET检测作为全面分子谱分析的一部分。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_DRILON_RET_2018",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_RET_002",
+          "title": "RET Inhibitor Efficacy",
+          "title_zh": "RET抑制剂疗效",
+          "content": "Selective RET inhibitors achieve objective response rates exceeding 70% in treatment-naive RET-fusion positive NSCLC. These agents demonstrate meaningful CNS activity with intracranial response rates over 50%. Duration of response typically exceeds 2 years with favorable tolerability profiles. RET inhibitors have become standard of care for RET-positive advanced NSCLC.",
+          "content_zh": "选择性RET抑制剂在未治疗的RET融合阳性非小细胞肺癌中实现超过70%的客观缓解率。这些药物显示有意义的CNS活性，颅内缓解率超过50%。缓解持续时间通常超过2年，具有良好的耐受性特征。RET抑制剂已成为RET阳性晚期非小细胞肺癌的标准治疗。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_DRILON_RET_2018",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "met_exon14": {
+      "description": "MET外显子14跳跃突变在非小细胞肺癌中的特征",
+      "entries": [
+        {
+          "id": "LUNG_MET_001",
+          "title": "MET Exon 14 Skipping Mutation",
+          "title_zh": "MET外显子14跳跃突变",
+          "content": "MET exon 14 skipping mutations occur in 3-4% of NSCLC cases and result in MET protein stabilization and activation. These mutations are more common in older patients and sarcomatoid carcinoma histology. MET inhibitors demonstrate significant efficacy in METex14-skipping NSCLC with response rates of 40-50%. Testing requires NGS or specific PCR assays capable of detecting splice variants.",
+          "content_zh": "MET外显子14跳跃突变发生在3-4%的非小细胞肺癌病例中，导致MET蛋白稳定和激活。这些突变在老年患者和肉瘤样癌组织学中更常见。MET抑制剂在METex14跳跃型非小细胞肺癌中显示显著疗效，缓解率为40-50%。检测需要能够检测剪接变体的NGS或特异性PCR检测。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SABARI_MET_2021",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        },
+        {
+          "id": "LUNG_MET_002",
+          "title": "MET-Directed Therapy",
+          "title_zh": "MET导向治疗",
+          "content": "MET inhibitors are approved for METex14-skipping NSCLC in both treatment-naive and previously treated settings. Type I and Type II MET inhibitors target different conformational states of the MET kinase. Resistance mechanisms include MET amplification, secondary mutations, and bypass pathway activation. Ongoing trials explore combination strategies to enhance efficacy and overcome resistance.",
+          "content_zh": "MET抑制剂批准用于METex14跳跃型非小细胞肺癌，在未治疗和既往治疗情况下均可使用。I型和II型MET抑制剂靶向MET激酶的不同构象状态。耐药机制包括MET扩增、继发突变和旁路通路激活。正在进行的试验探索联合策略以增强疗效和克服耐药。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_SABARI_MET_2021",
+            "ONCO_SRC_NCCN_NSCLC_2025"
+          ]
+        }
+      ]
+    },
+    "her2_alterations": {
+      "description": "HER2改变在非小细胞肺癌中的特征和治疗策略",
+      "entries": [
+        {
+          "id": "LUNG_HER2_001",
+          "title": "HER2 Mutations in NSCLC",
+          "title_zh": "非小细胞肺癌中的HER2突变",
+          "content": "HER2 mutations occur in 2-4% of NSCLC cases, predominantly in adenocarcinomas and never-smokers. Exon 20 insertions represent the most common HER2 alteration in lung cancer. HER2-mutant tumors demonstrate distinct biology from HER2-amplified breast cancer. Antibody-drug conjugates targeting HER2 have shown promising activity in HER2-mutant NSCLC.",
+          "content_zh": "HER2突变发生在2-4%的非小细胞肺癌病例中，主要在腺癌和从不吸烟者中。20号外显子插入代表肺癌中最常见的HER2改变。HER2突变肿瘤显示与HER2扩增型乳腺癌不同的生物学特性。靶向HER2的抗体药物偶联物在HER2突变型非小细胞肺癌中显示有希望的活性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        },
+        {
+          "id": "LUNG_HER2_002",
+          "title": "HER2-Targeted Approaches",
+          "title_zh": "HER2靶向方法",
+          "content": "HER2-targeted therapy in NSCLC has evolved from tyrosine kinase inhibitors to antibody-drug conjugates. ADCs deliver cytotoxic payloads specifically to HER2-expressing tumor cells with improved therapeutic index. HER2 mutations confer sensitivity to HER2-directed ADCs regardless of expression level. Biomarker development continues to refine patient selection for HER2-targeted therapies.",
+          "content_zh": "非小细胞肺癌中的HER2靶向治疗已从酪氨酸激酶抑制剂演变为抗体药物偶联物。ADC将细胞毒性载荷特异性递送到HER2表达肿瘤细胞，具有改善的治疗指数。无论表达水平如何，HER2突变赋予对HER2导向ADC的敏感性。生物标志物开发继续完善HER2靶向治疗的患者选择。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "PACC_CONSENSUS_2025"
+          ]
+        }
+      ]
+    },
+    "immunotherapy_biomarkers": {
+      "description": "免疫治疗生物标志物在非小细胞肺癌中的应用",
+      "entries": [
+        {
+          "id": "LUNG_IOBIO_001",
+          "title": "PD-L1 as Predictive Biomarker",
+          "title_zh": "PD-L1作为预测性生物标志物",
+          "content": "PD-L1 expression by IHC is the most validated predictive biomarker for immune checkpoint inhibitor benefit in NSCLC. High PD-L1 expression (TPS ≥50%) predicts greater benefit from immunotherapy monotherapy. However, patients with low or negative PD-L1 still derive benefit from chemoimmunotherapy combinations. PD-L1 testing standardization remains an ongoing challenge across platforms.",
+          "content_zh": "通过IHC检测的PD-L1表达是NSCLC中免疫检查点抑制剂获益的最经验证的预测性生物标志物。高PD-L1表达（TPS≥50%）预测免疫治疗单药治疗的更大获益。然而，PD-L1低或阴性的患者仍从化疗免疫治疗联合中获益。PD-L1检测标准化仍然是各平台持续的挑战。",
+          "origin_layer": "L3",
+          "source_ids": []
+        },
+        {
+          "id": "LUNG_IOBIO_002",
+          "title": "Emerging Immunotherapy Biomarkers",
+          "title_zh": "新兴免疫治疗生物标志物",
+          "content": "Emerging biomarkers include gene expression profiling, immune cell signatures, and microbiome composition. T cell-inflamed gene expression profiles correlate with improved immunotherapy response. Peripheral blood biomarkers including ctDNA dynamics show promise for early response assessment. Multi-parametric approaches combining multiple biomarkers may enhance predictive accuracy.",
+          "content_zh": "新兴生物标志物包括基因表达谱、免疫细胞特征和微生物组组成。T细胞炎症基因表达谱与改善的免疫治疗反应相关。包括ctDNA动态在内的外周血生物标志物显示早期反应评估的前景。结合多种生物标志物的多参数方法可能增强预测准确性。",
+          "origin_layer": "L3",
+          "source_ids": []
+        }
+      ]
+    },
+    "quality_of_life": {
+      "description": "非小细胞肺癌患者的生活质量考虑因素和支持治疗",
+      "entries": [
+        {
+          "id": "LUNG_QOL_001",
+          "title": "Symptom Management in Advanced NSCLC",
+          "title_zh": "晚期非小细胞肺癌的症状管理",
+          "content": "Symptom burden in advanced NSCLC includes dyspnea, cough, fatigue, and pain requiring comprehensive management. Early palliative care integration improves quality of life and may extend survival. Targeted therapies generally offer better tolerability compared to cytotoxic chemotherapy. Proactive symptom monitoring enables timely intervention and treatment optimization.",
+          "content_zh": "晚期非小细胞肺癌的症状负担包括呼吸困难、咳嗽、疲劳和疼痛，需要综合管理。早期姑息治疗整合改善生活质量，并可能延长生存期。与细胞毒性化疗相比，靶向治疗通常提供更好的耐受性。主动症状监测实现及时干预和治疗优化。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_SUPPORTIVE_2025",
+            "ONCO_SRC_CSCO_SUPPORTIVE_2025"
+          ]
+        },
+        {
+          "id": "LUNG_QOL_002",
+          "title": "Treatment-Related Adverse Events",
+          "title_zh": "治疗相关不良事件",
+          "content": "EGFR-TKIs commonly cause dermatological toxicity, diarrhea, and paronychia requiring supportive care management. Immune-related adverse events from checkpoint inhibitors affect multiple organ systems requiring immunosuppression. Understanding toxicity profiles guides patient education and early intervention strategies. Dose modifications and treatment interruptions balance efficacy with tolerability.",
+          "content_zh": "EGFR-TKI通常引起需要支持治疗管理的皮肤毒性、腹泻和甲沟炎。检查点抑制剂的免疫相关不良事件影响多个器官系统，需要免疫抑制。了解毒性特征指导患者教育和早期干预策略。剂量调整和治疗中断平衡疗效与耐受性。",
+          "origin_layer": "L3",
+          "source_ids": [
+            "ONCO_SRC_NCCN_SUPPORTIVE_2025",
+            "ONCO_SRC_CSCO_SUPPORTIVE_2025"
+          ]
+        }
+      ]
+    }
+  }
+}

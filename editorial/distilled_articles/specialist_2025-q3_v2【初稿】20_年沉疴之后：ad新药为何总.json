@@ -1,0 +1,63 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] V2【初稿】20 年沉疴之后：AD新药为何总有ARIA-H 风险？是什么阻碍了抗Aβ药物“高效又安全”？.docx",
+    "source_key": "SRC-HIST-2025-Q3_V2【初稿】20_年沉疴之后：AD新药为何总",
+    "asset_key": "AST-DOCX-2025-Q3_V2【初稿】20_年沉疴之后：AD新药为何总",
+    "content_hash": "938c8c8ff869b884",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.213264",
+    "source_size_bytes": 1434020
+  },
+  "metadata": {
+    "title": "V2【初稿】20 年沉疴之后：AD新药为何总有ARIA-H 风险？是什么阻碍了抗Aβ药物“高效又安全”？",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q3",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 重磅研究/突破性发现",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 研究方向建议",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "研究结果明确了7种mAbs诱发ARIA-H风险的等级差异，从高到低排序为：",
+      "换言之，多奈单抗的ARIA-H发生风险最高。",
+      "多奈单抗的ARIA发生风险增加3.2倍，原因何在？",
+      "研究指出，多奈单抗的ARIA-H发生风险较部分低风险药物增加3.2倍，结合多奈单抗治疗的机制特点以及上述研究结论，我们可以对此给出一些合理的解释。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": [
+    "研究结果明确了7种mAbs诱发ARIA-H风险的等级差异，从高到低排序为：",
+    "这一数据结果在此前研究中也有证实。今年3月，一项发表于JAMANeurology的针对多奈单抗早期症状性AD患者（placebo对照试验）的亚组安全性分析显示：ARIA-H在多奈单抗组发生率为31.3%，而安慰剂组为13.0%[2]。相较而言，Lecanemab的ARIA-H发生率为17%对9%（安慰剂组）[3]。",
+    "研究指出，多奈单抗的ARIA-H发生风险较部分低风险药物增加3.2倍，结合多奈单抗治疗的机制特点以及上述研究结论，我们可以对此给出一些合理的解释。"
+  ]
+}

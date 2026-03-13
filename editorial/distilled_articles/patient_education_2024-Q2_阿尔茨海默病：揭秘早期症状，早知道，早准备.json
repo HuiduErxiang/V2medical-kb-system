@@ -1,0 +1,60 @@
+{
+  "distillation_manifest": {
+    "batch_id": "H005",
+    "source_file": "D:\\汇度编辑部1\\写作知识库\\medical_kb_system\\source_ingestion\\raw_documents\\historical_articles\\患者教育\\叙事_反思\\[2024-Q2] 阿尔茨海默病：揭秘早期症状，早知道，早准备.docx",
+    "content_hash": "08c3256574594d9d",
+    "distilled_at": "2026-03-10T03:56:06.664098",
+    "distiller": "H005 Patient Education Distiller"
+  },
+  "metadata": {
+    "title": "阿尔茨海默病：揭秘早期症状，早知道，早准备",
+    "content_type": "叙事_反思",
+    "publication_quarter": "2024-Q2",
+    "word_count": 1946,
+    "source_file": "[2024-Q2] 阿尔茨海默病：揭秘早期症状，早知道，早准备.docx"
+  },
+  "distilled_content": {
+    "audience": "患者教育",
+    "register_level": "R4",
+    "narrative_patterns": [
+      "emotional hooks",
+      "patient journey arcs",
+      "hope narratives"
+    ],
+    "rhetoric_blocks": [
+      "reassurance structures",
+      "fear mitigation"
+    ],
+    "hook_patterns": [
+      "relatable scenarios",
+      "symptom stories",
+      "family impact"
+    ],
+    "risk_disclosure_patterns": [
+      "how risks are explained accessibly"
+    ],
+    "cta_patterns": [
+      "encouragement to seek care",
+      "discussion with doctor"
+    ],
+    "simplification_techniques": [
+      "how complex concepts are made accessible"
+    ],
+    "emotional_temperature": [
+      "empathetic",
+      "hopeful",
+      "cautious"
+    ]
+  },
+  "key_messages": [
+    "目前，首款针对阿尔茨海默病疾病潜在病因——β淀粉样蛋白沉积的药物仑卡奈单抗已经获批上市，种药物旨在通...。",
+    "阿尔茨海默病：揭秘十大症状，早知道，早准备\n您是否注意到身边的长辈出现记忆力逐渐减退、情绪波动或行为...。",
+    "但请放心，早期识别和干预可以有效延缓病情进展，提升患者的生活质量。",
+    "阿尔茨海默病：揭秘十大症状，早知道，早准备\n您是否注意到身边的长辈出现记忆力逐渐减退、情绪波动或行为...。",
+    "目前，首款针对阿尔茨海默病疾病潜在病因——β淀粉样蛋白沉积的药物仑卡奈单抗已经获批上市，种药物旨在通...。"
+  ],
+  "accessibility_notes": [
+    "句子长度适中"
+  ],
+  "raw_text_preview": "阿尔茨海默病：揭秘十大症状，早知道，早准备\n您是否注意到身边的长辈出现记忆力逐渐减退、情绪波动或行为异常？这些可能不仅仅是岁月的痕迹，而是阿尔茨海默病的早期信号。与日常老年衰退的自然过程相比，阿尔茨海默病带来的变化更为复杂。\n阿尔茨海默病，远不止“健忘”那么简单。它是一场身体和精神的双重挑战，不仅影响患者的生活质量，也给家庭和社会带来沉重负担。为了帮助您更好地了解和识别这一疾病，我们需要了解阿尔茨..."
+}

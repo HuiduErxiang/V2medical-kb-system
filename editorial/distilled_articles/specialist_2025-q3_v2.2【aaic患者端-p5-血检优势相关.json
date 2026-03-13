@@ -1,0 +1,61 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q3] V2.2【AAIC患者端-P5-血检优势相关】20250810-JMM.docx",
+    "source_key": "SRC-HIST-2025-Q3_V2.2【AAIC患者端-P5-血检优势相关",
+    "asset_key": "AST-DOCX-2025-Q3_V2.2【AAIC患者端-P5-血检优势相关",
+    "content_hash": "7c00e4842cb3a5f0",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:09.093213",
+    "source_size_bytes": 26208
+  },
+  "metadata": {
+    "title": "V2.2【AAIC患者端-P5-血检优势相关】20250810-JMM",
+    "content_type": "主张_证据",
+    "publication_quarter": "2025-Q3",
+    "version": "V2",
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "hook: 重磅研究/突破性发现",
+      "hook: 问题背景引入",
+      "hook: 问题背景引入",
+      "story_arc: 研究发现-结论推导",
+      "story_arc: 对比分析"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [
+      "opening: 强调重要性"
+    ],
+    "risk_disclosure_patterns": [],
+    "CTA_patterns": [
+      "cta: 建议性行动",
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [
+      "引言：",
+      "在人口老龄化背景下，阿尔茨海默病（AD）已成为我国不容忽视的健康难题，给患者、家庭和社会带来了沉重的负担。",
+      "摆脱昂贵、有创检查！血液检查就能确定有没有患AD？",
+      "美国阿尔茨海默病协会认为，BBM检测有助于减少诊断流程中的潜在瓶颈，缩短诊断时间。这对于存在不可逆病理进程的阿尔茨海默病而言是意义重大的，有助于进一步推动AD的早诊早治。",
+      "仑卡奈单抗显著改善AD患者BBM，检测和治疗的窗口期更广",
+      "除了诊断方面的前瞻性，美国阿尔茨海默病协会还提到，BBM检测在DMT的疗效评估及AD的预后上也有巨大潜力。",
+      "AAIC公布仑卡奈单抗真实治疗经验，BBM检测助力AD早诊早治",
+      "AAIC大会上，许多来自世界各地的学者分享了近两年来仑卡奈单抗治疗AD患者的宝贵经验。"
+    ],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析",
+      "tone: 指导性"
+    ]
+  },
+  "key_messages": []
+}

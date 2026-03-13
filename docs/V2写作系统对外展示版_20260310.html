@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V2 医学写作系统 · 对外展示版</title>
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --paper: rgba(255, 252, 246, 0.92);
+      --ink: #1f1b17;
+      --muted: #6a5e51;
+      --line: rgba(75, 60, 42, 0.15);
+      --teal: #0f766e;
+      --teal-soft: rgba(15, 118, 110, 0.10);
+      --navy: #18324d;
+      --navy-soft: rgba(24, 50, 77, 0.10);
+      --rust: #8b3a2e;
+      --rust-soft: rgba(139, 58, 46, 0.10);
+      --gold: #b98a2f;
+      --gold-soft: rgba(185, 138, 47, 0.12);
+      --shadow: 0 26px 60px rgba(44, 31, 18, 0.12);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 22%),
+        radial-gradient(circle at 84% 12%, rgba(185, 138, 47, 0.10), transparent 20%),
+        radial-gradient(circle at right bottom, rgba(24, 50, 77, 0.08), transparent 26%),
+        var(--bg);
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+    }
+
+    .page {
+      width: min(1240px, calc(100vw - 30px));
+      margin: 24px auto 56px;
+    }
+
+    .hero,
+    .section,
+    .evidence {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+      filter: blur(8px);
+    }
+
+    .hero::before {
+      width: 260px;
+      height: 260px;
+      top: -100px;
+      right: -70px;
+      background: rgba(15, 118, 110, 0.08);
+    }
+
+    .hero::after {
+      width: 220px;
+      height: 220px;
+      bottom: -90px;
+      left: -50px;
+      background: rgba(139, 58, 46, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--navy-soft);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    h1, h2, h3 {
+      font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 900px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.92;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .summary-card,
+    .card,
+    .timeline-step {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(246, 240, 231, 0.82));
+    }
+
+    .summary-card,
+    .card {
+      padding: 18px;
+    }
+
+    .summary-card h3,
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .summary-card p,
+    .card p,
+    .card li,
+    .timeline-step p,
+    .section > p,
+    .evidence li {
+      color: var(--muted);
+      line-height: 1.82;
+    }
+
+    .section {
+      margin-top: 18px;
+      padding: 26px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .section > p {
+      margin: 0 0 18px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cards.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cards.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-step {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .timeline-no {
+      display: grid;
+      place-items: center;
+      width: 74px;
+      height: 74px;
+      border-radius: 22px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .timeline-step h3 {
+      margin: 2px 0 8px;
+      font-size: 22px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.teal { background: var(--teal-soft); color: var(--teal); }
+    .tag.navy { background: var(--navy-soft); color: var(--navy); }
+    .tag.rust { background: var(--rust-soft); color: var(--rust); }
+    .tag.gold { background: var(--gold-soft); color: #8b6420; }
+
+    .quote {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--gold);
+      border-radius: 20px;
+      background: rgba(185, 138, 47, 0.09);
+      color: #5e4921;
+      line-height: 1.9;
+    }
+
+    .evidence {
+      margin-top: 18px;
+      padding: 18px 20px;
+    }
+
+    .evidence h3 {
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .evidence ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 980px) {
+      .cards.cols-3,
+      .cards.cols-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100vw - 18px, 100%);
+        margin: 16px auto 36px;
+      }
+
+      .hero,
+      .section {
+        padding: 20px;
+      }
+
+      .timeline-step {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-no {
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">外部展示版</div>
+      <h1>V2 医学写作系统</h1>
+      <p>
+        这是一套面向医学内容生产的写作系统。它的目标不是简单把素材堆成文章，而是先把写作任务定义清楚，
+        再从现有知识和证据中选择可用内容，生成稳定的写作方案，最后交付结果并自动留档。
+      </p>
+      <div class="summary-grid">
+        <article class="summary-card">
+          <h3>它解决什么问题</h3>
+          <p>把“需求不清、证据散落、写法不稳、过程不可追溯”这几类常见问题收进同一条生产链里。</p>
+        </article>
+        <article class="summary-card">
+          <h3>它的核心特点</h3>
+          <p>先定任务，再选证据；先排结构，再交付内容；交付后自动留档，方便回查问题。</p>
+        </article>
+        <article class="summary-card">
+          <h3>它适合做什么</h3>
+          <p>适合结构清晰、证据依赖强、需要长期复用和追溯的医学写作任务。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>一篇文章是怎么进入系统的</h2>
+      <p>对外看，一篇文章进入系统后，会经历下面这 6 个动作。</p>
+      <div class="timeline">
+        <article class="timeline-step">
+          <div class="timeline-no">1</div>
+          <div>
+            <h3>明确任务</h3>
+            <p>先确认这次写什么、写给谁、交付什么、属于哪个项目。这一步的重点是把模糊需求变成清晰任务。</p>
+          </div>
+        </article>
+        <article class="timeline-step">
+          <div class="timeline-no">2</div>
+          <div>
+            <h3>固定规则</h3>
+            <p>如果它属于一个具体项目，系统会先把交付要求、引用方式、结构方向和后续变更规则固定下来，避免中途规则漂移。</p>
+          </div>
+        </article>
+        <article class="timeline-step">
+          <div class="timeline-no">3</div>
+          <div>
+            <h3>选择证据</h3>
+            <p>系统优先从已有知识、事实点和证据素材中挑出这篇文章真正可用的内容，而不是直接从原始资料开始写。</p>
+          </div>
+        </article>
+        <article class="timeline-step">
+          <div class="timeline-no">4</div>
+          <div>
+            <h3>生成写作方案</h3>
+            <p>在正式产出前，系统会先形成核心论点、大纲和写法策略，确保文章结构是经过规划的，而不是边写边拼。</p>
+          </div>
+        </article>
+        <article class="timeline-step">
+          <div class="timeline-no">5</div>
+          <div>
+            <h3>形成交付结果</h3>
+            <p>系统将方案转成可执行的写作说明和交付结果，让内容输出不是偶然发挥，而是按同一套逻辑落地。</p>
+          </div>
+        </article>
+        <article class="timeline-step">
+          <div class="timeline-no">6</div>
+          <div>
+            <h3>自动留档</h3>
+            <p>交付后，系统会把本次任务同时写入主系统日志和项目日志，便于后续复盘、排错和协作交接。</p>
+          </div>
+        </article>
+      </div>
+      <div class="quote">
+        对外最容易理解的一句话是：这套系统不是“看到需求就写”，而是“先把规则和证据理顺，再稳定地产生文章”。
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>它的内部基础是什么</h2>
+      <p>对外不必看见所有内部细节，但可以把它理解成三层基础。</p>
+      <div class="cards cols-3">
+        <article class="card">
+          <h3>知识基础</h3>
+          <p>系统底层有一套稳定的知识底盘，承接写作规则、医学写作策略、疾病知识和产品知识。</p>
+          <div class="tag-row">
+            <span class="tag gold">写作规则</span>
+            <span class="tag gold">写作策略</span>
+            <span class="tag gold">疾病知识</span>
+            <span class="tag gold">产品知识</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>文章处理流程</h3>
+          <p>系统中间有一条文章处理主链，负责把任务、证据和知识组织成可交付的文章方案。</p>
+          <div class="tag-row">
+            <span class="tag teal">任务定义</span>
+            <span class="tag teal">证据选择</span>
+            <span class="tag teal">结构规划</span>
+            <span class="tag teal">交付</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>项目治理与留档</h3>
+          <p>最外层负责把项目规则固定住，并把每次交付留下完整痕迹，保证后续还能回溯。</p>
+          <div class="tag-row">
+            <span class="tag navy">项目规则</span>
+            <span class="tag navy">变更记录</span>
+            <span class="tag navy">任务日志</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>这套系统的优势</h2>
+      <div class="cards cols-2">
+        <article class="card">
+          <h3>比“纯手工写作”更稳</h3>
+          <ul>
+            <li>不会每次都从零开始组织结构。</li>
+            <li>证据和写法的调用更稳定。</li>
+            <li>项目规则不会轻易在过程中漂移。</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>比“纯黑箱生成”更可控</h3>
+          <ul>
+            <li>不是只留下一个结果，还会留下过程。</li>
+            <li>更容易知道问题出在需求、证据、结构还是交付环节。</li>
+            <li>更适合多人协作和长期项目复用。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>它现在的边界</h2>
+      <div class="cards cols-3">
+        <article class="card">
+          <h3>不是原始资料到全文的一键黑箱</h3>
+          <p>系统更擅长消费已经整理好的证据和知识，而不是直接从原始资料一步到全文。</p>
+        </article>
+        <article class="card">
+          <h3>当前重点在“稳定生产”</h3>
+          <p>它的核心能力是任务治理、证据组织、结构规划、交付和留档，而不是无限制地即兴生成。</p>
+        </article>
+        <article class="card">
+          <h3>仍然需要专业规范共同约束</h3>
+          <p>医学表达、统计表述、引用要求等专业规范，仍然需要和写作主链一起工作，不能完全省略。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="evidence">
+      <h3>Evidence Summary</h3>
+      <ul>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/runtime/app.py">app.py</a> 的真实主链顺序，当前确实是“先选证据、再规划、再交付并留档”。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/delivery/task_logger.py">task_logger.py</a> 和 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/engine/contracts/route_context.py">route_context.py</a>，确认当前系统已经有项目上下文和双层留档能力。</li>
+        <li>我直接核了 <a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/rules">rules</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/structured">structured</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/editorial">editorial</a>、<a href="/D:/汇度编辑部1/写作知识库/medical_kb_system_v2/evidence">evidence</a> 的实际目录，确认当前系统确实具备稳定知识底盘。</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

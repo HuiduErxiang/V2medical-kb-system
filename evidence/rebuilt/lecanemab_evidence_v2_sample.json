@@ -1,0 +1,105 @@
+{
+  "rebuild_manifest": {
+    "manifest_version": "1.0",
+    "rebuild_date": "2026-03-09",
+    "migration_batch": "Batch-2",
+    "source_file": "medical_kb_system/L4_product_knowledge/lecanemab/m6_evidence_database.json",
+    "product_id": "lecanemab",
+    "product_name_zh": "仑卡奈单抗",
+    "rebuild_status": "partial",
+    "rebuild_scope": "示例重建：sources 映射 + 首批 facts"
+  },
+  "v2_sources": [
+    {
+      "source_id": "V2-SRC-LECANEMAB-CLARITY-AD-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-LECANEMAB-CLARITY-AD-2023-NEJM",
+      "title": "Lecanemab in Early Alzheimer's Disease",
+      "citation": "van Dyck CH, Swanson CJ, Aisen P, et al. Lecanemab in Early Alzheimer's Disease. N Engl J Med. 2023;388(1):9-21. DOI:10.1056/NEJMoa2212948",
+      "v1_source_id": "SRC_CLARITY_AD_2024Q2_ORIGINAL",
+      "metadata": {
+        "journal": "N Engl J Med",
+        "year": 2023,
+        "doi": "10.1056/NEJMoa2212948"
+      }
+    },
+    {
+      "source_id": "V2-SRC-LECANEMAB-CLARITY-AD-SAFETY-001",
+      "source_type": "journal_article",
+      "source_key": "SRC-LECANEMAB-CLARITY-AD-SAFETY-2024",
+      "title": "Safety Results from Clarity AD",
+      "citation": "Honig LS, et al. Safety Results from Clarity AD. Alzheimers Res Ther. 2024;16:105. DOI:10.1186/s13195-024-01441-8",
+      "v1_source_id": "SRC_CLARITY_AD_2025Q2_SAFETY",
+      "metadata": {
+        "journal": "Alzheimers Res Ther",
+        "year": 2024,
+        "doi": "10.1186/s13195-024-01441-8"
+      }
+    }
+  ],
+  "v2_facts": [
+    {
+      "fact_id": "V2-FACT-LECANEMAB-EFFICACY-001",
+      "fact_key": "FACT-LECANEMAB-CLINBS-CFB-18MO",
+      "domain": "efficacy",
+      "definition": "Change from baseline in CDR-SB at 18 months",
+      "definition_zh": "18个月时CDR-SB较基线的变化",
+      "value": "-0.45",
+      "unit": "points",
+      "fragment_ids": ["V2-FRAG-LECANEMAB-CLARITY-AD-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-LECANEMAB-CLARITY-AD-2023-NEJM",
+        "asset_key": "AST-LECANEMAB-CLARITY-AD-PRIMARY",
+        "extraction_date": "2026-03-09"
+      },
+      "v1_mapping": {
+        "v1_section": "efficacy",
+        "v1_item_id": "efficacy_clinbs_18mo",
+        "rebuild_notes": "从V1 efficacy 项映射，添加 lineage 结构"
+      }
+    },
+    {
+      "fact_id": "V2-FACT-LECANEMAB-SAFETY-001",
+      "fact_key": "FACT-LECANEMAB-ARIA-E-RATE",
+      "domain": "safety",
+      "definition": "ARIA-E incidence rate",
+      "definition_zh": "ARIA-E 发生率",
+      "value": "12.6%",
+      "unit": "percentage",
+      "fragment_ids": ["V2-FRAG-LECANEMAB-CLARITY-AD-SAFETY-001"],
+      "status": "active",
+      "lineage": {
+        "source_key": "SRC-LECANEMAB-CLARITY-AD-SAFETY-2024",
+        "asset_key": "AST-LECANEMAB-CLARITY-AD-SAFETY",
+        "extraction_date": "2026-03-09"
+      },
+      "v1_mapping": {
+        "v1_section": "safety",
+        "v1_item_id": "safety_arria_e_rate",
+        "rebuild_notes": "从V1 safety 项映射，添加 lineage 结构"
+      }
+    }
+  ],
+  "rebuild_notes": {
+    "v1_to_v2_mapping": [
+      "V1 sources[].source_id -> V2 source_id (with V2- prefix)",
+      "V1 sources[].citation -> V2 citation",
+      "V1 evidence items -> V2 FactRecord with fact_key",
+      "Added lineage tracking with source_key, asset_key",
+      "Added fact_key for stable referencing"
+    ],
+    "remaining_work": [
+      "Complete full sources mapping (currently only 2 of ~20)",
+      "Extract all efficacy facts from V1",
+      "Extract all safety facts from V1",
+      "Create AssetRecord and EvidenceFragment layers",
+      "Build evidence ingestion pipeline"
+    ],
+    "next_steps": [
+      "Design automated V1->V2 evidence migration script",
+      "Implement batch processing for all 7 products",
+      "Add evidence validation and lineage verification"
+    ]
+  }
+}

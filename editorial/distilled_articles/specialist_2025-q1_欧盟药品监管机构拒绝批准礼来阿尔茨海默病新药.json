@@ -1,0 +1,50 @@
+{
+  "distillation_manifest": {
+    "manifest_version": "1.0",
+    "batch_id": "H004",
+    "source_file": "[2025-Q1] 欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药Kisunla，安全风险成核心考量.docx",
+    "source_key": "SRC-HIST-2025-Q1_欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药",
+    "asset_key": "AST-DOCX-2025-Q1_欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药",
+    "content_hash": "2ce59c4b63c617ee",
+    "distillation_type": "historical_article_specialist",
+    "distillation_status": "completed",
+    "distilled_at": "2026-03-10T03:56:10.115859",
+    "source_size_bytes": 16035
+  },
+  "metadata": {
+    "title": "欧盟药品监管机构拒绝批准礼来阿尔茨海默病新药Kisunla，安全风险成核心考量",
+    "content_type": "新闻_评论",
+    "publication_quarter": "2025-Q1",
+    "version": null,
+    "audience": "专科医师",
+    "register_level": "R2"
+  },
+  "distilled_content": {
+    "audience": "专科医师",
+    "register_level": "R2",
+    "narrative_patterns": [
+      "story_arc: 对比分析",
+      "conclusion: 建议性结论"
+    ],
+    "rhetoric_blocks": [
+      "argument: 机制解释",
+      "argument: 安全性分析",
+      "argument: 对比论证"
+    ],
+    "hook_patterns": [],
+    "risk_disclosure_patterns": [
+      "risk: 明确提及风险",
+      "risk: 量化风险",
+      "risk: 风险管理措施"
+    ],
+    "CTA_patterns": [
+      "cta: 临床应用指导"
+    ],
+    "article_structure": [],
+    "writing_style_notes": [
+      "vocabulary: 高度技术化",
+      "technical_depth: 深度研究分析"
+    ]
+  },
+  "key_messages": []
+}
