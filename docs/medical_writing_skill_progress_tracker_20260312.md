@@ -1,7 +1,7 @@
 # 医学写作 Skill 封装进度追踪表
 
 > **日期**: 2026-03-13
-> **总控**: `医学写作Skill封装_执行总控_20260312.md`
+> **总控**: `medical_writing_skill_execution_control_20260312.md`
 
 ---
 

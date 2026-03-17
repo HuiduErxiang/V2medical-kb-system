@@ -38,13 +38,13 @@
 
 ## 4. 唯一执行入口
 
-- **Phase 1 唯一执行入口**: `医学写作Skill封装方案_20260311.md` + Phase 1 验收报告
+- **Phase 1 唯一执行入口**: `medical_writing_skill_plan_20260311.md` + Phase 1 验收报告
 - **Phase 2 当前状态**: 部分实现，待系统缺陷修复后最终验证
 
 规则：
 - Phase 1 已收口，状态为已验证
 - Phase 2 核心问题已修正，系统缺陷待修复
-- 跳转壳 `医学写作Skill封装Phase2执行方案草案_20260312.md` 只保留跳转，不承载正文
+- 跳转壳 `medical_writing_skill_phase2_implementation_draft_20260312.md` 只保留跳转，不承载正文
 
 ---
 
@@ -52,8 +52,8 @@
 
 | 真相源 | 路径 |
 |--------|------|
-| 总控 | `medical_kb_system_v2/docs/医学写作Skill封装_执行总控_20260312.md` |
-| 进度追踪表 | `medical_kb_system_v2/docs/医学写作Skill封装_进度追踪表_20260312.md` |
+| 总控 | `medical_kb_system_v2/docs/medical_writing_skill_execution_control_20260312.md` |
+| 进度追踪表 | `medical_kb_system_v2/docs/medical_writing_skill_progress_tracker_20260312.md` |
 | Phase 1 验收报告 | `写作项目运行日志/Phase1_全量验收报告_20260312.md` |
 | Phase 2 验收报告 | `写作项目运行日志/Phase2_全量验收报告_20260312.md` |
 
@@ -85,7 +85,7 @@
 
 ## Evidence Summary
 
-- 已直接核对 `医学写作Skill封装方案_20260311.md` 确认 Phase 1 设计方案
+- 已直接核对 `medical_writing_skill_plan_20260311.md` 确认 Phase 1 设计方案
 - 已直接核对 `Phase1_全量验收报告_20260312.md` 确认 Phase 1 已验证
 - 已直接核对 `Phase2_全量验收报告_20260312.md` 确认 Phase 2 部分实现
-- 已同步更新 `医学写作Skill封装_进度追踪表_20260312.md` 确认真相源一致
+- 已同步更新 `medical_writing_skill_progress_tracker_20260312.md` 确认真相源一致

@@ -41,9 +41,9 @@ XN|- Gate: 0 errors
 YY|- Tests: 118/118 PASS（新增13项产品配置测试）
 PB|- 产品数: 6个（新增donanemab、pluvicto）
 
- 项目规范体系设计 | 2026-03-05 ~ 进行中
+ project_standards体系设计 | 2026-03-05 ~ 进行中
 
-**总体目标**: 建立单点入口，实现"读取项目规范"开口、"结束任务"收口  
+**总体目标**: 建立单点入口，实现"读取project_standards"开口、"结束任务"收口  
 **参与 AI**: Atlas (主), QoderWork, Sisyphus  
 **当前进度**: 第 9 轮
 **上下文状态**: 正常 (<220K)
@@ -71,7 +71,7 @@ PB|- 产品数: 6个（新增donanemab、pluvicto）
 - workflow_gate.py（DOC-020/021 门禁实现）
 - 仓库边界说明.md（正确描述嵌套仓库结构）
 - README.md（目录结构添加.git说明）
-- 00_项目规范.md（清理emoji路径引用）
+- 00_project_standards.md（清理emoji路径引用）
 
 **测试结果**:
 - Gate: 0 errors
@@ -115,7 +115,7 @@ PB|- 产品数: 6个（新增donanemab、pluvicto）
 **主题**: 验证系统完整闭环，新增DOC-018/DOC-019规则
 
 **用户目标**:
-- 验证"读取项目规范 → 触发 skill → 自动建运行日志 → 结束任务"完整闭环
+- 验证"读取project_standards → 触发 skill → 自动建运行日志 → 结束任务"完整闭环
 - 新增DOC-018结束任务先分类规则
 - 新增DOC-019技术操作安全原则规则
 
@@ -129,12 +129,12 @@ PB|- 产品数: 6个（新增donanemab、pluvicto）
 **交付物**:
 - 规章制度.md（29条规则，DOC-019追加到末尾）
 - 系统运行.md（更新规则总数、任务分类判断机制）
-- 00_项目规范.md（更新规则引用、路径恢复emoji）
+- 00_project_standards.md（更新规则引用、路径恢复emoji）
 - 03_当前状态.md（规则总数29条）
 - 04_待办事项.md（历史记录编号一致）
 
 **测试结果**:
-- 项目规范可读取: PASS
+- project_standards可读取: PASS
 - Skill可触发: PASS
 - 运行日志目录存在: PASS
 - 任务分类机制生效: PASS
@@ -189,10 +189,10 @@ PB|- 产品数: 6个（新增donanemab、pluvicto）
 - 仓库边界说明.md（V2 升级为当前系统）
 - medical_kb_system_v2/README.md（更新为当前真实状态）
 - medical_kb_system_v2/skills/README.md（V2 skills 说明）
-- 项目规范/03_当前状态.md（Phase 5 已验证）
-- 项目规范/04_待办事项.md（Phase 5 完成，Phase 6 待启动）
-- 项目规范/必看/系统运行.md（BACKLOG 更新，清理重复段落）
-- 项目规范/必看/交接文档.md（V2 Phase 5 已验证）
+- project_standards/03_当前状态.md（Phase 5 已验证）
+- project_standards/04_待办事项.md（Phase 5 完成，Phase 6 待启动）
+- project_standards/must_read/system_operations.md（BACKLOG 更新，清理重复段落）
+- project_standards/must_read/交接文档.md（V2 Phase 5 已验证）
 - V2重建执行总控_20260309.md（Phase 5 已验证）
 - V2重建进度追踪表_20260309.md（Phase 5 已验证，清理重复段落）
 

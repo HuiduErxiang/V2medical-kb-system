@@ -1,6 +1,6 @@
 # 医学写作 Skill 封装方案
 
-> **文档位置**: `medical_kb_system_v2/docs/医学写作Skill封装方案_20260311.md`  
+> **文档位置**: `medical_kb_system_v2/docs/medical_writing_skill_plan_20260311.md`  
 > **性质**: 设计方案 / 封装建议  
 > **状态**: 五次修订 / 待复审  
 > **日期**: 2026-03-11
@@ -192,7 +192,7 @@
 
 本方案只定义医学 skill 的分层、调用契约和替代关系，不重写项目控制面。
 
-以下对象继续以 `项目规范/必看/系统运行.md` 与 `spec需求文档.md` 为唯一真相源：
+以下对象继续以 `project_standards/must_read/system_operations.md` 与 `spec需求文档.md` 为唯一真相源：
 
 - 单阶段单权威
 - `已实现 / 已验证 / 已关闭` 状态口径
@@ -817,4 +817,4 @@ router 上线时的 rollout checklist 还必须写死：
 
 - 已直接核对 live skill：`C:\Users\96138\.config\opencode\skills\medical-writing\SKILL.md`、`medical-opinion-generator\SKILL.md`、`medical-article-reviewer\SKILL.md`、`medical-database-query\SKILL.md`。确认 `medical-writing` 仍保留“写一篇医学文章”等泛请求与组合触发语句，而 `medical-opinion-generator`、`medical-article-reviewer`、`medical-database-query` 仍把组合请求导向 `medical-writing`，因此子模块 redirect 也必须纳入同轮迁移。
 - 已直接核对仓库旧核心：`D:\汇度编辑部1\写作知识库\medical_kb_system\skills\medical_article_generator_v2.md`、`medical-opinion-generator.md`、`medical-article-reviewer.md`、`medical-database-query.md`，以及 `medical_kb_system_v2/skills/README.md`。确认 `M0-M7`、旧 reviewer 规则、旧 query 数据结构仍是当前设计冲突源，而 V1 skill 已仅作历史追溯。
-- 已直接核对 `D:\汇度编辑部1\写作知识库\项目规范\必看\系统运行.md` 与 `D:\汇度编辑部1\写作知识库\spec需求文档.md`。确认单阶段单权威、状态口径、日志机制和项目控制面已经存在，因此本方案只保留“读取并遵守”，并把链路内的一次性握手 owner 写成执行契约，而不是重写控制面。
+- 已直接核对 `D:\汇度编辑部1\写作知识库\project_standards\必看\系统运行.md` 与 `D:\汇度编辑部1\写作知识库\spec需求文档.md`。确认单阶段单权威、状态口径、日志机制和项目控制面已经存在，因此本方案只保留“读取并遵守”，并把链路内的一次性握手 owner 写成执行契约，而不是重写控制面。

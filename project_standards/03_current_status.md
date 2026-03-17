@@ -1,7 +1,7 @@
 # 03_当前状态
 
 > **更新触发**: 用户说"结束任务"时，如有指标变更则同步
-> **数据来源**: `项目规范/必看/系统运行.md`
+> **数据来源**: `project_standards/must_read/system_operations.md`
 
 ---
 

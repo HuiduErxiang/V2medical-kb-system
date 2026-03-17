@@ -241,7 +241,7 @@
 
 产出：
 
-- `改稿控制协议` 文档
+- `revision_control_protocol` 文档
 - `冻结 brief 模板`
 - `reviewer -> writer patch schema`
 

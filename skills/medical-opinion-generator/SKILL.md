@@ -33,7 +33,7 @@ description: 医学观点产出技能 — 触发后加载知识库规则
 
 立即读取以下文件：
 ```
-D:/汇度编辑部1/写作知识库/项目规范/必看/系统运行.md
+D:/汇度编辑部1/写作知识库/project_standards/must_read/system_operations.md
 ```
 
 必须确认已读并理解：

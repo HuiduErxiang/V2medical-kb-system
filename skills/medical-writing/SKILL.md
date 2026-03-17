@@ -167,7 +167,7 @@ description: 医学写作类目 — 稳定可复用的医学写作能力
 
 立即读取以下文件：
 ```
-D:/汇度编辑部1/写作知识库/项目规范/必看/系统运行.md
+D:/汇度编辑部1/写作知识库/project_standards/must_read/system_operations.md
 ```
 
 必须确认已读并理解：
@@ -216,7 +216,7 @@ D:/汇度编辑部1/写作知识库/项目规范/必看/系统运行.md
 
 当从 `review_then_rewrite` 模板进入时，本 Skill 还接收以下改稿控制字段：
 
-**完整字段定义参见**：`medical_kb_system_v2/docs/contracts/改稿控制协议_v1.md`
+**完整字段定义参见**：`medical_kb_system_v2/docs/contracts/revision_control_protocol_v1.md`
 
 ```json
 {
